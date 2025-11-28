@@ -87,13 +87,13 @@
       ]
     }
   ],
-  "problem": "Parkinson’s disease severity stage classification",
+  "problem": "Parkinson's disease severity stage classification",
   "ml_problem_type": "Regression",
   "publication_type": "Journal",
   "journal": "Expert Systems with Applications",
   "year": 2020,
   "doi": "10.1016/j.eswa.2020.113562",
-  "abstract": "Parkinson’s Disease (PD) is one of the most prevalent neurological disorders characterized by impairment of motor function. Early diagnosis of PD is important for initial treatment. This paper presents a newly developed method for application in remote tracking of PD progression. The method is based on deep learning and clustering approaches. Specifically, we use the Deep Belief Network (DBN) and Support Vector Regression (SVR) to predict Unified Parkinson's Disease Rating Scale (UPDRS). The DBN prediction models were developed by different epoch numbers. We use a clustering approach, namely, Self-Organizing Map (SOM), to improve the accuracy and scalability of prediction. We evaluate our method on a real-world PD dataset. In all, nine clusters were detected from the data with the best SOM map quality for clustering, and for each cluster, a DBN was developed with a specific number of epochs. The results of the DBN prediction models were integrated by the SVR technique. Further, we compare our work with other supervised learning techniques, SVR and Neuro-Fuzzy techniques. The results revealed that the hybrid of clustering and DBN with the aid of SVR for an ensemble of the DBN outputs can make relatively better predictions of Total-UPDRS and Motor-UPDRS than other learning techniques.",
+  "abstract": "Parkinson's Disease (PD) is one of the most prevalent neurological disorders characterized by impairment of motor function. Early diagnosis of PD is important for initial treatment. This paper presents a newly developed method for application in remote tracking of PD progression. The method is based on deep learning and clustering approaches. Specifically, we use the Deep Belief Network (DBN) and Support Vector Regression (SVR) to predict Unified Parkinson's Disease Rating Scale (UPDRS). The DBN prediction models were developed by different epoch numbers. We use a clustering approach, namely, Self-Organizing Map (SOM), to improve the accuracy and scalability of prediction. We evaluate our method on a real-world PD dataset. In all, nine clusters were detected from the data with the best SOM map quality for clustering, and for each cluster, a DBN was developed with a specific number of epochs. The results of the DBN prediction models were integrated by the SVR technique. Further, we compare our work with other supervised learning techniques, SVR and Neuro-Fuzzy techniques. The results revealed that the hybrid of clustering and DBN with the aid of SVR for an ensemble of the DBN outputs can make relatively better predictions of Total-UPDRS and Motor-UPDRS than other learning techniques.",
   "ml_approaches": [
     {
       "algorithm": "Deep Belief Network",
