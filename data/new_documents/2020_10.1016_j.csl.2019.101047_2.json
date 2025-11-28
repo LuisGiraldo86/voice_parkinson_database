@@ -1,0 +1,134 @@
+{
+  "title": "Assessing Parkinson's disease severity using speech analysis in non-native speakers",
+  "authors": [
+    {
+      "name": "Taha Khan",
+      "affiliations": [
+        {
+          "institution": "Halmstad University",
+          "country": "Sweden"
+        }
+      ]
+    },
+    {
+      "name": "Lina E. Lundgren ",
+      "affiliations": [
+        {
+          "institution": "Halmstad University",
+          "country": "Sweden"
+        }
+      ]
+    },
+    {
+      "name": "David G. Anderson",
+      "affiliations": [
+        {
+          "institution": "University of the Witwatersrand",
+          "country": "South Africa"
+        }
+      ]
+    },
+    {
+      "name": "Irena Nowak",
+      "affiliations": [
+        {
+          "institution": "University of Johannesburg",
+          "country": "South Africa"
+        }
+      ]
+    },
+    {
+      "name": "Mark Dougherty",
+      "affiliations": [
+        {
+          "institution": "Halmstad University",
+          "country": "Sweden"
+        }
+      ]
+    },
+    {
+      "name": "Antanas Verikas",
+      "affiliations": [
+        {
+          "institution": "Halmstad University",
+          "country": "Sweden"
+        }
+      ]
+    },
+    {
+      "name": "Misha Pavel",
+      "affiliations": [
+        {
+          "institution": "Halmstad University",
+          "country": "Sweden"
+        }
+      ]
+    },
+    {
+      "name": "Holly Jimison",
+      "affiliations": [
+        {
+          "institution": "Halmstad University",
+          "country": "Sweden"
+        }
+      ]
+    },
+    {
+      "name": "Slawomir Nowaczyk",
+      "affiliations": [
+        {
+          "institution": "Halmstad University",
+          "country": "Sweden"
+        }
+      ]
+    },
+    {
+      "name": "Vered Aharonson",
+      "affiliations": [
+        {
+          "institution": "University of the Witwatersrand",
+          "country": "South Africa"
+        }
+      ]
+    }
+  ],
+  "problem": "Parkinson's disease severity stage classification",
+  "ml_problem_type": "Multiclass Classification",
+  "publication_type": "Journal",
+  "journal": "Computer Speech & Language",
+  "year": 2020,
+  "doi": "10.1016/j.csl.2019.101047",
+  "abstract": "Speech disorder is a common manifestation of Parkinson's disease with two main symptoms, dysprosody and dysphonia. Previous research studying objective measures of speech symptoms involved patients and examiners who were native language speakers. Measures such as cepstral separation difference (CSD) features to quantify dysphonia and dysprosody accurately distinguish the severity of speech impairment. Importantly CSD, together with other speech features, including Mel-frequency coefficients, fundamental-frequency variation, and spectral dynamics, characterize speech intelligibility in PD. However, non-native language speakers transfer phonological rules of their mother language that tamper speech assessment. Objectives: This paper explores CSD's capability: first, to quantify dysprosody and dysphonia of non-native language speakers, Parkinson patients and controls, and secondly, to characterize the severity of speech impairment when Parkinson's dysprosody accompanies non-native linguistic dysprosody. Methods: CSD features were extracted from 168 speech samples recorded from 19 healthy controls, 15 rehabilitated and 23 not-rehabilitated Parkinson patients in three different clinical speech tests based on Unified Parkinson's disease rating scale motor-speech examination. Statistical analyses were performed to compare groups using analysis of variance, intraclass correlation, and Guttman correlation coefficient µ2. Random forests were trained to classify the severity of speech impairment using CSD and the other speech features. Feature importance in classification was determined using permutation importance score. Results: Results showed that the CSD feature describing dysphonia was uninfluenced by non-native accents, strongly correlated with the clinical examination (µ2>0.5), and significantly discriminated between the healthy, rehabilitated, and not-rehabilitated patient groups based on the severity of speech symptoms. However, the feature describing dysprosody did not correlate with the clinical examination but significantly distinguished the groups. The classification model based on random forests and selected features characterized the severity of speech impairment of non-native language speakers with high accuracy. Importantly, the permutation importance score of the CSD feature representing dysphonia was the highest compared to other features. Results showed a strong negative correlation (µ2<-0.5) between L-dopa administration and the CSD features. Conclusions: Although non-native accents reduce speech intelligibility, the CSD features can accurately characterize speech impairment, which is not always possible in the clinical examination. Findings support using CSD for monitoring Parkinson's disease.",
+  "ml_approaches": [
+    {
+      "algorithm": "Random Forest",
+      "feature_extracttion": ["Cepstral Separation Difference"],
+      "validation": "train/test split",
+      "results": {
+        "average_auc": 0.8250,
+        "average_accuracy": 0.7798
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Donald Gordon Medical Centre Parkinson's Disease Speech Dataset",
+      "size": 57,
+      "pd_patients": 38,
+      "controls": 19,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Donald Gordon Medical Centre Parkinson's Disease Speech Dataset",
+      "size": 57,
+      "pd_patients": 38,
+      "controls": 19,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.1016/j.csl.2019.101047_2"
+}

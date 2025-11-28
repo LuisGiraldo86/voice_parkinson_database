@@ -1,0 +1,72 @@
+{
+  "title": "Multidimensional medical data modeling based on fuzzy cognitive maps and k-means clustering",
+  "authors": [
+    {
+      "name": "Katarzyna Poczeta",
+      "affiliations": [
+        {
+          "institution": "Kielce University of Technology",
+          "country": "Poland"
+        }
+      ]
+    },
+    {
+      "name": "Łukasz Kubuś",
+      "affiliations": [
+        {
+          "institution": "Kielce University of Technology",
+          "country": "Poland"
+        }
+      ]
+    },
+    {
+      "name": "Alexander Yastrebov",
+      "affiliations": [
+        {
+          "institution": "Kielce University of Technology",
+          "country": "Poland"
+        }
+      ]
+    }
+  ],
+  "problem": "Parkinson's disease severity stage classification",
+  "ml_problem_type": "Regression",
+  "publication_type": "Conference",
+  "journal": "Procedia Computer Science",
+  "year": 2020,
+  "doi": "10.1016/j.procs.2020.08.013",
+  "abstract": "The paper concerns the use of fuzzy cognitive maps and k-means clustering to solve the problem of modeling multidimensional medical data. A fuzzy cognitive map is a recurrent neural network that describes the analyzed phenomenon in the form of key concepts and causal relationships between them. It is an effective tool for modeling decision support systems and is widely used in medicine. The aim of this paper is to analyze the use of fuzzy cognitive maps with k-means clustering to model decision support systems based on multidimensional data related to Parkinson's disease. K-means method was applied to group the data, and then a separate fuzzy cognitive map was built for each cluster to increase forecasting accuracy. The learning process was realized with the use of the previously developed Individually Directional Evolutionary Algorithm. The obtained results confirm that the analyzed approach provides much better forecasting accuracy than the standard approach based on one model.",
+  "ml_approaches": [
+    {
+      "algorithm": "Fuzzy Cognitive Map",
+      "sample_selection": [
+        "K-means clustering"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "MSE": 0.522
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Telemonitoring Dataset",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+{
+      "name": "Oxford Parkinson's Disease Telemonitoring Dataset",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.1016/j.procs.2020.08.013"
+}
