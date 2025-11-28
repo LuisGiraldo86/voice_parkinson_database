@@ -1,0 +1,1327 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c168943c"
+  },
+  "title": "Ranking Pre-trained Speech Embeddings in Parkinson's Disease Detection: Does Wav2Vec 2.0 Outperform Its 1.0 Version Across Speech Modes and Languages?",
+  "authors": [
+    {
+      "name": "Ondrej Klempir",
+      "affiliations": [
+        {
+          "institution": "Czech Technical University in Prague",
+          "country": "Czech Republic"
+        }
+      ]
+    },
+    {
+      "name": "Adela Skryjova",
+      "affiliations": [
+        {
+          "institution": "Czech Technical University in Prague",
+          "country": "Czech Republic"
+        }
+      ]
+    },
+    {
+      "name": "Ales Tichopad",
+      "affiliations": []
+    },
+    {
+      "name": "Radim Krupicka",
+      "affiliations": [
+        {
+          "institution": "Czech Technical University in Prague",
+          "country": "Czech Republic"
+        }
+      ]
+    }
+  ],
+  "journal": "Computational and Structural Biotechnology Journal",
+  "publication_type": "Journal",
+  "year": 2025,
+  "doi": "10.1016/j.csbj.2025.06.022",
+  "abstract": "Speech and language technologies are effective tools for identifying the distinct speech changes associated with Parkinson's disease (PD), enabling earlier and more accurate diagnosis. Models leveraging recent advancements in self-supervised speech pretraining, such as Wav2Vec, have demonstrated superior performance over traditional feature extraction methods. While Wav2Vec 2.0 has been successfully utilized for PD detection, a rigorous quantitative comparison with Wav2Vec 1.0 is needed to comprehensively evaluate its advantages, limitations, and applicability across different speech modes in PD. This study presents a systematic comparison of Wav2Vec 1.0 and Wav2Vec 2.0 embeddings across three multilingual datasets using various classification approaches to classify normal (healthy controls; HC) and PD-affected speech. Additionally, both Wav2Vec 1.0 and 2.0 were benchmarked against traditional baseline features across diverse linguistic contexts, including spontaneous speech, non-spontaneous speech, and isolated vowels. A multicriteria TOPSIS approach was employed to rank feature extraction methods, revealing that Wav2Vec 2.0 excelled across speech modes, with its first transformer layer demonstrating the best performance for classifying read text and monologue, and its feature extractor performing best in vowel-based classification. In contrast, Wav2Vec 1.0, while generally outperformed by Wav2Vec 2.0, still provided a more efficient alternative with competitive performance. Finally, we combined selected layers from both architectures and have demonstrated improved diagnostic accuracy in vowel-based classification. This comparative analysis underscores the strengths of both Wav2Vec architectures and informs their optimal use in PD detection.",
+  "ml_approaches": [
+    {
+      "algorithm": "Decision Tree",
+      "framework": "",
+      "input_speech": "read text",
+      "feature_extraction": [
+        "wav2vec 1.0 feature extractor"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.65,
+        "recall": 0.74,
+        "specificity": 0.56,
+        "precision": 0.64,
+        "f1_score": 0.67,
+        "mcc": 0.3,
+        "auc": 0.65
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "input_speech": "read text",
+      "feature_extraction": [
+        "wav2vec 1.0 feature extractor"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.77,
+        "recall": 0.62,
+        "specificity": 0.92,
+        "precision": 0.91,
+        "f1_score": 0.71,
+        "mcc": 0.58,
+        "auc": 0.82
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "input_speech": "read text",
+      "feature_extraction": [
+        "wav2vec 1.0 feature extractor"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.69,
+        "recall": 0.58,
+        "specificity": 0.8,
+        "precision": 0.76,
+        "f1_score": 0.64,
+        "mcc": 0.4,
+        "auc": 0.75
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "input_speech": "read text",
+      "feature_extraction": [
+        "wav2vec 1.0 feature extractor"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.67,
+        "recall": 0.66,
+        "specificity": 0.68,
+        "precision": 0.71,
+        "f1_score": 0.67,
+        "mcc": 0.36,
+        "auc": 0.77
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "input_speech": "read text",
+      "feature_extraction": [
+        "wav2vec 1.0 feature extractor"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.74,
+        "recall": 0.74,
+        "specificity": 0.74,
+        "precision": 0.78,
+        "f1_score": 0.75,
+        "mcc": 0.5,
+        "auc": 0.8
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "input_speech": "read text",
+      "feature_extraction": [
+        "wav2vec 1.0 feature extractor"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.66,
+        "recall": 0.5,
+        "specificity": 0.82,
+        "precision": 0.75,
+        "f1_score": 0.59,
+        "mcc": 0.35,
+        "auc": 0.34
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "framework": "",
+      "input_speech": "read text",
+      "feature_extraction": [
+        "wav2vec 1.0 feature extractor + aggregator"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.63,
+        "recall": 0.7,
+        "specificity": 0.56,
+        "precision": 0.62,
+        "f1_score": 0.65,
+        "mcc": 0.27,
+        "auc": 0.63
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "input_speech": "read text",
+      "feature_extraction": [
+        "wav2vec 1.0 feature extractor + aggregator"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.77,
+        "recall": 0.62,
+        "specificity": 0.92,
+        "precision": 0.87,
+        "f1_score": 0.71,
+        "mcc": 0.57,
+        "auc": 0.83
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "input_speech": "read text",
+      "feature_extraction": [
+        "wav2vec 1.0 feature extractor + aggregator"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.75,
+        "recall": 0.68,
+        "specificity": 0.82,
+        "precision": 0.8,
+        "f1_score": 0.71,
+        "mcc": 0.52,
+        "auc": 0.87
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "input_speech": "read text",
+      "feature_extraction": [
+        "wav2vec 1.0 feature extractor + aggregator"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.68,
+        "recall": 0.68,
+        "specificity": 0.68,
+        "precision": 0.68,
+        "f1_score": 0.67,
+        "mcc": 0.37,
+        "auc": 0.74
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "input_speech": "read text",
+      "feature_extraction": [
+        "wav2vec 1.0 feature extractor + aggregator"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.76,
+        "recall": 0.8,
+        "specificity": 0.72,
+        "precision": 0.74,
+        "f1_score": 0.76,
+        "mcc": 0.54,
+        "auc": 0.8
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "input_speech": "read text",
+      "feature_extraction": [
+        "wav2vec 1.0 feature extractor + aggregator"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.81,
+        "recall": 0.76,
+        "specificity": 0.86,
+        "precision": 0.86,
+        "f1_score": 0.78,
+        "mcc": 0.65,
+        "auc": 0.89
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "framework": "",
+      "input_speech": "read text",
+      "feature_extraction": [
+        "wav2vec 2.0 feature extractor"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.64,
+        "recall": 0.58,
+        "specificity": 0.7,
+        "precision": 0.65,
+        "f1_score": 0.6,
+        "mcc": 0.28,
+        "auc": 0.64
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "input_speech": "read text",
+      "feature_extraction": [
+        "wav2vec 2.0 feature extractor"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.75,
+        "recall": 0.66,
+        "specificity": 0.84,
+        "precision": 0.83,
+        "f1_score": 0.71,
+        "mcc": 0.53,
+        "auc": 0.82
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "input_speech": "read text",
+      "feature_extraction": [
+        "wav2vec 2.0 feature extractor"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.68,
+        "recall": 0.76,
+        "specificity": 0.6,
+        "precision": 0.7,
+        "f1_score": 0.71,
+        "mcc": 0.37,
+        "auc": 0.77
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "input_speech": "read text",
+      "feature_extraction": [
+        "wav2vec 2.0 feature extractor"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.7,
+        "recall": 0.68,
+        "specificity": 0.72,
+        "precision": 0.75,
+        "f1_score": 0.7,
+        "mcc": 0.42,
+        "auc": 0.76
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "input_speech": "read text",
+      "feature_extraction": [
+        "wav2vec 2.0 feature extractor"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.72,
+        "recall": 0.68,
+        "specificity": 0.76,
+        "precision": 0.78,
+        "f1_score": 0.7,
+        "mcc": 0.46,
+        "auc": 0.8
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "input_speech": "read text",
+      "feature_extraction": [
+        "wav2vec 2.0 feature extractor"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.69,
+        "recall": 0.78,
+        "specificity": 0.6,
+        "precision": 0.71,
+        "f1_score": 0.73,
+        "mcc": 0.39,
+        "auc": 0.76
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "framework": "",
+      "input_speech": "read text",
+      "feature_extraction": [
+        "wav2vec 2.0 last hidden layer"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.74,
+        "recall": 0.72,
+        "specificity": 0.76,
+        "precision": 0.78,
+        "f1_score": 0.72,
+        "mcc": 0.51,
+        "auc": 0.74
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "input_speech": "read text",
+      "feature_extraction": [
+        "wav2vec 2.0 last hidden layer"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.56,
+        "recall": 0.48,
+        "specificity": 0.64,
+        "precision": 0.58,
+        "f1_score": 0.51,
+        "mcc": 0.13,
+        "auc": 0.63
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "input_speech": "read text",
+      "feature_extraction": [
+        "wav2vec 2.0 last hidden layer"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.41,
+        "recall": 0.34,
+        "specificity": 0.48,
+        "precision": 0.41,
+        "f1_score": 0.36,
+        "mcc": -0.19,
+        "auc": 0.38
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "input_speech": "read text",
+      "feature_extraction": [
+        "wav2vec 2.0 last hidden layer"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.71,
+        "recall": 0.66,
+        "specificity": 0.76,
+        "precision": 0.75,
+        "f1_score": 0.69,
+        "mcc": 0.43,
+        "auc": 0.8
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "input_speech": "read text",
+      "feature_extraction": [
+        "wav2vec 2.0 last hidden layer"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.77,
+        "recall": 0.8,
+        "specificity": 0.74,
+        "precision": 0.78,
+        "f1_score": 0.76,
+        "mcc": 0.58,
+        "auc": 0.88
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "input_speech": "read text",
+      "feature_extraction": [
+        "wav2vec 2.0 last hidden layer"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.45,
+        "recall": 0.18,
+        "specificity": 0.72,
+        "precision": 0.33,
+        "f1_score": 0.21,
+        "mcc": -0.12,
+        "auc": 0.56
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "framework": "",
+      "input_speech": "read text",
+      "feature_extraction": [
+        "wav2vec 2.0 first transformer layer"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.65,
+        "recall": 0.64,
+        "specificity": 0.66,
+        "precision": 0.67,
+        "f1_score": 0.64,
+        "mcc": 0.32,
+        "auc": 0.65
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "input_speech": "read text",
+      "feature_extraction": [
+        "wav2vec 2.0 first transformer layer"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.76,
+        "recall": 0.68,
+        "specificity": 0.84,
+        "precision": 0.84,
+        "f1_score": 0.73,
+        "mcc": 0.55,
+        "auc": 0.78
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "input_speech": "read text",
+      "feature_extraction": [
+        "wav2vec 2.0 first transformer layer"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.81,
+        "recall": 0.78,
+        "specificity": 0.84,
+        "precision": 0.86,
+        "f1_score": 0.81,
+        "mcc": 0.64,
+        "auc": 0.83
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "input_speech": "read text",
+      "feature_extraction": [
+        "wav2vec 2.0 first transformer layer"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.74,
+        "recall": 0.74,
+        "specificity": 0.74,
+        "precision": 0.77,
+        "f1_score": 0.74,
+        "mcc": 0.5,
+        "auc": 0.84
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "input_speech": "read text",
+      "feature_extraction": [
+        "wav2vec 2.0 first transformer layer"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.75,
+        "recall": 0.78,
+        "specificity": 0.72,
+        "precision": 0.77,
+        "f1_score": 0.76,
+        "mcc": 0.51,
+        "auc": 0.77
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "input_speech": "read text",
+      "feature_extraction": [
+        "wav2vec 2.0 first transformer layer"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.79,
+        "recall": 0.8,
+        "specificity": 0.78,
+        "precision": 0.82,
+        "f1_score": 0.79,
+        "mcc": 0.6,
+        "auc": 0.8
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "framework": "",
+      "input_speech": "monologue",
+      "feature_extraction": [
+        "wav2vec 1.0 feature extractor"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.65,
+        "recall": 0.64,
+        "specificity": 0.66,
+        "precision": 0.66,
+        "f1_score": 0.64,
+        "mcc": 0.32,
+        "auc": 0.65
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "input_speech": "monologue",
+      "feature_extraction": [
+        "wav2vec 1.0 feature extractor"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.75,
+        "recall": 0.68,
+        "specificity": 0.82,
+        "precision": 0.74,
+        "f1_score": 0.7,
+        "mcc": 0.5,
+        "auc": 0.83
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "input_speech": "monologue",
+      "feature_extraction": [
+        "wav2vec 1.0 feature extractor"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.69,
+        "recall": 0.62,
+        "specificity": 0.76,
+        "precision": 0.73,
+        "f1_score": 0.65,
+        "mcc": 0.39,
+        "auc": 0.8
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "input_speech": "monologue",
+      "feature_extraction": [
+        "wav2vec 1.0 feature extractor"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.81,
+        "recall": 0.84,
+        "specificity": 0.78,
+        "precision": 0.8,
+        "f1_score": 0.82,
+        "mcc": 0.62,
+        "auc": 0.86
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "input_speech": "monologue",
+      "feature_extraction": [
+        "wav2vec 1.0 feature extractor"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.77,
+        "recall": 0.72,
+        "specificity": 0.82,
+        "precision": 0.83,
+        "f1_score": 0.74,
+        "mcc": 0.57,
+        "auc": 0.86
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "input_speech": "monologue",
+      "feature_extraction": [
+        "wav2vec 1.0 feature extractor"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.65,
+        "recall": 0.52,
+        "specificity": 0.78,
+        "precision": 0.73,
+        "f1_score": 0.58,
+        "mcc": 0.33,
+        "auc": 0.39
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "framework": "",
+      "input_speech": "monologue",
+      "feature_extraction": [
+        "wav2vec 1.0 feature extractor + aggregator"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.67,
+        "recall": 0.68,
+        "specificity": 0.66,
+        "precision": 0.68,
+        "f1_score": 0.66,
+        "mcc": 0.35,
+        "auc": 0.67
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "input_speech": "monologue",
+      "feature_extraction": [
+        "wav2vec 1.0 feature extractor + aggregator"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.76,
+        "recall": 0.72,
+        "specificity": 0.8,
+        "precision": 0.8,
+        "f1_score": 0.75,
+        "mcc": 0.54,
+        "auc": 0.8
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "input_speech": "monologue",
+      "feature_extraction": [
+        "wav2vec 1.0 feature extractor + aggregator"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.77,
+        "recall": 0.74,
+        "specificity": 0.8,
+        "precision": 0.81,
+        "f1_score": 0.76,
+        "mcc": 0.56,
+        "auc": 0.87
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "input_speech": "monologue",
+      "feature_extraction": [
+        "wav2vec 1.0 feature extractor + aggregator"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.73,
+        "recall": 0.7,
+        "specificity": 0.76,
+        "precision": 0.75,
+        "f1_score": 0.71,
+        "mcc": 0.48,
+        "auc": 0.8
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "input_speech": "monologue",
+      "feature_extraction": [
+        "wav2vec 1.0 feature extractor + aggregator"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.69,
+        "recall": 0.68,
+        "specificity": 0.7,
+        "precision": 0.7,
+        "f1_score": 0.67,
+        "mcc": 0.41,
+        "auc": 0.79
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "input_speech": "monologue",
+      "feature_extraction": [
+        "wav2vec 1.0 feature extractor + aggregator"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.79,
+        "recall": 0.74,
+        "specificity": 0.84,
+        "precision": 0.84,
+        "f1_score": 0.77,
+        "mcc": 0.61,
+        "auc": 0.9
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "framework": "",
+      "input_speech": "monologue",
+      "feature_extraction": [
+        "wav2vec 2.0 feature extractor"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.66,
+        "recall": 0.62,
+        "specificity": 0.7,
+        "precision": 0.67,
+        "f1_score": 0.64,
+        "mcc": 0.33,
+        "auc": 0.66
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "input_speech": "monologue",
+      "feature_extraction": [
+        "wav2vec 2.0 feature extractor"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.78,
+        "recall": 0.74,
+        "specificity": 0.82,
+        "precision": 0.83,
+        "f1_score": 0.76,
+        "mcc": 0.58,
+        "auc": 0.83
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "input_speech": "monologue",
+      "feature_extraction": [
+        "wav2vec 2.0 feature extractor"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.69,
+        "recall": 0.74,
+        "specificity": 0.64,
+        "precision": 0.68,
+        "f1_score": 0.7,
+        "mcc": 0.4,
+        "auc": 0.78
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "input_speech": "monologue",
+      "feature_extraction": [
+        "wav2vec 2.0 feature extractor"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.73,
+        "recall": 0.7,
+        "specificity": 0.76,
+        "precision": 0.76,
+        "f1_score": 0.72,
+        "mcc": 0.47,
+        "auc": 0.8
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "input_speech": "monologue",
+      "feature_extraction": [
+        "wav2vec 2.0 feature extractor"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.74,
+        "recall": 0.76,
+        "specificity": 0.72,
+        "precision": 0.75,
+        "f1_score": 0.75,
+        "mcc": 0.49,
+        "auc": 0.81
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "input_speech": "monologue",
+      "feature_extraction": [
+        "wav2vec 2.0 feature extractor"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.69,
+        "recall": 0.8,
+        "specificity": 0.58,
+        "precision": 0.67,
+        "f1_score": 0.72,
+        "mcc": 0.41,
+        "auc": 0.79
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "framework": "",
+      "input_speech": "monologue",
+      "feature_extraction": [
+        "wav2vec 2.0 last hidden layer"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.61,
+        "recall": 0.64,
+        "specificity": 0.58,
+        "precision": 0.64,
+        "f1_score": 0.63,
+        "mcc": 0.23,
+        "auc": 0.61
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "input_speech": "monologue",
+      "feature_extraction": [
+        "wav2vec 2.0 last hidden layer"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.61,
+        "recall": 0.54,
+        "specificity": 0.68,
+        "precision": 0.65,
+        "f1_score": 0.56,
+        "mcc": 0.24,
+        "auc": 0.66
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "input_speech": "monologue",
+      "feature_extraction": [
+        "wav2vec 2.0 last hidden layer"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.56,
+        "recall": 0.52,
+        "specificity": 0.6,
+        "precision": 0.59,
+        "f1_score": 0.52,
+        "mcc": 0.14,
+        "auc": 0.63
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "input_speech": "monologue",
+      "feature_extraction": [
+        "wav2vec 2.0 last hidden layer"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.76,
+        "recall": 0.78,
+        "specificity": 0.74,
+        "precision": 0.76,
+        "f1_score": 0.75,
+        "mcc": 0.55,
+        "auc": 0.89
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "input_speech": "monologue",
+      "feature_extraction": [
+        "wav2vec 2.0 last hidden layer"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.74,
+        "recall": 0.68,
+        "specificity": 0.8,
+        "precision": 0.8,
+        "f1_score": 0.72,
+        "mcc": 0.5,
+        "auc": 0.8
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "input_speech": "monologue",
+      "feature_extraction": [
+        "wav2vec 2.0 last hidden layer"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.53,
+        "recall": 0.08,
+        "specificity": 0.98,
+        "precision": 0.35,
+        "f1_score": 0.13,
+        "mcc": 0.1,
+        "auc": 0.39
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "framework": "",
+      "input_speech": "monologue",
+      "feature_extraction": [
+        "wav2vec 2.0 first transformer layer"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.54,
+        "recall": 0.56,
+        "specificity": 0.52,
+        "precision": 0.54,
+        "f1_score": 0.54,
+        "mcc": 0.07,
+        "auc": 0.54
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "input_speech": "monologue",
+      "feature_extraction": [
+        "wav2vec 2.0 first transformer layer"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.75,
+        "recall": 0.72,
+        "specificity": 0.78,
+        "precision": 0.78,
+        "f1_score": 0.74,
+        "mcc": 0.52,
+        "auc": 0.83
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "input_speech": "monologue",
+      "feature_extraction": [
+        "wav2vec 2.0 first transformer layer"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8,
+        "recall": 0.8,
+        "specificity": 0.8,
+        "precision": 0.82,
+        "f1_score": 0.8,
+        "mcc": 0.62,
+        "auc": 0.9
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "input_speech": "monologue",
+      "feature_extraction": [
+        "wav2vec 2.0 first transformer layer"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.75,
+        "recall": 0.82,
+        "specificity": 0.68,
+        "precision": 0.72,
+        "f1_score": 0.77,
+        "mcc": 0.51,
+        "auc": 0.82
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "input_speech": "monologue",
+      "feature_extraction": [
+        "wav2vec 2.0 first transformer layer"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.74,
+        "recall": 0.76,
+        "specificity": 0.72,
+        "precision": 0.74,
+        "f1_score": 0.75,
+        "mcc": 0.48,
+        "auc": 0.79
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "input_speech": "monologue",
+      "feature_extraction": [
+        "wav2vec 2.0 first transformer layer"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.77,
+        "recall": 0.78,
+        "specificity": 0.76,
+        "precision": 0.81,
+        "f1_score": 0.77,
+        "mcc": 0.57,
+        "auc": 0.88
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "PC-GITA",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://paperswithcode.com/dataset/pc-gita",
+      "doi": ""
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "PC-GITA",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://paperswithcode.com/dataset/pc-gita",
+      "doi": ""
+    }
+  ],
+  "study_id": "10.1016/j.csbj.2025.06.022_2"
+}

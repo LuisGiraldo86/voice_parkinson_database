@@ -1,0 +1,123 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c168934d"
+  },
+  "title": "Analysis and Implementation of Machine Learning Model for Detection of Parkinson's Disease",
+  "authors": [
+    {
+      "name": "Kumar Spandan",
+      "affiliations": [
+        {
+          "institution": "Amity University Jharkhand",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Biresh Kumar",
+      "affiliations": [
+        {
+          "institution": "Amity University Jharkhand",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Pallab Banerjee",
+      "affiliations": [
+        {
+          "institution": "Amity University Jharkhand",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Pooja Jha",
+      "affiliations": [
+        {
+          "institution": "Amity University Jharkhand",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Laxmi Kumari Pathak",
+      "affiliations": [
+        {
+          "institution": "Amity University Jharkhand",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Mohan Kumar Dehury",
+      "affiliations": [
+        {
+          "institution": "Amity University Jharkhand",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Conference",
+  "journal": "2023 International Conference on Sustainable Computing and Data Communication Systems (ICSCDS)",
+  "year": 2023,
+  "doi": "10.1109/ICSCDS56580.2023.10104661",
+  "abstract": "Parkinson's disease, which affects 2-3% of people under 65 years of age, is the second most prevalent neurological ailment. The neuropathological indicators of Parkinson's disease are intracellular inclusions containing clumps of synuclein and neuronal death in the substantia nigra, which results in striatal dopamine insufficiency. The central and peripheral autonomic nerve systems contain numerous more cell types that are also involved, most likely beginning with the first stages of the disease. Although bradykinesia and other essential motor characteristics are required for clinical diagnosis, Parkinson's disease is also accompanied by a wide range of non-motor symptoms that increase overall disability. Numerous routes and mechanisms, including synuclein proteostasis, mitochondrial function, oxidative stress, calcium homeostasis, axonal transport, and neuroinflammation, are involved in the underlying molecular etiology. This paper aims to implement the SVM algorithm to predict Parkinson's disease in a patient.",
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "Python",
+      "scaling": [
+        "Standardization"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8717
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "Python",
+      "scaling": [
+        "Standardization"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.79
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "Python",
+      "scaling": [
+        "Standardization"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8302
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1109/ICSCDS56580.2023.10104661_1"
+}

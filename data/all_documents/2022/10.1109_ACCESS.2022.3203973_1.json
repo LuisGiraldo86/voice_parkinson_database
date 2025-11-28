@@ -1,0 +1,220 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c1689374"
+  },
+  "title": "Parkinson's Disease Detection Using Smartphone Recorded Phonemes in Real World Conditions",
+  "authors": [
+    {
+      "name": "Mohammod Abdul Motin",
+      "affiliations": [
+        {
+          "institution": "Rajshahi University of Engineering & Technology",
+          "country": "Bangladesh"
+        },
+        {
+          "institution": "Royal Melbourne Institute of Technology",
+          "country": "Australia"
+        }
+      ]
+    },
+    {
+      "name": "Nemuel Daniel Pah",
+      "affiliations": [
+        {
+          "institution": "Royal Melbourne Institute of Technology",
+          "country": "Australia"
+        },
+        {
+          "institution": "Universitas Surabaya",
+          "country": "Indonesia"
+        }
+      ]
+    },
+    {
+      "name": "Sanjay Raghav",
+      "affiliations": [
+        {
+          "institution": "Royal Melbourne Institute of Technology",
+          "country": "Australia"
+        }
+      ]
+    },
+    {
+      "name": "Dinesh Kant Kumar",
+      "affiliations": [
+        {
+          "institution": "Royal Melbourne Institute of Technology",
+          "country": "Australia"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "IEEE Access",
+  "year": 2022,
+  "doi": "10.1109/ACCESS.2022.3203973",
+  "abstract": "Parkinson's disease (PD) is a multi-symptom neurodegenerative disease. There are no biomarkers; the diagnosis and monitoring of the disease progression require clinical and functional symptom observation. Voice impairment is an early symptom of PD, and computerized analysis of voice has been proposed for early detection and monitoring of the disease. However, there is poor reproducibility of many studies, which is attributed to the experimental data having been collected under controlled conditions. To overcome the limitations of earlier works, this study has investigated three sustained phonemes: /a/, /o/, and /m/, which were recorded using an iOS-based smartphone from 72 participants (36 people with PD and 36 healthy) in a typical clinical setting. A number of signal features were obtained, statistically investigated, and ranked to identify the suitable feature sets. These were classified using machine learning models. The results show that a combination of phonemes /a/+/o/+/m/ was most suited to differentiate the voice of PD people from healthy control participants, with an average accuracy, sensitivity, and specificity of 100%, 100%, 100%, respectively, using leave-one-out validation. The findings of this study could assist in the clinical assessments and remote telehealth monitoring for people with parkinsonian dysarthria using smartphones.",
+  "citescore": 9,
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "input_speech": "/a/",
+      "feature_extraction": [
+        "Handcrafted feature extraction"
+      ],
+      "feature_selection": {
+        "methods": [
+          "ReliefF"
+        ]
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.9722,
+        "recall": 1,
+        "specificity": 0.9444,
+        "f1_score": 0.97
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "input_speech": "/m/",
+      "feature_extraction": [
+        "Handcrafted feature extraction"
+      ],
+      "feature_selection": {
+        "methods": [
+          "ReliefF"
+        ]
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.9583,
+        "recall": 0.9444,
+        "specificity": 0.9722,
+        "f1_score": 0.95
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "input_speech": "/o/",
+      "feature_extraction": [
+        "Handcrafted feature extraction"
+      ],
+      "feature_selection": {
+        "methods": [
+          "ReliefF"
+        ]
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.9866,
+        "recall": 0.9722,
+        "specificity": 1,
+        "f1_score": 0.98
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "input_speech": "/a/+/m/",
+      "feature_extraction": [
+        "Handcrafted feature extraction"
+      ],
+      "feature_selection": {
+        "methods": [
+          "ReliefF"
+        ]
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.9722,
+        "recall": 1,
+        "specificity": 0.9444,
+        "f1_score": 0.97
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "input_speech": "/m/+/o/",
+      "feature_extraction": [
+        "Handcrafted feature extraction"
+      ],
+      "feature_selection": {
+        "methods": [
+          "ReliefF"
+        ]
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.9866,
+        "recall": 0.9722,
+        "specificity": 1,
+        "f1_score": 1
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "input_speech": "/a/+/o/",
+      "feature_extraction": [
+        "Handcrafted feature extraction"
+      ],
+      "feature_selection": {
+        "methods": [
+          "ReliefF"
+        ]
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 1,
+        "recall": 1,
+        "specificity": 1,
+        "f1_score": 1
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "input_speech": "/a/+/m/+/o/",
+      "feature_extraction": [
+        "Handcrafted feature extraction"
+      ],
+      "feature_selection": {
+        "methods": [
+          "ReliefF"
+        ]
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 1,
+        "recall": 1,
+        "specificity": 1,
+        "f1_score": 1
+      }
+    }
+  ],
+  "note": "Study reports perfect classifiers even though they used LOSO cross-validation. Highly suspicious results.",
+  "source_dataset": [
+    {
+      "name": "Custom Dataset: Monash Medical Centre, Clayton, Australia",
+      "size": 72,
+      "pd_patients": 36,
+      "controls": 36,
+      "doi": "10.1109/LSC.2018.8572266"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Custom Dataset: Monash Medical Centre, Clayton, Australia",
+      "size": 72,
+      "pd_patients": 36,
+      "controls": 36,
+      "doi": "10.1109/LSC.2018.8572266"
+    }
+  ],
+  "study_id": "10.1109/ACCESS.2022.3203973_1"
+}

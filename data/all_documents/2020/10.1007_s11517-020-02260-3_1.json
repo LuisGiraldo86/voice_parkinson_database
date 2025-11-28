@@ -1,0 +1,106 @@
+{
+  "_id": {
+    "$oid": "68ecf00b6c43da02c16892e5"
+  },
+  "title": "Evaluation of Train and Test Performance of Machine Learning Algorithms and Parkinson Diagnosis with Statistical Measurements",
+  "authors": [
+    {
+      "name": "Emre Avuçlu",
+      "affiliations": [
+        {
+          "institution": "Aksaray University",
+          "country": "Turkey"
+        }
+      ]
+    },
+    {
+      "name": "Abdullah Elen",
+      "affiliations": [
+        {
+          "institution": "Karabuk University",
+          "country": "Turkey"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Medical & Biological Engineering & Computing",
+  "year": 2020,
+  "doi": "10.1007/s11517-020-02260-3",
+  "abstract": "Parkinson's disease is a neurological disorder that causes partial or complete loss of motor reflexes and speech and affects thinking, behavior, and other vital functions affecting the nervous system. Parkinson's disease causes impaired speech and motor abilities (writing, balance, etc.) in about 90% of patients and is often seen in older people. Some signs (deterioration of vocal cords) in medical voice recordings from Parkinson's patients are used to diagnose this disease. The database used in this study contains biomedical speech voice from 31 people of different age and sex related to this disease. The performance comparison of the machine learning algorithms k-Nearest Neighborhood (k-NN), Random Forest, Naive Bayes, and Support Vector Machine classifiers was performed with the used database. Moreover, the best classifier was determined for the diagnosis of Parkinson's disease. Eleven different training and test data (45x55, 50x50, 55x45, 60x40, 65x35, 70x30, 75x25, 80x20, 85x15, 90x10, 95x5) were processed separately. The data obtained from these training and tests were compared with statistical measurements. The training results of the k-NN classification algorithm were generally 100% successful. The best test result was obtained from Random Forest classifier with 85.81%. All statistical results and measured values are given in detail in the experimental studies section.",
+  "ml_approaches": [
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8564,
+        "recall": 0.7645,
+        "specificity": 0.7645,
+        "precision": 0.826,
+        "f1_score": 0.7867,
+        "mcc": 0.5872
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.7026,
+        "recall": 0.7676,
+        "specificity": 0.7676,
+        "precision": 0.6987,
+        "f1_score": 0.6807,
+        "mcc": 0.4612
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8513,
+        "recall": 0.8382,
+        "specificity": 0.8382,
+        "precision": 0.7974,
+        "f1_score": 0.8132,
+        "mcc": 0.6342
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8872,
+        "recall": 0.841,
+        "specificity": 0.841,
+        "precision": 0.851,
+        "f1_score": 0.8485,
+        "mcc": 0.6919
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1007/s11517-020-02260-3_1"
+}

@@ -1,0 +1,270 @@
+{
+  "_id": {
+    "$oid": "68ecf00b6c43da02c16892f4"
+  },
+  "title": "An Integrated Biometric Voice and Facial Features for Early Detection of Parkinson's Disease",
+  "authors": [
+    {
+      "name": "Wee Shin Lim ",
+      "affiliations": [
+        {
+          "institution": "National Taiwan University",
+          "country": "Taiwan"
+        }
+      ]
+    },
+    {
+      "name": "Shu-I Chiu",
+      "affiliations": [
+        {
+          "institution": "National Chengchi University",
+          "country": "Taiwan"
+        }
+      ]
+    },
+    {
+      "name": "Meng-Ciao Wu",
+      "affiliations": [
+        {
+          "institution": "National Taiwan University",
+          "country": "Taiwan"
+        }
+      ]
+    },
+    {
+      "name": "Shu-Fen Tsai",
+      "affiliations": [
+        {
+          "institution": "National Taiwan University",
+          "country": "Taiwan"
+        }
+      ]
+    },
+    {
+      "name": "Pu-He Wang",
+      "affiliations": [
+        {
+          "institution": "National Taiwan University",
+          "country": "Taiwan"
+        }
+      ]
+    },
+    {
+      "name": "Kun-Pei Lin",
+      "affiliations": [
+        {
+          "institution": "National Taiwan University",
+          "country": "Taiwan"
+        }
+      ]
+    },
+    {
+      "name": "Yung-Ming Chen",
+      "affiliations": [
+        {
+          "institution": "National Taiwan University",
+          "country": "Taiwan"
+        }
+      ]
+    },
+    {
+      "name": "Pein-Ling Peng",
+      "affiliations": [
+        {
+          "institution": "National Taiwan University",
+          "country": "Taiwan"
+        }
+      ]
+    },
+    {
+      "name": "Yung-Yaw Chen",
+      "affiliations": [
+        {
+          "institution": "National Taiwan University",
+          "country": "Taiwan"
+        }
+      ]
+    },
+    {
+      "name": "Jyh-Shing Roger Jang",
+      "affiliations": [
+        {
+          "institution": "National Taiwan University",
+          "country": "Taiwan"
+        }
+      ]
+    },
+    {
+      "name": "Chin-Hsien Lin",
+      "affiliations": [
+        {
+          "institution": "National Taiwan University",
+          "country": "Taiwan"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "npj Parkinson's Disease",
+  "year": 2022,
+  "doi": "10.1038/s41531-022-00414-8",
+  "abstract": "Hypomimia and voice changes are soft signs preceding classical motor disability in patients with Parkinson's disease (PD). We aim to investigate whether an analysis of acoustic and facial expressions with machine-learning algorithms assist early identification of patients with PD. We recruited 371 participants, including a training cohort (112 PD patients during 'on' phase, 111 controls) and a validation cohort (74 PD patients during 'off' phase, 74 controls). All participants underwent a smartphone-based, simultaneous recording of voice and facial expressions, while reading an article. Nine different machine learning classifiers were applied. We observed that integrated facial and voice features could discriminate early-stage PD patients from controls with an area under the receiver operating characteristic (AUROC) diagnostic value of 0.85. In the validation cohort, the optimal diagnostic value (0.90) maintained. We concluded that integrated biometric features of voice and facial expressions could assist the identification of early-stage PD patients from aged controls.",
+  "ml_approaches": [
+    {
+      "algorithm": "Decision Tree",
+      "feature_extraction": [
+        "Custom Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Sequential Forward Selection"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.69
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "feature_extraction": [
+        "Custom Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Sequential Forward Selection"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.81
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "feature_extraction": [
+        "Custom Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Sequential Forward Selection"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.74
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "feature_extraction": [
+        "Custom Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Sequential Forward Selection"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.81
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "feature_extraction": [
+        "Custom Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Sequential Forward Selection"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.84
+      }
+    },
+    {
+      "algorithm": "Gradient Boosting",
+      "feature_extraction": [
+        "Custom Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Sequential Forward Selection"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.72
+      }
+    },
+    {
+      "algorithm": "LightGBM",
+      "feature_extraction": [
+        "Custom Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Sequential Forward Selection"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.79
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "feature_extraction": [
+        "Custom Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Sequential Forward Selection"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.79
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "feature_extraction": [
+        "Custom Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Sequential Forward Selection"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.81
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Custom Dataset",
+      "size": 371,
+      "pd_patients": 186,
+      "controls": 185,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Custom Dataset",
+      "size": 371,
+      "pd_patients": 186,
+      "controls": 185,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.1038/s41531-022-00414-8_1"
+}

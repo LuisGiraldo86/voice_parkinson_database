@@ -1,0 +1,141 @@
+{
+  "_id": {
+    "$oid": "68ecf00b6c43da02c1689336"
+  },
+  "title": "Leveraging ANFIS with Adam and PSO optimizers for Parkinson's disease",
+  "authors": [
+    {
+      "name": "Akram Pasha",
+      "affiliations": [
+        {
+          "institution": "REVA University",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Syed Thouheed Ahmed",
+      "affiliations": [
+        {
+          "institution": "Indian Institute of Technology Hyderabad",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Ranjith Kumar Painam",
+      "affiliations": [
+        {
+          "institution": "Kallam Haranadhareddy Institute of Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Sandeep Kumar Mathivanan",
+      "affiliations": [
+        {
+          "institution": "Galgotias University",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Karthikeyan P",
+      "affiliations": [
+        {
+          "institution": "Vellore Institute of Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Saurav Mallik",
+      "affiliations": [
+        {
+          "institution": "Harvard T H Chan School of Public Health",
+          "country": "USA"
+        },
+        {
+          "institution": "University of Arizona",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Hong Qin",
+      "affiliations": [
+        {
+          "institution": "University of Tennessee at Chattanooga",
+          "country": "USA"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Helyon",
+  "year": 2024,
+  "doi": "10.1016/j.heliyon.2024.e30241",
+  "abstract": "Parkinson's disease (PD) is an age-related neurodegenerative disorder characterized by motor deficits, including tremor, rigidity, bradykinesia, and postural instability. According to the World Health Organization, about 1 % of the global population has been diagnosed with PD, and this figure is expected to double by 2040. Early and accurate diagnosis of PD is critical to slowing down the progression of the disease and reducing long-term disability. Due to the complexity of the disease, it is difficult to accurately diagnose it using traditional clinical tests. Therefore, it has become necessary to develop intelligent diagnostic models that can accurately detect PD. This article introduces a novel hybrid approach for accurate prediction of PD using an ANFIS with two optimizers, namely Adam and PSO. ANFIS is a type of fuzzy logic system used for nonlinear function approximation and classification, while Adam optimizer has the ability to adaptively adjust the learning rate of each individual parameter in an ANFIS at each training step, which helps the model find a better solution more quickly. PSO is a metaheuristic approach inspired by the behavior of social animals such as birds. Combining these two methods has potential to provide improved accuracy and robustness in PD diagnosis compared to existing methods. The proposed method utilized the advantages of both optimization techniques and applied them on the developed ANFIS model to maximize its prediction accuracy. This system was developed by using an open access clinical and demographic data. The chosen parameters for the ANFIS were selected through a comparative experimental analysis to optimize the model considering the number of fuzzy membership functions, number of epochs of ANFIS, and number of particles of PSO. The performance of the two ANFIS models: ANFIS (Adam) and ANFIS (PSO) focusing at ANFIS parameters and various evaluation metrics are further analyzed in detail and presented, The experimental results showed that the proposed ANFIS (PSO) shows better results in terms of loss and precision, whereas, the ANFIS (Adam) showed the better results in terms of accuracy, f1-score and recall. Thus, this adaptive neural-fuzzy algorithm provides a promising strategy for the diagnosis of PD, and show that the proposed models show their suitability for many other practical applications.",
+  "ml_approaches": [
+    {
+      "algorithm": "Artificial Neuro Fuzzy Inference System",
+      "scaling": [
+        "Min Max"
+      ],
+      "optimization": "Adam",
+      "feature_selection": {
+        "methods": [
+          "Extra Tree"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8252,
+        "precision": 0.8618,
+        "recall": 0.9138,
+        "f1_score": 0.8868
+      }
+    },
+    {
+      "algorithm": "Artificial Neuro Fuzzy Inference System",
+      "scaling": [
+        "Min Max"
+      ],
+      "optimization": "Particle Swarm Optimization",
+      "feature_selection": {
+        "methods": [
+          "Extra Tree"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.7776,
+        "precision": 0.9102,
+        "recall": 0.8124,
+        "f1_score": 0.8578
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "study_id": "10.1016/j.heliyon.2024.e30241_1"
+}

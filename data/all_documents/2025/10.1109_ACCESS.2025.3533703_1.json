@@ -1,0 +1,209 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c1689350"
+  },
+  "title": "Design of an Early Prediction Model for Parkinson's Disease Using Machine Learning",
+  "authors": [
+    {
+      "name": "K. Velu",
+      "affiliations": [
+        {
+          "institution": "Vellore Institute of Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "N. Jaisankar",
+      "affiliations": [
+        {
+          "institution": "Vellore Institute of Technology",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "IEEE Access",
+  "year": 2025,
+  "doi": "10.1109/ACCESS.2025.3533703",
+  "citescore": null,
+  "abstract": "Parkinson's Disease (PD) is a chronic and progressive neurological disorder that impairs the body's nervous system pathways. This disruption results in multiple complications related to movement and control, manifesting as symptoms such as tremors, rigidity, and impaired coordination. In the initial phases of PD, individuals have trouble with speech and exhibit a slow rate of verbal expression. Dysphonia is seventy to ninety percent of persons with Parkinson's disease report a speech impairment or modification in speech, and it serves as a preliminary indicator of the disease. Consequently, speech can be a crucial modality in the initial phase of Parkinson's disease prediction. In literature, diverse Machine Learning models are employed for Parkinson's disease diagnosis utilizing voice analysis. Challenges such as class imbalance, feature selection, and interpretable predictive analysis still need to be addressed. Furthermore, the precision and reliability of the predictive outcomes are crucial to enhance healthcare services. Consequently, we propose an Explainable balanced Recursive Feature Importance with Logistic Regression (XRFILR) model to address the abovementioned issues. The proposed model extracts the pertinent features using an RFE with a Logistic Regression classifier and evaluates the feature significance in Parkinson's disease prediction using eXplainable Artificial Intelligence. We employed the seven machine learning classifiers the model offers to diagnose Parkinson's disease using significant speech data. Among these ML models, the proposed model achieved an accuracy of 96.46%, surpassing existing machine learning techniques.",
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "KMeansSMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: Logistic Regression"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9336,
+        "precision": 0.9393,
+        "recall": 0.9336,
+        "f1_score": 0.9333
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "KMeansSMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: Logistic Regression"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9248,
+        "precision": 0.9303,
+        "recall": 0.9248,
+        "f1_score": 0.9245
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "KMeansSMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: Logistic Regression"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9425,
+        "precision": 0.9425,
+        "recall": 0.9425,
+        "f1_score": 0.9425
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "KMeansSMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: Logistic Regression"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9513,
+        "precision": 0.9541,
+        "recall": 0.9513,
+        "f1_score": 0.9512
+      }
+    },
+    {
+      "algorithm": "CatBoost",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "KMeansSMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: Logistic Regression"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9292,
+        "precision": 0.9313,
+        "recall": 0.9292,
+        "f1_score": 0.9290999999999999
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "KMeansSMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: Logistic Regression"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9071,
+        "precision": 0.9071,
+        "recall": 0.9071,
+        "f1_score": 0.9070999999999999
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "KMeansSMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: Logistic Regression"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9646,
+        "precision": 0.9646,
+        "recall": 0.9646,
+        "f1_score": 0.9645999999999999
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Disease Classificatio",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Disease Classificatio",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "study_id": "10.1109/ACCESS.2025.3533703_1"
+}

@@ -1,0 +1,71 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893ac"
+  },
+  "title": "Hybrid Optimization Enabled Deep Learning Model for Parkinson's Disease Classification",
+  "authors": [
+    {
+      "name": "Dharani M. K.",
+      "affiliations": [
+        {
+          "institution": "Kongu Engineering College",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Thamilselvan R.",
+      "affiliations": [
+        {
+          "institution": "Kongu Engineering College",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Imaging Science Journal",
+  "year": 2024,
+  "doi": "10.1080/13682199.2023.2200060",
+  "abstract": "The analysis of Parkinson's disease (PD) is an inspiring task that necessitates the analysis of numerous motor and non-motor indications. During analysis, some abnormalities are considered as important symptoms to analyze the disease. Hence, this research introduced the proposed chronological smart sunflower optimization Algorithm (CSSFOA) for classifying the PD from voice data and voice signal samples. For voice signal, the input signals are pre-processed by the Gaussian filter, and then the significant features are extracted from it. The selection of optimal features is done by the chronological smart flower optimization Algorithm (CSFOA). The proposed CSFOA-based feature selection method considered the features by the Bray-Curtis distance. The PD classification is done by the ZF-Net which is trained by proposed CSSFOA to increase the performance of classification. The experimental result reveals that the proposed CSSFOA_ZF-Net algorithm got a better testing accuracy of 0.945, a sensitivity of 0.919, and a specificity of 0.957.",
+  "citescore": 2.8,
+  "ml_approaches": [
+    {
+      "algorithm": "ZF-Net",
+      "optimization": "Chronological Smart Sunflower Optimization Algorithm",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Chronological Smart Sunflower Optimization Algorithm"
+        ]
+      },
+      "validation": "9-fold cross-validation",
+      "results": {
+        "accuracy": 0.945,
+        "recall": 0.919,
+        "specificity": 0.957
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "study_id": "10.1080/13682199.2023.2200060_1"
+}

@@ -1,0 +1,115 @@
+{
+  "_id": {
+    "$oid": "68ecf00b6c43da02c16892ec"
+  },
+  "title": "Investigating Voice as a Biomarker: Deep Phenotyping Methods for Early Detection of Parkinson's Disease",
+  "authors": [
+    {
+      "name": "John M. Tracy",
+      "affiliations": [
+        {
+          "institution": "University of Washington",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Yasin Özkanca",
+      "affiliations": [
+        {
+          "institution": "Ozyegin University",
+          "country": "Turkey"
+        }
+      ]
+    },
+    {
+      "name": "David C. Atkins",
+      "affiliations": [
+        {
+          "institution": "University of Washington",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Reza Hosseini Ghomi",
+      "affiliations": [
+        {
+          "institution": "University of Washington",
+          "country": "USA"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Journal of Biomedical Informatics",
+  "year": 2020,
+  "doi": "10.1016/j.jbi.2019.103362",
+  "abstract": "Voice technology has grown tremendously in recent years and using voice as a biomarker has also been gaining evidence. We demonstrate the potential of voice in serving as a deep phenotype for Parkinson's Disease (PD), the second most common neurodegenerative disorder worldwide, by presenting methodology for voice signal processing for clinical analysis. Detection of PD symptoms typically requires an exam by a movement disorder specialist and can be hard to access and inconsistent in findings. A vocal digital biomarker could supplement the cumbersome existing manual exam by detecting and quantifying symptoms to guide treatment. Specifically, vocal biomarkers of PD are a potentially effective method of assessing symptoms and severity in daily life, which is the focus of the current research. We analyzed a database of PD patient and non-PD subjects containing voice recordings that were used to extract paralinguistic features, which served as inputs to machine learning models to predict PD severity. The results are presented here and the limitations are discussed given the nature of the recordings. We note that our methodology only advances biomarker research and is not cleared for clinical use. Specifically, we demonstrate that conventional machine learning models applied to voice signals can be used to differentiate participants with PD who exhibit little to no symptoms from healthy controls. This work highlights the potential of voice to be used for early detection of PD and indicates that voice may serve as a deep phenotype for PD, enabling precision medicine by improving the speed, accuracy, accessibility, and cost of PD management.",
+  "ml_approaches": [
+    {
+      "algorithm": "Ridge",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "recall": 0.608,
+        "precision": 0.71,
+        "f1_score": 0.655
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "recall": 0.391,
+        "precision": 0.777,
+        "f1_score": 0.52
+      }
+    },
+    {
+      "algorithm": "Gradient Boosting",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Feature Importance"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "recall": 0.646,
+        "precision": 0.849,
+        "f1_score": 0.688
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "mPower",
+      "size": 398,
+      "pd_patients": 188,
+      "controls": 210,
+      "url": "https://www.synapse.org/Synapse:syn4993293/wiki/247859"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "mPower",
+      "size": 398,
+      "pd_patients": 188,
+      "controls": 210,
+      "url": "https://www.synapse.org/Synapse:syn4993293/wiki/247859"
+    }
+  ],
+  "study_id": "10.1016/j.jbi.2019.103362_1"
+}

@@ -1,0 +1,372 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c1689427"
+  },
+  "title": "Non-negative Matrix Factorization-based Time-Frequency Feature Extraction of Voice Signal for Parkinson's Disease Prediction",
+  "authors": [
+    {
+      "name": "Biswajit Karan",
+      "affiliations": [
+        {
+          "institution": "Birla Institute of Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Sitanshu Sekhar Sahu",
+      "affiliations": [
+        {
+          "institution": "Birla Institute of Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Nsiri BenayadJuan Rafael Orozco-Arroyave",
+      "affiliations": [
+        {
+          "institution": "Universidad de Antioquia",
+          "country": "Colombia"
+        }
+      ]
+    },
+    {
+      "name": "Kartik Mahto",
+      "affiliations": [
+        {
+          "institution": "Birla Institute of Technology",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Computer Speech & Language",
+  "year": 2021,
+  "doi": "10.1016/j.csl.2021.101216",
+  "abstract": "Parkinson's disease (PD) is a neuron related disorder that affects the people in old age. The majority of people suffering from PD develop several voice impairments mainly related to what is known as dysarthric speech. Voice analysis can help in PD detection and in the evaluation of the dysarthria level of the patients. This study introduces time-frequency features to model discontinuities and abrupt changes that arise in the voice signal due to PD. The proposed method consists of four stages: time-frequency matrix (TFM) representation, TFM decomposition using non-negative matrix factorization (NMF), feature extraction and classification. Statistical analyses show that the proposed time-frequency features significantly differentiate between PD patients and healthy speakers. Experiments with sustained vowel phonations and isolated words of the corpus PC-GITA are conducted. The proposed method achieved average classification accuracies of up to 92% in vowels, and 97% in words. There is an improvement in accuracy ranging from 10% to 40% compared to existing methods. Further, the developed models are evaluated upon an independent dataset. Results on this separate test set show accuracies ranging from 63% to 75% in vowels, and from 53% to 75% in isolated words. Regarding the dysarthria level evaluation, Spearman's correlations between original and predicted labels are around 0.81 in sustained vowels and in isolated words. The results indicate that the proposed approach is suitable and robust for the automatic detection of PD.",
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "input_speech": "/a/",
+      "feature_extraction": [
+        "Short-Time Fourier Transform",
+        "Time Frequency"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Non-negative Matrix Factorization"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.85,
+        "f1_score": 0.84,
+        "mcc": 0.7
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "input_speech": "/a/",
+      "feature_extraction": [
+        "Short-Time Fourier Transform",
+        "Acoustic Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Non-negative Matrix Factorization"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.65,
+        "f1_score": 0.6,
+        "mcc": 0.31
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "input_speech": "/a/",
+      "feature_extraction": [
+        "Short-Time Fourier Transform",
+        "Mel-Frequency Cepstral Coefficients"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Non-negative Matrix Factorization"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.55,
+        "f1_score": 0.47,
+        "mcc": 0.13
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "input_speech": "/e/",
+      "feature_extraction": [
+        "Short-Time Fourier Transform",
+        "Time Frequency"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Non-negative Matrix Factorization"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.92,
+        "f1_score": 0.92,
+        "mcc": 0.84
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "input_speech": "/e/",
+      "feature_extraction": [
+        "Short-Time Fourier Transform",
+        "Acoustic Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Non-negative Matrix Factorization"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.62,
+        "f1_score": 0.54,
+        "mcc": 0.26
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "input_speech": "/e/",
+      "validation": "train/test split",
+      "feature_extraction": [
+        "Short-Time Fourier Transform",
+        "Mel-Frequency Cepstral Coefficients"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Non-negative Matrix Factorization"
+        ]
+      },
+      "results": {
+        "accuracy": 0.57,
+        "f1_score": 0.51,
+        "mcc": 0.21
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "input_speech": "/i/",
+      "validation": "train/test split",
+      "feature_extraction": [
+        "Short-Time Fourier Transform",
+        "Time Frequency"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Non-negative Matrix Factorization"
+        ]
+      },
+      "results": {
+        "accuracy": 0.9,
+        "f1_score": 0.9,
+        "mcc": 0.81
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "input_speech": "/i/",
+      "validation": "train/test split",
+      "feature_extraction": [
+        "Short-Time Fourier Transform",
+        "Acoustic Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Non-negative Matrix Factorization"
+        ]
+      },
+      "results": {
+        "accuracy": 0.62,
+        "f1_score": 0.54,
+        "mcc": 0.26
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "input_speech": "/i/",
+      "validation": "train/test split",
+      "feature_extraction": [
+        "Short-Time Fourier Transform",
+        "Mel-Frequency Cepstral Coefficients"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Non-negative Matrix Factorization"
+        ]
+      },
+      "results": {
+        "accuracy": 0.61,
+        "f1_score": 0.56,
+        "mcc": 0.23
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "input_speech": "/o/",
+      "validation": "train/test split",
+      "feature_extraction": [
+        "Short-Time Fourier Transform",
+        "Time Frequency"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Non-negative Matrix Factorization"
+        ]
+      },
+      "results": {
+        "accuracy": 0.91,
+        "f1_score": 0.891,
+        "mcc": 0.82
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "input_speech": "/o/",
+      "validation": "train/test split",
+      "feature_extraction": [
+        "Short-Time Fourier Transform",
+        "Acoustic Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Non-negative Matrix Factorization"
+        ]
+      },
+      "results": {
+        "accuracy": 0.59,
+        "f1_score": 0.49,
+        "mcc": 0.2
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "input_speech": "/o/",
+      "validation": "train/test split",
+      "feature_extraction": [
+        "Short-Time Fourier Transform",
+        "Mel-Frequency Cepstral Coefficients"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Non-negative Matrix Factorization"
+        ]
+      },
+      "results": {
+        "accuracy": 0.51,
+        "f1_score": 0.45,
+        "mcc": 0.17
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "input_speech": "/u/",
+      "validation": "train/test split",
+      "feature_extraction": [
+        "Short-Time Fourier Transform",
+        "Time Frequency"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Non-negative Matrix Factorization"
+        ]
+      },
+      "results": {
+        "accuracy": 0.91,
+        "f1_score": 0.91,
+        "mcc": 0.82
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "input_speech": "/u/",
+      "validation": "train/test split",
+      "feature_extraction": [
+        "Short-Time Fourier Transform",
+        "Acoustic Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Non-negative Matrix Factorization"
+        ]
+      },
+      "results": {
+        "accuracy": 0.6,
+        "f1_score": 0.56,
+        "mcc": 0.27
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "input_speech": "/u/",
+      "validation": "train/test split",
+      "feature_extraction": [
+        "Short-Time Fourier Transform",
+        "Mel-Frequency Cepstral Coefficients"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Non-negative Matrix Factorization"
+        ]
+      },
+      "results": {
+        "accuracy": 0.58,
+        "f1_score": 0.57,
+        "mcc": 0.19
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "PC-GITA",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://paperswithcode.com/dataset/pc-gita",
+      "doi": ""
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "PC-GITA",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://paperswithcode.com/dataset/pc-gita",
+      "doi": ""
+    }
+  ],
+  "study_id": "10.1016/j.csl.2021.101216_1"
+}

@@ -1,0 +1,772 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893bb"
+  },
+  "title": "A Comparative Analysis of Machine Learning classifiers for Dysphonia-based classification of Parkinson's Disease",
+  "authors": [
+    {
+      "name": "Jinee Goyal",
+      "affiliations": [
+        {
+          "institution": "Punjab Engineering College",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Padmavati Khandnor",
+      "affiliations": [
+        {
+          "institution": "Punjab Engineering College",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Trilok Chand Aseri",
+      "affiliations": [
+        {
+          "institution": "Punjab Engineering College",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "International Journal of Data Science and Analytics",
+  "year": 2021,
+  "doi": "10.1007/s41060-020-00234-0",
+  "abstract": "Parkinson's Disease is the second most common neurogenerative disease that affects the nervous system. There is no permanent cure for this disease, so, its early diagnosis is important to improve the quality of living of Parkinson patients. The distortion of the voice is one of the ﬁrst symptoms to appear in Parkinson patients. Therefore, comparison and classiﬁcation plays an important role. In this paper, a comparison of various classiﬁcation techniques is done to show the potential of each classiﬁer. The various classiﬁcation techniques include SVM (Linear, RBF, Polynomial), DT, RF, LR, KNN, NB, MLP, AdaBoost, and XGBoost. Three different types of feature selection techniques are also explored to reduce the dimensionality of the dataset without affecting the accuracy much. The three different feature selection techniques include mRMR, GA, and PCA. The potential of voice features in classiﬁcation process is also shown.",
+  "citescore": 5,
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "results": {
+        "accuracy": 0.8227,
+        "recall": 0.87,
+        "specificity": 0.66,
+        "precision": 0.88,
+        "f1_score": 0.88
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "results": {
+        "accuracy": 0.8584,
+        "recall": 0.98,
+        "specificity": 0.48,
+        "precision": 0.84,
+        "f1_score": 0.91
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Polynomial",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "results": {
+        "accuracy": 0.8068,
+        "recall": 0.98,
+        "specificity": 0.27,
+        "precision": 0.8,
+        "f1_score": 0.88
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "results": {
+        "accuracy": 0.8531,
+        "recall": 0.92,
+        "specificity": 0.64,
+        "precision": 0.8,
+        "f1_score": 0.88
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "results": {
+        "accuracy": 0.7936,
+        "recall": 0.91,
+        "specificity": 0.44,
+        "precision": 0.82,
+        "f1_score": 0.86
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "results": {
+        "accuracy": 0.8386,
+        "recall": 0.87,
+        "specificity": 0.73,
+        "precision": 0.9,
+        "f1_score": 0.88
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "results": {
+        "accuracy": 0.873,
+        "recall": 0.97,
+        "specificity": 0.56,
+        "precision": 0.86,
+        "f1_score": 0.91
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "results": {
+        "accuracy": 0.8029,
+        "recall": 0.85,
+        "specificity": 0.66,
+        "precision": 0.88,
+        "f1_score": 0.86
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "results": {
+        "accuracy": 0.8955,
+        "recall": 0.96,
+        "specificity": 0.69,
+        "precision": 0.9,
+        "f1_score": 0.93
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "results": {
+        "accuracy": 0.8796,
+        "recall": 0.94,
+        "specificity": 0.68,
+        "precision": 0.89,
+        "f1_score": 0.92
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "results": {
+        "accuracy": 0.907,
+        "recall": 0.98,
+        "specificity": 0.68,
+        "precision": 0.9,
+        "f1_score": 0.94
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Minimum Redundancy Maximum Relevance"
+        ]
+      },
+      "results": {
+        "accuracy": 0.8439,
+        "recall": 0.95,
+        "precision": 0.85,
+        "specificity": 0.51,
+        "f1_score": 0.9
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Minimum Redundancy Maximum Relevance"
+        ]
+      },
+      "results": {
+        "accuracy": 0.8439,
+        "recall": 0.96,
+        "precision": 0.84,
+        "specificity": 0.47,
+        "f1_score": 0.9
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Polynomial",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Minimum Redundancy Maximum Relevance"
+        ]
+      },
+      "results": {
+        "accuracy": 0.8068,
+        "recall": 0.96,
+        "precision": 0.8,
+        "specificity": 0.32,
+        "f1_score": 0.88
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Minimum Redundancy Maximum Relevance"
+        ]
+      },
+      "results": {
+        "accuracy": 0.8412,
+        "recall": 0.91,
+        "precision": 0.87,
+        "specificity": 0.61,
+        "f1_score": 0.89
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Minimum Redundancy Maximum Relevance"
+        ]
+      },
+      "results": {
+        "accuracy": 0.7724,
+        "recall": 0.88,
+        "precision": 0.82,
+        "specificity": 0.45,
+        "f1_score": 0.85
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Minimum Redundancy Maximum Relevance"
+        ]
+      },
+      "results": {
+        "accuracy": 0.8306,
+        "recall": 0.94,
+        "precision": 0.84,
+        "specificity": 0.5,
+        "f1_score": 0.89
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Minimum Redundancy Maximum Relevance"
+        ]
+      },
+      "results": {
+        "accuracy": 0.865,
+        "recall": 0.88,
+        "precision": 0.93,
+        "specificity": 0.81,
+        "f1_score": 0.9
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Minimum Redundancy Maximum Relevance"
+        ]
+      },
+      "results": {
+        "accuracy": 0.783,
+        "recall": 0.86,
+        "precision": 0.84,
+        "specificity": 0.55,
+        "f1_score": 0.85
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Minimum Redundancy Maximum Relevance"
+        ]
+      },
+      "results": {
+        "accuracy": 0.8346,
+        "recall": 0.94,
+        "precision": 0.84,
+        "specificity": 0.5,
+        "f1_score": 0.89
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Minimum Redundancy Maximum Relevance"
+        ]
+      },
+      "results": {
+        "accuracy": 0.8412,
+        "recall": 0.92,
+        "precision": 0.87,
+        "specificity": 0.59,
+        "f1_score": 0.89
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Minimum Redundancy Maximum Relevance"
+        ]
+      },
+      "results": {
+        "accuracy": 0.8664,
+        "recall": 0.95,
+        "precision": 0.87,
+        "specificity": 0.59,
+        "f1_score": 0.91
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "results": {
+        "accuracy": 0.8359,
+        "recall": 0.88,
+        "precision": 0.89,
+        "specificity": 0.68,
+        "f1_score": 0.88
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "results": {
+        "accuracy": 0.8531,
+        "recall": 0.98,
+        "precision": 0.84,
+        "specificity": 0.47,
+        "f1_score": 0.9
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Polynomial",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "results": {
+        "accuracy": 0.8068,
+        "recall": 0.98,
+        "precision": 0.79,
+        "specificity": 0.27,
+        "f1_score": 0.88
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "results": {
+        "accuracy": 0.8796,
+        "recall": 0.96,
+        "precision": 0.88,
+        "specificity": 0.61,
+        "f1_score": 0.92
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "results": {
+        "accuracy": 0.8505,
+        "recall": 0.93,
+        "precision": 0.87,
+        "specificity": 0.69,
+        "f1_score": 0.9
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "results": {
+        "accuracy": 0.8373,
+        "recall": 0.9,
+        "precision": 0.87,
+        "specificity": 0.63,
+        "f1_score": 0.89
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "results": {
+        "accuracy": 0.8359,
+        "recall": 0.96,
+        "precision": 0.83,
+        "specificity": 0.45,
+        "f1_score": 0.89
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "results": {
+        "accuracy": 0.7962,
+        "recall": 0.85,
+        "precision": 0.87,
+        "specificity": 0.62,
+        "f1_score": 0.86
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "results": {
+        "accuracy": 0.8637,
+        "recall": 0.92,
+        "precision": 0.89,
+        "specificity": 0.67,
+        "f1_score": 0.91
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "results": {
+        "accuracy": 0.914,
+        "recall": 0.97,
+        "precision": 0.91,
+        "specificity": 0.73,
+        "f1_score": 0.94
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "scaling": [
+        "Standardization"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "results": {
+        "accuracy": 0.7742,
+        "recall": 0.98,
+        "precision": 0.77,
+        "specificity": 0.14,
+        "f1_score": 0.86
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "scaling": [
+        "Standardization"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "results": {
+        "accuracy": 0.7658,
+        "recall": 0.92,
+        "precision": 0.79,
+        "specificity": 0.3,
+        "f1_score": 0.85
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Polynomial",
+      "scaling": [
+        "Standardization"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "results": {
+        "accuracy": 0.7791,
+        "recall": 0.98,
+        "precision": 0.77,
+        "specificity": 0.17,
+        "f1_score": 0.86
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "scaling": [
+        "Standardization"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "results": {
+        "accuracy": 0.7632,
+        "recall": 0.84,
+        "precision": 0.83,
+        "specificity": 0.52,
+        "f1_score": 0.84
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "scaling": [
+        "Standardization"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "results": {
+        "accuracy": 0.6891,
+        "recall": 0.84,
+        "precision": 0.76,
+        "specificity": 0.21,
+        "f1_score": 0.8
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "scaling": [
+        "Standardization"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "results": {
+        "accuracy": 0.7962,
+        "recall": 0.94,
+        "precision": 0.81,
+        "specificity": 0.36,
+        "f1_score": 0.87
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "scaling": [
+        "Standardization"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "results": {
+        "accuracy": 0.7685,
+        "recall": 0.87,
+        "precision": 0.82,
+        "specificity": 0.45,
+        "f1_score": 0.84
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "scaling": [
+        "Standardization"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "results": {
+        "accuracy": 0.791,
+        "recall": 0.94,
+        "precision": 0.8,
+        "specificity": 0.32,
+        "f1_score": 0.87
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "scaling": [
+        "Standardization"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "results": {
+        "accuracy": 0.787,
+        "recall": 0.93,
+        "precision": 0.8,
+        "specificity": 0.34,
+        "f1_score": 0.86
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "scaling": [
+        "Standardization"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "results": {
+        "accuracy": 0.7486,
+        "recall": 0.89,
+        "precision": 0.79,
+        "specificity": 0.31,
+        "f1_score": 0.84
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "scaling": [
+        "Standardization"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "results": {
+        "accuracy": 0.7936,
+        "recall": 0.92,
+        "precision": 0.82,
+        "specificity": 0.41,
+        "f1_score": 0.86
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "study_id": "10.1007/s41060-020-00234-0_1"
+}

@@ -1,0 +1,359 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c168942c"
+  },
+  "title": "Parkinson's Disease Detection from Voice Signals Using Adaptive Frequency Attribute Topology",
+  "authors": [
+    {
+      "name": "Tao Zhang",
+      "affiliations": [
+        {
+          "institution": "Yanshan University",
+          "country": "China"
+        },
+        {
+          "institution": "Hebei Key Laboratory of Information Transmission and Signal Processing",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Jing Tian",
+      "affiliations": [
+        {
+          "institution": "Yanshan University, China",
+          "country": "China"
+        },
+        {
+          "institution": "Hebei Key Laboratory of Information Transmission and Signal Processing",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Zaifa Xue",
+      "affiliations": [
+        {
+          "institution": "Yanshan University, China",
+          "country": "China"
+        },
+        {
+          "institution": "Hebei Key Laboratory of Information Transmission and Signal Processing",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Xiaonan Guo",
+      "affiliations": [
+        {
+          "institution": "Yanshan University, China",
+          "country": "China"
+        },
+        {
+          "institution": "Hebei Key Laboratory of Information Transmission and Signal Processing",
+          "country": "China"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Biomedical Signal Processing and Control",
+  "year": 2025,
+  "doi": "10.1016/j.bspc.2025.107592",
+  "abstract": "Dysphonia is one of the early symptoms of Parkinson's disease (PD). The voice features extracted from voice signals can be effectively used for PD detection. Among them, the energy features extracted based on attribute topology have achieved preliminary results by combining time-frequency domain and structure representation. However, these energy features are susceptible to temporal fluctuation and are sensitive to weak coupling, which reduces their stability and representativeness. To solve these problems, this paper proposes the connected structural feature based on adaptive frequency attribute topology (CS-AFAT). Firstly, the energy statistic windows are established according to the distribution of spectral lines in the spectrogram for the aggregated statistics of energy information in time domain, which can effectively eliminate the influence of time disturbances. Secondly, the attribute topology is established to preform visualized statistics on the energy variation information of each point in the window. Finally, to reduce the influence of weak coupling in the topology, the adaptive threshold mechanism is designed to remove the edge with low coupling strength in the topology, so as to obtain more stable and representative features for PD classification. The results on two different language datasets show that the highest classification accuracy of CS-AFAT is 92.41% and 96.67%. The advantage of the proposed CS-AFAT is that it can obtain classification performance superior to or comparable to advanced energy features while having low-dimensional feature representation, which verifies the effectiveness and advancement of the CS-AFAT feature extracted by combining global energy information statistics and adaptive threshold mechanism.",
+  "ml_approaches": [
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "feature_extraction": [
+        "Short Term Fourier Transform",
+        "Connected Structural Feature Based on Adaptive Frequency Attribute Topology"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.9718,
+        "recall": 0.9839,
+        "precision": 0.9724,
+        "f1_score": 0.978
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "feature_extraction": [
+        "Short Term Fourier Transform",
+        "Connected Structural Feature Based on Adaptive Frequency Attribute Topology"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9744,
+        "recall": 0.984,
+        "precision": 0.9766,
+        "f1_score": 0.9801000000000001
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "feature_extraction": [
+        "Short Term Fourier Transform",
+        "Connected Structural Feature Based on Adaptive Frequency Attribute Topology"
+      ],
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.9641,
+        "recall": 0.9839,
+        "precision": 0.9606,
+        "f1_score": 0.9721
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "feature_extraction": [
+        "Short Term Fourier Transform",
+        "Connected Structural Feature Based on Adaptive Frequency Attribute Topology"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.9256,
+        "recall": 0.947,
+        "precision": 0.9358,
+        "f1_score": 0.9390000000000001
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "feature_extraction": [
+        "Short Term Fourier Transform",
+        "Connected Structural Feature Based on Adaptive Frequency Attribute Topology"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9103,
+        "recall": 0.9598,
+        "precision": 0.9065,
+        "f1_score": 0.9316
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "feature_extraction": [
+        "Short Term Fourier Transform",
+        "Connected Structural Feature Based on Adaptive Frequency Attribute Topology"
+      ],
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.8923,
+        "recall": 0.9315,
+        "precision": 0.9023,
+        "f1_score": 0.9167000000000001
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "feature_extraction": [
+        "Short Term Fourier Transform",
+        "Connected Structural Feature Based on Adaptive Frequency Attribute Topology"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.9769,
+        "recall": 0.9838,
+        "precision": 0.98,
+        "f1_score": 0.9818000000000001
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "feature_extraction": [
+        "Short Term Fourier Transform",
+        "Connected Structural Feature Based on Adaptive Frequency Attribute Topology"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9769,
+        "recall": 0.9877,
+        "precision": 0.9763,
+        "f1_score": 0.9818000000000001
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "feature_extraction": [
+        "Short Term Fourier Transform",
+        "Connected Structural Feature Based on Adaptive Frequency Attribute Topology"
+      ],
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.9667,
+        "recall": 0.9677,
+        "precision": 0.9795,
+        "f1_score": 0.9734999999999999
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_extraction": [
+        "Short Term Fourier Transform",
+        "Connected Structural Feature Based on Adaptive Frequency Attribute Topology"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.9615,
+        "recall": 0.9838,
+        "precision": 0.9583,
+        "f1_score": 0.9704
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_extraction": [
+        "Short Term Fourier Transform",
+        "Connected Structural Feature Based on Adaptive Frequency Attribute Topology"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9641,
+        "recall": 0.9838,
+        "precision": 0.9623,
+        "f1_score": 0.9723999999999999
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_extraction": [
+        "Short Term Fourier Transform",
+        "Connected Structural Feature Based on Adaptive Frequency Attribute Topology"
+      ],
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.9436,
+        "recall": 0.9798,
+        "precision": 0.9346,
+        "f1_score": 0.9567
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "feature_extraction": [
+        "Short Term Fourier Transform",
+        "Connected Structural Feature Based on Adaptive Frequency Attribute Topology"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.9769,
+        "recall": 0.9879,
+        "precision": 0.9764,
+        "f1_score": 0.9821
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "feature_extraction": [
+        "Short Term Fourier Transform",
+        "Connected Structural Feature Based on Adaptive Frequency Attribute Topology"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9744,
+        "recall": 0.988,
+        "precision": 0.9729,
+        "f1_score": 0.9802
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "feature_extraction": [
+        "Short Term Fourier Transform",
+        "Connected Structural Feature Based on Adaptive Frequency Attribute Topology"
+      ],
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.9564,
+        "recall": 0.9879,
+        "precision": 0.9459,
+        "f1_score": 0.9665
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "feature_extraction": [
+        "Short Term Fourier Transform",
+        "Connected Structural Feature Based on Adaptive Frequency Attribute Topology"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.9615,
+        "recall": 0.9758,
+        "precision": 0.9647,
+        "f1_score": 0.97
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "feature_extraction": [
+        "Short Term Fourier Transform",
+        "Connected Structural Feature Based on Adaptive Frequency Attribute Topology"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.959,
+        "recall": 0.968,
+        "precision": 0.9682,
+        "f1_score": 0.9677
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "feature_extraction": [
+        "Short Term Fourier Transform",
+        "Connected Structural Feature Based on Adaptive Frequency Attribute Topology"
+      ],
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.9308,
+        "recall": 0.9476,
+        "precision": 0.9438,
+        "f1_score": 0.9457
+      }
+    }
+  ],
+  "source_code": "https://github.com/ysutaoteam/CS-AFAT.",
+  "source_dataset": [
+    {
+      "name": "Parkinson's Speech with Multiple Types of Sound Recordings",
+      "size": 40,
+      "pd_patients": 20,
+      "controls": 20,
+      "url": "https://archive.ics.uci.edu/dataset/301/parkinson+speech+dataset+with+multiple+types+of+sound+recordings",
+      "doi": "10.24432/C5NC8M"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Speech with Multiple Types of Sound Recordings",
+      "size": 40,
+      "pd_patients": 20,
+      "controls": 20,
+      "url": "https://archive.ics.uci.edu/dataset/301/parkinson+speech+dataset+with+multiple+types+of+sound+recordings",
+      "doi": "10.24432/C5NC8M"
+    }
+  ],
+  "study_id": "10.1016/j.bspc.2025.107592_1"
+}

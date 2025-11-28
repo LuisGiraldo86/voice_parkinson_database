@@ -1,0 +1,123 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c168936f"
+  },
+  "title": "Optimized grass hopper algorithm for diagnosis of Parkinson's disease",
+  "authors": [
+    {
+      "name": "Shallu Sehgal",
+      "affiliations": [
+        {
+          "institution": "Banasthali Vidyapeeth",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Manisha Agarwal",
+      "affiliations": [
+        {
+          "institution": "Banasthali Vidyapeeth",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Deepak Gupta",
+      "affiliations": [
+        {
+          "institution": "Maharaja Agrasen Institute of Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Shirsh Sundaram",
+      "affiliations": [
+        {
+          "institution": "Maharaja Agrasen Institute of Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Arun Bashambu",
+      "affiliations": [
+        {
+          "institution": "Banasthali Vidyapeeth",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "SN Applied Sciences",
+  "year": 2020,
+  "doi": "110.1007/s42452-020-2826-9",
+  "abstract": "The Modified Grasshopper Optimization Algorithm which identifies Parkinson disease symptoms at an early (premature) stage was proposed. Parkinson disease, type of movement ailment, could be life-threatening if not treated at premature stage. Therefore, diagnosis of Parkinson disease became essential in early stages so that all the symptoms could be controlled by giving required medication to the patient. Hence ensuring the patient longevity. As part of this research work, a novel model Modified Grasshopper Optimization Algorithm was introduced which was based on the traditional Grasshopper Optimization Algorithm and search strategy for feature selection. Grasshopper Optimization Algorithm was relatively a novel heuristic optimization swarm intelligence algorithm which was stimulated by grasshoppers searching for food. This population-based method has capability to provide solution for real-life problems in undefined search space. It mimics grasshopper swarm's behaviour and their social interaction. Popular algorithms like Random Forest, Decision Tree and k-Nearest Neighbour classifier were used in judgement on shortlisted aka selected features. Different datasets of handwriting (meander and spiral), speech and voice were used for evaluating the presented model. The proposed algorithm was effective in Parkinson disease identification having accuracy (computed) of 95.37%, 99.47% detection rate and 15.78% false alarm rate. This helps larger cause of patient in receiving treatment in pre-mature stage. The presented bio-inspired algorithm was adequately steady and has ability to identify the optimal feature set. Finally results obtained from the assessment of introduced Modified Grasshopper Optimization Algorithm on these data sets were evaluated and contrasted with respect to outcome of Modified Grey Wolf Optimizer and Optimized Cuttlefish Algorithm. The experiment's outcome revealed that the presented Modified Grasshopper Optimization Algorithm assists in reducing the selected features count and improving the accuracy.",
+  "ml_approaches": [
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Modified Grasshopper Optimization Algorithm"
+        ]
+      },
+      "results": {
+        "accuracy": 0.748,
+        "recall": 0.858,
+        "fall_out": 47.62
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Modified Grasshopper Optimization Algorithm"
+        ]
+      },
+      "results": {
+        "accuracy": 0.937,
+        "recall": 1,
+        "fall_out": 19.05
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Modified Grasshopper Optimization Algorithm"
+        ]
+      },
+      "results": {
+        "accuracy": 0.8898,
+        "recall": 0.9176,
+        "fall_out": 16.67
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "110.1007/s42452-020-2826-9_1"
+}

@@ -1,0 +1,92 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893a7"
+  },
+  "title": "Parkinson's Disease Detection by Using Machine Learning Method based on Local Classification on Class Boundary",
+  "authors": [
+    {
+      "name": "Qiuyang Du",
+      "affiliations": [
+        {
+          "institution": "Hubei Minzu University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Jinan Shen",
+      "affiliations": [
+        {
+          "institution": "Hubei Minzu University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Pengcheng Wen",
+      "affiliations": [
+        {
+          "institution": "South China University of Technology",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Xinpeng Chen",
+      "affiliations": [
+        {
+          "institution": "Hubei Minzu University",
+          "country": "China"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Discover Applied Sciences",
+  "year": 2024,
+  "doi": "10.1007/s42452-024-06295-1",
+  "abstract": "Parkinson's disease (PD) detection has long been an important task in medical intelligence. Recognition methods based on speech signals show great potential in Parkinson's disease diagnosis. In this paper, based on an efficient machine learning method for Parkinson's disease detection, we take the use of test data incorporates an efficient Secure Two-Party Computing (S2PC) protocol to protect the privacy of patients. We present two key components, the secure use of data and a local classification methodology, including the description of class boundaries. We conducted experiments on two datasets to validate our proposed method, and the results show well data security protection ability compared to some more sophisticated methods. And the performance of Local Classification on Class Boundary(LCCB) and Hyperplane K-Nearest Neighbor(HKNN) is significantly better than that of both Support Vector Machines(SVM) and Random Forest(RF). When the number of selected features is from 400 to 500, HKNN and LCCB are roughly equal where the accuracy of HKNN is 95.2%, and LCCB has the rate of 94.7%. Then we use Multi-Cluster Feature Selection(MCFS) to analyze and select the important features from D2 dataset. It shows that even if only two features are selected, the boundaries of the two categories are also clear and easy to distinguish.",
+  "citescore": 6.5,
+  "ml_approaches": [
+    {
+      "algorithm": "Hyperplane K-Nearest Neighbor",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Multi-Cluster Feature Selection"
+        ]
+      },
+      "sample_selection": [
+        {
+          "methods": [
+            "Support Vector Machine"
+          ]
+        }
+      ],
+      "results": {
+        "accuracy": 0.9523
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "study_id": "10.1007/s42452-024-06295-1_1"
+}

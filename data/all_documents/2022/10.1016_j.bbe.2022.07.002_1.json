@@ -1,0 +1,106 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c16893f2"
+  },
+  "title": "Enhanced Decision Tree Induction Using Evolutionary Techniques for Parkinson's Disease Classification",
+  "authors": [
+    {
+      "name": "Mostafa Ghane",
+      "affiliations": [
+        {
+          "institution": "Universiti Kebangsaan Malaysia",
+          "country": "Malaysia"
+        }
+      ]
+    },
+    {
+      "name": "Mei Choo Ang",
+      "affiliations": [
+        {
+          "institution": "Universiti Kebangsaan Malaysia",
+          "country": "Malaysia"
+        }
+      ]
+    },
+    {
+      "name": "Mehrbakhsh Nilashi",
+      "affiliations": [
+        {
+          "institution": "UCSI University",
+          "country": "Malaysia"
+        },
+        {
+          "institution": "Universiti Sains Malaysia",
+          "country": "Malaysia"
+        }
+      ]
+    },
+    {
+      "name": "Shahryar Sorooshian",
+      "affiliations": [
+        {
+          "institution": "University of Gothenburg",
+          "country": "Sweden"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Biocybernetics and Biomedical Engineering",
+  "year": 2022,
+  "doi": "10.1016/j.bbe.2022.07.002",
+  "abstract": " The diagnosis of Parkinson's disease (PD) is important in neurological pathology for appropriate medical therapy. Algorithms based on decision tree induction (DTI) have been widely used for diagnosing PD through biomedical voice disorders. However, DTI for PD diagnosis is based on a greedy search algorithm which causes overfitting and inferior solutions. This paper improved the performance of DTI using evolutionary-based genetic algorithms. The goal was to combine evolutionary techniques, namely, a genetic algorithm (GA) and genetic programming (GP), with a decision tree algorithm (J48) to improve the classification performance. The developed model was applied to a real biomedical dataset for the diagnosis of PD. The results showed that the accuracy of the J48, was improved from 80.51% to 89.23% and to 90.76% using the GA and GP, respectively.",
+  "ml_approaches": [
+    {
+      "algorithm": "Decision Tree Induction",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "results": {
+        "accuracy": 0.8923,
+        "precision": 0.926,
+        "recall": 0.932,
+        "f1_score": 0.929
+      }
+    },
+    {
+      "algorithm": "Decision Tree Induction",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Genetic Programming"
+        ]
+      },
+      "results": {
+        "accuracy": 0.9077,
+        "precision": 0.922,
+        "recall": 0.959,
+        "f1_score": 0.94
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1016/j.bbe.2022.07.002_1"
+}

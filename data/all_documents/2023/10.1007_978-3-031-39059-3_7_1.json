@@ -1,0 +1,847 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c1689390"
+  },
+  "title": "Machine Learning Applied to Speech Recordings for Parkinson's Disease Recognition",
+  "authors": [
+    {
+      "name": "Lerina Aversano",
+      "affiliations": [
+        {
+          "institution": "University of Sannio",
+          "country": "Italy"
+        }
+      ]
+    },
+    {
+      "name": "Mario L. Bernardi",
+      "affiliations": [
+        {
+          "institution": "University of Sannio",
+          "country": "Italy"
+        }
+      ]
+    },
+    {
+      "name": "Marta Cimitile",
+      "affiliations": [
+        {
+          "institution": "Unitelma Sapienza University",
+          "country": "Italy"
+        }
+      ]
+    },
+    {
+      "name": "Martina Iammarino",
+      "affiliations": [
+        {
+          "institution": "University of Sannio",
+          "country": "Italy"
+        }
+      ]
+    },
+    {
+      "name": "Antonella Madau",
+      "affiliations": [
+        {
+          "institution": "University of Sannio",
+          "country": "Italy"
+        }
+      ]
+    },
+    {
+      "name": "Chiara Verdone",
+      "affiliations": [
+        {
+          "institution": "University of Sannio",
+          "country": "Italy"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Conference",
+  "journal": "International Conference on Deep Learning Theory and Applications",
+  "year": 2023,
+  "doi": "10.1007/978-3-031-39059-3_7",
+  "abstract": "Parkinson's disease is a common neurological condition that occurs when dopamine production in the brain decreases significantly due to the degeneration of neurons in an area called the substantia nigra. One of its characteristics is the slow and gradual onset of symptoms, which are varied and include tremors at rest, rigidity, and slow speech. Voice changes are very common among patients, so analysis of voice recordings could be a valuable tool for early diagnosis of the disease. This study proposes an approach that compares different Machine Learning models for the diagnosis of the disease through the use of vocal recordings of the vowel a made by both healthy and sick patients and the identification of the subset of the most significant features The experiments were conducted on a data set available on the UCI repository, which collects 756 different recordings. The results obtained are very encouraging, reaching an F-score of 95%, which demonstrates the effectiveness of the proposed approach.",
+  "citescore": 1.1,
+  "ml_approaches": [
+    {
+      "algorithm": "Decision Tree",
+      "scaling": [
+        "Min Max"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8671,
+        "precision": 0.8663,
+        "recall": 0.857,
+        "f1_score": 0.859
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "scaling": [
+        "Min Max"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9317,
+        "precision": 0.9367,
+        "recall": 0.9351,
+        "f1_score": 0.9331
+      }
+    },
+    {
+      "algorithm": "Extra Trees",
+      "scaling": [
+        "Min Max"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9494,
+        "precision": 0.9553,
+        "recall": 0.9484,
+        "f1_score": 0.9493
+      }
+    },
+    {
+      "algorithm": "Gradient Boosting",
+      "scaling": [
+        "Min Max"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9325,
+        "precision": 0.9332,
+        "recall": 0.9315,
+        "f1_score": 0.9287
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "scaling": [
+        "Min Max"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9334,
+        "precision": 0.9384,
+        "recall": 0.9333,
+        "f1_score": 0.9331
+      }
+    },
+    {
+      "algorithm": "CatBoost",
+      "scaling": [
+        "Min Max"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9467,
+        "precision": 0.9522,
+        "recall": 0.9466,
+        "f1_score": 0.9463
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "scaling": [
+        "Min Max"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8954,
+        "precision": 0.8989,
+        "recall": 0.8952,
+        "f1_score": 0.8952
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "scaling": [
+        "Min Max"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.7925,
+        "precision": 0.8522,
+        "recall": 0.7924,
+        "f1_score": 0.7822
+      }
+    },
+    {
+      "algorithm": "Convolutional Neural Network",
+      "scaling": [
+        "Min Max"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.807,
+        "precision": 0.8299,
+        "recall": 0.807,
+        "f1_score": 0.8036
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Correlation Matrix"
+        ]
+      },
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8466,
+        "precision": 0.8638,
+        "recall": 0.8509,
+        "f1_score": 0.8568
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Correlation Matrix"
+        ]
+      },
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.929,
+        "precision": 0.9368,
+        "recall": 0.9244,
+        "f1_score": 0.9323
+      }
+    },
+    {
+      "algorithm": "Extra Trees",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Correlation Matrix"
+        ]
+      },
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9379,
+        "precision": 0.9458,
+        "recall": 0.9422,
+        "f1_score": 0.9421
+      }
+    },
+    {
+      "algorithm": "Gradient Boosting",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Correlation Matrix"
+        ]
+      },
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9131,
+        "precision": 0.9223,
+        "recall": 0.9121,
+        "f1_score": 0.9108
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Correlation Matrix"
+        ]
+      },
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9338,
+        "precision": 0.9435,
+        "recall": 0.9387,
+        "f1_score": 0.9385
+      }
+    },
+    {
+      "algorithm": "CatBoost",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Correlation Matrix"
+        ]
+      },
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9387,
+        "precision": 0.9445,
+        "recall": 0.9383,
+        "f1_score": 0.9383
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Correlation Matrix"
+        ]
+      },
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8785,
+        "precision": 0.8846,
+        "recall": 0.8783,
+        "f1_score": 0.8778
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Correlation Matrix"
+        ]
+      },
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8599,
+        "precision": 0.8839,
+        "recall": 0.8597,
+        "f1_score": 0.8571
+      }
+    },
+    {
+      "algorithm": "Convolutional Neural Network",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Correlation Matrix"
+        ]
+      },
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8991,
+        "precision": 0.8999,
+        "recall": 0.8991,
+        "f1_score": 0.8991
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Correlation Matrix",
+          "Collinearity Removal"
+        ],
+        "combination": "sequential"
+      },
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8679,
+        "precision": 0.8859,
+        "recall": 0.8615,
+        "f1_score": 0.8698
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Correlation Matrix",
+          "Collinearity Removal"
+        ],
+        "combination": "sequential"
+      },
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.929,
+        "precision": 0.9369,
+        "recall": 0.9315,
+        "f1_score": 0.9278
+      }
+    },
+    {
+      "algorithm": "Extra Trees",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Correlation Matrix",
+          "Collinearity Removal"
+        ],
+        "combination": "sequential"
+      },
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9512,
+        "precision": 0.9484,
+        "recall": 0.9476,
+        "f1_score": 0.9422
+      }
+    },
+    {
+      "algorithm": "Gradient Boosting",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Correlation Matrix",
+          "Collinearity Removal"
+        ],
+        "combination": "sequential"
+      },
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8971,
+        "precision": 0.9016,
+        "recall": 0.8916,
+        "f1_score": 0.8894
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Correlation Matrix",
+          "Collinearity Removal"
+        ],
+        "combination": "sequential"
+      },
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9246,
+        "precision": 0.931,
+        "recall": 0.9244,
+        "f1_score": 0.9242
+      }
+    },
+    {
+      "algorithm": "CatBoost",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Correlation Matrix",
+          "Collinearity Removal"
+        ],
+        "combination": "sequential"
+      },
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.929,
+        "precision": 0.9345,
+        "recall": 0.9289,
+        "f1_score": 0.9287
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Correlation Matrix",
+          "Collinearity Removal"
+        ],
+        "combination": "sequential"
+      },
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8475,
+        "precision": 0.8519,
+        "recall": 0.8473,
+        "f1_score": 0.8568
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Correlation Matrix",
+          "Collinearity Removal"
+        ],
+        "combination": "sequential"
+      },
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.851,
+        "precision": 0.8819,
+        "recall": 0.851,
+        "f1_score": 0.8476
+      }
+    },
+    {
+      "algorithm": "Convolutional Neural Network",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Correlation Matrix",
+          "Collinearity Removal"
+        ],
+        "combination": "sequential"
+      },
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8158,
+        "precision": 0.8221,
+        "recall": 0.8158,
+        "f1_score": 0.8149
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Correlation Matrix",
+          "Collinearity Removal",
+          "Genetic Algorithm"
+        ],
+        "combination": "sequential"
+      },
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8369,
+        "precision": 0.8481,
+        "recall": 0.8383,
+        "f1_score": 0.8451
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Correlation Matrix",
+          "Collinearity Removal",
+          "Genetic Algorithm"
+        ],
+        "combination": "sequential"
+      },
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9193,
+        "precision": 0.9269,
+        "recall": 0.9236,
+        "f1_score": 0.9138
+      }
+    },
+    {
+      "algorithm": "Extra Trees",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Correlation Matrix",
+          "Collinearity Removal",
+          "Genetic Algorithm"
+        ],
+        "combination": "sequential"
+      },
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9521,
+        "precision": 0.95,
+        "recall": 0.9493,
+        "f1_score": 0.9475
+      }
+    },
+    {
+      "algorithm": "Gradient Boosting",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Correlation Matrix",
+          "Collinearity Removal",
+          "Genetic Algorithm"
+        ],
+        "combination": "sequential"
+      },
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8794,
+        "precision": 0.8807,
+        "recall": 0.8793,
+        "f1_score": 0.8797
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Correlation Matrix",
+          "Collinearity Removal",
+          "Genetic Algorithm"
+        ],
+        "combination": "sequential"
+      },
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9175,
+        "precision": 0.9224,
+        "recall": 0.9174,
+        "f1_score": 0.9172
+      }
+    },
+    {
+      "algorithm": "CatBoost",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Correlation Matrix",
+          "Collinearity Removal",
+          "Genetic Algorithm"
+        ],
+        "combination": "sequential"
+      },
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9246,
+        "precision": 0.9289,
+        "recall": 0.9245,
+        "f1_score": 0.9244
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Correlation Matrix",
+          "Collinearity Removal",
+          "Genetic Algorithm"
+        ],
+        "combination": "sequential"
+      },
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8352,
+        "precision": 0.8404,
+        "recall": 0.8349,
+        "f1_score": 0.8345
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Correlation Matrix",
+          "Collinearity Removal",
+          "Genetic Algorithm"
+        ],
+        "combination": "sequential"
+      },
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8609,
+        "precision": 0.8793,
+        "recall": 0.8609,
+        "f1_score": 0.859
+      }
+    },
+    {
+      "algorithm": "Convolutional Neural Network",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Correlation Matrix",
+          "Collinearity Removal",
+          "Genetic Algorithm"
+        ],
+        "combination": "sequential"
+      },
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.864,
+        "precision": 0.864,
+        "recall": 0.864,
+        "f1_score": 0.864
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "study_id": "10.1007/978-3-031-39059-3_7_1"
+}

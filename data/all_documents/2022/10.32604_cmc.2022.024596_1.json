@@ -1,0 +1,134 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893e9"
+  },
+  "title": "Parkinson's Detection Using RNN-Graph-LSTM with Optimization Based on Speech Signals",
+  "authors": [
+    {
+      "name": "Ahmed S. Almasoud",
+      "affiliations": [
+        {
+          "institution": "Prince Sultan University",
+          "country": "Saudi Arabia"
+        }
+      ]
+    },
+    {
+      "name": "Taiseer Abdalla Elfadil Eisa",
+      "affiliations": [
+        {
+          "institution": "King Khalid University",
+          "country": "Saudi Arabia"
+        }
+      ]
+    },
+    {
+      "name": "Fahd N. Al-Wesabi",
+      "affiliations": [
+        {
+          "institution": "King Khalid University",
+          "country": "Saudi Arabia"
+        },
+        {
+          "institution": "Sana'a University",
+          "country": "Yemen"
+        }
+      ]
+    },
+    {
+      "name": "Abubakar Elsafi",
+      "affiliations": [
+        {
+          "institution": "University of Jeddah",
+          "country": "Saudi Arabia"
+        }
+      ]
+    },
+    {
+      "name": "Mesfer Al Duhayyim",
+      "affiliations": [
+        {
+          "institution": "Prince Sattam bin Abdulaziz University",
+          "country": "Saudi Arabia"
+        }
+      ]
+    },
+    {
+      "name": "Ishfaq Yaseen",
+      "affiliations": [
+        {
+          "institution": "Prince Sattam bin Abdulaziz University",
+          "country": "Saudi Arabia"
+        }
+      ]
+    },
+    {
+      "name": "Manar Ahmed Hamza",
+      "affiliations": [
+        {
+          "institution": "Prince Sattam bin Abdulaziz University",
+          "country": "Saudi Arabia"
+        }
+      ]
+    },
+    {
+      "name": "Abdelwahed Motwakel",
+      "affiliations": [
+        {
+          "institution": "Prince Sattam bin Abdulaziz University",
+          "country": "Saudi Arabia"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Computers, Materials and Continua",
+  "year": 2022,
+  "doi": "10.32604/cmc.2022.024596",
+  "abstract": "Early detection of Parkinson's Disease (PD) using the PD patients' voice changes would avoid the intervention before the identification of physical symptoms. Various machine learning algorithms were developed to detect PD detection. Nevertheless, these ML methods are lack in generalization and reduced classification performance due to subject overlap. To overcome these issues, this proposed work apply graph long short term memory (GLSTM) model to classify the dynamic features of the PD patient speech signal. The proposed classification model has been further improved by implementing the recurrent neural network (RNN) in batch normalization layer of GLSTM and optimized with adaptive moment estimation (ADAM) on network hidden layer. To consider the importance of feature engineering, this proposed system use Linear Discriminant analysis (LDA) for dimensionality reduction and Sparse Auto-Encoder (SAE) for extracting the dynamic speech features. Based on the computation of energy content transited from unvoiced to voice (onset) and voice to voiceless (offset), dynamic features are measured. The PD datasets is evaluated under 10 fold cross validation without sample overlap. The proposed smart PD detection method called RNN-GLSTM-ADAM is numerically experimented with persistent phonations in terms of accuracy, sensitivity, and specificity and Matthew correlation coefficient. The evaluated result of RNN-GLSTM-ADAM extremely improves the PD detection accuracy than static feature based conventional ML and DL approaches. ",
+  "ml_approaches": [
+    {
+      "algorithm": "Graph Long Short-Term Memory",
+      "optimization": "Adam",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_extraction": [
+        "Sparse Autoencoder"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Linear Discriminant Analysis"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.954,
+        "precision": 0.958,
+        "recall": 0.921,
+        "mcc": 0.86
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.32604/cmc.2022.024596_1"
+}

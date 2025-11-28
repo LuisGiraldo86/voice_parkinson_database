@@ -1,0 +1,129 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893c7"
+  },
+  "title": "Smartphone Speech Testing for Symptom Assessment in Rapid Eye Movement Sleep Behavior Disorder and Parkinson’s Disease",
+  "authors": [
+    {
+      "name": "Siddharth Arora",
+      "affiliations": [
+        {
+          "institution": "University of Oxford",
+          "country": "United Kingdom"
+        }
+      ]
+    },
+    {
+      "name": "Christine Lo",
+      "affiliations": [
+        {
+          "institution": "University of Oxford",
+          "country": "United Kingdom"
+        },
+        {
+          "institution": "John Radcliffe Hospital",
+          "country": "United Kingdom"
+        }
+      ]
+    },
+    {
+      "name": "Michele Hu",
+      "affiliations": [
+        {
+          "institution": "University of Oxford",
+          "country": "United Kingdom"
+        }
+      ]
+    },
+    {
+      "name": "Athanasios Tsanas",
+      "affiliations": [
+        {
+          "institution": "University of Edinburgh",
+          "country": "United Kingdom"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "IEEE Access",
+  "year": 2021,
+  "doi": "10.1109/ACCESS.2021.3057715",
+  "abstract": "Speech impairment in Parkinson's Disease (PD) has been extensively studied. Our understanding of speech in people who are at an increased risk of developing PD is, however, rather limited. It is known that isolated Rapid Eye Movement (REM) sleep Behavior Disorder (RBD) is associated with a high risk of developing PD. The aim of this study is to investigate smartphone speech testing to: (1) distinguish participants with RBD from controls and PD, and (2) predict a range of self- or researcher-administered clinical scores that quantify participants' motor symptoms, cognition, daytime sleepiness, depression, and the overall state of health. The rationale of our analyses is to test an initial hypothesis that speech can be used to detect and quantify the symptoms associated with RBD and PD. We analyzed 4242 smartphone voice recordings collected in clinic and at home from 92 Controls, 112 RBD and 335 PD participants. We used acoustic signal analysis and machine learning, employing 337 features that quantify different properties of speech impairment. Using a leave-one-subject-out cross-validation scheme, we were able to distinguish RBD from controls (sensitivity 60.7%, specificity 69.6%) and RBD from PD participants (sensitivity 74.9%, specificity 73.2%), and predict clinical assessments with clinically useful accuracy. These promising findings warrant further investigation in using speech as a digital biomarker for PD and RBD to facilitate intervention in the early and prodromal stages of PD.",
+  "ml_approaches": [
+    {
+      "algorithm": "Random Forest",
+      "framework": "MATLAB",
+      "imbalance_handling": [
+        "Votes cut-off"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Random Forest"
+        ]
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "recall": 0.594,
+        "specificity": 0.674
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "MATLAB",
+      "data_subset": "women",
+      "imbalance_handling": [
+        "Votes cut-off"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Random Forest"
+        ]
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "recall": 0.481,
+        "specificity": 0.368
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "MATLAB",
+      "data_subset": "men",
+      "imbalance_handling": [
+        "Votes cut-off"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Random Forest"
+        ]
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "recall": 0.553,
+        "specificity": 0.726
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Custom Subset Oxford Discovery Cohort",
+      "size": 427,
+      "pd_patients": 335,
+      "controls": 92,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Custom Subset Oxford Discovery Cohort",
+      "size": 427,
+      "pd_patients": 335,
+      "controls": 92,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.1109/ACCESS.2021.3057715_1"
+}

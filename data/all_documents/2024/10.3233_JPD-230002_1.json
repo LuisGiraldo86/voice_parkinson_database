@@ -1,0 +1,180 @@
+{
+  "_id": {
+    "$oid": "68ecf00b6c43da02c1689329"
+  },
+  "title": "Machine Learning-Based Classification of Parkinson's Disease Patients Using Speech Biomarkers",
+  "authors": [
+    {
+      "name": "Mohammad Amran Hossain",
+      "affiliations": [
+        {
+          "institution": "University of Camerino",
+          "country": "Italy"
+        }
+      ]
+    },
+    {
+      "name": "Francesco Amenta",
+      "affiliations": [
+        {
+          "institution": "University of Camerino",
+          "country": "Italy"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Journal of Parkinson's Disease",
+  "year": 2024,
+  "doi": "10.3233/JPD-230002",
+  "abstract": "Background: Parkinson's disease (PD) is the most prevalent neurodegenerative movement disorder and a growing health concern in demographically aging societies. The prevalence of PD among individuals over the age of 60 and 80 years has been reported to range between 1% and 4%. A timely diagnosis of PD is desirable, even though it poses challenges to medical systems. Objective: This study aimed to classify PD and healthy controls based on the analysis of voice records at different frequencies using machine learning (ML) algorithms. Methods: The voices of 252 individuals aged 33 to 87 years were recorded. Based on the voice record data, ML algorithms can distinguish PD patients and healthy controls. One binary decision variable was associated with 756 instances and 754 attributes. Voice records data were analyzed through supervised ML algorithms and pipelines. A 10-fold cross-validation method was used to validate models. Results: In the classification of PD patients, ML models were performed with 84.21 accuracy, 93 precision, 89 Sensitivity, 89 F1-scores, and 87 AUC. The pipeline performance improved to accuracy: 85.09, precision: 92, Sensitivity:91, F1-score: 89, and AUC: 90. The Pipeline methods improved the performance of classifying PD from voice record. Conclusions: Our study demonstrated that ML classifiers and pipelines can classify PD patients based on speech biomarkers. It was found that pipelines were more effective at selecting the most relevant features from high-dimensional data and at accurately classifying PD patients and healthy controls. This approach can therefore be used for early diagnosis of initial forms of PD.",
+  "ml_approaches": [
+    {
+      "algorithm": "Logistic Regression",
+      "imabalance_handling": "SMOTE",
+      "scaler": "Standardization",
+      "feature_selection": {
+        "methods": [
+          "L1-regularized linear classifier"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.7895,
+        "precision": 0.89,
+        "recall": 0.85,
+        "f1_score": 0.87,
+        "auc": 0.8
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "imabalance_handling": "SMOTE",
+      "scaler": "Standardization",
+      "feature_selection": {
+        "methods": [
+          "L1-regularized linear classifier"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.6842,
+        "precision": 0.92,
+        "recall": 0.66,
+        "f1_score": 0.77,
+        "auc": 0.82
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "imabalance_handling": "SMOTE",
+      "scaler": "Standardization",
+      "feature_selection": {
+        "methods": [
+          "L1-regularized linear classifier"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.7544,
+        "precision": 0.88,
+        "recall": 0.81,
+        "f1_score": 0.84,
+        "auc": 0.67
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "imabalance_handling": "SMOTE",
+      "scaler": "Standardization",
+      "feature_selection": {
+        "methods": [
+          "L1-regularized linear classifier"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8377,
+        "precision": 0.89,
+        "recall": 0.91,
+        "f1_score": 0.9,
+        "auc": 0.84
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "imabalance_handling": "SMOTE",
+      "scaler": "Standardization",
+      "feature_selection": {
+        "methods": [
+          "L1-regularized linear classifier"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8509,
+        "precision": 0.92,
+        "recall": 0.9,
+        "f1_score": 0.91,
+        "auc": 0.9
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "imabalance_handling": "SMOTE",
+      "scaler": "Standardization",
+      "feature_selection": {
+        "methods": [
+          "L1-regularized linear classifier"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8289,
+        "precision": 0.89,
+        "recall": 0.9,
+        "f1_score": 0.89,
+        "auc": 0.8
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "imabalance_handling": "SMOTE",
+      "scaler": "Standardization",
+      "feature_selection": {
+        "methods": [
+          "L1-regularized linear classifier"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8333,
+        "precision": 0.91,
+        "recall": 0.87,
+        "f1_score": 0.89,
+        "auc": 0.83
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "study_id": "10.3233/JPD-230002_1"
+}

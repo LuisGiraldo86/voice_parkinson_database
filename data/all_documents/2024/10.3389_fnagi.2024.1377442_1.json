@@ -1,0 +1,229 @@
+{
+  "_id": {
+    "$oid": "68ecf00b6c43da02c168932f"
+  },
+  "title": "Using sustained vowels to identify patients with mild Parkinson's disease in a Chinese dataset",
+  "authors": [
+    {
+      "name": "Miao Wang",
+      "affiliations": [
+        {
+          "institution": "Chinese PLA General Hospital",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Xingli Zhao",
+      "affiliations": [
+        {
+          "institution": "Chinese PLA General Hospital",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Fengzhu Li",
+      "affiliations": [
+        {
+          "institution": "Chinese PLA General Hospital",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Lingyu Wu",
+      "affiliations": [
+        {
+          "institution": "Gyenno Science Co., Ltd.",
+          "country": "China"
+        },
+        {
+          "institution": " HUST-GYENNO CNS Intelligent Digital Medicine Technology Center",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Yifan Li",
+      "affiliations": [
+        {
+          "institution": "Chinese PLA General Hospital",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Ruonan Tang",
+      "affiliations": [
+        {
+          "institution": "Chinese PLA General Hospital",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Jiarui Yao",
+      "affiliations": [
+        {
+          "institution": "Chinese PLA General Hospital",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Shinuan Lin",
+      "affiliations": [
+        {
+          "institution": "Gyenno Science Co., Ltd.",
+          "country": "China"
+        },
+        {
+          "institution": " HUST-GYENNO CNS Intelligent Digital Medicine Technology Center",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Yuan Zheng",
+      "affiliations": [
+        {
+          "institution": "Gyenno Science Co., Ltd.",
+          "country": "China"
+        },
+        {
+          "institution": " HUST-GYENNO CNS Intelligent Digital Medicine Technology Center",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Yun Ling",
+      "affiliations": [
+        {
+          "institution": "Gyenno Science Co., Ltd.",
+          "country": "China"
+        },
+        {
+          "institution": " HUST-GYENNO CNS Intelligent Digital Medicine Technology Center",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Kan Ren",
+      "affiliations": [
+        {
+          "institution": "Gyenno Science Co., Ltd.",
+          "country": "China"
+        },
+        {
+          "institution": " HUST-GYENNO CNS Intelligent Digital Medicine Technology Center",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Zhonglue Chen",
+      "affiliations": [
+        {
+          "institution": "Gyenno Science Co., Ltd.",
+          "country": "China"
+        },
+        {
+          "institution": " HUST-GYENNO CNS Intelligent Digital Medicine Technology Center",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Xi Yin",
+      "affiliations": [
+        {
+          "institution": "Chinese PLA General Hospital",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Zhenfu Wang",
+      "affiliations": [
+        {
+          "institution": "Chinese PLA General Hospital",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Zhongbao Gao",
+      "affiliations": [
+        {
+          "institution": "Chinese PLA General Hospital",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Xi Zhang",
+      "affiliations": [
+        {
+          "institution": "Chinese PLA General Hospital",
+          "country": "China"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Frontiers in Aging Neuroscience",
+  "year": 2024,
+  "doi": "10.3389/fnagi.2024.1377442",
+  "abstract": "Introduction: Parkinson's disease (PD) is sthe second most common neurodegenerative disease and affects millions of people. Accurate diagnosis and subsequent treatment in the early stages can slow down disease progression. However, making an accurate diagnosis of PD at an early stage is challenging. Previous studies have revealed that even for movement disorder specialists, it was difficult to differentiate patients with PD from healthy individuals until the average modified Hoehn-Yahr staging (mH&Y) reached 1.8. Recent researches have shown that dysarthria provides good indicators for computer-assisted diagnosis of patients with PD. However, few studies have focused on diagnosing patients with PD in the early stages, specifically those with mH&Y ≤ 1.5. Method: We used a machine learning algorithm to analyze voice features and developed diagnostic models for differentiating between healthy controls (HCs) and patients with PD, and for differentiating between HCs and patients with mild PD (mH&Y ≤ 1.5). The models were independently validated using separate datasets. Results: Our results demonstrate that, a remarkable diagnostic performance of the model in identifying patients with mild PD (mH&Y ≤ 1.5) and HCs, with area under the ROC curve 0.93 (95% CI: 0.851.00), accuracy 0.85, sensitivity 0.95, and specificity 0.75. Conclusion: The results of our study are helpful for screening PD in the early stages in the community and primary medical institutions where there is a lack of movement disorder specialists and special equipment.",
+  "ml_approaches": [
+    {
+      "algorithm": "Random Forest",
+      "feature_extraction": [
+        "Phonation features",
+        "Articulation features",
+        "Prosody features",
+        "Representation learning features"
+      ],
+      "feature-selection": {
+        "methods": [
+          "Wilcoxon test",
+          "Feature Importance"
+        ],
+        "combination": "sequential"
+      },
+      "validation": "train/test split",
+      "results": {
+        "recall": 1,
+        "specificity": 0.85,
+        "precision": 0.87,
+        "f1_score": 0.93,
+        "accuracy": 0.93,
+        "auc": 0.99
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Custom Chinese People's Liberation Army General Hospital PD speech dataset",
+      "size": 278,
+      "pd_patients": 139,
+      "controls": 139,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Custom Chinese People's Liberation Army General Hospital PD speech dataset",
+      "size": 278,
+      "pd_patients": 139,
+      "controls": 139,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.3389/fnagi.2024.1377442_1"
+}

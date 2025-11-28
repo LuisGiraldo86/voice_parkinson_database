@@ -1,0 +1,111 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893cd"
+  },
+  "title": "An Efficient Disease Prediction Model Based on Spa-Hunt Optimization for a Secured Healthcare System",
+  "authors": [
+    {
+      "name": "Pratik Suresh Deshmukh",
+      "affiliations": [
+        {
+          "institution": "G H Raisoni University",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Amit K. Gaikwad",
+      "affiliations": [
+        {
+          "institution": "G H Raisoni University",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Kalyani Hemant Deshmukh",
+      "affiliations": [
+        {
+          "institution": "Prof. Ram Meghe Institute of Technology and Research",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Information Security Journal: A Global Perspective",
+  "year": 2025,
+  "doi": "10.1080/19393555.2025.2525857",
+  "abstract": "In the medical field, the recent advancement in technologies promotes the identification of diseases in their early stages for reducing the disease severity, and the diseases are detected automatically with the classifiers availing in the medical data. The ease of data availability contributes several information to doctors regarding diseases. Accordingly, the present research develops a spa-hunt optimizer-based Deep CNN for predicting disease in the healthcare system. The significance of the present research relies on the growth of a novel classifier for predicting the disease at an earlier stage, which is referred to as an optimized deep CNN (DCNN) classifier, where the hyperparameters of the research will be tuned optimally with the proposed Spa-Hunt optimizer that is developed by combining the optimization for an accurate result with less computational time. Finally, the collected data from the patients will be secured in blockchain after predicting the concerned disease. The accuracy of the developed system of prediction is 92.308% with the Parkinson's database, and 99.268%, with the heart disease database regarding the training percentage. Hence, the developed approach provides efficient performance in detecting disease with secured data and serves as an efficient tool in the field of healthcare for disease detection.",
+  "ml_approaches": [
+    {
+      "algorithm": "Convolutional Neural Network",
+      "framework": "",
+      "optimization": "Spa-Hunt Optimization",
+      "feature_selection": {
+        "methods": [
+          "Multi Agent Salp Search"
+        ]
+      },
+      "validation": null,
+      "results": {
+        "accuracy": 0.9231,
+        "recall": 0.971,
+        "specificity": 0.93939
+      }
+    },
+    {
+      "algorithm": "Convolutional Neural Network",
+      "framework": "",
+      "optimization": "SSA",
+      "feature_selection": {
+        "methods": [
+          "Multi Agent Salp Search"
+        ]
+      },
+      "validation": null,
+      "results": {
+        "accuracy": 0.8718,
+        "recall": 0.8667,
+        "specificity": 0.86667
+      }
+    },
+    {
+      "algorithm": "Convolutional Neural Network",
+      "framework": "",
+      "optimization": "PIO",
+      "feature_selection": {
+        "methods": [
+          "Multi Agent Salp Search"
+        ]
+      },
+      "validation": null,
+      "results": {
+        "accuracy": 0.9231,
+        "recall": 0.953,
+        "specificity": 0.9230800000000001
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1080/19393555.2025.2525857_1"
+}

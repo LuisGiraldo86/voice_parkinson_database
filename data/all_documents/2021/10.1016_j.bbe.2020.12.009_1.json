@@ -1,0 +1,328 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c168941c"
+  },
+  "title": "Parkinson Disease Detection using Energy Direction Features based on EMD from Voice Signal",
+  "authors": [
+    {
+      "name": "Tao Zhang",
+      "affiliations": [
+        {
+          "institution": "Yanshan University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Yajuan Zhang",
+      "affiliations": [
+        {
+          "institution": "Yanshan University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Hao Sun",
+      "affiliations": [
+        {
+          "institution": "Yanshan University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Haoran Shan",
+      "affiliations": [
+        {
+          "institution": "Yanshan University",
+          "country": "China"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Biocybernetics and Biomedical Engineering",
+  "year": 2021,
+  "doi": "10.1016/j.bbe.2020.12.009",
+  "abstract": "Voice disorders are one of the incipient symptoms of Parkinson's disease (PD). Recent studies have shown that approximately 90% of PD patients suffer from vocal disorders. Therefore, it is significant to extract pathological information on the voice signals to detect PD. In this paper, a feature, named energy direction features based on empirical mode decomposition (EDF-EMD), is proposed to show the different characteristics of voice signals between PD patients and healthy subjects. Firstly, the intrinsic mode functions (IMFs) were obtained through the decomposition of voice signals by EMD. Then, the EDF is obtained by calculating the directional derivatives of the energy spectrum of each IMFs. Finally, the performance of the proposed feature is verified on two different datasets: dataset-Sakar and dataset-CPPDD. The proposed approach shows the best average resulting accuracy of 96.54% on dataset-Sakar and 92.59% on dataset-CPPDD. The results demonstrate that the method proposed in this paper is promising in the field of PD detection.",
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "feature_extraction": [
+        "Empirical Mode Decomposition",
+        "Energy Direction Features",
+        "Intrinsic Mode Functions: 1"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "macro_accuracy": 96.32,
+        "macro_precision": 98.01,
+        "macro_recall": 91.01,
+        "macro_f1_score": 95.21
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "feature_extraction": [
+        "Empirical Mode Decomposition",
+        "Energy Direction Features",
+        "Intrinsic Mode Functions: 1"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "micro_accuracy": 95.79,
+        "micro_precision": 97.3,
+        "micro_recall": 92.31,
+        "micro_f1_score": 94.74
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "feature_extraction": [
+        "Empirical Mode Decomposition",
+        "Energy Direction Features",
+        "Intrinsic Mode Functions: 1"
+      ],
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "macro_accuracy": 96.54,
+        "macro_precision": 99.45,
+        "macro_recall": 92.01,
+        "macro_f1_score": 96.2
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "feature_extraction": [
+        "Empirical Mode Decomposition",
+        "Energy Direction Features",
+        "Intrinsic Mode Functions: 1"
+      ],
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "micro_accuracy": 96.46,
+        "micro_precision": 97.53,
+        "micro_recall": 92.29,
+        "micro_f1_score": 94.84
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_extraction": [
+        "Empirical Mode Decomposition",
+        "Energy Direction Features",
+        "Intrinsic Mode Functions: 1"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "micro_accuracy": 95.81,
+        "micro_precision": 93.34,
+        "micro_recall": 93.45,
+        "micro_f1_score": 93.39
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_extraction": [
+        "Empirical Mode Decomposition",
+        "Energy Direction Features",
+        "Intrinsic Mode Functions: 1"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "macro_accuracy": 95.83,
+        "macro_precision": 94.74,
+        "macro_recall": 94.74,
+        "macro_f1_score": 94.74
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_extraction": [
+        "Empirical Mode Decomposition",
+        "Energy Direction Features",
+        "Intrinsic Mode Functions: 1"
+      ],
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "micro_accuracy": 95.56,
+        "micro_precision": 94.97,
+        "micro_recall": 94.78,
+        "micro_f1_score": 94.87
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_extraction": [
+        "Empirical Mode Decomposition",
+        "Energy Direction Features",
+        "Intrinsic Mode Functions: 1"
+      ],
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "macro_accuracy": 94.89,
+        "macro_precision": 95.23,
+        "macro_recall": 94.78,
+        "macro_f1_score": 93.94
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "feature_extraction": [
+        "Empirical Mode Decomposition",
+        "Energy Direction Features",
+        "Intrinsic Mode Functions: 2"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "micro_accuracy": 92.11,
+        "micro_precision": 95.77,
+        "micro_recall": 85,
+        "micro_f1_score": 90.07
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "feature_extraction": [
+        "Empirical Mode Decomposition",
+        "Energy Direction Features",
+        "Intrinsic Mode Functions: 2"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "macro_accuracy": 93.16,
+        "macro_precision": 95.71,
+        "macro_recall": 87.76,
+        "macro_f1_score": 91.22
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "feature_extraction": [
+        "Empirical Mode Decomposition",
+        "Energy Direction Features",
+        "Intrinsic Mode Functions: 2"
+      ],
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "micro_accuracy": 92.78,
+        "micro_precision": 96,
+        "micro_recall": 84.98,
+        "micro_f1_score": 90.16
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "feature_extraction": [
+        "Empirical Mode Decomposition",
+        "Energy Direction Features",
+        "Intrinsic Mode Functions: 2"
+      ],
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "macro_accuracy": 93.16,
+        "macro_precision": 95.71,
+        "macro_recall": 87.76,
+        "macro_f1_score": 91.22
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_extraction": [
+        "Empirical Mode Decomposition",
+        "Energy Direction Features",
+        "Intrinsic Mode Functions: 2"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "micro_accuracy": 92.87,
+        "micro_precision": 89.43,
+        "micro_recall": 94.34,
+        "micro_f1_score": 91.82
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_extraction": [
+        "Empirical Mode Decomposition",
+        "Energy Direction Features",
+        "Intrinsic Mode Functions: 2"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "macro_accuracy": 91.67,
+        "macro_precision": 84.21,
+        "macro_recall": 94.12,
+        "macro_f1_score": 88.89
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_extraction": [
+        "Empirical Mode Decomposition",
+        "Energy Direction Features",
+        "Intrinsic Mode Functions: 2"
+      ],
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "micro_accuracy": 91.99,
+        "micro_precision": 89.23,
+        "micro_recall": 95.34,
+        "micro_f1_score": 92.18
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_extraction": [
+        "Empirical Mode Decomposition",
+        "Energy Direction Features",
+        "Intrinsic Mode Functions: 2"
+      ],
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "macro_accuracy": 91.67,
+        "macro_precision": 84.21,
+        "macro_recall": 94.12,
+        "macro_f1_score": 88.89
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Speech with Multiple Types of Sound Recordings",
+      "size": 40,
+      "pd_patients": 20,
+      "controls": 20,
+      "url": "https://archive.ics.uci.edu/dataset/301/parkinson+speech+dataset+with+multiple+types+of+sound+recordings",
+      "doi": "10.24432/C5NC8M"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Speech with Multiple Types of Sound Recordings",
+      "size": 40,
+      "pd_patients": 20,
+      "controls": 20,
+      "url": "https://archive.ics.uci.edu/dataset/301/parkinson+speech+dataset+with+multiple+types+of+sound+recordings",
+      "doi": "10.24432/C5NC8M"
+    }
+  ],
+  "study_id": "10.1016/j.bbe.2020.12.009_1"
+}

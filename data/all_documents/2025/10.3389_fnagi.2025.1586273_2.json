@@ -1,0 +1,307 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893dd"
+  },
+  "title": "Non-invasive detection of Parkinson's disease based on speech analysis and interpretable machine learning",
+  "authors": [
+    {
+      "name": "Huanqing Xu",
+      "affiliations": [
+        {
+          "institution": "Anhui University of Chinese Medicine",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Wei Xie",
+      "affiliations": [
+        {
+          "institution": "Nanchang University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Mingzhen Pang",
+      "affiliations": [
+        {
+          "institution": "Southern Medical University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Ya Li",
+      "affiliations": [
+        {
+          "institution": "Anhui University of Chinese Medicine",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Luhua Jin",
+      "affiliations": [
+        {
+          "institution": "Southern Medical University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Fangliang Huang",
+      "affiliations": [
+        {
+          "institution": "Anhui University of Chinese Medicine",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Xian Shao",
+      "affiliations": [
+        {
+          "institution": "Southern Medical University",
+          "country": "China"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Frontiers in Aging Neuroscience",
+  "year": 2025,
+  "doi": "10.3389/fnagi.2025.1586273",
+  "abstract": "Objective: Parkinson's disease (PD) is a progressive neurodegenerative disorder that significantly impacts motor function and speech patterns. Early detection of PD through non-invasive methods, such as speech analysis, can improve treatment outcomes and quality of life for patients. This study aims to develop an interpretable machine learning model that uses speech recordings and acoustic features to predict PD. Methods: A dataset of speech recordings from individuals with and without PD was analyzed. The dataset includes features such as fundamental frequency (Fo), jitter, shimmer, noise-to-harmonics ratio (NHR), and non-linear dynamic complexity measures. Exploratory data analysis (EDA) was conducted to identify patterns and relationships in the data. The dataset was split into 70% training and 30% testing sets. To address class imbalance, synthetic minority oversampling technique (SMOTE) was applied. Several machine learning algorithms, including K-Nearest Neighbors (KNN), Support Vector Machine (SVM), Decision Trees, Random Forests, and Neural Networks, were implemented and evaluated. Model performance was assessed using accuracy, recall, F1 score, and area under the receiver operating characteristic curve (AUC-ROC) metrics. SHapley Additive exPlanations (SHAP) were used to explain the models and evaluate feature contributions. Results: The analysis revealed that features related to speech instability, such as jitter, shimmer, and NHR, were highly predictive of PD. Non-linear metrics, including Recurrence Plot Dimension Entropy (RPDE) and Pitch Period Entropy (PPE), also made significant contributions to the model's predictive power. Random Forest and Gradient Boosting models achieved the highest performance, with an AUC-ROC of 0.98, recall of 0.95, ensuring minimal false negatives. SHAp values highlighted the importance of fundamental frequency variation and harmonic-to-noise ratio in distinguishing PD patients from healthy individuals. Conclusion: The developed machine learning model accurately predicts Parkinson's disease using speech recordings, with Random Forest and Gradient Boosting algorithms demonstrating superior performance. Key predictive features include jitter, shimmer, and non-linear dynamic complexity measures. This study provides a reliable, non-invasive tool for early PD detection and underscores the potential of speech analysis in diagnosing neurodegenerative diseases.",
+  "ml_approaches": [
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "t-test/Mann-Whitney U-test",
+          "Pearson Correlation",
+          "LASSO"
+        ],
+        "combination": "sequential"
+      },
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.849,
+        "accuracy": 0.774,
+        "recall": 0.781,
+        "specificity": 0.75,
+        "f1_score": 0.841
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "t-test/Mann-Whitney U-test",
+          "Pearson Correlation",
+          "LASSO"
+        ],
+        "combination": "sequential"
+      },
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.861,
+        "accuracy": 0.693,
+        "recall": 0.619,
+        "specificity": 0.938,
+        "f1_score": 0.756
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "t-test/Mann-Whitney U-test",
+          "Pearson Correlation",
+          "LASSO"
+        ],
+        "combination": "sequential"
+      },
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.795,
+        "accuracy": 0.752,
+        "recall": 0.714,
+        "specificity": 0.875,
+        "f1_score": 0.815
+      }
+    },
+    {
+      "algorithm": "Gradient Boosting",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "t-test/Mann-Whitney U-test",
+          "Pearson Correlation",
+          "LASSO"
+        ],
+        "combination": "sequential"
+      },
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.863,
+        "accuracy": 0.766,
+        "recall": 0.724,
+        "specificity": 0.906,
+        "f1_score": 0.826
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "t-test/Mann-Whitney U-test",
+          "Pearson Correlation",
+          "LASSO"
+        ],
+        "combination": "sequential"
+      },
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.936,
+        "accuracy": 0.852,
+        "recall": 0.875,
+        "specificity": 0.906,
+        "f1_score": 0.863
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "t-test/Mann-Whitney U-test",
+          "Pearson Correlation",
+          "LASSO"
+        ],
+        "combination": "sequential"
+      },
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.789,
+        "accuracy": 0.715,
+        "recall": 0.676,
+        "specificity": 0.844,
+        "f1_score": 0.785
+      }
+    },
+    {
+      "algorithm": "LightGBM",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "t-test/Mann-Whitney U-test",
+          "Pearson Correlation",
+          "LASSO"
+        ],
+        "combination": "sequential"
+      },
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.858,
+        "accuracy": 0.788,
+        "recall": 0.752,
+        "specificity": 0.906,
+        "f1_score": 0.845
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "t-test/Mann-Whitney U-test",
+          "Pearson Correlation",
+          "LASSO"
+        ],
+        "combination": "sequential"
+      },
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.804,
+        "accuracy": 0.606,
+        "recall": 0.495,
+        "specificity": 0.969,
+        "f1_score": 0.658
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.3389/fnagi.2025.1586273_2"
+}

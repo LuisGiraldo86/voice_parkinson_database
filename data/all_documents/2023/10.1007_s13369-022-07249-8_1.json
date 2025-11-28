@@ -1,0 +1,390 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c1689380"
+  },
+  "title": "A Speech-Based Hybrid Decision Support System for Early Detection of Parkinson's Disease",
+  "authors": [
+    {
+      "name": "Rohit Lamba",
+      "affiliations": [
+        {
+          "institution": "Maharishi Markandeshwar Engineering College",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Tarun Gulati",
+      "affiliations": [
+        {
+          "institution": "Maharishi Markandeshwar Engineering College",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Anurag Jain",
+      "affiliations": [
+        {
+          "institution": "University of Petroleum and Energy Studies",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Pooja Rani",
+      "affiliations": [
+        {
+          "institution": "Maharishi Markandeshwar Engineering College",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Arabian Journal for Science and Engineering",
+  "year": 2023,
+  "doi": "10.1007/s13369-022-07249-8",
+  "abstract": "Parkinson's disease is a neurological illness that affects individuals at the later stage of life. Most patients complain of voice or speech abnormalities during the nascent stage of this disease, and it is difficult to recognize these abnormalities. This creates a need for a speech signal-based Parkinson's detection system to aid clinicians in the diagnosis process. A hybrid Parkinson's disease detection system has been proposed in this research work. Two speech datasets have been used in the design of this system: The first is an Italian Parkinson's Voice & Speech dataset, and the other is Mobile Device Voice Recordings at King's College London dataset. Seventeen acoustic features have been generated from the voice samples available in the datasets using Parselmouth library. In addition, based on the significance of features, the eight most significant features have been used in the design of the model. These features have been selected using genetic algorithm method. Four classifiers, k-nearest neighbors, XGBoost, random forest, and logistic regression, have been used during classification stage. The accuracy, sensitivity, f-measure, specificity, and precision parameters have been used for the analysis of the designed system. The combination of a genetic algorithm-based feature selection approach and logistic regression classifier has given 100% accuracy on Italian Parkinson's Voice & Speech dataset. The same feature extraction and classifier combination on the Mobile Device Voice Recordings at King's College London dataset have attained an accuracy level of 90%. Results have shown that the proposed system has outperformed the system found in the literature.",
+  "citescore": 5.7,
+  "ml_approaches": [
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "input_speech": "vowels",
+      "feature_extraction": [
+        "Acoustic Features"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.7553,
+        "recall": 0.7818,
+        "specificity": 0.7227,
+        "precision": 0.7789,
+        "f1_score": 0.7803
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "input_speech": "vowels",
+      "feature_extraction": [
+        "Acoustic Features"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9716,
+        "recall": 0.9709,
+        "specificity": 0.9727,
+        "precision": 0.978,
+        "f1_score": 0.9743999999999999
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "input_speech": "vowels",
+      "feature_extraction": [
+        "Acoustic Features"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9696,
+        "recall": 0.9709,
+        "specificity": 0.9681000000000001,
+        "precision": 0.9744,
+        "f1_score": 0.9726
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "input_speech": "vowels",
+      "feature_extraction": [
+        "Acoustic Features"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.933,
+        "recall": 0.9854,
+        "specificity": 0.8681,
+        "precision": 0.9033,
+        "f1_score": 0.9426000000000001
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "input_speech": "vowels",
+      "feature_extraction": [
+        "Acoustic Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Extra Tree"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8384,
+        "recall": 0.8436,
+        "specificity": 0.8227,
+        "precision": 0.856,
+        "f1_score": 0.8498
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "input_speech": "vowels",
+      "feature_extraction": [
+        "Acoustic Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Extra Tree"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9615,
+        "recall": 0.9636,
+        "specificity": 0.9590000000000001,
+        "precision": 0.9671,
+        "f1_score": 0.9653
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "input_speech": "vowels",
+      "feature_extraction": [
+        "Acoustic Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Extra Tree"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9838,
+        "recall": 0.9854,
+        "specificity": 0.9818000000000001,
+        "precision": 0.9854,
+        "f1_score": 0.9854
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "input_speech": "vowels",
+      "feature_extraction": [
+        "Acoustic Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Extra Tree"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9471,
+        "recall": 0.9963,
+        "specificity": 0.8863,
+        "precision": 0.9163,
+        "f1_score": 0.9547
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "input_speech": "vowels",
+      "feature_extraction": [
+        "Acoustic Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9311,
+        "recall": 0.9527,
+        "specificity": 0.9045000000000001,
+        "precision": 0.9257,
+        "f1_score": 0.9390000000000001
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "input_speech": "vowels",
+      "feature_extraction": [
+        "Acoustic Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9838,
+        "recall": 0.9854,
+        "specificity": 0.9818000000000001,
+        "precision": 0.9854,
+        "f1_score": 0.9854
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "input_speech": "vowels",
+      "feature_extraction": [
+        "Acoustic Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9858,
+        "recall": 0.9854,
+        "specificity": 0.9863,
+        "precision": 0.989,
+        "f1_score": 0.9872
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "input_speech": "vowels",
+      "feature_extraction": [
+        "Acoustic Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 1,
+        "recall": 1,
+        "specificity": 1,
+        "precision": 1,
+        "f1_score": 1
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "input_speech": "reading",
+      "feature_extraction": [
+        "Acoustic Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9042,
+        "recall": 0.9038,
+        "specificity": 0.9024,
+        "precision": 0.9215,
+        "f1_score": 0.9126000000000001
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "input_speech": "reading",
+      "feature_extraction": [
+        "Acoustic Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.98,
+        "recall": 1,
+        "specificity": 0.9512,
+        "precision": 0.9629,
+        "f1_score": 0.9811
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "input_speech": "reading",
+      "feature_extraction": [
+        "Acoustic Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9809,
+        "recall": 0.9807,
+        "specificity": 0.9756,
+        "precision": 0.9807,
+        "f1_score": 0.9806999999999999
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "input_speech": "reading",
+      "feature_extraction": [
+        "Acoustic Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 1,
+        "recall": 1,
+        "specificity": 1,
+        "precision": 1,
+        "f1_score": 1
+      }
+    }
+  ],
+  "note": "Reported a perfect Logistic Regression classification model even though 10-fold cross-validation was used.",
+  "source_dataset": [
+    {
+      "name": "Italian Parkinson's Voice and Speech",
+      "size": 65,
+      "pd_patients": 28,
+      "controls": 22,
+      "url": "https://ieee-dataport.org/open-access/italian-parkinsons-voice-and-speech",
+      "doi": "10.21227/aw6b-tg17"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Italian Parkinson's Voice and Speech",
+      "size": 65,
+      "pd_patients": 28,
+      "controls": 22,
+      "url": "https://ieee-dataport.org/open-access/italian-parkinsons-voice-and-speech",
+      "doi": "10.21227/aw6b-tg17"
+    }
+  ],
+  "study_id": "10.1007/s13369-022-07249-8_1"
+}

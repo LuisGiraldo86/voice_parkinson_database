@@ -1,0 +1,151 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893b4"
+  },
+  "title": "Parkinson's Disease Diagnosis in Cepstral Domain Using MFCC and Dimensionality Reduction with SVM Classifier",
+  "authors": [
+    {
+      "name": "Atiqur Rahman",
+      "affiliations": [
+        {
+          "institution": "University of Science and Technology Bannu",
+          "country": "Pakistan"
+        }
+      ]
+    },
+    {
+      "name": "Padmavati KhandnorSanam Shahla Rizvi",
+      "affiliations": [
+        {
+          "institution": "Raptor Interactive Ltd.",
+          "country": "South Africa"
+        }
+      ]
+    },
+    {
+      "name": "Aurangzeb Khan",
+      "affiliations": [
+        {
+          "institution": "University of Science and Technology Bannu",
+          "country": "Pakistan"
+        }
+      ]
+    },
+    {
+      "name": "Aaqif Afzaal Abbasi",
+      "affiliations": [
+        {
+          "institution": "Foundation University Islamabad",
+          "country": "Pakistan"
+        }
+      ]
+    },
+    {
+      "name": "Shafqat Ullah Khan",
+      "affiliations": [
+        {
+          "institution": "University of Buner",
+          "country": "Pakistan"
+        }
+      ]
+    },
+    {
+      "name": "Tae-Sun Chung",
+      "affiliations": [
+        {
+          "institution": "Ajou University",
+          "country": "South Korea"
+        }
+      ]
+    }
+  ],
+  "journal": "Mobile Information Systems",
+  "publication_type": "Journal",
+  "year": 2021,
+  "doi": "10.1155/2021/8822069",
+  "abstract": "Parkinson's disease (PD) is one of the most common and serious neurological diseases. Impairments in voice have been reported to be the early biomarkers of the disease. Hence, development of PD diagnostic tool will help early diagnosis of the disease. Additionally, intelligent system developed for binary classification of PD and healthy controls can also be exploited in future as an instrument for prodromal diagnosis. Notably, patients with rapid eye movement (REM) sleep behaviour disorder (RBD) represent a good model as they develop PD with a high probability. It has been shown that slight speech and voice impairment may be a sensitive marker of preclinical PD. In this study, we propose PD detection by extracting cepstral features from the voice signals collected from people with PD and healthy subjects. To classify the extracted features, we propose to use dimensionality reduction through linear discriminant analysis and classification through support vector machine. In order to validate the effectiveness of the proposed method, we also developed ten different machine learning models. It was observed that the proposed method yield area under the curve (AUC) of 88%, sensitivity of 73.33%, and specificity of 84%. Moreover, the proposed intelligent system was simulated using publicly available multiple types of voice database. Additionally, the data were collected from patients under on-state. The obtained results on the public database are promising compared to the previously published work.",
+  "citescore": 2.3,
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "feature_extraction": [
+        "Mel-Frequency Cepstral Coefficients"
+      ],
+      "dimensionality_reduction": [
+        "Linear Discriminant Analysis"
+      ],
+      "results": {
+        "accuracy": 0.6875,
+        "recall": 0.3333,
+        "specificity": 0.9
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Polynomial",
+      "framework": "",
+      "feature_extraction": [
+        "Mel-Frequency Cepstral Coefficients"
+      ],
+      "dimensionality_reduction": [
+        "Linear Discriminant Analysis"
+      ],
+      "results": {
+        "accuracy": 0.6375,
+        "recall": 0.2,
+        "specificity": 0.9
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Sigmoid",
+      "framework": "",
+      "feature_extraction": [
+        "Mel-Frequency Cepstral Coefficients"
+      ],
+      "dimensionality_reduction": [
+        "Linear Discriminant Analysis"
+      ],
+      "results": {
+        "accuracy": 0.4678,
+        "recall": 0.083,
+        "specificity": 0.7
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "feature_extraction": [
+        "Mel-Frequency Cepstral Coefficients"
+      ],
+      "dimensionality_reduction": [
+        "Linear Discriminant Analysis"
+      ],
+      "results": {
+        "accuracy": 0.775,
+        "recall": 0.7333,
+        "specificity": 0.84
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Custom Dataset: Lady Reading Hospital, Pakistan",
+      "size": 160,
+      "pd_patients": 60,
+      "controls": 100,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Custom Dataset: Lady Reading Hospital, Pakistan",
+      "size": 160,
+      "pd_patients": 60,
+      "controls": 100,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.1155/2021/8822069_1"
+}

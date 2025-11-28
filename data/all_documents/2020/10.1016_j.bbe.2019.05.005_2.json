@@ -1,0 +1,124 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893e5"
+  },
+  "title": "Parkinson disease prediction using intrinsic mode function based features from speech signal",
+  "authors": [
+    {
+      "name": "Biswajit Karan",
+      "affiliations": [
+        {
+          "institution": "Birla Institute of Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Sitanshu Sekhar Sahu",
+      "affiliations": [
+        {
+          "institution": "Birla Institute of Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Kartik Mahto",
+      "affiliations": [
+        {
+          "institution": "Birla Institute of Technology",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Biocybernetics and Biomedical Engineering",
+  "year": 2020,
+  "doi": "10.1016/j.bbe.2019.05.005",
+  "abstract": "Parkinson's disease (PD) is a progressive neurological disorder prevalent in old age. Past studies have shown that speech can be used as an early marker for identification of PD. It affects a number of speech components such as phonation, speech intensity, articulation, and respiration, which alters the speech intelligibility. Speech feature extraction and classification always have been challenging tasks due to the existence of non-stationary and discontinuity in the speech signal. In this study, empirical mode decomposition (EMD) based features are demonstrated to capture the speech characteristics. A new feature, intrinsic mode function cepstral coefficient (IMFCC) is proposed to efficiently represent the characteristics of Parkinson speech. The performances of proposed features are assessed with two different datasets: dataset-1 and dataset-2 each having 20 normal and 25 Parkinson affected peoples. From the results, it is demonstrated that the proposed intrinsic mode function cepstral coefficient feature provides superior classification accuracy in both datasets. There is a significant increase of 10-20% in accuracy compared to the standard acoustic and Mel-frequency cepstral coefficient (MFCC) features.",
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "input_speech": "/a/",
+      "feature_extraction": [
+        "Intrinsic Mode Function Cepstral Coefficient"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.93,
+        "specificity": 0.92,
+        "recall": 0.92,
+        "auc": 0.99
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "input_speech": "/a/",
+      "feature_extraction": [
+        "Intrinsic Mode Function Cepstral Coefficient"
+      ],
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.82,
+        "specificity": 0.75,
+        "recall": 0.87,
+        "auc": 0.91
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "input_speech": "/0/",
+      "feature_extraction": [
+        "Intrinsic Mode Function Cepstral Coefficient"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.96,
+        "specificity": 1,
+        "recall": 0.92,
+        "auc": 1
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "input_speech": "/0/",
+      "feature_extraction": [
+        "Intrinsic Mode Function Cepstral Coefficient"
+      ],
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.93,
+        "specificity": 0.83,
+        "recall": 1,
+        "auc": 1
+      }
+    }
+  ],
+  "note": "Reported that performance metrics were computed with 10-fold cross-validation and Leave-One-Subject-Out cross-validation. Although there are some almost perfect classifiers. Highly suspicious.",
+  "source_dataset": [
+    {
+      "name": "PC-GITA",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://paperswithcode.com/dataset/pc-gita",
+      "doi": ""
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "PC-GITA",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://paperswithcode.com/dataset/pc-gita",
+      "doi": ""
+    }
+  ],
+  "study_id": "10.1016/j.bbe.2019.05.005_2"
+}

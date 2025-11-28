@@ -1,0 +1,103 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c16893eb"
+  },
+  "title": "Optimising Multilayer Perceptron weights and biases through a Cellular Genetic Algorithm for medical data classification",
+  "authors": [
+    {
+      "name": "Matías Gabriel Rojas",
+      "affiliations": [
+        {
+          "institution": "Universidad Nacional de Cuyo",
+          "country": "Argentina"
+        }
+      ]
+    },
+    {
+      "name": "Ana Carolina Olivera",
+      "affiliations": [
+        {
+          "institution": "Universidad Nacional de Cuyo",
+          "country": "Argentina"
+        }
+      ]
+    },
+    {
+      "name": "Pablo Javier Vidal",
+      "affiliations": [
+        {
+          "institution": "Universidad Nacional de Cuyo",
+          "country": "Argentina"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Array",
+  "year": 2022,
+  "doi": "10.1016/j.array.2022.100173",
+  "abstract": " In recent years, technology in medicine has shown a significant advance due to artificial intelligence becoming a framework to make accurate medical diagnoses. Models like Multilayer Perceptrons (MLPs) can detect implicit patterns in data, allowing identifying patients conditions that cannot be seen easily. MLPs consist of biased neurons arranged in layers, connected by weighted connections. Their effectiveness depends on finding the optimal weights and biases that reduce the classification error, which is usually done by using the Back Propagation algorithm (BP). But BP has several disadvantages that could provoke the MLP not to learn. Metaheuristics are alternatives to BP that reach high-quality solutions without using many computational resources. In this work, the Cellular Genetic Algorithm (CGA) with a specially designed crossover operator called Damped Crossover (DX), is proposed to optimise weights and biases of the MLP to classify medical data. When compared against state-of-the-art algorithms, the CGA configured with DX obtained the minimal Mean Square Error value in three out of the five considered medical datasets and was the quickest algorithm with four datasets, showing a better balance between time consumed and optimisation performance. Additionally, it is competitive in enhancing classification quality, reaching the best accuracy with two datasets and the second-best accuracy with two of the remaining.",
+  "ml_approaches": [
+    {
+      "algorithm": "Multilayer Perceptron",
+      "optimization": "Cellular Genetic Algorithm - Damped Crossover: Non-Uniform Mutation",
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.87,
+        "recall": 0.51,
+        "specificity": 0.982
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "optimization": "Cellular Genetic Algorithm - Damped Crossover: Polynomial Mutation",
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.863,
+        "recall": 0.487,
+        "specificity": 0.98
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "optimization": "Cellular Genetic Algorithm - Damped Crossover: Random Mutation",
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.86,
+        "recall": 0.492,
+        "specificity": 0.975
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "optimization": "Cellular Genetic Algorithm - Damped Crossover: Uniform Mutation",
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.87,
+        "recall": 0.529,
+        "specificity": 0.977
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1016/j.array.2022.100173_1"
+}

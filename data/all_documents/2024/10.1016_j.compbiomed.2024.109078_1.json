@@ -1,0 +1,116 @@
+{
+  "_id": {
+    "$oid": "68ecf00b6c43da02c1689338"
+  },
+  "title": "Machine learning-based classification of Parkinson's disease using acoustic features: Insights from multilingual speech tasks",
+  "authors": [
+    {
+      "name": "Seung-Min Jeong",
+      "affiliations": [
+        {
+          "institution": "Sangmyung University",
+          "country": "South Korea"
+        }
+      ]
+    },
+    {
+      "name": "Young-Do Song",
+      "affiliations": [
+        {
+          "institution": "Sangmyung University",
+          "country": "South Korea"
+        }
+      ]
+    },
+    {
+      "name": "Chae-Lin Seok",
+      "affiliations": [
+        {
+          "institution": "Sangmyung University",
+          "country": "South Korea"
+        }
+      ]
+    },
+    {
+      "name": "Jun-Young Lee",
+      "affiliations": [
+        {
+          "institution": "Seoul National University College of Medicine",
+          "country": "South Korea"
+        }
+      ]
+    },
+    {
+      "name": "Eui Chul Lee",
+      "affiliations": [
+        {
+          "institution": "Sangmyung University",
+          "country": "South Korea"
+        }
+      ]
+    },
+    {
+      "name": "Han-Joon Kim",
+      "affiliations": [
+        {
+          "institution": "Seoul National University College of Medicine",
+          "country": "South Korea"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Computers in Biology and Medicine",
+  "year": 2024,
+  "doi": "10.1016/j.compbiomed.2024.109078",
+  "abstract": "This study advances the automation of Parkinson's disease (PD) diagnosis by analyzing speech characteristics, leveraging a comprehensive approach that integrates a voting-based machine learning model. Given the growing prevalence of PD, especially among the elderly population, continuous and efficient diagnosis is of paramount importance. Conventional monitoring methods suffer from limitations related to time, cost, and accessibility, underscoring the need for the development of automated diagnostic tools. In this paper, we present a robust model for classifying speech patterns in Korean PD patients, addressing a significant research gap. Our model employs straightforward preprocessing techniques and a voting-based machine learning approach, demonstrating superior performance, particularly when training data is limited. Furthermore, we emphasize the effectiveness of the eGeMAPSv2 feature set in PD analysis and introduce new features that substantially enhance classification accuracy. The proposed model, achieving an accuracy of 84.73 % and an area under the ROC (AUC) score of 92.18 % on a dataset comprising 100 Korean PD patients and 100 healthy controls, offers a practical solution for automated diagnosis applications, such as smartphone apps. Future research endeavors will concentrate on enhancing the model's performance and delving deeper into the relationship between high-importance features and PD.",
+  "ml_approaches": [
+    {
+      "algorithm": "Audio Spectrogram Transformer",
+      "scaling": [
+        "Standardization"
+      ],
+      "validation": "k-fold cross-validation",
+      "results": {
+        "accuracy": 0.793,
+        "specificity": 0.8264,
+        "auc": 0.873,
+        "f1_score": 0.7929999999999999
+      }
+    },
+    {
+      "algorithm": "Ensemble (CatBoost, LightGBM, XGBoost, Extra Trees, Random Forest)",
+      "scaling": [
+        "Standardization"
+      ],
+      "validation": "k-fold cross-validation",
+      "results": {
+        "accuracy": 0.8473,
+        "specificity": 0.8422,
+        "auc": 0.9218000000000001,
+        "f1_score": 0.8508
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Custom Korean Parkinson's Disease Speech Dataset",
+      "size": 200,
+      "pd_patients": 100,
+      "controls": 100,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Custom Korean Parkinson's Disease Speech Dataset",
+      "size": 200,
+      "pd_patients": 100,
+      "controls": 100,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.1016/j.compbiomed.2024.109078_1"
+}

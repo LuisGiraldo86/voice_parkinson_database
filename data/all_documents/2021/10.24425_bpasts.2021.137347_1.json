@@ -1,0 +1,164 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893b0"
+  },
+  "title": "Deep learning vs feature engineering in the assessment of voice signals for diagnosis in Parkinson's disease",
+  "authors": [
+    {
+      "name": "Ewelina Majda-Zdancewicz",
+      "affiliations": [
+        {
+          "institution": "Military University of Technology",
+          "country": "Poland"
+        }
+      ]
+    },
+    {
+      "name": "Anna Potulska-Chromik",
+      "affiliations": [
+        {
+          "institution": "Medical University of Warsaw",
+          "country": "Poland"
+        }
+      ]
+    },
+    {
+      "name": "Jacek Jakubowski",
+      "affiliations": [
+        {
+          "institution": "Military University of Technology",
+          "country": "Poland"
+        }
+      ]
+    },
+    {
+      "name": "Monika Nojszewska",
+      "affiliations": [
+        {
+          "institution": "Medical University of Warsaw",
+          "country": "Poland"
+        }
+      ]
+    },
+    {
+      "name": "Anna Kostera-Pruszczyk",
+      "affiliations": [
+        {
+          "institution": "Medical University of Warsaw",
+          "country": "Poland"
+        }
+      ]
+    }
+  ],
+  "journal": "Bulletin of the Polish Academy of Sciences: Technical Sciences",
+  "publication_type": "Journal",
+  "year": 2021,
+  "doi": "10.24425/bpasts.2021.137347",
+  "abstract": "Voice acoustic analysis can be a valuable and objective tool supporting the diagnosis of many neurodegenerative diseases, especially in times of distant medical examination during the pandemic. The article compares the application of selected signal processing methods and machine learning algorithms for the taxonomy of acquired speech signals representing the vowel a with prolonged phonation in patients with Parkinson's disease and healthy subjects. The study was conducted using three different feature engineering techniques for the generation of speech signal features as well as the deep learning approach based on the processing of images involving spectrograms of different time and frequency resolutions. The research utilized real recordings acquired in the Department of Neurology at the Medical University of Warsaw, Poland. The discriminatory ability of feature vectors was evaluated using the SVM technique. The spectrograms were processed by the popular AlexNet convolutional neural network adopted to the binary classification task according to the strategy of transfer learning. The results of numerical experiments have shown different efficiencies of the examined approaches; however, the sensitivity of the best test based on the selected features proposed with respect to biological grounds of voice articulation reached the value of 97% with the specificity no worse than 93%. The results could be further slightly improved thanks to the combination of the selected deep learning and feature engineering algorithms in one stacked ensemble model.",
+  "citescore": 4.4,
+  "ml_approaches": [
+    {
+      "algorithm": "Convolutional Neural Network",
+      "framework": "",
+      "feature_extraction": [
+        "Triple Resolution Spectrogram"
+      ],
+      "preprocessing": [],
+      "validation": "11-fold cross-validation",
+      "results": {
+        "recall": 0.932,
+        "specificity": 0.795
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Cubic",
+      "framework": "",
+      "feature_extraction": [
+        "Linear-Frequency Cepstrum Coefficients"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: Support Vector Machine"
+        ]
+      },
+      "validation": "11-fold cross-validation",
+      "results": {
+        "recall": 0.977,
+        "specificity": 0.932
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Cubic",
+      "framework": "",
+      "feature_extraction": [
+        "Mel-Frequency Cepstrum Coefficients"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: Support Vector Machine"
+        ]
+      },
+      "validation": "11-fold cross-validation",
+      "results": {
+        "recall": 0.864,
+        "specificity": 0.8859999999999999
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Cubic",
+      "framework": "",
+      "feature_extraction": [
+        "Gamma-Tone Cepstrum Coefficients"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: Support Vector Machine"
+        ]
+      },
+      "validation": "11-fold cross-validation",
+      "results": {
+        "recall": 0.886,
+        "specificity": 0.909
+      }
+    },
+    {
+      "algorithm": "Stacking Ensemble (Base: Support Vector Machine, Convolutional Neural Network; Meta: Support Vector Machine)",
+      "framework": "",
+      "feature_extraction": [
+        "Linear-Frequency Cepstrum Coefficients",
+        "Triple Resolution Spectrogram"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: Support Vector Machine"
+        ]
+      },
+      "validation": "2-fold cross-validation",
+      "results": {
+        "recall": 1,
+        "specificity": 0.932
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Custom Dataset Department of Neurology at the Medical University of Warsaw, Poland",
+      "size": 44,
+      "pd_patients": 22,
+      "controls": 22,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Custom Dataset Department of Neurology at the Medical University of Warsaw, Poland",
+      "size": 44,
+      "pd_patients": 22,
+      "controls": 22,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.24425/bpasts.2021.137347_1"
+}

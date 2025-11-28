@@ -1,0 +1,70 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c1689413"
+  },
+  "title": "Differentiating Parkinson's Disease from other Neuro Diseases and Diagnosis using Deep Learning with Nature Inspired Algorithms and Ensemble Learning",
+  "authors": [
+    {
+      "name": "Anitha Rani Palakayala",
+      "affiliations": [
+        {
+          "institution": "VIT-AP University",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Anitha Rani Palakayala",
+      "affiliations": [
+        {
+          "institution": "VIT-AP University",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Conference",
+  "journal": "Procedia Computer Science",
+  "year": 2024,
+  "doi": "10.1016/j.procs.2024.04.058",
+  "abstract": "A highly accurate automated approach using a deep structured neural network was proposed to detect Parkinson's disease through voice samples. This cost-effective and non-invasive method aims to enhance diagnostic precision and assess the disease's stage of progression. The study addresses two classification problems: binary and multi-category classification. The binary classification deep structured neural network achieved a diagnostic accuracy of 97.6%. For multiclass classification, a Deep Convolution Neural Network (DCNN) and a K- nearest neighbor technique for benchmarking, were utilized using a shared database. Nature Inspired Algorithm (NIA)-Genetic Algorithm was employed to optimize the initial feature set. The suggested deep structure neural network demonstrated a 93.7% accuracy in estimating the disease's stage, showing promising results. Further investigations are encouraged to explore the model's adaptability and pursue improved outcomes.",
+  "ml_approaches": [
+    {
+      "algorithm": "Convolutional Neural Network",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Average Weighted Rank"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9767
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Speech with Multiple Types of Sound Recordings",
+      "size": 40,
+      "pd_patients": 20,
+      "controls": 20,
+      "url": "https://archive.ics.uci.edu/dataset/301/parkinson+speech+dataset+with+multiple+types+of+sound+recordings",
+      "doi": "10.24432/C5NC8M"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Speech with Multiple Types of Sound Recordings",
+      "size": 40,
+      "pd_patients": 20,
+      "controls": 20,
+      "url": "https://archive.ics.uci.edu/dataset/301/parkinson+speech+dataset+with+multiple+types+of+sound+recordings",
+      "doi": "10.24432/C5NC8M"
+    }
+  ],
+  "study_id": "10.1016/j.procs.2024.04.058_1"
+}

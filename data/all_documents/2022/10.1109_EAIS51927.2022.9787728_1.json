@@ -1,0 +1,129 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c1689372"
+  },
+  "title": "A Machine Learning approach for Early Detection of Parkinson's Disease Using acoustic traces",
+  "authors": [
+    {
+      "name": "Lerina Aversano",
+      "affiliations": [
+        {
+          "institution": "University of Sannio",
+          "country": "Italy"
+        }
+      ]
+    },
+    {
+      "name": "Mario Luca Bernardi",
+      "affiliations": [
+        {
+          "institution": "University of Sannio",
+          "country": "Italy"
+        }
+      ]
+    },
+    {
+      "name": "Marta Cimitile",
+      "affiliations": [
+        {
+          "institution": "Unitelma Sapienza University",
+          "country": "Italy"
+        }
+      ]
+    },
+    {
+      "name": "Martina Iammarino",
+      "affiliations": [
+        {
+          "institution": "University of Sannio",
+          "country": "Italy"
+        }
+      ]
+    },
+    {
+      "name": "Debora Montano",
+      "affiliations": [
+        {
+          "institution": "University of Sannio",
+          "country": "Italy"
+        }
+      ]
+    },
+    {
+      "name": "Chiara Verdone",
+      "affiliations": [
+        {
+          "institution": "University of Sannio",
+          "country": "Italy"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Conference",
+  "journal": "2022 IEEE International Conference on Evolving and Adaptive Intelligent Systems",
+  "year": 2022,
+  "doi": "10.1109/EAIS51927.2022.9787728",
+  "abstract": "Parkinson's disease is one of the most common diseases of the nervous system, which although typically develops after age 50, in some cases it also affects younger individuals. Its diagnosis is mainly based on the analysis of symptoms, it affects movement, coordination, and muscle control. Doctors generally analyse tremors, stiffness, slow movement, and difficulty walking as symptoms of the disease. Furthermore, changes in the voice are very common in patients with Parkinson's disease, although such changes are not easily noticeable at an early stage. The disease can change your breathing, tone of voice, or lower the volume by up to 10 decibels. Therefore, speech recognition can introduce a new methodology of investigation in the diagnosis and monitoring of Parkinson's disease. This study aims at the development of a model based on the use of Neural Networks for the diagnosis of the disease on voice recordings of different nature, made by both healthy and sick patients. In particular, three types of networks were used: Long Short Term Memory (LSTM) and Convolutional Neural Network (CNN) with one and two dimensions. The results are very satisfactory, highlighting the excellent performance of the LSTM with an F-Score of 97%. These results are very encouraging, suggesting that the use of the proposed approach can improve the Parkinson's diagnostic, making it less costly in terms of time and effort.",
+  "ml_approaches": [
+    {
+      "algorithm": "Long-Short Term Memory",
+      "feature_extraction": [
+        "Mel Spectrogram"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.971,
+        "precision": 0.992,
+        "recall": 0.952,
+        "f1_score": 0.971
+      }
+    },
+    {
+      "algorithm": "Convolutional Neural Network: 1D",
+      "feature_extraction": [
+        "Mel Spectrogram"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.948,
+        "precision": 0.932,
+        "recall": 0.964,
+        "f1_score": 0.948
+      }
+    },
+    {
+      "algorithm": "Convolutional Neural Network: 2D",
+      "feature_extraction": [
+        "Mel Spectrogram"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.962,
+        "precision": 0.953,
+        "recall": 0.973,
+        "f1_score": 0.963
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Italian Parkinson's Voice and Speech",
+      "size": 65,
+      "pd_patients": 28,
+      "controls": 22,
+      "url": "https://ieee-dataport.org/open-access/italian-parkinsons-voice-and-speech",
+      "doi": "10.21227/aw6b-tg17"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Italian Parkinson's Voice and Speech",
+      "size": 65,
+      "pd_patients": 28,
+      "controls": 22,
+      "url": "https://ieee-dataport.org/open-access/italian-parkinsons-voice-and-speech",
+      "doi": "10.21227/aw6b-tg17"
+    }
+  ],
+  "study_id": "10.1109/EAIS51927.2022.9787728_1"
+}

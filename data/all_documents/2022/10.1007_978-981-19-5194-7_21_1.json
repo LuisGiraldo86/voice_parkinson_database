@@ -1,0 +1,112 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c1689375"
+  },
+  "title": "Speech Recognition for Parkinson's Disease Based on Improved Genetic Algorithm and Data Enhancement Technology",
+  "authors": [
+    {
+      "name": "Jing Qin",
+      "affiliations": [
+        {
+          "institution": "Dalian University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Tong Liu",
+      "affiliations": [
+        {
+          "institution": "Dalian University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Zumin Wang",
+      "affiliations": [
+        {
+          "institution": "Dalian University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Qijie Zou",
+      "affiliations": [
+        {
+          "institution": "Dalian University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Liming Chen",
+      "affiliations": [
+        {
+          "institution": "Ulster University",
+          "country": "UK"
+        }
+      ]
+    },
+    {
+      "name": "Chang Hong",
+      "affiliations": [
+        {
+          "institution": "Third People's Hospital of Dalian",
+          "country": "China"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Conference",
+  "journal": "Data Science",
+  "year": 2022,
+  "doi": "10.1007/978-981-19-5194-7_21",
+  "abstract": "Parkinson's disease is one of the most destructive diseases to the nervous system. Speech disorder is one of the typical symptoms of Parkinson's disease. Approximately 90% of Parkin-son's patients develop some degree of speech disorder, which affects speech function faster than any other subsystem of the body. Screening Parkinson's disease by sound is a very effective method that has attracted a growing number of researchers over the past decade. Patients with Parkinson's disease could be identified by recording the sound signal of the pronunciation of words, extracting appropriate features and identifying the disturbance in their voices. This paper proposes an improved genetic algorithm combined with a data enhancement method for Parkinson's speech signal recognition. Specifically, the methods first extract representative speech signal features through the L1 regularization SVM and then enhance the representative feature data by the SMOTE algorithm. Following this, both original and enhanced features are used to train an SVM classifier for speech signal recognition. An improved genetic algorithm was applied to find the optimal parameters of the SVM. The effectiveness of our proposed model is demonstrated by using Parkinson's disease audio data set from the UCI machine learning library, and compared with the most advanced methods, our proposed method has the best performance.",
+  "citescore": 1,
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "optimization": "Modified Genetic Algorithm",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Support Vector Machine + l1"
+        ]
+      },
+      "scaling": [
+        "Min Max"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9976,
+        "precision": 0.9954,
+        "f1_score": 0.9939
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1007/978-981-19-5194-7_21_1"
+}

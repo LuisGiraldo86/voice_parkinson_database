@@ -1,0 +1,146 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c168937c"
+  },
+  "title": "Intelligent approach of score-based artificial fish swarm algorithm (SAFSA) for Parkinson's disease diagnosis",
+  "authors": [
+    {
+      "name": "Syed Haroon Abdul Gafoor",
+      "affiliations": [
+        {
+          "institution": "Bharathiar University",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Padma Theagarajan",
+      "affiliations": [
+        {
+          "institution": "Sona College of Technology",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "International Journal of Intelligent Computing and Cybernetics",
+  "year": 2022,
+  "doi": "10.1108/IJICC-10-2021-0226",
+  "abstract": "Purpose Conventional diagnostic techniques, on the other hand, may be prone to subjectivity since they depend on assessment of motions that are often subtle to individual eyes and hence hard to classify, potentially resulting in misdiagnosis. Meanwhile, early nonmotor signs of Parkinson's disease (PD) can be mild and may be due to variety of other conditions. As a result, these signs are usually ignored, making early PD diagnosis difficult. Machine learning approaches for PD classification and healthy controls or individuals with similar medical symptoms have been introduced to solve these problems and to enhance the diagnostic and assessment processes of PD (like, movement disorders or other Parkinsonian syndromes). Design/methodology/approach Medical observations and evaluation of medical symptoms, including characterization of a wide range of motor indications, are commonly used to diagnose PD. The quantity of the data being processed has grown in the last five years; feature selection has become a prerequisite before any classification. This study introduces a feature selection method based on the score-based artificial fish swarm algorithm (SAFSA) to overcome this issue. Findings This study adds to the accuracy of PD identification by reducing the amount of chosen vocal features while to use the most recent and largest publicly accessible database. Feature subset selection in PD detection techniques starts by eliminating features that are not relevant or redundant. According to a few objective functions, features subset chosen should provide the best performance. Research limitations/implications In many situations, this is an Nondeterministic Polynomial Time (NP-Hard) issue. This method enhances the PD detection rate by selecting the most essential features from the database. To begin, the data set's dimensionality is reduced using Singular Value Decomposition dimensionality technique. Next, Biogeography-Based Optimization (BBO) for feature selection; the weight value is a vital parameter for finding the best features in PD classification. Originality/value PD classification is done by using ensemble learning classification approaches such as hybrid classifier of fuzzy K-nearest neighbor, kernel support vector machines, fuzzy convolutional neural network and random forest. The suggested classifiers are trained using data from UCI ML repository, and their results are verified using leave-one-person-out cross validation. The measures employed to assess the classifier efficiency include accuracy, F-measure, Matthews correlation coefficient.",
+  "ml_approaches": [
+    {
+      "algorithm": "Fuzzy K-Nearest Neighbors",
+      "scaling": [
+        "Min Max"
+      ],
+      "dimensionality_reduction": [
+        "Singular Value Decomposition"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Score-based Artificial Fish Swarm Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8612,
+        "recall": 0.9399,
+        "specificity": 0.615,
+        "precision": 0.8801,
+        "mcc": 0.601,
+        "f1_score": 0.9099
+      }
+    },
+    {
+      "algorithm": "Fuzzy Convolutional Neural Network",
+      "scaling": [
+        "Min Max"
+      ],
+      "dimensionality_reduction": [
+        "Singular Value Decomposition"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Score-based Artificial Fish Swarm Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8712,
+        "recall": 0.94,
+        "specificity": 0.6655,
+        "precision": 0.8999,
+        "mcc": 0.633,
+        "f1_score": 0.9187
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "scaling": [
+        "Min Max"
+      ],
+      "dimensionality_reduction": [
+        "Singular Value Decomposition"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Score-based Artificial Fish Swarm Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9621,
+        "recall": 0.9699,
+        "specificity": 0.9281,
+        "precision": 0.979,
+        "mcc": 0.869,
+        "f1_score": 0.9721
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "scaling": [
+        "Min Max"
+      ],
+      "dimensionality_reduction": [
+        "Singular Value Decomposition"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Score-based Artificial Fish Swarm Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.93,
+        "recall": 0.99,
+        "specificity": 0.7421,
+        "precision": 0.92,
+        "mcc": 0.791,
+        "f1_score": 0.9501
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "study_id": "10.1108/IJICC-10-2021-0226_1"
+}

@@ -1,0 +1,119 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893db"
+  },
+  "title": "Pre-trained convolutional neural networks identify Parkinson's disease from spectrogram images of voice samples",
+  "authors": [
+    {
+      "name": "Yasir Rahmatallah",
+      "affiliations": [
+        {
+          "institution": "University of Arkansas for Medical Sciences",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Aaron S. Kemp",
+      "affiliations": [
+        {
+          "institution": "University of Arkansas for Medical Sciences",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Anu Iyer",
+      "affiliations": [
+        {
+          "institution": "Georgia Institute of Technology",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Lakshmi Pillai",
+      "affiliations": [
+        {
+          "institution": "University of Arkansas for Medical Sciences",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Linda J. Larson-Prior",
+      "affiliations": [
+        {
+          "institution": "University of Arkansas for Medical Sciences",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Tuhin Virmani",
+      "affiliations": [
+        {
+          "institution": "University of Arkansas for Medical Sciences",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Fred Prior",
+      "affiliations": [
+        {
+          "institution": "University of Arkansas for Medical Sciences",
+          "country": "USA"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Scientific Reports",
+  "year": 2025,
+  "doi": "10.1038/s41598-025-92105-6",
+  "abstract": "Machine learning approaches including deep learning models have shown promising performance in the automatic detection of Parkinson's disease. These approaches rely on different types of data with voice recordings being the most used due to the convenient and non-invasive nature of data acquisition. Our group has successfully developed a novel approach that uses convolutional neural network with transfer learning to analyze spectrogram images of the sustained vowel /a/ to identify people with Parkinson's disease. We tested this approach by collecting a dataset of voice recordings via analog telephone lines, which support limited bandwidth. The convolutional neural network with transfer learning approach showed superior performance against conventional machine learning methods that collapse measurements across time to generate feature vectors. This study builds upon our prior results and presents two novel contributions: First, we tested the performance of our approach on a larger voice dataset recorded using smartphones with wide bandwidth. Our results show comparable performance between two datasets generated using different recording platforms despite the differences in most important features resulting from the limited bandwidth of analog telephonic lines. Second, we compared the classification performance achieved using linear-scale and mel-scale spectrogram images and showed a small but statistically significant gain using mel-scale spectrograms.",
+  "ml_approaches": [
+    {
+      "algorithm": "Inception V3",
+      "framework": "",
+      "feature_extraction": [
+        "Mel Spectrogram"
+      ],
+      "results": {
+        "auc": 0.97
+      }
+    },
+    {
+      "algorithm": "Inception V3",
+      "framework": "",
+      "feature_extraction": [
+        "Linear Spectrogram"
+      ],
+      "results": {
+        "auc": 0.95
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Voice Samples for Patients with Parkinson's Disease and Healthy Controls",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://figshare.com/articles/dataset/Voice_Samples_for_Patients_with_Parkinson_s_Disease_and_Healthy_Controls/23849127",
+      "doi": "10.1038/s41598-023-47568-w"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Voice Samples for Patients with Parkinson's Disease and Healthy Controls",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://figshare.com/articles/dataset/Voice_Samples_for_Patients_with_Parkinson_s_Disease_and_Healthy_Controls/23849127",
+      "doi": "10.1038/s41598-023-47568-w"
+    }
+  ],
+  "study_id": "10.1038/s41598-025-92105-6_1"
+}

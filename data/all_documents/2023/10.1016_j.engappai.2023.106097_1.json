@@ -1,0 +1,351 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c16893f7"
+  },
+  "title": "Voice Feature Description of Parkinson's Disease Based on Co-occurrence Direction Attribute Topology",
+  "authors": [
+    {
+      "name": "Tao Zhang",
+      "affiliations": [
+        {
+          "institution": "Yanshan University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Liqin Lin",
+      "affiliations": [
+        {
+          "institution": "Yanshan University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Jing Tian",
+      "affiliations": [
+        {
+          "institution": "Yanshan University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Zaifa Xue",
+      "affiliations": [
+        {
+          "institution": "Yanshan University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Xiaonan Guo",
+      "affiliations": [
+        {
+          "institution": "Yanshan University",
+          "country": "China"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Engineering Applications of Artificial Intelligence",
+  "year": 2023,
+  "doi": "10.1016/j.engappai.2023.106097",
+  "abstract": "The incipient diagnosis of Parkinson's disease (PD) helps to control the disease as early as possible and dysphonia is one of the early symptoms of PD. Therefore, the construction of effective voice features is of great significance. To distinguish PD patients from healthy controls, combined with the idea of formal structure analysis, a voice feature description method of co-occurrence direction attribute topology (CDAT) is proposed in this paper. Firstly, the formal context is established according to the direction information statistically obtained in the sub-region of the spectrogram to describe the correspondence between energy points and their direction attributes. Then the CDAT is constructed to obtain the coupling information between the direction attributes in the formal context. Finally, the number of connected domains in the CDAT indicating the degree of nodal coupling is extracted as structural features and input to multiple classifiers for validation. Test and cross-corpora experiments are conducted on two different Parkinsonian sustained vowel datasets, CPPDD and SPDD, achieving the best average classification accuracies of 95.84% and 93.90% with random forest, respectively. The proposed features highlight the variation of energy direction derivatives in the spectrograms through the attribute topology. The results indicate that the proposed method has good classification accuracy on different native language datasets and cross-corpora experiments, which outperforms or is comparable to the performance of latest methods used for PD classification.",
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "feature_extraction": [
+        "Spectrogram",
+        "Co-occurrence Direction Attribute Topology"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.9288,
+        "recall": 0.9185,
+        "precision": 0.9509,
+        "f1_score": 0.9339
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "feature_extraction": [
+        "Spectrogram",
+        "Co-occurrence Direction Attribute Topology"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9329,
+        "recall": 0.9259,
+        "precision": 0.9528,
+        "f1_score": 0.9377
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "feature_extraction": [
+        "Spectrogram",
+        "Co-occurrence Direction Attribute Topology"
+      ],
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.9167,
+        "recall": 0.9222,
+        "precision": 0.9257,
+        "f1_score": 0.9239
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "feature_extraction": [
+        "Spectrogram",
+        "Co-occurrence Direction Attribute Topology"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.8557,
+        "recall": 0.7667,
+        "precision": 0.9642,
+        "f1_score": 0.8532
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "feature_extraction": [
+        "Spectrogram",
+        "Co-occurrence Direction Attribute Topology"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8617,
+        "recall": 0.7778,
+        "precision": 0.9642,
+        "f1_score": 0.8593000000000001
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "feature_extraction": [
+        "Spectrogram",
+        "Co-occurrence Direction Attribute Topology"
+      ],
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.8394,
+        "recall": 0.7519,
+        "precision": 0.9442,
+        "f1_score": 0.8317
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "feature_extraction": [
+        "Spectrogram",
+        "Co-occurrence Direction Attribute Topology"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.9349,
+        "recall": 0.9185,
+        "precision": 0.9614,
+        "f1_score": 0.9393
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "feature_extraction": [
+        "Spectrogram",
+        "Co-occurrence Direction Attribute Topology"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.931,
+        "recall": 0.9185,
+        "precision": 0.9564,
+        "f1_score": 0.9359999999999999
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "feature_extraction": [
+        "Spectrogram",
+        "Co-occurrence Direction Attribute Topology"
+      ],
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.8902,
+        "recall": 0.8889,
+        "precision": 0.9091,
+        "f1_score": 0.8989
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "feature_extraction": [
+        "Spectrogram",
+        "Co-occurrence Direction Attribute Topology"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.8801,
+        "recall": 0.9037,
+        "precision": 0.8844,
+        "f1_score": 0.8925
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "feature_extraction": [
+        "Spectrogram",
+        "Co-occurrence Direction Attribute Topology"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8821,
+        "recall": 0.9037,
+        "precision": 0.8897,
+        "f1_score": 0.8948
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "feature_extraction": [
+        "Spectrogram",
+        "Co-occurrence Direction Attribute Topology"
+      ],
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.8476,
+        "recall": 0.8851,
+        "precision": 0.8445,
+        "f1_score": 0.8644
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_extraction": [
+        "Spectrogram",
+        "Co-occurrence Direction Attribute Topology"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.9369,
+        "recall": 0.937,
+        "precision": 0.9488,
+        "f1_score": 0.9423
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_extraction": [
+        "Spectrogram",
+        "Co-occurrence Direction Attribute Topology"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.939,
+        "recall": 0.9407,
+        "precision": 0.9507,
+        "f1_score": 0.9445
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_extraction": [
+        "Spectrogram",
+        "Co-occurrence Direction Attribute Topology"
+      ],
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.9248,
+        "recall": 0.9222,
+        "precision": 0.9396,
+        "f1_score": 0.9308
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "feature_extraction": [
+        "Spectrogram",
+        "Co-occurrence Direction Attribute Topology"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.9289,
+        "recall": 0.9074,
+        "precision": 0.9618,
+        "f1_score": 0.9331
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "feature_extraction": [
+        "Spectrogram",
+        "Co-occurrence Direction Attribute Topology"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9329,
+        "recall": 0.9185,
+        "precision": 0.9588,
+        "f1_score": 0.9375
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "feature_extraction": [
+        "Spectrogram",
+        "Co-occurrence Direction Attribute Topology"
+      ],
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.9106,
+        "recall": 0.8963,
+        "precision": 0.938,
+        "f1_score": 0.9167000000000001
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Speech with Multiple Types of Sound Recordings",
+      "size": 40,
+      "pd_patients": 20,
+      "controls": 20,
+      "url": "https://archive.ics.uci.edu/dataset/301/parkinson+speech+dataset+with+multiple+types+of+sound+recordings",
+      "doi": "10.24432/C5NC8M"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Speech with Multiple Types of Sound Recordings",
+      "size": 40,
+      "pd_patients": 20,
+      "controls": 20,
+      "url": "https://archive.ics.uci.edu/dataset/301/parkinson+speech+dataset+with+multiple+types+of+sound+recordings",
+      "doi": "10.24432/C5NC8M"
+    }
+  ],
+  "study_id": "10.1016/j.engappai.2023.106097_1"
+}

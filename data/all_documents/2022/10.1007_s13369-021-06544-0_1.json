@@ -1,0 +1,184 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c1689371"
+  },
+  "title": "A Hybrid Feature Selection Approach for Parkinson's Detection Based on Mutual Information Gain and Recursive Feature Elimination",
+  "authors": [
+    {
+      "name": "Rohit Lamba",
+      "affiliations": [
+        {
+          "institution": "Maharishi Markandeshwar Engineering College",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Tarun Gulati",
+      "affiliations": [
+        {
+          "institution": "Maharishi Markandeshwar Engineering College",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Anurag Jain",
+      "affiliations": [
+        {
+          "institution": "University of Petroleum and Energy Studies",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Arabian Journal for Science and Engineering",
+  "year": 2022,
+  "doi": "10.1007/s13369-021-06544-0",
+  "abstract": "Parkinson's disease, which affects the neurological system of patients, is the second most common neurodegenerative ailment after Alzheimer's disease. Parkinson's disease is most common in adults over sixty and advances slowly. Parkinson's disease symptoms are mild in the early stages and may go unnoticed, but as the disease advances, the symptoms get more severe, and its diagnosis at an early stage is not easy. Recent studies have revealed that alterations in speech or voice distortion can be used to diagnose Parkinson's disease, because it develops as an early symptom in Parkinson's disease patients. The authors propose a technique for detecting Parkinson's disease using speech signals in this paper. As feature selection plays a vital role during classification, the authors have proposed a hybrid MIRFE feature selection approach based on mutual information gain and recursive feature elimination methods. A Parkinson's disease classification dataset consisting of 756 voice measures of 252 individuals was used in this study. The proposed feature selection approach is compared with the five standard feature selection methods by random forest and XGBoost classifier. The proposed MIRFE approach selects 40 features out of 754 features, with a feature reduction ratio of 94.69%. An accuracy of 93.88% and an area under the curve (AUC) of 0.978 are obtained by the proposed system, which is higher than some recent work.",
+  "citescore": 5.2,
+  "ml_approaches": [
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Mutual Information"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9388,
+        "recall": 0.9166,
+        "specificity": 0.9609000000000001,
+        "f1_score": 0.9373999999999999,
+        "precision": 0.9591
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9175,
+        "recall": 0.8741,
+        "specificity": 0.9609000000000001,
+        "f1_score": 0.9571999999999999,
+        "precision": 0.9138
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Mutual Information"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9166,
+        "recall": 0.8776,
+        "specificity": 0.9556,
+        "f1_score": 0.9519,
+        "precision": 0.9132
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Mutual Information"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9272,
+        "recall": 0.8882,
+        "specificity": 0.9662999999999999,
+        "f1_score": 0.9243000000000001,
+        "precision": 0.9634
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9015,
+        "recall": 0.8652,
+        "specificity": 0.9379000000000001,
+        "f1_score": 0.9329999999999999,
+        "precision": 0.8979
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Mutual Information"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8944,
+        "recall": 0.8475,
+        "specificity": 0.9414,
+        "f1_score": 0.9354,
+        "precision": 0.8893
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "study_id": "10.1007/s13369-021-06544-0_1"
+}

@@ -1,0 +1,94 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c168934c"
+  },
+  "title": "Deep Learning Models for Predicting Cognitive Impairment in Parkinson's Disease Detection",
+  "authors": [
+    {
+      "name": "Shraddha Jain Sharma",
+      "affiliations": [
+        {
+          "institution": "Indian Institute of Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Ratnalata Gupta",
+      "affiliations": [
+        {
+          "institution": "Shivajirao Kadam Group of Institutions",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Conference",
+  "journal": "2024 IEEE 3rd World Conference on Applied Intelligence and Computing (AIC)",
+  "year": 2024,
+  "doi": "10.1109/AIC61668.2024.10731072",
+  "abstract": "A chronic neurodegenerative disorder affecting the motor system is called Parkinson's disease. Cell degeneration results from it over time as it advances slowly. This is one of the most prevalent diseases in society and is difficult to diagnose. The body experiences both motor and non-motor deficits (such as smell and speech) as a result of a dopamine cell shortage in the brain. Speech problems are common among Parkinson's sufferers, as is well documented. When compared to normal individuals, speech signals from Parkinson's sufferers show notable changes. This study proposes to use voice signals' acoustic properties to classify Parkinson's diseases using a deep learning-based approach. First, a genetic algorithm is used for the auditory characteristics in order to identify useful aspects. The ReliefF feature selection approach and the genetic algorithm's performance are also contrasted. The second phase involves feeding the chosen characteristics into the Convolutional Neural Network (CNN) architecture that has been created. An accuracy of 93.29% is attained without feature selection, whereas 97.62% is attained with feature selection.",
+  "ml_approaches": [
+    {
+      "algorithm": "Convolutional Neural Network",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9762,
+        "precision": 0.9781,
+        "f1_score": 0.9790000000000001
+      }
+    },
+    {
+      "algorithm": "Convolutional Neural Network",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "ReliefF"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9167,
+        "precision": 0.9135,
+        "f1_score": 0.9181999999999999
+      }
+    },
+    {
+      "algorithm": "Convolutional Neural Network",
+      "framework": "",
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9329,
+        "precision": 0.9433,
+        "f1_score": 0.9505
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "study_id": "10.1109/AIC61668.2024.10731072_1"
+}

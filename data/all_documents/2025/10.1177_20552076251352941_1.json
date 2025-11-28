@@ -1,0 +1,842 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893d7"
+  },
+  "title": "Hybrid preprocessing and ensemble classification for enhanced detection of Parkinson's disease using multiple speech signal databases",
+  "authors": [
+    {
+      "name": "Ling-Chun Sun",
+      "affiliations": [
+        {
+          "institution": "National Defense Medical Center",
+          "country": "Taiwan"
+        }
+      ]
+    },
+    {
+      "name": "Chun-Wei Tseng",
+      "affiliations": [
+        {
+          "institution": "National Defense Medical Center",
+          "country": "Taiwan"
+        }
+      ]
+    },
+    {
+      "name": "Ke-Feng Lin",
+      "affiliations": [
+        {
+          "institution": "National Defense Medical Center",
+          "country": "Taiwan"
+        }
+      ]
+    },
+    {
+      "name": "Ping-Nan Chen",
+      "affiliations": [
+        {
+          "institution": "National Defense Medical Center",
+          "country": "Taiwan"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Digital Health",
+  "year": 2025,
+  "doi": "10.1177/20552076251352941",
+  "abstract": "Objective: With the increasing prevalence of Parkinson's disease (PD) and the development of PD-based acoustic recording databases, this study aims to evaluate the feasibility of using an ensemble-based machine learning (ML) approach to detect PD across diverse acoustic datasets. Methods: We utilized three publicly available PD speech datasets—MIU (Sakar), UEX (Carrón), and UCI (Little)—to build ML models incorporating a hybrid preprocessing framework. This framework includes a scaling phase (using RobustScaler), a sampling phase (employing random oversampling (ROS), synthetic minority oversampling technique (SMOTE), and random undersampling (RUS)), and an ML classiﬁer selection phase (featuring eXtreme gradient boosting (XGBoost) and adaptive boosting (AdaBoost)). Performance was evaluated using accuracy, precision, recall, and F1-score metrics. Additionally, we conducted SHAP (SHapley Additive exPlanations) analysis to identify the most signiﬁcant PDrelated acoustic features. Results: The optimal combination of preprocessing and classiﬁcation techniques varied across datasets. However, the highest classiﬁcation performance was generally achieved using RobustScaler for scaling, a combination of ROS, SMOTE, and RUS for sampling, and XGBoost or AdaBoost for classiﬁcation. The best-performing model on the MIU dataset achieved accuracy of 97.37%, precision of 96.07%, and F1-score of 96.57%. The UEX and UCI datasets achieved perfect classiﬁcation with 100% accuracy, precision, and recall. SHAP analysis revealed that Mel-frequency cepstral coefﬁcients were consistently among the most inﬂuential PD-related acoustic features. Conclusions: Our ﬁndings conﬁrm the feasibility of an ensemble-based approach for PD detection using acoustic recordings, highlighting the importance of dataset-speciﬁc preprocessing strategies. This study ranks impactful PD-related acoustic features, offering guidance for future voice-based PD screening tools.",
+  "ml_approaches": [
+    {
+      "algorithm": "AdaBoost",
+      "framework": "",
+      "imbalance_handling": [
+        "Vanilla"
+      ],
+      "results": {
+        "precision": 0.905,
+        "recall": 0.9035,
+        "f1_score": 0.9041,
+        "accuracy": 0.9035
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Oversampling"
+      ],
+      "results": {
+        "precision": 0.9368,
+        "recall": 0.9298,
+        "f1_score": 0.9318000000000001,
+        "accuracy": 0.9298
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "results": {
+        "precision": 0.9202,
+        "recall": 0.9123,
+        "f1_score": 0.9148000000000001,
+        "accuracy": 0.9123
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "framework": "",
+      "imbalance_handling": [
+        "BLSMOTE"
+      ],
+      "results": {
+        "precision": 0.8929,
+        "recall": 0.8947,
+        "f1_score": 0.8935,
+        "accuracy": 0.8947
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "imbalance_handling": [
+        "Adaptive Synthetic Sampling"
+      ],
+      "results": {
+        "precision": 0.915,
+        "recall": 0.9035,
+        "f1_score": 0.9070999999999999,
+        "accuracy": 0.9035
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "results": {
+        "precision": 0.8653,
+        "recall": 0.8684,
+        "f1_score": 0.8661,
+        "accuracy": 0.8684
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "framework": "",
+      "imbalance_handling": [
+        "Cluster Centroid Undersampling"
+      ],
+      "results": {
+        "precision": 0.762,
+        "recall": 0.7018,
+        "f1_score": 0.6794,
+        "accuracy": 0.7018
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "imbalance_handling": [
+        "NearMiss-1"
+      ],
+      "results": {
+        "precision": 0.8221,
+        "recall": 0.807,
+        "f1_score": 0.7947,
+        "accuracy": 0.807
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "imbalance_handling": [
+        "NearMiss-2"
+      ],
+      "results": {
+        "precision": 0.6981,
+        "recall": 0.5175,
+        "f1_score": 0.4946,
+        "accuracy": 0.5175
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "framework": "",
+      "imbalance_handling": [
+        "NearMiss-3"
+      ],
+      "results": {
+        "precision": 0.8485,
+        "recall": 0.8509,
+        "f1_score": 0.8484999999999999,
+        "accuracy": 0.8509
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "framework": "",
+      "imbalance_handling": [
+        "Vanilla"
+      ],
+      "scaling": [
+        "Robust"
+      ],
+      "results": {
+        "precision": 0.9145,
+        "recall": 0.9035,
+        "f1_score": 0.9068999999999999,
+        "accuracy": 0.9035
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "scaling": [
+        "Robust"
+      ],
+      "imbalance_handling": [
+        "Random Oversampling"
+      ],
+      "results": {
+        "precision": 0.9647,
+        "recall": 0.971,
+        "f1_score": 0.9656999999999999,
+        "accuracy": 0.9737
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "scaling": [
+        "Robust"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "results": {
+        "precision": 0.8815,
+        "recall": 0.8684,
+        "f1_score": 0.873,
+        "accuracy": 0.8684
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "framework": "",
+      "scaling": [
+        "Robust"
+      ],
+      "imbalance_handling": [
+        "BLSMOTE"
+      ],
+      "results": {
+        "precision": 0.9298,
+        "recall": 0.9298,
+        "f1_score": 0.9283,
+        "accuracy": 0.9283
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "framework": "",
+      "scaling": [
+        "Robust"
+      ],
+      "imbalance_handling": [
+        "Adaptive Synthetic Sampling"
+      ],
+      "results": {
+        "precision": 0.9026,
+        "recall": 0.9035,
+        "f1_score": 0.9029,
+        "accuracy": 0.9035
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "framework": "",
+      "scaling": [
+        "Robust"
+      ],
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "results": {
+        "precision": 0.8635,
+        "recall": 0.8596,
+        "f1_score": 0.8533,
+        "accuracy": 0.8596
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "scaling": [
+        "Robust"
+      ],
+      "imbalance_handling": [
+        "Cluster Centroid Undersampling"
+      ],
+      "results": {
+        "precision": 0.7624,
+        "recall": 0.7456,
+        "f1_score": 0.7292000000000001,
+        "accuracy": 0.7456
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "scaling": [
+        "Robust"
+      ],
+      "imbalance_handling": [
+        "NearMiss-1"
+      ],
+      "results": {
+        "precision": 0.7178,
+        "recall": 0.693,
+        "f1_score": 0.672,
+        "accuracy": 0.693
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "scaling": [
+        "Robust"
+      ],
+      "imbalance_handling": [
+        "NearMiss-2"
+      ],
+      "results": {
+        "precision": 0.6779,
+        "recall": 0.614,
+        "f1_score": 0.588,
+        "accuracy": 0.614
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "framework": "",
+      "scaling": [
+        "Robust"
+      ],
+      "imbalance_handling": [
+        "NearMiss-3"
+      ],
+      "results": {
+        "precision": 0.8485,
+        "recall": 0.8509,
+        "f1_score": 0.8484999999999999,
+        "accuracy": 0.8509
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "scaling": [
+        "Max Absolute"
+      ],
+      "imbalance_handling": [
+        "Vanilla"
+      ],
+      "results": {
+        "precision": 0.9252,
+        "recall": 0.9035,
+        "f1_score": 0.9098999999999999,
+        "accuracy": 0.9035
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "framework": "",
+      "scaling": [
+        "Max Absolute"
+      ],
+      "imbalance_handling": [
+        "Random Oversampling"
+      ],
+      "results": {
+        "precision": 0.8933,
+        "recall": 0.886,
+        "f1_score": 0.8887999999999999,
+        "accuracy": 0.886
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "scaling": [
+        "Max Absolute"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "results": {
+        "precision": 0.8947,
+        "recall": 0.8947,
+        "f1_score": 0.8946999999999999,
+        "accuracy": 0.8947
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "framework": "",
+      "scaling": [
+        "Max Absolute"
+      ],
+      "imbalance_handling": [
+        "BLSMOTE"
+      ],
+      "results": {
+        "precision": 0.8901,
+        "recall": 0.8509,
+        "f1_score": 0.8645,
+        "accuracy": 0.8509
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "framework": "",
+      "scaling": [
+        "Max Absolute"
+      ],
+      "imbalance_handling": [
+        "Adaptive Synthetic Sampling"
+      ],
+      "results": {
+        "precision": 0.8894,
+        "recall": 0.8421,
+        "f1_score": 0.8527,
+        "accuracy": 0.8421
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "scaling": [
+        "Max Absolute"
+      ],
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "results": {
+        "precision": 0.8074,
+        "recall": 0.8154,
+        "f1_score": 0.8078,
+        "accuracy": 0.8158
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "scaling": [
+        "Max Absolute"
+      ],
+      "imbalance_handling": [
+        "Cluster Centroid Undersampling"
+      ],
+      "results": {
+        "precision": 0.8916,
+        "recall": 0.8596,
+        "f1_score": 0.8706999999999999,
+        "accuracy": 0.8596
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "scaling": [
+        "Max Absolute"
+      ],
+      "imbalance_handling": [
+        "NearMiss-1"
+      ],
+      "results": {
+        "precision": 0.7395,
+        "recall": 0.7368,
+        "f1_score": 0.7156,
+        "accuracy": 0.7368
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "scaling": [
+        "Max Absolute"
+      ],
+      "imbalance_handling": [
+        "NearMiss-2"
+      ],
+      "results": {
+        "precision": 0.761,
+        "recall": 0.7632,
+        "f1_score": 0.7456999999999999,
+        "accuracy": 0.7632
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "scaling": [
+        "Max Absolute"
+      ],
+      "imbalance_handling": [
+        "NearMiss-3"
+      ],
+      "results": {
+        "precision": 0.7977,
+        "recall": 0.807,
+        "f1_score": 0.7996,
+        "accuracy": 0.807
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "imbalance_handling": [
+        "Vanilla"
+      ],
+      "results": {
+        "precision": 0.9501,
+        "recall": 0.9386,
+        "f1_score": 0.9417,
+        "accuracy": 0.9386
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "imbalance_handling": [
+        "Random Oversampling"
+      ],
+      "results": {
+        "precision": 0.9385,
+        "recall": 0.9035,
+        "f1_score": 0.9137000000000001,
+        "accuracy": 0.9035
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "results": {
+        "precision": 0.9522,
+        "recall": 0.8947,
+        "f1_score": 0.9113,
+        "accuracy": 0.8947
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "imbalance_handling": [
+        "BLSMOTE"
+      ],
+      "results": {
+        "precision": 0.902,
+        "recall": 0.886,
+        "f1_score": 0.8918,
+        "accuracy": 0.886
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "imbalance_handling": [
+        "Adaptive Synthetic Sampling"
+      ],
+      "results": {
+        "precision": 0.8775,
+        "recall": 0.8684,
+        "f1_score": 0.8722,
+        "accuracy": 0.8684
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "results": {
+        "precision": 0.8523,
+        "recall": 0.8333,
+        "f1_score": 0.8251999999999999,
+        "accuracy": 0.8333
+      }
+    },
+    {
+      "algorithm": "Gradient Boosting",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "imbalance_handling": [
+        "Cluster Centroid Undersampling"
+      ],
+      "results": {
+        "precision": 0.8253,
+        "recall": 0.8333,
+        "f1_score": 0.8251999999999999,
+        "accuracy": 0.8333
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "imbalance_handling": [
+        "NearMiss-1"
+      ],
+      "results": {
+        "precision": 0.7433,
+        "recall": 0.7544,
+        "f1_score": 0.7349,
+        "accuracy": 0.7544
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "imbalance_handling": [
+        "NearMiss-2"
+      ],
+      "results": {
+        "precision": 0.7869,
+        "recall": 0.7895,
+        "f1_score": 0.7726999999999999,
+        "accuracy": 0.7895
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "imbalance_handling": [
+        "NearMiss-3"
+      ],
+      "results": {
+        "precision": 0.7959,
+        "recall": 0.807,
+        "f1_score": 0.7987000000000001,
+        "accuracy": 0.807
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "Vanilla"
+      ],
+      "results": {
+        "precision": 0.9123,
+        "recall": 0.9123,
+        "f1_score": 0.9123,
+        "accuracy": 0.9123
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "Random Oversampling"
+      ],
+      "results": {
+        "precision": 0.9198,
+        "recall": 0.9211,
+        "f1_score": 0.9196,
+        "accuracy": 0.9211
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "results": {
+        "precision": 0.9262,
+        "recall": 0.9211,
+        "f1_score": 0.9228000000000001,
+        "accuracy": 0.9211
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "BLSMOTE"
+      ],
+      "results": {
+        "precision": 0.8833,
+        "recall": 0.886,
+        "f1_score": 0.8837999999999999,
+        "accuracy": 0.886
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "Adaptive Synthetic Sampling"
+      ],
+      "results": {
+        "precision": 0.9288,
+        "recall": 0.9298,
+        "f1_score": 0.9289000000000001,
+        "accuracy": 0.9298
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "results": {
+        "precision": 0.8307,
+        "recall": 0.8333,
+        "f1_score": 0.8255,
+        "accuracy": 0.8333
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "Cluster Centroid Undersampling"
+      ],
+      "results": {
+        "precision": 0.9005,
+        "recall": 0.8596,
+        "f1_score": 0.8726,
+        "accuracy": 0.8596
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "NearMiss-1"
+      ],
+      "results": {
+        "precision": 0.8275,
+        "recall": 0.8333,
+        "f1_score": 0.8284999999999999,
+        "accuracy": 0.8333
+      }
+    },
+    {
+      "algorithm": "Gradient Boosting",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "NearMiss-2"
+      ],
+      "results": {
+        "precision": 0.8282,
+        "recall": 0.8333,
+        "f1_score": 0.8269,
+        "accuracy": 0.8333
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "NearMiss-3"
+      ],
+      "results": {
+        "precision": 0.865,
+        "recall": 0.8684,
+        "f1_score": 0.8645999999999999,
+        "accuracy": 0.8684
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "study_id": "10.1177/20552076251352941_1"
+}

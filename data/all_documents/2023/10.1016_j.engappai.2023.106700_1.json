@@ -1,0 +1,251 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c1689402"
+  },
+  "title": "Detection of Parkinson's disease based on spectrograms of voice recordings and Extreme Learning Machine random weight neural networks",
+  "authors": [
+    {
+      "name": "Renata Guatelli",
+      "affiliations": [
+        {
+          "institution": "Universidad Nacional de La Matanza",
+          "country": "Argentina"
+        }
+      ]
+    },
+    {
+      "name": "Verónica Aubin",
+      "affiliations": [
+        {
+          "institution": "Universidad Nacional de La Matanza",
+          "country": "Argentina"
+        }
+      ]
+    },
+    {
+      "name": "Marco Mora",
+      "affiliations": [
+        {
+          "institution": "Universidad Católica del Maule",
+          "country": "Chile"
+        }
+      ]
+    },
+    {
+      "name": "Jose Naranjo-Torres",
+      "affiliations": [
+        {
+          "institution": "Universidad Católica del Maule",
+          "country": "Chile"
+        }
+      ]
+    },
+    {
+      "name": "Antonia Mora-Olivari",
+      "affiliations": [
+        {
+          "institution": "Universidad Católica del Maule",
+          "country": "Chile"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Engineering Applications of Artificial Intelligence",
+  "year": 2023,
+  "doi": "10.1016/j.engappai.2023.106700",
+  "abstract": "Parkinson's disease consists in the degeneration of the mesencephalic black substance, affecting the dopaminergic vias. Its causes are varied, including exposure to pesticides, genetic factors and, one of the most influential ones, age. Given the decrease in dopamine levels, the most common symptoms are the appearance of tremors and muscle rigidity. Due to the rigidity of the muscles, the patient has voice alterations which have great potential for non-invasive and early diagnosis of the disease. In addition, considering the low cost of the sound recorder respect to the clinical studies, this approach allows the diagnosis of Parkinson's disease in a large number of people. Recent works, which present the analysis of voice recordings through Convolutional Neural Networks, show high level of accuracy in the diagnosis of Parkinson's disease. Convolutional Neural Networks use a Multilayer Neural Network to classify convolutional feature vectors. In order to improve the training time of the classifier, in this paper the use Extreme Learning Machines are proposed. Experiments considering 4 types of spectrograms with AlexNet, VGG-16, SqueezeNet, Inception V3 and ResNet-50 Convolutional Neural Networks models. In the experiments, hit rate, training and testing time, sensitivity and the specificity indicators of all the neural architectures involved in the work are objectively compared. It is shown that the Extreme Learning Machine have a high level of accuracy in the diagnosis of Parkinson's disease but with reduced training time.",
+  "ml_approaches": [
+    {
+      "algorithm": "Extreme Learning Machine",
+      "framework": "Matlab R2018b",
+      "data_augmentation": [
+        "color palettes"
+      ],
+      "input_speech": "/a/",
+      "feature_extraction": [
+        "Short-Time Fourier Transform",
+        "Gray Scale Spectrogram",
+        "AlexNet"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8
+      }
+    },
+    {
+      "algorithm": "Extreme Learning Machine",
+      "framework": "Matlab R2018b",
+      "data_augmentation": [
+        "color palettes"
+      ],
+      "input_speech": "/a/",
+      "feature_extraction": [
+        "Short-Time Fourier Transform",
+        "Gray Scale Spectrogram",
+        "SqueezeNet"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.7217
+      }
+    },
+    {
+      "algorithm": "Extreme Learning Machine",
+      "framework": "Matlab R2018b",
+      "data_augmentation": [
+        "color palettes"
+      ],
+      "input_speech": "/a/",
+      "feature_extraction": [
+        "Short-Time Fourier Transform",
+        "Gray Scale Spectrogram",
+        "InceptionV3"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.6826
+      }
+    },
+    {
+      "algorithm": "Extreme Learning Machine",
+      "framework": "Matlab R2018b",
+      "data_augmentation": [
+        "color palettes"
+      ],
+      "input_speech": "/a/",
+      "feature_extraction": [
+        "Short-Time Fourier Transform",
+        "Gray Scale Spectrogram",
+        "ResNet50"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.7957
+      }
+    },
+    {
+      "algorithm": "Extreme Learning Machine",
+      "framework": "Matlab R2018b",
+      "data_augmentation": [
+        "color palettes"
+      ],
+      "input_speech": "/a/",
+      "feature_extraction": [
+        "Short-Time Fourier Transform",
+        "Gray Scale Spectrogram",
+        "VGG16"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.7662
+      }
+    },
+    {
+      "algorithm": "Extreme Learning Machine",
+      "framework": "Matlab R2018b",
+      "data_augmentation": [
+        "color palettes"
+      ],
+      "input_speech": "/a/",
+      "feature_extraction": [
+        "Short-Time Fourier Transform",
+        "Color Spectrogram",
+        "AlexNet"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8261
+      }
+    },
+    {
+      "algorithm": "Extreme Learning Machine",
+      "framework": "Matlab R2018b",
+      "data_augmentation": [
+        "color palettes"
+      ],
+      "input_speech": "/a/",
+      "feature_extraction": [
+        "Short-Time Fourier Transform",
+        "Color Spectrogram",
+        "SqueezeNet"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.7913
+      }
+    },
+    {
+      "algorithm": "Extreme Learning Machine",
+      "framework": "Matlab R2018b",
+      "data_augmentation": [
+        "color palettes"
+      ],
+      "input_speech": "/a/",
+      "feature_extraction": [
+        "Short-Time Fourier Transform",
+        "Color Spectrogram",
+        "InceptionV3"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.7217
+      }
+    },
+    {
+      "algorithm": "Extreme Learning Machine",
+      "framework": "Matlab R2018b",
+      "data_augmentation": [
+        "color palettes"
+      ],
+      "input_speech": "/a/",
+      "feature_extraction": [
+        "Short-Time Fourier Transform",
+        "Color Spectrogram",
+        "ResNet50"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8174
+      }
+    },
+    {
+      "algorithm": "Extreme Learning Machine",
+      "framework": "Matlab R2018b",
+      "data_augmentation": [
+        "color palettes"
+      ],
+      "input_speech": "/a/",
+      "feature_extraction": [
+        "Short-Time Fourier Transform",
+        "Color Spectrogram",
+        "VGG16"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.7913
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Argentinian Parkinson's Disease Dataset",
+      "size": 119,
+      "pd_patients": 55,
+      "controls": 64,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Argentinian Parkinson's Disease Dataset",
+      "size": 119,
+      "pd_patients": 55,
+      "controls": 64,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.1016/j.engappai.2023.106700_1"
+}

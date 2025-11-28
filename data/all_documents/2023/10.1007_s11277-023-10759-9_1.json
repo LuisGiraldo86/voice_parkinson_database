@@ -1,0 +1,253 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c168938a"
+  },
+  "title": "An Approach Using in Communication Network Apply in Healthcare System Based on the Deep Learning Autoencoder Classification Optimization Metaheuristic Method",
+  "authors": [
+    {
+      "name": "Beyhan Gergerli",
+      "affiliations": [
+        {
+          "institution": "Ankara Yildirim Beyazit University",
+          "country": "Turkey"
+        }
+      ]
+    },
+    {
+      "name": "Fatih V. Çelebi",
+      "affiliations": [
+        {
+          "institution": "Ankara Yildirim Beyazit University",
+          "country": "Turkey"
+        }
+      ]
+    },
+    {
+      "name": "Javad Rahebi",
+      "affiliations": [
+        {
+          "institution": "İstanbulTopkapi University",
+          "country": "Turkey"
+        }
+      ]
+    },
+    {
+      "name": "Baha Şen",
+      "affiliations": [
+        {
+          "institution": "Ankara Yildirim Beyazit University",
+          "country": "Turkey"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Wireless Personal Communications",
+  "year": 2023,
+  "doi": "10.1007/s11277-023-10759-9",
+  "abstract": "Parkinson's disease is a neurodegenerative disorder and affects the nerve cells that produce dopamine in the brain. In this paper, we investigated comparative studies on the different scenarios such as AutoEncoder and Ant Colony Optimization feature selection algorithms for the effective features in diagnosis of Parkinson's disease. These algorithms are implemented to the voice dataset obtained from online repository. Then selected features are presented to the Decision tree, SVM, K-NN, Ensemble, Naive Bayes and Discriminant classifiers for each of the binary classification problems. The proposed methods are evaluated with the sensitivity, specificity, precision, recall and accuracy criteria. The proposed systems are trained and tested with these classifiers separately to carry out a comparative study and to analyse the success of feature selection methods in discriminating healthy people and PD patients. In Parkinson's data there are 24 features that obtained from the signal voices. Some of the features in training of the classifier have problems and these problems reduce the accuracy of the system. It is found that for K-NN and Ensemble classification methods both ACO and Autoencoder have the same and the best training performance. Testing results show that accuracy rate of ACO is higher than Autoencoder method.",
+  "citescore": 5.8,
+  "ml_approaches": [
+    {
+      "algorithm": "Decision Tree",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Ant Colony Optimization"
+        ]
+      },
+      "results": {
+        "recall": 0.75,
+        "specificity": 0.889,
+        "precision": 0.571,
+        "accuracy": 0.866
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Ant Colony Optimization"
+        ]
+      },
+      "results": {
+        "recall": 0.81,
+        "specificity": 0.895,
+        "precision": 0.68,
+        "accuracy": 0.876
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Ant Colony Optimization"
+        ]
+      },
+      "results": {
+        "recall": 0.833,
+        "specificity": 0.932,
+        "precision": 0.8,
+        "accuracy": 0.907
+      }
+    },
+    {
+      "algorithm": "Ensemble",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Ant Colony Optimization"
+        ]
+      },
+      "results": {
+        "recall": 0.889,
+        "specificity": 0.937,
+        "precision": 0.762,
+        "accuracy": 0.928
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Ant Colony Optimization"
+        ]
+      },
+      "results": {
+        "recall": 0.607,
+        "specificity": 0.9129999999999999,
+        "precision": 0.739,
+        "accuracy": 0.825
+      }
+    },
+    {
+      "algorithm": "Discriminant Analysis",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Ant Colony Optimization"
+        ]
+      },
+      "results": {
+        "recall": 0.842,
+        "specificity": 0.91,
+        "precision": 0.696,
+        "accuracy": 0.897
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Autoencoder"
+        ]
+      },
+      "results": {
+        "recall": 0.654,
+        "specificity": 0.9440000000000001,
+        "precision": 0.81,
+        "accuracy": 0.866
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Autoencoder"
+        ]
+      },
+      "results": {
+        "recall": 1,
+        "specificity": 0.826,
+        "precision": 0.238,
+        "accuracy": 0.835
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Autoencoder"
+        ]
+      },
+      "results": {
+        "recall": 0.826,
+        "specificity": 0.932,
+        "precision": 0.792,
+        "accuracy": 0.907
+      }
+    },
+    {
+      "algorithm": "Ensemble",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Autoencoder"
+        ]
+      },
+      "results": {
+        "recall": 0.682,
+        "specificity": 0.92,
+        "precision": 0.814,
+        "accuracy": 0.866
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Autoencoder"
+        ]
+      },
+      "results": {
+        "recall": 0.75,
+        "specificity": 0.8270000000000001,
+        "precision": 0.462,
+        "accuracy": 0.814
+      }
+    },
+    {
+      "algorithm": "Discriminant Analysis",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Autoencoder"
+        ]
+      },
+      "results": {
+        "recall": 0.882,
+        "specificity": 0.863,
+        "precision": 0.577,
+        "accuracy": 0.866
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1007/s11277-023-10759-9_1"
+}

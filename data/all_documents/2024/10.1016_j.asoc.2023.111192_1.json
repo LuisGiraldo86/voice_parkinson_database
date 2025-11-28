@@ -1,0 +1,78 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c1689412"
+  },
+  "title": "A genetic operators-based Ant Lion Optimiser for training a medical multi-layer perceptron",
+  "authors": [
+    {
+      "name": "Matías Gabriel Rojas",
+      "affiliations": [
+        {
+          "institution": "Universidad Nacional de Cuyo",
+          "country": "Argentina"
+        }
+      ]
+    },
+    {
+      "name": "Ana Carolina Olivera",
+      "affiliations": [
+        {
+          "institution": "Universidad Nacional de Cuyo",
+          "country": "Argentina"
+        }
+      ]
+    },
+    {
+      "name": "Pablo Javier Vidal",
+      "affiliations": [
+        {
+          "institution": "Universidad Nacional de Cuyo",
+          "country": "Argentina"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Applied Soft Computing",
+  "year": 2024,
+  "doi": "10.1016/j.asoc.2023.111192",
+  "abstract": "The immense amount of data managed during the diagnosis process overwhelms, by far, the clinicians' processing capabilities. Artificial intelligence methods like Multi-Layer Perceptrons come to help by providing a second opinion based on powerful and reliable data processing. Unfortunately, these methods often suffer from problems related to their training methods, which can lead to poor performance. Metaheuristics are promising training alternatives because of their stochastic and general-purpose nature. This work introduces a new training method based on metaheuristics, called Genetic Ant Lion Optimiser. It includes new features for dealing with the convergence problems of the original Ant Lion Optimiser and integrates a novel crossover operator for avoiding stagnation. Experiments compare our proposal against 31 state-of-the-art algorithms, over 20 different medical datasets. Classification quality metrics reflect that our approach attains a robust and efficient behaviour with the majority of the datasets, obtaining highlighted results, such as an accuracy of 1.0 with the kidney dataset (bi-class) and 0.943 with the lung-cancer dataset (multi-class). Besides, it reaches adequate convergence rates and reasonable time consumption.",
+  "ml_approaches": [
+    {
+      "algorithm": "Multilayer Perceptron",
+      "optimization": "Genetic Ant Lion Optimiser",
+      "scaling": [
+        "Min Max"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.949,
+        "auc": 0.906,
+        "f1_score": 0.967,
+        "recall": 0.98,
+        "specificity": 0.833
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1016/j.asoc.2023.111192_1"
+}

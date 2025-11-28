@@ -1,0 +1,118 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c1689426"
+  },
+  "title": "Robust Automated Parkinson Disease Detection Based on Voice Signals with Transfer Learning",
+  "authors": [
+    {
+      "name": "Onur Karaman",
+      "affiliations": [
+        {
+          "institution": "Akdeniz University",
+          "country": "Turkey"
+        }
+      ]
+    },
+    {
+      "name": "Hakan Çakin",
+      "affiliations": [
+        {
+          "institution": "Akdeniz University",
+          "country": "Turkey"
+        }
+      ]
+    },
+    {
+      "name": "Adi Alhudhaif",
+      "affiliations": [
+        {
+          "institution": "Prince Sattam bin Abdulaziz University",
+          "country": "Saudi Arabia"
+        }
+      ]
+    },
+    {
+      "name": "Korkmaz Yunus",
+      "affiliations": [
+        {
+          "institution": "Dicle University",
+          "country": "Turkey"
+        }
+      ]
+    },
+    {
+      "name": "Kemal Polat",
+      "affiliations": [
+        {
+          "institution": "Bolu Abant Izzet Baysal University",
+          "country": "Turkey"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Expert Systems with Applications",
+  "year": 2021,
+  "doi": "10.1016/j.eswa.2021.115013",
+  "abstract": "Parkinson's disease (PD) is a progressive-neurodegenerative disorder that affects more than 6 million people around the world. However, conventional techniques for PD detection are often hand-crafted, in which special expertise is needed. In this study, considering the importance of rapid diagnosis of the disease, it was aimed to develop deep convolutional neural networks (CNN) for automated PD identification based on biomarkers-derived voice signals. The developed CNN methods consisted of two main stages, including data pre-processing and fine-tunning-based transfer learning steps. To train and evaluate the performance of the developed model, datasets were collected from the mPower Voice database. SqueezeNet1_1, ResNet101, and DenseNet161 architectures were retrained and evaluated to determine which architecture can classify frequency-time information most accurately. The performance results revealed that the proposed model could successfully identify the PD with an accuracy of 89.75%, sensitivity of 91.50%, and precision of 88.40% for DenseNet-161 architecture identified as the most suitable fine-tuning architecture. The results revealed that the proposed model based on transfer learning with a fine-tuning approach provides an acceptable detection of PD with an accuracy of 89.75%. The outcomes of the study confirmed that by integrating the developed model into smart electronic devices, it will be able to develop alternative pre-diagnosis methods and will assist the physicians for PD detection during the in-clinic assessment. The success of the proposed model would imply an enhancement in the life quality of patients and a cost reduction for the national health system.",
+  "ml_approaches": [
+    {
+      "algorithm": "DenseNet161",
+      "framework": "",
+      "feature_extraction": [
+        "Mel-Spectrogram"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8975,
+        "recall": 0.915,
+        "precision": 0.884
+      }
+    },
+    {
+      "algorithm": "ResNet: 50",
+      "framework": "",
+      "feature_extraction": [
+        "Mel-Spectrogram"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.885,
+        "recall": 0.9,
+        "precision": 0.873
+      }
+    },
+    {
+      "algorithm": "SqueezeNet1_1",
+      "framework": "",
+      "feature_extraction": [
+        "Mel-Spectrogram"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.7275,
+        "recall": 0.74,
+        "precision": 0.7219
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "mPower",
+      "size": 398,
+      "pd_patients": 188,
+      "controls": 210,
+      "url": "https://www.synapse.org/Synapse:syn4993293/wiki/247859"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "mPower",
+      "size": 398,
+      "pd_patients": 188,
+      "controls": 210,
+      "url": "https://www.synapse.org/Synapse:syn4993293/wiki/247859"
+    }
+  ],
+  "study_id": "10.1016/j.eswa.2021.115013_1"
+}

@@ -1,0 +1,108 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893a6"
+  },
+  "title": "Parkinson's Disease Prediction Using Machine Learning-Based Features From Speech Signal",
+  "authors": [
+    {
+      "name": "Linlin Yuan",
+      "affiliations": [
+        {
+          "institution": "Huaqiao University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Yao Liu",
+      "affiliations": [
+        {
+          "institution": "Huaqiao University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Hsuan-Ming Feng",
+      "affiliations": [
+        {
+          "institution": "National Quemoy University",
+          "country": "Taiwan"
+        }
+      ]
+    }
+  ],
+  "journal": "Service Oriented Computing and Applications",
+  "publication_type": "Journal",
+  "year": 2024,
+  "doi": "10.1007/s11761-023-00372-w",
+  "abstract": "Parkinson's disease (PD) is a prevalent neurodegenerative disorder that has prompted the development of telediagnosis and remote monitoring systems. Dysphonia, a common symptom in the early stages of PD, affects approximately 90% of patients. Therefore, testing for persistent pronunciation or dysphonia in continuous speech can aid in the diagnosis of PD. Our study utilized speech signals from 252 subjects as the dataset. In this study, language signal features were used as input to machine learning algorithms, and the resulting classifiers were integrated to improve accuracy in the classification of Parkinson's disease (PD). The experimental results demonstrated a diagnostic accuracy of up to 95% using these machine learning algorithms. Additionally, a method of feature extraction based on clinical experience was presented for analyzing subjects' language signals.",
+  "citescore": 3.2,
+  "ml_approaches": [
+    {
+      "algorithm": "Ensemble (Logistic Regression, Random Forest, K-Nearest Neighbors, Deep Neural Network)",
+      "framework": "",
+      "preprocessing": [
+        "Feature Selection: Minimum Redundancy Maximum Relevance"
+      ],
+      "results": {
+        "accuracy": 0.95,
+        "f1_score": 0.97,
+        "mcc": 0.87
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    },
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    },
+    {
+      "name": "Parkinson's Speech with Multiple Types of Sound Recordings",
+      "size": 40,
+      "pd_patients": 20,
+      "controls": 20,
+      "url": "https://archive.ics.uci.edu/dataset/301/parkinson+speech+dataset+with+multiple+types+of+sound+recordings",
+      "doi": "10.24432/C5NC8M"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    },
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    },
+    {
+      "name": "Parkinson's Speech with Multiple Types of Sound Recordings",
+      "size": 40,
+      "pd_patients": 20,
+      "controls": 20,
+      "url": "https://archive.ics.uci.edu/dataset/301/parkinson+speech+dataset+with+multiple+types+of+sound+recordings",
+      "doi": "10.24432/C5NC8M"
+    }
+  ],
+  "study_id": "10.1007/s11761-023-00372-w_1"
+}

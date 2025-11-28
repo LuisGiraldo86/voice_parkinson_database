@@ -1,0 +1,142 @@
+{
+  "_id": {
+    "$oid": "68ecf00b6c43da02c168933a"
+  },
+  "title": "Intra-subject enveloped multilayer fuzzy sample compression for speech diagnosis of Parkinson's disease",
+  "authors": [
+    {
+      "name": "Yiwen Wang",
+      "affiliations": [
+        {
+          "institution": "Chongqing University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Fan Li",
+      "affiliations": [
+        {
+          "institution": "Chongqing University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Xiaoheng Zhang",
+      "affiliations": [
+        {
+          "institution": "Chongqing University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Pin Wang",
+      "affiliations": [
+        {
+          "institution": "Chongqing University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Yongming Li",
+      "affiliations": [
+        {
+          "institution": "Chongqing University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Yanling Zhang",
+      "affiliations": [
+        {
+          "institution": "Army Medical University",
+          "country": "China"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Medical & Biological Engineering & Computing",
+  "year": 2024,
+  "doi": "10.1007/s11517-023-02944-6 ",
+  "abstract": "Machine learning-based Parkinson's disease (PD) speech diagnosis is a current research hotspot. However, existing methods use each corpus sample as the base unit for modeling. Since different corpus samples within the same subject have different sensitive speech features, it is difficult to obtain unified and stable sensitive speech features (diagnostic markers) that reflect the pathology of the whole subject. Therefore, this study aims at compressing the corpus samples within the subject to facilitate the search for diagnostic markers with high diagnostic accuracy. A two-step sample compression module (TSCM) can solve the problem above. It includes two major parts: sample pruning module (SPM) and sample fuzzy clustering mechanism (SFCMD). Based on stacking multiple TSCMs, a multilayer sample compression module (MSCM) is formed to obtain multilayer compression samples. After that, simultaneous sample/feature selection mechanism (SS/FSM) is designed for feature selection. Based on the multilayer compression samples processed by MSCM and SS/FSM, a novel ensemble learning algorithm (EMSFE) is designed with sparse fusion ensemble learning mechanism (SFELM). The proposed EMSFE is validated by visualization of extracted features and performance comparison with related algorithms. The experimental results show that the proposed algorithm can effectively extract the stable diagnostic markers by compressing the corpus samples within the subject. Furthermore, based on LOSO cross validation, the proposed algorithm with extreme learning machine (ELM) classifier can achieve the accuracy of 92.5%, 93.75% and 91.67% on three datasets, respectively. The proposed EMSFE can extract unified and stable sensitive features that accurately reflect the overall pathology of the subject, which can better meet the requirements of clinical applications.",
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine",
+      "sample_selection": [
+        {
+          "methods": [
+            "Enveloped Multilayer Fuzzy Sample Compression"
+          ]
+        }
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9417,
+        "recall": 0.9667,
+        "specificity": 0.9167000000000001,
+        "f1_score": 0.9420999999999999
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "sample_selection": [
+        {
+          "methods": [
+            "Enveloped Multilayer Fuzzy Sample Compression"
+          ]
+        }
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9333,
+        "recall": 0.9333,
+        "specificity": 0.9333,
+        "f1_score": 0.9333
+      }
+    },
+    {
+      "algorithm": "Extreme Learning Machine",
+      "sample_selection": [
+        {
+          "methods": [
+            "Enveloped Multilayer Fuzzy Sample Compression"
+          ]
+        }
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9833,
+        "recall": 0.9667,
+        "specificity": 1,
+        "f1_score": 0.9831
+      }
+    }
+  ],
+  "source_code": "https://github.com/wywwwww/EMSFE-supplementary-material.git",
+  "source_dataset": [
+    {
+      "name": "Parkinson's Speech with Multiple Types of Sound Recordings",
+      "size": 40,
+      "pd_patients": 20,
+      "controls": 20,
+      "url": "https://archive.ics.uci.edu/dataset/301/parkinson+speech+dataset+with+multiple+types+of+sound+recordings",
+      "doi": "10.24432/C5NC8M"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Speech with Multiple Types of Sound Recordings",
+      "size": 40,
+      "pd_patients": 20,
+      "controls": 20,
+      "url": "https://archive.ics.uci.edu/dataset/301/parkinson+speech+dataset+with+multiple+types+of+sound+recordings",
+      "doi": "10.24432/C5NC8M"
+    }
+  ],
+  "study_id": "10.1007/s11517-023-02944-6_1"
+}

@@ -1,0 +1,158 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c1689404"
+  },
+  "title": "On the performance and interpretability of Mamdani and Takagi-Sugeno-Kang based neuro-fuzzy systems for medical diagnosis",
+  "authors": [
+    {
+      "name": "Hafsaa Ouifak",
+      "affiliations": [
+        {
+          "institution": "Mohammed VI Polytechnic University",
+          "country": "Morocco"
+        }
+      ]
+    },
+    {
+      "name": "Ali Idri",
+      "affiliations": [
+        {
+          "institution": "Mohammed VI Polytechnic University",
+          "country": "Morocco"
+        },
+        {
+          "institution": "Mohammed V University",
+          "country": "Morocco"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Scientific African",
+  "year": 2023,
+  "doi": "10.1016/j.sciaf.2023.e01610",
+  "abstract": "Purpose: Neuro-fuzzy systems aim to combine the benefits of artificial neural networks and fuzzy inference systems: a neural network can learn patterns from data and achieves high performance, whereas a fuzzy system matches inputs and outputs using linguistic and interpretable rules. The combination of these two techniques yields models that can both perform well and provide interpretability in a fuzzy linguistic manner. Design: In this paper, the performance and interpretability of five neuro-fuzzy classifiers were evaluated (three Takagi-Sugeno-Kang (TSK) classifiers: adaptive neuro-fuzzy inference system (ANFIS), dynamic evolving neuro-fuzzy system (DENFIS), self-organizing fuzzy neural network (SOFNN), and two Mamdani classifiers: hybrid fuzzy inference system (HyFIS) and neuro-fuzzy classifier (NEFCLASS)). All the empirical evaluations were over four benchmark medical datasets (Wisconsin breast cancer dataset, SPECTF heart dataset, Parkinsons dataset, and diabetic retinopathy Debrecen dataset), and used five performance criteria (accuracy, precision, recall, f score, and training time) and two interpretability criteria (number of rules and number of membership functions). Findings: Results showed that the TSK-based self-organizing fuzzy neural network classifier, in general, outperformed the others. In terms of interpretability, DENFIS and NEFCLASS were the best Takagi-Sugeno-Kang and Mamdani classifiers respectively. The findings also suggested that three classifiers: DENFIS, SOFNN, and NEFCLASS achieved a good performance-interpretability tradeoff. Originality: To the best of our knowledge, no study has compared the neuro-fuzzy techniques presented in this paper in terms of performance and interpretability in the medical domain.",
+  "ml_approaches": [
+    {
+      "algorithm": "Adaptive Neuro-Fuzzy Inference System",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Pearson Correlation",
+          "Extra Trees"
+        ],
+        "combination": "sequential"
+      },
+      "validation": null,
+      "results": {
+        "accuracy": 0.81,
+        "precision": 0.8,
+        "recall": 0.83,
+        "f1_score": 0.81
+      }
+    },
+    {
+      "algorithm": "Dynamic Evolving Neuro-fuzzy Inference System",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Pearson Correlation",
+          "Extra Trees"
+        ],
+        "combination": "sequential"
+      },
+      "validation": null,
+      "results": {
+        "accuracy": 0.79,
+        "precision": 0.74,
+        "recall": 0.9,
+        "f1_score": 0.81
+      }
+    },
+    {
+      "algorithm": "Self-organizing Fuzzy Neural Network",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Pearson Correlation",
+          "Extra Trees"
+        ],
+        "combination": "sequential"
+      },
+      "validation": null,
+      "results": {
+        "accuracy": 0.95,
+        "precision": 0.96,
+        "recall": 0.93,
+        "f1_score": 0.95
+      }
+    },
+    {
+      "algorithm": "Hybrid Fuzzy Inference System",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Pearson Correlation",
+          "Extra Trees"
+        ],
+        "combination": "sequential"
+      },
+      "validation": null,
+      "results": {
+        "accuracy": 0.9,
+        "precision": 0.96,
+        "recall": 0.83,
+        "f1_score": 0.89
+      }
+    },
+    {
+      "algorithm": "Neuro-fuzzy Classifier",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Pearson Correlation",
+          "Extra Trees"
+        ],
+        "combination": "sequential"
+      },
+      "validation": null,
+      "results": {
+        "accuracy": 0.76,
+        "precision": 0.7,
+        "recall": 0.9,
+        "f1_score": 0.79
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1016/j.sciaf.2023.e01610_1"
+}

@@ -1,0 +1,104 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c1689367"
+  },
+  "title": "Identification of Parkinson's Disease Using Machine Learning Algorithms",
+  "authors": [
+    {
+      "name": "V. Ulagamuthalvi",
+      "affiliations": [
+        {
+          "institution": "Sathyabama Institute of Science and Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "G. Kulanthaivel",
+      "affiliations": [
+        {
+          "institution": "NITTTR",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "G. Sri Nikhil Reddy",
+      "affiliations": [
+        {
+          "institution": "Sathyabama Institute of Science and Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "G. Venugopal",
+      "affiliations": [
+        {
+          "institution": "Sathyabama Institute of Science and Technology",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Bioscience Biotechnology Research Communications",
+  "year": 2020,
+  "doi": "10.21786/bbrc/13.2/32",
+  "abstract": "Parkinson's disease is Progressive nervous system disorder. It affects movement of the human beings. Symptoms starts gradually. The result of syndrome is the patient is not able to do the activities like talking, strolling, and tremor during motion. Normally the physicist identified this disease using two scales are Hoehn and Yahr scale and Unified Parkinson's Disease Rating Scale. There are so many features in the dataset. Audio signal is one of features taken in the dataset from UCI dataset repository. Parkinson's disease patient has a low-volume noise with a monotone quality. In This system different audio signals like jitter, simmer, New Human Revolution (NHR), Multidimensional Voice Program (MDVP) are given as a train and test data. MinmaxScale method is used for preprocessing the data. Threshold value and correction coefficient of audio data are played as a parameters of feature selection. The Machine Learning classifiers are utilized to identify the disease. In our model we employed Logistic regression and eXtreme Gradient Boosting (XGBoost) classifiers for classification. Among twenty one features only twelve played as an important role for predicting the disease. The system has achieved result in predicting whether the Parkinson's disease patient is healthy or not. The performance of machine learning classifier XGBoost provided the accuracy of 96% and the Matthews Correlation Coefficient (MCC) of 89%.",
+  "ml_approaches": [
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Pearson Correlation"
+        ]
+      },
+      "results": {
+        "accuracy": 0.79,
+        "mcc": 0.42
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Pearson Correlation"
+        ]
+      },
+      "results": {
+        "accuracy": 0.96,
+        "mcc": 0.89
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.21786/bbrc/13.2/32_1"
+}

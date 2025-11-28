@@ -1,0 +1,95 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c168943a"
+  },
+  "title": "Bayesian Optimization Enhanced FKNN Model for Parkinson's Diagnosis",
+  "authors": [
+    {
+      "name": "Mohamed Elkharadly",
+      "affiliations": [
+        {
+          "institution": "Kafr El-Sheikh University",
+          "country": "Egypt"
+        }
+      ]
+    },
+    {
+      "name": "Khaled Amin",
+      "affiliations": [
+        {
+          "institution": "Menoufia University",
+          "country": "Egypt"
+        }
+      ]
+    },
+    {
+      "name": "O.M. Abo-Seida",
+      "affiliations": [
+        {
+          "institution": "Kafr El-Sheikh University",
+          "country": "Egypt"
+        }
+      ]
+    },
+    {
+      "name": "Mina Ibrahim",
+      "affiliations": [
+        {
+          "institution": "Menoufia University",
+          "country": "Egypt"
+        }
+      ]
+    }
+  ],
+  "journal": "Biomedical Signal Processing and Control",
+  "publication_type": "Journal",
+  "year": 2025,
+  "doi": "10.1016/j.bspc.2024.107142",
+  "abstract": "A progressive neurodegenerative condition that adversely impacts motor skills, speech, and cognitive abilities is Parkinson's disease (PD). Research has revealed that verbal impediments manifest in the early of PD, making them a potential diagnostic marker. This study introduces an innovative approach, leveraging Bayesian Optimization (BO) to optimize a fuzzy k-nearest neighbor (FKNN) model, enhancing the detection of PD. BO-FKNN was validated on a speech datasets. To comprehensively evaluate the efficacy of the proposed model, BO-FKNN was compared against five commonly used parameter optimization methods, including FKNN based on Particle Swarm Optimization, FKNN based on Genetic algorithm, FKNN based on Bat algorithm, FKNN based on Artificial Bee Colony algorithm, and FKNN based on Grid search. Moreover, to further boost the diagnostic accuracy, a hybrid feature selection method based on Pearson Correlation Coefficient (PCC) and Information Gain (IG) was employed prior to the BO-FKNN method, consequently the PCCIG-BO-FKNN was proposed. The experimental outcomes highlight the superior performance of the proposed system, boasting an impressive classification accuracy of 98.47%.",
+  "ml_approaches": [
+    {
+      "algorithm": "Fuzzy K-Nearest Neighbors",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Pearson Correlation",
+          "Information Gain"
+        ],
+        "combination": "sequential"
+      },
+      "optimization": "Bayesian Optimization",
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9795,
+        "recall": 0.9795,
+        "f1_score": 0.9861,
+        "precision": 0.9938,
+        "auc": 0.9865
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1016/j.bspc.2024.107142_1"
+}

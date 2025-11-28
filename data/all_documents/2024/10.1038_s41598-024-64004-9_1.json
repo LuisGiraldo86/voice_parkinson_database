@@ -1,0 +1,199 @@
+{
+  "_id": {
+    "$oid": "68ecf00b6c43da02c168932b"
+  },
+  "title": "Detection of Parkinson disease using multiclass machine learning approach",
+  "authors": [
+    {
+      "name": "Saravanan Srinivasan",
+      "affiliations": [
+        {
+          "institution": "Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Parthasarathy Ramadass",
+      "affiliations": [
+        {
+          "institution": "Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Sandeep Kumar Mathivanan",
+      "affiliations": [
+        {
+          "institution": "Galgotias University",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Karthikeyan Panneer Selvam",
+      "affiliations": [
+        {
+          "institution": "Vellore Institute of Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Basu Dev Shivahare",
+      "affiliations": [
+        {
+          "institution": "Galgotias University",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Mohd Asif Shah",
+      "affiliations": [
+        {
+          "institution": "Kabridahar University",
+          "country": "Ethiopia"
+        },
+        {
+          "institution": "Lovely Professional University",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Scientific Reports",
+  "year": 2024,
+  "doi": "10.1038/s41598-024-64004-9",
+  "abstract": "Parkinson's Disease (PD) is a prevalent neurological condition characterized by motor and cognitive impairments, typically manifesting around the age of 50 and presenting symptoms such as gait difficulties and speech impairments. Although a cure remains elusive, symptom management through medication is possible. Timely detection is pivotal for effective disease management. In this study, we leverage Machine Learning (ML) and Deep Learning (DL) techniques, specifically K-Nearest Neighbor (KNN) and Feed-forward Neural Network (FNN) models, to differentiate between individuals with PD and healthy individuals based on voice signal characteristics. Our dataset, sourced from the University of California at Irvine (UCI), comprises 195 voice recordings collected from 31 patients. To optimize model performance, we employ various strategies including Synthetic Minority Over-sampling Technique (SMOTE) for addressing class imbalance, Feature Selection to identify the most relevant features, and hyperparameter tuning using RandomizedSearchCV. Our experimentation reveals that the FNN and KSVM models, trained on an 80-20 split of the dataset for training and testing respectively, yield the most promising results. The FNN model achieves an impressive overall accuracy of 99.11%, with 98.78% recall, 99.96% precision, and a 99.23% f1-score. Similarly, the KSVM model demonstrates strong performance with an overall accuracy of 95.89%, recall of 96.88%, precision of 98.71%, and an f1-score of 97.62%. Overall, our study showcases the efficacy of ML and DL techniques in accurately identifying PD from voice signals, underscoring the potential for these approaches to contribute significantly to early diagnosis and intervention strategies for Parkinson's Disease.",
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8591,
+        "recall": 0.8791,
+        "precision": 0.9355,
+        "f1_score": 0.9017000000000001
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8961,
+        "recall": 0.9218,
+        "precision": 0.9607,
+        "f1_score": 0.9372
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8612,
+        "recall": 0.8611,
+        "precision": 0.9622,
+        "f1_score": 0.9117000000000001
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8919,
+        "recall": 0.8912,
+        "precision": 0.9816,
+        "f1_score": 0.9318000000000001
+      }
+    },
+    {
+      "algorithm": "Feed-forward Neural Network",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9212,
+        "recall": 0.9417,
+        "precision": 0.9698,
+        "f1_score": 0.9611
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1038/s41598-024-64004-9_1"
+}

@@ -1,0 +1,121 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c1689395"
+  },
+  "title": "A New Hybrid Approach Based on AOA, CNN and Feature Fusion That Can Automatically Diagnose Parkinson's Disease From Sound Signals: PDD-AOA-CNN",
+  "authors": [
+    {
+      "name": "Muhammed Yildirim",
+      "affiliations": [
+        {
+          "institution": "Malatya Turgut Özal University",
+          "country": "Turkey"
+        }
+      ]
+    },
+    {
+      "name": "Soner Kiziloluk",
+      "affiliations": [
+        {
+          "institution": "Malatya Turgut Özal University",
+          "country": "Turkey"
+        }
+      ]
+    },
+    {
+      "name": "Serpil Aslan",
+      "affiliations": [
+        {
+          "institution": "Malatya Turgut Özal University",
+          "country": "Turkey"
+        }
+      ]
+    },
+    {
+      "name": "Eser Sert",
+      "affiliations": [
+        {
+          "institution": "Malatya Turgut Özal University",
+          "country": "Turkey"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Signal, Image and Video Processing",
+  "year": 2024,
+  "doi": "10.1007/s11760-023-02826-2",
+  "abstract": "Parkinson's is one of the most rapidly increasing neurological diseases in the world, caused by the deficiency of dopamine-producing cells in the brain. Voice disorders are a significant finding in the early stage of Parkinson's disease (PD). Detection of this finding at an early stage of the disease allows early treatment of the disease. Therefore, in this study, using sound data, a hybrid model for detecting PD has been designed. In the developed method, first of all, the sound data were converted into spectrograms. Then, the feature maps of the obtained spectrogram images were extracted using 3 different CNN architectures. Feature maps with different features obtained by utilizing the accumulation of different architectures were combined. Then, these features were selected using the arithmetic optimization algorithm (AOA), one of the most recent metaheuristic optimization algorithms, and then classified by support vector machine (SVM) and K-nearest neighbors (KNN). One of the important novelties in the study is the reduction of the size of the acquired feature maps with AOA, a new and high-performance metaheuristic approach. The success of the proposed model in diagnosing Parkinson's disease reached up to 98.19%. In addition, feature maps of the sound data in the dataset were acquired by using the MFCC method to compare the performance of the proposed model. Eight different classifiers were used to categorize the acquired feature maps. The highest accuracy value obtained in this method was obtained in the Random Forest classifier with 93.98%.",
+  "citescore": 4,
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "feature_extraction": [
+        "Spectograms"
+      ],
+      "feature_selection": {
+        "methods": [
+          "DarkNet53",
+          "DenseNet201",
+          "AlexNet"
+        ],
+        "combination": "Concatenation"
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9662,
+        "f1_score": 0.9743999999999999,
+        "precision": 0.987,
+        "recall": 0.962,
+        "specificity": 0.9884999999999999,
+        "mcc": 0.9519
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "feature_extraction": [
+        "Spectograms"
+      ],
+      "feature_selection": {
+        "methods": [
+          "DarkNet53",
+          "DenseNet201",
+          "AlexNet"
+        ],
+        "combination": "Concatenation"
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9518,
+        "f1_score": 0.9516,
+        "precision": 0.9872,
+        "recall": 0.9747,
+        "specificity": 0.9884999999999999,
+        "mcc": 0.9638
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Italian Parkinson's Voice and Speech",
+      "size": 65,
+      "pd_patients": 28,
+      "controls": 22,
+      "url": "https://ieee-dataport.org/open-access/italian-parkinsons-voice-and-speech",
+      "doi": "10.21227/aw6b-tg17"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Italian Parkinson's Voice and Speech",
+      "size": 65,
+      "pd_patients": 28,
+      "controls": 22,
+      "url": "https://ieee-dataport.org/open-access/italian-parkinsons-voice-and-speech",
+      "doi": "10.21227/aw6b-tg17"
+    }
+  ],
+  "study_id": "10.1007/s11760-023-02826-2_1"
+}

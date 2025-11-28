@@ -1,0 +1,255 @@
+{
+  "_id": {
+    "$oid": "68ecf00b6c43da02c16892ed"
+  },
+  "title": "From Discourse to Pathology: Automatic Identification of Parkinson's Disease Patients via Morphological Measures Across Three Languages",
+  "authors": [
+    {
+      "name": "Elif Eyigoz",
+      "affiliations": [
+        {
+          "institution": "T. J. Watson Research Center",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Melody Courson",
+      "affiliations": [
+        {
+          "institution": "Université de Montréal",
+          "country": "Canada"
+        }
+      ]
+    },
+    {
+      "name": "Lucas Sedeño",
+      "affiliations": [
+        {
+          "institution": "National Scientific and Technical Research Council (CONICET)",
+          "country": "Argentina"
+        }
+      ]
+    },
+    {
+      "name": "Katharina Rogg",
+      "affiliations": [
+        {
+          "institution": "Würzburg Universität",
+          "country": "Germany"
+        }
+      ]
+    },
+    {
+      "name": "Juan Rafael Orozco-Arroyave",
+      "affiliations": [
+        {
+          "institution": "Friedrich-Alexander Universität Erlangen-Nürnberg",
+          "country": "Germany"
+        },
+        {
+          "institution": "Universidad de Antioquia",
+          "country": "Colombia"
+        }
+      ]
+    },
+    {
+      "name": "Elmar Nöth",
+      "affiliations": [
+        {
+          "institution": "Friedrich-Alexander Universität Erlangen-Nürnberg",
+          "country": "Germany"
+        }
+      ]
+    },
+    {
+      "name": "Sabine Skodda",
+      "affiliations": [
+        {
+          "institution": "Knappschaftskrankenhaus",
+          "country": "Germany"
+        }
+      ]
+    },
+    {
+      "name": "Natalia Trujillo",
+      "affiliations": [
+        {
+          "institution": "Universidad de Antioquia",
+          "country": "Colombia"
+        }
+      ]
+    },
+    {
+      "name": "Mabel Rodríguez",
+      "affiliations": [
+        {
+          "institution": "National Institute of Mental Health",
+          "country": "Czech Republic"
+        },
+        {
+          "institution": "Charles University in Prague",
+          "country": "Czech Republic"
+        }
+      ]
+    },
+    {
+      "name": "Jan Rusz",
+      "affiliations": [
+        {
+          "institution": "Czech Technical University in Prague",
+          "country": "Czech Republic"
+        }
+      ]
+    },
+    {
+      "name": "Edinson Muñoz",
+      "affiliations": [
+        {
+          "institution": "Universidad de Santiago de Chile",
+          "country": "Chile"
+        }
+      ]
+    },
+    {
+      "name": "Juan F. Cardona",
+      "affiliations": [
+        {
+          "institution": "Universidad del Valle",
+          "country": "Colombia"
+        }
+      ]
+    },
+    {
+      "name": "Eduar Herrera",
+      "affiliations": [
+        {
+          "institution": "Universidad Icesi",
+          "country": "Colombia"
+        }
+      ]
+    },
+    {
+      "name": "Eugenia Hesse",
+      "affiliations": [
+        {
+          "institution": "National Scientific and Technical Research Council (CONICET)",
+          "country": "Argentina"
+        },
+        {
+          "institution": "Universidad de San Andrés",
+          "country": "Argentina"
+        }
+      ]
+    },
+    {
+      "name": "Agustín Ibáñez",
+      "affiliations": [
+        {
+          "institution": "National Scientific and Technical Research Council (CONICET)",
+          "country": "Argentina"
+        },
+        {
+          "institution": "Universidad de San Andrés",
+          "country": "Argentina"
+        },
+        {
+          "institution": "Universidad Autónoma del Caribe",
+          "country": "Colombia"
+        },
+        {
+          "institution": "Universidad Adolfo Ibáñez",
+          "country": "Chile"
+        },
+        {
+          "institution": "University of California San Francisco",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Guillermo Cecchi",
+      "affiliations": [
+        {
+          "institution": "T. J. Watson Research Center",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Adolfo M. García",
+      "affiliations": [
+        {
+          "institution": "National Scientific and Technical Research Council (CONICET)",
+          "country": "Argentina"
+        },
+        {
+          "institution": "Universidad de Santiago de Chile",
+          "country": "Chile"
+        },
+        {
+          "institution": "Universidad de San Andrés",
+          "country": "Argentina"
+        },
+        {
+          "institution": "Universidad Nacional de Cuyo",
+          "country": "Argentina"
+        },
+        {
+          "institution": "University of California San Francisco",
+          "country": "USA"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Cortex",
+  "year": 2020,
+  "doi": "10.1016/j.cortex.2020.08.020",
+  "abstract": "Embodied cognition research on Parkinson's disease (PD) points to disruptions of frontostriatal language functions as sensitive targets for clinical assessment. However, no existing approach has been tested for crosslinguistic validity, let alone by combining naturalistic tasks with machine-learning tools. To address these issues, we conducted the first classifier-based examination of morphological processing (a core frontostriatal function) in spontaneous monologues from PD patients across three typologically different languages. The study comprised 330 participants, encompassing speakers of Spanish (61 patients, 57 matched controls), German (88 patients, 88 matched controls), and Czech (20 patients, 16 matched controls). All subjects described the activities they perform during a regular day, and their monologues were automatically coded via morphological tagging, a computerized method that labels each word with a part-of-speech tag (e.g., noun, verb) and specific morphological tags (e.g., person, gender, number, tense). The ensuing data were subjected to machine-learning analyses to assess whether differential morphological patterns could classify between patients and controls and reflect the former's degree of motor impairment. Results showed robust classification rates, with over 80% of patients being discriminated from controls in each language separately. Moreover, the most discriminative morphological features were associated with the patients' motor compromise (as indicated by Pearson r correlations between predicted and collected motor impairment scores that ranged from moderate to moderate-to-strong across languages). Taken together, our results suggest that morphological patterning, an embodied frontostriatal domain, may be distinctively affected in PD across languages and even under ecological testing conditions.",
+  "ml_approaches": [
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "feature_extraction": [
+        "Morphological tagging"
+      ],
+      "feature_selection": {
+        "methods": [
+          "t-Test",
+          "ANOVA",
+          "Feature Importance"
+        ],
+        "combination": "sequential"
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.71,
+        "recall": 0.7,
+        "precision": 0.73,
+        "auc": 0.73
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Clinica Noel Medellin",
+      "size": 118,
+      "pd_patients": 61,
+      "controls": 57,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Clinica Noel Medellin",
+      "size": 118,
+      "pd_patients": 61,
+      "controls": 57,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.1016/j.cortex.2020.08.020_1"
+}

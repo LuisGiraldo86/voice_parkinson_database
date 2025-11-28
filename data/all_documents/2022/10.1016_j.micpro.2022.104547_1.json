@@ -1,0 +1,85 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c16893ed"
+  },
+  "title": "Effective monitoring and prediction of Parkinson disease in Smart Cities using intelligent health care system",
+  "authors": [
+    {
+      "name": "Chandrashekar Jatoth",
+      "affiliations": [
+        {
+          "institution": "National Institute of Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Neelima E.",
+      "affiliations": [
+        {
+          "institution": "GITAM University",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Mayuri A.V.R.",
+      "affiliations": [
+        {
+          "institution": "Dr. Sagunthala R&D Institute of Science & Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Sreenivasa Rao Annaluri",
+      "affiliations": [
+        {
+          "institution": "V.N.R. Vignana Jyothi Institute of Engineering and Technology",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "journal": "Microprocessors and Microsystems",
+  "year": 2022,
+  "doi": "10.1016/j.micpro.2022.104547",
+  "publication_type": "Journal",
+  "abstract": "Parkinson Disease (PD) is a severe chronic and progressive neuro-degenerative nerve disease effects the central nervous system associated with the dopamine deficiency widespread in the world. It is a worldwide public health problem of huge measurement. It is a familiar statistic that around one million people suffer from PD in the United States of America and as a whole around 5 million people suffering from PD worldwide. Therefore, it is vital challenge to predict PD in early stages so that initial plan for the needed treatment can be made. However, imbalanced nature of data sets hampered the mining of medical resource data. In this paper, we proposed an approach for detecting and tracking PD intensity using enhanced SMOTE and XGBoost in Fog Computing on UCI’s Parkinson’s Telemonitoring Voice Data Set of individuals. Numerous investigations were executed and the results of the proposed framework achieve 96.43% accuracy on test set and 99.49% accuracy on full set in detecting PD.",
+  "ml_approaches": [
+    {
+      "algorithm": "XGBoost",
+      "imbalance_handling": [
+        "Improved SMOTE"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.98,
+        "precision": 0.98,
+        "recall": 0.98,
+        "f1_score": 0.98
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1016/j.micpro.2022.104547_1"
+}

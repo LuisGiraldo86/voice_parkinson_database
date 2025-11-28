@@ -1,0 +1,337 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c168935d"
+  },
+  "title": "Interpretable Parkinson's Disease Detection Using Group-Wise Scaling",
+  "authors": [
+    {
+      "name": "Niloofar Momeni",
+      "affiliations": [
+        {
+          "institution": "Lund University",
+          "country": "Sweden"
+        }
+      ]
+    },
+    {
+      "name": "Susanna Whitling",
+      "affiliations": [
+        {
+          "institution": "Lund University",
+          "country": "Sweden"
+        }
+      ]
+    },
+    {
+      "name": "Andreas Jakobsson",
+      "affiliations": [
+        {
+          "institution": "Lund University",
+          "country": "Sweden"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "IEEE Access",
+  "year": 2025,
+  "doi": "10.1109/ACCESS.2025.3540600",
+  "abstract": "This study is aimed at detecting Parkinson's disease by analyzing voice measurements made using a mobile phone. The key objectives include creating a model that ensures accurate predictions while maintaining interpretability, consistent with the existing literature on Parkinson's disease. We introduce a novel group-wise scaling method to address typical age and biological sex biases in the datasets, demonstrating 9.5% improvement over conventional scaling for three publicly available data sets. We also show the importance of evaluating the developed model on unseen individuals to achieve reliable classification results. The developed model is shown to offer an accuracy of 82% for unseen individuals, surpassing current state-of-the-art approaches. Furthermore, we offer insights into the decision-making of the model using Shapley additive explanation values. Our analysis reveals that shorter and less variable voiced segments and more variable unvoiced segments, suggesting a monotone voice pattern with frequent pauses, increase the likelihood of classifying the voice as a Parkinson's disease voice. Additionally, greater variability and rate of voiced segments, low variability of unvoiced segments, higher pitch variation, and spectral flux, suggesting continuous phonation and dynamic modulation, correlate with healthy voices. These features align well with the relevant medical literature, confirming our results. The significance of our proposed model lies in its generalizability and reliability for Parkinson's disease detection, potentially decelerating disease progression, reducing healthcare costs, and improving quality of life for patients.",
+  "ml_approaches": [
+    {
+      "algorithm": "XGBoost",
+      "framework": "Python",
+      "feature_extraction": [
+        "ComParE"
+      ],
+      "scaling": [
+        "Robust"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: XGBoost"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.754,
+        "f1_score": 0.7001999999999999,
+        "recall": 0.665,
+        "precision": 0.739,
+        "auc": 0.8340000000000001
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "Python",
+      "feature_extraction": [
+        "ComParE"
+      ],
+      "scaling": [
+        "Robust"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: XGBoost"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.737,
+        "f1_score": 0.659,
+        "recall": 0.642,
+        "precision": 0.678,
+        "auc": 0.812
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "Python",
+      "feature_extraction": [
+        "ComParE"
+      ],
+      "scaling": [
+        "Group-wise Robust Scaling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: XGBoost"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.816,
+        "f1_score": 0.79,
+        "recall": 0.8,
+        "precision": 0.78,
+        "auc": 0.897
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "Python",
+      "feature_extraction": [
+        "ComParE"
+      ],
+      "scaling": [
+        "Group-wise Robust Scaling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: XGBoost"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.828,
+        "f1_score": 0.789,
+        "recall": 0.813,
+        "precision": 0.767,
+        "auc": 0.9028
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "Python",
+      "feature_extraction": [
+        "eGeMAPS"
+      ],
+      "scaling": [
+        "Robust"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: XGBoost"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.698,
+        "f1_score": 0.616,
+        "recall": 0.655,
+        "precision": 0.677,
+        "auc": 0.757
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "Python",
+      "feature_extraction": [
+        "eGeMAPS"
+      ],
+      "scaling": [
+        "Robust"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: XGBoost"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.702,
+        "f1_score": 0.569,
+        "recall": 0.548,
+        "precision": 0.594,
+        "auc": 0.743
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "Python",
+      "feature_extraction": [
+        "eGeMAPS"
+      ],
+      "scaling": [
+        "Group-wise Robust Scaling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: XGBoost"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.797,
+        "f1_score": 0.7609999999999999,
+        "recall": 0.7534,
+        "precision": 0.7691,
+        "auc": 0.8772
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "Python",
+      "feature_extraction": [
+        "eGeMAPS"
+      ],
+      "scaling": [
+        "Group-wise Robust Scaling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: XGBoost"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.812,
+        "f1_score": 0.743,
+        "recall": 0.756,
+        "precision": 0.732,
+        "auc": 0.878
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "Python",
+      "feature_extraction": [
+        "emobase"
+      ],
+      "scaling": [
+        "Robust"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: XGBoost"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.725,
+        "f1_score": 0.65,
+        "recall": 0.6,
+        "precision": 0.71,
+        "auc": 0.789
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "Python",
+      "feature_extraction": [
+        "emobase"
+      ],
+      "scaling": [
+        "Robust"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: XGBoost"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.731,
+        "f1_score": 0.628,
+        "recall": 0.583,
+        "precision": 0.68,
+        "auc": 0.79
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "Python",
+      "feature_extraction": [
+        "emobase"
+      ],
+      "scaling": [
+        "Group-wise Robust Scaling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: XGBoost"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.805,
+        "f1_score": 0.78,
+        "recall": 0.81,
+        "precision": 0.752,
+        "auc": 0.888
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "Python",
+      "feature_extraction": [
+        "emobase"
+      ],
+      "scaling": [
+        "Group-wise Robust Scaling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: XGBoost"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.818,
+        "f1_score": 0.782,
+        "recall": 0.839,
+        "precision": 0.733,
+        "auc": 0.897
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "mPower",
+      "size": 398,
+      "pd_patients": 188,
+      "controls": 210,
+      "url": "https://www.synapse.org/Synapse:syn4993293/wiki/247859"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "mPower",
+      "size": 398,
+      "pd_patients": 188,
+      "controls": 210,
+      "url": "https://www.synapse.org/Synapse:syn4993293/wiki/247859"
+    }
+  ],
+  "study_id": "10.1109/ACCESS.2025.3540600_1"
+}

@@ -1,0 +1,115 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893ba"
+  },
+  "title": "The Detection of Parkinson's Disease From Speech Using Voice Source Information",
+  "authors": [
+    {
+      "name": "N.P. Narendra",
+      "affiliations": [
+        {
+          "institution": "Aalto University",
+          "country": "Finland"
+        }
+      ]
+    },
+    {
+      "name": "Björn Schuller",
+      "affiliations": [
+        {
+          "institution": "Imperial College London",
+          "country": "United Kingdom"
+        },
+        {
+          "institution": "University of Augsburg",
+          "country": "Germany"
+        }
+      ]
+    },
+    {
+      "name": "Paavo Alku",
+      "affiliations": [
+        {
+          "institution": "Aalto University",
+          "country": "Finland"
+        }
+      ]
+    }
+  ],
+  "journal": "IEEE/ACM Transactions on Audio, Speech, and Language Processing",
+  "publication_type": "Journal",
+  "year": 2021,
+  "doi": "10.1109/TASLP.2021.3078364",
+  "abstract": "Developing automatic methods to detect Parkinson's disease (PD) from speech has attracted increasing interest as these techniques can potentially be used in telemonitoring health applications. This article studies the utilization of voice source information in the detection of PD using two classifier architectures: traditional pipeline approach and end-to-end approach. The former consists of feature extraction and classifier stages. In feature extraction, the baseline acoustic features-consisting of articulation, phonation, and prosody features-were computed and voice source information was extracted using glottal features that were estimated by iterative adaptive inverse filtering (IAIF) and quasi-closed phase (QCP) glottal inverse filtering methods. Support vector machine classifiers were developed utilizing the baseline and glottal features extracted from every speech utterance and the corresponding healthy/PD labels. The end-to-end approach uses deep learning models which were trained using both raw speech waveforms and raw voice source waveforms. In the latter, two glottal inverse filtering methods (IAIF and QCP) and zero frequency filtering method were utilized. The deep learning architecture consists of a combination of convolutional layers followed by a multilayer perceptron. Experiments were performed using PC-GITA speech database. From the traditional pipeline systems, the highest classification accuracy (67.93%) was given by combination of baseline and QCP-based glottal features. From the end-to-end-systems, the highest accuracy (68.56%) was given by the system trained using QCP-based glottal flow signals. Even though classification accuracies were modest for all systems, the study is encouraging as the extraction of voice source information was found to be most effective in both approaches.",
+  "ml_approaches": [
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "feature_extraction": [
+        "Convolutional Neural Network"
+      ],
+      "results": {
+        "accuracy": 0.6675,
+        "recall": 0.5806,
+        "specificity": 0.7543000000000001
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "feature_extraction": [
+        "Iterative Adaptive Inverse Filtering",
+        "Convolutional Neural Network"
+      ],
+      "results": {
+        "accuracy": 0.6769,
+        "recall": 0.61,
+        "specificity": 0.7440000000000001
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "feature_extraction": [
+        "Quasi-Closed Phase",
+        "Convolutional Neural Network"
+      ],
+      "results": {
+        "accuracy": 0.6856,
+        "recall": 0.634,
+        "specificity": 0.7373000000000001
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "feature_extraction": [
+        "Zero Frequency Filtering",
+        "Convolutional Neural Network"
+      ],
+      "results": {
+        "accuracy": 0.6628,
+        "recall": 0.537,
+        "specificity": 0.7886
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "PC-GITA",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://paperswithcode.com/dataset/pc-gita",
+      "doi": ""
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "PC-GITA",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://paperswithcode.com/dataset/pc-gita",
+      "doi": ""
+    }
+  ],
+  "study_id": "10.1109/TASLP.2021.3078364_1"
+}

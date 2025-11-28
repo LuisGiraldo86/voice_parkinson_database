@@ -1,0 +1,81 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c1689421"
+  },
+  "title": "A Hybrid Approach for Parkinson's Disease Diagnosis with Resonance and Time-Frequency Based Features from Speech Signals",
+  "authors": [
+    {
+      "name": "Jinee Goyal",
+      "affiliations": [
+        {
+          "institution": "Punjab Engineering College",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Padmavati Khandnor",
+      "affiliations": [
+        {
+          "institution": "Punjab Engineering College",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Trilok Chand Aseri",
+      "affiliations": [
+        {
+          "institution": "Punjab Engineering College",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Expert Systems with Applications",
+  "year": 2021,
+  "doi": "10.1016/j.eswa.2021.115283",
+  "abstract": "Parkinson's Disease (PD) is a progressive neurological disorder that affects the functioning of the brain. As PD progresses, there arises a problem of maintaining coordination between brain and different parts of the body. Subjects have the problem of performing daily activities. Its early diagnosis is important to improve the quality of life of Parkinson's patients. Most of Parkinson's patients are likely to have voice disorders in the early stages. Therefore, the analysis of voice recordings with machine learning-based models can improve the diagnosis process. Voice signals are non-linear, non-stationary signals which exhibit oscillatory behavior. In this paper, a hybrid approach is proposed to extract features from resonance-based and time-frequency based information. A combination of Resonance based Sparse Signal Decomposition (RSSD) + Time-Frequency (T-F) algorithm is proposed. Two datasets are collected for the study. The first dataset D1 is a public dataset consisting of 16 PD + 21 Healthy Controls (HC) and the second dataset D2 is collected from 20 HC to explore the effect of diversity in the diagnosis process. To explore the potential of deep learning techniques in diagnosing speech impairments in PD patients, the potential of Convolution Neural Network (CNN) is also explored. To evaluate the method, we conducted several experiments with state-of-the-art feature extraction and classification techniques. The proposed hybrid approach distinguished PD and HC with a validation accuracy of 99.37%. We have also explored the effect of diversity in the data collection process and it is observed that diversity in the socio-cultural group plays very important role to put the system in the clinical practice.",
+  "ml_approaches": [
+    {
+      "algorithm": "Convolutional Neural Network",
+      "framework": "",
+      "feature_extraction": [
+        "Resonance based Sparse Signal Decomposition",
+        "Time-Frequency Analysis",
+        "Power Spectral Density"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.875,
+        "recall": 0.62,
+        "precision": 1,
+        "f1_score": 0.76,
+        "auc": 0.88,
+        "geo_mean": 0.78
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Mobile Device Voice Recordings at King's College London",
+      "size": 37,
+      "pd_patients": 16,
+      "controls": 21,
+      "url": "https://zenodo.org/records/2867216",
+      "doi": "10.5281/zenodo.2867215"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Mobile Device Voice Recordings at King's College London",
+      "size": 37,
+      "pd_patients": 16,
+      "controls": 21,
+      "url": "https://zenodo.org/records/2867216",
+      "doi": "10.5281/zenodo.2867215"
+    }
+  ],
+  "study_id": "10.1016/j.eswa.2021.115283_1"
+}

@@ -1,0 +1,177 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c1689406"
+  },
+  "title": "Vocal Biomarkers for Parkinson's Disease Classification Using Audio Spectrogram Transformers",
+  "authors": [
+    {
+      "name": "Nuwan Madusanka",
+      "affiliations": [
+        {
+          "institution": "Pukyong National University",
+          "country": "South Korea"
+        },
+        {
+          "institution": "Sri Lanka Technological Campus",
+          "country": "Sri Lanka"
+        }
+      ]
+    },
+    {
+      "name": "Byeong-il Lee",
+      "affiliations": [
+        {
+          "institution": "Pukyong National University",
+          "country": "South Korea"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Journal of Voice",
+  "year": 2024,
+  "doi": "10.1016/j.jvoice.2024.11.008",
+  "abstract": "Parkinson's disease (PD) is a neurodegenerative disorder affecting motor and non-motor functions, including speech. This study evaluates the effectiveness of the audio spectrogram transformer (AST) model in detecting PD through vocal biomarkers, hypothesizing that its self-attention mechanism would better capture PD related speech impairments compared to traditional deep learning approaches. Speech recordings from 150 participants (100 from PC-GITA: 50 PD, 50 healthy controls (HC); 50 from Italian Parkinson's voice and speech (ITA): 28 PD, 22 HC) were analyzed using the AST model and compared against established architectures including VGG16, VGG19, ResNet18, ResNet34, vision transformer, and swin transformer. Audio preprocessing included sampling rate standardization to 16 kHz and amplitude normalization. The AST model achieved superior classification performance across all datasets: 97.14% accuracy on ITA, 91.67% on Parkinson's Colombian - Grupo de Investigación en Telecomunicaciones Aplicadas (PC-GITA), and 92.73% on the combined dataset. Performance remained consistent across different speech tasks, with particularly strong results in sustained vowel analysis (precision: 0.97 ± 0.03, recall: 0.96 ± 0.03). The model demonstrated robust cross-lingual generalization, outperforming traditional architectures by 5%-10% in accuracy. These results suggest that the AST model provides a reliable, non-invasive method for PD detection through voice analysis, with strong performance across different languages and speech tasks. The model's success in cross-lingual generalization indicates potential for broader clinical application, though validation across more diverse populations is needed for clinical implementation.",
+  "ml_approaches": [
+    {
+      "algorithm": "Convolutional Neural Network: VGG16",
+      "framework": "",
+      "data_augmentation": [
+        "Gaussian White Noise"
+      ],
+      "feature_extraction": [
+        "Spectrogram"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8602,
+        "precision": 0.9,
+        "recall": 0.84,
+        "f1_score": 0.87
+      }
+    },
+    {
+      "algorithm": "Convolutional Neural Network: VGG19",
+      "framework": "",
+      "data_augmentation": [
+        "Gaussian White Noise"
+      ],
+      "feature_extraction": [
+        "Spectrogram"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8127,
+        "precision": 0.78,
+        "recall": 0.91,
+        "f1_score": 0.84
+      }
+    },
+    {
+      "algorithm": "ResNet: 18",
+      "framework": "",
+      "data_augmentation": [
+        "Gaussian White Noise"
+      ],
+      "feature_extraction": [
+        "Spectrogram"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.7793,
+        "precision": 0.77,
+        "recall": 0.85,
+        "f1_score": 0.8
+      }
+    },
+    {
+      "algorithm": "ResNet: 34",
+      "framework": "",
+      "data_augmentation": [
+        "Gaussian White Noise"
+      ],
+      "feature_extraction": [
+        "Spectrogram"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.7968,
+        "precision": 0.81,
+        "recall": 0.82,
+        "f1_score": 0.82
+      }
+    },
+    {
+      "algorithm": "Swin",
+      "framework": "",
+      "data_augmentation": [
+        "Gaussian White Noise"
+      ],
+      "feature_extraction": [
+        "Spectrogram"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8004,
+        "precision": 0.83,
+        "recall": 0.8,
+        "f1_score": 0.82
+      }
+    },
+    {
+      "algorithm": "Vision Transformer: ViT",
+      "framework": "",
+      "data_augmentation": [
+        "Gaussian White Noise"
+      ],
+      "feature_extraction": [
+        "Spectrogram"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8405,
+        "precision": 0.83,
+        "recall": 0.89,
+        "f1_score": 0.86
+      }
+    },
+    {
+      "algorithm": "Audio Spectrogram Transformer",
+      "framework": "",
+      "data_augmentation": [
+        "Gaussian White Noise"
+      ],
+      "feature_extraction": [
+        "Spectrogram"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9167,
+        "precision": 0.92,
+        "recall": 0.91,
+        "f1_score": 0.91
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "PC-GITA",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://paperswithcode.com/dataset/pc-gita",
+      "doi": ""
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "PC-GITA",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://paperswithcode.com/dataset/pc-gita",
+      "doi": ""
+    }
+  ],
+  "study_id": "10.1016/j.jvoice.2024.11.008_4"
+}

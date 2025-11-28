@@ -1,0 +1,163 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c168938f"
+  },
+  "title": "A Novel Sample and Feature Dependent Ensemble Approach for Parkinson's Disease Detection",
+  "authors": [
+    {
+      "name": "Liaqat Ali",
+      "affiliations": [
+        {
+          "institution": "University of Science and Technology",
+          "country": "Pakistan"
+        }
+      ]
+    },
+    {
+      "name": "Chinmay Chakraborty",
+      "affiliations": [
+        {
+          "institution": "Birla Institute of Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Zhiquan He",
+      "affiliations": [
+        {
+          "institution": "Shenzhen University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Wenming Cao",
+      "affiliations": [
+        {
+          "institution": "Shenzhen University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Yakubu Imrana",
+      "affiliations": [
+        {
+          "institution": "University of Electronic Science and Technology of China",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Joel J. P. C. Rodrigues",
+      "affiliations": [
+        {
+          "institution": "China University of Petroleum",
+          "country": "China"
+        },
+        {
+          "institution": "Instituto de Telecomunicações",
+          "country": "Portugal"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Neural Computing and Applications",
+  "year": 2023,
+  "doi": "10.1007/s00521-022-07046-2",
+  "abstract": "Parkinson's disease (PD) is a neurological disease that has been reported to have affected most people worldwide. Recent research pointed out that about 90% of PD patients possess voice disorders. Motivated by this fact, many researchers proposed methods based on multiple types of speech data for PD prediction. However, these methods either face the problem of low rate of accuracy or lack generalization. To develop an approach that will be free of these issues, in this paper we propose a novel ensemble approach. These paper contributions are two folds. First, investigating feature selection integration with deep neural network (DNN) and validating its effectiveness by comparing its performance with conventional DNN and other similar integrated systems. Second, development of a novel ensemble model namely EOFSC (Ensemble model with Optimal Features and Sample Dependant Base Classifiers) that exploits the findings of recently published studies. Recent research pointed out that for different types of voice data, different optimal models are obtained which are sensitive to different types of samples and subsets of features. In this paper, we further consolidate the findings by utilizing the proposed integrated system and propose the development of EOFSC. For multiple types of vowel phonations, multiple base classifiers are obtained which are sensitive to different subsets of features. These features and sample-dependent base classifiers are integrated, and the proposed EOFSC model is constructed. To evaluate the final prediction of the EOFSC model, the majority voting methodology is adopted. Experimental results point out that feature selection integration with neural networks improves the performance of conventional neural networks. Additionally, feature selection integration with DNN outperforms feature selection integration with conventional machine learning models. Finally, the newly developed ensemble model is observed to improve PD detection accuracy by 6.5%.",
+  "citescore": 11.4,
+  "ml_approaches": [
+    {
+      "algorithm": "Deep Neural Network",
+      "framework": "",
+      "input_speech": "vowels",
+      "feature_selection": {
+        "methods": [
+          "F-Score"
+        ]
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.875,
+        "recall": 0.8,
+        "specificity": 0.95,
+        "mcc": 0.758
+      }
+    },
+    {
+      "algorithm": "Deep Neural Network",
+      "framework": "",
+      "input_speech": "/a/",
+      "feature_selection": {
+        "methods": [
+          "F-Score"
+        ]
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.875,
+        "recall": 1,
+        "specificity": 0.75,
+        "mcc": 0.774
+      }
+    },
+    {
+      "algorithm": "Deep Neural Network",
+      "framework": "",
+      "input_speech": "/o/",
+      "feature_selection": {
+        "methods": [
+          "F-Score"
+        ]
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.9,
+        "recall": 0.95,
+        "specificity": 0.85,
+        "mcc": 0.804
+      }
+    },
+    {
+      "algorithm": "Deep Neural Network",
+      "framework": "",
+      "input_speech": "/u/",
+      "feature_selection": {
+        "methods": [
+          "F-Score"
+        ]
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.875,
+        "recall": 0.8,
+        "specificity": 0.95,
+        "mcc": 0.758
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Speech with Multiple Types of Sound Recordings",
+      "size": 40,
+      "pd_patients": 20,
+      "controls": 20,
+      "url": "https://archive.ics.uci.edu/dataset/301/parkinson+speech+dataset+with+multiple+types+of+sound+recordings",
+      "doi": "10.24432/C5NC8M"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Speech with Multiple Types of Sound Recordings",
+      "size": 40,
+      "pd_patients": 20,
+      "controls": 20,
+      "url": "https://archive.ics.uci.edu/dataset/301/parkinson+speech+dataset+with+multiple+types+of+sound+recordings",
+      "doi": "10.24432/C5NC8M"
+    }
+  ],
+  "study_id": "10.1007/s00521-022-07046-2_1"
+}

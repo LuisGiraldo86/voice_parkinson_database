@@ -1,0 +1,143 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893c1"
+  },
+  "title": "Parkinson's Disease Detection by Using Feature Selection and Sparse Representation",
+  "authors": [
+    {
+      "name": "Sajad Mohamadzadeh",
+      "affiliations": [
+        {
+          "institution": "University of Birjand",
+          "country": "Iran"
+        }
+      ]
+    },
+    {
+      "name": "Padmavati KhandnorSadegh Pasban",
+      "affiliations": [
+        {
+          "institution": "University of Birjand",
+          "country": "Iran"
+        }
+      ]
+    },
+    {
+      "name": "Javad Zeraatkar-Moghadam",
+      "affiliations": [
+        {
+          "institution": "University of Birjand",
+          "country": "Iran"
+        }
+      ]
+    },
+    {
+      "name": "Amir Keivan Shafiei",
+      "affiliations": [
+        {
+          "institution": "University of Birjand",
+          "country": "Iran"
+        }
+      ]
+    }
+  ],
+  "journal": "Journal of Medical and Biological Engineering",
+  "publication_type": "Journal",
+  "year": 2021,
+  "doi": "10.1007/s40846-021-00626-y",
+  "abstract": "Parkinson's disease is one of the most destructive diseases of the nervous system, affecting sound faster and more than any other subsystem of the body. Over the past decade, researchers have studied Parkinson's disease by analyzing audio signals. It is a low-cost method that eliminates the need for the patient to be physically present at the clinic. By recording the sound signal from the pronunciation of the words and then extracting the appropriate features from them, it is possible to identify the disturbance in the sound movements of the person with Parkinson's. Therefore, the ability to diagnose the disease before other clinical symptoms will be available. This paper examines the disability caused by Parkinson's voice disorder and extracts parameters from the audio signal that well illustrate the disabilities in the voice. The proposed method uses a sparse representation algorithm to reduce the dimensions of the feature. At this stage, the best features are extracted from the person's voice and appearance. Then, the resulting properties are sent as input to the sparse code classifiers. The accuracy of the proposed method for approximate message passing (AMP) classifiers is 99.11%. Evaluation of the proposed method shows that it has reduced storage space, in addition to increasing the efficiency of detection compared to the other methods.",
+  "citescore": 3.5,
+  "ml_approaches": [
+    {
+      "algorithm": "Approximate Message Passing",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Sparse Representation"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9911,
+        "f1_score": 0.983
+      }
+    },
+    {
+      "algorithm": "Homotopy",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Sparse Representation"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9845,
+        "f1_score": 0.979
+      }
+    },
+    {
+      "algorithm": "Dual Augmented Lagrangian Method",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Sparse Representation"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9734,
+        "f1_score": 0.96
+      }
+    },
+    {
+      "algorithm": "Proximal Alternating Linearized Minimization",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Sparse Representation"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9861,
+        "f1_score": 0.981
+      }
+    },
+    {
+      "algorithm": "Slo",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Sparse Representation"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.982,
+        "f1_score": 0.974
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1007/s40846-021-00626-y_1"
+}

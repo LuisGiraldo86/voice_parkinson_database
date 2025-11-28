@@ -1,0 +1,73 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893a5"
+  },
+  "title": "CGAN Facilitated Data Augmentation of Voice and Speech Parameters for Detecting Parkinson's Disease in the Prodromal Phase",
+  "authors": [
+    {
+      "name": "Sandhya Chandrabhanu",
+      "affiliations": [
+        {
+          "institution": "Karpagam Academy of Higher Education",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Shanmugam Hemalatha",
+      "affiliations": [
+        {
+          "institution": "Karpagam Academy of Higher Education",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Broad Research in Artificial Intelligence and Neuroscience",
+  "year": 2024,
+  "doi": "10.70594/brain/15.3/16",
+  "abstract": "Parkinson's disease is a multi-faceted disease affecting the brain. The enormity of its recent rise is quite alarming. This calls for intense research to diagnose early to hasten the progress of diagnosis. Voice distortion is considered an early precursor for Parkinson's disease. Though several studies in Machine Learning using voice parameters have provided useful information, none of them have been successful in evolving an efficient and generalized model to detect it. Deep Learning techniques were applied to improve the performance of the model but its major limitation was the size of the dataset. Hence, a need arose to extend the dataset using an appropriate data augmentation method. At this juncture, the conditional generative adversarial network (CGAN) proved to be a useful technique because of its innate feature for generating synthetic data from input noise. The RNN-LSTM classifier could achieve a training accuracy of 87.32%, testing accuracy of 86.3%, training precision of 87.92 %, and testing precision of 89.94%. The results of the experimental study are compared with other state-of-the-art methods. This technique succeeded in reducing the problem of over-fitting and could elevate the performance of the RNN-LSTM classifier in the prediction of Parkinson's disease.",
+  "ml_approaches": [
+    {
+      "algorithm": "Long Short-Term Memory",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Correlation Matrix"
+        ]
+      },
+      "imbalance_handling": [
+        "Conditional Generative Adversarial Network"
+      ],
+      "results": {
+        "accuracy": 0.86,
+        "precision": 0.92
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "study_id": "10.70594/brain/15.3/16_1"
+}

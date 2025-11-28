@@ -1,0 +1,86 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893bd"
+  },
+  "title": "Probabilistic Neural Network-based Model for Identification of Parkinson's Disease by using Voice Profile and Personal Data",
+  "authors": [
+    {
+      "name": "T. Pandu Ranga Vital",
+      "affiliations": [
+        {
+          "institution": "Aditya Institute of Technology and Management",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Janmenjoy Nayak",
+      "affiliations": [
+        {
+          "institution": "Aditya Institute of Technology and Management",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Bighnaraj Naik",
+      "affiliations": [
+        {
+          "institution": "Veer Surendra Sai University of Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "D. Jayaram",
+      "affiliations": [
+        {
+          "institution": "Chaitanya Bharathi Institute of Technology",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "journal": "Arabian Journal for Science and Engineering",
+  "publication_type": "Journal",
+  "year": 2021,
+  "doi": "10.1007/s13369-020-05080-7",
+  "abstract": "Parkinson's disease (PD) is an aging neurological disease deficiencies dopamine and occupies the second position among the neurological disease after the Alzheimer's in the world. The identification of PD in the early stage is extremely advanced and expensive. Many researchers investigated on PD in divergent ways and different approaches to identifying the PD in the early stage with low cost. One of the effective approaches such as PD voice analysis is an important topic in the current decade. In this paper, a novel probabilistic neural network-based approach is proposed for analyzing the PD. The major objective of this paper is to develop a highly accurate probabilistic neural network-based intelligent approach for the identification and classification of PD diseases. The inputs are considered as 1200 sound records as vowel vocalizations /a/, /e/, /i/, /o/, and /u/ in different timings (morning, mid-day, and night) of the day from 62 PD and 51 non-PD individuals. From the experimental analysis, it is evident that the performance of the dataset with PNN is increased proportionally to the incremental neurons in the hidden layer of PNN up to seven and it is found 100% accuracy with minimum time and gradient values. The projected PNN model with seven hidden layer neurons is a very powerful tool for predicting the PD in early detections with minimum cost. Comparative analysis with other standard machine learning approaches is evident towards the superiority of the proposed PNN model performance for successful identification of PD through voice analysis.",
+  "citescore": 4.4,
+  "ml_approaches": [
+    {
+      "algorithm": "Probabilistic Neural Network",
+      "framework": "",
+      "preprocessing": [],
+      "results": {
+        "accuracy": 1,
+        "recall": 1,
+        "specificity": 1,
+        "precision": 1,
+        "auc": 1
+      }
+    }
+  ],
+  "note": "The performance metrics indicate a perfect classification with 100% accuracy, recall, specificity, precision, and AUC. Highly suspicious results warrant further investigation.",
+  "source_dataset": [
+    {
+      "name": "Custom Dataset Andhra Pradesh, India",
+      "size": 113,
+      "pd_patients": 62,
+      "controls": 51,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Custom Dataset Andhra Pradesh, India",
+      "size": 113,
+      "pd_patients": 62,
+      "controls": 51,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.1007/s13369-020-05080-7_1"
+}

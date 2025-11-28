@@ -1,0 +1,139 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c168937a"
+  },
+  "title": "Classification of Parkinson Disease Based on Patient's Voice Signal Using Machine Learning",
+  "authors": [
+    {
+      "name": "Imran Ahmed",
+      "affiliations": [
+        {
+          "institution": "Riphah International University",
+          "country": "Pakistan"
+        }
+      ]
+    },
+    {
+      "name": "Sultan Aljahdali",
+      "affiliations": [
+        {
+          "institution": "Taif University",
+          "country": "Saudi Arabia"
+        }
+      ]
+    },
+    {
+      "name": "Muhammad Shakeel Khan",
+      "affiliations": [
+        {
+          "institution": "Riphah International University",
+          "country": "Pakistan"
+        }
+      ]
+    },
+    {
+      "name": "Sanaa Kaddoura",
+      "affiliations": [
+        {
+          "institution": "Zayed University",
+          "country": "UAE"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Intelligent Automation and Soft Computing",
+  "year": 2022,
+  "doi": "10.32604/iasc.2022.022037",
+  "abstract": "Parkinson's disease (PD) is a nervous system disorder first described as a neurological condition in 1817. It is one of the more prevalent diseases in the elderly, and Alzheimer's is the second most common neurodegenerative illness. It impacts the patient's movement. Symptoms start gradually with tremors, stiffness in movement, and speech and voice disorders. Researches proved that 89% of patients with Parkinson's has speech disorder including uncertain articulation, hoarse and breathy voice and monotone pitch. The cause behind this voice change is the reduction of dopamine due to damage of neurons in the substantia nigra responsible for dopamine production. In this work, Parkinson's disease is classified with the help of human voice signals. Six different machine learning (ML) algorithms are used in the classification: Stochastic Gradient Descent (SGD) Classifier, Extreme Gradient Boosting (XGB) Classifier, Logistic Regression Classifier, Random Forest Classifier, K-Nearest Neighbour (KNN) Classifier, and Decision Tree (DT) Classifier. This research aims to classify Parkinson's disease using human voice signals and extract essential features to reduce the complexity of the dataset. Then, human voice signals are analyzed to check the voice intensity and spectrum for PD patients. Then, machine learning classifiers are applied to classify the PD patients based on the extracted features. The results show that SGD-Classifier has 91% accuracy, XGB-Classifier has 95% accuracy, Logistic Regression has 91% accuracy, Random Forest shows 97% accuracy, KNN shows 95% accuracy, and Decision Tree has 95% accuracy. Hence, Random Forest has the highest accuracy. The disease can be studied more by looking for more characteristics of PD patients to enhance its proper use in the medical field.",
+  "citescore": 3,
+  "ml_approaches": [
+    {
+      "algorithm": "Stochastic Gradient Descent",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "preprocessing": [],
+      "results": {
+        "accuracy": 0.9166
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "preprocessing": [],
+      "results": {
+        "accuracy": 0.9508
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "preprocessing": [],
+      "results": {
+        "accuracy": 0.9166
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "preprocessing": [],
+      "results": {
+        "accuracy": 0.971
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "preprocessing": [],
+      "results": {
+        "accuracy": 0.9545
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "preprocessing": [],
+      "results": {
+        "accuracy": 0.9583
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.32604/iasc.2022.022037_1"
+}

@@ -1,0 +1,255 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c1689357"
+  },
+  "title": "Feature Selection and Classification Algorithm Approaches for Parkinson's Disease Detection",
+  "authors": [
+    {
+      "name": "Hendra Marcos",
+      "affiliations": [
+        {
+          "institution": "Diponegoro University",
+          "country": "Indonesia"
+        }
+      ]
+    },
+    {
+      "name": "Budi Warsito",
+      "affiliations": [
+        {
+          "institution": "Diponegoro University",
+          "country": "Indonesia"
+        }
+      ]
+    },
+    {
+      "name": "Adi Wibowo",
+      "affiliations": [
+        {
+          "institution": "Diponegoro University",
+          "country": "Indonesia"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Conference",
+  "journal": "2021 IEEE 5th International Conference on Information Technology, Information Systems and Electrical Engineering",
+  "year": 2021,
+  "doi": "10.1109/ICITISEE53823.2021.9655774",
+  "abstract": "Millions of people worldwide have developed Parkinson's disease (PD), which is more common by 50. Advances in information technology, especially in the field of machine learning, are being challenged for the development of early detection algorithms. This helps doctors to detect disease early and more accurately based on data. The available data has large dimensions and features so that the feature selection method can be used. This research paper aims to provide insight by comparing several algorithms for feature selection and PD classification. PD classification can help improve treatment efficiency and save time. The problem that arises is how the classification algorithm can show better and more efficient accuracy results. A large number of datasets is one of the challenges in the development of classification algorithms. The voice input dataset was obtained from the UCI machine learning repository. Bagging's algorithm out performed on average 100%, and MLP 96.58%, and RF 92.52%.",
+  "ml_approaches": [
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "preprocessing": [
+        "Discretization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Rough Set Theory"
+        ]
+      },
+      "validation": null,
+      "results": {
+        "accuracy": 0.9887
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "preprocessing": [
+        "Discretization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Rough Set Theory"
+        ]
+      },
+      "validation": null,
+      "results": {
+        "accuracy": 0.8705
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "preprocessing": [
+        "Discretization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Rough Set Theory"
+        ]
+      },
+      "validation": null,
+      "results": {
+        "accuracy": 0.9808
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "preprocessing": [
+        "Discretization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Rough Set Theory"
+        ]
+      },
+      "validation": null,
+      "results": {
+        "accuracy": 0.8558
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "framework": "",
+      "preprocessing": [
+        "Discretization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Rough Set Theory"
+        ]
+      },
+      "validation": null,
+      "results": {
+        "accuracy": 0.8057
+      }
+    },
+    {
+      "algorithm": "Bagging",
+      "framework": "",
+      "preprocessing": [
+        "Discretization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Rough Set Theory"
+        ]
+      },
+      "validation": null,
+      "results": {
+        "accuracy": 1
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "preprocessing": [
+        "Discretization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Correlation-based"
+        ]
+      },
+      "validation": null,
+      "results": {
+        "accuracy": 0.9667
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "preprocessing": [
+        "Discretization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Correlation-based"
+        ]
+      },
+      "validation": null,
+      "results": {
+        "accuracy": 0.8625
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "preprocessing": [
+        "Discretization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Correlation-based"
+        ]
+      },
+      "validation": null,
+      "results": {
+        "accuracy": 0.9708
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "preprocessing": [
+        "Discretization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Correlation-based"
+        ]
+      },
+      "validation": null,
+      "results": {
+        "accuracy": 0.8458
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "framework": "",
+      "preprocessing": [
+        "Discretization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Correlation-based"
+        ]
+      },
+      "validation": null,
+      "results": {
+        "accuracy": 0.7917
+      }
+    },
+    {
+      "algorithm": "Bagging",
+      "framework": "",
+      "preprocessing": [
+        "Discretization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Correlation-based"
+        ]
+      },
+      "validation": null,
+      "results": {
+        "accuracy": 1
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Regional Association Parkinson's Disease of Extremadura",
+      "size": 80,
+      "pd_patients": 40,
+      "controls": 40,
+      "url": "",
+      "doi": "10.1016/j.eswa.2015.10.034"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Regional Association Parkinson's Disease of Extremadura",
+      "size": 80,
+      "pd_patients": 40,
+      "controls": 40,
+      "url": "",
+      "doi": "10.1016/j.eswa.2015.10.034"
+    }
+  ],
+  "study_id": "10.1109/ICITISEE53823.2021.9655774_1"
+}

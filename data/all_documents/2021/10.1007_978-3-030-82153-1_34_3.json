@@ -1,0 +1,99 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893b9"
+  },
+  "title": "Detecting Parkinson's Disease According to Gender Using Speech Signals",
+  "authors": [
+    {
+      "name": "Rania Khaskhoussy",
+      "affiliations": [
+        {
+          "institution": "Sfax University",
+          "country": "Tunisia"
+        }
+      ]
+    },
+    {
+      "name": "Yassine Ben Ayed",
+      "affiliations": [
+        {
+          "institution": "Sfax University",
+          "country": "Tunisia"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Conference",
+  "journal": "Knowledge Science, Engineering and Management. KSEM 2021",
+  "year": 2021,
+  "doi": "10.1007/978-3-030-82153-1_34",
+  "abstract": "Parkinson's Disease (PD) is a progressive neurodegenerative disorder that mainly affects the central nervous system causing cognitive, emotional and language disorders. Speech impairment is one of the earliest PD symptoms, and may be used for an automatic assessment to support the diagnosis and the evaluation of the disease severity, in the two biological sexes (male and female). This study investigates the processing of voice signals for measuring the incidence of Parkinson's disease in women and men. The approach evaluates the use of several extracted features and two learning techniques Support Vector Machines (SVM) and Long Short-Term Memory (LSTM) to classify data obtained from four databases. Each database contains different data to each other and in a different language. The audio tasks were recorded using six different microphone. The results reveal cases of Parkinson's disease appear more in men than in women.",
+  "citescore": 2.1,
+  "ml_approaches": [
+    {
+      "algorithm": "Long Short-Term Memory",
+      "framework": "Python",
+      "validation": "5-fold cross-validation",
+      "data_subset": "women",
+      "results": {
+        "precision": 0.97,
+        "recall": 1,
+        "f1_score": 0.98
+      }
+    },
+    {
+      "algorithm": "Long Short-Term Memory",
+      "framework": "Python",
+      "validation": "5-fold cross-validation",
+      "data_subset": "men",
+      "results": {
+        "precision": 0.98,
+        "recall": 1,
+        "f1_score": 0.99
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "Python",
+      "validation": "5-fold cross-validation",
+      "data_subset": "women",
+      "results": {
+        "precision": 0.94,
+        "recall": 0.97,
+        "f1_score": 0.95
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "Python",
+      "validation": "5-fold cross-validation",
+      "data_subset": "men",
+      "results": {
+        "precision": 0.96,
+        "recall": 0.98,
+        "f1_score": 0.97
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Portuguese Parkinson's Disease Dataset",
+      "size": 29,
+      "pd_patients": 22,
+      "controls": 7,
+      "url": "https://link.springer.com/chapter/10.1007/978-3-319-09761-9_3",
+      "doi": "10.1007/978-3-319-09761-9_3"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Portuguese Parkinson's Disease Dataset",
+      "size": 29,
+      "pd_patients": 22,
+      "controls": 7,
+      "url": "https://link.springer.com/chapter/10.1007/978-3-319-09761-9_3",
+      "doi": "10.1007/978-3-319-09761-9_3"
+    }
+  ],
+  "study_id": "10.1007/978-3-030-82153-1_34_3"
+}

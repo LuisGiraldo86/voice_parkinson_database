@@ -1,0 +1,143 @@
+{
+  "_id": {
+    "$oid": "68ecf00b6c43da02c1689330"
+  },
+  "title": "Transformer-based transfer learning on self-reported voice recordings for Parkinson's disease diagnosis",
+  "authors": [
+    {
+      "name": "Ilias Tougui",
+      "affiliations": [
+        {
+          "institution": "International University of Rabat",
+          "country": "Morocco"
+        }
+      ]
+    },
+    {
+      "name": "Mehdi Zakroum",
+      "affiliations": [
+        {
+          "institution": "International University of Rabat",
+          "country": "Morocco"
+        }
+      ]
+    },
+    {
+      "name": "Ouassim Karrakchou",
+      "affiliations": [
+        {
+          "institution": "International University of Rabat",
+          "country": "Morocco"
+        }
+      ]
+    },
+    {
+      "name": "Mounir Ghogho",
+      "affiliations": [
+        {
+          "institution": "International University of Rabat",
+          "country": "Morocco"
+        },
+        {
+          "institution": "University of Leeds",
+          "country": "United Kingdom"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Scientific Reports",
+  "year": 2024,
+  "doi": "10.1038/s41598-024-81824-x",
+  "abstract": "Deep learning (DL) techniques are becoming more popular for diagnosing Parkinson's disease (PD) because they offer non-invasive and easily accessible tools. By using advanced data analysis, these methods improve early detection and diagnosis, which is crucial for managing the disease effectively. This study explores end-to-end DL architectures, such as convolutional neural networks and transformers, for diagnosing PD using self-reported voice data collected via smartphones in everyday settings. Transfer learning was applied by starting with models pre-trained on large datasets from the image and the audio domains and then fine-tuning them on the mPower voice data. The Transformer model pre-trained on the voice data performed the best, achieving an average AUC of [Formula: see text] and an average AUPRC of [Formula: see text], outperforming models trained from scratch. To the best of our knowledge, this is the first use of a Transformer model for audio data in PD diagnosis, using this dataset. We achieved better results than previous studies, whether they focused solely on the voice or incorporated multiple modalities, by relying only on the voice as a biomarker. These results show that using self-reported voice data with state-of-the-art DL architectures can significantly improve PD prediction and diagnosis, potentially leading to better patient outcomes.",
+  "ml_approaches": [
+    {
+      "algorithm": "Audio Spectrogram Transformer",
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.5471,
+        "auprc": 0.2458
+      }
+    },
+    {
+      "algorithm": "DenseNet161",
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.9041,
+        "auprc": 0.7195
+      }
+    },
+    {
+      "algorithm": "ResNet: 50",
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.8678,
+        "auprc": 0.6403
+      }
+    },
+    {
+      "algorithm": "Vision Transformer: ViT",
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.7319,
+        "auprc": 0.4448
+      }
+    },
+    {
+      "algorithm": "Audio Spectrogram Transformer",
+      "validation": "train/test split",
+      "train": "transfer learning",
+      "results": {
+        "auc": 0.9589,
+        "auprc": 0.8711
+      }
+    },
+    {
+      "algorithm": "DenseNet161",
+      "validation": "train/test split",
+      "train": "transfer learning",
+      "results": {
+        "auc": 0.934,
+        "auprc": 0.7883
+      }
+    },
+    {
+      "algorithm": "ResNet: 50",
+      "validation": "train/test split",
+      "train": "transfer learning",
+      "results": {
+        "auc": 0.9232,
+        "auprc": 0.7582
+      }
+    },
+    {
+      "algorithm": "Vision Transformer: ViT",
+      "validation": "train/test split",
+      "train": "transfer learning",
+      "results": {
+        "auc": 0.9109,
+        "auprc": 0.7123
+      }
+    }
+  ],
+  "source code": "https://github.com/Jetliqs/PDVAT",
+  "source_dataset": [
+    {
+      "name": "mPower",
+      "size": 398,
+      "pd_patients": 188,
+      "controls": 210,
+      "url": "https://www.synapse.org/Synapse:syn4993293/wiki/247859"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "mPower",
+      "size": 398,
+      "pd_patients": 188,
+      "controls": 210,
+      "url": "https://www.synapse.org/Synapse:syn4993293/wiki/247859"
+    }
+  ],
+  "study_id": "10.1038/s41598-024-81824-x_1"
+}

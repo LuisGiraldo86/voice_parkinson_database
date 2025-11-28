@@ -1,0 +1,193 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c168940f"
+  },
+  "title": "Vocal Biomarkers for Parkinson's Disease Classification Using Audio Spectrogram Transformers",
+  "authors": [
+    {
+      "name": "Nuwan Madusanka",
+      "affiliations": [
+        {
+          "institution": "Pukyong National University",
+          "country": "South Korea"
+        },
+        {
+          "institution": "Sri Lanka Technological Campus",
+          "country": "Sri Lanka"
+        }
+      ]
+    },
+    {
+      "name": "Byeong-il Lee",
+      "affiliations": [
+        {
+          "institution": "Pukyong National University",
+          "country": "South Korea"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Conference",
+  "journal": "Procedia Computer Science",
+  "year": 2024,
+  "doi": "10.1016/j.procs.2024.04.058",
+  "abstract": "A highly accurate automated approach using a deep structured neural network was proposed to detect Parkinson's disease through voice samples. This cost-effective and non-invasive method aims to enhance diagnostic precision and assess the disease's stage of progression. The study addresses two classification problems: binary and multi-category classification. The binary classification deep structured neural network achieved a diagnostic accuracy of 97.6%. For multiclass classification, a Deep Convolution Neural Network (DCNN) and a K- nearest neighbor technique for benchmarking, were utilized using a shared database. Nature Inspired Algorithm (NIA)-Genetic Algorithm was employed to optimize the initial feature set. The suggested deep structure neural network demonstrated a 93.7% accuracy in estimating the disease's stage, showing promising results. Further investigations are encouraged to explore the model's adaptability and pursue improved outcomes.",
+  "ml_approaches": [
+    {
+      "algorithm": "Convolutional Neural Network: VGG16",
+      "framework": "",
+      "data_augmentation": [
+        "Gaussian White Noise"
+      ],
+      "feature_extraction": [
+        "Spectrogram"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9145,
+        "precision": 0.9,
+        "recall": 0.91,
+        "f1_score": 0.91
+      }
+    },
+    {
+      "algorithm": "Convolutional Neural Network: VGG19",
+      "framework": "",
+      "data_augmentation": [
+        "Gaussian White Noise"
+      ],
+      "feature_extraction": [
+        "Spectrogram"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8909,
+        "precision": 0.9,
+        "recall": 0.91,
+        "f1_score": 0.91
+      }
+    },
+    {
+      "algorithm": "ResNet: 18",
+      "framework": "",
+      "data_augmentation": [
+        "Gaussian White Noise"
+      ],
+      "feature_extraction": [
+        "Spectrogram"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8325,
+        "precision": 0.82,
+        "recall": 0.83,
+        "f1_score": 0.83
+      }
+    },
+    {
+      "algorithm": "ResNet: 34",
+      "framework": "",
+      "data_augmentation": [
+        "Gaussian White Noise"
+      ],
+      "feature_extraction": [
+        "Spectrogram"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8238,
+        "precision": 0.83,
+        "recall": 0.83,
+        "f1_score": 0.84
+      }
+    },
+    {
+      "algorithm": "Swin",
+      "framework": "",
+      "data_augmentation": [
+        "Gaussian White Noise"
+      ],
+      "feature_extraction": [
+        "Spectrogram"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9106,
+        "precision": 0.93,
+        "recall": 0.92,
+        "f1_score": 0.92
+      }
+    },
+    {
+      "algorithm": "Vision Transformer: ViT",
+      "framework": "",
+      "data_augmentation": [
+        "Gaussian White Noise"
+      ],
+      "feature_extraction": [
+        "Spectrogram"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8712,
+        "precision": 0.85,
+        "recall": 0.88,
+        "f1_score": 0.89
+      }
+    },
+    {
+      "algorithm": "Audio Spectrogram Transformer",
+      "framework": "",
+      "data_augmentation": [
+        "Gaussian White Noise"
+      ],
+      "feature_extraction": [
+        "Spectrogram"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9273,
+        "precision": 0.93,
+        "recall": 0.92,
+        "f1_score": 0.92
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "PC-GITA",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://paperswithcode.com/dataset/pc-gita",
+      "doi": ""
+    },
+    {
+      "name": "Italian Parkinson's Voice and Speech",
+      "size": 65,
+      "pd_patients": 28,
+      "controls": 22,
+      "url": "https://ieee-dataport.org/open-access/italian-parkinsons-voice-and-speech",
+      "doi": "10.21227/aw6b-tg17"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "PC-GITA",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://paperswithcode.com/dataset/pc-gita",
+      "doi": ""
+    },
+    {
+      "name": "Italian Parkinson's Voice and Speech",
+      "size": 65,
+      "pd_patients": 28,
+      "controls": 22,
+      "url": "https://ieee-dataport.org/open-access/italian-parkinsons-voice-and-speech",
+      "doi": "10.21227/aw6b-tg17"
+    }
+  ],
+  "study_id": "10.1016/j.procs.2024.04.058_2"
+}

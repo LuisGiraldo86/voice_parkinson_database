@@ -1,0 +1,155 @@
+{
+  "_id": {
+    "$oid": "68ecf00b6c43da02c16892eb"
+  },
+  "title": "Automated Parkinson's Disease Recognition Based on Statistical Pooling Method Using Acoustic Features",
+  "authors": [
+    {
+      "name": "Orhan Yaman",
+      "affiliations": [
+        {
+          "institution": "Firat University",
+          "country": "Turkey"
+        }
+      ]
+    },
+    {
+      "name": "Fatih Ertam",
+      "affiliations": [
+        {
+          "institution": "Firat University",
+          "country": "Turkey"
+        }
+      ]
+    },
+    {
+      "name": "Turker Tuncer",
+      "affiliations": [
+        {
+          "institution": "Firat University",
+          "country": "Turkey"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Medical Hypotheses",
+  "year": 2020,
+  "doi": "10.1016/j.mehy.2019.109483",
+  "abstract": "Parkinson's disease is one of the mostly seen neurological disease. It affects to nervous system and hinders people's vital activities. The majority of Parkinson's patients lose their ability to speak, write and balance. Many machine learning methods have been proposed to automatically diagnose Parkinson's disease using acoustic, hand writing and gaits. In this study, a statistical pooling method is proposed to recognize Parkinson's disease using the vowels. The used Parkinson's disease dataset contains the features of vowels. In the proposed method, the features of dataset are increased by applying statistical pooling method. Then, the most weighted features are selected from increased feature vector by using ReliefF. The classification is applied using the most weighted feature vector obtained. In the proposed method, Support Vector Machine (SVM) and K Nearest Neighbor (KNN) algorithms are used. The success rate was calculated as 91.25% and 91.23% with by using SVM and KNN respectively. The proposed method has two main contributions. The first is to obtain new features from the Parkinson's acoustic dataset using the statistical pooling method. The second one is the selection of the most significant features from the many feature vectors obtained. Thus, successful results were obtained for both KNN and SVM algorithms. The comparatively results clearly show that the proposed method achieved the best success rate among the selected state-of-art methods. Considering the proposed method and the results obtained, it proposed method is successful for Parkinson's disease recognition.",
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine: Gaussian",
+      "framework": "",
+      "feature_extraction": [
+        "Statistical Pooling"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "ReliefF"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8836,
+        "precision": 0.8838,
+        "recall": 0.8837,
+        "specificity": 0.8838,
+        "f1_score": 0.8837
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Quadratic",
+      "framework": "",
+      "feature_extraction": [
+        "Statistical Pooling"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "ReliefF"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8339,
+        "precision": 0.8403,
+        "recall": 0.84,
+        "specificity": 0.8403,
+        "f1_score": 0.8401
+      }
+    },
+    {
+      "algorithm": "Ensemble (K-Nearest Neighbors)",
+      "framework": "",
+      "feature_extraction": [
+        "Statistical Pooling"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "ReliefF"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8739,
+        "precision": 0.8742,
+        "recall": 0.874,
+        "specificity": 0.872,
+        "f1_score": 0.874
+      }
+    },
+    {
+      "algorithm": "Cosine K-Nearest Neighbors",
+      "framework": "",
+      "feature_extraction": [
+        "Statistical Pooling"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "ReliefF"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8884,
+        "precision": 0.89,
+        "recall": 0.8889,
+        "specificity": 0.89,
+        "f1_score": 0.8894
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson Dataset with replicated acoustic features",
+      "size": 80,
+      "pd_patients": 40,
+      "controls": 40,
+      "url": "https://archive.ics.uci.edu/dataset/489/parkinson+dataset+with+replicated+acoustic+features",
+      "doi": "10.24432/C5701F"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson Dataset with replicated acoustic features",
+      "size": 80,
+      "pd_patients": 40,
+      "controls": 40,
+      "url": "https://archive.ics.uci.edu/dataset/489/parkinson+dataset+with+replicated+acoustic+features",
+      "doi": "10.24432/C5701F"
+    }
+  ],
+  "study_id": "10.1016/j.mehy.2019.109483_1"
+}

@@ -1,0 +1,132 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c16893f4"
+  },
+  "title": "Pattern classification based on regional models",
+  "authors": [
+    {
+      "name": "Rômulo B.P. Drumond",
+      "affiliations": [
+        {
+          "institution": "Federal University of Ceará",
+          "country": "Brazil"
+        }
+      ]
+    },
+    {
+      "name": "Renan F. Albuquerque",
+      "affiliations": [
+        {
+          "institution": "Federal University of Ceará",
+          "country": "Brazil"
+        }
+      ]
+    },
+    {
+      "name": "Guilherme A. Barreto",
+      "affiliations": [
+        {
+          "institution": "Federal University of Ceará",
+          "country": "Brazil"
+        }
+      ]
+    },
+    {
+      "name": "Amauri H. Souza",
+      "affiliations": [
+        {
+          "institution": "Federal Institute of Ceará",
+          "country": "Brazil"
+        }
+      ]
+    }
+  ],
+  "journal": "Applied Soft Computing",
+  "publication_type": "Journal",
+  "year": 2022,
+  "doi": "10.1016/j.asoc.2022.109592",
+  "abstract": "In a supervised setting, the global classification paradigm leverages the whole training data to produce a single class discriminative model. Alternatively, the local classification approach builds multiple base classifiers, each of them using a small subset of the training data. In this paper, we take a path to stand in-between the global and local approaches. We introduce a two-level clustering-based method in which base classifiers operate on a larger portion of the input space than in the traditional local paradigm. In particular, we first obtain a grained input representation by employing a Self-Organizing Map (SOM) to the inputs. We then apply a clustering algorithm (e.g., K-Means) to the SOM units to define input regions — a subset of input samples associated with a specific cluster of SOM units. We refer to this approach as regional classification. We demonstrate the effectiveness of regional classification on several benchmarks. Also, we study the impact of (1) adopting linear and nonlinear base classifiers (e.g., least squares support vector machines) and (2) using cluster validation indexes to determine the optimal number of clusters. Based on the experiments, the regional classification approach achieves competitive performance compared to its global and local counterparts, especially when equipped with linear base classifiers.",
+  "ml_approaches": [
+    {
+      "algorithm": "Least Square Linear Basis Function",
+      "training": "regional",
+      "sample_selection": [
+        {
+          "methods": [
+            "Self-Organizing Map",
+            "K-Means Clustering"
+          ],
+          "combination": "sequential"
+        }
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.8705,
+        "recall": 0.9129,
+        "specificity": 0.7453,
+        "f1_score": 0.9129
+      }
+    },
+    {
+      "algorithm": "Least Square Support Vector Machine",
+      "training": "local",
+      "sample_selection": [
+        {
+          "methods": [
+            "Self-Organizing Map",
+            "K-Means Clustering"
+          ],
+          "combination": "sequential"
+        }
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.8931,
+        "recall": 0.943,
+        "specificity": 0.7392,
+        "f1_score": 0.93
+      }
+    },
+    {
+      "algorithm": "Least Square Support Vector Machine",
+      "training": "regional",
+      "sample_selection": [
+        {
+          "methods": [
+            "Self-Organizing Map",
+            "K-Means Clustering"
+          ],
+          "combination": "sequential"
+        }
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.8851,
+        "recall": 0.9432,
+        "specificity": 0.7058,
+        "f1_score": 0.925
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1016/j.asoc.2022.109592_1"
+}

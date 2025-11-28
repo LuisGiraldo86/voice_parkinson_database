@@ -1,0 +1,81 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c168934a"
+  },
+  "title": "Self-Attentive Quantile GAN with Causally Grounded Machine Learning for Vocal Biomarker Discovery in Parkinson's Disease Detection",
+  "authors": [
+    {
+      "name": "Meghana Sunil",
+      "affiliations": [
+        {
+          "institution": "Vellore Institute of Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Shravya V",
+      "affiliations": [
+        {
+          "institution": "Vellore Institute of Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Nachiyappan S",
+      "affiliations": [
+        {
+          "institution": "Vellore Institute of Technology",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "IEEE Access",
+  "year": 2025,
+  "doi": "10.1109/ACCESS.2025.3596114",
+  "abstract": "Parkinson's disease (PD) detection through voice analysis faces two fundamental challenges: traditional machine learning methods lack clinical interpretability due to their correlational nature, while existing causal inference approaches struggle with the high-dimensional, complex relationships inherent in vocal biomarkers. We address these limitations by developing a causal inference framework that establishes interpretable relationships between vocal features and PD diagnosis. Our approach centers on estimating the Average Treatment Effect (ATE) of vocal frequency spread using directed acyclic graphs (DAGs) and backdoor adjustment, implemented through CatBoost for robust nonlinear modeling. To overcome data scarcity constraints, we introduce a Self-Attentive Quantile GAN (SAQ-GAN) that preserves empirical feature distributions through quantile-based transformation and self-attention mechanisms. The framework includes systematic preprocessing for causal validity and comprehensive refutation tests to validate causal assumptions. Experimental evaluation on the Oxford Parkinson's dataset demonstrates that our method achieves 95.03% precision and 97.84% AUC-ROC while providing clinically interpretable causal estimates (ATE = 0.1844, 95% CI: [0.0743, 0.2945]). Comparative analysis with state-of-the-art causal methods and extensive ablation studies confirm the effectiveness of combining synthetic data augmentation with principled causal inference for medical diagnosis.",
+  "ml_approaches": [
+    {
+      "algorithm": "Causal CatBoost",
+      "framework": "",
+      "data_augmentation": {
+        "methods": [
+          "Self-Attentive Quantile Generative Adversarial Network"
+        ]
+      },
+      "scaling": [
+        "Min Max"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "f1_score": 0.9237,
+        "precision": 0.9503,
+        "auc": 0.9784
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1109/ACCESS.2025.3596114_1"
+}

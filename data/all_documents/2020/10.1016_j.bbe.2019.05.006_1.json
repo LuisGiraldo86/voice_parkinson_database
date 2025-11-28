@@ -1,0 +1,211 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893e7"
+  },
+  "title": "Automated Detection of Parkinson's Disease Using Minimum Average Maximum Tree and Singular Value Decomposition Method with Vowels",
+  "authors": [
+    {
+      "name": "Turker Tuncer",
+      "affiliations": [
+        {
+          "institution": "Firat University",
+          "country": "Turkey"
+        }
+      ]
+    },
+    {
+      "name": "Sengul Dogan",
+      "affiliations": [
+        {
+          "institution": "Firat University",
+          "country": "Turkey"
+        }
+      ]
+    },
+    {
+      "name": "Udyavara Rajendra Acharya",
+      "affiliations": [
+        {
+          "institution": "Ngee Ann Polytechnic",
+          "country": "Singapore"
+        },
+        {
+          "institution": "Singapore University of Social Sciences",
+          "country": "Singapore"
+        },
+        {
+          "institution": "University of Malaya",
+          "country": "Malaysia"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Biocybernetics and Biomedical Engineering",
+  "year": 2020,
+  "doi": "10.1016/j.bbe.2019.05.006",
+  "abstract": "In this study, a novel method to automatically detect Parkinson's disease (PD) using vowels is proposed. A combination of minimum average maximum (MAMa) tree and singular value decomposition (SVD) are used to extract the salient features from the voice signals. A novel feature signal is constructed from 3 levels of MAMa tree in the preprocessing phase. The SVD operator is applied to the constructed signal for feature extraction. Then 50 most distinctive features are selected using relief feature selection technique. Finally, k nearest neighborhood (KNN) with 10-fold cross validation is used for the classification. We have achieved the highest classification accuracy rate of 92.46% using vowels with KNN classifier. The dataset used consists of 3 vowels for each person. To obtain individual results, post processing step is performed and best result of 96.83% is obtained with KNN classifier. The proposed method is ready to be tested with huge database and can aid the neurologists in the diagnosis of PD using vowels.",
+  "ml_approaches": [
+    {
+      "algorithm": "Linear Discriminant Analysis",
+      "framework": "MATLAB 2018a",
+      "feature_extraction": [
+        "Minimum Average Maximum Tree",
+        "Singular Value Decomposition"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Relief"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8413,
+        "precision": 0.8114,
+        "recall": 0.7414,
+        "f1_score": 0.7754
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "MATLAB 2018a",
+      "feature_extraction": [
+        "Minimum Average Maximum Tree",
+        "Singular Value Decomposition"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Relief"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.836,
+        "precision": 0.8741,
+        "recall": 0.6925,
+        "f1_score": 0.7693
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "MATLAB 2018a",
+      "feature_extraction": [
+        "Minimum Average Maximum Tree",
+        "Singular Value Decomposition"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Relief"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8452,
+        "precision": 0.8644,
+        "recall": 0.7757,
+        "f1_score": 0.8177
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Cubic",
+      "framework": "MATLAB 2018a",
+      "feature_extraction": [
+        "Minimum Average Maximum Tree",
+        "Singular Value Decomposition"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Relief"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8902,
+        "precision": 0.8548,
+        "recall": 0.856,
+        "f1_score": 0.8554
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "MATLAB 2018a",
+      "feature_extraction": [
+        "Minimum Average Maximum Tree",
+        "Singular Value Decomposition"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Relief"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.836,
+        "precision": 0.7653,
+        "recall": 0.7927,
+        "f1_score": 0.7788
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "MATLAB 2018a",
+      "feature_extraction": [
+        "Minimum Average Maximum Tree",
+        "Singular Value Decomposition"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Relief"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9246,
+        "precision": 0.9,
+        "recall": 0.9014,
+        "f1_score": 0.9007
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "framework": "MATLAB 2018a",
+      "feature_extraction": [
+        "Minimum Average Maximum Tree",
+        "Singular Value Decomposition"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Relief"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8056,
+        "precision": 0.7543,
+        "recall": 0.6876,
+        "f1_score": 0.7194
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "study_id": "10.1016/j.bbe.2019.05.006_1"
+}

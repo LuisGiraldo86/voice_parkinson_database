@@ -1,0 +1,108 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893e1"
+  },
+  "title": "An Optimized Hybrid PSO-ELM for Parkinson's Disease Diagnosis",
+  "authors": [
+    {
+      "name": "Gunakala Archana",
+      "affiliations": [
+        {
+          "institution": "VIT-AP University",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Afzal Hussain Shahid",
+      "affiliations": [
+        {
+          "institution": "VIT-AP University",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "IEEE Access",
+  "year": 2025,
+  "doi": "10.1109/ACCESS.2024.3520482",
+  "abstract": "Parkinson's disease (PD) is a neurodegenerative disease that gradually causes movement impairment and various symptoms. It is difficult to precisely diagnose PD, especially in its early stages, because the signs and symptoms can resemble those of other medical conditions or normal age-related changes. This paper proposes a hybrid model combining Particle Swarm Optimization with Extreme Learning Machine (PSO-ELM) for PD diagnosis. This paper employs three feature ranking algorithms, namely ReliefF, minimum Redundancy Maximum relevance (mRMR), and Fisher, on six publicly available PD datasets. Various top-ranked feature subsets are created to identify the most discriminative features and enhance the performance of the proposed hybrid PSO-ELM model for all datasets. Furthermore, the efficiency of the proposed model is compared with basic models, namely ELM, SVM, RF, and the previous works. The results show that the proposed PSO-ELM model achieved the highest average accuracy, recall, precision, and F1-score of 100% each over the 3-fold cross-validation with a minimum number of features for all the six datasets. Therefore, the PSO-ELM model may be used as a highly accurate and efficient tool for PD diagnosis.",
+  "ml_approaches": [
+    {
+      "algorithm": "Extreme Learning Machine",
+      "framework": "",
+      "optimization": "Particle Swarm Optimization",
+      "feature_selection": {
+        "methods": [
+          "ReliefF"
+        ]
+      },
+      "validation": "3-fold cross-validation",
+      "results": {
+        "accuracy": 1,
+        "auc": 1,
+        "precision": 1,
+        "recall": 1,
+        "f1_score": 1
+      }
+    },
+    {
+      "algorithm": "Extreme Learning Machine",
+      "framework": "",
+      "optimization": "Particle Swarm Optimization",
+      "feature_selection": {
+        "methods": [
+          "Minimum Redundancy Maximum Relevance"
+        ]
+      },
+      "validation": "3-fold cross-validation",
+      "results": {
+        "accuracy": 1,
+        "auc": 1,
+        "precision": 1,
+        "recall": 1,
+        "f1_score": 1
+      }
+    },
+    {
+      "algorithm": "Extreme Learning Machine",
+      "framework": "",
+      "optimization": "Particle Swarm Optimization",
+      "feature_selection": {
+        "methods": [
+          "Fisher Score"
+        ]
+      },
+      "validation": "3-fold cross-validation",
+      "results": {
+        "accuracy": 1,
+        "auc": 1,
+        "precision": 1,
+        "recall": 1,
+        "f1_score": 1
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Speech with Multiple Types of Sound Recordings",
+      "size": 40,
+      "pd_patients": 20,
+      "controls": 20,
+      "url": "https://archive.ics.uci.edu/dataset/301/parkinson+speech+dataset+with+multiple+types+of+sound+recordings",
+      "doi": "10.24432/C5NC8M"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Speech with Multiple Types of Sound Recordings",
+      "size": 40,
+      "pd_patients": 20,
+      "controls": 20,
+      "url": "https://archive.ics.uci.edu/dataset/301/parkinson+speech+dataset+with+multiple+types+of+sound+recordings",
+      "doi": "10.24432/C5NC8M"
+    }
+  ],
+  "study_id": "10.1109/ACCESS.2024.3520482_2"
+}

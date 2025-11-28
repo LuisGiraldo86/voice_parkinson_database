@@ -1,0 +1,168 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893a0"
+  },
+  "title": "Enhancing Parkinson's Disease Diagnosis Through Stacking Ensemble-Based Machine Learning Approach",
+  "authors": [
+    {
+      "name": "Riyadh M. Al-Tam",
+      "affiliations": [
+        {
+          "institution": "Swami Ramanand Teerth Marathwada University",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Fatma A. Hashim",
+      "affiliations": [
+        {
+          "institution": "Helwan University",
+          "country": "Egypt"
+        },
+        {
+          "institution": "Middle East University",
+          "country": "Jordan"
+        }
+      ]
+    },
+    {
+      "name": "Sarmad Maqsood",
+      "affiliations": [
+        {
+          "institution": "Kaunas University of Technology",
+          "country": "Lithuania"
+        }
+      ]
+    },
+    {
+      "name": "Laith Abualigah",
+      "affiliations": [
+        {
+          "institution": "Al-Bayt University",
+          "country": "Jordan"
+        },
+        {
+          "institution": "Applied Science Private University",
+          "country": "Jordan"
+        },
+        {
+          "institution": "Jadara University",
+          "country": "Jordan"
+        },
+        {
+          "institution": "Sunway University Malaysia",
+          "country": "Malaysia"
+        }
+      ]
+    },
+    {
+      "name": "Reem M. Alwhaibi",
+      "affiliations": [
+        {
+          "institution": "Princess Nourah Bint Abdul Rahman University",
+          "country": "Saudi Arabia"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "IEEE Access",
+  "year": 2024,
+  "doi": "10.1109/ACCESS.2024.3408680",
+  "abstract": "Parkinson's disease is a progressive neurological condition that affects motor abilities. Common symptoms include tremors, muscle stiffness, and difficulty with coordinated movements. A variety of efforts are underway to address these issues and improve diagnostic precision in Parkinson's disease. This paper employs well-known machine-learning techniques to improve diagnostic accuracy. A variety of individual and ensemble AI models have been proposed, including Random Forest, Decision Tree, Logistic Regression, Gradient Boosting, Support Vector Machine, Stacking, and Bagging Ensemble classifiers. Three scenarios are applied to two standard benchmark datasets. The best performance is achieved when the Stacking Ensemble classifier is utilized, where the Support Vector Machine and Gradient Boosting are engaged for extracting features and Logistic Regression for classifying Parkinson's disease. The Stacking Ensemble classifier reaches 94.87% accuracy and 90.00% AUC for the first dataset, while for the second dataset, 96.18% accuracy and 96.27% AUC are recorded. The final results demonstrate the importance of the suggested framework, which can help to improve the overall diagnosis outcomes.",
+  "citescore": null,
+  "ml_approaches": [
+    {
+      "algorithm": "Stacking Ensemble (Base: Support Vector Machine, XGBoost; Meta: Logistic Regression)",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9487,
+        "auc": 0.9,
+        "precision": 0.94,
+        "recall": 1,
+        "f1_score": 0.97
+      }
+    },
+    {
+      "algorithm": "Stacking Ensemble (Base: XGBoost, XGBoost; Meta: Logistic Regression)",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9231,
+        "auc": 0.85,
+        "precision": 0.91,
+        "recall": 1,
+        "f1_score": 0.95
+      }
+    },
+    {
+      "algorithm": "Stacking Ensemble (Base: Logistic Regression, XGBoost; Meta: Logistic Regression)",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9231,
+        "auc": 0.8828,
+        "precision": 0.93,
+        "recall": 0.97,
+        "f1_score": 0.95
+      }
+    },
+    {
+      "algorithm": "Stacking Ensemble (Base: Decision Tree, XGBoost; Meta: Logistic Regression)",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9231,
+        "auc": 0.85,
+        "precision": 0.91,
+        "recall": 1,
+        "f1_score": 0.95
+      }
+    },
+    {
+      "algorithm": "Stacking Ensemble (Base: Random Forest, XGBoost; Meta: Logistic Regression)",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9231,
+        "auc": 0.8828,
+        "precision": 0.93,
+        "recall": 0.97,
+        "f1_score": 0.95
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1109/ACCESS.2024.3408680_1"
+}

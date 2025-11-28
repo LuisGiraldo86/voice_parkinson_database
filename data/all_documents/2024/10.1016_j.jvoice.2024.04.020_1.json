@@ -1,0 +1,113 @@
+{
+  "_id": {
+    "$oid": "68ecf00b6c43da02c1689339"
+  },
+  "title": "Harnessing Voice Analysis and Machine Learning for Early Diagnosis of Parkinson's Disease: A Comparative Study Across Three Datasets",
+  "authors": [
+    {
+      "name": "Osmar Pinto Neto",
+      "affiliations": [
+        {
+          "institution": "Anhembi Morumbi University",
+          "country": "Brazil"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Journal of Voice",
+  "year": 2024,
+  "doi": "10.1016/j.jvoice.2024.04.020",
+  "abstract": "Objective: This study evaluates the efficacy of voice analysis combined with machine learning (ML) techniques in enabling the diagnosis of Parkinson's disease (PD). Methods: Voice data, phonation of the vowel 'a,' from three distinct datasets (two from the University of California Irvine ML Repository and one from figshare) for 432 participants (278 PD patients) were analyzed. We employed four ML models-Artificial Neural Networks, Random Forest, Gradient Boosting (GB), and Support Vector Machine (SVM)-alongside two ensemble methods (soft voting classifier-Ensemble Voting Classifier and stacking method-Ensemble Stacking Model (ESM)). The models underwent 50 iterations of evaluation, involving various data splits and 10-fold cross-validation. Comparative analysis was done using one-way Analysis of Variance followed by Bonferroni posthoc corrections. Results: The ESM, SVM, and GB models emerged as the top performers, demonstrating superior performance across metrics, including accuracy, sensitivity, specificity, precision, F1 score, and area under the receiver operating characteristic curve (ROC AUC). Despite data heterogeneity and variable selection limitations, the models showed high values for all metrics. Conclusions: ML integration with voice analysis, mainly through ESM, SVM, and GB, is promising for early PD diagnosis. Using multi-source data and a large sample size enhances our findings' validity, reliability, and generalizability. Significance: Integrating advanced ML techniques with voice analysis demonstrates substantial potential for improving early PD detection, offering valuable tools for speech-language pathologists (SLPs). These findings provide clinically relevant insights that can be applied within the scope of SLP practice to refine diagnostic processes and facilitate early intervention.",
+  "ml_approaches": [
+    {
+      "algorithm": "Ensemble (Deep Neural Network, Random Forest, Gradient Boosting, SVM)",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8449,
+        "recall": 0.8574,
+        "specificity": 0.833,
+        "precision": 0.8429,
+        "f1_score": 0.847,
+        "auc": 0.9208
+      }
+    },
+    {
+      "algorithm": "Stacking Ensemble (Base: Deep Neural Network, Random Forest, Gradient Boosting, SVM; Meta: Logistic Regression)",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8219,
+        "recall": 0.8102,
+        "specificity": 0.8336,
+        "precision": 0.8346,
+        "f1_score": 0.8192,
+        "auc": 0.9046
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson Dataset with replicated acoustic features",
+      "size": 80,
+      "pd_patients": 40,
+      "controls": 40,
+      "url": "https://archive.ics.uci.edu/dataset/489/parkinson+dataset+with+replicated+acoustic+features",
+      "doi": "10.24432/C5701F"
+    },
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    },
+    {
+      "name": "Mobile Device Voice Recordings at King's College London",
+      "size": 37,
+      "pd_patients": 16,
+      "controls": 21,
+      "url": "https://zenodo.org/records/2867216",
+      "doi": "10.5281/zenodo.2867215"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson Dataset with replicated acoustic features",
+      "size": 80,
+      "pd_patients": 40,
+      "controls": 40,
+      "url": "https://archive.ics.uci.edu/dataset/489/parkinson+dataset+with+replicated+acoustic+features",
+      "doi": "10.24432/C5701F"
+    },
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    },
+    {
+      "name": "Mobile Device Voice Recordings at King's College London",
+      "size": 37,
+      "pd_patients": 16,
+      "controls": 21,
+      "url": "https://zenodo.org/records/2867216",
+      "doi": "10.5281/zenodo.2867215"
+    }
+  ],
+  "study_id": "10.1016/j.jvoice.2024.04.020_1"
+}

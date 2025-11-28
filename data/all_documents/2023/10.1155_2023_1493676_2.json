@@ -1,0 +1,81 @@
+{
+  "_id": {
+    "$oid": "68ecf00b6c43da02c168931b"
+  },
+  "title": "Early and High-Accuracy Diagnosis of Parkinson's Disease: Outcomes of a New Model",
+  "authors": [
+    {
+      "name": "Sajjad Amiri Doumari",
+      "affiliations": [
+        {
+          "institution": "Sirjan University of Technology",
+          "country": "Iran"
+        }
+      ]
+    },
+    {
+      "name": "Kamal Berahmand",
+      "affiliations": [
+        {
+          "institution": "Azarbaijan Shahid Madani University",
+          "country": "Iran"
+        }
+      ]
+    },
+    {
+      "name": "M J Ebadi",
+      "affiliations": [
+        {
+          "institution": "Chabahar Maritime University",
+          "country": "Iran"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Computational and Mathematical Methods in Medicine",
+  "year": 2023,
+  "doi": "10.1155/2023/1493676",
+  "abstract": "Parkinson's disease (PD) is one of the significant common neurological disorders of the current age that causes uncontrollable movements like shaking, stiffness, and difficulty. The early clinical diagnosis of this disease is essential for preventing the progression of PD. Hence, an innovative method is proposed here based on combining the crow search algorithm and decision tree (CSADT) for the early PD diagnosis. This approach is used on four crucial Parkinson's datasets, including meander, spiral, voice, and speech-Sakar. Using the presented method, PD is effectively diagnosed by evaluating each dataset's critical features and extracting the primary practical outcomes. The used algorithm was compared with other machine learning algorithms of k-nearest neighbor (KNN), support vector machine (SVM), naive Baye (NB), multilayer perceptron (MLP), decision tree (DT), random tree, logistic regression, support vector machine of radial base functions (SVM of RBFs), and combined classifier in terms of accuracy, recall, and combination measure F1. The analytical results emphasize the used algorithm's superiority over the other selected ones. The proposed model yields nearly 100% accuracy through various trials on the datasets. Notably, a high detection speed achieved the lowest detection time of 2.6 seconds. The main novelty of this paper is attributed to the accuracy of the presented PD diagnosis method, which is much higher than its counterparts.",
+  "ml_approaches": [
+    {
+      "algorithm": "Decision Tree",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Crow Search Algorithm"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 1,
+        "f1_score": 1,
+        "recall": 1,
+        "precision": 1
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1155/2023/1493676_2"
+}

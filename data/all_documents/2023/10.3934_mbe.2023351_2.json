@@ -1,0 +1,70 @@
+{
+  "_id": {
+    "$oid": "68ecf00b6c43da02c1689301"
+  },
+  "title": "Intelligent personalized diagnosis modeling in advanced medical system for Parkinson's disease using voice signals",
+  "authors": [
+    {
+      "name": "Pengcheng Wen",
+      "affiliations": [
+        {
+          "institution": "Hubei University for Nationalities",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Yuhan Zhang",
+      "affiliations": [
+        {
+          "institution": "Affiliated Dongguan Songshan Lake Central Hospital",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Guihua Wen",
+      "affiliations": [
+        {
+          "institution": "South China University of Technology",
+          "country": "China"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Mathematical Biosciences and Engineering",
+  "year": 2023,
+  "doi": "10.3934/mbe.2023351",
+  "abstract": "Currently, machine learning methods have been utilized to realize the early detection of Parkinson's disease (PD) by using voice signals. Because the vocal system of each person is unique, and the same person's pronunciation can be different at different times, the training samples used in machine learning become very different from the speech signal of the patient to be diagnosed, frequently resulting in poor diagnostic performance. On this account, this paper presents a new intelligent personalized diagnosis method (PDM) for Parkinson's disease. The method was designed to begin with constructing new training data by assigning the best classifier to each training sample composed of features from the speech signals of patients. Subsequently, a meta-classifier was trained on the new training data. Finally, for the signal of each test patient, the method used the meta-classifier to select the most appropriate classifier, followed by adopting the selected classifier to classify the signal so that the more accurate diagnosis result of the test patient can be obtained. The novelty of the proposed method is that the proposed method uses different classifiers to perform the diagnosis of PD for diversified patients, whereas the current method uses the same classifier to diagnose all patients to be tested. Results of a large number of experiments show that PDM not only improves the performance but also exceeds the existing methods in speed.",
+  "ml_approaches": [
+    {
+      "algorithm": "Stacking Ensemble (Base: Random Forest, Decision Tree; Meta: Support Vector Machine)",
+      "validation": "k-fold cross-validation",
+      "results": {
+        "accuracy": 0.9275
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.3934/mbe.2023351_2"
+}

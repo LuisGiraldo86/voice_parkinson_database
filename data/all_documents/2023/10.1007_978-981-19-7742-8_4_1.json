@@ -1,0 +1,112 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c1689393"
+  },
+  "title": "Diagnosing Parkinson's Disease Based on Voice Recordings: Comparative Study Using Machine Learning Techniques",
+  "authors": [
+    {
+      "name": "Sara Khaled Abdelhakeem",
+      "affiliations": [
+        {
+          "institution": "American University of Bahrain",
+          "country": "Bahrain"
+        }
+      ]
+    },
+    {
+      "name": "Zeeshan Mohammed Mustafa",
+      "affiliations": [
+        {
+          "institution": "American University of Bahrain",
+          "country": "Bahrain"
+        }
+      ]
+    },
+    {
+      "name": "Hasan Kadhem",
+      "affiliations": [
+        {
+          "institution": "American University of Bahrain",
+          "country": "Bahrain"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Advanced Intelligent Virtual Reality Technologies",
+  "year": 2023,
+  "doi": "10.1007/978-981-19-7742-8_4",
+  "abstract": "Parkinson's disease is a neurological disorder for which the symptoms worsen overtime, making its treatment difficult. An early detection of Parkinson's disease can help patients get effective treatment before the disease becomes severe. This paper focuses on applying and evaluating different machine learning techniques to predict Parkinson's disease based on patient's voice data. The various algorithms in MATLAB were used to train models, and the better performing models among them were chosen. The chosen algorithms were logistic regression, SVM (linear and quadratic), and weighted KNN. The quadratic SVM classifier performed best among other classifiers to predict Parkinson's disease. The findings of this study could contribute to the development of better diagnostic tools for early prediction of Parkinson's disease.",
+  "citescore": 1.1,
+  "ml_approaches": [
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "MATLAB",
+      "scaling": [
+        "Min Max"
+      ],
+      "preprocessing": [],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.657
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "MATLAB",
+      "scaling": [
+        "Min Max"
+      ],
+      "preprocessing": [],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.658
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Quadratic",
+      "framework": "MATLAB",
+      "scaling": [
+        "Min Max"
+      ],
+      "preprocessing": [],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.7
+      }
+    },
+    {
+      "algorithm": "Weighted K-Nearest Neighbors",
+      "framework": "MATLAB",
+      "scaling": [
+        "Min Max"
+      ],
+      "preprocessing": [],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.707
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Speech with Multiple Types of Sound Recordings",
+      "size": 40,
+      "pd_patients": 20,
+      "controls": 20,
+      "url": "https://archive.ics.uci.edu/dataset/301/parkinson+speech+dataset+with+multiple+types+of+sound+recordings",
+      "doi": "10.24432/C5NC8M"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Speech with Multiple Types of Sound Recordings",
+      "size": 40,
+      "pd_patients": 20,
+      "controls": 20,
+      "url": "https://archive.ics.uci.edu/dataset/301/parkinson+speech+dataset+with+multiple+types+of+sound+recordings",
+      "doi": "10.24432/C5NC8M"
+    }
+  ],
+  "study_id": "10.1007/978-981-19-7742-8_4_1"
+}

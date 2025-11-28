@@ -1,0 +1,190 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c168939b"
+  },
+  "title": "Predicting patients with Parkinson's disease using Machine Learning and ensemble voting technique",
+  "authors": [
+    {
+      "name": "Shawki Saleh",
+      "affiliations": [
+        {
+          "institution": "Hassan II University of Casablanca",
+          "country": "Morocco"
+        }
+      ]
+    },
+    {
+      "name": "Bouchaib Cherradi",
+      "affiliations": [
+        {
+          "institution": "Hassan II University of Casablanca",
+          "country": "Morocco"
+        }
+      ]
+    },
+    {
+      "name": "Oussama El Gannour",
+      "affiliations": [
+        {
+          "institution": "Hassan II University of Casablanca",
+          "country": "Morocco"
+        },
+        {
+          "institution": "SupMTI of Rabat",
+          "country": "Morocco"
+        }
+      ]
+    },
+    {
+      "name": "Soufiane Hamida",
+      "affiliations": [
+        {
+          "institution": "Hassan II University of Casablanca",
+          "country": "Morocco"
+        },
+        {
+          "institution": "SupMTI of Rabat",
+          "country": "Morocco"
+        }
+      ]
+    },
+    {
+      "name": "Omar Bouattane",
+      "affiliations": [
+        {
+          "institution": "Hassan II University of Casablanca",
+          "country": "Morocco"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Multimedia Tools and Applications",
+  "year": 2024,
+  "doi": "10.1007/s11042-023-16881-x",
+  "abstract": "Parkinson's disease is the second most common neurological disorder that causes significant physical disabilities, decreases the quality of life, and does not have a cure. Because it is a nervous system disorder, it impacts people in different ways, affecting movement and speech and causing muscle stiffness. Approximately, 90% of people with Parkinson's disease have speech disorders. Machine Learning (ML) algorithms can mostly be employed for the early detection of diseases to enhance the lifespan and improve the lifestyle of people with chronic diseases such as Parkinson's disease. In this paper, we have employed an Artificial Neurons Network (ANN) and nineteen ML algorithms to predict people with Parkinson's disease using two different acoustic datasets. Contrary to the train-test split approach, this work aims to utilize the cross-validation technique to estimate the performance. The objective is to ensure that each sample in these small and unbalanced acoustic datasets contributes to both the training and testing processes to provide accurate estimations for the performance of the classifiers on unseen dataset, and to provide a clear insight into the effectiveness of ML algorithms in diagnosing Parkinson's disease via voice disorder. To enhance the performance of the prediction, we employed several techniques such as Optimal Hyperparameters Tuning and Cross-Validation to obtain the best performance and results, and we have provided a detailed explanation of these algorithms' performance and the Optimal Hyperparameters used for each of them. Based on the results and performance, the best classifiers have been selected to build two independent ensemble voting classifiers for the two different datasets. We calculated and represented the accuracy, sensitivity, specificity, precision and AUC. They reached 96.41% and 97.35% of accuracy, respectively.",
+  "citescore": 7.7,
+  "ml_approaches": [
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "Python",
+      "scaling": [
+        "Min Max"
+      ],
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.9563,
+        "recall": 0.9699,
+        "precision": 0.9716,
+        "f1_score": 0.9706999999999999
+      }
+    },
+    {
+      "algorithm": "Extra Trees",
+      "framework": "Python",
+      "scaling": [
+        "Min Max"
+      ],
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.9008,
+        "recall": 0.9823,
+        "precision": 0.895,
+        "f1_score": 0.9366
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "Python",
+      "scaling": [
+        "Min Max"
+      ],
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.9021,
+        "recall": 0.984,
+        "precision": 0.8952,
+        "f1_score": 0.9575
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "Python",
+      "scaling": [
+        "Min Max"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.9444,
+        "recall": 0.9646,
+        "precision": 0.9612,
+        "f1_score": 0.9627
+      }
+    },
+    {
+      "algorithm": "Extra Trees",
+      "framework": "Python",
+      "scaling": [
+        "Min Max"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.8929,
+        "recall": 0.9823,
+        "precision": 0.8868,
+        "f1_score": 0.9319
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "Python",
+      "scaling": [
+        "Min Max"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.9061,
+        "recall": 0.977,
+        "precision": 0.906,
+        "f1_score": 0.9397
+      }
+    },
+    {
+      "algorithm": "Ensemble (K-Nearest Neighbors, XGBoost)",
+      "framework": "Python",
+      "scaling": [
+        "Min Max"
+      ],
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.9735,
+        "recall": 0.9858,
+        "specificity": 0.9375,
+        "precision": 0.9788,
+        "f1_score": 0.9823000000000001,
+        "mcc": 0.9298000000000001
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "study_id": "10.1007/s11042-023-16881-x_2"
+}

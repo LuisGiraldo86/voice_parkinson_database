@@ -1,0 +1,96 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893b6"
+  },
+  "title": "A Novel Approach for Parkinson's Disease Detection Based on Voice Classification and Features Selection Techniques",
+  "authors": [
+    {
+      "name": "Asmae Ouhmida",
+      "affiliation": "Hassan II University of Casablanca, Morocco"
+    },
+    {
+      "name": "Abdelhadi Raihani",
+      "affiliation": "Hassan II University of Casablanca, Morocco"
+    },
+    {
+      "name": "Bouchaib Cherradi",
+      "affiliation": "CRMEF Casablanca-Settat, Morocco"
+    },
+    {
+      "name": "Oumaima Terrada",
+      "affiliation": "Hassan II University of Casablanca, Morocco"
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "International Journal of Online and Biomedical Engineering",
+  "year": 2021,
+  "doi": "10.3991/ijoe.v17i10.24499",
+  "abstract": "Parkinson's disease (PD) is one of the most widespread diseases that, primarily, affects the motor system of the neural central system. In fact, PD is characterized by tremors, stiffness of the muscles, imprecise gait movements, and vocal impairment. An accurate diagnosis of Parkinson's disease is usually based on many neurological, psychological, and physical investigations despite the fact that its main symptoms cannot be easily decorrelated from other diseases. As such, many automatic diagnostic support systems based on Machine Learning approaches have been recently employed to assist the PD patients' assessment. In the current paper, a comparative analysis was performed on machine learning (ML) techniques for PD identification based on voice disorders analysis. These ML methods included the Support Vector Machine (SVM), K-Nearest-Neighbors (KNN), and Decision Tree (DT) algorithms. In addition, two feature selection techniques; mRMR and ReliefF; are used to further improve the performance of the proposed classifiers. The efficiency of the developed model has been evaluated based on accuracy, sensitivity, specificity and AUC metrics, and it is higher than existing approaches. The simulation results show that the KNN algorithm yielded the best classifier performance in term of accuracy and reached an AUC of 98.26%.",
+  "citescore": 1.9,
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "preprocessing": [
+        "ReliefF"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9583,
+        "recall": 0.9444,
+        "specificity": 1,
+        "auc": 1
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "framework": "",
+      "preprocessing": [
+        "ReliefF"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9792,
+        "recall": 0.9722,
+        "specificity": 1,
+        "auc": 0.9815
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "preprocessing": [
+        "ReliefF"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9792,
+        "recall": 0.9722,
+        "specificity": 1,
+        "auc": 0.9895999999999999
+      }
+    }
+  ],
+  "note": "Reported specificity of 100% even though a 10-fold cross-validation was used. Highly suspicious.",
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.3991/ijoe.v17i10.24499_1"
+}

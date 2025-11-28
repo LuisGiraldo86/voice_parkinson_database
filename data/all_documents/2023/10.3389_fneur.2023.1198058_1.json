@@ -1,0 +1,195 @@
+{
+  "_id": {
+    "$oid": "68ecf00b6c43da02c168931d"
+  },
+  "title": "Ataxic speech disorders and Parkinson's disease diagnostics via stochastic embedding of empirical mode decomposition",
+  "authors": [
+    {
+      "name": "Sabrina Scimeca",
+      "affiliations": [
+        {
+          "institution": "Politecnico di Torino",
+          "country": "Italy"
+        }
+      ]
+    },
+    {
+      "name": "Federica Amato",
+      "affiliations": [
+        {
+          "institution": "Politecnico di Torino",
+          "country": "Italy"
+        }
+      ]
+    },
+    {
+      "name": "Gabriella Olmo",
+      "affiliations": [
+        {
+          "institution": "Politecnico di Torino",
+          "country": "Italy"
+        }
+      ]
+    },
+    {
+      "name": "Francesco Asci",
+      "affiliations": [
+        {
+          "institution": "Sapienza University of Rome",
+          "country": "Italy"
+        }
+      ]
+    },
+    {
+      "name": "Antonio Suppa",
+      "affiliations": [
+        {
+          "institution": "Sapienza University of Rome",
+          "country": "Italy"
+        },
+        {
+          "institution": "IRCCS Neuromed Institute",
+          "country": "Italy"
+        }
+      ]
+    },
+    {
+      "name": "Giovanni Constantini",
+      "affiliations": [
+        {
+          "institution": "University of Rome Tor Vergata",
+          "country": "Italy"
+        }
+      ]
+    },
+    {
+      "name": "Giovanni Saggio",
+      "affiliations": [
+        {
+          "institution": "University of Rome Tor Vergata",
+          "country": "Italy"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Frontiers in Neurology",
+  "year": 2023,
+  "doi": "10.3389/fneur.2023.1198058 ",
+  "abstract": "Introduction: The analysis of vocal samples from patients with Parkinson's disease (PDP) can be relevant in supporting early diagnosis and disease monitoring. Intriguingly, speech analysis embeds several complexities influenced by speaker characteristics (e.g., gender and language) and recording conditions (e.g., professional microphones or smartphones, supervised, or non-supervised data collection). Moreover, the set of vocal tasks performed, such as sustained phonation, reading text, or monologue, strongly affects the speech dimension investigated, the feature extracted, and, as a consequence, the performance of the overall algorithm. Methods: We employed six datasets, including a cohort of 176 Healthy Control (HC) participants and 178 PDP from different nationalities (i.e., Italian, Spanish, Czech), recorded in variable scenarios through various devices (i.e., professional microphones and smartphones), and performing several speech exercises (i.e., vowel phonation, sentence repetition). Aiming to identify the effectiveness of different vocal tasks and the trustworthiness of features independent of external co-factors such as language, gender, and data collection modality, we performed several intra- and inter-corpora statistical analyses. In addition, we compared the performance of different feature selection and classification models to evaluate the most robust and performing pipeline. Results: According to our results, the combined use of sustained phonation and sentence repetition should be preferred over a single exercise. As for the set of features, the Mel Frequency Cepstral Coefficients demonstrated to be among the most effective parameters in discriminating between HC and PDP, also in the presence of heterogeneous languages and acquisition techniques. Conclusion: Even though preliminary, the results of this work can be exploited to define a speech protocol that can effectively capture vocal alterations while minimizing the effort required to the patient. Moreover, the statistical analysis identified a set of features minimally dependent on gender, language, and recording modalities. This discloses the feasibility of extensive cross-corpora tests to develop robust and reliable tools for disease monitoring and staging and PDP follow-up",
+  "ml_approaches": [
+    {
+      "algorithm": "Random Forest",
+      "feature_selection": {
+        "methods": [
+          "Statistical Analysis",
+          "Borutta"
+        ],
+        "combination": "sequential"
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.701,
+        "specificity": 0.758,
+        "recall": 0.659,
+        "auc": 0.708,
+        "f1_score": 0.716
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "feature_selection": {
+        "methods": [
+          "Statistical Analysis",
+          "Borutta"
+        ],
+        "combination": "sequential"
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.649,
+        "specificity": 0.7020000000000001,
+        "recall": 0.6,
+        "auc": 0.6513,
+        "f1_score": 0.64
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Italian Parkinson's Voice and Speech",
+      "size": 65,
+      "pd_patients": 28,
+      "controls": 22,
+      "url": "https://ieee-dataport.org/open-access/italian-parkinsons-voice-and-speech",
+      "doi": "10.21227/aw6b-tg17"
+    },
+    {
+      "name": "Italian Torino 1",
+      "size": 30,
+      "pd_patients": 17,
+      "controls": 13
+    },
+    {
+      "name": "Italian Torino 2",
+      "size": 30,
+      "pd_patients": 15,
+      "controls": 15
+    },
+    {
+      "name": "PC-GITA",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://paperswithcode.com/dataset/pc-gita",
+      "doi": ""
+    },
+    {
+      "name": "Czech Parkinson's Disease Dataset",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Italian Parkinson's Voice and Speech",
+      "size": 65,
+      "pd_patients": 28,
+      "controls": 22,
+      "url": "https://ieee-dataport.org/open-access/italian-parkinsons-voice-and-speech",
+      "doi": "10.21227/aw6b-tg17"
+    },
+    {
+      "name": "Italian Torino 1",
+      "size": 30,
+      "pd_patients": 17,
+      "controls": 13
+    },
+    {
+      "name": "Italian Torino 2",
+      "size": 30,
+      "pd_patients": 15,
+      "controls": 15
+    },
+    {
+      "name": "PC-GITA",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://paperswithcode.com/dataset/pc-gita",
+      "doi": ""
+    },
+    {
+      "name": "Czech Parkinson's Disease Dataset",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.3389/fneur.2023.1198058_1"
+}

@@ -1,0 +1,81 @@
+{
+  "_id": {
+    "$oid": "68ecf00b6c43da02c168933b"
+  },
+  "title": "A novel voice classification based on Gower distance for Parkinson disease detection",
+  "authors": [
+    {
+      "name": "Mustafa Noaman Kadhim",
+      "affiliations": [
+        {
+          "institution": "University of Al-Qadisiyah",
+          "country": "Iraq"
+        }
+      ]
+    },
+    {
+      "name": "Dhiah Al-Shammary",
+      "affiliations": [
+        {
+          "institution": "University of Al-Qadisiyah",
+          "country": "Iraq"
+        }
+      ]
+    },
+    {
+      "name": "Fahim Sufi",
+      "affiliations": [
+        {
+          "institution": "Monash University",
+          "country": "Australia"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "International Journal of Medical Informatics",
+  "year": 2024,
+  "doi": "10.1016/j.ijmedinf.2024.105583",
+  "abstract": "Background: Traditional classifier for the classification of diseases, such as K-Nearest Neighbors (KNN), Linear Discriminant Analysis (LDA), Random Forest (RF), Logistic Regression (LR), and Support Vector Machine (SVM), often struggle with high-dimensional medical datasets. Objective: This study presents a novel classifier to overcome the limitations of traditional classifiers in Parkinson's disease (PD) detection based on Gower distance. Methods: We present the Gower distance metric to handle diverse feature sets in voice recordings, which acts as a dissimilarity measure for all feature types, making the model adept at identifying subtle patterns indicative of PD. Additionally, the Cuckoo Search algorithm is employed for feature selection, reducing dimensionality by focusing on key features, thereby lessening the computational load associated with high-dimensional datasets. Results: The proposed classifier based on Gower distance resulted in an accuracy rate of 98.3% with feature selection and achieved an accuracy of 94.92% without the feature selection method. It outperforms traditional classifiers and recent studies in PD detection from voice recordings. Conclusions: This accuracy shows the capability of the approach in the correct classification of instances and points out the potential of the approach as a reliable diagnostic tool for the medical practitioner. The findings state that the proposed approach holds promise for improving the diagnosis and monitoring of PD, both within medical institutions and at homes for the elderly.",
+  "ml_approaches": [
+    {
+      "algorithm": "Gower Distance Classifier",
+      "scaling": [
+        "Max Absolute"
+      ],
+      "feature-selection": {
+        "methods": [
+          "Cuckoo Search algorithm"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "recall": 1,
+        "precision": 0.9333,
+        "f1_score": 0.9655,
+        "accuracy": 0.983
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1016/j.ijmedinf.2024.105583_1"
+}

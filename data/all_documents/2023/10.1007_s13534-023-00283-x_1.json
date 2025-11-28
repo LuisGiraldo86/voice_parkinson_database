@@ -1,0 +1,823 @@
+{
+  "_id": {
+    "$oid": "68ecf00b6c43da02c1689306"
+  },
+  "title": "Time-frequency analysis of speech signal using Chirplet transform for automatic diagnosis of Parkinson's disease",
+  "authors": [
+    {
+      "name": "Pankaj Warule",
+      "affiliations": [
+        {
+          "institution": "Sardar Vallabhbhai National Institute of Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Siba Prasad Mishra",
+      "affiliations": [
+        {
+          "institution": "Sardar Vallabhbhai National Institute of Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Suman Deb",
+      "affiliations": [
+        {
+          "institution": "Sardar Vallabhbhai National Institute of Technology",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Biomedical Engineering Letters",
+  "year": 2023,
+  "doi": "10.1007/s13534-023-00283-x",
+  "abstract": "Parkinson's disease (PD) is the second most prevalent neurodegenerative disorder in the world after Alzheimer's disease. Early diagnosing PD is challenging as it evolved slowly, and its symptoms eventuate gradually. Recent studies have demonstrated that changes in speech may be utilized as an excellent biomarker for the early diagnosis of PD. In this study, we have proposed a Chirplet transform (CT) based novel approach for diagnosing PD using speech signals. We employed CT to get the time-frequency matrix (TFM) of each speech recording, and we extracted time-frequency based entropy (TFE) features from the TFM. The statistical analysis demonstrates that the TFE features reflect the changes in speech that occurs in the speech due to PD, hence can be used for classifying the PD and healthy control (HC) individuals. The effectiveness of the proposed framework is validated using the vowels and words from the PC-GITA database. The genetic algorithm is utilized to select the optimum features subset, while a support vector machine (SVM), decision tree (DT), K-Nearest Neighbor (KNN), and Naïve Bayes (NB) classifiers are employed for classification. The TFE features outperform the breathiness and Mel frequency cepstral coefficients (MFCC) features. The SVM classifier is most effective compared to other machine-learning classifiers. The highest classification accuracy rates of 98% and 99% are achieved using the vowel /a/ and word /atleta/, respectively. The results reveal that the proposed CT-based entropy features effectively diagnose PD using the speech of a person.",
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "input_speech": "/a/",
+      "feature_extraction": [
+        "Chirplet Transform",
+        "Time-Frequency Entropy"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.98,
+        "f1_score": 0.982,
+        "precision": 0.984
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "input_speech": "/a/",
+      "feature_extraction": [
+        "Chirplet Transform",
+        "Time-Frequency Entropy"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.893,
+        "f1_score": 0.889,
+        "precision": 0.879
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "input_speech": "/a/",
+      "feature_extraction": [
+        "Chirplet Transform",
+        "Time-Frequency Entropy"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9,
+        "f1_score": 0.897,
+        "precision": 0.899
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "input_speech": "/a/",
+      "feature_extraction": [
+        "Chirplet Transform",
+        "Time-Frequency Entropy"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.777,
+        "f1_score": 0.756,
+        "precision": 0.811
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "input_speech": "/e/",
+      "feature_extraction": [
+        "Chirplet Transform",
+        "Time-Frequency Entropy"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.97,
+        "f1_score": 0.972,
+        "precision": 0.98
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "input_speech": "/e/",
+      "feature_extraction": [
+        "Chirplet Transform",
+        "Time-Frequency Entropy"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.86,
+        "f1_score": 0.859,
+        "precision": 0.846
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "input_speech": "/e/",
+      "feature_extraction": [
+        "Chirplet Transform",
+        "Time-Frequency Entropy"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.873,
+        "f1_score": 0.865,
+        "precision": 0.915
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "input_speech": "/e/",
+      "feature_extraction": [
+        "Chirplet Transform",
+        "Time-Frequency Entropy"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.75,
+        "f1_score": 0.748,
+        "precision": 0.762
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "input_speech": "/i/",
+      "feature_extraction": [
+        "Chirplet Transform",
+        "Time-Frequency Entropy"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.97,
+        "f1_score": 0.968,
+        "precision": 0.971
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "input_speech": "/i/",
+      "feature_extraction": [
+        "Chirplet Transform",
+        "Time-Frequency Entropy"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.877,
+        "f1_score": 0.876,
+        "precision": 0.866
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "input_speech": "/i/",
+      "feature_extraction": [
+        "Chirplet Transform",
+        "Time-Frequency Entropy"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.88,
+        "f1_score": 0.879,
+        "precision": 0.881
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "input_speech": "/i/",
+      "feature_extraction": [
+        "Chirplet Transform",
+        "Time-Frequency Entropy"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.79,
+        "f1_score": 0.788,
+        "precision": 0.784
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "input_speech": "/o/",
+      "feature_extraction": [
+        "Chirplet Transform",
+        "Time-Frequency Entropy"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.933,
+        "f1_score": 0.932,
+        "precision": 0.94
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "input_speech": "/o/",
+      "feature_extraction": [
+        "Chirplet Transform",
+        "Time-Frequency Entropy"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.863,
+        "f1_score": 0.861,
+        "precision": 0.878
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "input_speech": "/o/",
+      "feature_extraction": [
+        "Chirplet Transform",
+        "Time-Frequency Entropy"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.883,
+        "f1_score": 0.881,
+        "precision": 0.917
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "input_speech": "/o/",
+      "feature_extraction": [
+        "Chirplet Transform",
+        "Time-Frequency Entropy"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.727,
+        "f1_score": 0.732,
+        "precision": 0.717
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "input_speech": "/u/",
+      "feature_extraction": [
+        "Chirplet Transform",
+        "Time-Frequency Entropy"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.93,
+        "f1_score": 0.927,
+        "precision": 0.936
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "input_speech": "/u/",
+      "feature_extraction": [
+        "Chirplet Transform",
+        "Time-Frequency Entropy"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.84,
+        "f1_score": 0.832,
+        "precision": 0.849
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "input_speech": "/u/",
+      "feature_extraction": [
+        "Chirplet Transform",
+        "Time-Frequency Entropy"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.853,
+        "f1_score": 0.844,
+        "precision": 0.867
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "input_speech": "/a/",
+      "feature_extraction": [
+        "Chirplet Transform",
+        "Time-Frequency Entropy"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.847,
+        "f1_score": 0.84,
+        "precision": 0.867
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "input_speech": "/apto/",
+      "feature_extraction": [
+        "Chirplet Transform",
+        "Time-Frequency Entropy"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.95,
+        "f1_score": 0.984,
+        "precision": 0.969
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "input_speech": "/apto/",
+      "feature_extraction": [
+        "Chirplet Transform",
+        "Time-Frequency Entropy"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.88,
+        "f1_score": 0.872,
+        "precision": 0.906
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "input_speech": "/apto/",
+      "feature_extraction": [
+        "Chirplet Transform",
+        "Time-Frequency Entropy"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.85,
+        "f1_score": 0.84,
+        "precision": 0.938
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "input_speech": "/apto/",
+      "feature_extraction": [
+        "Chirplet Transform",
+        "Time-Frequency Entropy"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.81,
+        "f1_score": 0.79,
+        "precision": 0.843
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "input_speech": "/atleta/",
+      "feature_extraction": [
+        "Chirplet Transform",
+        "Time-Frequency Entropy"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.99,
+        "f1_score": 0.989,
+        "precision": 1
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "input_speech": "/atleta/",
+      "feature_extraction": [
+        "Chirplet Transform",
+        "Time-Frequency Entropy"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9,
+        "f1_score": 0.882,
+        "precision": 0.868
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "input_speech": "/atleta/",
+      "feature_extraction": [
+        "Chirplet Transform",
+        "Time-Frequency Entropy"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.87,
+        "f1_score": 0.84,
+        "precision": 0.93
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "input_speech": "/atleta/",
+      "feature_extraction": [
+        "Chirplet Transform",
+        "Time-Frequency Entropy"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.83,
+        "f1_score": 0.813,
+        "precision": 0.858
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "input_speech": "/braso/",
+      "feature_extraction": [
+        "Chirplet Transform",
+        "Time-Frequency Entropy"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.88,
+        "f1_score": 0.865,
+        "precision": 0.918
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "input_speech": "/braso/",
+      "feature_extraction": [
+        "Chirplet Transform",
+        "Time-Frequency Entropy"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.85,
+        "f1_score": 0.842,
+        "precision": 0.858
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "input_speech": "/braso/",
+      "feature_extraction": [
+        "Chirplet Transform",
+        "Time-Frequency Entropy"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.79,
+        "f1_score": 0.716,
+        "precision": 0.967
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "input_speech": "/braso/",
+      "feature_extraction": [
+        "Chirplet Transform",
+        "Time-Frequency Entropy"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.78,
+        "f1_score": 0.746,
+        "precision": 0.833
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "input_speech": "/globo/",
+      "feature_extraction": [
+        "Chirplet Transform",
+        "Time-Frequency Entropy"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.89,
+        "f1_score": 0.883,
+        "precision": 0.896
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "input_speech": "/globo/",
+      "feature_extraction": [
+        "Chirplet Transform",
+        "Time-Frequency Entropy"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.86,
+        "f1_score": 0.854,
+        "precision": 0.832
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "input_speech": "/globo/",
+      "feature_extraction": [
+        "Chirplet Transform",
+        "Time-Frequency Entropy"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.77,
+        "f1_score": 0.733,
+        "precision": 0.861
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "input_speech": "/globo/",
+      "feature_extraction": [
+        "Chirplet Transform",
+        "Time-Frequency Entropy"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.73,
+        "f1_score": 0.735,
+        "precision": 0.695
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "input_speech": "/petaka/",
+      "feature_extraction": [
+        "Chirplet Transform",
+        "Time-Frequency Entropy"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.94,
+        "f1_score": 0.936,
+        "precision": 0.912
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "input_speech": "/petaka/",
+      "feature_extraction": [
+        "Chirplet Transform",
+        "Time-Frequency Entropy"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.92,
+        "f1_score": 0.888,
+        "precision": 0.863
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "input_speech": "/petaka/",
+      "feature_extraction": [
+        "Chirplet Transform",
+        "Time-Frequency Entropy"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.86,
+        "f1_score": 0.853,
+        "precision": 0.947
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "input_speech": "/petaka/",
+      "feature_extraction": [
+        "Chirplet Transform",
+        "Time-Frequency Entropy"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.85,
+        "f1_score": 0.863,
+        "precision": 0.913
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "PC-GITA",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://paperswithcode.com/dataset/pc-gita",
+      "doi": ""
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "PC-GITA",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://paperswithcode.com/dataset/pc-gita",
+      "doi": ""
+    }
+  ],
+  "study_id": "10.1007/s13534-023-00283-x_1"
+}

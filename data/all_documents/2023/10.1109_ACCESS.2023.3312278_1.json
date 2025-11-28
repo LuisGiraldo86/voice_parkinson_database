@@ -1,0 +1,64 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c1689392"
+  },
+  "title": "Digital Twin-Based Healthcare System (DTHS) for Earlier Parkinson Disease Identification and Diagnosis Using Optimized Fuzzy Based k-Nearest Neighbor Classifier Model",
+  "authors": [
+    {
+      "name": "L. Abirami",
+      "affiliations": [
+        {
+          "institution": "Vellore Institute of Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "J. Karthikeyan",
+      "affiliations": [
+        {
+          "institution": "Vellore Institute of Technology",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "IEEE Access",
+  "year": 2023,
+  "doi": "10.1109/ACCESS.2023.3312278",
+  "abstract": "The Digital twin based Healthcare System is a demanding issue that can introduce improvements in the life of the elderly and disabled people living in remote places. More recently, modern Digital twin based Healthcare Systems have gained more attention and invitations from people due to the popularity of smart city establishment along with improvements in various healthcare services adapted in the smart phones. It is achievable because of the anytime, anywhere service access mechanism and machine-learningbased smart predictions over the cloud computing platform. The existing Healthcare System offers service to remote patients through continuous monitoring and tracking of physiological health records without live interaction and portability. Thus, the Digital twin based Healthcare System (DTHS) is proposed with smart virtual care facilities to enhance the earlier states of disease prediction and a patient-centric diagnosis mechanism from remote locations. Particularly, diseases such as Parkinson disease, identified as a severe neuro degenerative disorder worldwide, require such prediction and diagnosis at earlier stages. In this work, the experiments are focusing two voice based data sets namely DS1, and DS2 obtained from Kaggle, and UCI Machine learning repository. The proposed DTHS is developed over the cloud platform for Parkinson disease prediction using the Optimized Fuzzy based k-Nearest Neighbour (OF-k-NN) classifier model. It provides cumulative improvements against the existing Neural Network and Kernel-based SVM classifiers with respect to Prediction Time for DS1 as 0.00127 seconds, and DS2 as 0.00105 seconds, Prediction Accuracy for DS1 as 97.95%, and DS2 received 91.48%, F1-Score 0.98 for DS1, and 0.91 for DS2, and Matthews Correlation Coefficient of DS1 got 0.93675, and DS2 received 0.79816.",
+  "citescore": 9.8,
+  "ml_approaches": [
+    {
+      "algorithm": "Optimized Fuzzy Based k-Nearest Neighbor",
+      "framework": "",
+      "results": {
+        "accuracy": 0.9149,
+        "f1_score": 0.91,
+        "mcc": 0.79
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1109/ACCESS.2023.3312278_1"
+}

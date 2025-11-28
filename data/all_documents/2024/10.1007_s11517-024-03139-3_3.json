@@ -1,0 +1,188 @@
+{
+  "_id": {
+    "$oid": "68ecf00b6c43da02c168933c"
+  },
+  "title": "A unified approach for Parkinson's disease recognition: imbalance mitigation and grid search optimized boosting with LightGBM",
+  "authors": [
+    {
+      "name": "Bhanja Kishor Swain",
+      "affiliations": [
+        {
+          "institution": "Siksha O Anusandhan University",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Subhashree Mohapatra",
+      "affiliations": [
+        {
+          "institution": "Siksha O Anusandhan University",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Manohar Mishra",
+      "affiliations": [
+        {
+          "institution": "Siksha O Anusandhan University",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Renu Sharma",
+      "affiliations": [
+        {
+          "institution": "Siksha O Anusandhan University",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Medical & Biological Engineering & Computing",
+  "year": 2024,
+  "doi": "10.1007/s11517-024-03139-3",
+  "abstract": "The work elucidates the importance of accurate Parkinson's disease classification within medical diagnostics and introduces a novel framework for achieving this goal. Specifically, the study focuses on enhancing disease identification accuracy utilizing boosting methods. A standout contribution of this work lies in the utilization of a light gradient boosting machine (LGBM) coupled with hyperparameter tuning through grid search optimization (GSO) on the Parkinson's disease dataset derived from speech recording signals. In addition, the Synthetic Minority Over-sampling Technique (SMOTE) has also been employed as a pre-processing technique to balance the dataset, enhancing the robustness and reliability of the analysis. This approach is a novel addition to the study and underscores its potential to enhance disease identification accuracy. The datasets employed in this work include both gender-specific and combined cases, utilizing several distinctive feature subsets including baseline, Mel-frequency cepstral coefficients (MFCC), time-frequency, wavelet transform (WT), vocal fold, and tunable-Q-factor wavelet transform (TQWT). Comparative analyses against state-of-the-art boosting methods, such as AdaBoost and XG-Boost, reveal the superior performance of our proposed approach across diverse datasets and metrics. Notably, on the male cohort dataset, our method achieves exceptional results, demonstrating an accuracy of 0.98, precision of 1.00, sensitivity of 0.97, F1-Score of 0.98, and specificity of 1.00 when utilizing all features with GSO-LGBM. In comparison to AdaBoost and XGBoost, the proposed framework utilizing LGBM demonstrates superior accuracy, achieving an average improvement of 5% in classification accuracy across all feature subsets and datasets. These findings underscore the potential of the proposed methodology to enhance disease identification accuracy and provide valuable insights for further advancements in medical diagnostics.",
+  "ml_approaches": [
+    {
+      "algorithm": "LightGBM",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_extraction": [
+        "Baseline features"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.78,
+        "precision": 0.8911,
+        "recall": 0.8036,
+        "f1_score": 0.8451,
+        "specificity": 0.7105
+      }
+    },
+    {
+      "algorithm": "LightGBM",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_extraction": [
+        "Mel Frequency Cepstral Coefficients"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8533,
+        "precision": 0.8947,
+        "recall": 0.9107,
+        "f1_score": 0.9027,
+        "specificity": 0.6842
+      }
+    },
+    {
+      "algorithm": "LightGBM",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_extraction": [
+        "Time-Frequency Features"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8467,
+        "precision": 0.9159,
+        "recall": 0.875,
+        "f1_score": 0.8195,
+        "specificity": 0.7632
+      }
+    },
+    {
+      "algorithm": "LightGBM",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_extraction": [
+        "Wavelet Transform"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8267,
+        "precision": 0.8707,
+        "recall": 0.9018,
+        "f1_score": 0.886,
+        "specificity": 0.6053
+      }
+    },
+    {
+      "algorithm": "LightGBM",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_extraction": [
+        "Vocal Fold Features"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8067,
+        "precision": 0.8739,
+        "recall": 0.8661,
+        "f1_score": 0.87,
+        "specificity": 0.6316
+      }
+    },
+    {
+      "algorithm": "LightGBM",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_extraction": [
+        "Tunable Q Factor Wavelet Transform"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9,
+        "precision": 0.9145,
+        "recall": 0.9554,
+        "f1_score": 0.9345,
+        "specificity": 0.7368
+      }
+    },
+    {
+      "algorithm": "LightGBM",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9467,
+        "precision": 0.9483,
+        "recall": 0.9821,
+        "f1_score": 0.9649,
+        "specificity": 0.8421
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "study_id": "10.1007/s11517-024-03139-3_3"
+}

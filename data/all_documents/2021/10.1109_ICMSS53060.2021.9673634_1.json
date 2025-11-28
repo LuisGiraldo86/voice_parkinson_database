@@ -1,0 +1,145 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c168935b"
+  },
+  "title": "Detection of Parkinson's Disease Using Vocal Features: An Eigen Approach",
+  "authors": [
+    {
+      "name": "Nakul S Pramod",
+      "affiliations": [
+        {
+          "institution": "TKM College of Engineering",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "L. Sajitha",
+      "affiliations": [
+        {
+          "institution": "TKM College of Engineering",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Swathy Mohanlal",
+      "affiliations": [
+        {
+          "institution": "TKM College of Engineering",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "K. Thameem",
+      "affiliations": [
+        {
+          "institution": "TKM College of Engineering",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "S. M. Anzar",
+      "affiliations": [
+        {
+          "institution": "TKM College of Engineering",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Conference",
+  "journal": "2021 Fourth International Conference on Microelectronics, Signals & Systems (ICMSS)",
+  "year": 2021,
+  "doi": "10.1109/ICMSS53060.2021.9673634",
+  "abstract": "Parkinson's disease (PD) is a degenerative disorder of the human central nervous system that causes tremors and affects movement. Symptoms usually appear gradually over time. Researchers are seeking biomarkers for Parkinson's disease in the hopes of allowing for earlier detection and more tailored treatments to slow the disease's progression. Existing methods of diagnosis include Blood tests, MRI scans, and PET scans. However, these are highly time and resource-consuming. PD also shows an amble change in the voice patterns of a person. Hence, acoustic analysis of voice signals can indicate the progression of PD. This can be analysed using a trained classiﬁer model, which provides an easy diagnosis of the disease. This paper analyses the performance of AI-ML models viz- Linear regression, Support Vector Machine (SVM), K-Nearest Neighbourhood (KNN), Random Forest, and XG Boost for the detection of Parkinson's disease using vocal feature sets. Experimental evaluations show that the Random Forest model produced an impressive accuracy of 100%. The classiﬁcation algorithms' accuracy, precision, recall, F1-score, and Mathews Correlation Coefﬁcient (MCC) are all examined. The Random Forest classiﬁers are 100% accurate, with an accuracy of 1.000, recall of 1.000, F1-score of 1.000, and MCC of 1.000. Implementing dimensionality reduction using the Eigen approach (Principal Component Analysis) and the dataset combination are the critical reasons for the reported high accuracy. The potential of this methodology is prominent as it can be used to diagnose various other diseases, such as asthma, cancer, and Alzheimer's disease.",
+  "ml_approaches": [
+    {
+      "algorithm": "Random Forest",
+      "framework": "Python: scikit-learn",
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 1,
+        "recall": 1,
+        "precision": 1,
+        "f1_score": 1,
+        "mcc": 1
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "Python: scikit-learn",
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.974,
+        "recall": 0.909,
+        "precision": 0.923,
+        "f1_score": 0.9520000000000001,
+        "mcc": 0.9359999999999999
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "Python: scikit-learn",
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.974,
+        "recall": 0.909,
+        "precision": 0.923,
+        "f1_score": 0.9520000000000001,
+        "mcc": 0.9359999999999999
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "Python: scikit-learn",
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.923,
+        "recall": 1,
+        "precision": 0.7,
+        "f1_score": 0.823,
+        "mcc": 0.7959999999999999
+      }
+    }
+  ],
+  "source_code": {
+    "url": "https://github.com/thameemk/parkinson-s-disease-detection/tree/main",
+    "doi": ""
+  },
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1109/ICMSS53060.2021.9673634_1"
+}

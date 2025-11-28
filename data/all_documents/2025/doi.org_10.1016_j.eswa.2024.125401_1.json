@@ -1,0 +1,177 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c1689438"
+  },
+  "title": "Enhancing Noise Robustness of Automatic Parkinson's Disease Detection in Diadochokinesis Tests Using Multicondition Training",
+  "authors": [
+    {
+      "name": "Mario Madruga Escalona",
+      "affiliations": [
+        {
+          "institution": "Universidad de Extremadura",
+          "country": "Spain"
+        }
+      ]
+    },
+    {
+      "name": "Yolanda Campos-Roca",
+      "affiliations": [
+        {
+          "institution": "Universidad de Extremadura",
+          "country": "Spain"
+        }
+      ]
+    },
+    {
+      "name": "Carlos Javier Pérez Sánchez",
+      "affiliations": [
+        {
+          "institution": "Universidad de Extremadura",
+          "country": "Spain"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Expert Systems with Applications",
+  "year": 2025,
+  "doi": "doi.org/10.1016/j.eswa.2024.125401",
+  "abstract": "Despite significant advances on automatic detection of Parkinson's disease (PD) based on speech, several open challenges still need to be addressed before a validated computer-aided diagnosis system can be used practically. One of these challenges lies in considering the potential corruption of speech caused by environmental noises, which may be nonstationary and exhibit varied characteristics. Speech features automatically extracted from diadochokinetic (DDK) tests have shown utility in assessing articulatory aspects of speech impairment in PD. The authors propose an automatic PD detection system based on a multicondition training (MCT) framework. The approach considers various types of realistic acoustic noise in addition to DDK recordings and uses machine learning for feature selection and classification. For each experiment, the noise addition process did not artificially increase the dataset size, as each subject's recordings were either affected by a single noise type or had no injected noise. To compare with this MCT-based approach, an alternative method is examined where training involves speech samples affected by uniform noise conditions. This method, referred to as single-condition training (SCT), involves training with features either from the original waveforms or from waveforms altered by noise addition, ensuring uniformity by using the same type of realistic noise across all the training samples. The benefit of the MCT approach is demonstrated by showing the results obtained in classification tests to discriminate patients affected by PD from healthy individuals. The experiments performed were based on an in-house voice recording database composed of 30 individuals diagnosed with PD and 30 healthy controls. The speech samples were recorded using a smartphone as a data collection device so that the samples were not affected by speech compression algorithms. Both approaches (SCT and MCT) were tested against each specific type of noise under consideration. The mean accuracy rates showed improvements of 1.68%, 5.18%, and 4.39% for/pa/,/ta/, and/ka/ syllables, respectively, when using MCT compared with SCT. To the best of the authors' knowledge, this is the first strategy published in the literature to deal with the potential corruption of speech by environmental noise in automatic PD detection aid systems based on DDK tests.",
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "training_strategy": "Multicondition Training",
+      "input_speech": "/pa/",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination"
+        ]
+      },
+      "validation": "3-fold cross-validation",
+      "results": {
+        "accuracy": 0.785,
+        "auc": 0.843
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "training_strategy": "Multicondition Training",
+      "input_speech": "/ta/",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination"
+        ]
+      },
+      "validation": "3-fold cross-validation",
+      "results": {
+        "accuracy": 0.792,
+        "auc": 0.824
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "training_strategy": "Multicondition Training",
+      "input_speech": "/ka/",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination"
+        ]
+      },
+      "validation": "3-fold cross-validation",
+      "results": {
+        "accuracy": 0.811,
+        "auc": 0.879
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "training_strategy": "Single Condition Training",
+      "input_speech": "/pa/",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination"
+        ]
+      },
+      "validation": "3-fold cross-validation",
+      "results": {
+        "accuracy": 0.772,
+        "auc": 0.833
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "training_strategy": "Single Condition Training",
+      "input_speech": "/ta/",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination"
+        ]
+      },
+      "validation": "3-fold cross-validation",
+      "results": {
+        "accuracy": 0.753,
+        "auc": 0.799
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "training_strategy": "Single Condition Training",
+      "input_speech": "/ka/",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination"
+        ]
+      },
+      "validation": "3-fold cross-validation",
+      "results": {
+        "accuracy": 0.774,
+        "auc": 0.844
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Extremadura Parkinson's Disease Dataset",
+      "size": 60,
+      "pd_patients": 30,
+      "controls": 30,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Extremadura Parkinson's Disease Dataset",
+      "size": 60,
+      "pd_patients": 30,
+      "controls": 30,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "doi.org/10.1016/j.eswa.2024.125401_1"
+}

@@ -1,0 +1,74 @@
+{
+  "_id": {
+    "$oid": "68ecf00b6c43da02c16892f8"
+  },
+  "title": "Classification of Parkinson's Disease and its Stages Using Machine Learning",
+  "authors": [
+    {
+      "name": "John Michael Templeton",
+      "affiliations": [
+        {
+          "institution": "Florida International University",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Christian Poellabauer",
+      "affiliations": [
+        {
+          "institution": "Florida International University",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Sandra Schneider",
+      "affiliations": [
+        {
+          "institution": "Saint Mary's College",
+          "country": "USA"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Scientific Reports",
+  "year": 2022,
+  "doi": "10.1038/s41598-022-18015-z",
+  "abstract": "As digital health technology becomes more pervasive, machine learning (ML) provides a robust way to analyze and interpret the myriad of collected features. The purpose of this preliminary work was to use ML classification to assess the benefits and relevance of neurocognitive features both tablet-based assessments and self-reported metrics, as they relate to Parkinson's Disease (PD) and its stages [Hoehn and Yahr (H&Y) Stages 1-5]. Further, this work aims to compare perceived versus sensor-based neurocognitive abilities. In this study, 75 participants ([Formula: see text] PD; [Formula: see text] control) completed 14 tablet-based neurocognitive functional tests (e.g., motor, memory, speech, executive, and multifunction), functional movement assessments (e.g., Berg Balance Scale), and standardized health questionnaires (e.g., PDQ-39). Decision tree classification of sensor-based features allowed for the discrimination of PD from healthy controls with an accuracy of [Formula: see text], and early and advanced stages of PD with an accuracy of [Formula: see text]; compared to the current gold standard tools [e.g., standardized health questionnaires ([Formula: see text] accuracy) and functional movement assessments ([Formula: see text] accuracy)]. Significant features were also identified using decision tree classification. Device magnitude of acceleration was significant in 12 of 14 tests ([Formula: see text]), regardless of test type. For classification between diagnosed and control populations, 17 motor (e.g., device magnitude of acceleration), 9 accuracy (e.g., number of correct/incorrect interactions), and 8 timing features (e.g., time to between interactions) were significant. For classification between early (H&Y Stages 1 and 2) and advanced (H&Y Stages 3, 4, and 5) stages of PD, 7 motor, 12 accuracy, and 14 timing features were significant. Finally, this work depicts that perceived functionality of individuals with PD differed from sensor-based functionalities. In early-stage PD was shown to be [Formula: see text] lower than sensor-based scores with notable perceived deficits in memory and executive function. However, individuals in advanced stages had elevated perceptions (1.57x) for executive and behavioral functions compared to early-stage populations. Machine learning in digital health systems allows for a more comprehensive understanding of neurodegenerative diseases and their stages and may also depict new features that influence the ways digital health technology should be configured.",
+  "ml_approaches": [
+    {
+      "algorithm": "Decision Tree",
+      "scaling": [
+        "Standardization"
+      ],
+      "results": {
+        "accuracy": 0.9091,
+        "precision": 0.9474,
+        "recall": 0.9474
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Custom Dataset",
+      "size": 75,
+      "pd_patients": 50,
+      "controls": 25,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Custom Dataset",
+      "size": 75,
+      "pd_patients": 50,
+      "controls": 25,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "study_id": "10.1038/s41598-022-18015-z_1"
+}

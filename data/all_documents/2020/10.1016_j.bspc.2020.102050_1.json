@@ -1,0 +1,287 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893e2"
+  },
+  "title": "Hilbert Spectrum Analysis for Automatic Detection and Evaluation of Parkinson's Speech",
+  "authors": [
+    {
+      "name": "Biswajit Karan",
+      "affiliations": [
+        {
+          "institution": "Birla Institute of Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Sitanshu Sekhar Sahu",
+      "affiliations": [
+        {
+          "institution": "Birla Institute of Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Juan Rafael Orozco-Arroyave",
+      "affiliations": [
+        {
+          "institution": "Universidad de Antioquia",
+          "country": "Colombia"
+        },
+        {
+          "institution": "University of Erlangen",
+          "country": "Germany"
+        }
+      ]
+    },
+    {
+      "name": "Kartik Mahto",
+      "affiliations": [
+        {
+          "institution": "Birla Institute of Technology",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Biomedical Signal Processing and Control",
+  "year": 2020,
+  "doi": "10.1016/j.bspc.2020.102050",
+  "abstract": "Parkinson's disease (PD) is a progressive neurological disorder that mainly affects people in old age. Abnormality in the speech signals has been reported as a biomarker to detect PD. This study explores the use of Hilbert spectrum (HS) based features to model voice impairments in people affected by PD. The instantaneous energy deviation cepstral coefficient (IEDCC) is proposed. Statistical analyses show that the proposed feature is an effective and relevant biomarker for PD detection and evaluation of the dysarthria level in speech affected by PD. The capability of the proposed features to differentiate between PD and healthy people is evaluated upon five sustained vowels and ten isolated words from the standard PC-GITA database. The average accuracy of the proposed approach ranges from 82 % to 90 % with vowels, whereas for words the average accuracy ranges between 80 % and 91 %. Besides PD detection, the dysarthria level is evaluated according to the m-FDA scale. Spearman's correlation coefficients () are computed between the estimated m-FDA values and the original scores. Correlations of up to 0.75 are obtained with vowel/o/, while 0.77 is the highest correlation obtained with the word/reina/. The developed models are further validated with a separate and independent dataset. The classification accuracy in these additional recordings ranges between 50 % and 80 % with vowels and from 50 % to 82 % with words. The promising results obtained on the additional test set indicate that the proposed method is suitable to perform the automatic detection of PD speakers in real-world conditions.",
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine: Gaussian",
+      "framework": "",
+      "input_speech": "/a/",
+      "feature_extraction": [
+        "Empirical Mode Decomposition",
+        "Hilbert Transform"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.82,
+        "mcc": 0.8,
+        "f1_score": 0.6
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Gaussian",
+      "framework": "",
+      "input_speech": "/e/",
+      "feature_extraction": [
+        "Empirical Mode Decomposition",
+        "Hilbert Transform"
+      ],
+      "results": {
+        "accuracy": 0.85,
+        "mcc": 0.84,
+        "f1_score": 0.7
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Gaussian",
+      "framework": "",
+      "input_speech": "/i/",
+      "feature_extraction": [
+        "Empirical Mode Decomposition",
+        "Hilbert Transform"
+      ],
+      "results": {
+        "accuracy": 0.86,
+        "mcc": 0.85,
+        "f1_score": 0.71
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Gaussian",
+      "framework": "",
+      "input_speech": "/o/",
+      "feature_extraction": [
+        "Empirical Mode Decomposition",
+        "Hilbert Transform"
+      ],
+      "results": {
+        "accuracy": 0.9,
+        "mcc": 0.9,
+        "f1_score": 0.8
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Gaussian",
+      "framework": "",
+      "input_speech": "/u/",
+      "feature_extraction": [
+        "Empirical Mode Decomposition",
+        "Hilbert Transform"
+      ],
+      "results": {
+        "accuracy": 0.82,
+        "mcc": 0.82,
+        "f1_score": 0.63
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Gaussian",
+      "framework": "",
+      "input_speech": "/gato/",
+      "feature_extraction": [
+        "Empirical Mode Decomposition",
+        "Hilbert Transform"
+      ],
+      "results": {
+        "accuracy": 0.87,
+        "mcc": 0.85,
+        "f1_score": 0.73
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Gaussian",
+      "framework": "",
+      "input_speech": "/apto/",
+      "feature_extraction": [
+        "Empirical Mode Decomposition",
+        "Hilbert Transform"
+      ],
+      "results": {
+        "accuracy": 0.9,
+        "mcc": 0.88,
+        "f1_score": 0.8
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Gaussian",
+      "framework": "",
+      "input_speech": "/reina/",
+      "feature_extraction": [
+        "Empirical Mode Decomposition",
+        "Hilbert Transform"
+      ],
+      "results": {
+        "accuracy": 0.81,
+        "mcc": 0.8,
+        "f1_score": 0.64
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Gaussian",
+      "framework": "",
+      "input_speech": "/blusa/",
+      "feature_extraction": [
+        "Empirical Mode Decomposition",
+        "Hilbert Transform"
+      ],
+      "results": {
+        "accuracy": 0.83,
+        "mcc": 0.81,
+        "f1_score": 0.68
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Gaussian",
+      "framework": "",
+      "input_speech": "/braso/",
+      "feature_extraction": [
+        "Empirical Mode Decomposition",
+        "Hilbert Transform"
+      ],
+      "results": {
+        "accuracy": 0.83,
+        "mcc": 0.84,
+        "f1_score": 0.69
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Gaussian",
+      "framework": "",
+      "input_speech": "/name/",
+      "feature_extraction": [
+        "Empirical Mode Decomposition",
+        "Hilbert Transform"
+      ],
+      "results": {
+        "accuracy": 0.81,
+        "mcc": 0.81,
+        "f1_score": 0.64
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Gaussian",
+      "framework": "",
+      "input_speech": "/petaka/",
+      "feature_extraction": [
+        "Empirical Mode Decomposition",
+        "Hilbert Transform"
+      ],
+      "results": {
+        "accuracy": 0.85,
+        "mcc": 0.85,
+        "f1_score": 0.71
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Gaussian",
+      "framework": "",
+      "input_speech": "/globo/",
+      "feature_extraction": [
+        "Empirical Mode Decomposition",
+        "Hilbert Transform"
+      ],
+      "results": {
+        "accuracy": 0.91,
+        "mcc": 0.89,
+        "f1_score": 0.83
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Gaussian",
+      "framework": "",
+      "input_speech": "/grito/",
+      "feature_extraction": [
+        "Empirical Mode Decomposition",
+        "Hilbert Transform"
+      ],
+      "results": {
+        "accuracy": 0.8,
+        "mcc": 0.77,
+        "f1_score": 0.56
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Gaussian",
+      "framework": "",
+      "input_speech": "/drama/",
+      "feature_extraction": [
+        "Empirical Mode Decomposition",
+        "Hilbert Transform"
+      ],
+      "results": {
+        "accuracy": 0.81,
+        "mcc": 0.78,
+        "f1_score": 0.6
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "PC-GITA",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://paperswithcode.com/dataset/pc-gita",
+      "doi": ""
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "PC-GITA",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://paperswithcode.com/dataset/pc-gita",
+      "doi": ""
+    }
+  ],
+  "study_id": "10.1016/j.bspc.2020.102050_1"
+}

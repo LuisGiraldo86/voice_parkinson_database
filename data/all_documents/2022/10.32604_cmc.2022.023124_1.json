@@ -1,0 +1,583 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c16893f1"
+  },
+  "title": "Enhancing Parkinson's Disease Prediction Using Machine Learning and Feature Selection Methods",
+  "authors": [
+    {
+      "name": "Faisal Saeed",
+      "affiliations": [
+        {
+          "institution": "Taibah University",
+          "country": "Saudi Arabia"
+        },
+        {
+          "institution": "Birmingham City University",
+          "country": "UK"
+        }
+      ]
+    },
+    {
+      "name": "Mohammad Al-Sarem",
+      "affiliations": [
+        {
+          "institution": "Taibah University",
+          "country": "Saudi Arabia"
+        },
+        {
+          "institution": "Saba'a Region University",
+          "country": "Yemen"
+        }
+      ]
+    },
+    {
+      "name": "Muhannad Al-Mohaimeed",
+      "affiliations": [
+        {
+          "institution": "Taibah University",
+          "country": "Saudi Arabia"
+        }
+      ]
+    },
+    {
+      "name": "Abdelhamid Emara",
+      "affiliations": [
+        {
+          "institution": "Taibah University",
+          "country": "Saudi Arabia"
+        },
+        {
+          "institution": "Al-Azhar University",
+          "country": "Egypt"
+        }
+      ]
+    },
+    {
+      "name": "Wadii Boulila",
+      "affiliations": [
+        {
+          "institution": "Taibah University",
+          "country": "Saudi Arabia"
+        },
+        {
+          "institution": "University of Manouba",
+          "country": "Tunisia"
+        }
+      ]
+    },
+    {
+      "name": "Mohammed Alasli",
+      "affiliations": [
+        {
+          "institution": "Taibah University",
+          "country": "Saudi Arabia"
+        }
+      ]
+    },
+    {
+      "name": "Fahad Ghabban",
+      "affiliations": [
+        {
+          "institution": "Taibah University",
+          "country": "Saudi Arabia"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Computers, Materials and Continua",
+  "year": 2022,
+  "doi": "10.32604/cmc.2022.023124",
+  "abstract": " Several millions of people suffer from Parkinson's disease globally. Parkinson's affects about 1% of people over 60 and its symptoms increase with age. The voice may be affected and patients experience abnormalities in speech that might not be noticed by listeners, but which could be analyzed using recorded speech signals. With the huge advancements of technology, the medical data has increased dramatically, and therefore, there is a need to apply data mining and machine learning methods to extract new knowledge from this data. Several classification methods were used to analyze medical data sets and diagnostic problems, such as Parkinson's Disease (PD). In addition, to improve the performance of classification, feature selection methods have been extensively used in many fields. This paper aims to propose a comprehensive approach to enhance the prediction of PD using several machine learning methods with different feature selection methods such as filter-based and wrapper-based. The dataset includes 240 recodes with 46 acoustic features extracted from 3 voice recording replications for 80 patients. The experimental results showed improvements when wrapper-based features selection method was used with K-NN classifier with accuracy of 88.33%. The best obtained results were compared with other studies and it was found that this study provides comparable and superior results.",
+  "ml_approaches": [
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Correlation-based: First best"
+        ]
+      },
+      "validation": "10-fold cross validation",
+      "results": {
+        "accuracy": 0.817,
+        "precision": 0.817,
+        "recall": 0.817,
+        "f1_score": 0.817
+      }
+    },
+    {
+      "algorithm": "C-Support Vector Machine",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Correlation-based: First best"
+        ]
+      },
+      "validation": "10-fold cross validation",
+      "results": {
+        "accuracy": 0.767,
+        "precision": 0.767,
+        "recall": 0.767,
+        "f1_score": 0.767
+      }
+    },
+    {
+      "algorithm": "Nu-Support Vector Machine",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Correlation-based: First best"
+        ]
+      },
+      "validation": "10-fold cross validation",
+      "results": {
+        "accuracy": 0.762,
+        "precision": 0.763,
+        "recall": 0.763,
+        "f1_score": 0.762
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Correlation-based: First best"
+        ]
+      },
+      "validation": "10-fold cross validation",
+      "results": {
+        "accuracy": 0.758,
+        "precision": 0.759,
+        "recall": 0.758,
+        "f1_score": 0.758
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Correlation-based: First best"
+        ]
+      },
+      "validation": "10-fold cross validation",
+      "results": {
+        "accuracy": 0.733,
+        "precision": 0.733,
+        "recall": 0.733,
+        "f1_score": 0.733
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Correlation-based: First best"
+        ]
+      },
+      "validation": "10-fold cross validation",
+      "results": {
+        "accuracy": 0.804,
+        "precision": 0.805,
+        "recall": 0.804,
+        "f1_score": 0.804
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Correlation-based: Greedy Stepwise"
+        ]
+      },
+      "validation": "10-fold cross validation",
+      "results": {
+        "accuracy": 0.825,
+        "precision": 0.825,
+        "recall": 0.825,
+        "f1_score": 0.825
+      }
+    },
+    {
+      "algorithm": "C-Support Vector Machine",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Correlation-based: Greedy Stepwise"
+        ]
+      },
+      "validation": "10-fold cross validation",
+      "results": {
+        "accuracy": 0.746,
+        "precision": 0.746,
+        "recall": 0.746,
+        "f1_score": 0.746
+      }
+    },
+    {
+      "algorithm": "Nu-Support Vector Machine",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Correlation-based: Greedy Stepwise"
+        ]
+      },
+      "validation": "10-fold cross validation",
+      "results": {
+        "accuracy": 0.754,
+        "precision": 0.754,
+        "recall": 0.754,
+        "f1_score": 0.754
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Correlation-based: Greedy Stepwise"
+        ]
+      },
+      "validation": "10-fold cross validation",
+      "results": {
+        "accuracy": 0.746,
+        "precision": 0.746,
+        "recall": 0.746,
+        "f1_score": 0.746
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Correlation-based: Greedy Stepwise"
+        ]
+      },
+      "validation": "10-fold cross validation",
+      "results": {
+        "accuracy": 0.742,
+        "precision": 0.743,
+        "recall": 0.742,
+        "f1_score": 0.741
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Correlation-based: Greedy Stepwise"
+        ]
+      },
+      "validation": "10-fold cross validation",
+      "results": {
+        "accuracy": 0.829,
+        "precision": 0.829,
+        "recall": 0.829,
+        "f1_score": 0.829
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Correlation-based: Particle Swarm Optimization"
+        ]
+      },
+      "validation": "10-fold cross validation",
+      "results": {
+        "accuracy": 0.821,
+        "precision": 0.821,
+        "recall": 0.821,
+        "f1_score": 0.821
+      }
+    },
+    {
+      "algorithm": "C-Support Vector Machine",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Correlation-based: Particle Swarm Optimization"
+        ]
+      },
+      "validation": "10-fold cross validation",
+      "results": {
+        "accuracy": 0.754,
+        "precision": 0.754,
+        "recall": 0.754,
+        "f1_score": 0.754
+      }
+    },
+    {
+      "algorithm": "Nu-Support Vector Machine",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Correlation-based: Particle Swarm Optimization"
+        ]
+      },
+      "validation": "10-fold cross validation",
+      "results": {
+        "accuracy": 0.746,
+        "precision": 0.746,
+        "recall": 0.746,
+        "f1_score": 0.746
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Correlation-based: Particle Swarm Optimization"
+        ]
+      },
+      "validation": "10-fold cross validation",
+      "results": {
+        "accuracy": 0.738,
+        "precision": 0.738,
+        "recall": 0.738,
+        "f1_score": 0.737
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Correlation-based: Particle Swarm Optimization"
+        ]
+      },
+      "validation": "10-fold cross validation",
+      "results": {
+        "accuracy": 0.7,
+        "precision": 0.701,
+        "recall": 0.7,
+        "f1_score": 0.7
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Correlation-based: Particle Swarm Optimization"
+        ]
+      },
+      "validation": "10-fold cross validation",
+      "results": {
+        "accuracy": 0.821,
+        "precision": 0.822,
+        "recall": 0.821,
+        "f1_score": 0.821
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Information Gain"
+        ]
+      },
+      "validation": "10-fold cross validation",
+      "results": {
+        "accuracy": 0.808,
+        "precision": 0.808,
+        "recall": 0.808,
+        "f1_score": 0.808
+      }
+    },
+    {
+      "algorithm": "C-Support Vector Machine",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Information Gain"
+        ]
+      },
+      "validation": "10-fold cross validation",
+      "results": {
+        "accuracy": 0.696,
+        "precision": 0.697,
+        "recall": 0.696,
+        "f1_score": 0.695
+      }
+    },
+    {
+      "algorithm": "Nu-Support Vector Machine",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Information Gain"
+        ]
+      },
+      "validation": "10-fold cross validation",
+      "results": {
+        "accuracy": 0.7,
+        "precision": 0.701,
+        "recall": 0.7,
+        "f1_score": 0.7
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Information Gain"
+        ]
+      },
+      "validation": "10-fold cross validation",
+      "results": {
+        "accuracy": 0.738,
+        "precision": 0.738,
+        "recall": 0.738,
+        "f1_score": 0.737
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Information Gain"
+        ]
+      },
+      "validation": "10-fold cross validation",
+      "results": {
+        "accuracy": 0.708,
+        "precision": 0.712,
+        "recall": 0.708,
+        "f1_score": 0.707
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Information Gain"
+        ]
+      },
+      "validation": "10-fold cross validation",
+      "results": {
+        "accuracy": 0.8,
+        "precision": 0.801,
+        "recall": 0.8,
+        "f1_score": 0.8
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross validation",
+      "results": {
+        "accuracy": 0.733,
+        "precision": 0.734,
+        "recall": 0.733,
+        "f1_score": 0.733
+      }
+    },
+    {
+      "algorithm": "C-Support Vector Machine",
+      "framework": "",
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross validation",
+      "results": {
+        "accuracy": 0.833,
+        "precision": 0.834,
+        "recall": 0.833,
+        "f1_score": 0.833
+      }
+    },
+    {
+      "algorithm": "Nu-Support Vector Machine",
+      "framework": "",
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross validation",
+      "results": {
+        "accuracy": 0.838,
+        "precision": 0.838,
+        "recall": 0.838,
+        "f1_score": 0.837
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross validation",
+      "results": {
+        "accuracy": 0.746,
+        "precision": 0.746,
+        "recall": 0.746,
+        "f1_score": 0.746
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross validation",
+      "results": {
+        "accuracy": 0.692,
+        "precision": 0.696,
+        "recall": 0.692,
+        "f1_score": 0.69
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "10-fold cross validation",
+      "results": {
+        "accuracy": 0.804,
+        "precision": 0.807,
+        "recall": 0.804,
+        "f1_score": 0.804
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson Dataset with replicated acoustic features",
+      "size": 80,
+      "pd_patients": 40,
+      "controls": 40,
+      "url": "https://archive.ics.uci.edu/dataset/489/parkinson+dataset+with+replicated+acoustic+features",
+      "doi": "10.24432/C5701F"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson Dataset with replicated acoustic features",
+      "size": 80,
+      "pd_patients": 40,
+      "controls": 40,
+      "url": "https://archive.ics.uci.edu/dataset/489/parkinson+dataset+with+replicated+acoustic+features",
+      "doi": "10.24432/C5701F"
+    }
+  ],
+  "study_id": "10.32604/cmc.2022.023124_1"
+}

@@ -1,0 +1,317 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c16893fc"
+  },
+  "title": "Improving Parkinson's disease recognition through voice analysis using deep learning",
+  "authors": [
+    {
+      "name": "Rania Khaskhoussy",
+      "affiliations": [
+        {
+          "institution": "University of Sfax",
+          "country": "Tunisia"
+        }
+      ]
+    },
+    {
+      "name": "Yassine Ben Ayed",
+      "affiliations": [
+        {
+          "institution": "University of Sfax",
+          "country": "Tunisia"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Pattern Recognition Letters",
+  "year": 2023,
+  "doi": "10.1016/j.patrec.2023.03.011",
+  "abstract": "Parkinson's disease (PD) corresponds to one of the most common neurological diseases in the world, which is mainly manifested by motor, cognitive, and language disorders. The change in the patient's voice is one of the most striking clinical signs and proves to be an element of interest to support the diagnosis and the assessment of PD. In this research paper, a new approach based on speech signal analysis is set forward to automatically detect Parkinson's disease. The approach evaluates two learning techniques, namely Support Vector Machines (SVM) and Convolutional Neural Networks (CNN), to classify data obtained from speech tasks. Two input data,i.e., the raw speech signal's values and the i-vector features of dimensions 100, 200 and 300 are extracted in this study. Eventually, an evaluation step is undertaken through the use of five evaluation metrics which are accuracy, precision, recall/sensitivity, specificity and -score. The most pertinent obtained results for a test dataset composed of 28 participants are recorded as follows: an accuracy of 100%, precision of 0.99, recall/sensitivity of 0.98, specificity of 0.96 and -score of 0.98. These findings corroborate that our approach can help in terms of PD detection.",
+  "ml_approaches": [
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "feature_extraction": [
+        "Convolutional Neural Network"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.6,
+        "precision": 0.52,
+        "recall": 0.48,
+        "specificity": 0.5,
+        "f1_score": 0.5
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "feature_extraction": [
+        "Convolutional Neural Network"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.68,
+        "precision": 0.69,
+        "recall": 0.6,
+        "specificity": 0.61,
+        "f1_score": 0.65
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "feature_extraction": [
+        "Convolutional Neural Network"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.76,
+        "precision": 0.77,
+        "recall": 0.66,
+        "specificity": 0.64,
+        "f1_score": 0.68
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Sigmoid",
+      "framework": "",
+      "feature_extraction": [
+        "Convolutional Neural Network"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.71,
+        "precision": 0.68,
+        "recall": 0.65,
+        "specificity": 0.64,
+        "f1_score": 0.66
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Sigmoid",
+      "framework": "",
+      "feature_extraction": [
+        "Convolutional Neural Network"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.78,
+        "precision": 0.75,
+        "recall": 0.73,
+        "specificity": 0.7,
+        "f1_score": 0.73
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Polynomial",
+      "framework": "",
+      "feature_extraction": [
+        "Convolutional Neural Network"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.7,
+        "precision": 0.65,
+        "recall": 0.65,
+        "specificity": 0.63,
+        "f1_score": 0.65
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Polynomial",
+      "framework": "",
+      "feature_extraction": [
+        "Convolutional Neural Network"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.75,
+        "precision": 0.71,
+        "recall": 0.7,
+        "specificity": 0.7,
+        "f1_score": 0.71
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "feature_extraction": [
+        "Convolutional Neural Network"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.75,
+        "precision": 0.74,
+        "recall": 0.62,
+        "specificity": 0.65,
+        "f1_score": 0.65
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "feature_extraction": [
+        "Convolutional Neural Network"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.79,
+        "precision": 0.79,
+        "recall": 0.7,
+        "specificity": 0.71,
+        "f1_score": 0.72
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "feature_extraction": [
+        "Mel-Frequency Cepstral Coefficients",
+        "GMM-UBM"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.9674,
+        "precision": 0.95,
+        "recall": 0.96,
+        "specificity": 0.95,
+        "f1_score": 0.95
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "feature_extraction": [
+        "Mel-Frequency Cepstral Coefficients",
+        "GMM-UBM"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9818,
+        "precision": 0.97,
+        "recall": 0.96,
+        "specificity": 0.93,
+        "f1_score": 0.98
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Sigmoid",
+      "framework": "",
+      "feature_extraction": [
+        "Mel-Frequency Cepstral Coefficients",
+        "GMM-UBM"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.96,
+        "precision": 0.95,
+        "recall": 0.92,
+        "specificity": 0.91,
+        "f1_score": 0.93
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Sigmoid",
+      "framework": "",
+      "feature_extraction": [
+        "Mel-Frequency Cepstral Coefficients",
+        "GMM-UBM"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 1,
+        "precision": 0.93,
+        "recall": 0.91,
+        "specificity": 0.93,
+        "f1_score": 0.92
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Polynomial",
+      "framework": "",
+      "feature_extraction": [
+        "Mel-Frequency Cepstral Coefficients",
+        "GMM-UBM"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.9768,
+        "precision": 0.94,
+        "recall": 0.96,
+        "specificity": 0.93,
+        "f1_score": 0.94
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Polynomial",
+      "framework": "",
+      "feature_extraction": [
+        "Mel-Frequency Cepstral Coefficients",
+        "GMM-UBM"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 1,
+        "precision": 0.99,
+        "recall": 0.98,
+        "specificity": 0.96,
+        "f1_score": 0.98
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "feature_extraction": [
+        "Mel-Frequency Cepstral Coefficients",
+        "GMM-UBM"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.9368,
+        "precision": 0.95,
+        "recall": 0.91,
+        "specificity": 0.89,
+        "f1_score": 0.93
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "feature_extraction": [
+        "Mel-Frequency Cepstral Coefficients",
+        "GMM-UBM"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9939,
+        "precision": 0.98,
+        "recall": 0.97,
+        "specificity": 0.94,
+        "f1_score": 0.97
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Speech with Multiple Types of Sound Recordings",
+      "size": 40,
+      "pd_patients": 20,
+      "controls": 20,
+      "url": "https://archive.ics.uci.edu/dataset/301/parkinson+speech+dataset+with+multiple+types+of+sound+recordings",
+      "doi": "10.24432/C5NC8M"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Speech with Multiple Types of Sound Recordings",
+      "size": 40,
+      "pd_patients": 20,
+      "controls": 20,
+      "url": "https://archive.ics.uci.edu/dataset/301/parkinson+speech+dataset+with+multiple+types+of+sound+recordings",
+      "doi": "10.24432/C5NC8M"
+    }
+  ],
+  "study_id": "10.1016/j.patrec.2023.03.011_1"
+}

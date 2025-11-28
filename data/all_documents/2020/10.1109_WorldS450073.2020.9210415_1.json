@@ -1,0 +1,124 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c1689362"
+  },
+  "title": "Analysis of Parkinson's disease diagnosis using a combination of Genetic Algorithm and Recursive Feature Elimination",
+  "authors": [
+    {
+      "name": "Jinee Goyal",
+      "affiliations": [
+        {
+          "institution": "PEC University of Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Padmavati Khandnor",
+      "affiliations": [
+        {
+          "institution": "PEC University of Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Trilok Chand Aseri",
+      "affiliations": [
+        {
+          "institution": "PEC University of Technology",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Conference",
+  "journal": "2020 Fourth World Conference on Smart Trends in Systems, Security and Sustainability (WorldS4)",
+  "year": 2020,
+  "doi": "10.1109/WorldS450073.2020.9210415",
+  "abstract": "Parkinson's disease is a neurological disorder which affects different body parts. Voice distortion is one of the early symptoms to appear. It is present in most of the Parkinson patients and has a lot of potential in early diagnosis of the disease. In this paper, potential of feature selection techniques is explored in diagnosis of Parkinson's disease using speech features. In this, two-stage feature selection is applied which combines the beneﬁts of Genetic Algorithm and Support Vector Machine-Recursive Feature Elimination techniques into one. Classiﬁcation is done using SVM and results are compared with SVM without feature selection and individual selection techniques. The two-stage feature selection technique not only reduced the dimensionality of the dataset but also improved the performance of the system.",
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "Python: scikit-learn",
+      "results": {
+        "accuracy": 0.8769,
+        "recall": 0.9931,
+        "specificity": 0.5207999999999999,
+        "precision": 0.8639,
+        "f1_score": 0.924
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "Python: scikit-learn",
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "results": {
+        "accuracy": 0.8871,
+        "recall": 0.9931,
+        "specificity": 0.5625,
+        "precision": 0.8742,
+        "f1_score": 0.9299
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "Python: scikit-learn",
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: Support Vector Machine"
+        ]
+      },
+      "results": {
+        "accuracy": 0.8871,
+        "recall": 0.9931,
+        "specificity": 0.5,
+        "precision": 0.8588,
+        "f1_score": 0.9120999999999999
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "Python: scikit-learn",
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm",
+          "Recursive Feature Elimination: Support Vector Machine"
+        ],
+        "combination": "intersection"
+      },
+      "results": {
+        "accuracy": 0.8871,
+        "recall": 0.9183,
+        "specificity": 0.7082999999999999,
+        "precision": 0.906,
+        "f1_score": 0.9120999999999999
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1109/WorldS450073.2020.9210415_1"
+}

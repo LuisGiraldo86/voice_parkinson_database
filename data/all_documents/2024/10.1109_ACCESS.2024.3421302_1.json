@@ -1,0 +1,230 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c1689355"
+  },
+  "title": "Design of an Efficient Prediction Model for Early Parkinson's Disease Diagnosis",
+  "authors": [
+    {
+      "name": "K. Shyamala",
+      "affiliations": [
+        {
+          "institution": "Vellore Institute of Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "T. M. Navamani",
+      "affiliations": [
+        {
+          "institution": "Vellore Institute of Technology",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "IEEE Access",
+  "year": 2024,
+  "doi": "10.1109/ACCESS.2024.3421302",
+  "abstract": "Parkinson's Disease (PD) is a long-lasting and progressive brain disorder that disrupts the body's nervous system pathways. This disruption leads to various issues with movement and control, leading to various symptoms, including tremors, stiffness, and difficulty with movement and coordination. In the early stages of this condition, the patients struggle to speak and also speak slowly. Dysphonia, a speech impairment or alteration in speech, is experienced by 70 to 90 percent of Parkinson's patients and is an early indication of the disease. Hence, speech or voice can be the vital modality for an early stage of PD diagnosis. In literature, various Machine Learning models are implemented for PD diagnosis based on speech data. However, issues like class imbalance, feature selection, and interpretable prediction analysis are not addressed effectively. Moreover, the accurate and trustworthiness of the prediction results are essential for providing better healthcare services. Here, we propose an enhanced Interpretable Feature Ranking XGBoost (IFRX) model to predict early-stage PD diagnosis based on speech data. The proposed model addresses the above-mentioned issues effectively and provides better prediction performance. Using the proposed model, we implemented eight Machine Learning classifiers for PD diagnosis based on speech data. Among these classifiers, the XGBoost approach shows better prediction performance with an accuracy of 96.61%.",
+  "ml_approaches": [
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: XGBoost"
+        ]
+      },
+      "scaling": [
+        "Standardization"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8814,
+        "precision": 1,
+        "recall": 0.8409,
+        "f1_score": 0.9136
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: XGBoost"
+        ]
+      },
+      "scaling": [
+        "Standardization"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8814,
+        "precision": 0.9302,
+        "recall": 0.9091,
+        "f1_score": 0.9195
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: XGBoost"
+        ]
+      },
+      "scaling": [
+        "Standardization"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9153,
+        "precision": 0.9333,
+        "recall": 0.9545,
+        "f1_score": 0.9438
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: XGBoost"
+        ]
+      },
+      "scaling": [
+        "Standardization"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8475,
+        "precision": 0.907,
+        "recall": 0.8864,
+        "f1_score": 0.8966
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: XGBoost"
+        ]
+      },
+      "scaling": [
+        "Standardization"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9153,
+        "precision": 0.9756,
+        "recall": 0.9091,
+        "f1_score": 0.9412
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: XGBoost"
+        ]
+      },
+      "scaling": [
+        "Standardization"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.7458,
+        "precision": 0.8718,
+        "recall": 0.7727,
+        "f1_score": 0.8193
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: XGBoost"
+        ]
+      },
+      "scaling": [
+        "Standardization"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9661,
+        "precision": 0.9773,
+        "recall": 0.9773,
+        "f1_score": 0.8193
+      }
+    },
+    {
+      "algorithm": "Naive Bayes: Gaussian",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: XGBoost"
+        ]
+      },
+      "scaling": [
+        "Standardization"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.7966,
+        "precision": 0.9211,
+        "recall": 0.7955,
+        "f1_score": 0.8537
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1109/ACCESS.2024.3421302_1"
+}

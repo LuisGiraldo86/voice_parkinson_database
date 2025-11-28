@@ -1,0 +1,626 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c168939d"
+  },
+  "title": "Investigation of Scalograms with a Deep Feature Fusion Approach for Detection of Parkinson's Disease",
+  "authors": [
+    {
+      "name": "İsmail Cantürk",
+      "affiliations": [
+        {
+          "institution": "Yildiz Technical University",
+          "country": "Turkey"
+        }
+      ]
+    },
+    {
+      "name": "Osman Günay",
+      "affiliations": [
+        {
+          "institution": "Yildiz Technical University",
+          "country": "Turkey"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Cognitive Computation",
+  "year": 2024,
+  "doi": "10.1007/s12559-024-10254-8",
+  "abstract": "Parkinson's disease (PD) is a neurological condition that millions of people worldwide suffer from. Early symptoms include a slight sense of weakness and a propensity for involuntary tremulous motion in body limbs, particularly in the arms, hands, and head. PD is diagnosed based on motor symptoms. Additionally, scholars have proposed various remote monitoring tests that offer benefits such as early diagnosis, ease of application, and cost-effectiveness. PD patients often exhibit voice disorders. Speech signals of the patients can be used for early diagnosis of the disease. This study proposed an artificial intelligence-based approach for PD diagnosis using speech signals. Scalogram images, generated through the Continuous Wavelet Transform of the speech signals, were employed in deep learning techniques to detect PD. The scalograms were tested with various deep learning techniques. In the first part of the experiment, AlexNet, GoogleNet, ResNet50, and a majority voting-based hybrid system were used as classifiers. Secondly, a deep feature fusion method based on DenseNet and NasNet was investigated. Several evaluation metrics were employed to assess the performance. The deep feature fusion system achieved an accuracy of 0.95 and an F1 score with stratified 10-fold cross-validation, improving accuracy by 38% over the ablation study. The key contributions of this study include the investigation of scalogram images with a comprehensive analysis of deep learning models and deep feature fusion for PD detection.",
+  "citescore": 9.8,
+  "ml_approaches": [
+    {
+      "algorithm": "GoogleNet",
+      "update_function": "sgdm",
+      "input_speech": "/o/",
+      "framework": "",
+      "feature_extraction": [
+        "Continuous Wavelet Transform",
+        "Scalograms"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.64,
+        "recall": 0.73,
+        "specificity": 0.55,
+        "precision": 0.68,
+        "f1_score": 0.66
+      }
+    },
+    {
+      "algorithm": "GoogleNet",
+      "update_function": "adam",
+      "input_speech": "/o/",
+      "framework": "",
+      "feature_extraction": [
+        "Continuous Wavelet Transform",
+        "Scalograms"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.59,
+        "recall": 0.6,
+        "specificity": 0.58,
+        "precision": 0.58,
+        "f1_score": 0.58
+      }
+    },
+    {
+      "algorithm": "GoogleNet",
+      "update_function": "rmsprop",
+      "input_speech": "/o/",
+      "framework": "",
+      "feature_extraction": [
+        "Continuous Wavelet Transform",
+        "Scalograms"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.49,
+        "recall": 0.5,
+        "specificity": 0.48,
+        "precision": 0.48,
+        "f1_score": 0.46
+      }
+    },
+    {
+      "algorithm": "ResNet: 50",
+      "update_function": "sgdm",
+      "input_speech": "/o/",
+      "framework": "",
+      "feature_extraction": [
+        "Continuous Wavelet Transform",
+        "Scalograms"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.68,
+        "recall": 0.65,
+        "specificity": 0.7,
+        "precision": 0.72,
+        "f1_score": 0.66
+      }
+    },
+    {
+      "algorithm": "ResNet: 50",
+      "update_function": "adam",
+      "input_speech": "/o/",
+      "framework": "",
+      "feature_extraction": [
+        "Continuous Wavelet Transform",
+        "Scalograms"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.56,
+        "recall": 0.5,
+        "specificity": 0.63,
+        "precision": 0.59,
+        "f1_score": 0.53
+      }
+    },
+    {
+      "algorithm": "ResNet: 50",
+      "update_function": "rmsprop",
+      "input_speech": "/o/",
+      "framework": "",
+      "feature_extraction": [
+        "Continuous Wavelet Transform",
+        "Scalograms"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.56,
+        "recall": 0.58,
+        "specificity": 0.55,
+        "precision": 0.58,
+        "f1_score": 0.55
+      }
+    },
+    {
+      "algorithm": "Convolutional Neural Network: AlexNet",
+      "update_function": "sgdm",
+      "input_speech": "/o/",
+      "framework": "",
+      "feature_extraction": [
+        "Continuous Wavelet Transform",
+        "Scalograms"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.59,
+        "recall": 0.73,
+        "specificity": 0.45,
+        "precision": 0.61,
+        "f1_score": 0.63
+      }
+    },
+    {
+      "algorithm": "Convolutional Neural Network: AlexNet",
+      "update_function": "adam",
+      "input_speech": "/o/",
+      "framework": "",
+      "feature_extraction": [
+        "Continuous Wavelet Transform",
+        "Scalograms"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.59,
+        "recall": 0.6,
+        "specificity": 0.58,
+        "precision": 0.63,
+        "f1_score": 0.59
+      }
+    },
+    {
+      "algorithm": "Convolutional Neural Network: AlexNet",
+      "update_function": "rmsprop",
+      "input_speech": "/o/",
+      "framework": "",
+      "feature_extraction": [
+        "Continuous Wavelet Transform",
+        "Scalograms"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.49,
+        "recall": 0.45,
+        "specificity": 0.53,
+        "precision": 0.51,
+        "f1_score": 0.51
+      }
+    },
+    {
+      "algorithm": "GoogleNet",
+      "update_function": "sgdm",
+      "input_speech": "/a/",
+      "framework": "",
+      "feature_extraction": [
+        "Continuous Wavelet Transform",
+        "Scalograms"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.81,
+        "recall": 0.83,
+        "specificity": 0.8,
+        "precision": 0.82,
+        "f1_score": 0.81
+      }
+    },
+    {
+      "algorithm": "GoogleNet",
+      "update_function": "adam",
+      "input_speech": "/a/",
+      "framework": "",
+      "feature_extraction": [
+        "Continuous Wavelet Transform",
+        "Scalograms"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.75,
+        "recall": 0.83,
+        "specificity": 0.68,
+        "precision": 0.72,
+        "f1_score": 0.76
+      }
+    },
+    {
+      "algorithm": "GoogleNet",
+      "update_function": "rmsprop",
+      "input_speech": "/a/",
+      "framework": "",
+      "feature_extraction": [
+        "Continuous Wavelet Transform",
+        "Scalograms"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.66,
+        "recall": 0.83,
+        "specificity": 0.5,
+        "precision": 0.66,
+        "f1_score": 0.71
+      }
+    },
+    {
+      "algorithm": "ResNet: 50",
+      "update_function": "sgdm",
+      "input_speech": "/a/",
+      "framework": "",
+      "feature_extraction": [
+        "Continuous Wavelet Transform",
+        "Scalograms"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.64,
+        "recall": 0.68,
+        "specificity": 0.6,
+        "precision": 0.64,
+        "f1_score": 0.64
+      }
+    },
+    {
+      "algorithm": "ResNet: 50",
+      "update_function": "adam",
+      "input_speech": "/a/",
+      "framework": "",
+      "feature_extraction": [
+        "Continuous Wavelet Transform",
+        "Scalograms"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.73,
+        "recall": 0.73,
+        "specificity": 0.73,
+        "precision": 0.78,
+        "f1_score": 0.77
+      }
+    },
+    {
+      "algorithm": "ResNet: 50",
+      "update_function": "rmsprop",
+      "input_speech": "/a/",
+      "framework": "",
+      "feature_extraction": [
+        "Continuous Wavelet Transform",
+        "Scalograms"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.68,
+        "recall": 0.55,
+        "specificity": 0.8,
+        "precision": 0.76,
+        "f1_score": 0.61
+      }
+    },
+    {
+      "algorithm": "Convolutional Neural Network: AlexNet",
+      "update_function": "sgdm",
+      "input_speech": "/a/",
+      "framework": "",
+      "feature_extraction": [
+        "Continuous Wavelet Transform",
+        "Scalograms"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.7,
+        "recall": 0.73,
+        "specificity": 0.68,
+        "precision": 0.73,
+        "f1_score": 0.71
+      }
+    },
+    {
+      "algorithm": "Convolutional Neural Network: AlexNet",
+      "update_function": "adam",
+      "input_speech": "/a/",
+      "framework": "",
+      "feature_extraction": [
+        "Continuous Wavelet Transform",
+        "Scalograms"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.61,
+        "recall": 0.53,
+        "specificity": 0.7,
+        "precision": 0.73,
+        "f1_score": 0.55
+      }
+    },
+    {
+      "algorithm": "Convolutional Neural Network: AlexNet",
+      "update_function": "rmsprop",
+      "input_speech": "/a/",
+      "framework": "",
+      "feature_extraction": [
+        "Continuous Wavelet Transform",
+        "Scalograms"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.6,
+        "recall": 0.45,
+        "specificity": 0.75,
+        "precision": 0.69,
+        "f1_score": 0.5
+      }
+    },
+    {
+      "algorithm": "GoogleNet",
+      "update_function": "sgdm",
+      "input_speech": "/u/",
+      "framework": "",
+      "feature_extraction": [
+        "Continuous Wavelet Transform",
+        "Scalograms"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.66,
+        "recall": 0.73,
+        "specificity": 0.6,
+        "precision": 0.64,
+        "f1_score": 0.67
+      }
+    },
+    {
+      "algorithm": "GoogleNet",
+      "update_function": "adam",
+      "input_speech": "/u/",
+      "framework": "",
+      "feature_extraction": [
+        "Continuous Wavelet Transform",
+        "Scalograms"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.58,
+        "recall": 0.68,
+        "specificity": 0.48,
+        "precision": 0.57,
+        "f1_score": 0.61
+      }
+    },
+    {
+      "algorithm": "GoogleNet",
+      "update_function": "rmsprop",
+      "input_speech": "/u/",
+      "framework": "",
+      "feature_extraction": [
+        "Continuous Wavelet Transform",
+        "Scalograms"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.55,
+        "recall": 0.68,
+        "specificity": 0.43,
+        "precision": 0.54,
+        "f1_score": 0.58
+      }
+    },
+    {
+      "algorithm": "ResNet: 50",
+      "update_function": "sgdm",
+      "input_speech": "/u/",
+      "framework": "",
+      "feature_extraction": [
+        "Continuous Wavelet Transform",
+        "Scalograms"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.54,
+        "recall": 0.5,
+        "specificity": 0.58,
+        "precision": 0.56,
+        "f1_score": 0.52
+      }
+    },
+    {
+      "algorithm": "ResNet: 50",
+      "update_function": "adam",
+      "input_speech": "/u/",
+      "framework": "",
+      "feature_extraction": [
+        "Continuous Wavelet Transform",
+        "Scalograms"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.48,
+        "recall": 0.5,
+        "specificity": 0.45,
+        "precision": 0.48,
+        "f1_score": 0.48
+      }
+    },
+    {
+      "algorithm": "ResNet: 50",
+      "update_function": "rmsprop",
+      "input_speech": "/u/",
+      "framework": "",
+      "feature_extraction": [
+        "Continuous Wavelet Transform",
+        "Scalograms"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.43,
+        "recall": 0.6,
+        "specificity": 0.25,
+        "precision": 0.43,
+        "f1_score": 0.49
+      }
+    },
+    {
+      "algorithm": "Convolutional Neural Network: AlexNet",
+      "update_function": "sgdm",
+      "input_speech": "/u/",
+      "framework": "",
+      "feature_extraction": [
+        "Continuous Wavelet Transform",
+        "Scalograms"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.51,
+        "recall": 0.6,
+        "specificity": 0.43,
+        "precision": 0.54,
+        "f1_score": 0.55
+      }
+    },
+    {
+      "algorithm": "Convolutional Neural Network: AlexNet",
+      "update_function": "adam",
+      "input_speech": "/u/",
+      "framework": "",
+      "feature_extraction": [
+        "Continuous Wavelet Transform",
+        "Scalograms"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.59,
+        "recall": 0.5,
+        "specificity": 0.68,
+        "precision": 0.66,
+        "f1_score": 0.52
+      }
+    },
+    {
+      "algorithm": "Convolutional Neural Network: AlexNet",
+      "update_function": "rmsprop",
+      "input_speech": "/u/",
+      "framework": "",
+      "feature_extraction": [
+        "Continuous Wavelet Transform",
+        "Scalograms"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.58,
+        "recall": 0.6,
+        "specificity": 0.55,
+        "precision": 0.58,
+        "f1_score": 0.58
+      }
+    },
+    {
+      "algorithm": "Convolutional Neural Network: Ensemble (GoogleNet, ResNet-50, AlexNet)",
+      "framework": "",
+      "feature_extraction": [
+        "Continuous Wavelet Transform",
+        "Scalograms"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.86,
+        "recall": 0.8,
+        "specificity": 0.93,
+        "precision": 0.94,
+        "f1_score": 0.84
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "feature_extraction": [
+        "Continuous Wavelet Transform",
+        "Scalograms"
+      ],
+      "feature_selection": {
+        "methods": [
+          "DenseNet201",
+          "LASSO"
+        ],
+        "combination": "union"
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.95,
+        "recall": 0.95,
+        "specificity": 0.95,
+        "precision": 0.95,
+        "f1_score": 0.95
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "feature_extraction": [
+        "Continuous Wavelet Transform",
+        "Scalograms"
+      ],
+      "feature_selection": {
+        "methods": [
+          "DenseNet201",
+          "LASSO"
+        ],
+        "combination": "union"
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9,
+        "recall": 0.9,
+        "specificity": 0.9,
+        "precision": 0.9,
+        "f1_score": 0.9
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_extraction": [
+        "Continuous Wavelet Transform",
+        "Scalograms"
+      ],
+      "feature_selection": {
+        "methods": [
+          "DenseNet201",
+          "LASSO"
+        ],
+        "combination": "union"
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.88,
+        "recall": 0.9,
+        "specificity": 0.85,
+        "precision": 0.86,
+        "f1_score": 0.88
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Speech with Multiple Types of Sound Recordings",
+      "size": 40,
+      "pd_patients": 20,
+      "controls": 20,
+      "url": "https://archive.ics.uci.edu/dataset/301/parkinson+speech+dataset+with+multiple+types+of+sound+recordings",
+      "doi": "10.24432/C5NC8M"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Speech with Multiple Types of Sound Recordings",
+      "size": 40,
+      "pd_patients": 20,
+      "controls": 20,
+      "url": "https://archive.ics.uci.edu/dataset/301/parkinson+speech+dataset+with+multiple+types+of+sound+recordings",
+      "doi": "10.24432/C5NC8M"
+    }
+  ],
+  "study_id": "10.1007/s12559-024-10254-8_1"
+}

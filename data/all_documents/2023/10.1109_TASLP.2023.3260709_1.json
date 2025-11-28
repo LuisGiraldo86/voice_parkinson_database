@@ -1,0 +1,531 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c1689382"
+  },
+  "title": "Exemplar-Based Sparse Representations for Detection of Parkinson's Disease From Speech",
+  "authors": [
+    {
+      "name": "Mittapalle Kiran Reddy",
+      "affiliations": [
+        {
+          "institution": "Aalto University",
+          "country": "Finland"
+        }
+      ]
+    },
+    {
+      "name": "Paavo Alku",
+      "affiliations": [
+        {
+          "institution": "Aalto University",
+          "country": "Finland"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "IEEE/ACM Transactions on Audio, Speech, and Language Processing ",
+  "year": 2023,
+  "doi": "10.1109/TASLP.2023.3260709",
+  "abstract": "Parkinson's disease (PD) is a progressive neurological disorder which affects the motor system. The automatic detection of PD improves the diagnosis of the disease, and it can be done in a non-invasive manner from speech. In this paper, we investigate the use of an exemplar-based sparse representation (SR) classification approach for detecting PD from speech. Exemplars are speech feature vectors extracted from the training data. The idea is to formulate the detection task as a problem of finding sparse representations of test speech feature vectors with respect to training speech exemplars. The main advantage of using the SR approach instead of conventional machine learning (ML)-based approaches is that the training step-which is time-consuming and sometimes requires unorganized hyper-parameter tuning-is not needed. Furthermore, SRs are more robust to redundancy and noise in the data. In this work, we study SR classification approaches based on two sparse coding models, namely, l1-regularized least squares (l(1)LS) and non-negative least squares (NNLS). We propose a strategy based on class-specific dictionaries for improving performance of the l(1)LS- and NNLS-based SR classification. To investigate the detection performance, the l(1)LS- and NNLS-based approaches are applied and compared with the traditional PD detection approach based on ML classification algorithms using the PC-GITA PD dataset and an openly available dataset consisting of mobile device voice recordings from healthy and PD patients. The results indicate that the proposed NNLS-based SR classification approach performs better than the traditional ML-based methods in discriminating PD patients from healthy subjects.",
+  "citescore": 11.3,
+  "ml_approaches": [
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "input_speech": "reading",
+      "feature_extraction": [
+        "IS10"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "recall": 0.8874,
+        "precision": 0.7772,
+        "f1_score": 0.8281000000000001,
+        "accuracy": 0.7748,
+        "mcc": 0.46
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "input_speech": "reading",
+      "feature_extraction": [
+        "IS10"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "recall": 0.8437,
+        "precision": 0.7549,
+        "f1_score": 0.7968000000000001,
+        "accuracy": 0.7778,
+        "mcc": 0.45
+      }
+    },
+    {
+      "algorithm": "L1-regularized Least Squares",
+      "framework": "",
+      "input_speech": "reading",
+      "feature_extraction": [
+        "IS10"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Sparse Representation"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "recall": 0.7803,
+        "precision": 0.7464,
+        "f1_score": 0.763,
+        "accuracy": 0.6923,
+        "mcc": 0.32
+      }
+    },
+    {
+      "algorithm": "Non-Negative Least Squares",
+      "framework": "",
+      "input_speech": "reading",
+      "feature_extraction": [
+        "IS10"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Sparse Representation"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "recall": 0.8816,
+        "precision": 0.7726,
+        "f1_score": 0.8201999999999999,
+        "accuracy": 0.7631,
+        "mcc": 0.42
+      }
+    },
+    {
+      "algorithm": "Proposed L1-regularized Least Squares",
+      "framework": "",
+      "input_speech": "reading",
+      "feature_extraction": [
+        "IS10"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Sparse Representation"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "recall": 0.71,
+        "precision": 0.8043,
+        "f1_score": 0.7542,
+        "accuracy": 0.7515,
+        "mcc": 0.41
+      }
+    },
+    {
+      "algorithm": "Proposed Non-Negative Least Squares",
+      "framework": "",
+      "input_speech": "reading",
+      "feature_extraction": [
+        "IS10"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Sparse Representation"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "recall": 0.8841,
+        "precision": 0.8069,
+        "f1_score": 0.8371,
+        "accuracy": 0.7888,
+        "mcc": 0.47
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "input_speech": "reading",
+      "feature_extraction": [
+        "IS10",
+        "Glottal Mel-Frequency Cepstral Coefficients"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "recall": 0.887,
+        "precision": 0.7572,
+        "f1_score": 0.8169,
+        "accuracy": 0.8119,
+        "mcc": 0.48
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "input_speech": "reading",
+      "feature_extraction": [
+        "IS10",
+        "Glottal Mel-Frequency Cepstral Coefficients"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "recall": 0.8884,
+        "precision": 0.792,
+        "f1_score": 0.835,
+        "accuracy": 0.7848,
+        "mcc": 0.46
+      }
+    },
+    {
+      "algorithm": "L1-regularized Least Squares",
+      "framework": "",
+      "input_speech": "reading",
+      "feature_extraction": [
+        "IS10",
+        "Glottal Mel-Frequency Cepstral Coefficients"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Sparse Representation"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "recall": 0.7879,
+        "precision": 0.7704,
+        "f1_score": 0.779,
+        "accuracy": 0.7163,
+        "mcc": 0.38
+      }
+    },
+    {
+      "algorithm": "Non-Negative Least Squares",
+      "framework": "",
+      "input_speech": "reading",
+      "feature_extraction": [
+        "IS10",
+        "Glottal Mel-Frequency Cepstral Coefficients"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Sparse Representation"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "recall": 0.8231,
+        "precision": 0.8897,
+        "f1_score": 0.8551000000000001,
+        "accuracy": 0.7819,
+        "mcc": 0.42
+      }
+    },
+    {
+      "algorithm": "Proposed L1-regularized Least Squares",
+      "framework": "",
+      "input_speech": "reading",
+      "feature_extraction": [
+        "IS10",
+        "Glottal Mel-Frequency Cepstral Coefficients"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Sparse Representation"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "recall": 0.7726,
+        "precision": 0.8816,
+        "f1_score": 0.8201999999999999,
+        "accuracy": 0.7631,
+        "mcc": 0.42
+      }
+    },
+    {
+      "algorithm": "Proposed Non-Negative Least Squares",
+      "framework": "",
+      "input_speech": "reading",
+      "feature_extraction": [
+        "IS10",
+        "Glottal Mel-Frequency Cepstral Coefficients"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Sparse Representation"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "recall": 0.8984,
+        "precision": 0.8273,
+        "f1_score": 0.8614,
+        "accuracy": 0.8246,
+        "mcc": 0.5
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "input_speech": "spontaneus dialogue",
+      "feature_extraction": [
+        "IS10"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "recall": 0.8333,
+        "precision": 0.7653,
+        "f1_score": 0.7979,
+        "accuracy": 0.7829,
+        "mcc": 0.53
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "input_speech": "spontaneus dialogue",
+      "feature_extraction": [
+        "IS10"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "recall": 0.8392,
+        "precision": 0.7252,
+        "f1_score": 0.7504000000000001,
+        "accuracy": 0.7679,
+        "mcc": 0.51
+      }
+    },
+    {
+      "algorithm": "L1-regularized Least Squares",
+      "framework": "",
+      "input_speech": "spontaneus dialogue",
+      "feature_extraction": [
+        "IS10"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Sparse Representation"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "recall": 0.8266,
+        "precision": 0.6993,
+        "f1_score": 0.735,
+        "accuracy": 0.7002,
+        "mcc": 0.42
+      }
+    },
+    {
+      "algorithm": "Non-Negative Least Squares",
+      "framework": "",
+      "input_speech": "spontaneus dialogue",
+      "feature_extraction": [
+        "IS10"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Sparse Representation"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "recall": 0.8706,
+        "precision": 0.7629,
+        "f1_score": 0.8131999999999999,
+        "accuracy": 0.7756,
+        "mcc": 0.53
+      }
+    },
+    {
+      "algorithm": "Proposed L1-regularized Least Squares",
+      "framework": "",
+      "input_speech": "spontaneus dialogue",
+      "feature_extraction": [
+        "IS10"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Sparse Representation"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "recall": 0.8376,
+        "precision": 0.7507,
+        "f1_score": 0.7685,
+        "accuracy": 0.747,
+        "mcc": 0.52
+      }
+    },
+    {
+      "algorithm": "Proposed Non-Negative Least Squares",
+      "framework": "",
+      "input_speech": "spontaneus dialogue",
+      "feature_extraction": [
+        "IS10"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Sparse Representation"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "recall": 0.8483,
+        "precision": 0.81,
+        "f1_score": 0.8262999999999999,
+        "accuracy": 0.8194,
+        "mcc": 0.55
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "input_speech": "spontaneus dialogue",
+      "feature_extraction": [
+        "IS10",
+        "Glottal Mel-Frequency Cepstral Coefficients"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "recall": 0.8333,
+        "precision": 0.7692,
+        "f1_score": 0.7917000000000001,
+        "accuracy": 0.8019,
+        "mcc": 0.54
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "input_speech": "spontaneus dialogue",
+      "feature_extraction": [
+        "IS10",
+        "Glottal Mel-Frequency Cepstral Coefficients"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "recall": 0.8333,
+        "precision": 0.7653,
+        "f1_score": 0.7979,
+        "accuracy": 0.7829,
+        "mcc": 0.53
+      }
+    },
+    {
+      "algorithm": "L1-regularized Least Squares",
+      "framework": "",
+      "input_speech": "reading",
+      "feature_extraction": [
+        "IS10",
+        "Glottal Mel-Frequency Cepstral Coefficients"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Sparse Representation"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "recall": 0.9333,
+        "precision": 0.672,
+        "f1_score": 0.7814,
+        "accuracy": 0.7314,
+        "mcc": 0.49
+      }
+    },
+    {
+      "algorithm": "Non-Negative Least Squares",
+      "framework": "",
+      "input_speech": "reading",
+      "feature_extraction": [
+        "IS10",
+        "Glottal Mel-Frequency Cepstral Coefficients"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Sparse Representation"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "recall": 0.8854,
+        "precision": 0.7509,
+        "f1_score": 0.7541,
+        "accuracy": 0.8017,
+        "mcc": 0.53
+      }
+    },
+    {
+      "algorithm": "Proposed L1-regularized Least Squares",
+      "framework": "",
+      "input_speech": "reading",
+      "feature_extraction": [
+        "IS10",
+        "Glottal Mel-Frequency Cepstral Coefficients"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Sparse Representation"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "recall": 0.8551,
+        "precision": 0.6556,
+        "f1_score": 0.7421,
+        "accuracy": 0.7657,
+        "mcc": 0.53
+      }
+    },
+    {
+      "algorithm": "Proposed Non-Negative Least Squares",
+      "framework": "",
+      "input_speech": "reading",
+      "feature_extraction": [
+        "IS10",
+        "Glottal Mel-Frequency Cepstral Coefficients"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Sparse Representation"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "recall": 0.8246,
+        "precision": 0.7966,
+        "f1_score": 0.8103,
+        "accuracy": 0.8308,
+        "mcc": 0.57
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Mobile Device Voice Recordings at King's College London",
+      "size": 37,
+      "pd_patients": 16,
+      "controls": 21,
+      "url": "https://zenodo.org/records/2867216",
+      "doi": "10.5281/zenodo.2867215"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Mobile Device Voice Recordings at King's College London",
+      "size": 37,
+      "pd_patients": 16,
+      "controls": 21,
+      "url": "https://zenodo.org/records/2867216",
+      "doi": "10.5281/zenodo.2867215"
+    }
+  ],
+  "study_id": "10.1109/TASLP.2023.3260709_1"
+}

@@ -1,0 +1,96 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c168941e"
+  },
+  "title": "Few-shot learning of Parkinson's disease speech data with optimal convolution sparse kernel transfer learning",
+  "authors": [
+    {
+      "name": "Xiaoheng Zhang",
+      "affiliations": [
+        {
+          "institution": "Chongqing Radio & TV University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Jie Ma",
+      "affiliations": [
+        {
+          "institution": "Chongqing University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Yongming Li",
+      "affiliations": [
+        {
+          "institution": "Chongqing University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Ping Wang",
+      "affiliations": [
+        {
+          "institution": "Chongqing University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Yuchuan Liu",
+      "affiliations": [
+        {
+          "institution": "Chongqing University",
+          "country": "China"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Biomedical Signal Processing and Control",
+  "year": 2021,
+  "doi": "10.1016/j.bspc.2021.102850",
+  "abstract": "The classification of Parkinson's disease speech data is useful and popular. However, the existing public Parkinson's disease(PD) speech datasets are characterized by small sample sizes, and the possible reason is that labeled speech data from PD patients are scarce. To solve the few-shot problem, a PD classification algorithm based on sparse kernel transfer learning combined with simultaneous sample and feature selection is proposed in this paper. Sparse kernel transfer learning is used to extract the effective structural information of PD speech features from public datasets as source domain data, and the fast alternating direction method of multipliers (ADMM) iteration is improved to enhance the information extraction performance. First, features are extracted from a public speech dataset to construct a feature dataset as the source domain. Then, the PD target domain, including the training and test datasets, is encoded by convolution sparse coding, which can extract more in-depth information. Next, simultaneous optimization is implemented. To further improve the classification performance, a convolution kernel optimization mechanism is designed. In the experimental section, two representative PD speech datasets are used for verification; the first dataset is a frequently used public dataset, and the second dataset is constructed by the authors. Over ten relevant algorithms are compared with the proposed method. The results show that the proposed algorithm achieves obvious improvements in terms of classification accuracy. The study also found that the improvements are considerable when compared with nontransfer learning approaches, demonstrating that the proposed transfer learning approach is more effective and has an acceptable time cost.",
+  "source_dataset": [
+    {
+      "name": "TIMIT",
+      "doi": "https://doi.org/10.35111/17gk-bn40"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Speech with Multiple Types of Sound Recordings",
+      "size": 40,
+      "pd_patients": 20,
+      "controls": 20,
+      "url": "https://archive.ics.uci.edu/dataset/301/parkinson+speech+dataset+with+multiple+types+of+sound+recordings",
+      "doi": "10.24432/C5NC8M"
+    }
+  ],
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "data_augmentation": [
+        "Noise Injection"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Convolutional Sparse Coding"
+        ]
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.95,
+        "recall": 0.9,
+        "specificity": 1,
+        "mcc": 0.905
+      }
+    }
+  ],
+  "study_id": "10.1016/j.bspc.2021.102850_1"
+}

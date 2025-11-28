@@ -1,0 +1,258 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c168941d"
+  },
+  "title": "An improved framework for Parkinson's disease prediction using Variational Mode Decomposition-Hilbert spectrum of speech signal",
+  "authors": [
+    {
+      "name": "Biswajit Karan",
+      "affiliations": [
+        {
+          "institution": "Birla Institute of Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Sitanshu Sekhar Sahu",
+      "affiliations": [
+        {
+          "institution": "Birla Institute of Technology",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Biocybernetics and Biomedical Engineering",
+  "year": 2021,
+  "doi": "10.1016/j.bbe.2021.04.014",
+  "abstract": "Parkinson's disease (PD) is a neuro-degenerative disease due to loss of brain cells, which produces dopamine. It is most common after Alzheimer's disease specially seen in old age people. In the earlier stage of disease, it has been noticed that most of the people suffering from speech disorder. From last two decades many studies have been conducted for the analysis of vocal tremors in PD. This study explores the combined approach of Variational Mode Decomposition (VMD) and Hilbert spectrum analysis (HSA) to investigate the voice tremor of patients with PD. A new set of features Hilbert cepstral coefficients (HCCs) are proposed in this study. Proposed features are assessed using vowels and words of PC-GITA database. The effectiveness of HCC features is utilized to perform classification, and regression analysis for PD detection. The highest average classification accuracy up to 91% and 96% is obtained with vowel /a/ and word /apto/ respectively. Further the classification accuracy up to 82% is obtained with independent dataset, when tested with the optimized model developed using PC-GITA database. In dysarthria level prediction highest correlation up to 0.82 is obtained using vowel /a/ and 0.8 with word /petaka/. The outcomes of this study indicate that the proposed articulatory features are suitable and accurate for PD assessment.",
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "input_speech": "/a/",
+      "feature_extraction": [
+        "Variational Mode Decomposition",
+        "Hilbert Transform"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.83,
+        "recall": 0.83,
+        "specificity": 0.8,
+        "f1_score": 0.81,
+        "mcc": 0.65
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "input_speech": "/a/",
+      "feature_extraction": [
+        "Variational Mode Decomposition",
+        "Hilbert Transform"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.87,
+        "recall": 0.91,
+        "specificity": 0.87,
+        "f1_score": 0.87,
+        "mcc": 0.75
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "input_speech": "/a/",
+      "feature_extraction": [
+        "Variational Mode Decomposition",
+        "Hilbert Transform"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.91,
+        "recall": 0.92,
+        "specificity": 0.9,
+        "f1_score": 0.9,
+        "mcc": 0.82
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "input_speech": "/a/",
+      "feature_extraction": [
+        "Variational Mode Decomposition",
+        "Hilbert Transform"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.86,
+        "recall": 0.9,
+        "specificity": 0.83,
+        "f1_score": 0.86,
+        "mcc": 0.72
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "input_speech": "/a/",
+      "feature_extraction": [
+        "Variational Mode Decomposition",
+        "Hilbert Transform"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9,
+        "recall": 0.87,
+        "specificity": 0.92,
+        "f1_score": 0.88,
+        "mcc": 0.79
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "input_speech": "/a/",
+      "feature_extraction": [
+        "Variational Mode Decomposition",
+        "Hilbert Transform"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9,
+        "recall": 0.91,
+        "specificity": 0.9,
+        "f1_score": 0.9,
+        "mcc": 0.8
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "input_speech": "/apto/",
+      "feature_extraction": [
+        "Variational Mode Decomposition",
+        "Hilbert Transform"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.87,
+        "recall": 0.92,
+        "specificity": 0.83,
+        "f1_score": 0.86,
+        "mcc": 0.75
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "input_speech": "/apto/",
+      "feature_extraction": [
+        "Variational Mode Decomposition",
+        "Hilbert Transform"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.95,
+        "recall": 0.96,
+        "specificity": 0.94,
+        "f1_score": 0.95,
+        "mcc": 0.9
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "input_speech": "/apto/",
+      "feature_extraction": [
+        "Variational Mode Decomposition",
+        "Hilbert Transform"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.96,
+        "recall": 0.96,
+        "specificity": 0.96,
+        "f1_score": 0.96,
+        "mcc": 0.92
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "input_speech": "/globo/",
+      "feature_extraction": [
+        "Variational Mode Decomposition",
+        "Hilbert Transform"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9,
+        "recall": 0.92,
+        "specificity": 0.88,
+        "f1_score": 0.9,
+        "mcc": 0.8
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "input_speech": "/globo/",
+      "feature_extraction": [
+        "Variational Mode Decomposition",
+        "Hilbert Transform"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.92,
+        "recall": 0.93,
+        "specificity": 0.92,
+        "f1_score": 0.92,
+        "mcc": 0.86
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "input_speech": "/globo/",
+      "feature_extraction": [
+        "Variational Mode Decomposition",
+        "Hilbert Transform"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.94,
+        "recall": 0.92,
+        "specificity": 0.96,
+        "f1_score": 0.94,
+        "mcc": 0.88
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "PC-GITA",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://paperswithcode.com/dataset/pc-gita",
+      "doi": ""
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "PC-GITA",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://paperswithcode.com/dataset/pc-gita",
+      "doi": ""
+    }
+  ],
+  "study_id": "10.1016/j.bbe.2021.04.014_1"
+}

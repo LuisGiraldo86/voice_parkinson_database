@@ -1,0 +1,114 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c1689361"
+  },
+  "title": "Identifying Parkinson's Disease Through the Classification of Audio Recording Data",
+  "authors": [
+    {
+      "name": "James Bielby",
+      "affiliations": [
+        {
+          "institution": "De Montfort University",
+          "country": "UK"
+        }
+      ]
+    },
+    {
+      "name": "Stefan Kuhn",
+      "affiliations": [
+        {
+          "institution": "De Montfort University",
+          "country": "UK"
+        }
+      ]
+    },
+    {
+      "name": "Simon Colreavy-Donnelly",
+      "affiliations": [
+        {
+          "institution": "De Montfort University",
+          "country": "UK"
+        }
+      ]
+    },
+    {
+      "name": "Fabio Caraffini",
+      "affiliations": [
+        {
+          "institution": "De Montfort University",
+          "country": "UK"
+        }
+      ]
+    },
+    {
+      "name": "Stuart O'Connor",
+      "affiliations": [
+        {
+          "institution": "De Montfort University",
+          "country": "UK"
+        }
+      ]
+    },
+    {
+      "name": "Zacharias A. Anastassi",
+      "affiliations": [
+        {
+          "institution": "De Montfort University",
+          "country": "UK"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Conference",
+  "journal": "2020 IEEE Congress on Evolutionary Computation",
+  "year": 2020,
+  "doi": "10.1109/CEC48606.2020.9185915",
+  "abstract": "Developments in artiﬁcial intelligence can be leveraged to support the diagnosis of degenerative disorders, such as epilepsy and Parkinson's disease. This study aims to provide a software solution, focused initially towards Parkinson's disease, which can positively impact medical practice surrounding degenerative diagnoses. Through the use of a dataset containing numerical data representing acoustic features extracted from an audio recording of an individual, it is determined if a neural approach can provide an improvement over previous results in the area. This is achieved through the implementation of a feedforward neural network and a layer recurrent neural network. By comparison with the state-of-the-art, a Bayesian approach providing a classiﬁcation accuracy benchmark of 87.1%, it is found that the implemented neural networks are capable of average accuracy of 96%, highlighting improved accuracy for the classiﬁcation process. The solution is capable of supporting the diagnosis of Parkinson's disease in an advisory capacity and is envisioned to inform the process of referral through general practice.",
+  "ml_approaches": [
+    {
+      "algorithm": "Feed Forward Neural Network",
+      "framework": "MATLAB",
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.858,
+        "recall": 0.848,
+        "specificity": 0.868,
+        "precision": 0.867,
+        "f1_score": 0.857
+      }
+    },
+    {
+      "algorithm": "Layer Recurrent Neural Network",
+      "framework": "MATLAB",
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.96,
+        "recall": 0.964,
+        "specificity": 0.955,
+        "precision": 0.956,
+        "f1_score": 0.96
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Regional Association Parkinson's Disease of Extremadura",
+      "size": 80,
+      "pd_patients": 40,
+      "controls": 40,
+      "url": "",
+      "doi": "10.1016/j.eswa.2015.10.034"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Regional Association Parkinson's Disease of Extremadura",
+      "size": 80,
+      "pd_patients": 40,
+      "controls": 40,
+      "url": "",
+      "doi": "10.1016/j.eswa.2015.10.034"
+    }
+  ],
+  "study_id": "10.1109/CEC48606.2020.9185915_1"
+}

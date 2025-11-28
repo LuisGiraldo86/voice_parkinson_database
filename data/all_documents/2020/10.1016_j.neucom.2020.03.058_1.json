@@ -1,0 +1,122 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893e3"
+  },
+  "title": "Speech Based Estimation of Parkinson's Disease Using Gaussian Processes and Automatic Relevance Determination",
+  "authors": [
+    {
+      "name": "Vladimir Despotovic",
+      "affiliations": [
+        {
+          "institution": "University of Luxembourg",
+          "country": "Luxembourg"
+        }
+      ]
+    },
+    {
+      "name": "Tomas Skovranek",
+      "affiliations": [
+        {
+          "institution": "Technical University of Košice",
+          "country": "Slovakia"
+        }
+      ]
+    },
+    {
+      "name": "Christoph Schommer",
+      "affiliations": [
+        {
+          "institution": "University of Luxembourg",
+          "country": "Luxembourg"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Neurocomputing",
+  "year": 2020,
+  "doi": "10.1016/j.neucom.2020.03.058",
+  "abstract": " Parkinson's disease is a progressive neurodegenerative disorder often accompanied by impairment in articulation, phonation, prosody and fluency of speech. In fact, speech impairment is one of the earliest Parkinson's disease symptoms, and may be used for early diagnosis. We present an experimental study of identification of Parkinson's disease and assessment of disease progress from speech using Gaussian processes, which is further combined with Automatic Relevance Determination (ARD) for efficient feature selection. Hyperparameters of ARD covariance functions are learned for each individual feature; therefore, can be used for evaluation of their importance. In that way only a small subset of highly relevant acoustic features is selected, leading to models with better performance and lower complexity. The performance of the proposed method was assessed on two datasets: Parkinson's disease detection dataset, which contains a range of biomedical voice measurements obtained from 31 subjects, 23 of them suffering from Parkinson's disease and 8 healthy subjects; and Parkinson's telemonitoring dataset, containing biomedical voice measurements collected from 42 Parkinson's disease patients for estimation of the disease progress. Gaussian process classification with automatic relevance determination is able to successfully discriminate between Parkinson's disease patients and healthy controls with 96.92% accuracy, outperforming Support Vector Machines and decision tree ensembles (random forests, boosted and bagged decision trees). The usability of Gaussian processes is further confirmed in regression task for tracking the progress of the disease.",
+  "ml_approaches": [
+    {
+      "algorithm": "Gaussian Process: ARD Exponential Kernel",
+      "feature_selection": {
+        "methods": [
+          "Pearson Correlation"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9329,
+        "recall": 0.84,
+        "specificity": 0.9652
+      }
+    },
+    {
+      "algorithm": "Gaussian Process: ARD Squared Exponential Kernel",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Pearson Correlation"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9373,
+        "recall": 0.83,
+        "specificity": 0.9723999999999999
+      }
+    },
+    {
+      "algorithm": "Gaussian Process: ARD Matern 3/2 Kernel",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Pearson Correlation"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9484,
+        "recall": 0.86,
+        "specificity": 0.9790000000000001
+      }
+    },
+    {
+      "algorithm": "Gaussian Process: ARD Matern 5/2 Kernel",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Pearson Correlation"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9484,
+        "recall": 0.88,
+        "specificity": 0.9723999999999999
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1016/j.neucom.2020.03.058_1"
+}

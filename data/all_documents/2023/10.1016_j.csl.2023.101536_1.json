@@ -1,0 +1,170 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c16893fb"
+  },
+  "title": "A Local Dynamic Feature Selection Fusion Method for Voice Diagnosis of Parkinson's Disease",
+  "authors": [
+    {
+      "name": "Zaifa Xue",
+      "affiliations": [
+        {
+          "institution": "Yanshan University",
+          "country": "China"
+        },
+        {
+          "institution": "Hebei Key Laboratory of Information Transmission and Signal Processing",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Huibin Lu",
+      "affiliations": [
+        {
+          "institution": "Yanshan University",
+          "country": "China"
+        },
+        {
+          "institution": "Hebei Key Laboratory of Information Transmission and Signal Processing",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Tao Zhang",
+      "affiliations": [
+        {
+          "institution": "Yanshan University",
+          "country": "China"
+        },
+        {
+          "institution": "Hebei Key Laboratory of Information Transmission and Signal Processing",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Jiahui Xu",
+      "affiliations": [
+        {
+          "institution": "Yanshan University",
+          "country": "China"
+        },
+        {
+          "institution": "Hebei Key Laboratory of Information Transmission and Signal Processing",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Xiaonan Guo",
+      "affiliations": [
+        {
+          "institution": "Yanshan University",
+          "country": "China"
+        },
+        {
+          "institution": "Hebei Key Laboratory of Information Transmission and Signal Processing",
+          "country": "China"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Computer Speech & Language",
+  "year": 2023,
+  "doi": "10.1016/j.csl.2023.101536",
+  "abstract": "Voice disorders are one of the incipient symptoms of Parkinson's disease (PD). The existing PD voice feature analysis methods generally reduce dimensionality by selecting features with high relevance and low redundancy, ignoring the complementarity between features. To fully explore the intrinsic connection between PD features, this paper proposes a local dynamic feature selection fusion method (LDFSF) for PD identification and symptom severity prediction. First, the maximal information coefficient is used to calculate the relevance between features and the target value, and removes low relevant features. Then, a dynamic feature selection strategy based on self-organizing map network clustering is designed. This strategy dynamically updates the feature subset in a forward manner, and combines the relevance, redundancy and complementarity for feature selection. Among them, self-organizing map network clustering reduces the computational cost by reducing the number of candidate features, and effectively improves the accuracy of the model. Finally, the selected features are fed into the appropriate classifier or regressor to achieve accurate PD identification and severity progress prediction. Experiments on public OPDD and PTDS datasets show that the classification accuracy, sensitivity and specificity of LDFSF method on OPDD are 98.20%, 92.00% and 99.50% respectively, and the mean absolute error of predicting PD severity (motor- and total-UPDRS) on PTDS are 1.62 and 1.99 respectively, which are better than the compared methods for the selection of five and eight features respectively, thus indicating that the proposed LDFSF method can be effectively used in PD voice diagnosis.",
+  "ml_approaches": [
+    {
+      "algorithm": "Gaussian Process",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Maximal Information Coefficient",
+          "Self-Organizing Map",
+          "Dynamic Feature Selection"
+        ],
+        "combination": "sequential"
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.982,
+        "recall": 0.92,
+        "specificity": 0.995
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Maximal Information Coefficient",
+          "Self-Organizing Map",
+          "Dynamic Feature Selection"
+        ],
+        "combination": "sequential"
+      },
+      "results": {
+        "accuracy": 0.9498,
+        "recall": 0.8444,
+        "specificity": 0.995
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Maximal Information Coefficient",
+          "Self-Organizing Map",
+          "Dynamic Feature Selection"
+        ],
+        "combination": "sequential"
+      },
+      "results": {
+        "accuracy": 0.9599,
+        "recall": 0.8889,
+        "specificity": 0.995
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Maximal Information Coefficient",
+          "Self-Organizing Map",
+          "Dynamic Feature Selection"
+        ],
+        "combination": "sequential"
+      },
+      "results": {
+        "accuracy": 0.9587,
+        "recall": 0.7444,
+        "specificity": 0.9823000000000001
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1016/j.csl.2023.101536_1"
+}

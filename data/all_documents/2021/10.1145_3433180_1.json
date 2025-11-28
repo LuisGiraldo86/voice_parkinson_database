@@ -1,0 +1,103 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893af"
+  },
+  "title": "A Multi-agent Feature Selection and Hybrid Classification Model for Parkinson's Disease Diagnosis",
+  "authors": [
+    {
+      "name": "Mazin Abed Mohammed",
+      "affiliations": [
+        {
+          "institution": "University of Anbar",
+          "country": "Iraq"
+        }
+      ]
+    },
+    {
+      "name": "Mohamed Elhoseny",
+      "affiliations": [
+        {
+          "institution": "American University in the 7 Emirates",
+          "country": "UAE"
+        },
+        {
+          "institution": "Mansoura University",
+          "country": "Egypt"
+        }
+      ]
+    },
+    {
+      "name": "Karrar Hameed Abdulkareem",
+      "affiliations": [
+        {
+          "institution": "Al-Muthanna University,",
+          "country": "Iraq"
+        }
+      ]
+    },
+    {
+      "name": "Salama A. Mostafa",
+      "affiliations": [
+        {
+          "institution": "Universiti Tun Hussein Onn Malaysia",
+          "country": "Malaysia"
+        }
+      ]
+    },
+    {
+      "name": "Mashael S. Maashi",
+      "affiliations": [
+        {
+          "institution": "King Saud University",
+          "country": "Saudi Arabia"
+        }
+      ]
+    }
+  ],
+  "journal": "ACM Transactions on Multimidia Computing Communications and Applications",
+  "publication_type": "Journal",
+  "year": 2021,
+  "doi": "10.1145/3433180",
+  "abstract": "Parkinson's disease (PD) diagnostics includes numerous analyses related to the neurological, physical, and psychical status of the patient. Medical teams analyze multiple symptoms and patient history considering verified genetic influences. The proposed method investigates the voice symptoms of this disease. The voice files are processed, and the feature extraction is conducted. Several machine learning techniques are used to recognize Parkinson's and healthy patients. This study focuses on examining PD diagnosis through voice data features. A new multi-agent feature filter (MAFT) algorithm is proposed to select the best features from the voice dataset. The MAFT algorithm is designed to select a set of features to improve the overall performance of prediction models and prevent over-fitting possibly due to extreme reduction to the features. Moreover, this algorithm aims to reduce the complexity of the prediction, accelerate the training phase, and build a robust training model. Ten different machine learning methods are then integrated with the MAFT algorithm to form a powerful voice-based PD diagnosis model. Recorded test results of the PD prediction model using the actual and filtered features yielded 86.38% and 86.67% accuracies on average, respectively. With the aid of the MAFT feature selection, the test results are improved by 3.2% considering the hybrid model (HM) and 3.1% considering the Naive Bayesian and random forest. Subsequently, an HM, which comprises a binary convolutional neural network and three feature selection algorithms (namely, genetic algorithm, Adam optimizer, and mini-batch gradient descent), is proposed to improve the classification accuracy of the PD. The results reveal that PD achieves an overall accuracy of 93.7%. The HM is integrated with the MAFT, and the combination realizes an overall accuracy of 96.9%. These results demonstrate that the combination of the MAFT algorithm and the HM model significantly enhances the PD diagnosis outcomes.",
+  "ml_approaches": [
+    {
+      "algorithm": "Convolutional Neural Network",
+      "framework": "",
+      "preprocessing": [],
+      "feature_selection": {
+        "methods": [
+          "Multi-Agent Feature Filter"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.969,
+        "precision": 0.934,
+        "recall": 0.922,
+        "auc": 0.93,
+        "f1_score": 0.943
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1145/3433180_1"
+}

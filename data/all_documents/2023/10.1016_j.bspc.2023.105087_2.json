@@ -1,0 +1,291 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c16893f8"
+  },
+  "title": "A Novel Feature Extraction Method Based on TQWT and Instantaneous Energy Variation for Parkinson's Disease Detection",
+  "authors": [
+    {
+      "name": "Tao Zhang",
+      "affiliations": [
+        {
+          "institution": "Yanshan University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Jing Tian",
+      "affiliations": [
+        {
+          "institution": "Yanshan University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Zaifa Xue",
+      "affiliations": [
+        {
+          "institution": "Yanshan University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Bowen Yin",
+      "affiliations": [
+        {
+          "institution": "First Hospital of Qinhuangdao",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Yang Wang",
+      "affiliations": [
+        {
+          "institution": "First Hospital of Qinhuangdao",
+          "country": "China"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Biomedical Signal Processing and Control",
+  "year": 2023,
+  "doi": "10.1016/j.bspc.2023.105087",
+  "abstract": "Voice disorder is an early symptom of Parkinson's disease (PD), and extracting effective voice features is of great significance for PD detection. The voice features based on tunable Q-factor wavelet transform (TQWT) have promising performance in PD detection only using conventional energy and entropy features. To further develop the potential of TQWT, a novel feature extraction method named instantaneous energy variation based on TQWT (IEV-TQWT) is proposed. Firstly, TQWT is adopted to perform multi-scale decomposition to obtain the oscillation information of the voice signals. Next, IEV-TQWT features are obtained by calculating instantaneous energy variation vectors from the spectrograms of sub-signals. Finally, the IEV-TQWT features are input to multiple classifiers to verify the PD classification performance. The results have shown that IEV-TQWT features with explicit physical information have a significant improvement in classification performance. In addition, IEV-TQWT features outperform other advanced features on the CPPDD dataset and reach mainstream level on SPDD dataset, indicating that IEV-TQWT features can be used as an effective assisted diagnosis tool of PD.",
+  "ml_approaches": [
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "feature_extraction": [
+        "Instantaneous Energy Variation: Tunable Q-factor Wavelet Transform"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.8194,
+        "recall": 0.8946,
+        "precision": 0.8326,
+        "f1_score": 0.8623000000000001
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "feature_extraction": [
+        "Instantaneous Energy Variation: Tunable Q-factor Wavelet Transform"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8218,
+        "recall": 0.8833,
+        "precision": 0.8459,
+        "f1_score": 0.8623999999999999
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "feature_extraction": [
+        "Instantaneous Energy Variation: Tunable Q-factor Wavelet Transform"
+      ],
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.7956,
+        "recall": 0.8554,
+        "precision": 0.8233,
+        "f1_score": 0.8391
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_extraction": [
+        "Instantaneous Energy Variation: Tunable Q-factor Wavelet Transform"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.8241,
+        "recall": 0.9812,
+        "precision": 0.7938,
+        "f1_score": 0.8767
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_extraction": [
+        "Instantaneous Energy Variation: Tunable Q-factor Wavelet Transform"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8218,
+        "recall": 0.9736,
+        "precision": 0.7941,
+        "f1_score": 0.8740000000000001
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_extraction": [
+        "Instantaneous Energy Variation: Tunable Q-factor Wavelet Transform"
+      ],
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.7719,
+        "recall": 0.957,
+        "precision": 0.7424,
+        "f1_score": 0.8361
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "feature_extraction": [
+        "Instantaneous Energy Variation: Tunable Q-factor Wavelet Transform"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.9429,
+        "recall": 0.9737,
+        "precision": 0.9392,
+        "f1_score": 0.9558
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "feature_extraction": [
+        "Instantaneous Energy Variation: Tunable Q-factor Wavelet Transform"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9406,
+        "recall": 0.9741,
+        "precision": 0.9362,
+        "f1_score": 0.9543
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "feature_extraction": [
+        "Instantaneous Energy Variation: Tunable Q-factor Wavelet Transform"
+      ],
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.924,
+        "recall": 0.957,
+        "precision": 0.9211,
+        "f1_score": 0.9387000000000001
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "feature_extraction": [
+        "Instantaneous Energy Variation: Tunable Q-factor Wavelet Transform"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.9501,
+        "recall": 0.9774,
+        "precision": 0.9459,
+        "f1_score": 0.9612
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "feature_extraction": [
+        "Instantaneous Energy Variation: Tunable Q-factor Wavelet Transform"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9501,
+        "recall": 0.9741,
+        "precision": 0.9495,
+        "f1_score": 0.9612
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "feature_extraction": [
+        "Instantaneous Energy Variation: Tunable Q-factor Wavelet Transform"
+      ],
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.9343,
+        "recall": 0.9648,
+        "precision": 0.932,
+        "f1_score": 0.9481999999999999
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "feature_extraction": [
+        "Instantaneous Energy Variation: Tunable Q-factor Wavelet Transform"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.9358,
+        "recall": 0.9586,
+        "precision": 0.9416,
+        "f1_score": 0.9497
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "feature_extraction": [
+        "Instantaneous Energy Variation: Tunable Q-factor Wavelet Transform"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9477,
+        "recall": 0.9665,
+        "precision": 0.9526,
+        "f1_score": 0.9691
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "feature_extraction": [
+        "Instantaneous Energy Variation: Tunable Q-factor Wavelet Transform"
+      ],
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.9406,
+        "recall": 0.9453,
+        "precision": 0.9565,
+        "f1_score": 0.9509000000000001
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Kailuan Mental Health Center",
+      "size": 78,
+      "pd_patients": 38,
+      "controls": 40,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Kailuan Mental Health Center",
+      "size": 78,
+      "pd_patients": 38,
+      "controls": 40,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.1016/j.bspc.2023.105087_2"
+}

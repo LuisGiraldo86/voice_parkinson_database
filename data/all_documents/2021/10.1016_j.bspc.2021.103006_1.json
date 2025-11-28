@@ -1,0 +1,108 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c1689428"
+  },
+  "title": "Parkinson's Detection Based on Combined CNN and LSTM Using Enhanced Speech Signals with Variational Mode Decomposition",
+  "authors": [
+    {
+      "name": "Mehmet Bilal Er",
+      "affiliations": [
+        {
+          "institution": "Harran University",
+          "country": "Turkey"
+        }
+      ]
+    },
+    {
+      "name": "Esme Isik",
+      "affiliations": [
+        {
+          "institution": "Malatya Turgut Özal University",
+          "country": "Turkey"
+        }
+      ]
+    },
+    {
+      "name": "Ibrahim Isik",
+      "affiliations": [
+        {
+          "institution": "In¨onü University",
+          "country": "Turkey"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Biomedical Signal Processing and Control",
+  "year": 2021,
+  "doi": "10.1016/j.bspc.2021.103006",
+  "abstract": "Parkinson's disease (PD) can cause many non-motor and motor symptoms such as speech and smell. One of the difficulties that Parkinson's patients can experience is a change in speech or speaking difficulties. Therefore, the right diagnosis in the early period is important in reducing the possible effects of speech disorders caused by the disease. Speech signal of Parkinson patients shows major differences compared to normal people. In this study, a new approach based on pre-trained deep networks and Long short-term memory (LSTM) by using mel-spectrograms obtained from denoised speech signals with Variational Mode Decomposition (VMD) for detecting PD from speech sounds is proposed. The proposed model consists of four steps. In the first step, the noise is removed by applying VMD to the signals. In the second step, mel-spectrograms are extracted from the enhanced sound signals with VMD. In the third step, pre-trained deep networks are preferred to extract deep features from the mel-spectrograms. For this purpose, ResNet-18, ResNet-50 and ResNet-101 models are used as pre-trained deep network architecture. In the last step, the classification process is occurred by giving these features as input to the LSTM model, which is designed to define sequential information from the extracted features. Experiments are performed with the PC-GITA dataset, which consists of two classes and is widely used in the literature. The results obtained from the proposed method are compared with the latest methods in the literature, it is seen that it has a better performance in terms of classification performance.",
+  "ml_approaches": [
+    {
+      "algorithm": "Long Short-Term Memory",
+      "framework": "",
+      "feature_extraction": [
+        "Variational Mode Decomposition",
+        "Mel-Spectogram",
+        "ResNet101"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9861,
+        "precision": 0.9611,
+        "recall": 0.9593
+      }
+    },
+    {
+      "algorithm": "Long Short-Term Memory",
+      "framework": "",
+      "feature_extraction": [
+        "Variational Mode Decomposition",
+        "Mel-Spectogram",
+        "ResNet101"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9854,
+        "precision": 0.9684,
+        "recall": 0.9591
+      }
+    },
+    {
+      "algorithm": "Long Short-Term Memory",
+      "framework": "",
+      "feature_extraction": [
+        "Variational Mode Decomposition",
+        "Mel-Spectogram",
+        "ResNet101"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9804,
+        "precision": 0.9605,
+        "recall": 0.9656
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "PC-GITA",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://paperswithcode.com/dataset/pc-gita",
+      "doi": ""
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "PC-GITA",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://paperswithcode.com/dataset/pc-gita",
+      "doi": ""
+    }
+  ],
+  "study_id": "10.1016/j.bspc.2021.103006_1"
+}

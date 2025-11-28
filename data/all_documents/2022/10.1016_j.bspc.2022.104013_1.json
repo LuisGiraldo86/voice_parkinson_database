@@ -1,0 +1,140 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c16893ec"
+  },
+  "title": "Automatic Parkinson's Disease Detection Based on the Combination of Long-term Acoustic Features and Mel Frequency Cepstral Coefficients (MFCC)",
+  "authors": [
+    {
+      "name": "Sara Hawi",
+      "affiliations": [
+        {
+          "institution": "g, Imam Abdulrahman Bin Faisal University",
+          "country": "Saudi Arabia"
+        }
+      ]
+    },
+    {
+      "name": "Jana Alhozami,",
+      "affiliations": [
+        {
+          "institution": "Imam Abdulrahman Bin Faisal University",
+          "country": "Saudi Arabia"
+        }
+      ]
+    },
+    {
+      "name": "aneem AlQahtani",
+      "affiliations": [
+        {
+          "institution": "Imam Abdulrahman Bin Faisal University",
+          "country": "Saudi Arabia"
+        }
+      ]
+    },
+    {
+      "name": "Dannah AlSafran",
+      "affiliations": [
+        {
+          "institution": "Imam Abdulrahman Bin Faisal University",
+          "country": "Saudi Arabia"
+        }
+      ]
+    },
+    {
+      "name": "Maram Alqarni",
+      "affiliations": [
+        {
+          "institution": "Imam Abdulrahman Bin Faisal University",
+          "country": "Saudi Arabia"
+        }
+      ]
+    },
+    {
+      "name": "Lola El Sahmarany",
+      "affiliations": [
+        {
+          "institution": "Imam Abdulrahman Bin Faisal University",
+          "country": "Saudi Arabia"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Biomedical Signal Processing and Control",
+  "year": 2022,
+  "doi": "10.1016/j.bspc.2022.104013",
+  "abstract": "In recent years, acoustic signals have found increasing popularity among the scientific community as biomarkers for detecting Parkinson's disease. Literature highlights that 90% of people with Parkinson's disease have vocal impairment symptoms at earlier stages of the disease. Standard Parkinson's disease diagnosis depends on medical imaging or observation of motor symptoms such as gait disturbance and muscle rigidity which may appear at later stages. Several acoustic feature extraction algorithms, such as long-term and short-term features, were developed to train machine learning models to detect Parkinson's disease using a single algorithm. Although the literature demonstrates promising results, there has not been any exploitation of the potential of combining solely long-term and short-term algorithms to the best of the authors' knowledge. This paper presents a novel method to investigate the effect of a dataset incorporating long-term and short-term features known as Mel frequency cepstral coefficients (MFCC) on the performance of random forest model for Parkinson's disease detection. The performance of random forest has been compared between three feature sets: MFCC features, long-term features, and a combination of MFCC with long-term features. The combined features improved the detection accuracy to 88.84%, while independent sets of MFCC and long-term features, were 84.12% and 84.00%, respectively. The findings of the proposed method indicates the effectiveness of the long-term features and MFCC combination in improving the overall performance of Parkinson's disease detection model.",
+  "ml_approaches": [
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_extraction": [
+        "Mel-Frequency Cepstral Coefficients"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "average_accuracy": 84.12,
+        "specificity": 0.537,
+        "recall": 0.9629
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_extraction": [
+        "Long-term Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Backward Stepwise Selection"
+        ]
+      },
+      "validation": "5-fold cross-validation",
+      "results": {
+        "average_accuracy": 84,
+        "specificity": 0.55,
+        "recall": 0.9642
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_extraction": [
+        "Mel-Frequency Cepstral Coefficients",
+        "Long-term Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Backward Stepwise Selection"
+        ]
+      },
+      "validation": "5-fold cross-validation",
+      "results": {
+        "average_accuracy": 88.84,
+        "specificity": 0.7108,
+        "recall": 0.9851
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "study_id": "10.1016/j.bspc.2022.104013_1"
+}

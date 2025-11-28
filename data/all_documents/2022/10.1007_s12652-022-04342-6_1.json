@@ -1,0 +1,147 @@
+{
+  "_id": {
+    "$oid": "68ecf00b6c43da02c16892f1"
+  },
+  "title": "A Generic Optimization and Learning Framework for Parkinson Disease via Speech and Handwritten Records",
+  "authors": [
+    {
+      "name": "Nada R Yousif",
+      "affiliations": [
+        {
+          "institution": "Mansoura University",
+          "country": "Egypt"
+        }
+      ]
+    },
+    {
+      "name": "Hossam Magdy Balaha",
+      "affiliations": [
+        {
+          "institution": "Mansoura University",
+          "country": "Egypt"
+        }
+      ]
+    },
+    {
+      "name": "Amira Y Haikal",
+      "affiliations": [
+        {
+          "institution": "Mansoura University",
+          "country": "Egypt"
+        }
+      ]
+    },
+    {
+      "name": "Eman M El-Gendy",
+      "affiliations": [
+        {
+          "institution": "Mansoura University",
+          "country": "Egypt"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Journal of Ambient Intelligence and Humanized Computing",
+  "year": 2022,
+  "doi": "10.1007/s12652-022-04342-6",
+  "abstract": "Parkinson's disease (PD) is a neurodegenerative disorder with slow progression whose symptoms can be identified at late stages. Early diagnosis and treatment of PD can help to relieve the symptoms and delay progression. However, this is very challenging due to the similarities between the symptoms of PD and other diseases. The current study proposes a generic framework for the diagnosis of PD using handwritten images and (or) speech signals. For the handwriting images, 8 pre-trained convolutional neural networks (CNN) via transfer learning tuned by Aquila Optimizer were trained on the NewHandPD dataset to diagnose PD. For the speech signals, features from the MDVR-KCL dataset are extracted numerically using 16 feature extraction algorithms and fed to 4 different machine learning algorithms tuned by Grid Search algorithm, and graphically using 5 different techniques and fed to the 8 pretrained CNN structures. The authors propose a new technique in extracting the features from the voice dataset based on the segmentation of variable speech-signal-segment-durations, i.e., the use of different durations in the segmentation phase. Using the proposed technique, 5 datasets with 281 numerical features are generated. Results from different experiments are collected and recorded. For the NewHandPD dataset, the best-reported metric is 99.75% using the VGG19 structure. For the MDVR-KCL dataset, the best-reported metrics are 99.94% using the KNN and SVM ML algorithms and the combined numerical features; and 100% using the combined the mel-specgram graphical features and VGG19 structure. These results are better than other state-of-the-art researches.",
+  "ml_approaches": [
+    {
+      "algorithm": "Convolutional Neural Network: VGG19",
+      "feature_extraction": [
+        "Spectrogram"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8958,
+        "f1_score": 0.8957999999999999,
+        "precision": 0.8958,
+        "recall": 0.8958,
+        "specificity": 0.8957999999999999,
+        "auc": 0.9669
+      }
+    },
+    {
+      "algorithm": "Convolutional Neural Network: VGG19",
+      "feature_extraction": [
+        "Mel-Spectrogram"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 1,
+        "f1_score": 1,
+        "precision": 1,
+        "recall": 1,
+        "specificity": 1,
+        "auc": 1
+      }
+    },
+    {
+      "algorithm": "Convolutional Neural Network: VGG19",
+      "feature_extraction": [
+        "MFCC-Slanley"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.7003,
+        "f1_score": 0.7003,
+        "precision": 0.7003,
+        "recall": 0.7003,
+        "specificity": 0.7672,
+        "auc": 0.7003
+      }
+    },
+    {
+      "algorithm": "Convolutional Neural Network: VGG19",
+      "feature_extraction": [
+        "MFCC-HTK"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9268,
+        "f1_score": 0.9268000000000001,
+        "precision": 0.9268,
+        "recall": 0.9268,
+        "specificity": 0.9533,
+        "auc": 0.9268000000000001
+      }
+    },
+    {
+      "algorithm": "Convolutional Neural Network: VGG19",
+      "feature_extraction": [
+        "Short-Time Fourier Transform"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9693,
+        "f1_score": 0.9693,
+        "precision": 0.9693,
+        "recall": 0.9693,
+        "specificity": 0.9954999999999999,
+        "auc": 0.9693
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Mobile Device Voice Recordings at King's College London",
+      "size": 37,
+      "pd_patients": 16,
+      "controls": 21,
+      "url": "https://zenodo.org/records/2867216",
+      "doi": "10.5281/zenodo.2867215"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Mobile Device Voice Recordings at King's College London",
+      "size": 37,
+      "pd_patients": 16,
+      "controls": 21,
+      "url": "https://zenodo.org/records/2867216",
+      "doi": "10.5281/zenodo.2867215"
+    }
+  ],
+  "study_id": "10.1007/s12652-022-04342-6_1"
+}

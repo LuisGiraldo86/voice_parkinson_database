@@ -1,0 +1,153 @@
+{
+  "_id": {
+    "$oid": "68ecf00b6c43da02c16892ea"
+  },
+  "title": "Analysis of Smartphone Recordings in Time, Frequency, and Cepstral Domains to Classify Parkinson's Disease",
+  "authors": [
+    {
+      "name": "Ilias Tougui1",
+      "affiliations": [
+        {
+          "institution": "Mohammed V University in Rabat",
+          "country": "Morocco"
+        }
+      ]
+    },
+    {
+      "name": "Abdelilah Jilbab1",
+      "affiliations": [
+        {
+          "institution": "Mohammed V University in Rabat",
+          "country": "Morocco"
+        }
+      ]
+    },
+    {
+      "name": "Jamal El Mhamdi1",
+      "affiliations": [
+        {
+          "institution": "Mohammed V University in Rabat",
+          "country": "Morocco"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Healthcare Informatics Research",
+  "year": 2020,
+  "doi": "10.4258/hir.2020.26.4.274",
+  "abstract": " Objectives: Parkinson's disease (PD) is the second most common neurodegenerative disorder; it affects more than 10 million people worldwide. Detecting PD usually requires a professional assessment by an expert, and investigation of the voice as a biomarker of the disease could be effective in speeding up the diagnostic process. Methods: We present our methodology in which we distinguish PD patients from healthy controls (HC) using a large sample of 18,210 smartphone recordings. Those recordings were processed by an audio processing technique to create a final dataset of 80,594 instances and 138 features from the time, frequency, and cepstral domains. This dataset was preprocessed and normalized to create baseline machine-learning models using four classifiers, namely, linear support vector machine, K-nearest neighbor, random forest, and extreme gradient boosting (XGBoost). We divided our dataset into training and held-out test sets. Then we used stratified 5-fold cross-validation and four performance measures: accuracy, sensitivity, specificity, and F1-score to assess the performance of the models. We applied two feature selection methods, analysis of variance (ANOVA) and least absolute shrinkage and selection operator (LASSO), to reduce the dimensionality of the dataset by selecting the best subset of features that maximizes the performance of the classifiers. Results: LASSO outperformed ANOVA with almost the same number of features. With 33 features, XGBoost achieved a maximum accuracy of 95.31% on training data, and 95.78% by predicting unseen data. Conclusions: Developing a smartphone-based system that implements machine-learning techniques is an effective way to diagnose PD using the voice as a biomarker.",
+  "ml_approaches": [
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "feature_extraction": [
+        "Short-term Features",
+        "Mid-term Features"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "LASSO"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9578,
+        "recall": 0.9532,
+        "specificity": 0.9623,
+        "f1_score": 0.9573999999999999
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "feature_extraction": [
+        "Short-term Features",
+        "Mid-term Features"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "LASSO"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9562,
+        "recall": 0.9557,
+        "specificity": 0.9567,
+        "f1_score": 0.956
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_extraction": [
+        "Short-term Features",
+        "Mid-term Features"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "LASSO"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9452,
+        "recall": 0.9419,
+        "specificity": 0.9484,
+        "f1_score": 0.9447
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "feature_extraction": [
+        "Short-term Features",
+        "Mid-term Features"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "LASSO"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.7547,
+        "recall": 0.7775,
+        "specificity": 0.7321,
+        "f1_score": 0.7593000000000001
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "mPower",
+      "size": 398,
+      "pd_patients": 188,
+      "controls": 210,
+      "url": "https://www.synapse.org/Synapse:syn4993293/wiki/247859"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "mPower",
+      "size": 398,
+      "pd_patients": 188,
+      "controls": 210,
+      "url": "https://www.synapse.org/Synapse:syn4993293/wiki/247859"
+    }
+  ],
+  "study_id": "10.4258/hir.2020.26.4.274_1"
+}

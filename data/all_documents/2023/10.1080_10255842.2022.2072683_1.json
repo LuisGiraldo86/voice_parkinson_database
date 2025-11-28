@@ -1,0 +1,123 @@
+{
+  "_id": {
+    "$oid": "68ecf00b6c43da02c168931a"
+  },
+  "title": "Early detection of Parkinson disease using stacking ensemble method",
+  "authors": [
+    {
+      "name": "Saroj Kumar Biswas",
+      "affiliations": [
+        {
+          "institution": "National Institute of Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Arpita Nath Boruah",
+      "affiliations": [
+        {
+          "institution": "National Institute of Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Rajib Saha",
+      "affiliations": [
+        {
+          "institution": "National Institute of Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Ravi Shankar Raj",
+      "affiliations": [
+        {
+          "institution": "National Institute of Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Manomita Chakraborty",
+      "affiliations": [
+        {
+          "institution": "VIT-AP University",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Monali Bordoloi",
+      "affiliations": [
+        {
+          "institution": "VIT-AP University",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Computer Methods in Biomechanics and Biomedical Engineering",
+  "year": 2023,
+  "doi": "10.1080/10255842.2022.2072683",
+  "abstract": "Parkinson's disease (PD) is a common progressive neurodegenerative disorder that occurs due to corrosion of the substantianigra, located in the thalamic region of the human brain, and is responsible for the transmission of neural signals throughout the human body using brain chemical, termed as “dopamine.” Diagnosis of PD is difficult, as it is often affected by the characteristics of the medical data of the patients, which include the presence of various indicators, imbalance cases of patients' data records, similar cases of healthy/affected persons, etc. Hence, sometimes the process of diagnosis may also be affected by human error. To overcome this problem some intelligent models have been proposed; however, most of them are single classifier-based models and due to this these models cannot handle noisy and imbalanced data properly and thus sometimes overfit the model. To reduce bias and variance, and to avoid overfitting of a single classifier-based model, this paper proposes an ensemble-based PD diagnosis model, named Ensembled Expert System for Diagnosis of Parkinson's Disease (EESDPD) with relevant features and a simple stacking ensemble technique. The proposed EESDPD aggregates diverse assumptions for making the prediction. The performance of the proposed EESDPD is compared with the performances of logistic regression, SVM, Naïve Bayes, Random Forest, XGBoost, simple Decision Tree, B-TDS-PD and B-TESM-PD in terms of classification accuracy, precision, recall and F1-score measures.",
+  "ml_approaches": [
+    {
+      "algorithm": "Stacking Ensemble (Base: Random Forest, XGBoost; Meta: Logistic Regression)",
+      "feature_selection": {
+        "methods": [
+          "Correlation Matrix",
+          "Sequential Floating Forward Selection"
+        ],
+        "combination": "sequential"
+      },
+      "imbalance_handling": [
+        "Borderline-SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.932,
+        "precision": 0.9375,
+        "recall": 0.976,
+        "f1_score": 0.956
+      }
+    },
+    {
+      "algorithm": "Stacking Ensemble (Base: Random Forest, XGBoost; Meta: Logistic Regression)",
+      "imbalance_handling": [
+        "Borderline-SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.919,
+        "precision": 0.922,
+        "recall": 0.948,
+        "f1_score": 0.95
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1080/10255842.2022.2072683_1"
+}

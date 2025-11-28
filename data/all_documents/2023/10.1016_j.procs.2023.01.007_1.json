@@ -1,0 +1,198 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c16893fd"
+  },
+  "title": "Early detection of Parkinson's disease using machine learning",
+  "authors": [
+    {
+      "name": "Aditi Govindu",
+      "affiliations": [
+        {
+          "institution": "MIT-World Peace University",
+          "country": ""
+        }
+      ]
+    },
+    {
+      "name": "Sushila Palwe",
+      "affiliations": [
+        {
+          "institution": "MIT-World Peace University",
+          "country": ""
+        }
+      ]
+    }
+  ],
+  "publication_type": "Conference",
+  "journal": "Procedia Computer Science",
+  "year": 2023,
+  "doi": "10.1016/j.procs.2023.01.007",
+  "abstract": "Parkinson's disease (PD) is a neurodegenerative disorder affecting 60% of people over the age of 50 years. Patients with Parkinson's (PWP) face mobility challenges and speech difficulties, making physical visits for treatment and monitoring a hurdle. PD can be treated through early detection, thus enabling patients to lead a normal life. The rise of an aging population over the world emphasizes the need to detect PD early, remotely and accurately. This paper highlights the use of machine learning techniques in telemedicine to detect PD in its early stages. Research has been carried out on the MDVP audio data of 30 PWP and healthy people during training of 4 ML models. Comparison of results of classification by Support Vector Machine (SVM), Random Forest, K-Nearest Neighbors (KNN) and Logistic Regression models, yield Random Forest classifier as the ideal Machine Learning (ML) technique for detection of PD. Random Forest classifier model has a detection accuracy of 91.83% and sensitivity of 0.95. Through the findings of this paper, we aim to promote the use of ML in telemedicine, thereby providing a new lease of life to patients suffering from Parkinson's disease.",
+  "ml_approaches": [
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "results": {
+        "accuracy": 0.8367,
+        "precision": 1,
+        "recall": 0.83,
+        "auc": 0.636
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "results": {
+        "accuracy": 0.9183,
+        "precision": 0.95,
+        "recall": 0.86,
+        "auc": 0.701
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "results": {
+        "accuracy": 0.8571,
+        "precision": 1,
+        "recall": 0.84,
+        "auc": 0.682
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "results": {
+        "accuracy": 0.8571,
+        "precision": 0.95,
+        "recall": 0.86,
+        "auc": 0.701
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "results": {
+        "accuracy": 0.8367,
+        "precision": 1,
+        "recall": 0.83,
+        "auc": 0.636
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "results": {
+        "accuracy": 0.8367,
+        "precision": 1,
+        "recall": 0.9,
+        "auc": 0.818
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "results": {
+        "accuracy": 0.9175,
+        "precision": 1,
+        "recall": 0.86,
+        "auc": 0.727
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "results": {
+        "accuracy": 0.8367,
+        "precision": 0.92,
+        "recall": 0.9,
+        "auc": 0.779
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "results": {
+        "accuracy": 0.8571,
+        "precision": 0.89,
+        "recall": 0.92,
+        "auc": 0.811
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "results": {
+        "accuracy": 0.8571,
+        "precision": 0.89,
+        "recall": 0.92,
+        "auc": 0.811
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "results": {
+        "accuracy": 0.8163,
+        "precision": 0.82,
+        "recall": 0.94,
+        "auc": 0.817
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "results": {
+        "accuracy": 0.9183,
+        "precision": 0.95,
+        "recall": 0.95,
+        "auc": 0.883
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1016/j.procs.2023.01.007_1"
+}

@@ -1,0 +1,77 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c1689405"
+  },
+  "title": "Addressing smartphone mismatch in Parkinson's disease detection aid systems based on speech",
+  "authors": [
+    {
+      "name": "Mario Madruga",
+      "affiliations": [
+        {
+          "institution": "Universidad de Extremadura",
+          "country": "Spain"
+        }
+      ]
+    },
+    {
+      "name": "Yolanda Campos-Roca",
+      "affiliations": [
+        {
+          "institution": "Universidad de Extremadura",
+          "country": "Spain"
+        }
+      ]
+    },
+    {
+      "name": "Carlos J. Pérez",
+      "affiliations": [
+        {
+          "institution": "Universidad de Extremadura",
+          "country": "Spain"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Biomedical Signal Processing and Control",
+  "year": 2023,
+  "doi": "10.1016/j.bspc.2022.104281",
+  "abstract": "Objective: Voice analysis based systems offer low-cost, highly available automatic diagnostic aid for Parkinson's disease (PD) detection anywhere a smartphone with a broadband connection is available. However, reliability depends on factors affecting the communication channel. In this paper the effects of recording device mismatch are analyzed. Multicondition training (MCT) is proposed to improve robustness against that mismatch. Methods: An experiment on 30 PD patients and 30 healthy subjects was designed. 3 vocalizations of sustained a were recorded using a smartphone. These recordings, along with a simulation of 8 additional smartphones, were analyzed. Acoustical features were extracted and averaged per patient and recording device. Machine learning was used to distinguish healthy from PD patients by using different combinations of train-test smartphones. Results: By using the same device for training and testing, a 10% best-worse mean accuracy drop is observed. The gap among different devices reaches 37%. MCT retains 90% of the maximum accuracy and exceeds a 20% mean accuracy while lowers dispersion of the aggregated results obtained with single condition. Smartphone position shows a direct impact on performance. Conclusion: Recording device has a major effect on results. It is also found that positioning of the recording device might also be influential. Using MCT appears to improve robustness. Significance: Results support the use of mobile devices to create an automated PD detection test. It is also encouraged to consider the use of MCT to obtain more robust and reliable results across different devices.",
+  "ml_approaches": [
+    {
+      "algorithm": "Passive-Aggressive",
+      "training": "Multicondition training",
+      "data_augmentation": "smartphone simulation",
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination"
+        ]
+      },
+      "validation": "3-fold cross-validation",
+      "results": {
+        "accuracy": 0.731
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Extremadura Parkinson's Disease Dataset",
+      "size": 60,
+      "pd_patients": 30,
+      "controls": 30,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Extremadura Parkinson's Disease Dataset",
+      "size": 60,
+      "pd_patients": 30,
+      "controls": 30,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.1016/j.bspc.2022.104281_1"
+}

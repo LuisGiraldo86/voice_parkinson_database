@@ -1,0 +1,55 @@
+{
+  "_id": {
+    "$oid": "68ecf00b6c43da02c1689334"
+  },
+  "title": "A Machine Learning Approach for Early Identification of Prodromal Parkinson's Disease",
+  "authors": [
+    {
+      "name": "Anisha Vaish",
+      "affiliations": [
+        {
+          "institution": "Tesla STEM High School",
+          "country": "USA"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Cureus",
+  "year": 2024,
+  "doi": "10.7759/cureus.63240",
+  "abstract": "Parkinson's disease (PD) affects approximately 6 million people worldwide. Data analysis of early PD symptoms using machine learning (ML) models may provide an inexpensive, non-invasive, and simple method for the remote diagnosis of early PD. The aim of this project was to analyze voice, computer keystrokes, spiral drawings, and gait data involving PD patients and controls available in public databases using ML models and identify early PD characteristics that are more pronounced than others. An ML model was developed using Random Forest to analyze existing clinical data for PD patients, prodromal PD patients with REM (rapid eye movement) sleep behavior disorder (RBD) symptoms, and non-PD healthy controls. We reviewed and collected data from the UCI (University of California Irvine) Machine Learning Repository, PPMI (Parkinson's Progression Markers Initiative), and Kaggle databases. ML analysis was carried out on voice samples in PD and RBD patients, computer keystroke data, spiral drawings, and gait datasets. The ML prediction model developed may be helpful in improving risk prediction for PD, enabling early intervention and resource prioritization. The ML study suggests that voice analysis is the most robust test, followed by computer keystroke data, spiral drawings, and gait analysis, in that order. Voice is affected even in RBD patients, revealing that it is a sensitive and early measure of prodromal PD. The low accuracy of the analysis indicates that several PD-positive samples may remain undetected and unclassified. Combining all four features, that is, voice analysis, computer keystroke data, spiral drawings, and gait analysis, may improve the overall accuracy.",
+  "ml_approaches": [
+    {
+      "algorithm": "Random Forest",
+      "validation": "k-fold cross-validation",
+      "results": {
+        "accuracy": 0.8872,
+        "precision": 0.9086,
+        "recall": 0.9522,
+        "f1_score": 0.9277
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.7759/cureus.63240_1"
+}

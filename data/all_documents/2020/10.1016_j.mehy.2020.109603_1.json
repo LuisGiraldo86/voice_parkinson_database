@@ -1,0 +1,84 @@
+{
+  "_id": {
+    "$oid": "68ecf00b6c43da02c16892e6"
+  },
+  "title": "Early Diagnosis of Parkinson's Disease using Machine Learning Algorithms",
+  "authors": [
+    {
+      "name": "Zehra Karapinar Senturk",
+      "affiliations": [
+        {
+          "institution": "Duzce University",
+          "country": "Turkey"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Medical Hypotheses",
+  "year": 2020,
+  "doi": "10.1016/j.mehy.2020.109603",
+  "abstract": "Parkinson's disease is caused by the disruption of the brain cells that produce substance to allow brain cells to communicate with each other, called dopamine. The cells that produce dopamine in the brain are responsible for the control, adaptation and fluency of movements. When 60-80%of these cells are lost, then enough dopamine is not produced and Parkinson's motor symptoms appear. It is thought that the disease begins many years before the motor (movement related) symptoms and therefore, researchers are looking for ways to recognize the non-motor symptoms that appear early in the disease as early as possible, thereby halting the progression of the disease. In this paper, machine learning based diagnosis of Parkinson's disease is presented. The proposed diagnosis method consists of feature selection and classification processes. Feature Importance and Recursive Feature Elimination methods were considered for feature selection task. Classification and Regression Trees, Artificial Neural Networks, and Support Vector Machines were used for the classification of Parkinson's patients in the experiments. Support Vector Machines with Recursive Feature Elimination was shown to perform better than the other methods. 93.84% accuracy was achieved with the least number of voice features for Parkinson's diagnosis.",
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination"
+        ]
+      },
+      "validation": null,
+      "results": {
+        "accuracy": 0.9384
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination"
+        ]
+      },
+      "validation": null,
+      "results": {
+        "accuracy": 0.9154
+      }
+    },
+    {
+      "algorithm": "Classification and Regression Trees",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Feature Importance"
+        ]
+      },
+      "validation": null,
+      "results": {
+        "accuracy": 0.9076
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1016/j.mehy.2020.109603_1"
+}

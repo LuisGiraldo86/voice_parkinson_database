@@ -1,0 +1,287 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c1689377"
+  },
+  "title": "Speech processing for early Parkinson's disease diagnosis: machine learning and deep learning-based approach",
+  "authors": [
+    {
+      "name": "Rania Khaskhoussy",
+      "affiliations": [
+        {
+          "institution": "University of Sfax",
+          "country": "Tunisia"
+        }
+      ]
+    },
+    {
+      "name": "Yassine Ben Ayed",
+      "affiliations": [
+        {
+          "institution": "University of Sfax",
+          "country": "Tunisia"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Social Network Analysis and Mining",
+  "year": 2022,
+  "doi": "10.1007/s13278-022-00905-9",
+  "abstract": "Speech production disorders during Parkinson's Disease (PD) stand for one of the clinical markers which are representative of the evolution of motor and cognitive disability. Neurologists and scientists are currently searching for non-medical methods relying on speech signal analysis to control the assessment of speech disorders in Parkinsonian patients. In this research work, we propose a speech processing approach for early Parkinson disease diagnosis. In order to elaborate this work, we suggest using Support Vector Machines (SVM) as a machine learning method to classify data. Our database contains voice recordings of healthy people and PD patients. As far as this study is concerned, we set forward three types of features. Firstly, we invest the Mel Frequency Cepstral Coefficients (MFCC). Secondly, we use the deep features selected by AutoEncoder (AE). Finally, we introduce novel characteristics based on Gaussian Mixture Models-Universal Background Model (GMM-UBM) to extract the MFCC-GMM features. Our proposed characteristics: deep features-based AutoEncoder and MFCC-GMM, always present the highest detection accuracy 99% and 100%. This proves that our approach based on speech can detect the PD without having a medical test.",
+  "citescore": 4.6,
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "feature_extraction": [
+        "Mel-Frequency Cepstral Coefficients",
+        "Delta Mel-Frequency Cepstral Coefficients",
+        "Delta-Delta Mel-Frequency Cepstral Coefficients"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.84,
+        "precision": 0.82,
+        "recall": 0.88,
+        "f1_score": 0.85
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "feature_extraction": [
+        "Mel-Frequency Cepstral Coefficients",
+        "Delta Mel-Frequency Cepstral Coefficients",
+        "Delta-Delta Mel-Frequency Cepstral Coefficients"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.92,
+        "precision": 0.91,
+        "recall": 0.9,
+        "f1_score": 0.93
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Polynomial",
+      "framework": "",
+      "feature_extraction": [
+        "Mel-Frequency Cepstral Coefficients",
+        "Delta Mel-Frequency Cepstral Coefficients",
+        "Delta-Delta Mel-Frequency Cepstral Coefficients"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.93,
+        "precision": 0.9,
+        "recall": 0.97,
+        "f1_score": 0.93
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Sigmoid",
+      "framework": "",
+      "feature_extraction": [
+        "Mel-Frequency Cepstral Coefficients",
+        "Delta Mel-Frequency Cepstral Coefficients",
+        "Delta-Delta Mel-Frequency Cepstral Coefficients"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.72,
+        "precision": 0.78,
+        "recall": 0.66,
+        "f1_score": 0.73
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "feature_extraction": [
+        "Mel-Frequency Cepstral Coefficients",
+        "Delta Mel-Frequency Cepstral Coefficients",
+        "Delta-Delta Mel-Frequency Cepstral Coefficients"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Autoencoder"
+        ]
+      },
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.84,
+        "precision": 0.87,
+        "recall": 0.89,
+        "f1_score": 0.85
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "feature_extraction": [
+        "Mel-Frequency Cepstral Coefficients",
+        "Delta Mel-Frequency Cepstral Coefficients",
+        "Delta-Delta Mel-Frequency Cepstral Coefficients"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Autoencoder"
+        ]
+      },
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.95,
+        "precision": 0.94,
+        "recall": 0.99,
+        "f1_score": 0.96
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Polynomial",
+      "framework": "",
+      "feature_extraction": [
+        "Mel-Frequency Cepstral Coefficients",
+        "Delta Mel-Frequency Cepstral Coefficients",
+        "Delta-Delta Mel-Frequency Cepstral Coefficients"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Autoencoder"
+        ]
+      },
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.95,
+        "precision": 0.94,
+        "recall": 0.8,
+        "f1_score": 0.73
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Sigmoid",
+      "framework": "",
+      "feature_extraction": [
+        "Mel-Frequency Cepstral Coefficients",
+        "Delta Mel-Frequency Cepstral Coefficients",
+        "Delta-Delta Mel-Frequency Cepstral Coefficients"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Autoencoder"
+        ]
+      },
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.74,
+        "precision": 0.78,
+        "recall": 0.8,
+        "f1_score": 0.73
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "feature_extraction": [
+        "Mel-Frequency Cepstral Coefficients",
+        "Delta Mel-Frequency Cepstral Coefficients",
+        "Delta-Delta Mel-Frequency Cepstral Coefficients"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Gaussian Mixture Model-Universal Background Model"
+        ]
+      },
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.9818,
+        "precision": 0.97,
+        "recall": 0.96,
+        "f1_score": 0.98
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "feature_extraction": [
+        "Mel-Frequency Cepstral Coefficients",
+        "Delta Mel-Frequency Cepstral Coefficients",
+        "Delta-Delta Mel-Frequency Cepstral Coefficients"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Gaussian Mixture Model-Universal Background Model"
+        ]
+      },
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.9939,
+        "precision": 0.98,
+        "recall": 0.97,
+        "f1_score": 0.97
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Polynomial",
+      "framework": "",
+      "feature_extraction": [
+        "Mel-Frequency Cepstral Coefficients",
+        "Delta Mel-Frequency Cepstral Coefficients",
+        "Delta-Delta Mel-Frequency Cepstral Coefficients"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Gaussian Mixture Model-Universal Background Model"
+        ]
+      },
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 1,
+        "precision": 0.99,
+        "recall": 0.98,
+        "f1_score": 0.98
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Sigmoid",
+      "framework": "",
+      "feature_extraction": [
+        "Mel-Frequency Cepstral Coefficients",
+        "Delta Mel-Frequency Cepstral Coefficients",
+        "Delta-Delta Mel-Frequency Cepstral Coefficients"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Gaussian Mixture Model-Universal Background Model"
+        ]
+      },
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 1,
+        "precision": 0.93,
+        "recall": 0.91,
+        "f1_score": 0.92
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Custom dataset: Khaskhoussy and Ben Ayed 2021",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Custom dataset: Khaskhoussy and Ben Ayed 2021",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.1007/s13278-022-00905-9_1"
+}

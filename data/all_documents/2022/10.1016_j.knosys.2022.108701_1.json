@@ -1,0 +1,401 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c16893f3"
+  },
+  "title": "Binary Grey Wolf Optimizer with Mutation and Adaptive K-nearest Neighbour for Feature Selection in Parkinson's Disease Diagnosis",
+  "authors": [
+    {
+      "name": "Rajalaxmi Ramasamy Rajammal",
+      "affiliations": [
+        {
+          "institution": "Kongu Engineering College",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Seyedali Mirjalili",
+      "affiliations": [
+        {
+          "institution": "Torrens University",
+          "country": "Australia"
+        },
+        {
+          "institution": "Yonsei University",
+          "country": "South Korea"
+        }
+      ]
+    },
+    {
+      "name": "Gothai Ekambaram",
+      "affiliations": [
+        {
+          "institution": "Kongu Engineering College",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Natesan Palanisamy",
+      "affiliations": [
+        {
+          "institution": "Kongu Engineering College",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Knowledge-Based Systems",
+  "year": 2022,
+  "doi": "10.1016/j.knosys.2022.108701",
+  "abstract": "Disease identification and classification relies on Feature Selection (FS) to find the relevant features for accurate medical diagnosis. FS is an optimization problem solved with the help of stochastic optimization strategies. Research on selection of relevant features in Parkinson's disease is challenging due to the lack of enough information about the disease. In this work, a wrapper-based Binary Improved Grey Wolf Optimizer (BIGWO) approach is developed for categorizing the Parkinson’s disease with optimal set of features. The proposed approach employs five different transfer functions to encode the search space of features. A mutation operation in BIGWO fine tunes the search process to determine the best features for disease diagnosis. Further, the number of neighbours in k-Nearest Neighbour (kNN) is optimized using the Adaptive kNN (AkNN) in the fitness evaluation of the BIGWO algorithm which improves classification performance. Different variants of the proposed BIGWO algorithm are compared with other algorithms to assess their performance. Experiments are conducted on four benchmark datasets that demonstrate the two variant BIGWO-V1 and BIGWO-V2 algorithms outperform other four meta-heuristic (GA, PSO, BBA, and MCS) algorithms.",
+  "ml_approaches": [
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Binary Improved Grey Wolf Optimizer (S)"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8858
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Binary Improved Grey Wolf Optimizer (S)"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9103
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Binary Improved Grey Wolf Optimizer (S)"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.7979
+      }
+    },
+    {
+      "algorithm": "Adaptive K-Nearest Neighbour",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Binary Improved Grey Wolf Optimizer (S)"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9353
+      }
+    },
+    {
+      "algorithm": "Aritificial Neural Network",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Binary Improved Grey Wolf Optimizer (S)"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9143
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Binary Improved Grey Wolf Optimizer (V1)"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8817
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Binary Improved Grey Wolf Optimizer (V1)"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9042
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Binary Improved Grey Wolf Optimizer (V1)"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.803
+      }
+    },
+    {
+      "algorithm": "Adaptive K-Nearest Neighbour",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Binary Improved Grey Wolf Optimizer (V1)"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9156
+      }
+    },
+    {
+      "algorithm": "Aritificial Neural Network",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Binary Improved Grey Wolf Optimizer (V1)"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8946
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Binary Improved Grey Wolf Optimizer (V2)"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9096
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Binary Improved Grey Wolf Optimizer (V2)"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9095
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Binary Improved Grey Wolf Optimizer (V2)"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8285
+      }
+    },
+    {
+      "algorithm": "Adaptive K-Nearest Neighbour",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Binary Improved Grey Wolf Optimizer (V2)"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9488
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Binary Improved Grey Wolf Optimizer (V2)"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9141
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Binary Improved Grey Wolf Optimizer (V3)"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8827
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Binary Improved Grey Wolf Optimizer (V3)"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8959
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Binary Improved Grey Wolf Optimizer (V3)"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8092
+      }
+    },
+    {
+      "algorithm": "Adaptive K-Nearest Neighbour",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Binary Improved Grey Wolf Optimizer (V3)"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9221
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Binary Improved Grey Wolf Optimizer (V3)"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.886
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Binary Improved Grey Wolf Optimizer (V4)"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8796
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Binary Improved Grey Wolf Optimizer (V4)"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8962
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Binary Improved Grey Wolf Optimizer (V4)"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8021
+      }
+    },
+    {
+      "algorithm": "Adaptive K-Nearest Neighbour",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Binary Improved Grey Wolf Optimizer (V4)"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9346
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Binary Improved Grey Wolf Optimizer (V4)"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8836
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1016/j.knosys.2022.108701_1"
+}

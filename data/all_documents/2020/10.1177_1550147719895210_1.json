@@ -1,0 +1,626 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c168936c"
+  },
+  "title": "Hybrid chaotic firefly decision making model for Parkinson's disease diagnosis",
+  "authors": [
+    {
+      "name": "Sujata Dash",
+      "affiliations": [
+        {
+          "institution": "North Orissa University",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Ajith Abraham",
+      "affiliations": [
+        {
+          "institution": "Machine Intelligence Research Labs",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Ashish Kr Luhach",
+      "affiliations": [
+        {
+          "institution": "The Papua New Guinea University of Technology",
+          "country": "Papua New Guinea"
+        }
+      ]
+    },
+    {
+      "name": "Jolanta Mizera-Pietraszko",
+      "affiliations": [
+        {
+          "institution": "Opole University",
+          "country": "Poland"
+        }
+      ]
+    },
+    {
+      "name": "Joel JPC Rodrigues",
+      "affiliations": [
+        {
+          "institution": "Instituto de Telecomunicações",
+          "country": "Portugal"
+        },
+        {
+          "institution": "Federal University of Piauí",
+          "country": "Brazil"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "International Journal of Distributed Sensor Networks",
+  "year": 2020,
+  "doi": "10.1177/1550147719895210",
+  "abstract": "Parkinson's disease is found as a progressive neurodegenerative condition which affects motor circuit by the loss of up to 70% of dopaminergic neurons. Thus, diagnosing the early stages of incidence is of great importance. In this article, a novel chaos-based stochastic model is proposed by combining the characteristics of chaotic firefly algorithm with Kernel-based Naive Bayes (KNB) algorithm for diagnosis of Parkinson's disease at an early stage. The efficiency of the model is tested on a voice measurement dataset that is collected from UC Irvine Machine Learning Repository. The dynamics of chaos optimization algorithm will enhance the firefly algorithm by introducing six types of chaotic maps which will increase the diversification and intensification capability of chaos-based firefly algorithm. The objective of chaos-based maps is to select initial values of the population of fireflies and change the value of absorption coefficient so as to increase the diversity of populations and improve the search process to achieve global optima avoiding the local optima. For selecting the most discriminant features from the search space, Naive Bayesian stochastic algorithm with kernel density estimation as learning algorithm is applied to evaluate the discriminative features from different perspectives, namely, subset size, accuracy, stability, and generalization. The experimental study of the problem established that chaos-based logistic model overshadowed other chaotic models. In addition, four widely used classifiers such as Naive Bayes classifier, k-nearest neighbor, decision tree, and radial basis function classifier are used to prove the generalization and stability of the logistic chaotic model. As a result, the model identified as the best one and could be used as a decision making tool by clinicians to diagnose Parkinson's disease patients.",
+  "ml_approaches": [
+    {
+      "algorithm": "Naive Bayes: Kernel-based",
+      "framework": "WEKA",
+      "feature_selection": {
+        "methods": [
+          "Chaotic Firefly Algorithm: Logistic Map"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.89,
+        "recall": 0.89,
+        "f1_score": 0.88,
+        "mcc": 0.71,
+        "fall_out": 30,
+        "auc": 0.91
+      }
+    },
+    {
+      "algorithm": "Naive Bayes: Kernel-based",
+      "framework": "WEKA",
+      "feature_selection": {
+        "methods": [
+          "Chaotic Firefly Algorithm: Sine Map"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.86,
+        "recall": 0.86,
+        "f1_score": 0.85,
+        "mcc": 0.59,
+        "fall_out": 32,
+        "auc": 0.87
+      }
+    },
+    {
+      "algorithm": "Naive Bayes: Kernel-based",
+      "framework": "WEKA",
+      "feature_selection": {
+        "methods": [
+          "Chaotic Firefly Algorithm: Piecewise Map"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.85,
+        "recall": 0.84,
+        "f1_score": 0.84,
+        "mcc": 0.57,
+        "fall_out": 34,
+        "auc": 0.9
+      }
+    },
+    {
+      "algorithm": "Naive Bayes: Kernel-based",
+      "framework": "WEKA",
+      "feature_selection": {
+        "methods": [
+          "Chaotic Firefly Algorithm: Chebyshev Map"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.87,
+        "recall": 0.87,
+        "f1_score": 0.86,
+        "mcc": 0.64,
+        "fall_out": 32,
+        "auc": 0.9
+      }
+    },
+    {
+      "algorithm": "Naive Bayes: Kernel-based",
+      "framework": "WEKA",
+      "feature_selection": {
+        "methods": [
+          "Chaotic Firefly Algorithm: Circle Map"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.87,
+        "recall": 0.87,
+        "f1_score": 0.86,
+        "mcc": 0.59,
+        "fall_out": 34,
+        "auc": 0.86
+      }
+    },
+    {
+      "algorithm": "Naive Bayes: Kernel-based",
+      "framework": "WEKA",
+      "feature_selection": {
+        "methods": [
+          "Chaotic Firefly Algorithm: Gauss Map"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.84,
+        "recall": 0.84,
+        "f1_score": 0.83,
+        "mcc": 0.52,
+        "fall_out": 33,
+        "auc": 0.85
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "WEKA",
+      "feature_selection": {
+        "methods": [
+          "Chaotic Firefly Algorithm: Logistic Map"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.84,
+        "recall": 0.84,
+        "f1_score": 0.83,
+        "mcc": 0.58,
+        "fall_out": 31,
+        "auc": 0.87
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "WEKA",
+      "feature_selection": {
+        "methods": [
+          "Chaotic Firefly Algorithm: Sine Map"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.82,
+        "recall": 0.82,
+        "f1_score": 0.81,
+        "mcc": 0.5,
+        "fall_out": 33,
+        "auc": 0.84
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "WEKA",
+      "feature_selection": {
+        "methods": [
+          "Chaotic Firefly Algorithm: Piecewise Map"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.82,
+        "recall": 0.82,
+        "f1_score": 0.82,
+        "mcc": 0.51,
+        "fall_out": 33,
+        "auc": 0.88
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "WEKA",
+      "feature_selection": {
+        "methods": [
+          "Chaotic Firefly Algorithm: Chebyshev Map"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.81,
+        "recall": 0.81,
+        "f1_score": 0.81,
+        "mcc": 0.51,
+        "fall_out": 31,
+        "auc": 0.88
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "WEKA",
+      "feature_selection": {
+        "methods": [
+          "Chaotic Firefly Algorithm: Circle Map"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.82,
+        "recall": 0.82,
+        "f1_score": 0.81,
+        "mcc": 0.55,
+        "fall_out": 36,
+        "auc": 0.87
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "WEKA",
+      "feature_selection": {
+        "methods": [
+          "Chaotic Firefly Algorithm: Gauss Map"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.79,
+        "recall": 0.79,
+        "f1_score": 0.79,
+        "mcc": 0.45,
+        "fall_out": 32,
+        "auc": 0.85
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "WEKA",
+      "feature_selection": {
+        "methods": [
+          "Chaotic Firefly Algorithm: Logistic Map"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.86,
+        "recall": 0.86,
+        "f1_score": 0.85,
+        "mcc": 0.69,
+        "fall_out": 33,
+        "auc": 0.91
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "WEKA",
+      "feature_selection": {
+        "methods": [
+          "Chaotic Firefly Algorithm: Sine Map"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.86,
+        "recall": 0.86,
+        "f1_score": 0.85,
+        "mcc": 0.6,
+        "fall_out": 36,
+        "auc": 0.88
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "WEKA",
+      "feature_selection": {
+        "methods": [
+          "Chaotic Firefly Algorithm: Piecewise Map"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.86,
+        "recall": 0.86,
+        "f1_score": 0.85,
+        "mcc": 0.6,
+        "fall_out": 33,
+        "auc": 0.89
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "WEKA",
+      "feature_selection": {
+        "methods": [
+          "Chaotic Firefly Algorithm: Chebyshev Map"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.87,
+        "recall": 0.87,
+        "f1_score": 0.85,
+        "mcc": 0.62,
+        "fall_out": 34,
+        "auc": 0.9
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "WEKA",
+      "feature_selection": {
+        "methods": [
+          "Chaotic Firefly Algorithm: Circle Map"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.86,
+        "recall": 0.86,
+        "f1_score": 0.85,
+        "mcc": 0.6,
+        "fall_out": 34,
+        "auc": 0.9
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "WEKA",
+      "feature_selection": {
+        "methods": [
+          "Chaotic Firefly Algorithm: Gauss Map"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.86,
+        "recall": 0.86,
+        "f1_score": 0.85,
+        "mcc": 0.51,
+        "fall_out": 33,
+        "auc": 0.88
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "WEKA",
+      "feature_selection": {
+        "methods": [
+          "Chaotic Firefly Algorithm: Logistic Map"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9,
+        "recall": 0.9,
+        "f1_score": 0.9,
+        "mcc": 0.63,
+        "fall_out": 15,
+        "auc": 0.89
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "WEKA",
+      "feature_selection": {
+        "methods": [
+          "Chaotic Firefly Algorithm: Sine Map"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.87,
+        "recall": 0.87,
+        "f1_score": 0.87,
+        "mcc": 0.66,
+        "fall_out": 22,
+        "auc": 0.83
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "WEKA",
+      "feature_selection": {
+        "methods": [
+          "Chaotic Firefly Algorithm: Piecewise Map"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.87,
+        "recall": 0.87,
+        "f1_score": 0.87,
+        "mcc": 0.65,
+        "fall_out": 21,
+        "auc": 0.83
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "WEKA",
+      "feature_selection": {
+        "methods": [
+          "Chaotic Firefly Algorithm: Chebyshev Map"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.89,
+        "recall": 0.89,
+        "f1_score": 0.9,
+        "mcc": 0.74,
+        "fall_out": 11,
+        "auc": 0.89
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "WEKA",
+      "feature_selection": {
+        "methods": [
+          "Chaotic Firefly Algorithm: Circle Map"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.86,
+        "recall": 0.86,
+        "f1_score": 0.86,
+        "mcc": 0.62,
+        "fall_out": 25,
+        "auc": 0.82
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "WEKA",
+      "feature_selection": {
+        "methods": [
+          "Chaotic Firefly Algorithm: Gauss Map"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.87,
+        "recall": 0.87,
+        "f1_score": 0.87,
+        "mcc": 0.66,
+        "fall_out": 18,
+        "auc": 0.86
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "framework": "WEKA",
+      "feature_selection": {
+        "methods": [
+          "Chaotic Firefly Algorithm: Logistic Map"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.83,
+        "recall": 0.83,
+        "f1_score": 0.82,
+        "mcc": 0.53,
+        "fall_out": 32,
+        "auc": 0.79
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "framework": "WEKA",
+      "feature_selection": {
+        "methods": [
+          "Chaotic Firefly Algorithm: Sine Map"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.87,
+        "recall": 0.87,
+        "f1_score": 0.86,
+        "mcc": 0.66,
+        "fall_out": 29,
+        "auc": 0.81
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "framework": "WEKA",
+      "feature_selection": {
+        "methods": [
+          "Chaotic Firefly Algorithm: Piecewise Map"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.88,
+        "recall": 0.88,
+        "f1_score": 0.87,
+        "mcc": 0.67,
+        "fall_out": 29,
+        "auc": 0.8
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "framework": "WEKA",
+      "feature_selection": {
+        "methods": [
+          "Chaotic Firefly Algorithm: Chebyshev Map"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.86,
+        "recall": 0.86,
+        "f1_score": 0.85,
+        "mcc": 0.73,
+        "fall_out": 33,
+        "auc": 0.87
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "framework": "WEKA",
+      "feature_selection": {
+        "methods": [
+          "Chaotic Firefly Algorithm: Circle Map"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.83,
+        "recall": 0.83,
+        "f1_score": 0.82,
+        "mcc": 0.52,
+        "fall_out": 38,
+        "auc": 0.71
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "framework": "WEKA",
+      "feature_selection": {
+        "methods": [
+          "Chaotic Firefly Algorithm: Gauss Map"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.85,
+        "recall": 0.85,
+        "f1_score": 0.85,
+        "mcc": 0.66,
+        "fall_out": 27,
+        "auc": 0.82
+      }
+    }
+  ],
+  "note": "Authors report MSE for a classification task.",
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1177/1550147719895210_1"
+}

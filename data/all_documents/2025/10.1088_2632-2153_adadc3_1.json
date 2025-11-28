@@ -1,0 +1,178 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893d1"
+  },
+  "title": "Improving detection of Parkinson's disease with acoustic feature optimization using particle swarm optimization and machine learning",
+  "authors": [
+    {
+      "name": "Elmoundher Hadjaidji",
+      "affiliations": [
+        {
+          "institution": "Mohamed Cherif Messaadia University",
+          "country": "Algeria"
+        }
+      ]
+    },
+    {
+      "name": "Mohamed Cherif Amara Korba",
+      "affiliations": [
+        {
+          "institution": "Mohamed Cherif Messaadia University",
+          "country": "Algeria"
+        }
+      ]
+    },
+    {
+      "name": "Khaled Khelil",
+      "affiliations": [
+        {
+          "institution": "Mohamed Cherif Messaadia University",
+          "country": "Algeria"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Scientific Reports",
+  "year": 2025,
+  "doi": "10.1088/2632-2153/adadc3",
+  "abstract": "Parkinson's disease (PD), characterized by motor impairments and tremors, also presents early-stage vocal abnormalities that hold diagnostic potential. Leveraging voice analysis and classification techniques, numerous studies explore the feasibility of early PD detection through automated systems. While several databases offer acoustic features for this purpose, their effectiveness largely depends on the classification methodology employed. This study aims to refine PD detection systems by introducing customized weighting to acoustic features, adjusting their significance based on their correlation with the disease and the classification algorithm utilized. The particle swarm optimization algorithm is employed for this purpose, with the Oxford PD dataset serving as the source data for training and validation. Performance evaluation encompasses four classification algorithms: support vector machine, Gradient Boosting (GB), k-nearest neighbors (KNN), and Naïve Bayes. A 5-fold cross-validation technique was adopted to evaluate the effectiveness of our method for PD detection. The results show that our approach significantly improves performance regardless of the classifier used, demonstrating its generalization capability. The KNN classifier surpasses state-of-the-art results, achieving an accuracy of 97.44% and a sensitivity of 98.02%.",
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Particle Swarm Optimization"
+        ]
+      },
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.8564,
+        "recall": 0.8509,
+        "mcc": 0.663,
+        "f1_score": 0.863,
+        "auc": 0.909
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Particle Swarm Optimization"
+        ]
+      },
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.9282,
+        "recall": 0.9343,
+        "mcc": 0.827,
+        "f1_score": 0.93,
+        "auc": 0.954
+      }
+    },
+    {
+      "algorithm": "Gradient Boosting",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Particle Swarm Optimization"
+        ]
+      },
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.9538,
+        "recall": 0.9808,
+        "mcc": 0.869,
+        "f1_score": 0.953,
+        "auc": 0.953
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Particle Swarm Optimization"
+        ]
+      },
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.7744,
+        "recall": 0.7374,
+        "mcc": 0.56,
+        "f1_score": 0.79,
+        "auc": 0.869
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Particle Swarm Optimization"
+        ]
+      },
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.9744,
+        "recall": 0.9802,
+        "mcc": 0.933,
+        "f1_score": 0.974,
+        "auc": 0.972
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1088/2632-2153/adadc3_1"
+}

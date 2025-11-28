@@ -1,0 +1,646 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c168937e"
+  },
+  "title": "The ForEx++ based decision tree ensemble approach for robust detection of Parkinson’s disease",
+  "authors": [
+    {
+      "name": "Moumita Pramanik",
+      "affiliations": [
+        {
+          "institution": "Sikkim Manipal University",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Ratika Pradhan",
+      "affiliations": [
+        {
+          "institution": "Sikkim Institute of Science and Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Parvati Nandy",
+      "affiliations": [
+        {
+          "institution": "Sikkim Manipal University",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Akash Kumar Bhoi",
+      "affiliations": [
+        {
+          "institution": "Sikkim Manipal University",
+          "country": "India"
+        },
+        {
+          "institution": "National Research Council",
+          "country": "Italy"
+        },
+        {
+          "institution": "KIET Group of Institutions",
+          "country": "India"
+        },
+        {
+          "institution": "AB-Tech eResearch",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Paolo Barsocchi",
+      "affiliations": [
+        {
+          "institution": "National Research Council",
+          "country": "Italy"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Journal of Ambient Intelligence and Humanized Computing",
+  "year": 2022,
+  "doi": "10.1007/s12652-022-03719-x",
+  "abstract": "The progressive reduction of dopaminergic neurons in the human brain, especially at the substantia nigra is one of the principal causes of Parkinson's Disease (PD). Voice alteration is one of the earliest symptoms found in PD patients. Therefore, the impaired PD subjects' acoustic voice signal plays a crucial role in detecting the presence of Parkinson's. This manuscript presents four distinct decision tree ensemble methods of PD detection on a trailblazing ForEx++ rule-based framework. The Systematically Developed Forest (SysFor) and a Penalizing Attributes Decision Forest (ForestPA) ensemble approaches has been used for PD detection. The proposed detection schemes efficiently identify positive subjects using primary voice signal features, viz., baseline, vocal fold, and time-frequency. A novel feature selection scheme termed Feature Ranking to Feature Selection (FRFS) has also been proposed to combine filter and wrapper strategies. The proposed FRFS scheme encompasses Gel's normality test to rank and selects outstanding features from baseline, time-frequency, and vocal fold feature groups. The SysFor and ForestPA decision forests underneath the ForEx++ rule-based framework on both FRFS feature ranking and subset selection represents Parkinson's detection approaches, which expedite a better overall impact on segregating PD from control subjects. It has been observed that the ForestPA decision forest in the ForEx++ framework on FRFS ranked features proved to be a robust Parkinson's detection scheme. The proposed models deliver the highest accuracy of 94.12% and a lowest mean absolute error of 0.25, resulting in an Area Under Curve (AUC) value of 0.97.",
+  "ml_approaches": [
+    {
+      "algorithm": "Systematically Developed Forest",
+      "null_handling": "K-Nearest Neighbors",
+      "feature_extraction": [
+        "Baseline Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Feature Ranking to Feature Selection: Ranking"
+        ]
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.7857,
+        "auc": 0.6,
+        "prc": 0.68
+      }
+    },
+    {
+      "algorithm": "Systematically Developed Forest",
+      "null_handling": "K-Nearest Neighbors",
+      "feature_extraction": [
+        "Baseline Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Feature Ranking to Feature Selection: Subset"
+        ]
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.7857,
+        "auc": 0.66,
+        "prc": 0.72
+      }
+    },
+    {
+      "algorithm": "Systematically Developed Forest",
+      "null_handling": "K-Nearest Neighbors",
+      "feature_extraction": [
+        "Time Frequency Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Feature Ranking to Feature Selection: Ranking"
+        ]
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.7778,
+        "auc": 0.67,
+        "prc": 0.71
+      }
+    },
+    {
+      "algorithm": "Systematically Developed Forest",
+      "null_handling": "K-Nearest Neighbors",
+      "feature_extraction": [
+        "Time Frequency Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Feature Ranking to Feature Selection: Subset"
+        ]
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.746,
+        "auc": 0.49,
+        "prc": 0.62
+      }
+    },
+    {
+      "algorithm": "Systematically Developed Forest",
+      "null_handling": "K-Nearest Neighbors",
+      "feature_extraction": [
+        "Vocal Fold Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Feature Ranking to Feature Selection: Ranking"
+        ]
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.7897,
+        "auc": 0.62,
+        "prc": 0.69
+      }
+    },
+    {
+      "algorithm": "Systematically Developed Forest",
+      "null_handling": "K-Nearest Neighbors",
+      "feature_extraction": [
+        "Vocal Fold Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Feature Ranking to Feature Selection: Subset"
+        ]
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.75,
+        "auc": 0.67,
+        "prc": 0.72
+      }
+    },
+    {
+      "algorithm": "Systematically Developed Forest",
+      "null_handling": "K-Nearest Neighbors",
+      "feature_selection": {
+        "methods": [
+          "Feature Ranking to Feature Selection: Ranking"
+        ]
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.8214,
+        "auc": 0.77,
+        "prc": 0.81
+      }
+    },
+    {
+      "algorithm": "Systematically Developed Forest",
+      "null_handling": "K-Nearest Neighbors",
+      "feature_selection": {
+        "methods": [
+          "Feature Ranking to Feature Selection: Subset"
+        ]
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.7973,
+        "auc": 0.63,
+        "prc": 0.71
+      }
+    },
+    {
+      "algorithm": "Penalizing Attributes Decision Forest",
+      "null_handling": "K-Nearest Neighbors",
+      "feature_extraction": [
+        "Baseline Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Feature Ranking to Feature Selection: Ranking"
+        ]
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.7897,
+        "auc": 0.71,
+        "prc": 0.77
+      }
+    },
+    {
+      "algorithm": "Penalizing Attributes Decision Forest",
+      "null_handling": "K-Nearest Neighbors",
+      "feature_extraction": [
+        "Baseline Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Feature Ranking to Feature Selection: Subset"
+        ]
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.7659,
+        "auc": 0.71,
+        "prc": 0.76
+      }
+    },
+    {
+      "algorithm": "Penalizing Attributes Decision Forest",
+      "null_handling": "K-Nearest Neighbors",
+      "feature_extraction": [
+        "Time Frequency Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Feature Ranking to Feature Selection: Ranking"
+        ]
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.7817,
+        "auc": 0.72,
+        "prc": 0.77
+      }
+    },
+    {
+      "algorithm": "Penalizing Attributes Decision Forest",
+      "null_handling": "K-Nearest Neighbors",
+      "feature_extraction": [
+        "Time Frequency Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Feature Ranking to Feature Selection: Subset"
+        ]
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.7421,
+        "auc": 0.55,
+        "prc": 0.67
+      }
+    },
+    {
+      "algorithm": "Penalizing Attributes Decision Forest",
+      "null_handling": "K-Nearest Neighbors",
+      "feature_extraction": [
+        "Vocal Fold Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Feature Ranking to Feature Selection: Ranking"
+        ]
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.8056,
+        "auc": 0.71,
+        "prc": 0.77
+      }
+    },
+    {
+      "algorithm": "Penalizing Attributes Decision Forest",
+      "null_handling": "K-Nearest Neighbors",
+      "feature_extraction": [
+        "Vocal Fold Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Feature Ranking to Feature Selection: Subset"
+        ]
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.7659,
+        "auc": 0.61,
+        "prc": 0.7
+      }
+    },
+    {
+      "algorithm": "Penalizing Attributes Decision Forest",
+      "null_handling": "K-Nearest Neighbors",
+      "feature_selection": {
+        "methods": [
+          "Feature Ranking to Feature Selection: Ranking"
+        ]
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.8016,
+        "auc": 0.73,
+        "prc": 0.79
+      }
+    },
+    {
+      "algorithm": "Penalizing Attributes Decision Forest",
+      "null_handling": "K-Nearest Neighbors",
+      "feature_selection": {
+        "methods": [
+          "Feature Ranking to Feature Selection: Subset"
+        ]
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.7659,
+        "auc": 0.64,
+        "prc": 0.72
+      }
+    },
+    {
+      "algorithm": "Systematically Developed Forest",
+      "null_handling": "K-Nearest Neighbors",
+      "feature_extraction": [
+        "Baseline Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Feature Ranking to Feature Selection: Ranking"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.7619,
+        "auc": 0.7,
+        "prc": 0.74
+      }
+    },
+    {
+      "algorithm": "Systematically Developed Forest",
+      "null_handling": "K-Nearest Neighbors",
+      "feature_extraction": [
+        "Baseline Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Feature Ranking to Feature Selection: Subset"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.7778,
+        "auc": 0.71,
+        "prc": 0.75
+      }
+    },
+    {
+      "algorithm": "Systematically Developed Forest",
+      "null_handling": "K-Nearest Neighbors",
+      "feature_extraction": [
+        "Time Frequency Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Feature Ranking to Feature Selection: Ranking"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.7778,
+        "auc": 0.71,
+        "prc": 0.74
+      }
+    },
+    {
+      "algorithm": "Systematically Developed Forest",
+      "null_handling": "K-Nearest Neighbors",
+      "feature_extraction": [
+        "Time Frequency Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Feature Ranking to Feature Selection: Subset"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.746,
+        "auc": 0.51,
+        "prc": 0.63
+      }
+    },
+    {
+      "algorithm": "Systematically Developed Forest",
+      "null_handling": "K-Nearest Neighbors",
+      "feature_extraction": [
+        "Vocal Fold Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Feature Ranking to Feature Selection: Ranking"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8056,
+        "auc": 0.69,
+        "prc": 0.75
+      }
+    },
+    {
+      "algorithm": "Systematically Developed Forest",
+      "null_handling": "K-Nearest Neighbors",
+      "feature_extraction": [
+        "Vocal Fold Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Feature Ranking to Feature Selection: Subset"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.7738,
+        "auc": 0.65,
+        "prc": 0.71
+      }
+    },
+    {
+      "algorithm": "Systematically Developed Forest",
+      "null_handling": "K-Nearest Neighbors",
+      "feature_selection": {
+        "methods": [
+          "Feature Ranking to Feature Selection: Ranking"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8373,
+        "auc": 0.78,
+        "prc": 0.82
+      }
+    },
+    {
+      "algorithm": "Systematically Developed Forest",
+      "null_handling": "K-Nearest Neighbors",
+      "feature_selection": {
+        "methods": [
+          "Feature Ranking to Feature Selection: Subset"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.7817,
+        "auc": 0.63,
+        "prc": 0.7
+      }
+    },
+    {
+      "algorithm": "Penalizing Attributes Decision Forest",
+      "null_handling": "K-Nearest Neighbors",
+      "feature_extraction": [
+        "Baseline Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Feature Ranking to Feature Selection: Ranking"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.7857,
+        "auc": 0.76,
+        "prc": 0.79
+      }
+    },
+    {
+      "algorithm": "Penalizing Attributes Decision Forest",
+      "null_handling": "K-Nearest Neighbors",
+      "feature_extraction": [
+        "Baseline Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Feature Ranking to Feature Selection: Subset"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.7676,
+        "auc": 0.74,
+        "prc": 0.78
+      }
+    },
+    {
+      "algorithm": "Penalizing Attributes Decision Forest",
+      "null_handling": "K-Nearest Neighbors",
+      "feature_extraction": [
+        "Time Frequency Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Feature Ranking to Feature Selection: Ranking"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.7857,
+        "auc": 0.72,
+        "prc": 0.77
+      }
+    },
+    {
+      "algorithm": "Penalizing Attributes Decision Forest",
+      "null_handling": "K-Nearest Neighbors",
+      "feature_extraction": [
+        "Time Frequency Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Feature Ranking to Feature Selection: Subset"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.75,
+        "auc": 0.55,
+        "prc": 0.66
+      }
+    },
+    {
+      "algorithm": "Penalizing Attributes Decision Forest",
+      "null_handling": "K-Nearest Neighbors",
+      "feature_extraction": [
+        "Vocal Fold Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Feature Ranking to Feature Selection: Ranking"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8016,
+        "auc": 0.7,
+        "prc": 0.75
+      }
+    },
+    {
+      "algorithm": "Penalizing Attributes Decision Forest",
+      "null_handling": "K-Nearest Neighbors",
+      "feature_extraction": [
+        "Vocal Fold Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Feature Ranking to Feature Selection: Subset"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.7659,
+        "auc": 0.63,
+        "prc": 0.71
+      }
+    },
+    {
+      "algorithm": "Penalizing Attributes Decision Forest",
+      "null_handling": "K-Nearest Neighbors",
+      "feature_selection": {
+        "methods": [
+          "Feature Ranking to Feature Selection: Ranking"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.7976,
+        "auc": 0.71,
+        "prc": 0.78
+      }
+    },
+    {
+      "algorithm": "Penalizing Attributes Decision Forest",
+      "null_handling": "K-Nearest Neighbors",
+      "feature_selection": {
+        "methods": [
+          "Feature Ranking to Feature Selection: Subset"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.7817,
+        "auc": 0.72,
+        "prc": 0.78
+      }
+    }
+  ],
+  "note": "Authors report MAE and RMSE for the models, while the data is for a classification task. Highly suspicious.",
+  "source_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "study_id": "10.1007/s12652-022-03719-x_1"
+}

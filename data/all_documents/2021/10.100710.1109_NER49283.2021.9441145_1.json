@@ -1,0 +1,135 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893c3"
+  },
+  "title": "Real-Time Screening of Parkinson's Disease based on Speech Analysis using Smartphone",
+  "authors": [
+    {
+      "name": "Tanvir Ehsan,",
+      "affiliations": [
+        {
+          "institution": "hulna University of Engineering and Technology",
+          "country": "Bangladesh"
+        }
+      ]
+    },
+    {
+      "name": "Shehan Irteza Pranto",
+      "affiliations": [
+        {
+          "institution": "Ahsanullah University of Science and Technology",
+          "country": "Bangladesh"
+        }
+      ]
+    },
+    {
+      "name": "Khondaker A. Mamun",
+      "affiliations": [
+        {
+          "institution": "United International University",
+          "country": "Bangladesh"
+        }
+      ]
+    }
+  ],
+  "journal": "IEEE/EMBS Conference on Neural Engineering",
+  "publication_type": "Conference",
+  "year": 2021,
+  "doi": "10.100710.1109/NER49283.2021.9441145",
+  "abstract": "Speech disorder is one of the most dominant symptoms of Parkinson's disease. The speaking ability deteriorates as the disease progresses. However, regular screening and monitoring can improve the quality of living. Most of the patients in developing countries cannot access healthcare services due to a lack of facilities and costs. So a Cloud-based Smartphone application can be a cost-effective solution to this problem. This study aims to design and develop a tool for screening Parkinson's disease in real-time based on speech analysis. We adopted a machine learning-based approach for screening Parkinson's disease in real-time. This study applied several machine learning algorithms and found that the k-nearest neighbor algorithm performed better. Our model achieved 81.58% sensitivity, with 85.11% specificity in discriminating PD patients from healthy individuals using 10-fold stratified cross-validation. We tested our system in real-time and recruited 9 PD patients and 9 Healthy individuals, and recorded their voices for 10 seconds using our smartphone application. In real-time, we achieved 77.78% sensitivity with 33.33% specificity. Our study also demonstrated that Smartphone-based mobile applications could be a cost-effective solution for screening Parkinson's disease in real-time.",
+  "ml_approaches": [
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "Python",
+      "scaling": [
+        "Standardization"
+      ],
+      "validation": "10-fold cross-validation",
+      "feature_selection": {
+        "methods": [
+          "Sequential Feature Selection: AdaBoost"
+        ]
+      },
+      "results": {
+        "accuracy": 0.8282,
+        "recall": 0.8158,
+        "specificity": 0.8511
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "Python",
+      "scaling": [
+        "Standardization"
+      ],
+      "validation": "10-fold cross-validation",
+      "feature_selection": {
+        "methods": [
+          "Sequential Feature Selection: AdaBoost"
+        ]
+      },
+      "results": {
+        "accuracy": 0.8282,
+        "recall": 0.8553,
+        "specificity": 0.7872
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "framework": "Python",
+      "scaling": [
+        "Standardization"
+      ],
+      "validation": "10-fold cross-validation",
+      "feature_selection": {
+        "methods": [
+          "Sequential Feature Selection: AdaBoost"
+        ]
+      },
+      "results": {
+        "accuracy": 0.7917,
+        "recall": 0.8421,
+        "specificity": 0.7021
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "Python",
+      "scaling": [
+        "Standardization"
+      ],
+      "validation": "10-fold cross-validation",
+      "feature_selection": {
+        "methods": [
+          "Sequential Feature Selection: AdaBoost"
+        ]
+      },
+      "results": {
+        "accuracy": 0.7147,
+        "recall": 0.5921,
+        "specificity": 0.9148999999999999
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.100710.1109/NER49283.2021.9441145_1"
+}

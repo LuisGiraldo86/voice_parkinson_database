@@ -1,0 +1,119 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c1689411"
+  },
+  "title": "Parkinson's disease Detection and Classification: Leveraging Voice Features and Ensemble Methods with Feature Selection and ERT Classifier",
+  "authors": [
+    {
+      "name": "P. Deepa",
+      "affiliations": [
+        {
+          "institution": "Saveetha Institute of Medical and Technical Sciences",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Rashmita Khilar",
+      "affiliations": [
+        {
+          "institution": "Saveetha Institute of Medical and Technical Sciences",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Conference",
+  "journal": "Procedia Computer Science",
+  "year": 2024,
+  "doi": "10.1016/j.procs.2024.04.160",
+  "abstract": "Parkinson's disease, a debilitating neurological disorder affecting mobility, stands as one of the most prevalent and life-altering conditions within the realm of neurological disorders. Tragically, it currently lacks a definitive cure, significantly impacting life expectancy and resulting in substantial disabilities. Recognizing and diagnosing the condition early is paramount to mitigating its effects. Notably, more than 90% of individuals afflicted by Parkinson's experience speech impairments. This underscores the significance of speech features in the diagnostic process. To streamline and improve the accuracy of Parkinson's diagnosis, this study employs an automated diagnostic process. It leverages ensemble methods, integrating feature selection techniques, and implements the Extremely Randomized Trees (ERT) classifier based on voice characteristics. Through rigorous experimentation, the effectiveness of the ERT classifier is assessed using various feature selection methods. Notably, when combined with embedded LASSO, the ERT classifier achieves an impressive accuracy of 87%. This substantial improvement in diagnostic accuracy has far-reaching implications for early detection and management of Parkinson's disease. By providing clinicians and healthcare professionals with a reliable, non-invasive, and cost-effective screening tool, this approach promises to significantly enhance the quality of life for patients battling this debilitating condition.",
+  "ml_approaches": [
+    {
+      "algorithm": "Extremely Randomized Trees",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Correlation Coefficient"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8445
+      }
+    },
+    {
+      "algorithm": "Extremely Randomized Trees",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Information Gain"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8495
+      }
+    },
+    {
+      "algorithm": "Extremely Randomized Trees",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Sequential Forward Feature Selection"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8545
+      }
+    },
+    {
+      "algorithm": "Extremely Randomized Trees",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8497
+      }
+    },
+    {
+      "algorithm": "Extremely Randomized Trees",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "LASSO"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.87
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson Dataset with replicated acoustic features",
+      "size": 80,
+      "pd_patients": 40,
+      "controls": 40,
+      "url": "https://archive.ics.uci.edu/dataset/489/parkinson+dataset+with+replicated+acoustic+features",
+      "doi": "10.24432/C5701F"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson Dataset with replicated acoustic features",
+      "size": 80,
+      "pd_patients": 40,
+      "controls": 40,
+      "url": "https://archive.ics.uci.edu/dataset/489/parkinson+dataset+with+replicated+acoustic+features",
+      "doi": "10.24432/C5701F"
+    }
+  ],
+  "study_id": "10.1016/j.procs.2024.04.160_1"
+}

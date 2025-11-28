@@ -1,0 +1,168 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c1689420"
+  },
+  "title": "A voice analysis approach for recognizing Parkinson's disease patterns",
+  "authors": [
+    {
+      "name": "Yu Chen Tai",
+      "affiliations": [
+        {
+          "institution": "Escuela Superior Politécnica del Litoral",
+          "country": "Ecuador"
+        }
+      ]
+    },
+    {
+      "name": "Bryan Paucar G.",
+      "affiliations": [
+        {
+          "institution": "Escuela Superior Politécnica del Litoral",
+          "country": "Ecuador"
+        }
+      ]
+    },
+    {
+      "name": "Francis Loayza",
+      "affiliations": [
+        {
+          "institution": "Escuela Superior Politécnica del Litoral",
+          "country": "Ecuador"
+        }
+      ]
+    },
+    {
+      "name": "Yan Paucar G.",
+      "affiliations": [
+        {
+          "institution": "Escuela Superior Politécnica del Litoral",
+          "country": "Ecuador"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Conference",
+  "journal": "AIFAC-PapersOnLine",
+  "year": 2021,
+  "doi": "10.1016/j.ifacol.2021.10.286",
+  "abstract": "Many of the patients diagnosed with Parkinson's disease (PD) do not know they have it until the most severe symptoms appear, sometimes they must wait months or even years to get the correct diagnosis, so detection in its early stage is important to improve the quality of life of patients and families. We propose the creation of a model based on supervised learning, to learn the patterns associated with the voice of PD patients. We used 1400 voice recordings of PD patients and controls which were preprocessed, further were obtained 70 features for each recording, and then we used a supervised learning algorithms such as a Multilayer Perceptron (MLP), Random Forest (RF), Logistic Regression (LR), and Support Vector Machines (SVM) to classify the data between patients and controls. From all machine learning models evaluated the SVM model showed the best performance, with an accuracy of 88%. This work presents the possibility to incorporate the voice analysis as digital biomarker to facilitate diagnosis in PD.",
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "High Correlation Filter"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.88
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "optimization": "Adam",
+      "feature_selection": {
+        "methods": [
+          "High Correlation Filter"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.83
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "High Correlation Filter"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.75
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "High Correlation Filter"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.87
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "optimization": "Adam",
+      "framework": "",
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.86
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.82
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.71
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "mPower",
+      "size": 398,
+      "pd_patients": 188,
+      "controls": 210,
+      "url": "https://www.synapse.org/Synapse:syn4993293/wiki/247859"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "mPower",
+      "size": 398,
+      "pd_patients": 188,
+      "controls": 210,
+      "url": "https://www.synapse.org/Synapse:syn4993293/wiki/247859"
+    }
+  ],
+  "study_id": "10.1016/j.ifacol.2021.10.286_1"
+}

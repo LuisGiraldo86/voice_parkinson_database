@@ -1,0 +1,106 @@
+{
+  "_id": {
+    "$oid": "68ecf00b6c43da02c16892e7"
+  },
+  "title": "Gradient Boosting for Parkinson's Disease Diagnosis from Voice Recordings",
+  "authors": [
+    {
+      "name": "Ibrahim Karabayir",
+      "affiliations": [
+        {
+          "institution": "Loyola University Chicago",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Samuel M. Goldman",
+      "affiliations": [
+        {
+          "institution": "University of California San Francisco",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Suguna Pappu",
+      "affiliations": [
+        {
+          "institution": "Loyola University Chicago",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Oguz Akbilgic",
+      "affiliations": [
+        {
+          "institution": "Loyola University Chicago",
+          "country": "USA"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "BMC Medical Informatics and Decision Making",
+  "year": 2020,
+  "doi": "10.1186/s12911-020-01250-7",
+  "abstract": "Background: Parkinson's Disease (PD) is a clinically diagnosed neurodegenerative disorder that affects both motor and non-motor neural circuits. Speech deterioration (hypokinetic dysarthria) is a common symptom, which often presents early in the disease course. Machine learning can help movement disorders specialists improve their diagnostic accuracy using non-invasive and inexpensive voice recordings. Method: We used 'Parkinson Dataset with Replicated Acoustic Features Data Set' from the UCI-Machine Learning repository. The dataset included 44 speech-test based acoustic features from patients with PD and controls. We analyzed the data using various machine learning algorithms including Light and Extreme Gradient Boosting, Random Forest, Support Vector Machines, K-nearest neighborhood, Least Absolute Shrinkage and Selection Operator Regression, as well as logistic regression. We also implemented a variable importance analysis to identify important variables classifying patients with PD. Results: The cohort included a total of 80 subjects: 40 patients with PD (55% men) and 40 controls (67.5% men). Disease duration was 5 years or less for all subjects, with a mean Unified Parkinson's Disease Rating Scale (UPDRS) score of 19.6 (SD 8.1), and none were taking PD medication. The mean age for PD subjects and controls was 69.6 (SD 7.8) and 66.4 (SD 8.4), respectively. Our best-performing model used Light Gradient Boosting to provide an AUC of 0.951 with 95% confidence interval 0.946-0.955 in 4-fold cross validation using only seven acoustic features. Conclusions: Machine learning can accurately detect Parkinson's disease using an inexpensive and non-invasive voice recording. Light Gradient Boosting outperformed other machine learning algorithms. Such approaches could be used to inexpensively screen large patient populations for Parkinson's disease.",
+  "ml_approaches": [
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Feature Importance"
+        ]
+      },
+      "validation": "4-fold cross-validation",
+      "results": {
+        "f1_score": 0.81,
+        "auc": 0.891,
+        "accuracy": 0.816,
+        "recall": 0.801,
+        "specificity": 0.83
+      }
+    },
+    {
+      "algorithm": "LightGBM",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Feature Importance"
+        ]
+      },
+      "validation": "4-fold cross-validation",
+      "results": {
+        "f1_score": 0.839,
+        "auc": 0.898,
+        "accuracy": 0.841,
+        "recall": 0.839,
+        "specificity": 0.844
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson Dataset with replicated acoustic features",
+      "size": 80,
+      "pd_patients": 40,
+      "controls": 40,
+      "url": "https://archive.ics.uci.edu/dataset/489/parkinson+dataset+with+replicated+acoustic+features",
+      "doi": "10.24432/C5701F"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson Dataset with replicated acoustic features",
+      "size": 80,
+      "pd_patients": 40,
+      "controls": 40,
+      "url": "https://archive.ics.uci.edu/dataset/489/parkinson+dataset+with+replicated+acoustic+features",
+      "doi": "10.24432/C5701F"
+    }
+  ],
+  "study_id": "10.1186/s12911-020-01250-7_1"
+}

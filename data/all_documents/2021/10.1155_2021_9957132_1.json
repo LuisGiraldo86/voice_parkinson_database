@@ -1,0 +1,108 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c1689342"
+  },
+  "title": "Assessment of Acoustic Features and Machine Learning for Parkinson's Detection",
+  "authors": [
+    {
+      "name": "Moumita Pramanik",
+      "affiliations": [
+        {
+          "institution": "Sikkim Manipal University",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Ratika Pradhan",
+      "affiliations": [
+        {
+          "institution": "Sikkim Manipal University",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Parvati Nandy",
+      "affiliations": [
+        {
+          "institution": "Sikkim Manipal University",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Saeed Mian Qaisar",
+      "affiliations": [
+        {
+          "institution": "Effat University",
+          "country": "Saudi Arabia"
+        }
+      ]
+    },
+    {
+      "name": "Akash Kumar Bhoi",
+      "affiliations": [
+        {
+          "institution": "Sikkim Manipal University",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Journal of Healthcare Engineering",
+  "year": 2021,
+  "doi": "10.1155/2021/9957132",
+  "abstract": "This article presents a machine learning approach for Parkinson's disease detection. Potential multiple acoustic signal features of Parkinson's and control subjects are ascertained. A collaborated feature bank is created through correlated feature selection, Fisher score feature selection, and mutual information-based feature selection schemes. A detection model on top of the feature bank has been developed using the traditional Naïve Bayes, which proved state of the art. The Naïve Bayes detector on collaborative acoustic features can detect the presence of Parkinson's magnificently with a detection accuracy of 78.97% and precision of 0.926, under the hold-out cross validation. The collaborative feature bank on Naïve Bayes revealed distinguishable results as compared to many other recently proposed approaches. The simplicity of Naïve Bayes makes the system robust and effective throughout the detection process.",
+  "ml_approaches": [
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "feature_extraction": [
+        "Baseline Features",
+        "Vocal Fold Features",
+        "Time-Frequency Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Pearson Correlation",
+          "Fisher Score",
+          "Mutual Information"
+        ],
+        "combination": "feature collaboration"
+      },
+      "validation": "train/test split",
+      "results": {
+        "recall": 0.926,
+        "specificity": 0.391,
+        "precision": 0.817,
+        "f1_score": 0.868,
+        "mcc": 0.38,
+        "auc": 0.762,
+        "prc": 0.905
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "study_id": "10.1155/2021/9957132_1"
+}

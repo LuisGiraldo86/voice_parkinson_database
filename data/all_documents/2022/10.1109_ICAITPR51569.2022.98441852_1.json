@@ -1,0 +1,112 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c168934b"
+  },
+  "title": "Deep Learning-based model for the detection of Parkinson's disease using voice data",
+  "authors": [
+    {
+      "name": "Waseem Ahmad Mir",
+      "affiliations": [
+        {
+          "institution": "Aligarh Muslim University",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Iqra Nissar",
+      "affiliations": [
+        {
+          "institution": "Jamia Millia Islamia",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Izharuddin",
+      "affiliations": [
+        {
+          "institution": "Aligarh Muslim University",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Danish Raza Rizvi",
+      "affiliations": [
+        {
+          "institution": "Jamia Millia Islamia",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Sarfaraz Masood",
+      "affiliations": [
+        {
+          "institution": "Jamia Millia Islamia",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Asif Hussain",
+      "affiliations": [
+        {
+          "institution": "Sri Sai Group of Institutions",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Conference",
+  "journal": "2022 First International Conference on Artificial Intelligence Trends and Pattern Recognition",
+  "year": 2022,
+  "doi": "10.1109/ICAITPR51569.2022.98441852",
+  "abstract": "The advancements in deep learning and their applications in the field of health diagnosis have been very encouraging, therefore providing a better way for healthcare and also in the early detection of many diseases. Large databases of clinical data are accessible. The secondary use of these medical databases for prediction purposes involving deep learning has fueled the excitement of health experts. In this study, a custom deep neural network is employed for the Parkinson's disease (PD) prediction using voice data. Research studies have shown that voice is an early marker for PD detection. We have also employed the resampling technique to handle the class imbalance issue in the dataset along with a feature selection method known as the minimum redundancy maximum relevance to highlight the relevant features in the dataset.Numerous simulations were performed over the proposed deep neural network model to obtain bettergeneralized results.The performance of our proposed model was equated with state-of-the-art methods, applied in recent research, over the same dataset. The results obtained indicated that the proposed model has significantly outperformed all the existing models.Our proposed model achieved the best validation accuracy of99.12%.The values of several performance metrics suggest that the proposed model is highly efficient to accomplish the task of PD detection.",
+  "ml_approaches": [
+    {
+      "algorithm": "Deep Neural Network",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Oversampling"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Minimum Redundancy Maximum Relevance"
+        ]
+      },
+      "validation": null,
+      "results": {
+        "accuracy": 0.9912,
+        "recall": 0.99,
+        "precision": 0.99,
+        "f1_score": 0.99
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "study_id": "10.1109/ICAITPR51569.2022.98441852_1"
+}

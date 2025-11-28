@@ -1,0 +1,100 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893d6"
+  },
+  "title": "Explainable artificial intelligence to diagnose early Parkinson's disease via voice analysis",
+  "authors": [
+    {
+      "name": "Matthew Shen",
+      "affiliations": [
+        {
+          "institution": "The Ottawa Hospital",
+          "country": "Canada"
+        },
+        {
+          "institution": "University of Ottawa",
+          "country": "Canada"
+        }
+      ]
+    },
+    {
+      "name": "Pouria Mortezaagha",
+      "affiliations": [
+        {
+          "institution": "The Ottawa Hospital",
+          "country": "Canada"
+        },
+        {
+          "institution": "University of Ottawa",
+          "country": "Canada"
+        }
+      ]
+    },
+    {
+      "name": "Arya Rahgozar",
+      "affiliations": [
+        {
+          "institution": "The Ottawa Hospital",
+          "country": "Canada"
+        },
+        {
+          "institution": "University of Ottawa",
+          "country": "Canada"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Scientific Reports",
+  "year": 2025,
+  "doi": "10.1038/s41598-025-96575-6",
+  "abstract": "Parkinson's disease (PD) is a neurodegenerative disorder affecting motor control, leading to symptoms such as tremors and stiffness. Early diagnosis is essential for effective treatment, but traditional methods are often time-consuming and expensive. This study leverages Artificial Intelligence (AI) and Machine Learning (ML) techniques, using voice analysis to detect early signs of PD. We applied a hybrid model combining Convolutional Neural Networks (CNN), Recurrent Neural Networks (RNN), Multiple Kernel Learning (MKL), and Multilayer Perceptron (MLP) to a dataset of 81 voice recordings. Acoustic features such as Mel-Frequency Cepstral Coefficients (MFCCs), jitter, and shimmer were analyzed. The model achieved 91.11% accuracy, 92.50% recall, 89.84% precision, 91.13% F1 score, and an area-under-the-curve (AUC) of 0.9125. SHapley Additive exPlanations (SHAP) provided data explainability, identifying key features driving the PD diagnosis, thus enhancing AI interpretability and trustability. Furthermore, a probability-based scoring system was developed to enable PD patients and clinicians to track disease progression. This AI-driven approach offers a non-invasive, cost-effective, and rapid tool for early PD detection, facilitating personalized treatment through vocal biomarkers.",
+  "ml_approaches": [
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_extraction": [
+        "Spectrogram"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Convolutional Neural Network",
+          "Recursive Neural Network"
+        ],
+        "combination": "multi-kernel learning"
+      },
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.9111,
+        "precision": 0.8984,
+        "recall": 0.925,
+        "f1_score": 0.9113,
+        "auc": 0.9125
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Voice Samples for Patients with Parkinson's Disease and Healthy Controls",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://www.nature.com/articles/s41598-023-47568-w",
+      "doi": "10.1038/s41598-023-47568-w"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Voice Samples for Patients with Parkinson's Disease and Healthy Controls",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://www.nature.com/articles/s41598-023-47568-w",
+      "doi": "10.1038/s41598-023-47568-w"
+    }
+  ],
+  "study_id": "10.1038/s41598-025-96575-6_1"
+}

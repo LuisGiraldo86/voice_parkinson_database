@@ -1,0 +1,200 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c1689429"
+  },
+  "title": "Parkinson Disease Detection using Energy Direction Features based on EMD from Voice Signal",
+  "authors": [
+    {
+      "name": "Tao Zhang",
+      "affiliations": [
+        {
+          "institution": "Yanshan University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Yajuan Zhang",
+      "affiliations": [
+        {
+          "institution": "Yanshan University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Hao Sun",
+      "affiliations": [
+        {
+          "institution": "Yanshan University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Haoran Shan",
+      "affiliations": [
+        {
+          "institution": "Yanshan University",
+          "country": "China"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Biocybernetics and Biomedical Engineering",
+  "year": 2021,
+  "doi": "10.1016/j.bbe.2020.12.009",
+  "abstract": "Voice disorders are one of the incipient symptoms of Parkinson's disease (PD). Recent studies have shown that approximately 90% of PD patients suffer from vocal disorders. Therefore, it is significant to extract pathological information on the voice signals to detect PD. In this paper, a feature, named energy direction features based on empirical mode decomposition (EDF-EMD), is proposed to show the different characteristics of voice signals between PD patients and healthy subjects. Firstly, the intrinsic mode functions (IMFs) were obtained through the decomposition of voice signals by EMD. Then, the EDF is obtained by calculating the directional derivatives of the energy spectrum of each IMFs. Finally, the performance of the proposed feature is verified on two different datasets: dataset-Sakar and dataset-CPPDD. The proposed approach shows the best average resulting accuracy of 96.54% on dataset-Sakar and 92.59% on dataset-CPPDD. The results demonstrate that the method proposed in this paper is promising in the field of PD detection.",
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "feature_extraction": [
+        "Empirical Mode Decomposition",
+        "Energy Direction Features",
+        "Intrinsic Mode Functions: 1"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "micro_accuracy": 91.11,
+        "micro_precision": 91.73,
+        "micro_recall": 92.44,
+        "micro_f1_score": 91.58
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "feature_extraction": [
+        "Empirical Mode Decomposition",
+        "Energy Direction Features",
+        "Intrinsic Mode Functions: 1"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "macro_accuracy": 91.03,
+        "macro_precision": 90.04,
+        "macro_recall": 90.38,
+        "macro_f1_score": 89.99
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "feature_extraction": [
+        "Empirical Mode Decomposition",
+        "Energy Direction Features",
+        "Intrinsic Mode Functions: 1"
+      ],
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "micro_accuracy": 91.33,
+        "micro_precision": 90.54,
+        "micro_recall": 93.44,
+        "micro_f1_score": 91.97
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "feature_extraction": [
+        "Empirical Mode Decomposition",
+        "Energy Direction Features",
+        "Intrinsic Mode Functions: 1"
+      ],
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "macro_accuracy": 91.54,
+        "macro_precision": 91.03,
+        "macro_recall": 92.38,
+        "macro_f1_score": 90.99
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_extraction": [
+        "Empirical Mode Decomposition",
+        "Energy Direction Features",
+        "Intrinsic Mode Functions: 1"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "micro_accuracy": 91.11,
+        "micro_precision": 90.76,
+        "micro_recall": 92.45,
+        "micro_f1_score": 91.6
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_extraction": [
+        "Empirical Mode Decomposition",
+        "Energy Direction Features",
+        "Intrinsic Mode Functions: 1"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "macro_accuracy": 90.59,
+        "macro_precision": 89.99,
+        "macro_recall": 93.67,
+        "macro_f1_score": 91.28
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_extraction": [
+        "Empirical Mode Decomposition",
+        "Energy Direction Features",
+        "Intrinsic Mode Functions: 1"
+      ],
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "micro_accuracy": 91.11,
+        "micro_precision": 92.76,
+        "micro_recall": 95.45,
+        "micro_f1_score": 94.09
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_extraction": [
+        "Empirical Mode Decomposition",
+        "Energy Direction Features",
+        "Intrinsic Mode Functions: 1"
+      ],
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "macro_accuracy": 91.59,
+        "macro_precision": 90.99,
+        "macro_recall": 94.67,
+        "macro_f1_score": 92.28
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Kailuan Mental Health Center",
+      "size": 78,
+      "pd_patients": 38,
+      "controls": 40,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Kailuan Mental Health Center",
+      "size": 78,
+      "pd_patients": 38,
+      "controls": 40,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.1016/j.bbe.2020.12.009_2"
+}

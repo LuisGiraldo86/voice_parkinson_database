@@ -1,0 +1,184 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893d2"
+  },
+  "title": "Advanced Comparative Analysis of Machine Learning Algorithms for Early Parkinson's Disease Detection Using Vocal Biomarkers",
+  "authors": [
+    {
+      "name": "Ajay Kumar",
+      "affiliations": [
+        {
+          "institution": "Manipal University Jaipur",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Jay Parkash Singh",
+      "affiliations": [
+        {
+          "institution": "Manipal University Jaipur",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Priyanka Paygude",
+      "affiliations": [
+        {
+          "institution": "College of Engineering Pune",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Rachan Daimary",
+      "affiliations": [
+        {
+          "institution": "Manipal University Jaipur",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Sandeep Prasad",
+      "affiliations": [
+        {
+          "institution": "AKS University",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Digital Health",
+  "year": 2025,
+  "doi": "10.1177/20552076251342878",
+  "abstract": "Objective: To investigate the potential of voice analysis—speciﬁcally sustained vowel phonation—as a non-invasive, cost-effective diagnostic method for early detection of Parkinson's disease (PD) using machine learning techniques. Methods: A publicly available dataset from the University of California, Irvine (UCI) repository, comprising 252 voice recordings (188 from PD patients and 64 from healthy individuals), was analyzed. Machine learning classiﬁers, including k-nearest neighbors (KNN), AdaBoost, and artiﬁcial neural networks (ANNs), were trained and tested on the dataset. Model evaluation was conducted using accuracy, precision, recall, F1 score, and area under the receiver operating characteristic curve. Kernel density estimation was applied to visualize and interpret classiﬁer performance. Results: Among the classiﬁers, KNN demonstrated the best performance with an accuracy of 98.52% and a mean accuracy of 97.33%. ANN and AdaBoost achieved mean accuracies of 93.15% and 91.77%, respectively. All models performed well across standard evaluation metrics, indicating strong discriminative ability for detecting PD from voice data. Conclusion: The study conﬁrms the feasibility of using sustained vowel phonation and machine learning for early PD diagnosis. The KNN classiﬁer, in particular, shows excellent diagnostic accuracy. These ﬁndings support the integration of voice-based machine learning tools into clinical workﬂows, potentially enhancing early detection and management of PD.",
+  "ml_approaches": [
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Oversampling"
+      ],
+      "scaling": [
+        "Min Max",
+        "Standardization"
+      ],
+      "results": {
+        "accuracy": 0.9145,
+        "precision": 0.91,
+        "recall": 0.91,
+        "f1_score": 0.91
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Oversampling"
+      ],
+      "scaling": [
+        "Min Max",
+        "Standardization"
+      ],
+      "results": {
+        "accuracy": 0.9757,
+        "precision": 0.98,
+        "recall": 0.97,
+        "f1_score": 0.97
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Oversampling"
+      ],
+      "scaling": [
+        "Min Max",
+        "Standardization"
+      ],
+      "results": {
+        "accuracy": 0.8949,
+        "precision": 0.88,
+        "recall": 0.88,
+        "f1_score": 0.88
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Oversampling"
+      ],
+      "scaling": [
+        "Min Max",
+        "Standardization"
+      ],
+      "results": {
+        "accuracy": 0.8842,
+        "precision": 0.88,
+        "recall": 0.88,
+        "f1_score": 0.87
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Oversampling"
+      ],
+      "scaling": [
+        "Min Max",
+        "Standardization"
+      ],
+      "results": {
+        "accuracy": 0.9408,
+        "precision": 0.94,
+        "recall": 0.89,
+        "f1_score": 0.91
+      }
+    },
+    {
+      "algorithm": "Kernel Density Estimation",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Oversampling"
+      ],
+      "scaling": [
+        "Min Max",
+        "Standardization"
+      ],
+      "results": {
+        "accuracy": 0.8783,
+        "precision": 0.9,
+        "recall": 0.88,
+        "f1_score": 0.88
+      }
+    }
+  ],
+  "github": "https://github.com/ajay3789/Early-Parkinson-s-Disease-Detection-Using-Vocal-Biomarkers/",
+  "source_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "study_id": "10.1177/20552076251342878_1"
+}

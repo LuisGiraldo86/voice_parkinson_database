@@ -1,0 +1,214 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c1689373"
+  },
+  "title": "Smartphone-Based Digital Biomarkers for Parkinson's Disease in a Remotely-Administered Setting",
+  "authors": [
+    {
+      "name": "María Goñi",
+      "affiliations": [
+        {
+          "institution": "Research Centre Jülich",
+          "country": "Germany"
+        },
+        {
+          "institution": "Heinrich Heine Universität Düsseldorf",
+          "country": "Germany"
+        }
+      ]
+    },
+    {
+      "name": "Simon B. Eickhoff",
+      "affiliations": [
+        {
+          "institution": "Research Centre Jülich",
+          "country": "Germany"
+        },
+        {
+          "institution": "Heinrich Heine Universität Düsseldorf",
+          "country": "Germany"
+        }
+      ]
+    },
+    {
+      "name": "Mehran Sahandi Far",
+      "affiliations": [
+        {
+          "institution": "Research Centre Jülich",
+          "country": "Germany"
+        },
+        {
+          "institution": "Heinrich Heine Universität Düsseldorf",
+          "country": "Germany"
+        }
+      ]
+    },
+    {
+      "name": "Kaustubh R. Patil",
+      "affiliations": [
+        {
+          "institution": "Research Centre Jülich",
+          "country": "Germany"
+        },
+        {
+          "institution": "Heinrich Heine Universität Düsseldorf",
+          "country": "Germany"
+        }
+      ]
+    },
+    {
+      "name": "Juergen Dukart",
+      "affiliations": [
+        {
+          "institution": "Research Centre Jülich",
+          "country": "Germany"
+        },
+        {
+          "institution": "Heinrich Heine Universität Düsseldorf",
+          "country": "Germany"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "IEEE Access",
+  "year": 2022,
+  "doi": "10.1109/ACCESS.2022.3156659",
+  "abstract": "Smartphone-based digital biomarker (DB) assessments provide objective measures of daily-life tasks and thus hold the promise to improve diagnosis and monitoring of Parkinson's disease (PD). To date, little is known about which tasks perform best for these purposes and how different confounds including comorbidities, age and sex affect their accuracy. Here we systematically assess the ability of common self-administered smartphone-based tasks to differentiate PD patients and healthy controls (HC) with and without accounting for the above confounds. Using a large cohort of PD patients and healthy volunteers acquired in the mPower study, we extracted about 700 features commonly reported in previous PD studies for gait, balance, voice and tapping tasks. We perform a series of experiments systematically assessing the effects of age, sex and comorbidities on the accuracy of the above tasks for differentiation of PD patients and HC using several machine learning algorithms. When accounting for age, sex and comorbidities, the highest balanced accuracy on hold-out data (73%) was achieved using random forest when combining all tasks followed by tapping using relevance vector machine (67%). Only moderate accuracies were achieved for other tasks (60% for balance, 56% for gait and 53% for voice data). Not accounting for the confounders consistently yielded higher accuracies of up to 77% when combining all tasks. Our results demonstrate the importance of controlling DB data for age and comorbidities.",
+  "citescore": null,
+  "ml_approaches": [
+    {
+      "algorithm": "LASSO",
+      "data_subset": "no comorbidities, matched for age and sex",
+      "feature_selection": {
+        "methods": [
+          "LASSO"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "balanced_accuracy": 55.38,
+        "recall": 0.5455,
+        "specificity": 0.562,
+        "positive_predictive_value": 55.46,
+        "negative_predictive_value": 55.32,
+        "auc": 0.5737
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "data_subset": "no comorbidities, matched for age and sex",
+      "validation": "10-fold cross-validation",
+      "results": {
+        "balanced_accuracy": 56.19,
+        "recall": 0.5484,
+        "specificity": 0.5733,
+        "positive_predictive_value": 56.37,
+        "negative_predictive_value": 56.03,
+        "auc": 0.5932
+      }
+    },
+    {
+      "algorithm": "Relevance Vector Machine",
+      "data_subset": "no comorbidities, matched for age and sex",
+      "validation": "10-fold cross-validation",
+      "results": {
+        "balanced_accuracy": 56.7,
+        "recall": 0.5774,
+        "specificity": 0.5566,
+        "positive_predictive_value": 56.57,
+        "negative_predictive_value": 56.85,
+        "auc": 0.6067
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "data_subset": "no comorbidities, matched for age and sex",
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: Support Vector Machine"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "balanced_accuracy": 56,
+        "recall": 0.5556,
+        "specificity": 0.5644,
+        "positive_predictive_value": 59.63,
+        "negative_predictive_value": 52.29,
+        "auc": 0.5936
+      }
+    },
+    {
+      "algorithm": "Relevance Vector Machine",
+      "data_subset": "35 < age < 75",
+      "validation": "10-fold cross-validation",
+      "results": {
+        "balanced_accuracy": 62.49,
+        "recall": 0.4654,
+        "specificity": 0.7843000000000001,
+        "positive_predictive_value": 60.55,
+        "negative_predictive_value": 67.35,
+        "auc": 0.6899
+      }
+    },
+    {
+      "algorithm": "Relevance Vector Machine",
+      "data_subset": "35 < age < 75",
+      "validation": "train/test split",
+      "results": {
+        "balanced_accuracy": 60.41,
+        "recall": 0.4444,
+        "specificity": 0.7637,
+        "positive_predictive_value": 57.14,
+        "negative_predictive_value": 65.98,
+        "auc": 0.6695
+      }
+    },
+    {
+      "algorithm": "Relevance Vector Machine",
+      "data_subset": "matched age and sex",
+      "validation": "10-fold cross-validation",
+      "results": {
+        "balanced_accuracy": 53.94,
+        "recall": 0.5043,
+        "specificity": 0.5745,
+        "positive_predictive_value": 54.24,
+        "negative_predictive_value": 53.68,
+        "auc": 0.555
+      }
+    },
+    {
+      "algorithm": "Relevance Vector Machine",
+      "data_subset": "matched age and sex",
+      "validation": "train/test split",
+      "results": {
+        "balanced_accuracy": 59.83,
+        "recall": 0.5674,
+        "specificity": 0.6292,
+        "positive_predictive_value": 60.48,
+        "negative_predictive_value": 59.26,
+        "auc": 0.6248
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "mPower",
+      "size": 398,
+      "pd_patients": 188,
+      "controls": 210,
+      "url": "https://www.synapse.org/Synapse:syn4993293/wiki/247859"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "mPower",
+      "size": 398,
+      "pd_patients": 188,
+      "controls": 210,
+      "url": "https://www.synapse.org/Synapse:syn4993293/wiki/247859"
+    }
+  ],
+  "study_id": "10.1109/ACCESS.2022.3156659_1"
+}

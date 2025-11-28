@@ -1,0 +1,127 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893c4"
+  },
+  "title": "A Deep Learning Based Method for Parkinson's Disease Detection Using Dynamic Features of Speech",
+  "authors": [
+    {
+      "name": "Changqin Quan",
+      "affiliation": "Kobe University, Japan"
+    },
+    {
+      "name": "Kang Ren",
+      "affiliation": "Kobe University, Japan"
+    },
+    {
+      "name": "Zhiwei Luo",
+      "affiliation": "Kobe University, Japan"
+    }
+  ],
+  "journal": "IEEE Access",
+  "publication_type": "Journal",
+  "year": 2021,
+  "doi": "10.1109/ACCESS.2021.3051432",
+  "abstract": "Detection of voice changes in Parkinson's Disease (PD) patients would make it possible for early detection and intervention before the onset of disabling physical symptoms. This study explores static and dynamic speech features relating to PD detection. A comparative analysis of the articulation transition characteristics shows that the number of articulation transitions and the trend of the fundamental frequency curve are significantly different between HC speakers and PD patients. Motivated by this observation, we propose to apply Bidirectional long-short term memory (LSTM) model to capture time-series dynamic features of a speech signal for detecting PD. The dynamic speech features are measured based on computing the energy content in the transition from unvoiced to voiced segments (onset), and in the transition from voiced to unvoiced segments (offset). Under the two evaluation methods of 10-fold cross validation (CV) and splitting the dataset without samples overlap of one individual, the experimental results show that the proposed method remarkably improves the accuracy of PD detection over traditional machine learning models using static features.",
+  "citescore": 6.7,
+  "ml_approaches": [
+    {
+      "algorithm": "Convolutional Neural Network",
+      "input_speech": "/a/",
+      "validation": "10-fold cross validation",
+      "results": {
+        "accuracy": 0.7429,
+        "recall": 0.8085,
+        "specificity": 0.8314,
+        "f1_score": 0.8075,
+        "mcc": 0.4326
+      }
+    },
+    {
+      "algorithm": "Bidirectional Long Short-Term Memory",
+      "input_speech": "/a/",
+      "validation": "10-fold cross validation",
+      "results": {
+        "accuracy": 0.7736,
+        "recall": 0.8036,
+        "specificity": 0.8875,
+        "f1_score": 0.8384999999999999,
+        "mcc": 0.4751
+      }
+    },
+    {
+      "algorithm": "Convolutional Neural Network",
+      "input_speech": "/a/",
+      "feature_extraction": [
+        "Spectrogram"
+      ],
+      "validation": "10-fold cross validation",
+      "results": {
+        "accuracy": 0.8099,
+        "recall": 0.8315,
+        "specificity": 0.9222,
+        "f1_score": 0.87,
+        "mcc": 0.5319
+      }
+    },
+    {
+      "algorithm": "Convolutional Neural Network",
+      "input_speech": "short sentence",
+      "validation": "10-fold cross validation",
+      "results": {
+        "accuracy": 0.8352,
+        "recall": 0.8853,
+        "specificity": 0.8778,
+        "f1_score": 0.8748,
+        "mcc": 0.6478
+      }
+    },
+    {
+      "algorithm": "Bidirectional Long Short-Term Memory",
+      "input_speech": "short sentence",
+      "validation": "10-fold cross validation",
+      "results": {
+        "accuracy": 0.8429,
+        "recall": 0.8734,
+        "specificity": 0.9111,
+        "f1_score": 0.8852,
+        "mcc": 0.6603
+      }
+    },
+    {
+      "algorithm": "Convolutional Neural Network",
+      "input_speech": "short sentence",
+      "feature_extraction": [
+        "Spectrogram"
+      ],
+      "validation": "10-fold cross validation",
+      "results": {
+        "accuracy": 0.6524,
+        "recall": 0.712,
+        "specificity": 0.8056,
+        "f1_score": 0.7495,
+        "mcc": 0.1765
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Custom Dataset: GYENNO SCIENCE Parkinson Disease Research Center",
+      "size": 45,
+      "pd_patients": 30,
+      "controls": 15,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Custom Dataset: GYENNO SCIENCE Parkinson Disease Research Center",
+      "size": 45,
+      "pd_patients": 30,
+      "controls": 15,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.1109/ACCESS.2021.3051432_1"
+}

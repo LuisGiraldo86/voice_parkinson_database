@@ -1,0 +1,309 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c1689352"
+  },
+  "title": "Poster: VGGish Embeddings Based Audio Classifiers to Improve Parkinson's Disease Diagnosis",
+  "authors": [
+    {
+      "name": "Sruthi Kurada",
+      "affiliations": [
+        {
+          "institution": "Advanced Math and Science Academy Charter School",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Abhinav Kurada",
+      "affiliations": [
+        {
+          "institution": "Columbia University",
+          "country": "USA"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Conference",
+  "journal": "2020 IEEE/ACM International Conference on Connected Health: Applications, Systems and Engineering Technologies",
+  "year": 2020,
+  "doi": "10.1145/3384420.3431775",
+  "abstract": "The absence of highly predictive and readily applicable biomarkers for Parkinson's disease (PD) significantly hinders the diagnosis and subsequent monitoring of the condition. Since up to 90% of PD patients exhibit speech aberrations, however, the use of patient voice as a rapid diagnostic measure has shown significant promise. Past research towards creating voice-based automated diagnostic tools has relied on expert handcrafted audio feature sets that capture patient articulation, phonation, and prosody properties. Not only is there a limited consensus on the ideal contents of a PD audio diagnostic feature set, but also manually selected features may not fully exploit the predictive power of the underlying data. In this study, we demonstrate the benefit of employing VGGish embeddings, a more generalizable and higher throughput feature extraction strategy, for voice-based PD diagnosis. Our top VGGish-based model achieved 87% accuracy for detecting PD and significantly outperformed models trained on multiple handcrafted feature sets, a mel-frequency cepstral coefficient set, as well as an ImageNet pretrained convolutional neural network extraction strategy. VGGish models were also highly competitive with clinically determined UPDRS III-18 speech deterioration ratings for PD diagnosis. These results demonstrate the potential of VGGish embeddings for creating fast and accurate voice-based PD classification models.",
+  "ml_approaches": [
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": null,
+      "feature_extraction": [
+        "VGGish"
+      ],
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.96
+      }
+    },
+    {
+      "algorithm": "Support Vector Machines",
+      "framework": null,
+      "feature_extraction": [
+        "VGGish"
+      ],
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.93
+      }
+    },
+    {
+      "algorithm": "Extremely Randomized Trees",
+      "framework": null,
+      "feature_extraction": [
+        "VGGish"
+      ],
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.93
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": null,
+      "feature_extraction": [
+        "ResNet5.0"
+      ],
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.71
+      }
+    },
+    {
+      "algorithm": "Support Vector Machines",
+      "framework": null,
+      "feature_extraction": [
+        "ResNet5.0"
+      ],
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.71
+      }
+    },
+    {
+      "algorithm": "Extremely Randomized Trees",
+      "framework": null,
+      "feature_extraction": [
+        "ResNet5.0"
+      ],
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.68
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": null,
+      "feature_extraction": [
+        "Mel-Frequency Cepstral Coefficients"
+      ],
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.79
+      }
+    },
+    {
+      "algorithm": "Support Vector Machines",
+      "framework": null,
+      "feature_extraction": [
+        "Mel-Frequency Cepstral Coefficients"
+      ],
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.79
+      }
+    },
+    {
+      "algorithm": "Extremely Randomized Trees",
+      "framework": null,
+      "feature_extraction": [
+        "Mel-Frequency Cepstral Coefficients"
+      ],
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.93
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": null,
+      "feature_extraction": [
+        "PRAAT"
+      ],
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.82
+      }
+    },
+    {
+      "algorithm": "Support Vector Machines",
+      "framework": null,
+      "feature_extraction": [
+        "PRAAT"
+      ],
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.86
+      }
+    },
+    {
+      "algorithm": "Extremely Randomized Trees",
+      "framework": null,
+      "feature_extraction": [
+        "PRAAT"
+      ],
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.86
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": null,
+      "feature_extraction": [
+        "DisVoice"
+      ],
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.73
+      }
+    },
+    {
+      "algorithm": "Support Vector Machines",
+      "framework": null,
+      "feature_extraction": [
+        "DisVoice"
+      ],
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.76
+      }
+    },
+    {
+      "algorithm": "Extremely Randomized Trees",
+      "framework": null,
+      "feature_extraction": [
+        "DisVoice"
+      ],
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.83
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Mobile Device Voice Recordings at King's College London",
+      "size": 37,
+      "pd_patients": 16,
+      "controls": 21,
+      "url": "https://zenodo.org/records/2867216",
+      "doi": "10.5281/zenodo.2867215"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Mobile Device Voice Recordings at King's College London",
+      "size": 37,
+      "pd_patients": 16,
+      "controls": 21,
+      "url": "https://zenodo.org/records/2867216",
+      "doi": "10.5281/zenodo.2867215"
+    }
+  ],
+  "study_id": "10.1145/3384420.3431775_1"
+}

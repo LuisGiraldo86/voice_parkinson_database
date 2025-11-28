@@ -1,0 +1,200 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c1689433"
+  },
+  "title": "Evaluating the Clinical Utility of a Machine Learning Model for Diagnosing Parkinson's Disease Using Acoustic Parameters",
+  "authors": [
+    {
+      "name": "Zhiheng Xu",
+      "affiliations": [
+        {
+          "institution": "Fudan University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Liwen Li",
+      "affiliations": [
+        {
+          "institution": "University of Melbourne",
+          "country": "Australia"
+        }
+      ]
+    },
+    {
+      "name": "Xining Liu",
+      "affiliations": [
+        {
+          "institution": "Fudan University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Xiaoniu Liang",
+      "affiliations": [
+        {
+          "institution": "Fudan University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Mindi Yang",
+      "affiliations": [
+        {
+          "institution": "Fudan University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Yi Chen",
+      "affiliations": [
+        {
+          "institution": "Pawei Health Promotion Center for Parkinson Disease in Shanghai",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Xixi Han",
+      "affiliations": [
+        {
+          "institution": "Pawei Health Promotion Center for Parkinson Disease in Shanghai",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Jian Wang",
+      "affiliations": [
+        {
+          "institution": "Fudan University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Yilin Tang",
+      "affiliations": [
+        {
+          "institution": "Fudan University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Menghan Zhang",
+      "affiliations": []
+    },
+    {
+      "name": "Jianjun Wu",
+      "affiliations": [
+        {
+          "institution": "Fudan University",
+          "country": "China"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Journal of Voice",
+  "year": 2025,
+  "doi": "10.1016/j.jvoice.2025.05.024",
+  "abstract": "Background: Given the limitations of current diagnostic methods, there is a compelling need to develop a more accurate and efficient method for diagnosing Parkinson's disease (PD). As dysarthria is one of the most characteristic and core symptoms of PD, acoustic analysis of patients' voice recordings may be a new means to diagnose PD. Objectives: To assess the feasibility of employing acoustic analysis to diagnose PD in the Chinese population. Methods: A total of 140 Chinese participants, 96 PD patients and 44 healthy controls respectively, provided their voice recordings on sustained vowels (/a:/, /i:/, /u:/). A deliberate acoustic analysis was performed to identify acoustic parameters with diagnostic values. Machine learning-based diagnostic models were also constructed, which can automatically output a possible diagnosis for reference based on one's voice recordings. Results: Through acoustic analysis, we have identified 14 instances of significant differences across 8 unique acoustic parameters. Light gradient boosting machine model achieved an area under the curve of 0.96 along with the highest accuracy of 92.86%, the sensitivity of 89.47%, and the specificity of 100.00%. Conclusion: Our preliminary results in the Chinese population showed that PD patients presented noticeable phonatory deficits and proved the feasibility of applying acoustic analysis to PD diagnosis, which may have significance in guiding further clinical research.",
+  "ml_approaches": [
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.89,
+        "accuracy": 0.7857,
+        "recall": 0.8947,
+        "specificity": 0.5556
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.86,
+        "accuracy": 0.7857,
+        "recall": 0.7895,
+        "specificity": 0.7778
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.94,
+        "accuracy": 0.9286,
+        "recall": 0.9474,
+        "specificity": 0.8889
+      }
+    },
+    {
+      "algorithm": "LightGBM",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.96,
+        "accuracy": 0.9286,
+        "recall": 0.8947,
+        "specificity": 1
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.94,
+        "accuracy": 0.8929,
+        "recall": 0.8947,
+        "specificity": 0.8889
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Huashan Hospital Fudan University Parkinson's Disease Dataset",
+      "size": 140,
+      "pd_patients": 96,
+      "controls": 44,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Huashan Hospital Fudan University Parkinson's Disease Dataset",
+      "size": 140,
+      "pd_patients": 96,
+      "controls": 44,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.1016/j.jvoice.2025.05.024_1"
+}

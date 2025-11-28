@@ -1,0 +1,107 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c1689439"
+  },
+  "title": "Novel Voice Signal Segmentation Based on Clark Distance to Improve Intelligent Parkinson Disease Detection",
+  "authors": [
+    {
+      "name": "Mustafa Hussein Mohammed",
+      "affiliations": [
+        {
+          "institution": "Al-Mustaqbal University",
+          "country": "Iraq"
+        }
+      ]
+    },
+    {
+      "name": "Mustafa Noaman Kadhimv",
+      "affiliations": [
+        {
+          "institution": "University of Al-Qadisiyah",
+          "country": "Iraq"
+        }
+      ]
+    },
+    {
+      "name": "Dhiah Al-Shammary",
+      "affiliations": [
+        {
+          "institution": "University of Al-Qadisiyah",
+          "country": "Iraq"
+        }
+      ]
+    },
+    {
+      "name": "Ayman Ibaida",
+      "affiliations": [
+        {
+          "institution": "Victoria University",
+          "country": "Australia"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Journal of Voice",
+  "year": 2025,
+  "doi": "10.1016/j.jvoice.2025.04.030",
+  "abstract": "This paper presents a novel classifier based on the Clark distance for early detection of Parkinson's disease (PD) using voice data. The nonlinear nature of human voice signals and their inherent fluctuations pose significant challenges for traditional machine learning classifiers such as Random Forest (RF), Support Vector Machines (SVM), Decision Trees (DT), K-Nearest Neighbors (KNN), and Logistic Regression (LR), which struggle to capture meaningful relationships within the voice data for accurate classification. The proposed classifier addresses these limitations by segmenting the data features of each voice sample into smaller blocks (ranging in size from 2 to 10 features per block), to better capture relationships and minimize fluctuations that negatively impact classification accuracy. To further enhance the performance of the classifier, Grey Wolf Optimization (GWO) was integrated to select high-harmony (convergent) features while removing irrelevant and redundant (divergent) features. The proposed approach achieved an accuracy of 94.6% without GWO and an impressive 98.305% accuracy with GWO, using only 12 selected features. Additionally, the classifier demonstrates efficient execution time, making it well-suited for real-time applications in medical organizations. The combination of the Clark distance classifier with GWO not only improves classification accuracy but also ensures computational efficiency, enabling its deployment in diverse settings such as hospitals and home monitoring systems for early detection and continuous monitoring of PD patients. This study highlights the potential of the proposed approach as a reliable, cost-effective, and scalable solution for voice-based PD detection.",
+  "ml_approaches": [
+    {
+      "algorithm": "Clark Distance Classifier",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Grey Wolf Optimization"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9831,
+        "precision": 1,
+        "recall": 0.9375,
+        "f1_score": 0.9677,
+        "mcc": 0.9572
+      }
+    },
+    {
+      "algorithm": "Clark Distance Classifier",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9322,
+        "precision": 0.9333,
+        "recall": 0.8235,
+        "f1_score": 0.8775,
+        "mcc": 0.8318
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1016/j.jvoice.2025.04.030_1"
+}

@@ -1,0 +1,322 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c1689341"
+  },
+  "title": "Detecting Parkinson Disease Using a Web-Based Speech Task: Observational Study",
+  "authors": [
+    {
+      "name": "Wasifur Rahman",
+      "affiliations": [
+        {
+          "institution": "University of Rochester",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Sangwu Lee",
+      "affiliations": [
+        {
+          "institution": "University of Rochester",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Saiful Islam",
+      "affiliations": [
+        {
+          "institution": "University of Rochester",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Victor Nikhil Antony",
+      "affiliations": [
+        {
+          "institution": "University of Rochester",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Harshil Ratnu",
+      "affiliations": [
+        {
+          "institution": "University of Rochester",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Mohammad Rafayet Ali",
+      "affiliations": [
+        {
+          "institution": "University of Rochester",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Abdullah Al Mamun",
+      "affiliations": [
+        {
+          "institution": "University of Rochester",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Ellen Wagner",
+      "affiliations": [
+        {
+          "institution": "University of Rochester Medical Center",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Stella Jensen-Roberts",
+      "affiliations": [
+        {
+          "institution": "University of Rochester Medical Center",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Emma Waddell",
+      "affiliations": [
+        {
+          "institution": "University of Rochester Medical Center",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Taylor Myers",
+      "affiliations": [
+        {
+          "institution": "University of Rochester Medical Center",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Meghan Pawlik",
+      "affiliations": [
+        {
+          "institution": "University of Rochester Medical Center",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Julia Soto",
+      "affiliations": [
+        {
+          "institution": "University of Rochester Medical Center",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Madeleine Coffey",
+      "affiliations": [
+        {
+          "institution": "University of Rochester Medical Center",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Aayush Sarkar",
+      "affiliations": [
+        {
+          "institution": "University of Rochester Medical Center",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Ruth Schneider",
+      "affiliations": [
+        {
+          "institution": "University of Rochester Medical Center",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Christopher Tarolli",
+      "affiliations": [
+        {
+          "institution": "University of Rochester Medical Center",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Karlo Lizarraga",
+      "affiliations": [
+        {
+          "institution": "University of Rochester Medical Center",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Jamie Adams",
+      "affiliations": [
+        {
+          "institution": "University of Rochester Medical Center",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Max A Little",
+      "affiliations": [
+        {
+          "institution": "University of Birmingham",
+          "country": "United Kingdom"
+        },
+        {
+          "institution": "Massachusetts Institute of Technology",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "E Ray Dorsey",
+      "affiliations": [
+        {
+          "institution": "University of Rochester Medical Center",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Ehsan Hoque",
+      "affiliations": [
+        {
+          "institution": "University of Rochester",
+          "country": "USA"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Journal of Medical Internet Research",
+  "year": 2021,
+  "doi": "10.2196/26305",
+  "abstract": "Background: Access to neurological care for Parkinson disease (PD) is a rare privilege for millions of people worldwide, especially in resource-limited countries. In 2013, there were just 1200 neurologists in India for a population of 1.3 billion people; in Africa, the average population per neurologist exceeds 3.3 million people. In contrast, 60,000 people receive a diagnosis of PD every year in the United States alone, and similar patterns of rising PD cases-fueled mostly by environmental pollution and an aging population-can be seen worldwide. The current projection of more than 12 million patients with PD worldwide by 2040 is only part of the picture given that more than 20% of patients with PD remain undiagnosed. Timely diagnosis and frequent assessment are key to ensure timely and appropriate medical intervention, thus improving the quality of life of patients with PD. Objective: In this paper, we propose a web-based framework that can help anyone anywhere around the world record a short speech task and analyze the recorded data to screen for PD. Methods: We collected data from 726 unique participants (PD: 262/726, 36.1% were women; non-PD: 464/726, 63.9% were women; average age 61 years) from all over the United States and beyond. A small portion of the data (approximately 54/726, 7.4%) was collected in a laboratory setting to compare the performance of the models trained with noisy home environment data against high-quality laboratory-environment data. The participants were instructed to utter a popular pangram containing all the letters in the English alphabet, 'the quick brown fox jumps over the lazy dog.' We extracted both standard acoustic features (mel-frequency cepstral coefficients and jitter and shimmer variants) and deep learning-based embedding features from the speech data. Using these features, we trained several machine learning algorithms. We also applied model interpretation techniques such as Shapley additive explanations to ascertain the importance of each feature in determining the model's output. Results: We achieved an area under the curve of 0.753 for determining the presence of self-reported PD by modeling the standard acoustic features through the XGBoost-a gradient-boosted decision tree model. Further analysis revealed that the widely used mel-frequency cepstral coefficient features and a subset of previously validated dysphonia features designed for detecting PD from a verbal phonation task (pronouncing 'ahh') influence the model's decision the most. Conclusions: Our model performed equally well on data collected in a controlled laboratory environment and in the wild across different gender and age groups. Using this tool, we can collect data from almost anyone anywhere with an audio-enabled device and help the participants screen for PD remotely, contributing to equity and access in neurological care.",
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "feature_extraction": [
+        "PASE Embeddings"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.692,
+        "auc": 0.738
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_extraction": [
+        "PASE Embeddings"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.708,
+        "auc": 0.726
+      }
+    },
+    {
+      "algorithm": "LightGBM",
+      "framework": "",
+      "feature_extraction": [
+        "PASE Embeddings"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.693,
+        "auc": 0.737
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "feature_extraction": [
+        "PASE Embeddings"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.689,
+        "auc": 0.722
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.735,
+        "auc": 0.751
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.72,
+        "auc": 0.745
+      }
+    },
+    {
+      "algorithm": "LightGBM",
+      "framework": "",
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.72,
+        "auc": 0.753
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.741,
+        "auc": 0.75
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Custom dataset",
+      "size": 726,
+      "pd_patients": 262,
+      "controls": 464,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Custom dataset",
+      "size": 726,
+      "pd_patients": 262,
+      "controls": 464,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.2196/26305_1"
+}

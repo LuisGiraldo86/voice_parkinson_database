@@ -1,0 +1,381 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893e4"
+  },
+  "title": "Automatic Parkinson disease detection at early stages as a pre-diagnosis tool by using classifiers and a small set of vocal features",
+  "authors": [
+    {
+      "name": "Gabriel Solana-Lavalle",
+      "affiliations": [
+        {
+          "institution": "Universidad de las Américas-Puebla",
+          "country": "México"
+        }
+      ]
+    },
+    {
+      "name": "Juan-Carlos Galán-Hernández",
+      "affiliations": [
+        {
+          "institution": "Universidad de las Américas-Puebla",
+          "country": "México"
+        }
+      ]
+    },
+    {
+      "name": "Roberto Rosas-Romero",
+      "affiliations": [
+        {
+          "institution": "Universidad de las Américas-Puebla",
+          "country": "México"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Biocybernetics and Biomedical Engineering",
+  "year": 2020,
+  "doi": "10.1016/j.bbe.2020.01.003",
+  "abstract": "Recent research on Parkinson disease (PD) detection has shown that vocal disorders are linked to symptoms in 90% of the PD patients at early stages. Thus, there is an interest in applying vocal features to the computer-assisted diagnosis and remote monitoring of patients with PD at early stages. The contribution of this research is an increase of accuracy and a reduction of the number of selected vocal features in PD detection while using the newest and largest public dataset available. Whereas the number of features in this public dataset is 754, the number of selected features for classification ranges from 8 to 20 after using Wrappers feature subset selection. Four classifiers (k nearest neighbor, multi-layer perceptron, support vector machine and random forest) are applied to vocal-based PD detection. The proposed approach shows an accuracy of 94.7%, sensitivity of 98.4%, specificity of 92.68% and precision of 97.22%. The best resulting accuracy is obtained by using a support vector machine and it is higher than the one, which was reported on the first work to use the same dataset. In addition, the corresponding computational complexity is further reduced by selecting no more than 20 features.",
+  "ml_approaches": [
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: K-Nearest Neighbors"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8558,
+        "recall": 0.9379,
+        "specificity": 0.6146,
+        "precision": 0.8773,
+        "mcc": 0.5986,
+        "f1_score": 0.9066
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron ",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: K-Nearest Neighbors"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8558,
+        "recall": 0.9521,
+        "specificity": 0.5729,
+        "precision": 0.8675,
+        "mcc": 0.5933,
+        "f1_score": 0.9079
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: K-Nearest Neighbors"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.836,
+        "recall": 0.9699,
+        "specificity": 0.4427,
+        "precision": 0.8364,
+        "mcc": 0.5256,
+        "f1_score": 0.8982
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: K-Nearest Neighbors"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8479,
+        "recall": 0.9309,
+        "specificity": 0.6042,
+        "precision": 0.8735,
+        "mcc": 0.5768,
+        "f1_score": 0.9013
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Multilayer Perceptron"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8201,
+        "recall": 0.9167,
+        "specificity": 0.5365,
+        "precision": 0.8531,
+        "mcc": 0.4946,
+        "f1_score": 0.8838
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron ",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Multilayer Perceptron"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8664,
+        "recall": 0.9362,
+        "specificity": 0.6615,
+        "precision": 0.8904,
+        "mcc": 0.6326,
+        "f1_score": 0.9127
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Multilayer Perceptron"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8307,
+        "recall": 0.9557,
+        "specificity": 0.4635,
+        "precision": 0.8396,
+        "mcc": 0.5099,
+        "f1_score": 0.8939
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "scaling": [
+        "Standardization"
+      ],
+      "preprocessing": [
+        "Feature Selection: Wrapper Feature Subset Selection (MLP)"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8479,
+        "recall": 0.9433,
+        "specificity": 0.5677,
+        "precision": 0.865,
+        "mcc": 0.571,
+        "f1_score": 0.9025
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Support Vector Machine"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9034,
+        "recall": 0.9663,
+        "specificity": 0.7188,
+        "precision": 0.9098,
+        "mcc": 0.735,
+        "f1_score": 0.9064
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron ",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Support Vector Machine"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9206,
+        "recall": 0.9592,
+        "specificity": 0.8073,
+        "precision": 0.935,
+        "mcc": 0.786,
+        "f1_score": 0.9284
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Support Vector Machine"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.947,
+        "recall": 0.9645,
+        "specificity": 0.9268,
+        "precision": 0.9722,
+        "mcc": 0.8686,
+        "f1_score": 0.9633
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Support Vector Machine"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9021,
+        "recall": 0.977,
+        "specificity": 0.6823,
+        "precision": 0.9003,
+        "mcc": 0.735,
+        "f1_score": 0.9011
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Random Forest"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9101,
+        "recall": 0.9681,
+        "specificity": 0.7396,
+        "precision": 0.9161,
+        "mcc": 0.7541,
+        "f1_score": 0.9414
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron ",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Random Forest"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8995,
+        "recall": 0.9648,
+        "specificity": 0.7604,
+        "precision": 0.9207,
+        "mcc": 0.7284,
+        "f1_score": 0.9336
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Random Forest"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8743,
+        "recall": 0.977,
+        "specificity": 0.5729,
+        "precision": 0.8705,
+        "mcc": 0.6585,
+        "f1_score": 0.9206
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Random Forest"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.922,
+        "recall": 0.984,
+        "specificity": 0.7396,
+        "precision": 0.9174,
+        "mcc": 0.7878,
+        "f1_score": 0.9495
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "study_id": "10.1016/j.bbe.2020.01.003_1"
+}

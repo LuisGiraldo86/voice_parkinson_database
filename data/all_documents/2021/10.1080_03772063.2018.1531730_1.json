@@ -1,0 +1,105 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893ae"
+  },
+  "title": "A Comparative Study of Existing Machine Learning Approaches for Parkinson's Disease Detection",
+  "authors": [
+    {
+      "name": "Gunjan Pahuja",
+      "affiliations": [
+        {
+          "institution": "Abdul Kalam Technical University",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "T. N. Nagabhushan",
+      "affiliations": [
+        {
+          "institution": "SJCE",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "IETE Journal of Research",
+  "year": 2021,
+  "doi": "10.1080/03772063.2018.1531730",
+  "abstract": "Parkinson's disease (PD) has affected millions of people worldwide and is more prevalent in people, over the age of 50. Even today, with many technologies and advancements, early detection of this disease remains a challenge. This necessitates a need for the machine learning-based automatic approaches that help clinicians to detect this disease accurately in its early stage. Thus, the focus of this research paper is to provide an insightful survey and compare the existing computational intelligence techniques used for PD detection. To save time and increase treatment efficiency, classification has found its place in PD detection. The existing knowledge review indicates that many classification algorithms have been used to achieve better results, but the problem is to identify the most efficient classifier for PD detection. The challenge in identifying the most appropriate classification algorithm lies in their application on local dataset. Thus, in this paper three types of classifiers, namely, Multilayer Perceptron, Support Vector Machine and K-nearest neighbor have been discussed on the benchmark (voice) dataset to compare and to know which of these classifiers is the most efficient and accurate for PD classification. The Voice input dataset for these classifiers has been obtained from UCI machine learning repository. ANN with Levenberg-Marquardt algorithm was found to be the best classifier, having highest classification accuracy (95.89%). Moreover, we compared our results with those obtained by Resul Das [“A comparison of multiple classification methods for diagnosis of Parkinson Disease.",
+  "ml_approaches": [
+    {
+      "algorithm": "Multilayer Perceptron",
+      "optimization": "Levenberg-Marquardt",
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9589,
+        "recall": 0.9375,
+        "specificity": 0.9659,
+        "geo_mean": 95.16
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.7231,
+        "recall": 0.6875,
+        "specificity": 0.7347,
+        "geo_mean": 71.07
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8821,
+        "recall": 0.9167,
+        "specificity": 0.7755,
+        "geo_mean": 84.31
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Polynomial",
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8103,
+        "recall": 0.7917,
+        "specificity": 0.8776,
+        "geo_mean": 83.35
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.829,
+        "recall": 0.8733,
+        "specificity": 0.7856000000000001,
+        "geo_mean": 82.83
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1080/03772063.2018.1531730_1"
+}

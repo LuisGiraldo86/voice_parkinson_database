@@ -1,0 +1,217 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c1689368"
+  },
+  "title": "A Spectrogram-Based Deep Feature Assisted Computer-Aided Diagnostic System for Parkinson's Disease",
+  "authors": [
+    {
+      "name": "Laiba Zahid",
+      "affiliations": [
+        {
+          "institution": "COMSATS University Islamabad",
+          "country": "Pakistan"
+        }
+      ]
+    },
+    {
+      "name": "Muazzam Maqsood",
+      "affiliations": [
+        {
+          "institution": "COMSATS University Islamabad",
+          "country": "Pakistan"
+        }
+      ]
+    },
+    {
+      "name": "Mehr Yahya Durrani",
+      "affiliations": [
+        {
+          "institution": "COMSATS University Islamabad",
+          "country": "Pakistan"
+        }
+      ]
+    },
+    {
+      "name": "Maheen Bakhtyar",
+      "affiliations": [
+        {
+          "institution": "University of Balochistan",
+          "country": "Pakistan"
+        }
+      ]
+    },
+    {
+      "name": "Junaid Baber",
+      "affiliations": [
+        {
+          "institution": "University of Balochistan",
+          "country": "Pakistan"
+        }
+      ]
+    },
+    {
+      "name": "Habibullah Jamal",
+      "affiliations": [
+        {
+          "institution": "Ghulam Ishaq Khan Institute",
+          "country": "Pakistan"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "IEEE Access",
+  "year": 2020,
+  "doi": "10.1109/ACCESS.2020.2974008",
+  "citescore": 4.8,
+  "abstract": "Parkinsons disease is a neural degenerative disease. It slowly progresses from mild to severe stage, resulting in the degeneration of dopamine cells of neurons. Due to the deficiency of dopamine cells in the brain, it leads to a motor (tremor, slowness, impaired posture) and non-motor (speech, olfactory) defects in the body. Early detection of Parkinson's disease is a difficult chore as the symptoms of disease appear overtime. However, different diagnostic systems have contributed towards disease detection by considering gait, tremor and speech characteristics. Recent work has shown that speech impairments can be considered as a possible predictor for Parkinson's disease classification and remains an open research area. The speech signals show major differences and variations for Parkinson patients as compared to normal human beings. Therefore, variation in speech should be modeled using acoustic features to identify these variations. In this research, we propose three methods- the first method employs a transfer learning-based approach using spectrograms of speech recordings, the second method evaluates deep features extracted from speech spectrograms using machine learning classifiers and the third method evaluates simple acoustic feature of recordings using machine learning classifiers. The proposed frameworks are evaluated on a Spanish dataset pc-Gita. The results show that the second framework shows promising results with deep features. The highest 99.7% accuracy on vowel \\o\\ and read text is observed using a multilayer perceptron. Whereas 99.1% accuracy observed on vowel \\o\\ deep features using random forest. The deep feature-based method performs better as compared to simple acoustic features and transfer learning approaches. The proposed methodology outperforms the existing techniques on the pc-Gita dataset for Parkinson's disease detection.",
+  "ml_approaches": [
+    {
+      "algorithm": "Convolutional Neural Network: AlexNet",
+      "framework": "",
+      "input_speech": "/a/",
+      "feature_extraction": [
+        "Spectrogram"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.737,
+        "recall": 0.62,
+        "specificity": 0.5
+      }
+    },
+    {
+      "algorithm": "Convolutional Neural Network: AlexNet",
+      "framework": "",
+      "input_speech": "/e/",
+      "feature_extraction": [
+        "Spectrogram"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.75,
+        "recall": 0.53,
+        "specificity": 0.5
+      }
+    },
+    {
+      "algorithm": "Convolutional Neural Network: AlexNet",
+      "framework": "",
+      "input_speech": "/i/",
+      "feature_extraction": [
+        "Spectrogram"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.814,
+        "recall": 0.52,
+        "specificity": 0.45
+      }
+    },
+    {
+      "algorithm": "Convolutional Neural Network: AlexNet",
+      "framework": "",
+      "input_speech": "/o/",
+      "feature_extraction": [
+        "Spectrogram"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.726,
+        "recall": 0.6,
+        "specificity": 0.5
+      }
+    },
+    {
+      "algorithm": "Convolutional Neural Network: AlexNet",
+      "framework": "",
+      "input_speech": "/u/",
+      "feature_extraction": [
+        "Spectrogram"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.823,
+        "recall": 0.5,
+        "specificity": 0.5
+      }
+    },
+    {
+      "algorithm": "Convolutional Neural Network: AlexNet",
+      "framework": "",
+      "input_speech": "read text",
+      "feature_extraction": [
+        "Spectrogram"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9177,
+        "recall": 0.5,
+        "specificity": 0.4
+      }
+    },
+    {
+      "algorithm": "Convolutional Neural Network: AlexNet",
+      "framework": "",
+      "input_speech": "monologue",
+      "feature_extraction": [
+        "Spectrogram"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8636,
+        "recall": 0.45,
+        "specificity": 0.3
+      }
+    },
+    {
+      "algorithm": "Convolutional Neural Network: AlexNet",
+      "framework": "",
+      "input_speech": "/apto/",
+      "feature_extraction": [
+        "Spectrogram"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.7734,
+        "recall": 0.4,
+        "specificity": 0.4
+      }
+    },
+    {
+      "algorithm": "Convolutional Neural Network: AlexNet",
+      "framework": "",
+      "input_speech": "/atelta/",
+      "feature_extraction": [
+        "Spectrogram"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.737,
+        "recall": 0.4,
+        "specificity": 0.3
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "PC-GITA",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://paperswithcode.com/dataset/pc-gita",
+      "doi": ""
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "PC-GITA",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://paperswithcode.com/dataset/pc-gita",
+      "doi": ""
+    }
+  ],
+  "study_id": "10.1109/ACCESS.2020.2974008_1"
+}

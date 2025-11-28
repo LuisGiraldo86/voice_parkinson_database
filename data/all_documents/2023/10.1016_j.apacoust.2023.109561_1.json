@@ -1,0 +1,92 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c1689400"
+  },
+  "title": "A Novel Hybrid Method for Feature Selection Based on Gender Analysis for Early Parkinson's Disease Diagnosis Using Speech Analysis",
+  "authors": [
+    {
+      "name": "Mahboobeh Hasanzadeh",
+      "affiliations": [
+        {
+          "institution": "Islamic Azad University",
+          "country": "Iran"
+        }
+      ]
+    },
+    {
+      "name": "Hamid Mahmoodian",
+      "affiliations": [
+        {
+          "institution": "Islamic Azad University",
+          "country": "Iran"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Applied Acoustics",
+  "year": 2023,
+  "doi": "10.1016/j.apacoust.2023.109561",
+  "abstract": "Parkinson's disease (PD) is one of the neurologic disorders for older people that, because of similar symptoms to other neurologic diseases, is difficult to diagnose, mainly in the early stages. Recently, neurologists are trying non-medical methods based on speech processing for early diagnosis of PD. Since some speech characteristics are different between women and men, we analyze them separately in this research and propose a hybrid method to classify the PD and healthy samples. The proposed method's main structure relies on the features' scores, which are based on a projection on a two-dimensional plane. In the first step, several features inherently different between women and men (healthy and PD) are removed from the features. Then, statistical-Based Feature Score (SBFS) and Classification-Based Feature Score (CBFS) are introduced in the proposed method and used as the dimensions of a two-dimensional hyperplane to rank the features. To increase the stability of the model in speech feature selection, resampling of the dataset is considered in the methodology. Different classifiers (linear and nonlinear support vector machine (LSVM and NSVM respectively), K-nearest neighborhood (KNN), naïve Bayesian (NB), and random forest (RF)) are applied for sample classification. Finally, two sets of features are separately introduced for both groups of men and women. We have achieved 86% and 84% accuracy rates for men and women groups with 14 and 12 features, respectively. The results show that the number of selected features is less than the previous work that introduced and used this dataset. The results also present that although the chosen features are different for men and women, most of the selected features are in similar categories. Unlike the previous similar study where the validation method was based on Leave-one-out, in this study, the results are validated based on an independent set of the used dataset to analyze the stability of the selected features.",
+  "ml_approaches": [
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "data_subset": "men",
+      "feature_selection": {
+        "methods": [
+          "T-test",
+          "Hybrid Feature Score"
+        ],
+        "combination": "sequential"
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.82,
+        "mcc": 0.48,
+        "f1_score": 0.45,
+        "auc": 0.84
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "data_subset": "women",
+      "feature_selection": {
+        "methods": [
+          "T-test",
+          "Hybrid Feature Score"
+        ],
+        "combination": "sequential"
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.78,
+        "mcc": 0.52,
+        "f1_score": 0.67,
+        "auc": 0.82
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "study_id": "10.1016/j.apacoust.2023.109561_1"
+}

@@ -1,0 +1,124 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c1689415"
+  },
+  "title": "Robust language independent voice data driven Parkinsons disease detection",
+  "authors": [
+    {
+      "name": "Iswarya Kannoth Veetil",
+      "affiliations": [
+        {
+          "institution": "Amrita School of Artificial Intelligence",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Sowmya V.",
+      "affiliations": [
+        {
+          "institution": "Amrita School of Artificial Intelligence",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Juan Rafael Orozco-Arroyave",
+      "affiliations": [
+        {
+          "institution": "Universidad de Antioquia",
+          "country": "Colombia"
+        },
+        {
+          "institution": "Friedrich-Alexander Universität Erlangen-Nürnberg",
+          "country": "Germany"
+        }
+      ]
+    },
+    {
+      "name": "E.A. Gopalakrishnan",
+      "affiliations": [
+        {
+          "institution": "Amrita School of Computing",
+          "country": "India"
+        },
+        {
+          "institution": "Amrita School of Artificial Intelligence",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Engineering Applications of Artificial Intelligence",
+  "year": 2024,
+  "doi": "10.1016/j.engappai.2023.107494",
+  "abstract": "Background and Objective: Parkinson's Disease (PD) is a neurodegenerative movement disorder caused by the progressive loss of dopamine. Approximately 90% of PD patients experience voice impairments and this has been used as a precursor to develop diagnostic decision support systems for the early detection of the disease. Since speech data is heavily dependent on the language and the locality of the individual, an important requirement of such a diagnostic decision support system is the ability to classify PD irrespective of the linguistic demography of the speakers and generalize well to heterogeneous populations and external patient data. Methods: This study focuses on the development of a data-driven language independent PD classification model based on Variational Mode Decomposition (VMD). Sustained phonations in Spanish and Italian are decomposed into VMD modes and used along with a deep learning framework to establish cross-lingual validity. The performance of the proposed method is also assessed within the same dataset alongside assessing generalizability to a different dataset of the same language. Additionally, the possibility of gender bias and the robustness of the proposed method on realistic data is also evaluated. Results: The best results show that the proposed method has a cross-lingual accuracy between 65% and 80%. The cross-linguistic validity scores are higher than all values reported by studies using vowels, including models that have used transfer learning on the target language. The proposed method shows 90% to 95% accuracy when tested within the same dataset and has up to 63% generalizability on an independent dataset with realistic recording settings. It is seen that a consistent performance independent of the gender of the speaker is achieved using the proposed method of training the deep learning classifier with VMD modes. Conclusions: The proposed method of using VMD modes and a deep learning classifier has displayed consistent performance across all the tests, including multilingual and same linguistic demography in the data; and across varied recording conditions. The study highlights the importance of testing the generalizability and the effect of bias in the reported results from the oversight of training data choice and limited testing. The results from the study suggest that the proposed method can be used to develop a robust, language independent generalizable model to aid in the detection of PD from voice.",
+  "ml_approaches": [
+    {
+      "algorithm": "Convolutional Neural Network",
+      "framework": "",
+      "feature_extraction": [
+        "Variational Mode Decomposition"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.858
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "feature_extraction": [
+        "Variational Mode Decomposition"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.848
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_extraction": [
+        "Variational Mode Decomposition"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.843
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Gaussian",
+      "framework": "",
+      "feature_extraction": [
+        "Variational Mode Decomposition"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.808
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Italian Parkinson's Voice and Speech",
+      "size": 65,
+      "pd_patients": 28,
+      "controls": 22,
+      "url": "https://ieee-dataport.org/open-access/italian-parkinsons-voice-and-speech",
+      "doi": "10.21227/aw6b-tg17"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Italian Parkinson's Voice and Speech",
+      "size": 65,
+      "pd_patients": 28,
+      "controls": 22,
+      "url": "https://ieee-dataport.org/open-access/italian-parkinsons-voice-and-speech",
+      "doi": "10.21227/aw6b-tg17"
+    }
+  ],
+  "study_id": "10.1016/j.engappai.2023.107494_2"
+}

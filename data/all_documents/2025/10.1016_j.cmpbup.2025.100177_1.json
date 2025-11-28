@@ -1,0 +1,152 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c1689432"
+  },
+  "title": "Feature Selection Based on Mahalanobis Distance for Early Parkinson Disease Classification",
+  "authors": [
+    {
+      "name": "Mustafa Noaman Kadhim",
+      "affiliations": [
+        {
+          "institution": "University of Al-Qadisiyah",
+          "country": "Iraq"
+        }
+      ]
+    },
+    {
+      "name": "Dhiah Al-Shammary",
+      "affiliations": [
+        {
+          "institution": "University of Al-Qadisiyah",
+          "country": "Iraq"
+        }
+      ]
+    },
+    {
+      "name": "Ahmed M. Mahdi",
+      "affiliations": [
+        {
+          "institution": "University of Al-Qadisiyah",
+          "country": "Iraq"
+        }
+      ]
+    },
+    {
+      "name": "Ayman Ibaida",
+      "affiliations": [
+        {
+          "institution": "Victoria University",
+          "country": "Australia"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Computer Methods and Programs in Biomedicine Update",
+  "year": 2025,
+  "doi": "10.1016/j.cmpbup.2025.100177",
+  "abstract": "Standard classifiers struggle with high-dimensional datasets due to increased computational complexity, difficulty in visualization and interpretation, and challenges in handling redundant or irrelevant features. This paper proposes a novel feature selection method based on the Mahalanobis distance for Parkinson's disease (PD) classification. The proposed feature selection identifies relevant features by measuring their distance from the dataset's mean vector, considering the covariance structure. Features with larger Mahalanobis distances are deemed more relevant as they exhibit greater discriminative power relative to the dataset's distribution, aiding in effective feature subset selection. Significant improvements in classification performance were observed across all models. On the 'Parkinson Disease Classification Dataset', the feature set was reduced from 22 to 11 features, resulting in accuracy improvements ranging from 10.17 % to 20.34 %, with the K-Nearest Neighbors (KNN) classifier achieving the highest accuracy of 98.31 %. Similarly, on the 'Parkinson Dataset with Replicated Acoustic Features', the feature set was reduced from 45 to 18 features, achieving accuracy improvements ranging from 1.38 % to 13.88 %, with the Random Forest (RF) classifier achieving the best accuracy of 95.83 %. By identifying convergence features and eliminating divergence features, the proposed method effectively reduces dimensionality while maintaining or improving classifier performance. Additionally, the proposed feature selection method significantly reduces execution time, making it highly suitable for real-time applications in medical diagnostics, where timely and accurate disease identification is critical for improving patient outcomes.",
+  "ml_approaches": [
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Mahalanobis Distance"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9831,
+        "recall": 1,
+        "precision": 0.9333,
+        "f1_score": 0.9655,
+        "auc": 0.9962000000000001
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Mahalanobis Distance"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8814,
+        "recall": 0.7,
+        "precision": 0.9333,
+        "f1_score": 0.8,
+        "auc": 0.9394
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Mahalanobis Distance"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9322,
+        "recall": 1,
+        "precision": 0.7333,
+        "f1_score": 0.8462000000000001,
+        "auc": 0.8985
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Mahalanobis Distance"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9661,
+        "recall": 0.9333,
+        "precision": 0.9333,
+        "f1_score": 0.9333,
+        "auc": 0.9984999999999999
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1016/j.cmpbup.2025.100177_1"
+}

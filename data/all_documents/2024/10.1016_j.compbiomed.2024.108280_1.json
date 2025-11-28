@@ -1,0 +1,145 @@
+{
+  "_id": {
+    "$oid": "68ecf00b6c43da02c1689335"
+  },
+  "title": "FLP: Factor lattice pattern-based automated detection of Parkinson's disease and specific language impairment using recorded speech",
+  "authors": [
+    {
+      "name": "Turker Tuncer",
+      "affiliations": [
+        {
+          "institution": "Firat University",
+          "country": "Turkey"
+        }
+      ]
+    },
+    {
+      "name": "Sengul Dogan",
+      "affiliations": [
+        {
+          "institution": "Firat University",
+          "country": "Turkey"
+        }
+      ]
+    },
+    {
+      "name": "Mehmet Baygin",
+      "affiliations": [
+        {
+          "institution": "Erzurum Technical University",
+          "country": "Turkey"
+        }
+      ]
+    },
+    {
+      "name": "Prabal Datta Barua",
+      "affiliations": [
+        {
+          "institution": "University of Southern Queensland",
+          "country": "Australia"
+        }
+      ]
+    },
+    {
+      "name": "Elizabeth Emma Palmer",
+      "affiliations": [
+        {
+          "institution": "Sydney Children's Hospitals Network",
+          "country": "Australia"
+        },
+        {
+          "institution": "University of New South Wales",
+          "country": "Australia"
+        }
+      ]
+    },
+    {
+      "name": "Sonja March",
+      "affiliations": [
+        {
+          "institution": "University of Southern Queensland",
+          "country": "Australia"
+        }
+      ]
+    },
+    {
+      "name": "Edward J Ciaccio",
+      "affiliations": [
+        {
+          "institution": "Columbia University Irving Medical Center",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Ru-San Tan",
+      "affiliations": [
+        {
+          "institution": "National Heart Centre Singapore",
+          "country": "Singapore"
+        },
+        {
+          "institution": "Duke-NUS Medical School",
+          "country": "Singapore"
+        }
+      ]
+    },
+    {
+      "name": "U Rajendra Acharya",
+      "affiliations": [
+        {
+          "institution": "University of Southern Queensland",
+          "country": "Australia"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Computers in Biology and Medicine",
+  "year": 2024,
+  "doi": "10.1016/j.compbiomed.2024.108280",
+  "abstract": "Background: Timely detection of neurodevelopmental and neurological conditions is crucial for early intervention. Specific Language Impairment (SLI) in children and Parkinson's disease (PD) manifests in speech disturbances that may be exploited for diagnostic screening using recorded speech signals. We were motivated to develop an accurate yet computationally lightweight model for speech-based detection of SLI and PD, employing novel feature engineering techniques to mimic the adaptable dynamic weight assignment network capability of deep learning architectures. Materials and methods: In this research, we have introduced an advanced feature engineering model incorporating a novel feature extraction function, the Factor Lattice Pattern (FLP), which is a quantum-inspired method and uses a superposition-like mechanism, making it dynamic in nature. The FLP encompasses eight distinct patterns, from which the most appropriate pattern was discerned based on the data structure. Through the implementation of the FLP, we automatically extracted signal-specific textural features. Additionally, we developed a new feature engineering model to assess the efficacy of the FLP. This model is self-organizing, producing nine potential results and subsequently choosing the optimal one. Our speech classification framework consists of (1) feature extraction using the proposed FLP and a statistical feature extractor; (2) feature selection employing iterative neighborhood component analysis and an intersection-based feature selector; (3) classification via support vector machine and k-nearest neighbors; and (4) outcome determination using combinational majority voting to select the most favorable results. Results: To validate the classification capabilities of our proposed feature engineering model, designed to automatically detect PD and SLI, we employed three speech datasets of PD and SLI patients. Our presented FLP-centric model achieved classification accuracy of more than 95% and 99.79% for all PD and SLI datasets, respectively. Conclusions: Our results indicate that the proposed model is an accurate alternative to deep learning models in classifying neurological conditions using speech signals.",
+  "ml_approaches": [
+    {
+      "algorithm": "Ensemble (K-Nearest Neighbors, Support Vector Machine)",
+      "feature_extraction": [
+        "Factor Lattice Pattern"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "feature-selection": {
+        "methods": [
+          "Iterative Neighborhood Component Analysis",
+          "Neighborhood Component Analysis with Chi-squared"
+        ],
+        "combination": "union"
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9979
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Czech Parkinson's Disease Dataset",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Czech Parkinson's Disease Dataset",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.1016/j.compbiomed.2024.108280_1"
+}

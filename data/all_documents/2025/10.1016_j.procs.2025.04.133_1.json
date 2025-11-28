@@ -1,0 +1,160 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c168942f"
+  },
+  "title": "Parkinson's Disease Detection: A Machine Learning Based Model",
+  "authors": [
+    {
+      "name": "Anzah Bashir",
+      "affiliations": [
+        {
+          "institution": "Central University of Jammu",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Yashwant Singh",
+      "affiliations": [
+        {
+          "institution": "Central University of Jammu",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Sheerin Zadoo",
+      "affiliations": [
+        {
+          "institution": "Central University of Jammu",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Khalid Hafiz Mir",
+      "affiliations": [
+        {
+          "institution": "Central University of Jammu",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Conference",
+  "journal": "Procedia Computer Science",
+  "year": 2025,
+  "doi": "10.1016/j.procs.2025.04.133",
+  "abstract": "Parkinson's disease (PD) is a significant area of research, and detecting it early can improve patients' quality of life. Speech analysis has shown promising results in detecting PD, and this study employs machine learning to identify the disease. The goal is to diagnose PD by analysing voice signals, which are non-invasive and have potential for detecting the disease. Various classification algorithms like XGBoost, multi-layer perceptron (MLP), KNN, and Random Forest are tested on a voice dataset (UCI Machine Learning Repository), and evaluation metrics are used to get the best classifier. XGBoost outperforms other classifiers with an accuracy of 95% using RFE feature selection technique. However, the small dataset size of 195 instances limits the model's generalization ability. With a larger dataset, the model could perform even better. Overall, this proposed model is reliable in detecting Parkinson's disease, as indicated by its high precision, F1-score, recall, and accuracy rates.",
+  "ml_approaches": [
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "Random Oversampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "precision": 0.94,
+        "recall": 1,
+        "f1_score": 0.97,
+        "accuracy": 0.95
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "Random Oversampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "precision": 1,
+        "recall": 0.79,
+        "f1_score": 0.88,
+        "accuracy": 0.85
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "Random Oversampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "precision": 0.83,
+        "recall": 0.94,
+        "f1_score": 0.88,
+        "accuracy": 0.79
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "Random Oversampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "precision": 0.94,
+        "recall": 0.97,
+        "f1_score": 0.95,
+        "accuracy": 0.92
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1016/j.procs.2025.04.133_1"
+}

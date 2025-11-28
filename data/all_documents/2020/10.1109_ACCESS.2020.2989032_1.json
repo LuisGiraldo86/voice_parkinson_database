@@ -1,0 +1,123 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c1689356"
+  },
+  "title": "A Novel Framework of Two Successive Feature Selection Levels Using Weight-Based Procedure for Voice-Loss Detection in Parkinson's Disease",
+  "authors": [
+    {
+      "name": "Amira S. Ashour",
+      "affiliations": [
+        {
+          "institution": "Tanta University",
+          "country": "Egypt"
+        }
+      ]
+    },
+    {
+      "name": "Majid Kamal A. Nour",
+      "affiliations": [
+        {
+          "institution": "King Abdulaziz University",
+          "country": "Saudi Arabia"
+        }
+      ]
+    },
+    {
+      "name": "Kemal Polat",
+      "affiliations": [
+        {
+          "institution": "Bolu Abant Izzet Baysal University",
+          "country": "Turkey"
+        }
+      ]
+    },
+    {
+      "name": "Yanhui Guo",
+      "affiliations": [
+        {
+          "institution": "University of Illinois at Springfield",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Wafaa Alsaggaf",
+      "affiliations": [
+        {
+          "institution": "King Abdulaziz University",
+          "country": "Saudi Arabia"
+        }
+      ]
+    },
+    {
+      "name": "Amira El-Attar",
+      "affiliations": [
+        {
+          "institution": "Higher Institute of Management and Information Technology",
+          "country": "Egypt"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "IEEE Access",
+  "year": 2020,
+  "doi": "10.1109/ACCESS.2020.2989032",
+  "citescore": 4.8,
+  "abstract": "Parkinson's disease (PD) is one of the public neuro-degenerative disorders. Speech/voice disorder is considered one of the symptoms at an early stage. Acoustic and speech signal processing methods can potentially evaluate and measure PD-related vocal impairment. The present work proposed a novel feature selection framework using two levels of the feature selection procedure for voice-loss detection in PD patients. At the ﬁrst level selection, the principal component analysis (PCA) and the eigenvector centrality feature selection (ECFS) methods are initially calculated independently, and the selected features from each method are considered as a separated sublist, namely ECFS selected features sublist, and PCA selected features sublist, in the ﬁrst set. Accordingly, the ﬁrst set, which is the ﬁrst level selection set, is generated from the union of these two sublists using the top-selected features from both methods. In the training phase, a second level selection, which forms the second set (which is a subset from the ﬁrst set), is generated to calculate the proposed weight of each selection method. Since in the present work, the ECFS provided superior performance to the PCA in the ﬁrst level selection, the ECFS is applied to the ﬁrst set in order to ﬁnd weight values based on the contribution/ impact of the top-selected PCA- and ECFS- features in the second level. This weight is determined by ﬁnding a proposed ratio, which is multiplied directly by the selected ECFS features in the ﬁrst level. The selected weighted ECFS features are then combined with the same PCA features to avoid ignoring any of the top-ranked features from the ﬁrst level. This combination includes the ﬁnal weighted-hybrid selected features that fed to a support vector machine (SVM) classiﬁer to evaluate the proposed weighted hybrid selected features. Hence, in the test phase, the generated weight is used directly without any further need for the second level selection. Several comparative studies were conducted to evaluate the proposed feature selection performance for PD voice-loss detection. The experimental results established the superiority of the proposed procedure using cubic kernel-SVM with 94% accuracy for voiceloss detection in PD, while, with the same classiﬁer, 88% accuracy was achieved without using the proposed selection method.",
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine: Cubic",
+      "framework": null,
+      "feature_selection": {
+        "methods": [
+          "PCA",
+          "Feature Selection: Eigenvector Centrality"
+        ],
+        "combination": "Hybrid Feature Selection"
+      },
+      "results": {
+        "accuracy": 0.88
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Cubic",
+      "framework": null,
+      "feature_selection": {
+        "methods": [
+          "PCA",
+          "Feature Selection: Eigenvector Centrality"
+        ],
+        "combination": "Weighted Hybrid Feature Selection"
+      },
+      "results": {
+        "accuracy": 0.94,
+        "recall": 0.844,
+        "specificity": 0.973,
+        "precision": 0.915,
+        "auc": 0.97
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "study_id": "10.1109/ACCESS.2020.2989032_1"
+}

@@ -1,0 +1,102 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c168939f"
+  },
+  "title": "Convolutional neural networks to detect Parkinson's disease based on voice recordings and transfer learning",
+  "authors": [
+    {
+      "name": "Daniel Francisco Merino Delgado",
+      "affiliations": [
+        {
+          "institution": "Universidad de Extremadura",
+          "country": "Spain"
+        }
+      ]
+    },
+    {
+      "name": "María Jesús Rufo Bazaga",
+      "affiliations": [
+        {
+          "institution": "Universidad de Extremadura",
+          "country": "Spain"
+        }
+      ]
+    },
+    {
+      "name": "Alfonso Mateos Caballero",
+      "affiliations": [
+        {
+          "institution": "Universidad Politécnica de Madrid",
+          "country": "Spain"
+        }
+      ]
+    },
+    {
+      "name": "Carlos Javier Pérez Sánchez",
+      "affiliations": [
+        {
+          "institution": "Universidad de Extremadura",
+          "country": "Spain"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Conference",
+  "journal": "2024 IEEE International Conference on Evolving and Adaptive Intelligent Systems",
+  "year": 2024,
+  "doi": "10.1109/EAIS58494.2024.10570028",
+  "abstract": "An early detection of Parkinson's Disease (PD) is important for patients' quality of life and current detection methods are not optimal in this task. The search of an automatic, low-cost, non-invasive method would be appropiate to delevope a computer-aided diagnosis system. Machine learning models based on data such as neural networks are at the core of many of these systems. In this work 5 convolutional neural network architectures have been compared by their capability on classifying spectrograms generated with PCGita database. For this classification task, transfer learning using Saarbrücken Voice Database and a data augmentation technique have been addresed with 14 models from the 5 architectures. After performing 5-fold cross-validation, results show that VGG16 architecture is able to distinguish between healthy and PD spectrograms with around 85% of global accuracy. Further research is needed to explore the potential of this technology with multicondition training in medical environments.",
+  "citescore": null,
+  "target_dataset": [
+    {
+      "name": "PC-GITA",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://paperswithcode.com/dataset/pc-gita",
+      "doi": null
+    }
+  ],
+  "ml_approaches": [
+    {
+      "algorithm": "Convolutional Neural Network: VGG16",
+      "data_augmentation": "Sliding Window",
+      "feature_extraction": [
+        "Mel Spectrograms"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.853,
+        "recall": 0.82,
+        "specificity": 0.873,
+        "f1_score": 0.801
+      }
+    },
+    {
+      "algorithm": "Xception",
+      "data_augmentation": "Sliding Window",
+      "feature_extraction": [
+        "Mel Spectrograms"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.786,
+        "recall": 0.828,
+        "specificity": 0.734,
+        "f1_score": 0.81
+      }
+    }
+  ],
+  "note": "The naming of the metrics are unusual. It has many resemblance with 10.1007/s00521-024-09516-1",
+  "source_dataset": [
+    {
+      "name": "Saarbrücken Voice Dataset",
+      "size": null,
+      "pd_patients": null,
+      "controls": 851,
+      "url": "https://stimmdb.coli.uni-saarland.de/",
+      "doi": null
+    }
+  ],
+  "study_id": "10.1109/EAIS58494.2024.10570028_1"
+}

@@ -1,0 +1,228 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893ca"
+  },
+  "title": "Detection of voice impairment for Parkinson's disease using machine learning tools",
+  "authors": [
+    {
+      "name": "Radouani Laila",
+      "affiliation": "Mohammed V University in Rabat, Morocco"
+    },
+    {
+      "name": "Lagdali Salwa",
+      "affiliation": "Mohammed V University in Rabat, Morocco"
+    },
+    {
+      "name": "Rziza Mohammed",
+      "affiliation": "Mohammed V University in Rabat, Morocco"
+    }
+  ],
+  "publication_type": "Conference",
+  "journal": "2020 10th International Symposium on Signal, Image, Video and Communications",
+  "year": 2021,
+  "doi": "10.1109/ISIVC49222.2021.9487544",
+  "abstract": "Parkinson's disease is a progressive nervous system disorder that affects movement, and patients need periodic monitoring which is difﬁcult for them and costs a lot. In recent years, there has been much research about the link between Parkinson's disease (PD) and speech impairment in order to provide an early diagnosis of the disease and create a system for remote monitoring of patients as well. Many studies have used signal and speech processing techniques to convert acoustic signals into vectors of features which are then mapped into different machine learning algorithms. The results obtained in PD telemedicine studies have shown that the choice of feature extraction techniques and classiﬁcation algorithms directly inﬂuence the accuracy and reliability of the proposed system. This article provides a system to assess the speech disorders in the context of PD using features extracted from three domains (time/frequency, cepstral, and wavelet domain) and machine learning tools. Our goal is to assess the ability of each individual to distinguish those with Parkinson's disease from healthy people. The results suggest that cepstral domain gives the most reliable parametrization comparable to time/frequency and wavelet domain with a high accuracy using Support Vector Machine classiﬁer.",
+  "ml_approaches": [
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "feature_extraction": [
+        "Time-Frequency"
+      ],
+      "feature_selection": {
+        "methods": [
+          "ReliefF"
+        ]
+      },
+      "scaling": [
+        "Standardization"
+      ],
+      "results": {
+        "accuracy": 0.6,
+        "recall": 0.46,
+        "specificity": 0.86
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Polynomial",
+      "framework": "",
+      "feature_extraction": [
+        "Time-Frequency"
+      ],
+      "feature_selection": {
+        "methods": [
+          "ReliefF"
+        ]
+      },
+      "scaling": [
+        "Standardization"
+      ],
+      "results": {
+        "accuracy": 0.7,
+        "recall": 1,
+        "specificity": 0.68
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "feature_extraction": [
+        "Time-Frequency"
+      ],
+      "feature_selection": {
+        "methods": [
+          "ReliefF"
+        ]
+      },
+      "scaling": [
+        "Standardization"
+      ],
+      "results": {
+        "accuracy": 0.7,
+        "recall": 0.92,
+        "specificity": 0.71
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "ReliefF"
+        ]
+      },
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_extraction": [
+        "Cepstral"
+      ],
+      "results": {
+        "accuracy": 0.45,
+        "recall": 0.31,
+        "specificity": 0.67
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Polynomial",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "ReliefF"
+        ]
+      },
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_extraction": [
+        "Cepstral"
+      ],
+      "results": {
+        "accuracy": 0.8,
+        "recall": 0.69,
+        "specificity": 1
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "ReliefF"
+        ]
+      },
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_extraction": [
+        "Cepstral"
+      ],
+      "results": {
+        "accuracy": 0.65,
+        "recall": 0.62,
+        "specificity": 0.31
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "ReliefF"
+        ]
+      },
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_extraction": [
+        "Wavelet Transform"
+      ],
+      "results": {
+        "accuracy": 0.5,
+        "recall": 0.54,
+        "specificity": 0.64
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Polynomial",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "ReliefF"
+        ]
+      },
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_extraction": [
+        "Wavelet Transform"
+      ],
+      "results": {
+        "accuracy": 0.45,
+        "recall": 0.23,
+        "specificity": 0.75
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "ReliefF"
+        ]
+      },
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_extraction": [
+        "Wavelet Transform"
+      ],
+      "results": {
+        "accuracy": 0.45,
+        "recall": 0.31,
+        "specificity": 0.67
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Speech with Multiple Types of Sound Recordings",
+      "size": 40,
+      "pd_patients": 20,
+      "controls": 20,
+      "url": "https://archive.ics.uci.edu/dataset/301/parkinson+speech+dataset+with+multiple+types+of+sound+recordings",
+      "doi": "10.24432/C5NC8M"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Speech with Multiple Types of Sound Recordings",
+      "size": 40,
+      "pd_patients": 20,
+      "controls": 20,
+      "url": "https://archive.ics.uci.edu/dataset/301/parkinson+speech+dataset+with+multiple+types+of+sound+recordings",
+      "doi": "10.24432/C5NC8M"
+    }
+  ],
+  "study_id": "10.1109/ISIVC49222.2021.9487544_1"
+}

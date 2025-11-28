@@ -1,0 +1,780 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893d9"
+  },
+  "title": "Hybrid preprocessing and ensemble classification for enhanced detection of Parkinson's disease using multiple speech signal databases",
+  "authors": [
+    {
+      "name": "Ling-Chun Sun",
+      "affiliations": [
+        {
+          "institution": "National Defense Medical Center",
+          "country": "Taiwan"
+        }
+      ]
+    },
+    {
+      "name": "Chun-Wei Tseng",
+      "affiliations": [
+        {
+          "institution": "National Defense Medical Center",
+          "country": "Taiwan"
+        }
+      ]
+    },
+    {
+      "name": "Ke-Feng Lin",
+      "affiliations": [
+        {
+          "institution": "National Defense Medical Center",
+          "country": "Taiwan"
+        }
+      ]
+    },
+    {
+      "name": "Ping-null Chen",
+      "affiliations": [
+        {
+          "institution": "National Defense Medical Center",
+          "country": "Taiwan"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Digital Health",
+  "year": 2025,
+  "doi": "10.1177/20552076251352941",
+  "abstract": "Objective: With the increasing prevalence of Parkinson's disease (PD) and the development of PD-based acoustic recording databases, this study aims to evaluate the feasibility of using an ensemble-based machine learning (ML) approach to detect PD across diverse acoustic datasets. Methods: We utilized three publicly available PD speech datasets—MIU (Sakar), UEX (Carrón), and UCI (Little)—to build ML algorithms incorporating a hybrid preprocessing framework. This framework includes a scaling phase (using Robustscaling), a imbalance_handling phase (employing random overimbalance_handling (ROS), synthetic minority overimbalance_handling technique (SMOTE), and random underimbalance_handling (RUS)), and an ML classiﬁer selection phase (featuring eXtreme gradient boosting (XGBoost) and adaptive boosting (AdaBoost)). Performance was evaluated using accuracy, precision, recall, and f1_score metrics. Additionally, we conducted SHAP (SHapley Additive exPlanations) analysis to identify the most signiﬁcant PDrelated acoustic features. Results: The optimal combination of preprocessing and classiﬁcation techniques varied across datasets. However, the highest classiﬁcation performance was generally achieved using Robustscaling for scaling, a combination of ROS, SMOTE, and RUS for imbalance_handling, and XGBoost or AdaBoost for classiﬁcation. The best-performing algorithm on the MIU dataset achieved accuracy of 97.37%, precision of 96.07%, and f1_score of 96.57%. The UEX and UCI datasets achieved perfect classiﬁcation with 100% accuracy, precision, and recall. SHAP analysis revealed that Mel-frequency cepstral coefﬁcients were consistently among the most inﬂuential PD-related acoustic features. Conclusions: Our ﬁndings conﬁrm the feasibility of an ensemble-based approach for PD detection using acoustic recordings, highlighting the importance of dataset-speciﬁc preprocessing strategies. This study ranks impactful PD-related acoustic features, offering guidance for future voice-based PD screening tools.",
+  "ml_approaches": [
+    {
+      "algorithm": "XGBoost",
+      "imbalance_handling": [
+        "Vanilla"
+      ],
+      "results": {
+        "accuracy": 0.8889,
+        "precision": 0.9111,
+        "recall": 0.8889,
+        "f1_score": 0.8889
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "imbalance_handling": [
+        "Random Oversampling"
+      ],
+      "results": {
+        "accuracy": 0.8889,
+        "precision": 0.9111,
+        "recall": 0.8889,
+        "f1_score": 0.8889
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "results": {
+        "accuracy": 1,
+        "precision": 1,
+        "recall": 1,
+        "f1_score": 1
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "imbalance_handling": [
+        "BLSMOTE"
+      ],
+      "results": {
+        "accuracy": 0.8889,
+        "precision": 0.9111,
+        "recall": 0.8889,
+        "f1_score": 0.8889
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "imbalance_handling": [
+        "Random Undersampler"
+      ],
+      "results": {
+        "accuracy": 1,
+        "precision": 1,
+        "recall": 1,
+        "f1_score": 1
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "imbalance_handling": [
+        "Centroid Undersampling"
+      ],
+      "results": {
+        "accuracy": 0.8889,
+        "precision": 0.9111,
+        "recall": 0.8889,
+        "f1_score": 0.8889
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "imbalance_handling": [
+        "NearMiss-1"
+      ],
+      "results": {
+        "accuracy": 1,
+        "precision": 1,
+        "recall": 1,
+        "f1_score": 1
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "imbalance_handling": [
+        "NearMiss-2"
+      ],
+      "results": {
+        "accuracy": 1,
+        "precision": 1,
+        "recall": 1,
+        "f1_score": 1
+      }
+    },
+    {
+      "algorithm": "Random Subspace Ensemble",
+      "imbalance_handling": [
+        "NearMiss-3"
+      ],
+      "results": {
+        "accuracy": 0.8889,
+        "precision": 0.9167,
+        "recall": 0.8889,
+        "f1_score": 0.8918
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "imbalance_handling": [
+        "Vanilla"
+      ],
+      "scaling": [
+        "Robust"
+      ],
+      "results": {
+        "accuracy": 1,
+        "precision": 1,
+        "recall": 1,
+        "f1_score": 1
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "imbalance_handling": [
+        "Random Oversampler"
+      ],
+      "scaling": [
+        "Robust"
+      ],
+      "results": {
+        "accuracy": 1,
+        "precision": 1,
+        "recall": 1,
+        "f1_score": 1
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "scaling": [
+        "Robust"
+      ],
+      "results": {
+        "accuracy": 0.8889,
+        "precision": 0.9167,
+        "recall": 0.8889,
+        "f1_score": 0.8918
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "imbalance_handling": [
+        "BLSMOTE"
+      ],
+      "scaling": [
+        "Robust"
+      ],
+      "results": {
+        "accuracy": 0.8889,
+        "precision": 0.9111,
+        "recall": 0.8889,
+        "f1_score": 0.8889
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "imbalance_handling": [
+        "Random Undersampler"
+      ],
+      "scaling": [
+        "Robust"
+      ],
+      "results": {
+        "accuracy": 0.8889,
+        "precision": 0.9167,
+        "recall": 0.8889,
+        "f1_score": 0.8918
+      }
+    },
+    {
+      "algorithm": "Random Subspace Ensemble",
+      "imbalance_handling": [
+        "Cluster Undersampling"
+      ],
+      "scaling": [
+        "Robust"
+      ],
+      "results": {
+        "accuracy": 1,
+        "precision": 1,
+        "recall": 1,
+        "f1_score": 1
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "imbalance_handling": [
+        "Centroid Undersampling"
+      ],
+      "scaling": [
+        "Robust"
+      ],
+      "results": {
+        "accuracy": 0.8889,
+        "precision": 0.9167,
+        "recall": 0.8889,
+        "f1_score": 0.8918
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "imbalance_handling": [
+        "NearMiss-1"
+      ],
+      "scaling": [
+        "Robust"
+      ],
+      "results": {
+        "accuracy": 1,
+        "precision": 1,
+        "recall": 1,
+        "f1_score": 1
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "imbalance_handling": [
+        "NearMiss-2"
+      ],
+      "scaling": [
+        "Robust"
+      ],
+      "results": {
+        "accuracy": 1,
+        "precision": 1,
+        "recall": 1,
+        "f1_score": 1
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "imbalance_handling": [
+        "NearMiss-3"
+      ],
+      "scaling": [
+        "Robust"
+      ],
+      "results": {
+        "accuracy": 1,
+        "precision": 1,
+        "recall": 1,
+        "f1_score": 1
+      }
+    },
+    {
+      "algorithm": "Random Subspace Ensemble",
+      "imbalance_handling": [
+        "Vanilla"
+      ],
+      "scaling": [
+        "Max Absolute"
+      ],
+      "results": {
+        "accuracy": 0.8889,
+        "precision": 0.9259,
+        "recall": 0.8889,
+        "f1_score": 0.8956999999999999
+      }
+    },
+    {
+      "algorithm": "Random Subspace Ensemble",
+      "imbalance_handling": [
+        "Random Oversampler"
+      ],
+      "scaling": [
+        "Max Absolute"
+      ],
+      "results": {
+        "accuracy": 1,
+        "precision": 1,
+        "recall": 1,
+        "f1_score": 1
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "scaling": [
+        "Max Absolute"
+      ],
+      "results": {
+        "accuracy": 0.7778,
+        "precision": 0.7778,
+        "recall": 0.7778,
+        "f1_score": 0.7778
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "imbalance_handling": [
+        "BLSMOTE"
+      ],
+      "scaling": [
+        "Max Absolute"
+      ],
+      "results": {
+        "accuracy": 0.8889,
+        "precision": 0.9074,
+        "recall": 0.8889,
+        "f1_score": 0.8859999999999999
+      }
+    },
+    {
+      "algorithm": "Random Subspace Ensemble",
+      "imbalance_handling": [
+        "Random Undersampler"
+      ],
+      "scaling": [
+        "Max Absolute"
+      ],
+      "results": {
+        "accuracy": 1,
+        "precision": 1,
+        "recall": 1,
+        "f1_score": 1
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "imbalance_handling": [
+        "Cluster Undersampling"
+      ],
+      "scaling": [
+        "Max Absolute"
+      ],
+      "results": {
+        "accuracy": 0.8889,
+        "precision": 0.9074,
+        "recall": 0.8889,
+        "f1_score": 0.8859999999999999
+      }
+    },
+    {
+      "algorithm": "Gradient Boosting",
+      "imbalance_handling": [
+        "Centroid Undersampling"
+      ],
+      "scaling": [
+        "Max Absolute"
+      ],
+      "results": {
+        "accuracy": 0.8889,
+        "precision": 0.9259,
+        "recall": 0.8889,
+        "f1_score": 0.8956999999999999
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "imbalance_handling": [
+        "NearMiss-1"
+      ],
+      "scaling": [
+        "Max Absolute"
+      ],
+      "results": {
+        "accuracy": 1,
+        "precision": 1,
+        "recall": 1,
+        "f1_score": 1
+      }
+    },
+    {
+      "algorithm": "Random Subspace Ensemble",
+      "imbalance_handling": [
+        "NearMiss-2"
+      ],
+      "scaling": [
+        "Max Absolute"
+      ],
+      "results": {
+        "accuracy": 1,
+        "precision": 1,
+        "recall": 1,
+        "f1_score": 1
+      }
+    },
+    {
+      "algorithm": "Random Subspace Ensemble",
+      "imbalance_handling": [
+        "NearMiss-3"
+      ],
+      "scaling": [
+        "Max Absolute"
+      ],
+      "results": {
+        "accuracy": 0.8889,
+        "precision": 0.9074,
+        "recall": 0.8889,
+        "f1_score": 0.8859999999999999
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "imbalance_handling": [
+        "Vanilla"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "results": {
+        "accuracy": 0.8889,
+        "precision": 0.9259,
+        "recall": 0.8889,
+        "f1_score": 0.8956999999999999
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "imbalance_handling": [
+        "Random Oversampler"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "results": {
+        "accuracy": 0.8889,
+        "precision": 0.9074,
+        "recall": 0.8889,
+        "f1_score": 0.8859999999999999
+      }
+    },
+    {
+      "algorithm": "Gradient Boosting",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "results": {
+        "accuracy": 0.8889,
+        "precision": 0.9259,
+        "recall": 0.8889,
+        "f1_score": 0.8956999999999999
+      }
+    },
+    {
+      "algorithm": "Random Subspace Ensemble",
+      "imbalance_handling": [
+        "BLSMOTE"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "results": {
+        "accuracy": 1,
+        "precision": 1,
+        "recall": 1,
+        "f1_score": 1
+      }
+    },
+    {
+      "algorithm": "Random Subspace Ensemble",
+      "imbalance_handling": [
+        "Random Undersampler"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "results": {
+        "accuracy": 1,
+        "precision": 1,
+        "recall": 1,
+        "f1_score": 1
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "imbalance_handling": [
+        "Cluster Undersampling"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "results": {
+        "accuracy": 0.8889,
+        "precision": 0.9259,
+        "recall": 0.8889,
+        "f1_score": 0.8956999999999999
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "imbalance_handling": [
+        "Centroid Undersampling"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "results": {
+        "accuracy": 0.8889,
+        "precision": 0.9074,
+        "recall": 0.8889,
+        "f1_score": 0.8859999999999999
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "imbalance_handling": [
+        "NearMiss-1"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "results": {
+        "accuracy": 0.8889,
+        "precision": 0.9259,
+        "recall": 0.8889,
+        "f1_score": 0.8956999999999999
+      }
+    },
+    {
+      "algorithm": "Gradient Boosting",
+      "imbalance_handling": [
+        "NearMiss-2"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "results": {
+        "accuracy": 0.8889,
+        "precision": 0.9259,
+        "recall": 0.8889,
+        "f1_score": 0.8956999999999999
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "imbalance_handling": [
+        "NearMiss-3"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "results": {
+        "accuracy": 0.8889,
+        "precision": 0.9259,
+        "recall": 0.8889,
+        "f1_score": 0.8956999999999999
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "imbalance_handling": [
+        "Vanilla"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "results": {
+        "accuracy": 0.7778,
+        "precision": 0.8519,
+        "recall": 0.7778,
+        "f1_score": 0.7722
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "imbalance_handling": [
+        "Random Oversampler"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "results": {
+        "accuracy": 0.6667,
+        "precision": 0.8333,
+        "recall": 0.6667,
+        "f1_score": 0.6667000000000001
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "results": {
+        "accuracy": 0.7778,
+        "precision": 0.8519,
+        "recall": 0.7778,
+        "f1_score": 0.7722
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "imbalance_handling": [
+        "BLSMOTE"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "results": {
+        "accuracy": 0.6667,
+        "precision": 0.8333,
+        "recall": 0.6667,
+        "f1_score": 0.6667000000000001
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "imbalance_handling": [
+        "Random Undersampler"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "results": {
+        "accuracy": 0.6667,
+        "precision": 0.8333,
+        "recall": 0.6667,
+        "f1_score": 0.6667000000000001
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "imbalance_handling": [
+        "Cluster Undersampling"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "results": {
+        "accuracy": 0.7778,
+        "precision": 0.9259,
+        "recall": 0.7778,
+        "f1_score": 0.8175
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "imbalance_handling": [
+        "Centroid Undersampling"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "results": {
+        "accuracy": 0.6667,
+        "precision": 0.8333,
+        "recall": 0.6667,
+        "f1_score": 0.6667000000000001
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "imbalance_handling": [
+        "NearMiss-1"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "results": {
+        "accuracy": 0.6667,
+        "precision": 0.8333,
+        "recall": 0.6667,
+        "f1_score": 0.6667000000000001
+      }
+    },
+    {
+      "algorithm": "Random Subspace Ensemble",
+      "imbalance_handling": [
+        "NearMiss-2"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "results": {
+        "accuracy": 0.7778,
+        "precision": 0.7778,
+        "recall": 0.7778,
+        "f1_score": 0.7778
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "imbalance_handling": [
+        "NearMiss-3"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "results": {
+        "accuracy": 0.7778,
+        "precision": 0.7778,
+        "recall": 0.7778,
+        "f1_score": 0.7778
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Extremadura Parkinson's Disease Dataset",
+      "size": 60,
+      "pd_patients": 30,
+      "controls": 30,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Extremadura Parkinson's Disease Dataset",
+      "size": 60,
+      "pd_patients": 30,
+      "controls": 30,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.1177/20552076251352941_2"
+}

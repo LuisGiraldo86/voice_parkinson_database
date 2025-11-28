@@ -1,0 +1,308 @@
+{
+  "_id": {
+    "$oid": "68ecf00b6c43da02c16892fe"
+  },
+  "title": "A machine learning method to process voice samples for identification of Parkinson's disease",
+  "authors": [
+    {
+      "name": "Anu Iyer",
+      "affiliations": [
+        {
+          "institution": "Georgia Institute of Technology",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Aaron Kemp",
+      "affiliations": [
+        {
+          "institution": "University of Arkansas for Medical Sciences",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Yasir Rahmatallah",
+      "affiliations": [
+        {
+          "institution": "University of Arkansas for Medical Sciences",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Lakshmi Pillai",
+      "affiliations": [
+        {
+          "institution": "University of Arkansas for Medical Sciences",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Aliyah Glover",
+      "affiliations": [
+        {
+          "institution": "University of Arkansas for Medical Sciences",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Fred Prior",
+      "affiliations": [
+        {
+          "institution": "University of Arkansas for Medical Sciences",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Linda Larson-Prior",
+      "affiliations": [
+        {
+          "institution": "University of Arkansas for Medical Sciences",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Tuhim Virmani",
+      "affiliations": [
+        {
+          "institution": "University of Arkansas for Medical Sciences",
+          "country": "USA"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Scientific Reports",
+  "year": 2023,
+  "doi": "10.1038/s41598-023-47568-w",
+  "abstract": "Machine learning approaches have been used for the automatic detection of Parkinson's disease with voice recordings being the most used data type due to the simple and non-invasive nature of acquiring such data. Although voice recordings captured via telephone or mobile devices allow much easier and wider access for data collection, current conflicting performance results limit their clinical applicability. This study has two novel contributions. First, we show the reliability of personal telephone-collected voice recordings of the sustained vowel /a/ in natural settings by collecting samples from 50 people with specialist-diagnosed Parkinson's disease and 50 healthy controls and applying machine learning classification with voice features related to phonation. Second, we utilize a novel application of a pre-trained convolutional neural network (Inception V3) with transfer learning to analyze the spectrograms of the sustained vowel from these samples. This approach considers speech intensity estimates across time and frequency scales rather than collapsing measurements across time. We show the superiority of our deep learning model for the task of classifying people with Parkinson's disease as distinct from healthy controls.",
+  "ml_approaches": [
+    {
+      "algorithm": "Logistic Regression",
+      "feature_extraction": [
+        "Acoustic Signal"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.6
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "feature_extraction": [
+        "LPC-variance"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.66
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "feature_extraction": [
+        "LPC-mean"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.6
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "feature_extraction": [
+        "LAR-mean"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.56
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "feature_extraction": [
+        "LAR-variance"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.7
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "feature_extraction": [
+        "Cepstral-mean"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.6
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "feature_extraction": [
+        "Cepstral-variance"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.72
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "feature_extraction": [
+        "Mel-Frequency Cepstral Coefficients-mean"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.5
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "feature_extraction": [
+        "Mel-Frequency Cepstral Coefficients-variance"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.73
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "feature_extraction": [
+        "Acoustic Signal"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.72
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "feature_extraction": [
+        "LPC-variance"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.61
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "feature_extraction": [
+        "LPC-mean"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.57
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "feature_extraction": [
+        "LAR-mean"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.56
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "feature_extraction": [
+        "LAR-variance"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.66
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "feature_extraction": [
+        "Cepstral-mean"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.56
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "feature_extraction": [
+        "Cepstral-variance"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.7
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "feature_extraction": [
+        "Mel-Frequency Cepstral Coefficients-mean"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.57
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "feature_extraction": [
+        "Mel-Frequency Cepstral Coefficients-variance"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.73
+      }
+    },
+    {
+      "algorithm": "Convolutional Neural Network",
+      "feature_extraction": [
+        "Spectrogram-grayscale"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.96
+      }
+    },
+    {
+      "algorithm": "Convolutional Neural Network",
+      "feature_extraction": [
+        "Spectrogram-color"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "auc": 0.97
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "University of Arkansas Dataset",
+      "size": 81,
+      "pd_patients": 40,
+      "controls": 41,
+      "url": "https://doi.org/10.6084/m9.figshare.23849127",
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "University of Arkansas Dataset",
+      "size": 81,
+      "pd_patients": 40,
+      "controls": 41,
+      "url": "https://doi.org/10.6084/m9.figshare.23849127",
+      "doi": null
+    }
+  ],
+  "study_id": "10.1038/s41598-023-47568-w_1"
+}

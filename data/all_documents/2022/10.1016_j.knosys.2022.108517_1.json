@@ -1,0 +1,85 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893ea"
+  },
+  "title": "A dynamic stochastic search algorithm for high-dimensional optimization problems and its application to feature selection",
+  "authors": [
+    {
+      "name": "Qi Liu",
+      "affiliations": [
+        {
+          "institution": "China University of Petroleum",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Mengxue Liu",
+      "affiliations": [
+        {
+          "institution": "China University of Petroleum",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Fengde Wang",
+      "affiliations": [
+        {
+          "institution": "Shandong University of Science and Technology",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Wensheng Xiao ",
+      "affiliations": [
+        {
+          "institution": "China University of Petroleum",
+          "country": "China"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Knowledge-Based Systems",
+  "year": 2022,
+  "doi": "10.1016/j.knosys.2022.108517",
+  "abstract": "As the number of dimensions of an optimization problem increases, the process of deriving the solution becomes more complicated and difficult. Metaheuristic algorithms are effective methods for solving many optimization problems, whereas most of these algorithms perform poorly on high-dimensional problems. In this paper, a novel metaheuristic algorithm called Dynamic Stochastic Search (DSS) is proposed for high-dimensional optimization problems. To effectively execute the exploration (diversification) and exploitation (intensification) processes of DSS, a dynamic stochastic search process is designed by defining a stochastic search control factor, a search process based on the Gaussian distribution, two shrink modes inspired by the Whale Optimization Algorithm, and a balance mechanism derived from the Bat Algorithm. The proposed algorithm has the following advantages: no specific control parameters other than the population size and the maximum number of iterations, a simple structure, and less computational effort in the implementation. Analyzing the computational complexity of DSS demonstrates its simplicity. To evaluate the performance of DSS, twenty 300-dimensional and 3000-dimensional classical benchmark functions as well as thirty 100-dimensional CEC2014 benchmark functions are utilized. The statistical results prove the effectiveness and feasibility of DSS for high-dimensional optimization problems because it shows better convergence performance and higher efficiency than various advanced optimization algorithms. Moreover, the superiority of DSS in solving high-dimensional real-world optimization problems is validated by applying it to feature selection for ten real-world benchmark classification datasets from the UCI machine learning repository.",
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "MATLAB R2015b",
+      "feature_selection": {
+        "methods": [
+          "Dynamic Stochastic Search"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "average_classification_error": 27.06
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "study_id": "10.1016/j.knosys.2022.108517_1"
+}

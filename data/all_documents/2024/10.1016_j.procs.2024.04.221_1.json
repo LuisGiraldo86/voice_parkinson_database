@@ -1,0 +1,171 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c1689409"
+  },
+  "title": "Exploring Binary Classification Models for Parkinson's Disease Detection",
+  "authors": [
+    {
+      "name": "Vibha Jain",
+      "affiliations": [
+        {
+          "institution": "Manipal University Jaipur",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Rohit Singh",
+      "affiliations": [
+        {
+          "institution": "Manipal University Jaipur",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Aditya Gupta",
+      "affiliations": [
+        {
+          "institution": "Thapar Institute of Engineering & Technology",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Conference",
+  "journal": "Procedia Computer Science",
+  "year": 2024,
+  "doi": "10.1016/j.procs.2024.04.221",
+  "abstract": "Parkinson's disease (PD) is a degenerative condition characterised by a combination of motor symptoms, such as tremors and rigidity, and non-motor symptoms, including cognitive impairment and anxiety. Although there is currently no known cure, there are available treatments that can effectively mitigate symptoms and enhance life expectancy. Our research primarily centred around vocal disorders, given that an estimated 90% of individuals diagnosed with Parkinson's disease experience the onset of such disorders in the early stages of the disease. In this study, a dataset is collected from UCI repository consisting of 252 cases was utilised, with 188 cases classified as Parkinson's disease and 64 cases classified as non-Parkinson's disease. The results of our study indicate that the K-nearest neighbours (KNN) algorithm demonstrated a peak accuracy of 98.52% and an average accuracy of 97.33%, surpassing the performance of previously established models. Additionally, we introduced the implementation of Parzen Windows Estimation (a KDE technique) and computed classifier accuracies based on mean test set scores after multiple rounds of data reshuffling and model training. Our results enhance credibility compared to previous works in this field. Given the high misdiagnosis rate (26%) and the expense of imaging tests, deploying a precise and cost-effective algorithm for early PD detection is critical.",
+  "ml_approaches": [
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Oversampling"
+      ],
+      "feature_extraction": [
+        "Continuous Wavelet Transform"
+      ],
+      "validation": "k-fold cross-validation",
+      "results": {
+        "accuracy": 0.8973,
+        "auc": 0.942,
+        "precision": 0.9,
+        "recall": 0.9,
+        "f1_score": 0.9
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Oversampling"
+      ],
+      "feature_extraction": [
+        "Continuous Wavelet Transform"
+      ],
+      "validation": "k-fold cross-validation",
+      "results": {
+        "accuracy": 0.9733,
+        "auc": 0.973,
+        "precision": 0.98,
+        "recall": 0.98,
+        "f1_score": 0.97
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Oversampling"
+      ],
+      "feature_extraction": [
+        "Continuous Wavelet Transform"
+      ],
+      "validation": "k-fold cross-validation",
+      "results": {
+        "accuracy": 0.8768,
+        "auc": 0.9151,
+        "precision": 0.88,
+        "recall": 0.88,
+        "f1_score": 0.88
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Oversampling"
+      ],
+      "feature_extraction": [
+        "Continuous Wavelet Transform"
+      ],
+      "validation": "k-fold cross-validation",
+      "results": {
+        "accuracy": 0.8557,
+        "auc": 0.8647,
+        "precision": 0.88,
+        "recall": 0.88,
+        "f1_score": 0.87
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Oversampling"
+      ],
+      "feature_extraction": [
+        "Continuous Wavelet Transform"
+      ],
+      "validation": "k-fold cross-validation",
+      "results": {
+        "accuracy": 0.9156,
+        "auc": 0.9752,
+        "precision": 0.94,
+        "recall": 0.89,
+        "f1_score": 0.91
+      }
+    },
+    {
+      "algorithm": "Parzen Window Estimator",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Oversampling"
+      ],
+      "feature_extraction": [
+        "Continuous Wavelet Transform"
+      ],
+      "validation": "k-fold cross-validation",
+      "results": {
+        "accuracy": 0.8658,
+        "auc": 0.882,
+        "precision": 0.9,
+        "recall": 0.88,
+        "f1_score": 0.88
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "study_id": "10.1016/j.procs.2024.04.221_1"
+}

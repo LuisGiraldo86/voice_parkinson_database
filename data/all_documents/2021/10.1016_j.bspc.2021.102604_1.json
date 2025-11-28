@@ -1,0 +1,204 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c1689425"
+  },
+  "title": "A Novel Pre-processing Technique in Pathologic Voice Detection: Application to Parkinson's Disease Phonation",
+  "authors": [
+    {
+      "name": "D. Meghraoui",
+      "affiliations": [
+        {
+          "institution": "University of Science & Technology Houari Boumediene",
+          "country": "Algeria"
+        }
+      ]
+    },
+    {
+      "name": "B. Boudraa",
+      "affiliations": [
+        {
+          "institution": "University of Science & Technology Houari Boumediene",
+          "country": "Algeria"
+        }
+      ]
+    },
+    {
+      "name": "T. Merazi-Meksen",
+      "affiliations": [
+        {
+          "institution": "University of Science & Technology Houari Boumediene",
+          "country": "Algeria"
+        }
+      ]
+    },
+    {
+      "name": "Pedro Gómez-Vilda",
+      "affiliations": [
+        {
+          "institution": "Universidad Politécnica de Madrid",
+          "country": "Spain"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Biomedical Signal Processing and Control",
+  "year": 2021,
+  "doi": "10.1016/j.bspc.2021.102604",
+  "abstract": "This paper proposes a methodology that can help in the detection of Parkinson’s disease (PD) from voice recordings. It is based on eight of voice features, describing vocal folds behavior such as frequency and amplitude perturbations, biomechanical instability and neurological tremor, where, each of the proposed features will be represented by one vector representing their statistical distribution by using their probability density functions. The features are extracted from 42 samples of sustained vowel emissions of /a/, from both healthy and PD voices subjects to fulfill this purpose. A new preprocessing technique is then conducted. The approach uses pertinent matrices built for each subject. The matrices are composed of vectors arranged by segment, feature and number of phonation cycles. An estimation of the maxima maximorum (MM) and minima minimorum (mm) values is used to normalize the data. Then, each of the normalized vectors is submitted to an outlier removal process. The performance of the effective predicted attributes has been tested using rank feature selection. Then, the decision phase is realized by applying three types of Machine Learning (ML) classifiers: a K-Nearest Neighbor algorithm (K-NN), a Support Vector Machine (SVM), and a Random Forest (RF) classifier. Even though the three types of used ML classifiers give high rate decisions, the experimental results showed that the RF classifier can improve the efficiency of the preprocessing approach achieving a recognition rate of 99 % for females and 98 % for males, in detecting PD dysphonia. The results presented here outperform those published in the literature.",
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "data_subset": "men",
+      "feature_extraction": [
+        "Voice Segments Split",
+        "Custom Features"
+      ],
+      "scaling": [
+        "Minima Minimorum Maxima Maximorum Scaling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Normalized Histograms"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9016,
+        "recall": 0.864,
+        "specificity": 0.9159999999999999
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "data_subset": "women",
+      "feature_extraction": [
+        "Voice Segments Split",
+        "Custom Features"
+      ],
+      "scaling": [
+        "Minima Minimorum Maxima Maximorum Scaling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Normalized Histograms"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9901,
+        "recall": 0.993,
+        "specificity": 0.988
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "data_subset": "men",
+      "feature_extraction": [
+        "Voice Segments Split",
+        "Custom Features"
+      ],
+      "scaling": [
+        "Minima Minimorum Maxima Maximorum Scaling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Normalized Histograms"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9355,
+        "recall": 0.869,
+        "specificity": 0.966
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "data_subset": "women",
+      "feature_extraction": [
+        "Voice Segments Split",
+        "Custom Features"
+      ],
+      "scaling": [
+        "Minima Minimorum Maxima Maximorum Scaling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Normalized Histograms"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9945,
+        "recall": 0.995,
+        "specificity": 0.9940000000000001
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "data_subset": "men",
+      "feature_extraction": [
+        "Voice Segments Split",
+        "Custom Features"
+      ],
+      "scaling": [
+        "Minima Minimorum Maxima Maximorum Scaling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Normalized Histograms"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9818,
+        "recall": 0.992,
+        "specificity": 0.977
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "data_subset": "women",
+      "feature_extraction": [
+        "Voice Segments Split",
+        "Custom Features"
+      ],
+      "scaling": [
+        "Minima Minimorum Maxima Maximorum Scaling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Normalized Histograms"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9903,
+        "recall": 1,
+        "specificity": 0.9990000000000001
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Speech with Multiple Types of Sound Recordings",
+      "size": 40,
+      "pd_patients": 20,
+      "controls": 20,
+      "url": "https://archive.ics.uci.edu/dataset/301/parkinson+speech+dataset+with+multiple+types+of+sound+recordings",
+      "doi": "10.24432/C5NC8M"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Speech with Multiple Types of Sound Recordings",
+      "size": 40,
+      "pd_patients": 20,
+      "controls": 20,
+      "url": "https://archive.ics.uci.edu/dataset/301/parkinson+speech+dataset+with+multiple+types+of+sound+recordings",
+      "doi": "10.24432/C5NC8M"
+    }
+  ],
+  "study_id": "10.1016/j.bspc.2021.102604_1"
+}

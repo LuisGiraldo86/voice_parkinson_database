@@ -1,0 +1,83 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c1689381"
+  },
+  "title": "Classification of Voice Signals to Aid in the Diagnosis of Parkinson's Disease",
+  "authors": [
+    {
+      "name": "Mateus Melo",
+      "affiliations": [
+        {
+          "institution": "Instituto Federal da Paraíba",
+          "country": "Brazil"
+        }
+      ]
+    },
+    {
+      "name": "Thiago Gouveia",
+      "affiliations": [
+        {
+          "institution": "Instituto Federal da Paraíba",
+          "country": "Brazil"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Revista Brasileira de Computação Aplicada",
+  "year": 2023,
+  "doi": "10.5335/rbca.v15i2.13556",
+  "abstract": "The Parkinson's disease is a neurodegenerative illness which impairs motor and speech skills, in addition to provoke behavior, mood and thinking changes. It hits, more usually, the elderly population and its diagnosis is done by a clinical exam, by the observation of a patient's symptoms. Since the most notorious symptoms appear in advanced stages of the disease, which makes the treatment more difficult, and that the world is passing through a process of age pyramid inversion, the tendency is that the Parkinson will become a global public health issue. Within this context, proposals for the use of voice signals as a form of early diagnosis of Parkinson's have been achieving results. This work proposes the construction of a tool to aid in the diagnosis of Parkinson's disease using voice signals associated with Machine Learning techniques. Using a set of data with different attributes extracted from the speech of carriers and non-carriers of the pathology, an accuracy of 93.8 % was obtained using a Random Forest algorithm and performing a cross-validation with the k-fold technique.",
+  "citescore": null,
+  "ml_approaches": [
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_extraction": [
+        "Custom (F0, HNR, RPDE, DFA, PPE)"
+      ],
+      "validation": "5-fold cross validation",
+      "results": {
+        "accuracy": 0.923,
+        "kappa": 0.77,
+        "recall": 0.913,
+        "specificity": 0.9129999999999999
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_extraction": [
+        "Custom (F0, HNR, RPDE, DFA, PPE)"
+      ],
+      "validation": "5-fold cross validation",
+      "results": {
+        "accuracy": 0.938,
+        "kappa": 0.82,
+        "recall": 0.933,
+        "specificity": 0.95
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.5335/rbca.v15i2.13556_1"
+}

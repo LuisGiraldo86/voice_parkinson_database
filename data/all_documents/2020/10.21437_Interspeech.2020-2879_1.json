@@ -1,0 +1,83 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c168936e"
+  },
+  "title": "Surfboard: Audio Feature Extraction for Modern Machine Learning",
+  "authors": [
+    {
+      "name": "Raphael Lenain",
+      "affiliations": [
+        {
+          "institution": "Novoic Ltd",
+          "country": "United Kingdom"
+        }
+      ]
+    },
+    {
+      "name": "Jack Weston",
+      "affiliations": [
+        {
+          "institution": "Novoic Ltd",
+          "country": "United Kingdom"
+        }
+      ]
+    },
+    {
+      "name": "Abhishek Shivkumar",
+      "affiliations": [
+        {
+          "institution": "Novoic Ltd",
+          "country": "United Kingdom"
+        }
+      ]
+    },
+    {
+      "name": "Emil Fristed",
+      "affiliations": [
+        {
+          "institution": "Novoic Ltd",
+          "country": "United Kingdom"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Conference",
+  "journal": "INTERSPEECH 2020",
+  "year": 2020,
+  "doi": "10.21437/Interspeech.2020-2879",
+  "abstract": "We introduce Surfboard, an open-source Python library for extracting audio features with application to the medical domain. Surfboard is written with the aim of addressing pain points of existing libraries and facilitating joint use with modern machine learning frameworks. The package can be accessed both programmatically in Python and via its command line interface, allowing it to be easily integrated within machine learning workflows. It builds on state-of-the-art audio analysis packages and offers multiprocessing support for processing large workloads. We review similar frameworks and describe Surfboard's architecture, including the clinical motivation for its features. Using the mPower dataset, we illustrate Surfboard's application to a Parkinson's disease classification task, high-lighting common pitfalls in existing research. The source code is opened up to the research community to facilitate future audio research in the clinical domain.",
+  "ml_approaches": [
+    {
+      "algorithm": "LightGBM",
+      "framework": "",
+      "feature_extraction": [
+        "Surfboard"
+      ],
+      "results": {
+        "accuracy": 0.74,
+        "recall": 0.74,
+        "precision": 0.77,
+        "auc": 0.85
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "mPower",
+      "size": 5826,
+      "pd_patients": null,
+      "controls": null,
+      "url": "https://www.synapse.org/Synapse:syn4993293/wiki/247859"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "mPower",
+      "size": 5826,
+      "pd_patients": null,
+      "controls": null,
+      "url": "https://www.synapse.org/Synapse:syn4993293/wiki/247859"
+    }
+  ],
+  "study_id": "10.21437/Interspeech.2020-2879_1"
+}

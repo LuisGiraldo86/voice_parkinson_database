@@ -1,0 +1,118 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c1689419"
+  },
+  "title": "A hybrid ensemble-filter wrapper feature selection approach for medical data classification",
+  "authors": [
+    {
+      "name": "Namrata Singh",
+      "affiliations": [
+        {
+          "institution": "National Institute of Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Pradeep Singh",
+      "affiliations": [
+        {
+          "institution": "National Institute of Technology",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Chemometrics and Intelligent Laboratory Systems",
+  "year": 2021,
+  "doi": "10.1016/j.chemolab.2021.104396",
+  "abstract": "Background and objective: Medical data plays a decisive role in disease diagnosis. The classification accuracy of high-dimensional datasets is often diminished by several redundant and irrelevant features. In this context, feature selection becomes an indispensable process. Feature selection primarily intends to identify a feature subspace which retains the classification accuracy while reducing the high computational cost of learning model as well as eliminating noise. The suitability of an appropriate feature selection approach heavily depends upon the capability of that approach to match the problem framework and to discover the intrinsic patterns within the data. The prime objective of this paper is to develop an ensemble-filter based hybrid feature selection model for disease detection. Methods: In this paper, a four-step hybrid ensemble feature selection algorithm has been introduced. Firstly, the dataset is partitioned using the cross-validation procedure. Secondly, in the filter step, various filter methods based on weighted scores were ensembled to generate a ranking of features, and thirdly sequential forward selection algorithm is utilized as a wrapper technique to obtain an optimal subset of features. Finally, the resulting optimal subset is processed for subsequent classification tasks. Results: Experiments have been performed on twenty benchmark medical datasets with different dimensionalities. The performance of the proposed hybrid approach is compared with fourteen state-of-the-art feature selection algorithms on four benchmark classifiers namely, Naïve Bayes, Support Vector Machine with Radial Basis Function, Random Forest and k-Nearest Neighbor. The empirical results clearly demonstrate the superiority of the proposed hybrid methodology over the competing methods with respect to accuracy, sensitivity, specificity, f1-score, area under curve evaluation measures and number of selected features. The statistical analysis of the obtained results shows the outperformance and the competitiveness of the proposed hybrid method with respect to various state-of-the-art algorithms. Conclusions: This study concludes that the proposed hybrid approach proves to be more effective and reliable feature selection technique in selecting highly discriminative features. The framework can be utilized as a promising tool by both clinicians and researchers in enhancing the classification performance of medical datasets.",
+  "ml_approaches": [
+    {
+      "algorithm": "Naive Bayes",
+      "feature_selection": {
+        "methods": [
+          "Ensemble of Filter-Based Hybrid Feature Selection"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8586,
+        "auc": 0.892,
+        "recall": 0.924,
+        "specificity": 0.657,
+        "f1_score": 0.906
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "feature_selection": {
+        "methods": [
+          "Ensemble of Filter-Based Hybrid Feature Selection"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9033,
+        "auc": 0.926,
+        "recall": 0.98,
+        "specificity": 0.692,
+        "f1_score": 0.972
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "feature_selection": {
+        "methods": [
+          "Ensemble of Filter-Based Hybrid Feature Selection"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9384,
+        "auc": 0.949,
+        "recall": 0.978,
+        "specificity": 0.891,
+        "f1_score": 0.966
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "feature_selection": {
+        "methods": [
+          "Ensemble of Filter-Based Hybrid Feature Selection"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8936,
+        "auc": 0.9118,
+        "recall": 0.971,
+        "specificity": 0.605,
+        "f1_score": 0.932
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "study_id": "10.1016/j.chemolab.2021.104396_1"
+}

@@ -1,0 +1,61 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c1689399"
+  },
+  "title": "Quantum Mayfly Optimization Based Feature Subset Selection with Hybrid CNN for Biomedical Parkinson's Disease Diagnosis",
+  "authors": [
+    {
+      "name": "Romany F. Mansour",
+      "affiliations": [
+        {
+          "institution": "New Valley University",
+          "country": "Egypt"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Neural Computing and Applications",
+  "year": 2024,
+  "doi": "10.1007/s00521-024-09516-1",
+  "abstract": "Parkinson's disease (PD) arises from brain cell damage and necessitates early detection for effective treatment and symptom management. While various methods such as voice, speech, and written exams have been explored, utilizing automated tools is crucial to enhance accuracy. Recent advancements in artificial intelligence (AI) and deep learning (DL) provide an opportunity for precise early-stage PD identification. This study introduces a novel approach known as Quantum Mayfly Optimization-based feature subset selection with hybrid convolutional neural network (QMFOFS-HCNN) to improve PD detection and classification. QMFOFS-HCNN is designed to identify optimal feature subsets and overcome the dimensionality challenge. It combines a quantum mayfly optimization approach for feature selection with a convolutional neural network with attention-based long short-term memory for PD detection and classification. Additionally, hyperparameter selection is optimized using the Nadam optimizer. Experimental validation using benchmark datasets yielded compelling results. The QMFOFS-HCNN technique achieved accuracy rates: 96.35% for HandPD Spiral, 96.7% for HandPD Meander, 98.5% for Speech PD, and a perfect 100% for Voice PD datasets. These quantitative findings underscore the potential of AI and DL to enhance early PD detection accuracy significantly. These results offer promising prospects for improving healthcare outcomes in managing PD and related neurological disorders.",
+  "citescore": 11.7,
+  "ml_approaches": [
+    {
+      "algorithm": "Attention Long Short Term Memory",
+      "optimization": "Nadam",
+      "feature_selection": {
+        "methods": [
+          "Quantum Mayfly Optimization"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 1,
+        "recall": 1,
+        "fall_out": null
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Speech with Multiple Types of Sound Recordings",
+      "size": 40,
+      "pd_patients": 20,
+      "controls": 20,
+      "url": "https://archive.ics.uci.edu/dataset/301/parkinson+speech+dataset+with+multiple+types+of+sound+recordings",
+      "doi": "10.24432/C5NC8M"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Speech with Multiple Types of Sound Recordings",
+      "size": 40,
+      "pd_patients": 20,
+      "controls": 20,
+      "url": "https://archive.ics.uci.edu/dataset/301/parkinson+speech+dataset+with+multiple+types+of+sound+recordings",
+      "doi": "10.24432/C5NC8M"
+    }
+  ],
+  "study_id": "10.1007/s00521-024-09516-1_2"
+}

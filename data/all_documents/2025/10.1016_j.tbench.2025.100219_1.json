@@ -1,0 +1,122 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c1689435"
+  },
+  "title": "Comparative Study of Deep Learning Models for Parkinson's Disease Detection",
+  "authors": [
+    {
+      "name": "Abdulaziz Salihu Aliero",
+      "affiliations": [
+        {
+          "institution": "Lovely Professional University Phagwara",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Neha Malhotra",
+      "affiliations": [
+        {
+          "institution": "Lovely Professional University Phagwara",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Bench Council Transactions on Benchmarks, Standards and Evaluations",
+  "year": 2025,
+  "doi": "10.1016/j.tbench.2025.100219",
+  "abstract": "Parkinson's disease (PD) is a progressive neurodegenerative disorder that affects movement and cognition, impacting millions of people worldwide. The diagnosis of PD primarily relies on clinical tests, which can often result in delayed identification of the disease. Recent advancements in data-driven methods using deep learning have demonstrated potential for improving early diagnosis by utilizing clinical and vocal inputs. This study conducted a comparative analysis of five deep learning models: Multilayer Perceptron (MLP), Recurrent Neural Networks (RNN), Gated Recurrent Units (GRU), Autoencoder, and Generative Adversarial Network (GAN), specifically for the detection of PD using vocal biomarkers. Among these models, the MLP achieved the highest predictive accuracy at 97.4 %. The RNN, GRU, and Autoencoder models attained a similar accuracy rate of 87.2 %. In contrast, the GAN model yielded an accuracy of only 76.9 %. The UCI vocal dataset from Kaggle was utilized in this research, along with extensive data preprocessing techniques to address missing values. Performance evaluation was conducted using multiple metrics. The results indicate that deep learning models can effectively diagnose PD using voice data, suggesting their potential to enhance diagnostic accuracy and support clinical decision-making. Furthermore, these models are feasible for large-scale integration into clinical workflows.",
+  "ml_approaches": [
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.974,
+        "recall": 0.93,
+        "f1_score": 0.95
+      }
+    },
+    {
+      "algorithm": "Long Short-Term Memory",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.872,
+        "recall": 0.75,
+        "f1_score": 0.77
+      }
+    },
+    {
+      "algorithm": "Gated Recurrent Unit",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.872,
+        "recall": 0.75,
+        "f1_score": 0.77
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "validation": "train/test split",
+      "feature_extraction": [
+        "Autoencoder"
+      ],
+      "results": {
+        "accuracy": 0.872,
+        "recall": 0.7,
+        "f1_score": 0.74
+      }
+    },
+    {
+      "algorithm": "Generative Adversarial Network",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.769,
+        "recall": 0.47,
+        "f1_score": 0.43
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1016/j.tbench.2025.100219_1"
+}

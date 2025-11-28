@@ -1,0 +1,159 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c168940b"
+  },
+  "title": "Hybrid grey wolf and whale optimization for enhanced Parkinson's prediction based on machine learning models using biomedical sound",
+  "authors": [
+    {
+      "name": "Hazem Al-Najjar",
+      "affiliations": [
+        {
+          "institution": "Petra University",
+          "country": "Jordan"
+        }
+      ]
+    },
+    {
+      "name": "Nadia Al-Rousan",
+      "affiliations": [
+        {
+          "institution": "German Jordanian University",
+          "country": "Jordan"
+        }
+      ]
+    },
+    {
+      "name": "Dana Al-Najjar",
+      "affiliations": [
+        {
+          "institution": "Applied Science Private University",
+          "country": "Jordan"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Informatics in Medicine Unlocked",
+  "year": 2024,
+  "doi": "10.1016/j.imu.2024.101524",
+  "abstract": "Background: Biomedical voice measurements have been used by many physicians and scientists to distinguish Parkinson's patients from ordinary people. Measurements of biomedical voices involve many variables calculated from signal analysis of the voice. These variables can be used to distinguish Parkinson's patients from non-Parkinson's patients. Unfortunately, using all computed variables may be ineffective and inaccurate due to the complexity of establishing a relationship between all the input variables and Parkinson's states. Methods: This paper describes the development of a hybrid optimizer by combining two optimization algorithms: the Grey Wolf Optimizer and the Whale Optimizer. The hybrid optimizer enhances feature selection to provide a fast and robust Parkinson's prediction model. Additionally, this research incorporates five other feature selection algorithms for comparison purposes: Ranker, Greedy, BestFirst, Hybrid Grey Wolf Optimization, and Whale Optimization. The outputs from these algorithms are fed into six prediction models to determine the most accurate combination. These models include the neural network, Quest, Chi-squared Automatic Interaction Detection, support vector machine, CR-tree, and logistic regression models. Subsequently, the developed models are compared to identify the most accurate model based on various performance metrics. Results: The combination of the hybrid grey wolf and whale models yielded the highest scores in most metrics, achieving a perfect recall and a high F1 score. All models generated similar output, with an accuracy greater than 0.89. Quest, CR-tree, and neural networks are the most reliable and accurate models. Conclusions: Biomedical sound measurements can be used to develop an accurate and cost-effective Parkinson's prediction model.",
+  "ml_approaches": [
+    {
+      "algorithm": "Quick, Unbiased, Efficient Statistical Tree",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Hybrid Gray Wolf-Whale Optimization"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.91,
+        "precision": 0.9,
+        "recall": 0.98,
+        "f1_score": 0.94
+      }
+    },
+    {
+      "algorithm": "Chi-squared Automatic Interaction Detection",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Hybrid Gray Wolf-Whale Optimization"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.84,
+        "precision": 0.85,
+        "recall": 0.96,
+        "f1_score": 0.9
+      }
+    },
+    {
+      "algorithm": "CR-tree",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Hybrid Gray Wolf-Whale Optimization"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.88,
+        "precision": 0.93,
+        "recall": 0.9,
+        "f1_score": 0.91
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Hybrid Gray Wolf-Whale Optimization"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.88,
+        "precision": 0.92,
+        "recall": 0.92,
+        "f1_score": 0.92
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Polynomial",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Hybrid Gray Wolf-Whale Optimization"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.88,
+        "precision": 0.92,
+        "recall": 0.92,
+        "f1_score": 0.92
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Hybrid Gray Wolf-Whale Optimization"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.92,
+        "precision": 0.92,
+        "recall": 0.98,
+        "f1_score": 0.95
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1016/j.imu.2024.101524_1"
+}

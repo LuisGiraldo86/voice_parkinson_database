@@ -1,0 +1,77 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c1689437"
+  },
+  "title": "Enhanced Parkinson's Diagnosis through Ensemble Learning with Stacking and Cross-Validation",
+  "authors": [
+    {
+      "name": "M. Lakshmi Prasanna",
+      "affiliations": [
+        {
+          "institution": "Amrita School of Computing",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Chandan Kumar",
+      "affiliations": [
+        {
+          "institution": "Amrita School of Computing",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Ram Krishn Mishra",
+      "affiliations": [
+        {
+          "institution": "De Montfort University Kazakhstan",
+          "country": "Kazakhstan"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Conference",
+  "journal": "Procedia Computer Science",
+  "year": 2025,
+  "doi": "10.1016/j.procs.2025.03.326",
+  "abstract": "Parkinson's disease (PD) damage to the brain's nerve cells. Detecting the initial symptoms, including tremors, muscular rigidity, decreased balance, and trouble walking, requires a prolonged time. The PD ranks among the leading causes of disability and death among neurological disorders, according to the “World Health Organization”. Insufficient evidence from blood tests and MRI scans to support early diagnosis makes it challenging for doctors to detect PD in its initial stages. An excellent early alert indicator and a predictor of PD is through speech. Predicting the onset of Parkinson's disease using audio recordings of both healthy people and those with the condition is the subject of this research. Effective evaluation of individual and ensemble machine learning approaches for PD classification using quantitative acoustic measure data is carried out in this article. This paper implements several ML methods, including “Support Vector Machine”, “Random Forest”, “Gradient Boosting Classifier”, “K-Nearest Neighbor”, “Logistic Regression”, and “Decision Tree”. An ensemble model is utilized incorporating stacking and stacking with cross-validation methods. The model performance is assessed using four metrics: “Accuracy”, “Recall”, “Precision”, and “F1 score”. The models are analysed and compared, showing accuracy levels ranging from 70% to 82% using the PD dataset. The higher-performing models are selected for a stacking ensemble to enhance overall performance. The stacking ensemble approach achieved an accuracy of 92% and provides accurate recognition of the disease. Subsequently, a stacking cross-validation classifier is employed to all models, resulting in an improved accuracy of 95%.",
+  "ml_approaches": [
+    {
+      "algorithm": "Stacking Ensemble (Base: Support Vector Machine, Random Forest, Logistic Regression, K-Nearest Neighbors, Decision Tree, XGBoost; Meta: Unknown)",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.92,
+        "recall": 0.94,
+        "precision": 0.93,
+        "f1_score": 0.935
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1016/j.procs.2025.03.326_1"
+}

@@ -1,0 +1,178 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c1689430"
+  },
+  "title": "Speech signals-based Parkinson's disease diagnosis using hybrid autoencoder-LSTM models",
+  "authors": [
+    {
+      "name": "Ayşe Nur Tekindor",
+      "affiliations": [
+        {
+          "institution": "Gazi University",
+          "country": "Turkey"
+        }
+      ]
+    },
+    {
+      "name": "Eda Akman Aydin",
+      "affiliations": [
+        {
+          "institution": "Gazi University",
+          "country": "Turkey"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Computers in Biology and Medicine",
+  "year": 2025,
+  "doi": "10.1016/j.compbiomed.2025.110334",
+  "abstract": "Parkinson's disease (PD) is a neurodegenerative disorder that occurs as a result of a decrease in the chemical called dopamine in the brain. There is no definitive treatment for PD, but some medications used to control symptoms in the early stages have a critical effect on the progression of the disease. Approximately 90% of patients with PD have vocal problems, and although voice disorders seen in the early stages are not apparent in the patient's speech, they can be detected by acoustic analysis. In this study, a decision support system was proposed for the diagnosis of PD utilizing the feature extraction power of autoencoder (AE) & long short-term memory (LSTM) models by using speech signals as input data. Firstly, simple (SAE), convolutional (CAE), and recurrent (RAE) AE models were created for the ablation analysis. Then, the effect of hybridization and deepening of these models with LSTM layers on the classification performance was observed. Within the scope of the study, RAE achieved the highest accuracy among the base models while CAE & LSTM hybrid model provided the highest performance among all models with 95.79% accuracy for PD diagnosis based on audio signals. It was concluded that hybridization of the AE and LSTM models significantly improved the performance of simple and convolutional AE, and deepening the network to a certain extent improves the classification performance according to the type of AE.",
+  "ml_approaches": [
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "preprocessing": [
+        "Discrete Wavelet Transform",
+        "Simple Autoencoder"
+      ],
+      "results": {
+        "accuracy": 0.594,
+        "precision": 0.9433,
+        "recall": 0.2,
+        "f1_score": 0.33
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "preprocessing": [
+        "Discrete Wavelet Transform",
+        "Convolutional Autoencoder"
+      ],
+      "results": {
+        "accuracy": 0.788,
+        "precision": 0.7915,
+        "recall": 0.782,
+        "f1_score": 0.7867000000000001
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "preprocessing": [
+        "Discrete Wavelet Transform",
+        "Recurrent Autoencoder"
+      ],
+      "results": {
+        "accuracy": 0.9353,
+        "precision": 0.9447,
+        "recall": 0.9248,
+        "f1_score": 0.9347
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "preprocessing": [
+        "Discrete Wavelet Transform",
+        "Simple Autoencoder",
+        "Long Short-Term Memory"
+      ],
+      "results": {
+        "accuracy": 0.9038,
+        "precision": 0.8841,
+        "recall": 0.9293,
+        "f1_score": 0.9062
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "preprocessing": [
+        "Discrete Wavelet Transform",
+        "Convolutional Autoencoder",
+        "Long Short-Term Memory"
+      ],
+      "results": {
+        "accuracy": 0.9451,
+        "precision": 0.8253,
+        "recall": 0.9684,
+        "f1_score": 0.9464
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "preprocessing": [
+        "Discrete Wavelet Transform",
+        "Recurrent Autoencoder",
+        "Long Short-Term Memory"
+      ],
+      "results": {
+        "accuracy": 0.8682,
+        "precision": 0.8979,
+        "recall": 0.8195,
+        "f1_score": 0.8569
+      }
+    }
+  ],
+  "github": "https://github.com/hmbci-research-group/pd-diagnosis-using-autoencoder-lstm-models",
+  "source_dataset": [
+    {
+      "name": "Italian Parkinson's Voice and Speech",
+      "size": 65,
+      "pd_patients": 28,
+      "controls": 22,
+      "url": "https://ieee-dataport.org/open-access/italian-parkinsons-voice-and-speech",
+      "doi": "10.21227/aw6b-tg17"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Italian Parkinson's Voice and Speech",
+      "size": 65,
+      "pd_patients": 28,
+      "controls": 22,
+      "url": "https://ieee-dataport.org/open-access/italian-parkinsons-voice-and-speech",
+      "doi": "10.21227/aw6b-tg17"
+    }
+  ],
+  "study_id": "10.1016/j.compbiomed.2025.110334_1"
+}

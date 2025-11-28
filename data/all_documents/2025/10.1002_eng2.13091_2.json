@@ -1,0 +1,147 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893cf"
+  },
+  "title": "PD_EBM: An Integrated Boosting Approach Based on Selective Features for Unveiling Parkinson's Disease Diagnosis With Global and Local Explanations",
+  "authors": [
+    {
+      "name": "Fahmida Khanom",
+      "affiliations": [
+        {
+          "institution": "American International University-Bangladesh",
+          "country": "Bangladesh"
+        }
+      ]
+    },
+    {
+      "name": "Mohammad Shorif Uddin",
+      "affiliations": [
+        {
+          "institution": "Jahangirnagar University",
+          "country": "Bangladesh"
+        }
+      ]
+    },
+    {
+      "name": "Rafid Mostafiz",
+      "affiliations": [
+        {
+          "institution": "Noakhali Science and Technology University",
+          "country": "Bangladesh"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Engineering Reports",
+  "year": 2025,
+  "doi": "10.1002/eng2.13091",
+  "abstract": "Early detection and characterization are crucial for treating and managing Parkinson's disease (PD). The increasing prevalence of PD and its significant impact on the motor neurons of the brain impose a substantial burden on the healthcare system. Early-stage detection is vital for improving patient outcomes and reducing healthcare costs. This study introduces an ensemble boosting machine, termed PD_EBM, for the detection of PD. PD_EBM leverages machine learning (ML) algorithms and a hybrid feature selection approach to enhance diagnostic accuracy. While ML has shown promise in medical applications for PD detection, the interpretability of these models remains a significant challenge. Explainable machine learning (XML) addresses this by providing transparency and clarity in model predictions. Techniques such as Local Interpretable Model-agnostic Explanations (LIME) and SHapley Additive exPlanations (SHAP) have become popular for interpreting these models. Our experiment used a dataset of 195 clinical records of PD patients from the University of California Irvine (UCI) Machine Learning repository. Comprehensive data preparation included encoding categorical features, imputing missing values, removing outliers, addressing data imbalance, scaling data, selecting relevant features, and so on. We propose a hybrid boosting framework that focuses on the most important features for prediction. Our boosting model employs a Decision Tree (DT) classifier with AdaBoost, followed by a linear discriminant analysis (LDA) optimizer, achieving an impressive accuracy of 99.44%, outperforming other boosting models.",
+  "ml_approaches": [
+    {
+      "algorithm": "AdaBoost",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE-Tomek"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "data_augmentation": [
+        "Scaling",
+        "Rotation",
+        "Shifting"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Linear Discriminant Analysis"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9914,
+        "specificity": 1,
+        "recall": 0.9806,
+        "precision": 1,
+        "f1_score": 0.9903
+      }
+    },
+    {
+      "algorithm": "LightGBM",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE-Tomek"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "data_augmentation": [
+        "Scaling",
+        "Rotation",
+        "Shifting"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Linear Discriminant Analysis"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9791,
+        "specificity": 0.9838,
+        "recall": 0.9886,
+        "precision": 0.9735,
+        "f1_score": 0.981
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE-Tomek"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "data_augmentation": [
+        "Scaling",
+        "Rotation",
+        "Shifting"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Linear Discriminant Analysis"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9563,
+        "specificity": 0.9778,
+        "recall": 0.9525,
+        "precision": 0.9727,
+        "f1_score": 0.9615
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "study_id": "10.1002/eng2.13091_2"
+}

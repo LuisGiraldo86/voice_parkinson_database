@@ -1,0 +1,93 @@
+{
+  "_id": {
+    "$oid": "68ecf00b6c43da02c1689333"
+  },
+  "title": "Speech's syllabic rhythm and articulatory features produced under different auditory feedback conditions identify Parkinsonism",
+  "authors": [
+    {
+      "name": "Ángeles Piña Méndez",
+      "affiliations": [
+        {
+          "institution": "Autonomous University of San Luis Potosí",
+          "country": "Mexico"
+        }
+      ]
+    },
+    {
+      "name": "Alan Taitz",
+      "affiliations": [
+        {
+          "institution": "SRI International",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Oscar Palacios Rodríguez",
+      "affiliations": [
+        {
+          "institution": "Autonomous University of San Luis Potosí",
+          "country": "Mexico"
+        }
+      ]
+    },
+    {
+      "name": "Ildefonso Rodríguez Leyva",
+      "affiliations": [
+        {
+          "institution": "Autonomous University of San Luis Potosí",
+          "country": "Mexico"
+        }
+      ]
+    },
+    {
+      "name": "M Florencia Assaneo",
+      "affiliations": [
+        {
+          "institution": "National Autonomous University of Mexico",
+          "country": "Mexico"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Scientific Reports",
+  "year": 2024,
+  "doi": "10.1038/s41598-024-65974-6",
+  "abstract": "Diagnostic tests for Parkinsonism based on speech samples have shown promising results. Although abnormal auditory feedback integration during speech production and impaired rhythmic organization of speech are known in Parkinsonism, these aspects have not been incorporated into diagnostic tests. This study aimed to identify Parkinsonism using a novel speech behavioral test that involved rhythmically repeating syllables under different auditory feedback conditions. The study included 30 individuals with Parkinson's disease (PD) and 30 healthy subjects. Participants were asked to rhythmically repeat the PA-TA-KA syllable sequence, both whispering and speaking aloud under various listening conditions. The results showed that individuals with PD had difficulties in whispering and articulating under altered auditory feedback conditions, exhibited delayed speech onset, and demonstrated inconsistent rhythmic structure across trials compared to controls. These parameters were then fed into a supervised machine-learning algorithm to differentiate between the two groups. The algorithm achieved an accuracy of 85.4%, a sensitivity of 86.5%, and a specificity of 84.3%. This pilot study highlights the potential of the proposed behavioral paradigm as an objective and accessible (both in cost and time) test for identifying individuals with Parkinson's disease.",
+  "ml_approaches": [
+    {
+      "algorithm": "Random Forest",
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "feature_extraction": [
+        "Custom Features"
+      ],
+      "results": {
+        "accuracy": 0.854,
+        "recall": 0.865,
+        "specificity": 0.843
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Custom Mexican Parkinson's Speech Dataset",
+      "size": 58,
+      "pd_patients": 28,
+      "controls": 30,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Custom Mexican Parkinson's Speech Dataset",
+      "size": 58,
+      "pd_patients": 28,
+      "controls": 30,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.1038/s41598-024-65974-6_1"
+}

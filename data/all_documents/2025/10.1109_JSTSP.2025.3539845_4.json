@@ -1,0 +1,165 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c168935c"
+  },
+  "title": "Unveiling Interpretability in Self-Supervised Speech Representations for Parkinson's Diagnosis",
+  "authors": [
+    {
+      "name": "David Gimeno-Gomez",
+      "affiliations": [
+        {
+          "institution": "Universitat Politecnica de Valencia",
+          "country": "Spain"
+        }
+      ]
+    },
+    {
+      "name": "Catarina Botelho",
+      "affiliations": [
+        {
+          "institution": "Universidade de Lisboa",
+          "country": "Portugal"
+        }
+      ]
+    },
+    {
+      "name": "Anna Pompili",
+      "affiliations": [
+        {
+          "institution": "Universidade de Lisboa",
+          "country": "Portugal"
+        }
+      ]
+    },
+    {
+      "name": "Alberto Abad",
+      "affiliations": [
+        {
+          "institution": "Universidade de Lisboa",
+          "country": "Portugal"
+        }
+      ]
+    },
+    {
+      "name": "Carlos-D. Martínez-Hinarejos",
+      "affiliations": [
+        {
+          "institution": "Universitat Politecnica de Valencia",
+          "country": "Spain"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "IEEE Journal of Selected Topics in Signal Processing",
+  "year": 2025,
+  "doi": "10.1109/JSTSP.2025.3539845",
+  "abstract": "Recent works in pathological speech analysis have increasingly relied on powerful self-supervised speech representations, leading to promising results. However, the complex, black-box nature of these embeddings and the limited research on their interpretability significantly restrict their adoption for clinical diagnosis. To address this gap, we propose a novel, interpretable framework specifically designed to support Parkinson's Disease (PD) diagnosis. Through the design of simple yet effective cross-attention mechanisms for both embedding- and temporal-level analysis, the proposed framework offers interpretability from two distinct but complementary perspectives. Experimental findings across five well-established speech benchmarks for PD detection demonstrate the framework's capability to identify meaningful speech patterns within self-supervised representations for a wide range of assessment tasks. Fine-grained temporal analyses further underscore its potential to enhance the interpretability of deep-learning pathological speech models, paving the way for the development of more transparent, trustworthy, and clinically applicable computer-assisted diagnosis systems in this domain. Moreover, in terms of classification accuracy, our method achieves results competitive with state-of-the-art approaches, while also demonstrating robustness in cross-lingual scenarios when applied to spontaneous speech production.",
+  "ml_approaches": [
+    {
+      "algorithm": "Cross-Attention-based Fusion Model",
+      "framework": "Python",
+      "input_speech": "vowels",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_extraction": [
+        "XLR-S Wav2Vec2.0",
+        "Handcrafted Informed Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Cross-attention weighting"
+        ]
+      },
+      "validation": "5-fold cross-validation",
+      "results": {
+        "f1_score": 0.669
+      }
+    },
+    {
+      "algorithm": "Cross-Attention-based Fusion Model",
+      "framework": "Python",
+      "input_speech": "ddk",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_extraction": [
+        "XLR-S Wav2Vec2.0",
+        "Handcrafted Informed Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Cross-attention weighting"
+        ]
+      },
+      "validation": "5-fold cross-validation",
+      "results": {
+        "f1_score": 0.807
+      }
+    },
+    {
+      "algorithm": "Cross-Attention-based Fusion Model",
+      "framework": "Python",
+      "input_speech": "sentences",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_extraction": [
+        "XLR-S Wav2Vec2.0",
+        "Handcrafted Informed Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Cross-attention weighting"
+        ]
+      },
+      "validation": "5-fold cross-validation",
+      "results": {
+        "f1_score": 0.857
+      }
+    },
+    {
+      "algorithm": "Cross-Attention-based Fusion Model",
+      "framework": "Python",
+      "input_speech": "monologue",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_extraction": [
+        "XLR-S Wav2Vec2.0",
+        "Handcrafted Informed Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Cross-attention weighting"
+        ]
+      },
+      "validation": "5-fold cross-validation",
+      "results": {
+        "f1_score": 0.763
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "NeuroVoz",
+      "size": 112,
+      "pd_patients": 54,
+      "controls": 58,
+      "url": "https://zenodo.org/records/13647600",
+      "doi": "10.5281/zenodo.10777656"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "NeuroVoz",
+      "size": 112,
+      "pd_patients": 54,
+      "controls": 58,
+      "url": "https://zenodo.org/records/13647600",
+      "doi": "10.5281/zenodo.10777656"
+    }
+  ],
+  "study_id": "10.1109/JSTSP.2025.3539845_4"
+}

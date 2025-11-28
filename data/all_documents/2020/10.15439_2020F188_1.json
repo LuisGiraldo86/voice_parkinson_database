@@ -1,0 +1,784 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c1689353"
+  },
+  "title": "BiLSTM with Data Augmentation using Interpolation Methods to Improve Early Detection of Parkinson Disease",
+  "authors": [
+    {
+      "name": "Olusola O. Abayomi-Alli",
+      "affiliations": [
+        {
+          "institution": "Kaunas University of Technology",
+          "country": "Lithuania"
+        }
+      ]
+    },
+    {
+      "name": "Robertas Damaševičius",
+      "affiliations": [
+        {
+          "institution": "Kaunas University of Technology",
+          "country": "Lithuania"
+        }
+      ]
+    },
+    {
+      "name": "Rytis Maskeliūnas",
+      "affiliations": [
+        {
+          "institution": "Vytautas Magnus University",
+          "country": "Lithuania"
+        }
+      ]
+    },
+    {
+      "name": "Adebayo Abayomi-Alli",
+      "affiliations": [
+        {
+          "institution": "Federal University of Agriculture",
+          "country": "Nigeria"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Conference",
+  "journal": "Proceedings of the Federated Conference on Computer Science and Information Systems",
+  "year": 2020,
+  "doi": "10.15439/2020F188",
+  "abstract": "The lack of dopamine in the human brain is the cause of Parkinson disease (PD) which is a degenerative disorder common globally to older citizens. However, late detection of this disease before the first clinical diagnosis has led to increased mortality rate. Research effort towards the early detection of PD has encountered challenges such as: small dataset size, class imbalance, overfitting, high false detection rate, model complexity, etc. This paper aims to improve early detection of PD using machine learning through data augmentation for very small datasets. We propose using Spline interpolation and Piecewise Cubic Hermite Interpolating Polynomial (Pchip) interpolation methods to generate synthetic data instances. We further investigate on reducing dimensionality of features for effective and real-time classification while considering computational complexity of implementation on real-life mobile phones. For classification we use Bidirectional LSTM (BiLSTM) deep learning network and compare the results with traditional machine learning algorithms like Support Vector Machine (SVM), Decision Tree, Logistic regression, KNN and Ensemble bagged tree. For experimental validation we use the Oxford Parkinson disease dataset with 195 data samples, which we have augmented with 571 synthetic data samples. The results for BiLSTM shows that even with a holdout of 90%, the model was still able to effectively recognize PD with an average accuracy for ten rounds experiment using 22 features as 82.86%, 97.1%, and 96.37% for original, augmented (Spline) and augmented (Pchip) datasets, respectively. Our results show that proposed data augmentation schemes have significantly (p < 0.001) improved the accuracy of PD recognition on a small dataset using both classical machine learning models and BiLSTM.",
+  "ml_approaches": [
+    {
+      "algorithm": "Fine Tree",
+      "framework": "MATLAB R2019",
+      "data_augmentation": null,
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.897,
+        "specificity": 0.9229999999999999,
+        "recall": 0.944
+      }
+    },
+    {
+      "algorithm": "Fine Tree",
+      "framework": "MATLAB R2019",
+      "data_augmentation": [
+        "Spline"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.963,
+        "specificity": 0.9740000000000001,
+        "recall": 0.952
+      }
+    },
+    {
+      "algorithm": "Fine Tree",
+      "framework": "MATLAB R2019",
+      "data_augmentation": [
+        "Pchip"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.976,
+        "specificity": 0.973,
+        "recall": 0.9746
+      }
+    },
+    {
+      "algorithm": "Linear Discriminant",
+      "framework": "MATLAB R2019",
+      "data_augmentation": null,
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.872,
+        "specificity": 0.963,
+        "recall": 0.865
+      }
+    },
+    {
+      "algorithm": "Linear Discriminant",
+      "framework": "MATLAB R2019",
+      "data_augmentation": [
+        "Spline"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.97,
+        "specificity": 0.9637,
+        "recall": 0.9774
+      }
+    },
+    {
+      "algorithm": "Linear Discriminant",
+      "framework": "MATLAB R2019",
+      "data_augmentation": [
+        "Pchip"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.97,
+        "specificity": 0.9637,
+        "recall": 0.9774
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "MATLAB R2019",
+      "data_augmentation": null,
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.862,
+        "specificity": 0.9440000000000001,
+        "recall": 0.977
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "MATLAB R2019",
+      "data_augmentation": [
+        "Spline"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.968,
+        "specificity": 0.9636,
+        "recall": 0.9718
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "MATLAB R2019",
+      "data_augmentation": [
+        "Pchip"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.953,
+        "specificity": 0.9147,
+        "recall": 1
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Cubic",
+      "framework": "MATLAB R2019",
+      "data_augmentation": null,
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.966,
+        "specificity": 0.978,
+        "recall": 0.978
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Cubic",
+      "framework": "MATLAB R2019",
+      "data_augmentation": [
+        "Spline"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.968,
+        "specificity": 0.9584999999999999,
+        "recall": 0.9774
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Cubic",
+      "framework": "MATLAB R2019",
+      "data_augmentation": [
+        "Pchip"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.951,
+        "specificity": 0.9443,
+        "recall": 0.9576
+      }
+    },
+    {
+      "algorithm": "Weighted K-Nearest Neighbors",
+      "framework": "MATLAB R2019",
+      "data_augmentation": null,
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.966,
+        "specificity": 0.988,
+        "recall": 0.955
+      }
+    },
+    {
+      "algorithm": "Weighted K-Nearest Neighbors",
+      "framework": "MATLAB R2019",
+      "data_augmentation": [
+        "Spline"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.98,
+        "specificity": 0.9749,
+        "recall": 0.9859
+      }
+    },
+    {
+      "algorithm": "Weighted K-Nearest Neighbors",
+      "framework": "MATLAB R2019",
+      "data_augmentation": [
+        "Pchip"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.973,
+        "specificity": 0.9692000000000001,
+        "recall": 0.9774
+      }
+    },
+    {
+      "algorithm": "Bagged Trees",
+      "framework": "MATLAB R2019",
+      "data_augmentation": null,
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.94,
+        "specificity": 0.956,
+        "recall": 0.966
+      }
+    },
+    {
+      "algorithm": "Bagged Trees",
+      "framework": "MATLAB R2019",
+      "data_augmentation": [
+        "Spline"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.975,
+        "specificity": 0.9745999999999999,
+        "recall": 0.9746
+      }
+    },
+    {
+      "algorithm": "Bagged Trees",
+      "framework": "MATLAB R2019",
+      "data_augmentation": [
+        "Pchip"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.976,
+        "specificity": 0.972,
+        "recall": 0.98
+      }
+    },
+    {
+      "algorithm": "Ensembled Subspace Discriminant",
+      "framework": "MATLAB R2019",
+      "data_augmentation": null,
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.923,
+        "specificity": 0.935,
+        "recall": 0.966
+      }
+    },
+    {
+      "algorithm": "Ensembled Subspace Discriminant",
+      "framework": "MATLAB R2019",
+      "data_augmentation": [
+        "Spline"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.966,
+        "specificity": 0.946,
+        "recall": 0.9887
+      }
+    },
+    {
+      "algorithm": "Ensembled Subspace Discriminant",
+      "framework": "MATLAB R2019",
+      "data_augmentation": [
+        "Pchip"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.965,
+        "specificity": 0.9556999999999999,
+        "recall": 0.9746
+      }
+    },
+    {
+      "algorithm": "Ensembled Subspace K-Nearest Neighbors",
+      "framework": "MATLAB R2019",
+      "data_augmentation": null,
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.974,
+        "specificity": 0.9890000000000001,
+        "recall": 0.978
+      }
+    },
+    {
+      "algorithm": "Ensembled Subspace K-Nearest Neighbors",
+      "framework": "MATLAB R2019",
+      "data_augmentation": [
+        "Spline"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.966,
+        "specificity": 0.9558,
+        "recall": 0.9774
+      }
+    },
+    {
+      "algorithm": "Ensembled Subspace K-Nearest Neighbors",
+      "framework": "MATLAB R2019",
+      "data_augmentation": [
+        "Pchip"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.965,
+        "specificity": 0.9531999999999999,
+        "recall": 0.9774
+      }
+    },
+    {
+      "algorithm": "Fine Tree",
+      "framework": "MATLAB R2019",
+      "feature_selection": {
+        "methods": [
+          "Wilcoxon Criterion"
+        ]
+      },
+      "data_augmentation": null,
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.949,
+        "specificity": 0.966,
+        "recall": 0.966
+      }
+    },
+    {
+      "algorithm": "Fine Tree",
+      "framework": "MATLAB R2019",
+      "feature_selection": {
+        "methods": [
+          "Unknown"
+        ]
+      },
+      "data_augmentation": [
+        "Spline"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.97,
+        "specificity": 0.9690000000000001,
+        "recall": 0.9712
+      }
+    },
+    {
+      "algorithm": "Fine Tree",
+      "framework": "MATLAB R2019",
+      "feature_selection": {
+        "methods": [
+          "Wilcoxon Criterion"
+        ]
+      },
+      "data_augmentation": [
+        "Pchip"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.976,
+        "specificity": 0.9828,
+        "recall": 0.9689
+      }
+    },
+    {
+      "algorithm": "Linear Discriminant",
+      "framework": "MATLAB R2019",
+      "feature_selection": {
+        "methods": [
+          "Wilcoxon Criterion"
+        ]
+      },
+      "data_augmentation": null,
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.863,
+        "specificity": 0.9440000000000001,
+        "recall": 0.884
+      }
+    },
+    {
+      "algorithm": "Linear Discriminant",
+      "framework": "MATLAB R2019",
+      "feature_selection": {
+        "methods": [
+          "Wilcoxon Criterion"
+        ]
+      },
+      "data_augmentation": [
+        "Spline"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.952,
+        "specificity": 0.9123,
+        "recall": 1
+      }
+    },
+    {
+      "algorithm": "Linear Discriminant",
+      "framework": "MATLAB R2019",
+      "feature_selection": {
+        "methods": [
+          "Wilcoxon Criterion"
+        ]
+      },
+      "data_augmentation": [
+        "Pchip"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.952,
+        "specificity": 0.9123,
+        "recall": 1
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "MATLAB R2019",
+      "feature_selection": {
+        "methods": [
+          "Wilcoxon Criterion"
+        ]
+      },
+      "data_augmentation": null,
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.872,
+        "specificity": 0.955,
+        "recall": 0.885
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "MATLAB R2019",
+      "feature_selection": {
+        "methods": [
+          "Wilcoxon Criterion"
+        ]
+      },
+      "data_augmentation": [
+        "Spline"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.942,
+        "specificity": 0.9195,
+        "recall": 0.9689
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "MATLAB R2019",
+      "feature_selection": {
+        "methods": [
+          "Wilcoxon Criterion"
+        ]
+      },
+      "data_augmentation": [
+        "Pchip"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.876,
+        "specificity": 0.9403,
+        "recall": 0.8022
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Cubic",
+      "framework": "MATLAB R2019",
+      "feature_selection": {
+        "methods": [
+          "Wilcoxon Criterion"
+        ]
+      },
+      "data_augmentation": null,
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.915,
+        "specificity": 0.9440000000000001,
+        "recall": 0.944
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Cubic",
+      "framework": "MATLAB R2019",
+      "feature_selection": {
+        "methods": [
+          "Wilcoxon Criterion"
+        ]
+      },
+      "data_augmentation": [
+        "Spline"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.953,
+        "specificity": 0.9168000000000001,
+        "recall": 0.9972
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Cubic",
+      "framework": "MATLAB R2019",
+      "feature_selection": {
+        "methods": [
+          "Wilcoxon Criterion"
+        ]
+      },
+      "data_augmentation": [
+        "Pchip"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8,
+        "specificity": 0.9818000000000001,
+        "recall": 0.6107
+      }
+    },
+    {
+      "algorithm": "Weighted K-Nearest Neighbors",
+      "framework": "MATLAB R2019",
+      "feature_selection": {
+        "methods": [
+          "Wilcoxon Criterion"
+        ]
+      },
+      "data_augmentation": null,
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.974,
+        "specificity": 0.9890000000000001,
+        "recall": 0.978
+      }
+    },
+    {
+      "algorithm": "Weighted K-Nearest Neighbors",
+      "framework": "MATLAB R2019",
+      "feature_selection": {
+        "methods": [
+          "Wilcoxon Criterion"
+        ]
+      },
+      "data_augmentation": [
+        "Spline"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.956,
+        "specificity": 0.9449,
+        "recall": 0.9689
+      }
+    },
+    {
+      "algorithm": "Weighted K-Nearest Neighbors",
+      "framework": "MATLAB R2019",
+      "feature_selection": {
+        "methods": [
+          "Wilcoxon Criterion"
+        ]
+      },
+      "data_augmentation": [
+        "Pchip"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.959,
+        "specificity": 0.9404,
+        "recall": 0.9882
+      }
+    },
+    {
+      "algorithm": "Bagged Trees",
+      "framework": "MATLAB R2019",
+      "feature_selection": {
+        "methods": [
+          "Wilcoxon Criterion"
+        ]
+      },
+      "data_augmentation": null,
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.949,
+        "specificity": 0.966,
+        "recall": 0.966
+      }
+    },
+    {
+      "algorithm": "Bagged Trees",
+      "framework": "MATLAB R2019",
+      "feature_selection": {
+        "methods": [
+          "Wilcoxon Criterion"
+        ]
+      },
+      "data_augmentation": [
+        "Spline"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.975,
+        "specificity": 0.972,
+        "recall": 0.9774
+      }
+    },
+    {
+      "algorithm": "Bagged Trees",
+      "framework": "MATLAB R2019",
+      "feature_selection": {
+        "methods": [
+          "Wilcoxon Criterion"
+        ]
+      },
+      "data_augmentation": [
+        "Pchip"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.942,
+        "specificity": 0.9383,
+        "recall": 0.9463
+      }
+    },
+    {
+      "algorithm": "Ensembled Subspace Discriminant",
+      "framework": "MATLAB R2019",
+      "feature_selection": {
+        "methods": [
+          "Wilcoxon Criterion"
+        ]
+      },
+      "data_augmentation": null,
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.889,
+        "specificity": 0.887,
+        "recall": 0.966
+      }
+    },
+    {
+      "algorithm": "Ensembled Subspace Discriminant",
+      "framework": "MATLAB R2019",
+      "feature_selection": {
+        "methods": [
+          "Wilcoxon Criterion"
+        ]
+      },
+      "data_augmentation": [
+        "Spline"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.952,
+        "specificity": 0.9123,
+        "recall": 1
+      }
+    },
+    {
+      "algorithm": "Ensembled Subspace Discriminant",
+      "framework": "MATLAB R2019",
+      "feature_selection": {
+        "methods": [
+          "Wilcoxon Criterion"
+        ]
+      },
+      "data_augmentation": [
+        "Pchip"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.98,
+        "specificity": 0.9802,
+        "recall": 0.9802
+      }
+    },
+    {
+      "algorithm": "Ensembled Subspace K-Nearest Neighbors",
+      "framework": "MATLAB R2019",
+      "feature_selection": {
+        "methods": [
+          "Wilcoxon Criterion"
+        ]
+      },
+      "data_augmentation": null,
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.88,
+        "specificity": 0.8759999999999999,
+        "recall": 0.963
+      }
+    },
+    {
+      "algorithm": "Ensembled Subspace K-Nearest Neighbors",
+      "framework": "MATLAB R2019",
+      "feature_selection": {
+        "methods": [
+          "Wilcoxon Criterion"
+        ]
+      },
+      "data_augmentation": [
+        "Spline"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.966,
+        "specificity": 0.9533,
+        "recall": 0.9802
+      }
+    },
+    {
+      "algorithm": "Ensembled Subspace K-Nearest Neighbors",
+      "framework": "MATLAB R2019",
+      "feature_selection": {
+        "methods": [
+          "Wilcoxon Criterion"
+        ]
+      },
+      "data_augmentation": [
+        "Pchip"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.952,
+        "specificity": 0.9123,
+        "recall": 1
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.15439/2020F188_1"
+}

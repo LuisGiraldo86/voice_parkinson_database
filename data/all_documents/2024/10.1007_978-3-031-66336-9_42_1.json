@@ -1,0 +1,550 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893a9"
+  },
+  "title": "Predictive Models in the Diagnosis of Parkinson's Disease Through Voice Analysis",
+  "authors": [
+    {
+      "name": "Tomás Gonçalves",
+      "affiliations": [
+        {
+          "institution": "Universidade do Porto",
+          "country": "Portugal"
+        }
+      ]
+    },
+    {
+      "name": "João Reis",
+      "affiliations": [
+        {
+          "institution": "Universidade do Porto",
+          "country": "Portugal"
+        }
+      ]
+    },
+    {
+      "name": "Gil Gonçalves",
+      "affiliations": [
+        {
+          "institution": "Universidade do Porto",
+          "country": "Portugal"
+        }
+      ]
+    },
+    {
+      "name": "Margarida Calejo",
+      "affiliations": [
+        {
+          "institution": "Hospital Pedro Hispano",
+          "country": "Portugal"
+        }
+      ]
+    },
+    {
+      "name": "Mariana Seco",
+      "affiliations": [
+        {
+          "institution": "Hospital Pedro Hispano",
+          "country": "Portugal"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Conference",
+  "journal": "Intelligent Systems and Applications",
+  "year": 2024,
+  "doi": "10.1007/978-3-031-66336-9_42",
+  "abstract": "Parkinson's disease (PD) is a chronic and progressive longterm degenerative disorder of the central nervous system. The symptoms usually develop slowly, starting with symptoms in the motor system and potentially evolving into non-motor symptoms as the disease worsens. It is estimated that 90% of patients with Parkinson's end up having speech disorders. The following work delves into the domain of classiﬁcation models for Parkinson's disease through speech recordings using machine learning (ML). Diverse datasets were explored including (1) the Italian Parkinson's Voice and Speech; (2) Mobile Device Voice Recordings at King's College London; (3) Synthetic Vowels of Speakers with Parkinson's Disease and Parkinsonism; and (4) Voice Samples for Patients with Parkinson's Disease and Healthy Controls. Two types of feature extraction are used, incorporating traditional acoustic features (interpretable) and embeddings extracted using pre-trained Deep Neural Networks (noninterpretable): (1) TRILLsson; (2) Wav2Vec 2.0; (3) HuBERT. For the training algorithms, a myriad of methods were used, from simple logistic regression to XGBoost. The two types of features adopted displayed robustness, as the use of interpretable features reached up to 95% accuracy, while non-interpretable embeddings had a top-performing accuracy of 99%, surpassing the state-of-the-art.",
+  "citescore": 1,
+  "ml_approaches": [
+    {
+      "algorithm": "Logistic Regression",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_extraction": [
+        "Interpretable Features (Parselmouth)"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.87
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_extraction": [
+        "Interpretable Features (Parselmouth)"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.91
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_extraction": [
+        "Interpretable Features (Parselmouth)"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.77
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_extraction": [
+        "Interpretable Features (Parselmouth)"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.95
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_extraction": [
+        "Interpretable Features (Parselmouth)"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.89
+      }
+    },
+    {
+      "algorithm": "Bagging",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_extraction": [
+        "Interpretable Features (Parselmouth)"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.88
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_extraction": [
+        "Interpretable Features (Parselmouth)"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.85
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_extraction": [
+        "Interpretable Features (Parselmouth)"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.92
+      }
+    },
+    {
+      "algorithm": "Neural Network",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_extraction": [
+        "Interpretable Features (Parselmouth)"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.8
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_extraction": [
+        "TRILLsson"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.98
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_extraction": [
+        "TRILLsson"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.8
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_extraction": [
+        "TRILLsson"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.68
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_extraction": [
+        "TRILLsson"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.99
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_extraction": [
+        "TRILLsson"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.88
+      }
+    },
+    {
+      "algorithm": "Bagging",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_extraction": [
+        "TRILLsson"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.9
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_extraction": [
+        "TRILLsson"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.87
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_extraction": [
+        "TRILLsson"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.91
+      }
+    },
+    {
+      "algorithm": "Neural Network",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_extraction": [
+        "TRILLsson"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.96
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_extraction": [
+        "Wave2Vec"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.79
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_extraction": [
+        "Wave2Vec"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.85
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_extraction": [
+        "Wave2Vec"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.82
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_extraction": [
+        "Wave2Vec"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.76
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_extraction": [
+        "Wave2Vec"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.9
+      }
+    },
+    {
+      "algorithm": "Bagging",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_extraction": [
+        "Wave2Vec"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.84
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_extraction": [
+        "Wave2Vec"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.81
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_extraction": [
+        "Wave2Vec"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.87
+      }
+    },
+    {
+      "algorithm": "Neural Network",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_extraction": [
+        "Wave2Vec"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.81
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_extraction": [
+        "HuBERT"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.94
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_extraction": [
+        "HuBERT"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.9
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_extraction": [
+        "HuBERT"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.77
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_extraction": [
+        "HuBERT"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.96
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_extraction": [
+        "HuBERT"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.89
+      }
+    },
+    {
+      "algorithm": "Bagging",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_extraction": [
+        "HuBERT"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.86
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_extraction": [
+        "HuBERT"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.9
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_extraction": [
+        "HuBERT"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.91
+      }
+    },
+    {
+      "algorithm": "Neural Network",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_extraction": [
+        "HuBERT"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.98
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Italian Parkinson's Voice and Speech",
+      "size": 65,
+      "pd_patients": 28,
+      "controls": 22,
+      "url": "https://ieee-dataport.org/open-access/italian-parkinsons-voice-and-speech",
+      "doi": "10.21227/aw6b-tg17"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Italian Parkinson's Voice and Speech",
+      "size": 65,
+      "pd_patients": 28,
+      "controls": 22,
+      "url": "https://ieee-dataport.org/open-access/italian-parkinsons-voice-and-speech",
+      "doi": "10.21227/aw6b-tg17"
+    }
+  ],
+  "study_id": "10.1007/978-3-031-66336-9_42_1"
+}

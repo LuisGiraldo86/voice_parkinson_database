@@ -1,0 +1,180 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c168940e"
+  },
+  "title": "Developing a Model for Parkinson's Disease Detection Using Machine Learning Algorithms",
+  "authors": [
+    {
+      "name": "Naif Al Mudawi",
+      "affiliations": [
+        {
+          "institution": "Najran University",
+          "country": "Saudi Arabia"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Computers, Materials and Continua",
+  "year": 2024,
+  "doi": "10.32604/cmc.2024.048967",
+  "abstract": "Parkinson's disease (PD) is a chronic neurological condition that progresses over time. People start to have trouble speaking, writing, walking, or performing other basic skills as dopamine-generating neurons in some brain regions are injured or die. The patient's symptoms become more severe due to the worsening of their signs over time. In this study, we applied state-of-the-art machine learning algorithms to diagnose Parkinson's disease and identify related risk factors. The research worked on the publicly available dataset on PD, and the dataset consists of a set of significant characteristics of PD. We aim to apply soft computing techniques and provide an effective solution for medical professionals to diagnose PD accurately. This research methodology involves developing a model using a machine learning algorithm. In the model selection, eight different machine learning techniques were adopted: Namely, Random Forest (RF), Decision Tree (DT), Support Vector Machine (SVM), Naïve Bayes (NB), Light Gradient Boosting Machine (LightGBM), K-Nearest Neighbours (KNN), Extreme Gradient Boosting (XGBoost), and Logistic Regression (LR). Subsequently, the concentrated models were validated through 10-fold Cross-Validation and Receiver Operating Characteristic (ROC)—Area Under the Curve (AUC). In addition, GridSearchCV was utilised to measure each algorithm's best parameter; eventually, the models were trained through the hyperparameter tuning approach. With 98% accuracy, LightGBM had the highest accuracy in this study. RF, KNN, and SVM came in second with 96% accuracy. Furthermore, the performance scores of NB and LR were recorded to be 76% and 83%, respectively. It is to be mentioned that after applying 10-fold cross-validation, the average performance score of LightGBM accounted for 93%. At the same time, the percentage of ROC-AUC appeared at 0.92, which indicates that this LightGBM model reached a satisfactory level. Finally, we extracted meaningful insights and figured out potential gaps on top of PD. By extracting meaningful insights and identifying potential gaps, our study contributes to the significance and impact of PD research. The application of advanced machine learning algorithms holds promise in accurately diagnosing PD and shedding light on crucial aspects of the disease. This research has the potential to enhance the understanding and management of PD, ultimately improving the lives of individuals affected by this condition.",
+  "ml_approaches": [
+    {
+      "algorithm": "Decision Tree",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.9322,
+        "f1_score": 0.92,
+        "recall": 0.8846,
+        "precision": 0.9583,
+        "r2_score": 0.724942
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.9661,
+        "f1_score": 0.961538,
+        "recall": 0.9615,
+        "precision": 0.9615,
+        "r2_score": 0.862471
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.8305,
+        "f1_score": 0.782609,
+        "recall": 0.6923,
+        "precision": 0.9,
+        "r2_score": 0.312354
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.9661,
+        "f1_score": 0.96,
+        "recall": 0.9231,
+        "precision": 1,
+        "r2_score": 0.862471
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.7627,
+        "f1_score": 0.65,
+        "recall": 0.5,
+        "precision": 0.9286,
+        "r2_score": 0.037296
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.7627,
+        "f1_score": 0.65,
+        "recall": 0.5,
+        "precision": 0.9286,
+        "r2_score": 0.037296
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.9661,
+        "f1_score": 0.96,
+        "recall": 0.9231,
+        "precision": 1,
+        "r2_score": 0.862471
+      }
+    },
+    {
+      "algorithm": "LightGBM",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.9831,
+        "f1_score": 0.981132,
+        "recall": 1,
+        "precision": 0.963,
+        "r2_score": 0.931235
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.9153,
+        "f1_score": 0.909091,
+        "recall": 0.9615,
+        "precision": 0.8621,
+        "r2_score": 0.656177
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.32604/cmc.2024.048967_1"
+}

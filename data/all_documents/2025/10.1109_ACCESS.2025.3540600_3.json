@@ -1,0 +1,247 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c1689349"
+  },
+  "title": "Interpretable Parkinson's Disease Detection Using Group-Wise Scaling",
+  "authors": [
+    {
+      "name": "Niloofar Momeni",
+      "affiliations": [
+        {
+          "institution": "Lund University",
+          "country": "Sweden"
+        }
+      ]
+    },
+    {
+      "name": "Susanna Whitling",
+      "affiliations": [
+        {
+          "institution": "Lund University",
+          "country": "Sweden"
+        }
+      ]
+    },
+    {
+      "name": "Andreas Jakobsson",
+      "affiliations": [
+        {
+          "institution": "Lund University",
+          "country": "Sweden"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "IEEE Access",
+  "year": 2025,
+  "doi": "10.1109/ACCESS.2025.3540600",
+  "abstract": "This study is aimed at detecting Parkinson's disease by analyzing voice measurements made using a mobile phone. The key objectives include creating a model that ensures accurate predictions while maintaining interpretability, consistent with the existing literature on Parkinson's disease. We introduce a novel group-wise scaling method to address typical age and biological sex biases in the datasets, demonstrating 9.5% improvement over conventional scaling for three publicly available data sets. We also show the importance of evaluating the developed model on unseen individuals to achieve reliable classification results. The developed model is shown to offer an accuracy of 82% for unseen individuals, surpassing current state-of-the-art approaches. Furthermore, we offer insights into the decision-making of the model using Shapley additive explanation values. Our analysis reveals that shorter and less variable voiced segments and more variable unvoiced segments, suggesting a monotone voice pattern with frequent pauses, increase the likelihood of classifying the voice as a Parkinson's disease voice. Additionally, greater variability and rate of voiced segments, low variability of unvoiced segments, higher pitch variation, and spectral flux, suggesting continuous phonation and dynamic modulation, correlate with healthy voices. These features align well with the relevant medical literature, confirming our results. The significance of our proposed model lies in its generalizability and reliability for Parkinson's disease detection, potentially decelerating disease progression, reducing healthcare costs, and improving quality of life for patients.",
+  "ml_approaches": [
+    {
+      "algorithm": "XGBoost",
+      "framework": "Python",
+      "feature_extraction": [
+        "KTU"
+      ],
+      "scaling": [
+        "Robust"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: XGBoost"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.625,
+        "f1_score": 0.6509999999999999,
+        "recall": 0.875,
+        "precision": 0.518,
+        "auc": 0.667
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "Python",
+      "feature_extraction": [
+        "KTU"
+      ],
+      "scaling": [
+        "Robust"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: XGBoost"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.515,
+        "f1_score": 0.65,
+        "recall": 0.788,
+        "precision": 0.597,
+        "auc": 0.429
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "Python",
+      "feature_extraction": [
+        "KTU"
+      ],
+      "scaling": [
+        "Group-wise Robust Scaling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: XGBoost"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.701,
+        "f1_score": 0.735,
+        "recall": 0.95,
+        "precision": 0.6,
+        "auc": 0.728
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "Python",
+      "feature_extraction": [
+        "KTU"
+      ],
+      "scaling": [
+        "Group-wise Robust Scaling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: XGBoost"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.626,
+        "f1_score": 0.727,
+        "recall": 0.808,
+        "precision": 0.678,
+        "auc": 0.589
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "Python",
+      "feature_extraction": [
+        "emobase"
+      ],
+      "scaling": [
+        "Robust"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: XGBoost"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.617,
+        "f1_score": 0.623,
+        "recall": 0.792,
+        "precision": 0.514,
+        "auc": 0.6459999999999999
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "Python",
+      "feature_extraction": [
+        "emobase"
+      ],
+      "scaling": [
+        "Robust"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: XGBoost"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.662,
+        "f1_score": 0.74,
+        "recall": 0.837,
+        "precision": 0.709,
+        "auc": 0.85
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "Python",
+      "feature_extraction": [
+        "emobase"
+      ],
+      "scaling": [
+        "Group-wise Robust Scaling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: XGBoost"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.701,
+        "f1_score": 0.713,
+        "recall": 0.85,
+        "precision": 0.614,
+        "auc": 0.7170000000000001
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "Python",
+      "feature_extraction": [
+        "emobase"
+      ],
+      "scaling": [
+        "Group-wise Robust Scaling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: XGBoost"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.846,
+        "f1_score": 0.877,
+        "recall": 0.901,
+        "precision": 0.859,
+        "auc": 0.898
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Lithuanian Parkinson's Disease Dataset",
+      "size": 99,
+      "pd_patients": 64,
+      "controls": 35,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Lithuanian Parkinson's Disease Dataset",
+      "size": 99,
+      "pd_patients": 64,
+      "controls": 35,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.1109/ACCESS.2025.3540600_3"
+}

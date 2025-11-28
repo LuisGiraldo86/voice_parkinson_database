@@ -1,0 +1,257 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893c5"
+  },
+  "title": "Cloud-assisted Parkinson disease identification system for remote patient monitoring and diagnosis in the smart healthcare applications",
+  "authors": [
+    {
+      "name": "Karthikeyan Harimoorthy",
+      "affiliation": "Anna University, India"
+    },
+    {
+      "name": "Menakadevi Thangavelu",
+      "affiliation": "Adhiyamaan College of Engineering, India"
+    }
+  ],
+  "journal": "Concurrency and Computation: Practice and Experience",
+  "publication_type": "Journal",
+  "year": 2021,
+  "doi": "10.1002/cpe.6419",
+  "abstract": "The development of a cloud-based Parkinson's disease identification system is identified as one of the most challenging issues for predictive telediagnosis and telemonitoring in the emerging smart healthcare applications. The traditional way of Parkinson's disease identification by clinical parameters is more costly and uncomfortable for rural people to avail the testing and diagnosis from the remote place. So, the cloud-assisted Parkinson's disease identification system (CAPDIS) is proposed based on non-clinical parameters with patient-centric and cost-effective features for helping the poor patients living in rural as well as urban areas. In addition, the proposed system diagnoses the remote patient by examining the symptoms like dysphonia which is identified as the most severe neurodegenerative disorder in the world. Further, the proposed system has experimented with the benchmark voice dataset collected from the University of California-Irvine (UCI) repository. It shows that the proposed CAPDIS system with adaptive linear kernel support vector machines (k-SVM) classifier has significant improvements on detection accuracy, specificity, sensitivity, and Matthews's correlation coefficient scores while comparing to the existing classifiers. Therefore, the proposed adaptive linear k-SVM classifiers provide 10% improvements on prediction accuracy and F1-Score over the existing polynomial, radial basis, and sigmoidal-based k-SVM classifiers.",
+  "citescore": 3.8,
+  "ml_approaches": [
+    {
+      "algorithm": "Adaptive Linear k-SVM",
+      "framework": "",
+      "results": {
+        "accuracy": 0.85,
+        "recall": 0.86,
+        "specificity": 0.9,
+        "mcc": 0.7035
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "results": {
+        "accuracy": 0.825,
+        "recall": 0.85,
+        "specificity": 0.8,
+        "mcc": 0.658
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "results": {
+        "accuracy": 0.75,
+        "recall": 0.76,
+        "specificity": 0.81,
+        "mcc": 0.56
+      }
+    },
+    {
+      "algorithm": "Gradient Boosting",
+      "framework": "",
+      "results": {
+        "accuracy": 0.8,
+        "recall": 0.82,
+        "specificity": 0.78,
+        "mcc": 0.688
+      }
+    },
+    {
+      "algorithm": "Adaptive Linear k-SVM",
+      "framework": "",
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "results": {
+        "accuracy": 0.9792,
+        "recall": 0.9998,
+        "specificity": 0.9825,
+        "mcc": 0.6922
+      }
+    },
+    {
+      "algorithm": "k-Nearest Neighbors",
+      "framework": "",
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "results": {
+        "accuracy": 0.9641,
+        "recall": 0.966,
+        "specificity": 0.9582999999999999,
+        "mcc": 0.638
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "results": {
+        "accuracy": 0.8,
+        "recall": 0.8027,
+        "specificity": 0.7917000000000001,
+        "mcc": 0.5544
+      }
+    },
+    {
+      "algorithm": "Gradient Boosting",
+      "framework": "",
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "results": {
+        "accuracy": 0.9128,
+        "recall": 0.9388,
+        "specificity": 0.8332999999999999,
+        "mcc": 0.6734
+      }
+    },
+    {
+      "algorithm": "Adaptive Linear k-SVM",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Correlation-based"
+        ]
+      },
+      "results": {
+        "accuracy": 0.9062,
+        "recall": 0.9932,
+        "specificity": 0.9958,
+        "mcc": 0.7135
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Correlation-based"
+        ]
+      },
+      "results": {
+        "accuracy": 0.9077,
+        "recall": 0.9116,
+        "specificity": 0.9958,
+        "mcc": 0.6667
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Correlation-based"
+        ]
+      },
+      "results": {
+        "accuracy": 0.9256,
+        "recall": 0.8776,
+        "specificity": 0.6667000000000001,
+        "mcc": 0.589
+      }
+    },
+    {
+      "algorithm": "Gradient Boosting",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Correlation-based"
+        ]
+      },
+      "results": {
+        "accuracy": 0.9174,
+        "recall": 0.9252,
+        "specificity": 0.8125,
+        "mcc": 0.678
+      }
+    },
+    {
+      "algorithm": "Adaptive Linear k-SVM",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Wrapper: Support Vector Machine"
+        ]
+      },
+      "results": {
+        "accuracy": 0.9941,
+        "recall": 1,
+        "specificity": 0.9917,
+        "mcc": 0.7122
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Wrapper: Support Vector Machine"
+        ]
+      },
+      "results": {
+        "accuracy": 0.9897,
+        "recall": 0.9932,
+        "specificity": 0.9792000000000001,
+        "mcc": 0.677
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Wrapper: Support Vector Machine"
+        ]
+      },
+      "results": {
+        "accuracy": 0.8256,
+        "recall": 0.8844,
+        "specificity": 0.6468,
+        "mcc": 0.5788
+      }
+    },
+    {
+      "algorithm": "Gradient Boosting",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Wrapper: Support Vector Machine"
+        ]
+      },
+      "results": {
+        "accuracy": 0.8872,
+        "recall": 0.9116,
+        "specificity": 0.8125,
+        "mcc": 0.699
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1002/cpe.6419_1"
+}

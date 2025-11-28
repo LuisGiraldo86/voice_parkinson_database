@@ -1,0 +1,87 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c168936d"
+  },
+  "title": "Optimized ANFIS Model Using Hybrid Metaheuristic Algorithms for Parkinson's Disease Prediction in IoT Environment",
+  "authors": [
+    {
+      "name": "Ibrahim M. El-Hasnony",
+      "affiliations": [
+        {
+          "institution": "Mansoura University",
+          "country": "Egypt"
+        }
+      ]
+    },
+    {
+      "name": "Sherif I. Barakat",
+      "affiliations": [
+        {
+          "institution": "Mansoura University",
+          "country": "Egypt"
+        }
+      ]
+    },
+    {
+      "name": "Reham R. Mostafa",
+      "affiliations": [
+        {
+          "institution": "Mansoura University",
+          "country": "Egypt"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "IEEE Access",
+  "year": 2020,
+  "doi": "10.1109/ACCESS.2020.3005614",
+  "abstract": "Throughout recent years, the progress of telemonitoring and telediagnostics devices for evaluating and tracking Parkinson's (PD) disease has become increasingly important. The early detection of PD increases the consistency of the treatment of patients and ultimately allows it possible to achieve a rapid diagnostic decision from an experienced clinician. In this paper, a proposed fog-based ANFIS+PSOGWO model provided for Parkinson's disease prediction. The proposed model exploits the advantages of the grey wolf optimization (GWO) and the particle swarm optimization (PSO) for adjusting the adaptive neuro-fuzzy inference system (ANFIS) parameters with the use of chaotic tent map for the initialization. The fog processing utilized for gathering and analyzing the data at the edge of the gateways and notifying the local community instantly. Compared to other optimization methods, many evaluation metrics used like the root mean square error (RMSE), the mean square error (MSE), the standard deviation (SD), and the accuracy and five standard datasets from repository of UCI machine learning that demonstrated the superiority of the model proposed against the grey wolf optimization (GWO), the particle swarm optimization (PSO), the differential evolution (DE), the genetic algorithm (GA), the ant colony optimization (ACO), and the standard ANFIS model. Moreover, the proposed ANFIS+PSOGWO applied for Parkinson's disease prediction and achieved an accuracy of 87.5%. The proposed ANFIS+PSOGWO compared in producing positive outcomes better than PSO, GWO, GA, ACO, DE, and some recent literature for Parkinson's disease prediction. The proposed model produced accuracy for the Parkinson's disease prediction has outperformed its closest competitors in all algorithms by 7.3%.",
+  "ml_approaches": [
+    {
+      "algorithm": "Adaptive Neuro-Fuzzy Inference System",
+      "optimization": [
+        "Particle Swarm Optimization",
+        "Grey Wolf Optimization"
+      ],
+      "framework": "MATLAB2018a",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Pearson Correlation"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9841,
+        "recall": 0.74,
+        "precision": 0.77,
+        "auc": 0.85
+      }
+    }
+  ],
+  "note": "Authors use RMSE and MSE as evaluation metrics in a classification task, and also details from the dataset do not match",
+  "source_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "study_id": "10.1109/ACCESS.2020.3005614_1"
+}

@@ -1,0 +1,247 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893c2"
+  },
+  "title": "Speech Impairment in Parkinson's Disease: Acoustic Analysis of Unvoiced Consonants in Italian Native Speakers",
+  "authors": [
+    {
+      "name": "Federica Amato",
+      "affiliations": [
+        {
+          "institution": "Politecnico di Torino",
+          "country": "Italy"
+        }
+      ]
+    },
+    {
+      "name": "Luigi Borzì",
+      "affiliations": [
+        {
+          "institution": "Politecnico di Torino",
+          "country": "Italy"
+        }
+      ]
+    },
+    {
+      "name": "Gabriella Olmo",
+      "affiliations": [
+        {
+          "institution": "Politecnico di Torino",
+          "country": "Italy"
+        }
+      ]
+    },
+    {
+      "name": "Carlo Alberto Artusi",
+      "affiliations": [
+        {
+          "institution": "Politecnico di Torino",
+          "country": "Italy"
+        }
+      ]
+    },
+    {
+      "name": "Gabriele Imbalzano",
+      "affiliations": [
+        {
+          "institution": "Politecnico di Torino",
+          "country": "Italy"
+        }
+      ]
+    },
+    {
+      "name": "Leonardo Lopiano",
+      "affiliations": [
+        {
+          "institution": "A.O.U. Città della Salute e della Scienza di Torino",
+          "country": "Italy"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "IEEE Access",
+  "year": 2021,
+  "doi": "10.1109/ACCESS.2021.3135626",
+  "abstract": "The study of the inﬂuence of Parkinson's Disease (PD) on vocal signals has received much attention over the last decades. Increasing interest has been devoted to articulation and acoustic characterization of different phonemes. Method: In this study we propose the analysis of the Transition Regions (TR) of speciﬁc phonetic groups to model the loss of motor control and the difﬁculty to start/stop movements, typical of PD patients. For this purpose, we extracted 60 features from pre-processed vocal signals and used them as input to several machine learning models. We employed two data sets, containing samples from Italian native speakers, for training and testing. The ﬁrst dataset - 28 PD patients and 22 Healthy Control (HC) - included recordings in optimal conditions, while in the second one - 26 PD patients and 18 HC - signals were collected at home, using non-professional microphones. Results: We optimized two support vector machine models for the application in controlled noise conditions and home environments, achieving 98% ± 1.1 and 88% ± 2.8 accuracy in 10-fold cross-validation, respectively. Conclusion: This study conﬁrms the high capability of the TRs to discriminate between PD patients and healthy controls, and the feasibility of automatic PD assessment using voice recordings. Moreover, the promising performance of the implemented model discloses the option of voice processing using low-cost devices and domestic recordings, possibly self-managed by the patients themselves.",
+  "citescore": 6.7,
+  "ml_approaches": [
+    {
+      "algorithm": "Naive Bayes",
+      "feature_extraction": [
+        "Praat"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Boruta"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.83,
+        "recall": 0.82,
+        "precision": 0.89,
+        "specificity": 0.85,
+        "f1_score": 0.84,
+        "auc": 0.89
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "feature_extraction": [
+        "Praat"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Boruta"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.84,
+        "recall": 0.85,
+        "precision": 0.87,
+        "specificity": 0.82,
+        "f1_score": 0.85,
+        "auc": 0.92
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "feature_extraction": [
+        "Praat"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Boruta"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.86,
+        "recall": 0.87,
+        "precision": 0.9,
+        "specificity": 0.86,
+        "f1_score": 0.87,
+        "auc": 0.94
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "feature_extraction": [
+        "Praat"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Boruta"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.84,
+        "recall": 0.85,
+        "precision": 0.88,
+        "specificity": 0.83,
+        "f1_score": 0.85,
+        "auc": 0.91
+      }
+    },
+    {
+      "algorithm": "Gradient Boosting",
+      "feature_extraction": [
+        "Praat"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Boruta"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.76,
+        "recall": 0.77,
+        "precision": 0.82,
+        "specificity": 0.75,
+        "f1_score": 0.77,
+        "auc": 0.83
+      }
+    },
+    {
+      "algorithm": "Bagging",
+      "feature_extraction": [
+        "Praat"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Boruta"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.84,
+        "recall": 0.85,
+        "precision": 0.88,
+        "specificity": 0.83,
+        "f1_score": 0.85,
+        "auc": 0.93
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "feature_extraction": [
+        "Praat"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Boruta"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.83,
+        "recall": 0.84,
+        "precision": 0.87,
+        "specificity": 0.82,
+        "f1_score": 0.84,
+        "auc": 0.93
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Italian Parkinson's Voice and Speech",
+      "size": 65,
+      "pd_patients": 28,
+      "controls": 22,
+      "url": "https://ieee-dataport.org/open-access/italian-parkinsons-voice-and-speech",
+      "doi": "10.21227/aw6b-tg17"
+    },
+    {
+      "name": "Custom Dataset recorded by the authors",
+      "size": 44,
+      "pd_patients": 26,
+      "controls": 18,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Italian Parkinson's Voice and Speech",
+      "size": 65,
+      "pd_patients": 28,
+      "controls": 22,
+      "url": "https://ieee-dataport.org/open-access/italian-parkinsons-voice-and-speech",
+      "doi": "10.21227/aw6b-tg17"
+    },
+    {
+      "name": "Custom Dataset recorded by the authors",
+      "size": 44,
+      "pd_patients": 26,
+      "controls": 18,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.1109/ACCESS.2021.3135626_1"
+}

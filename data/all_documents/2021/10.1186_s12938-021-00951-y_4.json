@@ -1,0 +1,174 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c168933f"
+  },
+  "title": "A Mobile-assisted Voice Condition Analysis System for Parkinson's Disease: Assessment of Usability Conditions",
+  "authors": [
+    {
+      "name": "Javier Carrón",
+      "affiliations": [
+        {
+          "institution": "Universidad de Extremadura",
+          "country": "Spain"
+        }
+      ]
+    },
+    {
+      "name": "Yolanda Campos-Roca",
+      "affiliations": [
+        {
+          "institution": "Universidad de Extremadura",
+          "country": "Spain"
+        }
+      ]
+    },
+    {
+      "name": "Mario Madruga",
+      "affiliations": [
+        {
+          "institution": "Universidad de Extremadura",
+          "country": "Spain"
+        }
+      ]
+    },
+    {
+      "name": "Carlos J. Pérez",
+      "affiliations": [
+        {
+          "institution": "Universidad de Extremadura",
+          "country": "Spain"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "BioMedical Engineering OnLine",
+  "year": 2021,
+  "doi": "10.1186/s12938-021-00951-y",
+  "abstract": "Background and objective: Automatic voice condition analysis systems to detect Parkinson's disease (PD) are generally based on speech data recorded under acoustically controlled conditions and professional supervision. The performance of these approaches in a free-living scenario is unknown. The aim of this research is to investigate the impact of uncontrolled conditions (realistic acoustic environment and lack of supervision) on the performance of automatic PD detection systems based on speech. Methods: A mobile-assisted voice condition analysis system is proposed to aid in the detection of PD using speech. The system is based on a server-client architecture. In the server, feature extraction and machine learning algorithms are designed and implemented to discriminate subjects with PD from healthy ones. The Android app allows patients to submit phonations and physicians to check the complete record of every patient. Six different machine learning classifiers are applied to compare their performance on two different speech databases. One of them is an in-house database (UEX database), collected under professional supervision by using the same Android-based smartphone in the same room, whereas the other one is an age, sex and health-status balanced subset of mPower study for PD, which provides real-world data. By applying identical methodology, single-database experiments have been performed on each database, and also cross-database tests. Cross-validation has been applied to assess generalization performance and hypothesis tests have been used to report statistically significant differences. Results: In the single-database experiments, a best accuracy rate of 0.92 (AUC = 0.98) has been obtained on UEX database, while a considerably lower best accuracy rate of 0.71 (AUC = 0.76) has been achieved using the mPower-based database. The cross-database tests provided very degraded accuracy metrics.  Conclusion: The results clearly show the potential of the proposed system as an aid for general practitioners to conduct triage or an additional tool for neurologists to perform diagnosis. However, due to the performance degradation observed using data from mPower study, semi-controlled conditions are encouraged, i.e., voices recorded at home by the patients themselves following a strict recording protocol and control of the information about patients by the medical doctor at charge. ",
+  "test_dataset": {
+    "name": "Extremadura Parkinson's Disease Dataset",
+    "size": 60,
+    "pd_patients": 30,
+    "controls": 30,
+    "url": null,
+    "doi": null
+  },
+  "ml_approaches": [
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.6165,
+        "recall": 0.626,
+        "specificity": 0.6089,
+        "auc": 0.6664
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.6022,
+        "recall": 0.594,
+        "specificity": 0.6114,
+        "auc": 0.6495
+      }
+    },
+    {
+      "algorithm": "Passive-Aggressive",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.5302,
+        "recall": 0.5877,
+        "specificity": 0.4738,
+        "auc": 0.5466
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.5877,
+        "recall": 0.5925,
+        "specificity": 0.5849,
+        "auc": 0.6322
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.6421,
+        "recall": 0.6717,
+        "specificity": 0.6152,
+        "auc": 0.6851
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.6053,
+        "recall": 0.6033,
+        "specificity": 0.6074,
+        "auc": 0.6511
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "mPower",
+      "size": 398,
+      "pd_patients": 188,
+      "controls": 210,
+      "url": "https://www.synapse.org/Synapse:syn4993293/wiki/247859"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "mPower",
+      "size": 398,
+      "pd_patients": 188,
+      "controls": 210,
+      "url": "https://www.synapse.org/Synapse:syn4993293/wiki/247859"
+    }
+  ],
+  "study_id": "10.1186/s12938-021-00951-y_4"
+}

@@ -1,0 +1,184 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c168939c"
+  },
+  "title": "Speech Features-Based Parkinson's Disease Classification Using Combined SMOTE-ENN and Binary Machine Learning",
+  "authors": [
+    {
+      "name": "Samiappan Dhanalakshmi",
+      "affiliations": [
+        {
+          "institution": "SRM Institute of Science and Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Sudeshna Das",
+      "affiliations": [
+        {
+          "institution": "SRM Institute of Science and Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Ramalingam Senthil",
+      "affiliations": [
+        {
+          "institution": "SRM Institute of Science and Technology",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Health and Technology",
+  "year": 2024,
+  "doi": "10.1007/s12553-023-00810-x",
+  "abstract": "PurposeParkinson's disease (PD) is one of the most prevalent neurodegenerative diseases in the global context. The presently available detecting process of PD is costly and labour-intensive. Along with a movement disorder, PD also affects speech differently. By causing variation in pitch, monotonicity, slurring of words, or slow speed of talking. This study uses different machine learning binary classification algorithms for the detection and classification of PD.MethodsThe publicly available Parkinson's disease speech features dataset is imbalanced, with only 192 healthy instances compared to 564 PD instances. Synthetic Minority Oversampling Technique - Edited Nearest Neighbours (SMOTE-ENN) algorithms rectify the class imbalance by oversampling and under sampling. Thus, it results in a balanced dataset free of noisy samples. Machine learning binary classifiers, Random Forest, K-Nearest Neighbours, Support Vector Machine, Extreme Gradient Boosting, Decision Tree, and Logistic Regression are investigated.ResultsThe classification algorithms have been analysed and compared based on several standard evaluation metrics. The classification model, resampling using SMOTE-ENN technique, and dimensionality reduction using principal component analysis (PCA) have been performed on the dataset to enhance the performance and prevent overfitting. The combination of SMOTE-ENN and Support Vector Machine (SVM) yields a good accuracy of 96.5%.ConclusionSpeech features are a predictive and non-intrusive method, thus making the diagnostic process painless and straightforward. The reported results are promising to aid the diagnosis of PD so that treatment can be administered as early as possible. Thus, the primary findings are beneficial to detect PD at an early stage with optimal accuracy.",
+  "citescore": 8,
+  "ml_approaches": [
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE-ENN"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "dimensionality_reduction": [
+        "Kernel PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9192,
+        "precision": 0.8937,
+        "recall": 0.9342,
+        "f1_score": 0.9118999999999999
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE-ENN"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "dimensionality_reduction": [
+        "Kernel PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.965,
+        "precision": 0.9628,
+        "recall": 0.9641,
+        "f1_score": 0.9628
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE-ENN"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "dimensionality_reduction": [
+        "Kernel PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9455,
+        "precision": 0.9405,
+        "recall": 0.9462,
+        "f1_score": 0.9419
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE-ENN"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "dimensionality_reduction": [
+        "Kernel PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8799,
+        "precision": 0.8708,
+        "recall": 0.8816,
+        "f1_score": 0.8728
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE-ENN"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "dimensionality_reduction": [
+        "Kernel PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9366,
+        "precision": 0.9748,
+        "recall": 0.8887,
+        "f1_score": 0.9284
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE-ENN"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "dimensionality_reduction": [
+        "Kernel PCA"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.843,
+        "precision": 0.7792,
+        "recall": 0.8785,
+        "f1_score": 0.8217
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "study_id": "10.1007/s12553-023-00810-x_1"
+}

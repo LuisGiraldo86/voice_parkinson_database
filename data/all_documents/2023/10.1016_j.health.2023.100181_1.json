@@ -1,0 +1,120 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c16893fa"
+  },
+  "title": "An Ensemble Nearest Neighbor Boosting Technique for Prediction of Parkinson's Disease",
+  "authors": [
+    {
+      "name": "K Aditya Shastry",
+      "affiliations": [
+        {
+          "institution": "Nitte Meenakshi Institute of Technology",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Healthcare Analytics",
+  "year": 2023,
+  "doi": "10.1016/j.health.2023.100181",
+  "abstract": "Parkinson's disease (PD) is a complex condition that affects an individual's motor features and intensifies over time. Symptoms vary between individuals and can go undetected at an early stage. Voice data has shown potential in predicting PD. In recent years, Machine Learning (ML) has made significant progress, with ensemble ML approaches proving to be effective in various applications. This research aims to detect PD at an early stage using ensemble techniques on the Parkinson's speech dataset (PSV), which contains several sound recordings with 27 input features and one target feature. Feature importance was computed using Mean Decrease in Impurity (F-MDI), Feature Permutation (F-PER), and Pearson's Correlation (F-CORR) techniques. Several supervised ML baseline models were compared with the proposed Nearest Neighbor Boosting (NNB) technique, which combines k-Nearest Neighbor (k-NN) and Gradient Boosting (GB). The NNB technique outperformed the baseline models for multiple performance metrics, including accuracy, recall, precision, F-score, the area under the curve (AUC), receiver operating characteristic (ROC), and confusion matrix (CM). The findings suggest that the designed ensemble method can be a promising method for PD detection.",
+  "ml_approaches": [
+    {
+      "algorithm": "Ensemble (K-Nearest Neighbors, Gradient Boosting)",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.6923,
+        "recall": 0.6979,
+        "precision": 0.6994,
+        "f1_score": 0.6920999999999999,
+        "auc": 0.6979000000000001
+      }
+    },
+    {
+      "algorithm": "Ensemble (K-Nearest Neighbors, Gradient Boosting)",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Feature Correlation"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.6923,
+        "recall": 0.6956,
+        "precision": 0.6951,
+        "f1_score": 0.6922,
+        "auc": 0.6956
+      }
+    },
+    {
+      "algorithm": "Ensemble (K-Nearest Neighbors, Gradient Boosting)",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Feature Permutation Importance"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.7548,
+        "recall": 0.7492,
+        "precision": 0.7563,
+        "f1_score": 0.7506,
+        "auc": 0.7492
+      }
+    },
+    {
+      "algorithm": "Ensemble (K-Nearest Neighbors, Gradient Boosting)",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Mean Decrease in Impurity"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.7115,
+        "recall": 0.709,
+        "precision": 0.7097,
+        "f1_score": 0.7093,
+        "auc": 0.7090000000000001
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Speech with Multiple Types of Sound Recordings",
+      "size": 40,
+      "pd_patients": 20,
+      "controls": 20,
+      "url": "https://archive.ics.uci.edu/dataset/301/parkinson+speech+dataset+with+multiple+types+of+sound+recordings",
+      "doi": "10.24432/C5NC8M"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Speech with Multiple Types of Sound Recordings",
+      "size": 40,
+      "pd_patients": 20,
+      "controls": 20,
+      "url": "https://archive.ics.uci.edu/dataset/301/parkinson+speech+dataset+with+multiple+types+of+sound+recordings",
+      "doi": "10.24432/C5NC8M"
+    }
+  ],
+  "study_id": "10.1016/j.health.2023.100181_1"
+}

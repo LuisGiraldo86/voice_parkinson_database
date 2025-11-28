@@ -1,0 +1,269 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c16893ee"
+  },
+  "title": "Empirical Mode Decomposition articulation feature extraction on Parkinson's Diadochokinesia",
+  "authors": [
+    {
+      "name": "Alice Rueda",
+      "affiliations": [
+        {
+          "institution": "Ryerson University",
+          "country": "Canada"
+        }
+      ]
+    },
+    {
+      "name": "Juan Camilo Vásquez-Correa",
+      "affiliations": [
+        {
+          "institution": "Friedrich-Alexander Universität Erlangen-Nürnberg",
+          "country": "Germany"
+        },
+        {
+          "institution": "Universidad de Antioquia",
+          "country": "Colombia"
+        }
+      ]
+    },
+    {
+      "name": "Juan Rafael Orozco-Arroyave",
+      "affiliations": [
+        {
+          "institution": "Friedrich-Alexander Universität Erlangen-Nürnberg",
+          "country": "Germany"
+        },
+        {
+          "institution": "Universidad de Antioquia",
+          "country": "Colombia"
+        }
+      ]
+    },
+    {
+      "name": "Elmar Nöth",
+      "affiliations": [
+        {
+          "institution": "Friedrich-Alexander Universität Erlangen-Nürnberg",
+          "country": "Germany"
+        }
+      ]
+    },
+    {
+      "name": "Sridhar Krishnan",
+      "affiliations": [
+        {
+          "institution": "Ryerson University",
+          "country": "Canada"
+        }
+      ]
+    }
+  ],
+  "journal": "Computer Speech & Language",
+  "publication_type": "Journal",
+  "year": 2022,
+  "doi": "10.1016/j.csl.2021.101322",
+  "abstract": "Empirical Mode Decomposition (EMD) was designed to analyze nonlinear and non-stationary signals. EMD voice analysis had been applied to Parkinson's sustained vowels, but very limited studies have been done on highly dynamic Diadochokinesia (DDK) utterances. This paper applies the EMD's dyadic filterbank characteristics to extract DDK features and an in-depth study on the efficacy of two segmentation strategies. The EMD analysis on DDK looks at the spectrum characteristics of Intrinsic Mode Functions (IMF) and the handling of mode mixing conditions. DDK recordings of Healthy Control (HC) subjects and patients with Parkinson's disease (PD) were segmented using various fixed frame sizes compared to dynamic segmentation based on/pa-ta-ka/ triad length, and also the signal envelope as a whole. An overlapping windowing of 2/3 was used in the fixed frame size segmentation to augment and to capture the redundant and transition information. No overlapping was used in the/pa-ta-ka/ triad segmentation. For the fixed frame size segmentation, we found that there is a region of consistency. Within this region, the IMF center frequencies and bandwidths maintained the same but varied outside the region. The segmentation comparisons used a basic set of EMD features with and without DeltaEMD features that capture segment-to-segment deviations. Using the basic EMD dyadic features, fixed frame size segmentation out-performed/pa-ta-ka/ triad segmentation. When DeltaEMD features were added to provide segment deviation information,/pa-ta-ka/ triad out-performed fixed frame segmentation. Additional segment-magnitude amplification factor and segment length were found to improve the performance of the/pa-ta-ka/ triad segmentation. With the added features,/pa-ta-ka/ triad out-performed the others and had an improved accuracy of 78%. Additional features have also increased the envelope discrimination to 76%. The results also indicated the potentials of using voice envelopes for PD analysis.",
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine",
+      "input_speech": "/pataka/",
+      "feature_extraction": [
+        "Intrinsic Mode Functions",
+        "Envelope"
+      ],
+      "feature_selection": {
+        "methods": [
+          "EMD-dyadic"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.67,
+        "precision": 0.69,
+        "recall": 0.68,
+        "f1_score": 0.68,
+        "auc": 0.68
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "input_speech": "/pataka/",
+      "feature_extraction": [
+        "Intrinsic Mode Functions",
+        "Envelope"
+      ],
+      "feature_selection": {
+        "methods": [
+          "EMD-dyadic",
+          "Amplitude",
+          "Duration"
+        ],
+        "combination": "unknown"
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.69,
+        "precision": 0.72,
+        "recall": 0.71,
+        "f1_score": 0.7,
+        "auc": 0.71
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "input_speech": "/pataka/",
+      "feature_extraction": [
+        "Intrinsic Mode Functions",
+        "Fixed Frame Size"
+      ],
+      "feature_selection": {
+        "methods": [
+          "EMD-dyadic"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.7,
+        "precision": 0.73,
+        "recall": 0.72,
+        "f1_score": 0.74,
+        "auc": 0.71
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "input_speech": "/pataka/",
+      "feature_extraction": [
+        "Intrinsic Mode Functions",
+        "Fixed Frame Size"
+      ],
+      "feature_selection": {
+        "methods": [
+          "EMD-dyadic",
+          "Amplitude"
+        ],
+        "combination": "unknown"
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.7,
+        "precision": 0.74,
+        "recall": 0.72,
+        "f1_score": 0.74,
+        "auc": 0.71
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "input_speech": "/pataka/",
+      "feature_extraction": [
+        "Intrinsic Mode Functions",
+        "Fixed Frame Size"
+      ],
+      "feature_selection": {
+        "methods": [
+          "EMD-dyadic",
+          "Delta EMD"
+        ],
+        "combination": "unknown"
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.69,
+        "precision": 0.71,
+        "recall": 0.7,
+        "f1_score": 0.72,
+        "auc": 0.7
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "input_speech": "/pataka/",
+      "feature_extraction": [
+        "Intrinsic Mode Functions",
+        "Triad"
+      ],
+      "feature_selection": {
+        "methods": [
+          "EMD-dyadic"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.68,
+        "precision": 0.7,
+        "recall": 0.69,
+        "f1_score": 0.69,
+        "auc": 0.69
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "input_speech": "/pataka/",
+      "feature_extraction": [
+        "Intrinsic Mode Functions",
+        "Triad"
+      ],
+      "feature_selection": {
+        "methods": [
+          "EMD-dyadic",
+          "Amplitude",
+          "Duration"
+        ],
+        "combination": "unknown"
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.69,
+        "precision": 0.71,
+        "recall": 0.7,
+        "f1_score": 0.71,
+        "auc": 0.7
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "input_speech": "/pataka/",
+      "feature_extraction": [
+        "Intrinsic Mode Functions",
+        "Envelope"
+      ],
+      "feature_selection": {
+        "methods": [
+          "EMD-dyadic",
+          "Delta EMD"
+        ],
+        "combination": "unknown"
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.72,
+        "precision": 0.75,
+        "recall": 0.73,
+        "f1_score": 0.74,
+        "auc": 0.73
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "PC-GITA",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://paperswithcode.com/dataset/pc-gita",
+      "doi": ""
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "PC-GITA",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://paperswithcode.com/dataset/pc-gita",
+      "doi": ""
+    }
+  ],
+  "study_id": "10.1016/j.csl.2021.101322_1"
+}

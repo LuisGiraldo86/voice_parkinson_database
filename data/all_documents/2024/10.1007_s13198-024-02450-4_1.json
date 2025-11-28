@@ -1,0 +1,64 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893a8"
+  },
+  "title": "TabNet unveils predictive insights: a deep learning approach for Parkinson's disease prognosis",
+  "authors": [
+    {
+      "name": "Tapan Kumar",
+      "affiliations": [
+        {
+          "institution": "Guru Gobind Singh Indraprastha University",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "R. L. Ujjwal",
+      "affiliations": [
+        {
+          "institution": "Guru Gobind Singh Indraprastha University",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "International Journal of System Assurance Engineering and Management",
+  "year": 2024,
+  "doi": "10.1007/s13198-024-02450-4",
+  "abstract": "Parkinson's disease (PD) is a neurodegenerative disorder affecting movement, speech, and coordination. Early diagnosis and intervention are crucial for improving the quality of life for PD patients. This study aims to enhance early PD diagnosis and improve patient outcomes using a novel approach. We proposed a TabNet model to classify patients with PD based on voice recordings and other features. TabNet is a neural network architecture designed specifically for tabular data. We compared its performance with support vector machines (SVMs), random forests (RFs), and decision trees (DTs). The TabNet model outperformed these methods, achieving an F1 Score of 83.03%. This demonstrates the model's potential for more accurate PD diagnosis, which could lead to better patient management and treatment strategies.",
+  "citescore": 4.7,
+  "ml_approaches": [
+    {
+      "algorithm": "TabNet",
+      "framework": "",
+      "preprocessing": [],
+      "results": {
+        "recall": 0.843,
+        "f1_score": 0.83
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Dataset Information Not Available",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Dataset Information Not Available",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.1007/s13198-024-02450-4_1"
+}

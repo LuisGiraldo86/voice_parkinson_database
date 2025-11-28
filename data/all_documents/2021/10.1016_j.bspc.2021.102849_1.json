@@ -1,0 +1,139 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c168941a"
+  },
+  "title": "Deep Dual-side Learning Ensemble Model for Parkinson Speech Recognition",
+  "authors": [
+    {
+      "name": "Jie Ma",
+      "affiliations": [
+        {
+          "institution": "Chongqing University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Yuanfan Zhang",
+      "affiliations": [
+        {
+          "institution": "Chongqing University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Yongming Li",
+      "affiliations": [
+        {
+          "institution": "Chongqing University",
+          "country": "China"
+        },
+        {
+          "institution": "Military Medical University Chongqing",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Lang Zhou",
+      "affiliations": [
+        {
+          "institution": "Chongqing University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Lingyun Qin",
+      "affiliations": [
+        {
+          "institution": "Chongqing University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Yuwei Zeng",
+      "affiliations": [
+        {
+          "institution": "Chongqing University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Pin Wang",
+      "affiliations": [
+        {
+          "institution": "Chongqing University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Yan Lei",
+      "affiliations": [
+        {
+          "institution": "Chongqing University",
+          "country": "China"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Biomedical Signal Processing and Control",
+  "year": 2021,
+  "doi": "10.1016/j.bspc.2021.102849",
+  "abstract": "Early diagnosis of Parkinson's disease (PD) is very important Kansara et al. (2013) and Stern (1993). In recent years, machine learning-based speech data analysis has been shown to be effective for diagnosing Parkinson's disease (PD) and automatically assessing rehabilitative speech treatment in PD Sakar et al. (2013), Tsanas et al. (2012) and Little et al. (2009). Machine learning includes feature learning and sample learning. Deep learning (deep feature learning) can generate high-level and high-quality features through deep feature transformation, improving classification accuracy. For reasons such as data collection, some samples have low quality for classification. Therefore, sample learning is necessary. Sample selection removes useless samples; therefore, deep sample learning is better, since it can generate high-level and high-quality samples through deep sample transformation. However, there are no public studies about deep sample learning. To solve the problem above, a deep dual-side learning ensemble model is designed in this paper. In this model, a deep sample learning algorithm is designed and combined with a deep network (deep feature learning), thereby realizing the deep dual-side learning of PD speech data. First, an embedded stack group sparse autoencoder is designed in this paper to conduct deep feature learning to acquire new high-level deep feature data. Second, the deep features are fused with original speech features by L1 regularization feature selection methods, thereby constructing hybrid feature data. Third, an iterative mean clustering algorithm (IMC) was designed, thereby constructing a deep sample learning algorithm and conducting deep sample transformation. After that step, hierarchical sample spaces are constructed based on a deep sample learning algorithm, and the classification models are constructed on the sample spaces. Finally, the weighted fusion mechanism is designed to merge the classification models into a classification ensemble model, thereby fusing the deep feature learning algorithm and the deep sample learning algorithm together. The ensemble model is called the deep dual-side learning ensemble model. At the end of this paper, two representative speech datasets of PD were used for validation. The experimental results show that the main innovation part of the algorithm is effective. For the two datasets, the mean accuracy of the proposed algorithm reaches 98.4% and 99.6%, which are better than the state-of-art relevant algorithms. The study shows that deep dual-side learning is better for existing deep feature learning for PD speech recognition.",
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "MATLAB R2018b",
+      "feature_extraction": [
+        "Group Sparse Autoencoder (Deep-Stacked)",
+        "Original Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "L1 Regularization"
+        ]
+      },
+      "sample_selection": [
+        {
+          "methods": [
+            "Iterative Mean Clustering"
+          ]
+        }
+      ],
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.9849,
+        "recall": 0.984,
+        "specificity": 0.991
+      }
+    }
+  ],
+  "github": "https://github.com/zhang946/Deep-Dual-Side-Learning-Ensemble-Model-for-Parkinson-Speech-Recognition",
+  "source_dataset": [
+    {
+      "name": "Parkinson's Speech with Multiple Types of Sound Recordings",
+      "size": 40,
+      "pd_patients": 20,
+      "controls": 20,
+      "url": "https://archive.ics.uci.edu/dataset/301/parkinson+speech+dataset+with+multiple+types+of+sound+recordings",
+      "doi": "10.24432/C5NC8M"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Speech with Multiple Types of Sound Recordings",
+      "size": 40,
+      "pd_patients": 20,
+      "controls": 20,
+      "url": "https://archive.ics.uci.edu/dataset/301/parkinson+speech+dataset+with+multiple+types+of+sound+recordings",
+      "doi": "10.24432/C5NC8M"
+    }
+  ],
+  "study_id": "10.1016/j.bspc.2021.102849_1"
+}

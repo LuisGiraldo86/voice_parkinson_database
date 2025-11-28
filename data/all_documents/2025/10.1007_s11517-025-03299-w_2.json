@@ -1,0 +1,120 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c1689344"
+  },
+  "title": "Multi-source sparse broad transfer learning for parkinson's disease diagnosis via speech",
+  "authors": [
+    {
+      "name": "Yuchuan Liu",
+      "affiliations": [
+        {
+          "institution": "Chongqing University of Science and Technology",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Lianzhi Li",
+      "affiliations": [
+        {
+          "institution": "Chongqing University of Science and Technology",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Yu Rao",
+      "affiliations": [
+        {
+          "institution": "Chongqing University of Science and Technology",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Huihua Cao",
+      "affiliations": [
+        {
+          "institution": "University of Sydney",
+          "country": "Australia"
+        }
+      ]
+    },
+    {
+      "name": "Xiaoheng Tan",
+      "affiliations": [
+        {
+          "institution": "Chongqing University of Science and Technology",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Yongsong Li",
+      "affiliations": [
+        {
+          "institution": "Chongqing University of Science and Technology",
+          "country": "China"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Medical & Biological Engineering & Computing",
+  "year": 2025,
+  "doi": "10.1007/s11517-025-03299-w",
+  "abstract": "Diagnosing Parkinson's disease (PD) via speech is crucial for its non-invasive and convenient data collection. However, the small sample size of PD speech data impedes accurate recognition of PD speech. Therefore, we propose a novel multi-source sparse broad transfer learning (SBTL) method, inspired by incremental broad learning, which balances model learning capability and the overfitting associated with limited sample size of PD speech data. Specifically, SBTL initially leverages a sparse network to preprocess highly overlapping PD speech data, facilitating the identification of intrinsic invariant features between the multi-source auxiliary domain and the target data, which contributes to reducing model complexity. Subsequently, SBTL evaluate transfer effectiveness by virtue of the incremental learning mechanism, adaptively adjusting model structure to ensure the positive transfer of knowledge from the multi-source auxiliary domains to the target domain. Numerous experimental results show that, compared to transfer learning methods for PD diagnosis via speech, SBTL consistently demonstrates significant advantages with a smaller standard deviation, particularly leading by at least 2.58%, 5.71%, 12%, and 14.81% in accuracy, precision, sensitivity, and F1-score, respectively. Even when compared to some well-known transfer learning methods, SBTL still exhibits significant advantages in most cases while maintaining comparable sensitivity. These demonstrate that SBTL is an effective, efficient, and stable multi-source transfer learning method for PD speech recognition, giving more accurate assistance information for clinicians on decision-making for PD in practice.",
+  "source_dataset": [
+    {
+      "name": "Parkinson's Speech with Multiple Types of Sound Recordings",
+      "size": 40,
+      "pd_patients": 20,
+      "controls": 20,
+      "url": "https://archive.ics.uci.edu/dataset/301/parkinson+speech+dataset+with+multiple+types+of+sound+recordings",
+      "doi": "10.24432/C5NC8M"
+    },
+    {
+      "name": "First Affiliated Hospital Army Military Medical University Parkinson's Disease Speech Dataset",
+      "size": 90,
+      "pd_patients": 90,
+      "controls": 0,
+      "url": null,
+      "doi": null
+    },
+    {
+      "name": "Third Affiliated Hospital Army Military Medical University Parkinson's Disease Speech Dataset",
+      "size": 31,
+      "pd_patients": 10,
+      "controls": 21,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Speech with Multiple Types of Sound Recordings",
+      "size": 40,
+      "pd_patients": 20,
+      "controls": 20,
+      "url": "https://archive.ics.uci.edu/dataset/301/parkinson+speech+dataset+with+multiple+types+of+sound+recordings",
+      "doi": "10.24432/C5NC8M"
+    }
+  ],
+  "ml_approaches": [
+    {
+      "algorithm": "Sparse Broad Transfer Learning",
+      "validation": "train/test split",
+      "feature_extraction": [
+        "Autoencoder"
+      ],
+      "results": {
+        "accuracy": 0.8199,
+        "precision": 0.8139,
+        "specificity": 0.7933,
+        "recall": 0.8466,
+        "f1_score": 0.8299
+      }
+    }
+  ],
+  "study_id": "10.1007/s11517-025-03299-w_2"
+}

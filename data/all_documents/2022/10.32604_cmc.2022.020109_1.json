@@ -1,0 +1,147 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c1689370"
+  },
+  "title": "Enhancing Parkinson's Disease Diagnosis Accuracy Through Speech Signal Algorithm Modeling",
+  "authors": [
+    {
+      "name": "Omar M. El-Habbak",
+      "affiliations": [
+        {
+          "institution": "Nile University",
+          "country": "Egypt"
+        }
+      ]
+    },
+    {
+      "name": "Abdelrahman M. Abdelalim",
+      "affiliations": [
+        {
+          "institution": "Nile University",
+          "country": "Egypt"
+        }
+      ]
+    },
+    {
+      "name": "Nour H. Mohamed",
+      "affiliations": [
+        {
+          "institution": "Nile University",
+          "country": "Egypt"
+        }
+      ]
+    },
+    {
+      "name": "Habiba M. Abd-Elaty",
+      "affiliations": [
+        {
+          "institution": "Nile University",
+          "country": "Egypt"
+        }
+      ]
+    },
+    {
+      "name": "Mostafa A. Hammouda",
+      "affiliations": [
+        {
+          "institution": "Nile University",
+          "country": "Egypt"
+        }
+      ]
+    },
+    {
+      "name": "Yasmeen Y. Mohamed",
+      "affiliations": [
+        {
+          "institution": "Nile University",
+          "country": "Egypt"
+        }
+      ]
+    },
+    {
+      "name": "Mohanad A. Taifor",
+      "affiliations": [
+        {
+          "institution": "Nile University",
+          "country": "Egypt"
+        }
+      ]
+    },
+    {
+      "name": "Ali W. Mohamed",
+      "affiliations": [
+        {
+          "institution": "Cairo University",
+          "country": "Egypt"
+        },
+        {
+          "institution": "Nile University",
+          "country": "Egypt"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Computers, Materials and Continua",
+  "year": 2022,
+  "doi": "10.32604/cmc.2022.020109",
+  "abstract": "Parkinson's disease (PD), one of whose symptoms is dysphonia, is a prevalent neurodegenerative disease. The use of outdated diagnosis techniques, which yield inaccurate and unreliable results, continues to represent an obstacle in early-stage detection and diagnosis for clinical professionals in the medical field. To solve this issue, the study proposes using machine learning and deep learning models to analyze processed speech signals of patients' voice recordings. Datasets of these processed speech signals were obtained and experimented on by random forest and logistic regression classifiers. Results were highly successful, with 90% accuracy produced by the random forest classifier and 81.5% by the logistic regression classifier. Furthermore, a deep neural network was implemented to investigate if such variation in method could add to the findings. It proved to be effective, as the neural network yielded an accuracy of nearly 92%. Such results suggest that it is possible to accurately diagnose early-stage PD through merely testing patients' voices. This research calls for a revolutionary diagnostic approach in decision support systems, and is the first step in a market-wide implementation of healthcare software dedicated to the aid of clinicians in early diagnosis of PD.",
+  "citescore": 5,
+  "ml_approaches": [
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Exhaustive Feature Selection"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.907
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Tree-Based Classifier"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.815
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.92
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "study_id": "10.32604/cmc.2022.020109_1"
+}

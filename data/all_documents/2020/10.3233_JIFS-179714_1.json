@@ -1,0 +1,91 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c1689369"
+  },
+  "title": "A vital neurodegenerative disorder detection using speech cues",
+  "authors": [
+    {
+      "name": "B. Sai Jahnavi",
+      "affiliations": [
+        {
+          "institution": "Amrita School of Engineering",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "B. Sai Supraja",
+      "affiliations": [
+        {
+          "institution": "Amrita School of Engineering",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "AS. Lalitha",
+      "affiliations": [
+        {
+          "institution": "Amrita School of Engineering",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Journal of Intelligent & Fuzzy Systems",
+  "year": 2020,
+  "doi": "10.3233/JIFS-179714",
+  "abstract": "The main motive of this work is to discriminate a vital neurodegenerative condition of Parkinson Disease (PD) affected patients from individuals with no history of such a disorder. Excitation source features, voice quality features and prosodic features are the speech constituents considered. Voice samples of PD patients are extracted from the University of California-Irvine (UCI) Machine Learning Parkinson's database. Random Forest (RF) decision trees and Support Vector Machine (SVM) are considered for classification. Feature reduction is applied with the Correlation based Feature Selection (CFS) attribute selector classifier that utilizes Best First Selector (BFS) as a search algorithm. The work involves recognizing a PD patient from a healthy individual using only two speech sounds of /a/ and /o/. The speech sounds are extracted without the association of a certified clinician, that adds novelty. The proposed algorithm is non-invasive and accomplished 94.77% accuracy with feature selection process and applying RF classifier.",
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Pearson Correlation"
+        ]
+      },
+      "results": {
+        "accuracy": 0.932,
+        "precision": 0.932,
+        "f1_score": 0.932
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Pearson Correlation"
+        ]
+      },
+      "results": {
+        "accuracy": 0.9433,
+        "precision": 0.944,
+        "f1_score": 0.943
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Speech with Multiple Types of Sound Recordings",
+      "size": 40,
+      "pd_patients": 20,
+      "controls": 20,
+      "url": "https://archive.ics.uci.edu/dataset/301/parkinson+speech+dataset+with+multiple+types+of+sound+recordings",
+      "doi": "10.24432/C5NC8M"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Speech with Multiple Types of Sound Recordings",
+      "size": 40,
+      "pd_patients": 20,
+      "controls": 20,
+      "url": "https://archive.ics.uci.edu/dataset/301/parkinson+speech+dataset+with+multiple+types+of+sound+recordings",
+      "doi": "10.24432/C5NC8M"
+    }
+  ],
+  "study_id": "10.3233/JIFS-179714_1"
+}

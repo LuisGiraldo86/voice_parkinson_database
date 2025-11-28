@@ -1,0 +1,109 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c1689363"
+  },
+  "title": "Application of Adaptive Back-Propagation Neural Networks for Parkinson's Disease Prediction",
+  "authors": [
+    {
+      "name": "Jawad Rasheed",
+      "affiliations": [
+        {
+          "institution": "Istanbul Sabahattin Zaim University",
+          "country": "Turkey"
+        }
+      ]
+    },
+    {
+      "name": "Alaa Ali Hameed",
+      "affiliations": [
+        {
+          "institution": "Istanbul University-Cerrahpaşa",
+          "country": "Turkey"
+        }
+      ]
+    },
+    {
+      "name": "Naim Ajlouni",
+      "affiliations": [
+        {
+          "institution": "Istanbul Aydin University",
+          "country": "Turkey"
+        }
+      ]
+    },
+    {
+      "name": "Akhtar Jamil",
+      "affiliations": [
+        {
+          "institution": "Istanbul Sabahattin Zaim University",
+          "country": "Turkey"
+        }
+      ]
+    },
+    {
+      "name": "Adem Özyavaş",
+      "affiliations": [
+        {
+          "institution": "Istanbul Aydin University",
+          "country": "Turkey"
+        }
+      ]
+    },
+    {
+      "name": "Zeynep Orman",
+      "affiliations": [
+        {
+          "institution": "Istanbul University-Cerrahpaşa",
+          "country": "Turkey"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Conference",
+  "journal": "2020 International Conference on Data Analytics for Business and Industry: Way Towards a Sustainable Economy",
+  "year": 2020,
+  "doi": "10.1109/ICDABI51230.2020.9325709",
+  "abstract": "Parkinson's disease (PD) is a common neurodegenerative disease that has affected millions of people worldwide and is more prevalent in older people. Early detection of this disease remains a challenging task. Recently, vocal and speech data are widely used to detect this disease. In this study, we proposed two classification schemes for improving the identification accuracy of PD cases from voice measurements. First, we applied a variable adaptive moment-based backpropagation algorithm of ANN called BPVAM. Then, we investigated the combination of dimensionality reduction method using principal component analysis (PCA) with BPVAM for classification of the same dataset. The main objective was improving the prediction of PD in the early stages by increasing the sensitivity of the system to dealing with data in its fine detail. In experiments, it was proved that robustness of the system was improved by including features with largest variances using PCA which helped the model to learn the patterns earlier in the training process. Results indicated that BPVAM-PCA was relatively more effective than BPVAM. In addition, these methods were also compared with some other well-known algorithms.",
+  "ml_approaches": [
+    {
+      "algorithm": "Adaptive Momentum Backpropagation Neural Network",
+      "framework": null,
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.975
+      }
+    },
+    {
+      "algorithm": "Adaptive Momentum Backpropagation Neural Network",
+      "framework": null,
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.975
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1109/ICDABI51230.2020.9325709_1"
+}

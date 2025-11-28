@@ -1,0 +1,81 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c1689407"
+  },
+  "title": "A Nature Inspired Optimization Algorithm for Parkinson's Disease Classification Through Speech Analysis",
+  "authors": [
+    {
+      "name": "Lalin L Laudis",
+      "affiliations": [
+        {
+          "institution": "Mar Ephraem College of Engineering and Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Lenin Fred A",
+      "affiliations": [
+        {
+          "institution": "Mar Ephraem College of Engineering and Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Asral Bahari Jambek",
+      "affiliations": [
+        {
+          "institution": "University of Malaysia",
+          "country": "Malaysia"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Conference",
+  "journal": "Procedia Computer Science",
+  "year": 2024,
+  "doi": "10.1016/j.procs.2024.04.080",
+  "abstract": "This research takes a unique approach to improve the accuracy of Parkinson's disease prediction through speech signal analysis by turning to the natural world for inspiration. This research proposes an optimization algorithm modelled on the hunting strategies of eagles. This approach begins with the extraction of Mel-frequency cepstral coefficients (MFCCs) from the audio signals. Subsequently, the proposed algorithm, inspired by the keen eyesight and hunting strategy of eagles, is employed to select the most relevant MFCC features. This optimization ensures a reduced dimensionality while maintaining the integrity and relevance of the feature set. Eagle's highly effective three-pronged approach to hunting - consisting of soaring (exploring), scanning (assessing), and swooping (taking action) - is the starting point for this method. To put this into practice, the proposed algorithm treats each potential combination of audio signal features as a 'solution', or 'prey'. The usefulness or 'fitness' of each solution is evaluated according to how accurately it can predict Parkinson's disease using a Support Vector Machine (SVM) classifier on a validation dataset. At the start, our algorithm generates an array of solutions. It then takes an 'eagle's eye view', assessing and refining these solutions in successive iterations. This mimics the eagle's hunt, where it identifies its target from a distance, before swooping in to capture it. By testing the proposed eagle-inspired algorithm on the Parkinson's Disease Voice Initiative (PDVI) dataset, it was found that it offers better accuracy in differentiating between those with Parkinson's and those without, compared to traditional methods. Specifically, using the proposed algorithm's selected features, the SVM model achieved an accuracy of 93.2% compared to an 88.5% accuracy when using all MFCC features. Furthermore, the computation time was reduced by 15% due to the dimensionality reduction introduced by the proposed algorithm. In conclusion, this study opens up a promising new direction in the early detection and treatment of Parkinson's disease, demonstrating the value of looking to nature for solving complex problems.",
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Eagle Inspired Optimization Algorithm"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.925,
+        "precision": 0.91,
+        "recall": 0.94,
+        "f1_score": 0.925,
+        "specificity": 0.93,
+        "auc": 0.93
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson Disease Voice Initiative",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson Disease Voice Initiative",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.1016/j.procs.2024.04.080_1"
+}

@@ -1,0 +1,208 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c1689414"
+  },
+  "title": "An artificial intelligence-based decision support system for early and accurate diagnosis of Parkinson's Disease",
+  "authors": [
+    {
+      "name": "Mahesh T.R.",
+      "affiliations": [
+        {
+          "institution": "Jain University",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Vinoth Kumar V.",
+      "affiliations": [
+        {
+          "institution": "Vellore Institute of Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Rajat Bhardwaj",
+      "affiliations": [
+        {
+          "institution": "Amity University",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Surbhi B. Khan",
+      "affiliations": [
+        {
+          "institution": "University of Salford",
+          "country": "UK"
+        },
+        {
+          "institution": "Lebanese American University",
+          "country": "Lebanon"
+        }
+      ]
+    },
+    {
+      "name": "Nora A. Alkhaldi",
+      "affiliations": [
+        {
+          "institution": "King Faisal University",
+          "country": "Saudi Arabia"
+        }
+      ]
+    },
+    {
+      "name": "Nancy Victor",
+      "affiliations": [
+        {
+          "institution": "Vellore Institute of Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Amit Verma",
+      "affiliations": [
+        {
+          "institution": "Chandigarh University",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Decision Analytics Journal",
+  "year": 2024,
+  "doi": "10.1016/j.dajour.2023.100381",
+  "abstract": "People with Parkinson's Disease (PD) might struggle with sadness, restlessness, or difficulty speaking, chewing, or swallowing. A diagnosis can be challenging because there is no specific PD test. It is diagnosed by doctors using a neurological exam and a medical history. This study proposes several Machine Learning (ML) algorithms to predict PD. These ML algorithms include K-Nearest Neighbor (KNN), Random Forest (RF), Support Vector Machine (SVM), and eXtreme Gradient Boosting algorithms (XGBoost), and their ensemble methods using publicly available PD dataset with 195 instances. The ML algorithms are used to predict and classify PD using homogeneous XGBoost ensemble techniques with reduced amount of entropy. Synthetic Minority Oversampling Technique (SMOTE) is utilized to handle imbalanced data, and 10-fold cross-validation is employed for evaluation. The results show that the homogeneous XGBoost-Random Forest outperforms other ML methods with 98% accuracy and Matthew's correlation coefficient value 0.93.",
+  "ml_approaches": [
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.876,
+        "precision": 0.88,
+        "recall": 0.895,
+        "specificity": 0.884,
+        "f1_score": 0.8874
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9112,
+        "precision": 0.9,
+        "recall": 0.9001,
+        "specificity": 0.9012,
+        "f1_score": 0.9
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9367,
+        "precision": 0.91,
+        "recall": 0.92,
+        "specificity": 0.9134,
+        "f1_score": 0.915
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9489,
+        "precision": 0.93,
+        "recall": 0.9322,
+        "specificity": 0.9256,
+        "f1_score": 0.9311
+      }
+    },
+    {
+      "algorithm": "Homogeneous XGBoost-KNN",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9155,
+        "precision": 0.91,
+        "recall": 0.905,
+        "specificity": 0.914,
+        "f1_score": 0.9075
+      }
+    },
+    {
+      "algorithm": "Homogeneous XGBoost-SVM",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9466,
+        "precision": 0.93,
+        "recall": 0.94,
+        "specificity": 0.9312,
+        "f1_score": 0.935
+      }
+    },
+    {
+      "algorithm": "Homogeneous XGBoost-RF",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.98,
+        "precision": 0.9724,
+        "recall": 0.9756,
+        "specificity": 0.97,
+        "f1_score": 0.9740000000000001
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1016/j.dajour.2023.100381_1"
+}

@@ -1,0 +1,191 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893ad"
+  },
+  "title": "A Comparison of Cepstral Features in the Detection of Pathological Voices by Varying the Input and Filterbank of the Cepstrum Computation",
+  "authors": [
+    {
+      "name": "Mittapalle Kiran Reddy",
+      "affiliations": [
+        {
+          "institution": "Aalto University",
+          "country": "Finland"
+        }
+      ]
+    },
+    {
+      "name": "Paavo Alku",
+      "affiliations": [
+        {
+          "institution": "Aalto University",
+          "country": "Finland"
+        }
+      ]
+    }
+  ],
+  "journal": "IEEE Access",
+  "publication_type": "Journal",
+  "year": 2021,
+  "doi": "10.1109/ACCESS.2021.3117665",
+  "abstract": "Automatic voice pathology detection enables objective assessment of pathologies that affect the voice production mechanism. Detection systems have been developed using the traditional pipeline approach (consisting of the feature extraction part and the detection part) and using the modern deep learning -based end-to-end approach. Due to the lack of vast amounts of training data in the study area of pathological voice, the former approach is still a valid choice. In the existing detection systems based on the traditional pipeline approach, the mel-frequency cepstral coefficient (MFCC) features can be regarded as the defacto standard feature set. In this study, automatic voice pathology detection is investigated by comparing the performance of various MFCC variants derived by considering two factors: the input and the filterbank in the cepstrum computation. For the first factor, three inputs (the voice signal, the glottal source and the vocal tract) are compared. The glottal source and the vocal tract are estimated using the quasi-closed phase glottal inverse filtering method. For the second factor, the mel-frequency and linear-frequency filterbanks are compared. Experiments were conducted separately using six databases consisting of voices produced by speakers suffering from one of four disorders (dysphonia, Parkinson's disease, laryngitis, or heart failure) and by healthy speakers. Support vector machine (SVM) was used as the classifier. The results show that by combining mel- and linear-frequency cepstral coefficients derived from the glottal source and vocal tract, better overall detection accuracy was obtained compared to the defacto MFCC features derived from the voice signal. Furthermore, this combination provided comparable or better performance than four existing cepstral feature extraction techniques in clean and high signal-to-noise ratio (SNR) conditions.",
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "feature_extraction": [
+        "Mel-Frequency Cepstral Coefficients: Glottal",
+        "Mel-Frequency Cepstral Coefficients: Vocal Tract"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Non-Parametric Neighborhood Component Analysis"
+        ]
+      },
+      "validation": "20-fold cross-validation",
+      "results": {
+        "accuracy": 0.8203
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "feature_extraction": [
+        "Mel-Frequency Cepstral Coefficients: Glottal",
+        "Linear-Frequency Cepstral Coefficients: Vocal Tract"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Non-Parametric Neighborhood Component Analysis"
+        ]
+      },
+      "validation": "20-fold cross-validation",
+      "results": {
+        "accuracy": 0.7757
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "feature_extraction": [
+        "Linear-Frequency Cepstral Coefficients: Glottal",
+        "Linear-Frequency Cepstral Coefficients: Vocal Tract"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Non-Parametric Neighborhood Component Analysis"
+        ]
+      },
+      "validation": "20-fold cross-validation",
+      "results": {
+        "accuracy": 0.7813
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "feature_extraction": [
+        "Linear-Frequency Cepstral Coefficients: Glottal",
+        "Mel-Frequency Cepstral Coefficients: Vocal Tract"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Non-Parametric Neighborhood Component Analysis"
+        ]
+      },
+      "validation": "20-fold cross-validation",
+      "results": {
+        "accuracy": 0.8197
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "feature_extraction": [
+        "Mel-Frequency Cepstral Coefficients: Glottal",
+        "Mel-Frequency Cepstral Coefficients: Vocal Tract"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "validation": "20-fold cross-validation",
+      "results": {
+        "accuracy": 0.8147
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "feature_extraction": [
+        "Mel-Frequency Cepstral Coefficients: Glottal",
+        "Linear-Frequency Cepstral Coefficients: Vocal Tract"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "validation": "20-fold cross-validation",
+      "results": {
+        "accuracy": 0.7917
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "feature_extraction": [
+        "Linear-Frequency Cepstral Coefficients: Glottal",
+        "Linear-Frequency Cepstral Coefficients: Vocal Tract"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Non-Parametric Neighborhood Component Analysis"
+        ]
+      },
+      "validation": "20-fold cross-validation",
+      "results": {
+        "accuracy": 0.8109
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "feature_extraction": [
+        "Linear-Frequency Cepstral Coefficients: Glottal",
+        "Mel-Frequency Cepstral Coefficients: Vocal Tract"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "validation": "20-fold cross-validation",
+      "results": {
+        "accuracy": 0.8128
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "PC-GITA",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://paperswithcode.com/dataset/pc-gita",
+      "doi": ""
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "PC-GITA",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://paperswithcode.com/dataset/pc-gita",
+      "doi": ""
+    }
+  ],
+  "study_id": "10.1109/ACCESS.2021.3117665_1"
+}

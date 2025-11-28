@@ -1,0 +1,327 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893c0"
+  },
+  "title": "Feature Selection Based Machine Learning to Improve Prediction of Parkinson Disease",
+  "authors": [
+    {
+      "name": "Nazmun Nahar",
+      "affiliations": [
+        {
+          "institution": "BGC Trust University Bangladesh Bidyanagar",
+          "country": "Bangladesh"
+        }
+      ]
+    },
+    {
+      "name": "Ferdous Ara",
+      "affiliations": [
+        {
+          "institution": "BGC Trust University Bangladesh Bidyanagar",
+          "country": "Bangladesh"
+        }
+      ]
+    },
+    {
+      "name": "Arif Istiek Neloy",
+      "affiliations": [
+        {
+          "institution": "BGC Trust University Bangladesh Bidyanagar",
+          "country": "Bangladesh"
+        }
+      ]
+    },
+    {
+      "name": "Anik Biswas",
+      "affiliations": [
+        {
+          "institution": "BGC Trust University Bangladesh Bidyanagar",
+          "country": "Bangladesh"
+        }
+      ]
+    },
+    {
+      "name": "Mohammad Shahadat Hossain",
+      "affiliations": [
+        {
+          "institution": "University of Chittagong",
+          "country": "Bangladesh"
+        }
+      ]
+    },
+    {
+      "name": "Karl Andersson",
+      "affiliations": [
+        {
+          "institution": "Lulea University of Technology",
+          "country": "Sweden"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Conference",
+  "journal": "Brain Informatics. BI",
+  "year": 2021,
+  "doi": "10.1007/978-3-030-86993-9_44",
+  "abstract": "Parkinson's disease (PD) is a kind of neurodegenerative disorder characterized by the loss of dopamine-producing cells in the brain. The disruption of brain cells that create dopamine, a chemical that allows brain cells to connect with one another, causes Parkinson's disease. Control, adaptability, and rapidity of movement are all controlled by dopamine-producing cells in the brain. Researchers have been investigating for techniques to identify non-motor symptoms that show early in the disease as soon as possible, slowing the disease's progression. A machine learning-based detection of Parkinson's disease is proposed in this research. Feature selection and classiﬁcation techniques are used in the proposed detection technique. Boruta, Recursive Feature Elimination (RFE) and Random Forest (RF) Classiﬁer have been used for the feature selection process. Four classiﬁcation algorithms are considered to detect Parkinson disease which are gradient boosting, extreme gradient boosting, bagging and Extra Tree Classiﬁer. Bagging with recursive feature elimination was found to outperform the other methods. The lowest number of voice characteristics for the diagnosis in Parkinson attained 82.35% accuracy.",
+  "citescore": 2.1,
+  "ml_approaches": [
+    {
+      "algorithm": "Gradient Boosting",
+      "framework": "Python",
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.7721,
+        "recall": 0.72,
+        "precision": 0.79,
+        "f1_score": 0.78
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "Python",
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.7808,
+        "recall": 0.79,
+        "precision": 0.77,
+        "f1_score": 0.78
+      }
+    },
+    {
+      "algorithm": "Bagging",
+      "framework": "Python",
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.7508,
+        "recall": 0.83,
+        "precision": 0.71,
+        "f1_score": 0.77
+      }
+    },
+    {
+      "algorithm": "Extra Trees",
+      "framework": "Python",
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.7191,
+        "recall": 0.74,
+        "precision": 0.71,
+        "f1_score": 0.72
+      }
+    },
+    {
+      "algorithm": "Gradient Boosting",
+      "framework": "Python",
+      "feature_selection": {
+        "methods": [
+          "Boruta"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.7416,
+        "recall": 0.71,
+        "precision": 0.74,
+        "f1_score": 0.72
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "Python",
+      "feature_selection": {
+        "methods": [
+          "Boruta"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.75,
+        "recall": 0.75,
+        "precision": 0.75,
+        "f1_score": 0.75
+      }
+    },
+    {
+      "algorithm": "Bagging",
+      "framework": "Python",
+      "feature_selection": {
+        "methods": [
+          "Boruta"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.7708,
+        "recall": 0.79,
+        "precision": 0.76,
+        "f1_score": 0.78
+      }
+    },
+    {
+      "algorithm": "Extra Trees",
+      "framework": "Python",
+      "feature_selection": {
+        "methods": [
+          "Boruta"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.7291,
+        "recall": 0.79,
+        "precision": 0.76,
+        "f1_score": 0.73
+      }
+    },
+    {
+      "algorithm": "Gradient Boosting",
+      "framework": "Python",
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: Decision Tree"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.7075,
+        "recall": 0.72,
+        "precision": 0.7,
+        "f1_score": 0.69
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "Python",
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: Decision Tree"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.7916,
+        "recall": 0.88,
+        "precision": 0.75,
+        "f1_score": 0.81
+      }
+    },
+    {
+      "algorithm": "Bagging",
+      "framework": "Python",
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: Decision Tree"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8235,
+        "recall": 0.83,
+        "precision": 0.8,
+        "f1_score": 0.82
+      }
+    },
+    {
+      "algorithm": "Extra Trees",
+      "framework": "Python",
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: Decision Tree"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8125,
+        "recall": 0.88,
+        "precision": 0.78,
+        "f1_score": 0.82
+      }
+    },
+    {
+      "algorithm": "Gradient Boosting",
+      "framework": "Python",
+      "feature_selection": {
+        "methods": [
+          "Random Forest"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.7916,
+        "recall": 0.79,
+        "precision": 0.79,
+        "f1_score": 0.79
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "Python",
+      "feature_selection": {
+        "methods": [
+          "Random Forest"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.7816,
+        "recall": 0.78,
+        "precision": 0.78,
+        "f1_score": 0.78
+      }
+    },
+    {
+      "algorithm": "Bagging",
+      "framework": "Python",
+      "feature_selection": {
+        "methods": [
+          "Random Forest"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8021,
+        "recall": 0.96,
+        "precision": 0.74,
+        "f1_score": 0.82
+      }
+    },
+    {
+      "algorithm": "Extra Trees",
+      "framework": "Python",
+      "feature_selection": {
+        "methods": [
+          "Random Forest"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.75,
+        "recall": 0.79,
+        "precision": 0.73,
+        "f1_score": 0.76
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson Dataset with replicated acoustic features",
+      "size": 80,
+      "pd_patients": 40,
+      "controls": 40,
+      "url": "https://archive.ics.uci.edu/dataset/489/parkinson+dataset+with+replicated+acoustic+features",
+      "doi": "10.24432/C5701F"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson Dataset with replicated acoustic features",
+      "size": 80,
+      "pd_patients": 40,
+      "controls": 40,
+      "url": "https://archive.ics.uci.edu/dataset/489/parkinson+dataset+with+replicated+acoustic+features",
+      "doi": "10.24432/C5701F"
+    }
+  ],
+  "study_id": "10.1007/978-3-030-86993-9_44_1"
+}

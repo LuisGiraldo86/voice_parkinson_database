@@ -1,0 +1,125 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893e8"
+  },
+  "title": "Parallel Representation Learning for the Classification of Pathological Speech: Studies on Parkinson's Disease and Cleft Lip and Palate",
+  "authors": [
+    {
+      "name": "J.C. Vasquez-Correa",
+      "affiliations": [
+        {
+          "institution": "Friedrich-Alexander Universität Erlangen-Nürnberg",
+          "country": "Germany"
+        },
+        {
+          "institution": "Universidad de Antioquia",
+          "country": "Colombia"
+        }
+      ]
+    },
+    {
+      "name": "T. Arias-Vergara",
+      "affiliations": [
+        {
+          "institution": "Friedrich-Alexander Universität Erlangen-Nürnberg",
+          "country": "Germany"
+        },
+        {
+          "institution": "Universidad de Antioquia",
+          "country": "Colombia"
+        },
+        {
+          "institution": "Ludwig-Maximilians Universität München",
+          "country": "Germany"
+        }
+      ]
+    },
+    {
+      "name": "M. Schuster",
+      "affiliations": [
+        {
+          "institution": "Ludwig-Maximilians Universität München",
+          "country": "Germany"
+        }
+      ]
+    },
+    {
+      "name": "J.R. Orozco-Arroyave",
+      "affiliations": [
+        {
+          "institution": "Friedrich-Alexander Universität Erlangen-Nürnberg",
+          "country": "Germany"
+        },
+        {
+          "institution": "Universidad de Antioquia",
+          "country": "Colombia"
+        }
+      ]
+    },
+    {
+      "name": "E. Nöth",
+      "affiliations": [
+        {
+          "institution": "Friedrich-Alexander Universität Erlangen-Nürnberg",
+          "country": "Germany"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Speech Communication",
+  "year": 2020,
+  "doi": "10.1016/j.specom.2020.07.005",
+  "abstract": "Speech signals may contain different paralinguistic aspects such as the presence of pathologies that affect the proper communication capabilities of a speaker. Those speech disorders have different origin depending on the type of the disease. For instance, diseases with morphological origin such as cleft lip and palate that causes hypernasality, or with neurodegenerative origin such as Parkinson's disease that generates hypokinetic dysarthria on the patients. Automatic assessment of pathological speech allows to support the diagnosis and/or the evaluation of the disease severity. Conventional methods are based on the manually applied assessment of single features such as jitter, shimmer, or formant frequencies that may not completely model all of the phenomena that appear due to the disease. This paper introduces a novel strategy based on unsupervised representation learning for automatic detection of pathological speech. The proposed approach is based on the use of recurrent and convolutional autoencoders trained to extract informative features to characterize the presence of pathologies in speech. A novel feature set based on the reconstruction error of the autoencoders is also proposed. The performance of the introduced models is evaluated classifying pathological speech signals recorded from people suffering from Parkinson's disease, and children with cleft lip and palate. All participants from this study were Spanish native speakers. The proposed models are accurate to classify the speech signals of both kinds of diseases, with an accuracy of up to 97% for cleft lip and palate, and up to 84% for the case of Parkinson's disease. We also show that the reconstruction error from the autoencoders in different frequency regions contain information related to specific speech symptoms of both diseases.",
+  "ml_approaches": [
+    {
+      "algorithm": "Deep Neural Network",
+      "feature_extraction": [
+        "Convolutional Autoencoder",
+        "Recurrent Autoencoder"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.76,
+        "specificity": 0.8,
+        "recall": 0.72,
+        "auc": 0.822
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "feature_extraction": [
+        "Convolutional Autoencoder",
+        "Recurrent Autoencoder"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.77,
+        "specificity": 0.75,
+        "recall": 0.8,
+        "auc": 0.892
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "PC-GITA",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://paperswithcode.com/dataset/pc-gita",
+      "doi": ""
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "PC-GITA",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://paperswithcode.com/dataset/pc-gita",
+      "doi": ""
+    }
+  ],
+  "study_id": "10.1016/j.specom.2020.07.005_1"
+}

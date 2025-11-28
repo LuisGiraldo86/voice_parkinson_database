@@ -1,0 +1,95 @@
+{
+  "_id": {
+    "$oid": "68ecf00b6c43da02c16892f0"
+  },
+  "title": "Metaheuristics with Deep Learning-Enabled Parkinson's Disease Diagnosis and Classification Model",
+  "authors": [
+    {
+      "name": "Adel A Bahaddad",
+      "affiliations": [
+        {
+          "institution": "King Abdulaziz University",
+          "country": "Saudi Arabia"
+        }
+      ]
+    },
+    {
+      "name": "Mahmoud Ragab",
+      "affiliations": [
+        {
+          "institution": "King Abdulaziz University",
+          "country": "Saudi Arabia"
+        },
+        {
+          "institution": "Al-Azhar University",
+          "country": "Egypt"
+        }
+      ]
+    },
+    {
+      "name": "Ehab Bahaudien Ashary",
+      "affiliations": [
+        {
+          "institution": "King Abdulaziz University",
+          "country": "Saudi Arabia"
+        }
+      ]
+    },
+    {
+      "name": "Eied M Khalil",
+      "affiliations": [
+        {
+          "institution": "Al-Azhar University",
+          "country": "Egypt"
+        },
+        {
+          "institution": "Taif University",
+          "country": "Saudi Arabia"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Journal of Healthcare Engineering",
+  "year": 2022,
+  "doi": "10.1155/2022/9276579",
+  "abstract": "Parkinson's disease (PD) affects the movement of people, including the differences in writing skill, speech, tremor, and stiffness in muscles. It is significant to detect the PD at the initial stages so that the person can live a peaceful life for a longer time period. The serious levels of PD are highly risky as the patients get progressive stiffness, which results in the inability of standing or walking. Earlier studies have focused on the detection of PD effectively using voice and speech exams and writing exams. In this aspect, this study presents an improved sailfish optimization algorithm with deep learning (ISFO-DL) model for PD diagnosis and classification. The presented ISFO-DL technique uses the ISFO algorithm and DL model to determine PD and thereby enhances the survival rate of the person. The presented ISFO is a metaheuristic algorithm, which is inspired by a group of hunting sailfish to determine the optimum solution to the problem. Primarily, the ISFO algorithm is applied to derive an optimal subset of features with a fitness function of maximum classification accuracy. At the same time, the rat swarm optimizer (RSO) with the bidirectional gated recurrent unit (BiGRU) is employed as a classifier to determine the existence of PD. The performance validation of the IFSO-DL model takes place using a benchmark Parkinson's dataset, and the results are inspected under several dimensions. The experimental results highlighted the enhanced classification performance of the ISFO-DL technique, and therefore, the proposed model can be employed for the earlier identification of PD. ",
+  "ml_approaches": [
+    {
+      "algorithm": "Bidirectional Gated Recurrent Unit",
+      "optimization": "Rat Swarm Optimizer",
+      "feature_selection": {
+        "methods": [
+          "Improved Sailfish Optimization"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.953,
+        "detection_rate": 1,
+        "false_alarm_rate": 0.185
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1155/2022/9276579_1"
+}

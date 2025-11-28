@@ -1,0 +1,545 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893d3"
+  },
+  "title": "Early Parkinson's disease identification via hybrid feature selection from multi-feature subsets and optimized CatBoost with SMOTE",
+  "authors": [
+    {
+      "name": "Subhashree Mohapatra",
+      "affiliations": [
+        {
+          "institution": "Siksha O Anusandhan University",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Bhanja Kishor Swain",
+      "affiliations": [
+        {
+          "institution": "Siksha O Anusandhan University",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Manohar Mishra",
+      "affiliations": [
+        {
+          "institution": "Siksha O Anusandhan University",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Systems Science & Control Engineering",
+  "year": 2024,
+  "doi": "10.1080/21642583.2025.2498909",
+  "abstract": "Achieving high accuracy, efficiency and robustness remains a primary challenge in Parkinson's disease (PD) detection, as existing methods often struggle with these aspects. Additionally, data imbalance in medical datasets further limits the reliability of current models. Given the critical role of precise PD classification in medical diagnostics, this study proposes a novel framework to enhance detection accuracy. The proposed framework leverages a strong categorical boosting (CatBoost) algorithm optimized using Grid Search Optimization (GSO). The analysis was conducted on a PD dataset derived from speech recording signals. To address the data imbalance, the synthetic minority oversampling technique (SMOTE) is applied as a pre-processing step to improve the robustness and reliability of the model. The framework is tested with several feature subsets, as well as their combined set. In addition, RReliefF feature selection was also applied to identify the optimal subset of features. For the selected feature subset, the proposed approach achieved an accuracy of 0.9261, precision of 0.9633, sensitivity of 0.9375, F1-score of 0.9502, specificity of 0.8947, AUC of 0.9549 and a testing time of 0.012s. These results underscore the effectiveness of the proposed framework in accurately diagnosing PD, thereby providing a reliable and efficient tool for future medical diagnostics.",
+  "ml_approaches": [
+    {
+      "algorithm": "CatBoost",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Baseline Features"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.76,
+        "precision": 0.8725,
+        "recall": 0.7946,
+        "f1_score": 0.83177,
+        "specificity": 0.65789
+      }
+    },
+    {
+      "algorithm": "CatBoost",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Mel-Frequency Cepstral Coefficients"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8733,
+        "precision": 0.9266,
+        "recall": 0.9018,
+        "f1_score": 0.91402,
+        "specificity": 0.78947
+      }
+    },
+    {
+      "algorithm": "CatBoost",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Time-Frequency Features"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.86,
+        "precision": 0.9174,
+        "recall": 0.8929,
+        "f1_score": 0.90497,
+        "specificity": 0.76315
+      }
+    },
+    {
+      "algorithm": "CatBoost",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wavelet Transform"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8533,
+        "precision": 0.9327,
+        "recall": 0.8661,
+        "f1_score": 0.89814,
+        "specificity": 0.81578
+      }
+    },
+    {
+      "algorithm": "CatBoost",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Vocal Fold"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8533,
+        "precision": 0.8947,
+        "recall": 0.9107,
+        "f1_score": 0.90265,
+        "specificity": 0.68421
+      }
+    },
+    {
+      "algorithm": "CatBoost",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Tunable Q-Factor Wavelet Transform"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9333,
+        "precision": 0.9396,
+        "recall": 0.9732,
+        "f1_score": 0.95614,
+        "specificity": 0.81578
+      }
+    },
+    {
+      "algorithm": "CatBoost",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9533,
+        "precision": 0.9565,
+        "recall": 0.9821,
+        "f1_score": 0.96916,
+        "specificity": 0.86842
+      }
+    },
+    {
+      "algorithm": "CatBoost",
+      "framework": "",
+      "data_subset": "men",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Baseline Features"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8974,
+        "precision": 0.9516,
+        "recall": 0.9219,
+        "f1_score": 0.9365,
+        "specificity": 0.78571
+      }
+    },
+    {
+      "algorithm": "CatBoost",
+      "framework": "",
+      "data_subset": "men",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Mel-Frequency Cepstral Coefficients"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8831,
+        "precision": 0.9661,
+        "recall": 0.8906,
+        "f1_score": 0.92682,
+        "specificity": 0.84615
+      }
+    },
+    {
+      "algorithm": "CatBoost",
+      "framework": "",
+      "data_subset": "men",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Time-Frequency Features"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8831,
+        "precision": 0.9661,
+        "recall": 0.8906,
+        "f1_score": 0.92682,
+        "specificity": 0.84615
+      }
+    },
+    {
+      "algorithm": "CatBoost",
+      "framework": "",
+      "data_subset": "men",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wavelet Transform"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8974,
+        "precision": 0.9375,
+        "recall": 0.9375,
+        "f1_score": 0.9375,
+        "specificity": 0.71428
+      }
+    },
+    {
+      "algorithm": "CatBoost",
+      "framework": "",
+      "data_subset": "men",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Vocal Fold"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8052,
+        "precision": 0.9153,
+        "recall": 0.8437,
+        "f1_score": 0.87804,
+        "specificity": 0.61538
+      }
+    },
+    {
+      "algorithm": "CatBoost",
+      "framework": "",
+      "data_subset": "men",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Tunable Q-Factor Wavelet Transform"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9221,
+        "precision": 0.9531,
+        "recall": 0.9531,
+        "f1_score": 0.95312,
+        "specificity": 0.76923
+      }
+    },
+    {
+      "algorithm": "CatBoost",
+      "framework": "",
+      "data_subset": "men",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.974,
+        "precision": 1,
+        "recall": 0.9683,
+        "f1_score": 0.98387,
+        "specificity": 1
+      }
+    },
+    {
+      "algorithm": "CatBoost",
+      "framework": "",
+      "data_subset": "men",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Baseline Features"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.6805,
+        "precision": 0.7907,
+        "recall": 0.7083,
+        "f1_score": 0.74725,
+        "specificity": 0.625
+      }
+    },
+    {
+      "algorithm": "CatBoost",
+      "framework": "",
+      "data_subset": "men",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Mel-Frequency Cepstral Coefficients"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.875,
+        "precision": 0.9535,
+        "recall": 0.8542,
+        "f1_score": 0.90109,
+        "specificity": 0.91666
+      }
+    },
+    {
+      "algorithm": "CatBoost",
+      "framework": "",
+      "data_subset": "men",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Time-Frequency Features"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8194,
+        "precision": 0.9268,
+        "recall": 0.7917,
+        "f1_score": 0.985393,
+        "specificity": 0.875
+      }
+    },
+    {
+      "algorithm": "CatBoost",
+      "framework": "",
+      "data_subset": "men",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wavelet Transform"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.7917,
+        "precision": 0.8667,
+        "recall": 0.8125,
+        "f1_score": 0.83871,
+        "specificity": 0.75
+      }
+    },
+    {
+      "algorithm": "CatBoost",
+      "framework": "",
+      "data_subset": "men",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Vocal Fold"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.7917,
+        "precision": 0.9024,
+        "recall": 0.7708,
+        "f1_score": 0.83146,
+        "specificity": 0.83333
+      }
+    },
+    {
+      "algorithm": "CatBoost",
+      "framework": "",
+      "data_subset": "men",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Tunable Q-Factor Wavelet Transform"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9194,
+        "precision": 0.9459,
+        "recall": 0.9211,
+        "f1_score": 0.93333,
+        "specificity": 0.91666
+      }
+    },
+    {
+      "algorithm": "CatBoost",
+      "framework": "",
+      "data_subset": "men",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9583,
+        "precision": 0.9787,
+        "recall": 0.9583,
+        "f1_score": 0.96842,
+        "specificity": 0.95833
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "study_id": "10.1080/21642583.2025.2498909_1"
+}

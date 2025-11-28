@@ -1,0 +1,86 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c16893f0"
+  },
+  "title": "Parkinson's Disease and Cleft Lip and Palate of Pathological Speech Diagnosis Using Deep Convolutional Neural Networks Evolved by IPWOA",
+  "authors": [
+    {
+      "name": "Dengfeng Yao",
+      "affiliations": [
+        {
+          "institution": "Beijing Union University",
+          "country": "China"
+        },
+        {
+          "institution": "Tsinghua University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Wanle Chi",
+      "affiliations": [
+        {
+          "institution": "Wenzhou Polytechnic",
+          "country": "China"
+        },
+        {
+          "institution": "Technical University of Malaysia",
+          "country": "Malaysia"
+        }
+      ]
+    },
+    {
+      "name": "Mohammad Khishe",
+      "affiliations": [
+        {
+          "institution": "Imam Khomeini Marine Science University",
+          "country": "Iran"
+        }
+      ]
+    }
+  ],
+  "journal": "Applied Acoustics",
+  "publication_type": "Journal",
+  "year": 2022,
+  "doi": "10.1016/j.apacoust.2022.109003",
+  "abstract": "A high-level abstract idea of speech is created in previously autonomous systems using unsupervised models. Given that these representations are typically acquired by input reconstruction, it cannot be said with assurance that they are resistant to cues unrelated to disease. Pathology diagnosis cannot usually be reliably performed using unsupervised representations. As a result, in this research, we use pathological voice recognition using deep convolutional neural networks (DCNNs). Even though DCNNs have many acknowledged benefits, selecting the best structure for them can be challenging. This work examines the use of the whale optimization algorithm (WOA) to automatically choose the best architecture for DCNNs in an effort to address this constraint. In order to achieve the goal, three canonical WOA-based innovations are suggested. First, a special encoding technique based on Internet Protocol Addresses (IPA) is created to make it easier to encode the DCNN layers with whale vectors. The development of variable-length DCNNs is then suggested using an enfeebled layer that has particular whale vector dimensions. The final step in the learning process involves splitting huge datasets into smaller ones and then randomly reviewing them. Pathological audio signals captured from patients are used to assess the performance of the proposed model. In this regard, five measures were used to conduct thorough research, including ROC and precision-recall curves, F1-Score, sensitivity, specificity, accuracy, and precision. Up to 95.77 percent of the two disordered speech signals are correctly classified by the suggested model, which outperforms the second-best algorithm, VLNSGA-II, by 1.02 percent in terms of accuracy.",
+  "ml_approaches": [
+    {
+      "algorithm": "Convolutional Neural Network",
+      "optimization": "IP-based Whale Optimization Algorithm",
+      "data_augmentation": [
+        "SpecAugment"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9577,
+        "recall": 0.9333,
+        "specificity": 0.9355,
+        "f1_score": 0.9544,
+        "precision": 0.9633
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "PC-GITA",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://paperswithcode.com/dataset/pc-gita",
+      "doi": ""
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "PC-GITA",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://paperswithcode.com/dataset/pc-gita",
+      "doi": ""
+    }
+  ],
+  "study_id": "10.1016/j.apacoust.2022.109003_1"
+}

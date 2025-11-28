@@ -1,0 +1,88 @@
+{
+  "_id": {
+    "$oid": "68ecf00b6c43da02c168932e"
+  },
+  "title": "Diagnosis of Parkinson's disease based on voice signals using SHAP and hard voting ensemble method",
+  "authors": [
+    {
+      "name": "Paria Ghaheri",
+      "affiliations": [
+        {
+          "institution": "Semnan University",
+          "country": "Iran"
+        }
+      ]
+    },
+    {
+      "name": "Hamid Nasiri",
+      "affiliations": [
+        {
+          "institution": "Amirkabir University of Technology",
+          "country": "Iran"
+        }
+      ]
+    },
+    {
+      "name": "Ahmadreza Shateri",
+      "affiliations": [
+        {
+          "institution": "Semnan University",
+          "country": "Iran"
+        }
+      ]
+    },
+    {
+      "name": "Arman Homafar",
+      "affiliations": [
+        {
+          "institution": "Semnan University",
+          "country": "Iran"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Computer Methods in Biomechanics and Biomedical Engineering",
+  "year": 2024,
+  "doi": "10.1080/10255842.2023.2263125",
+  "abstract": "Parkinson's disease (PD) is the second most common progressive neurological condition after Alzheimer's. The significant number of individuals afflicted with this illness makes it essential to develop a method to diagnose the conditions in their early phases. PD is typically identified from motor symptoms or via other Neuroimaging techniques. Expensive, time-consuming, and unavailable to the general public, these methods are not very accurate. Another issue to be addressed is the black-box nature of machine learning methods that needs interpretation. These issues encourage us to develop a novel technique using Shapley additive explanations (SHAP) and Hard Voting Ensemble Method based on voice signals to diagnose PD more accurately. Another purpose of this study is to interpret the output of the model and determine the most important features in diagnosing PD. The present article uses Pearson Correlation Coefficients to understand the relationship between input features and the output. Input features with high correlation are selected and then classified by the Extreme Gradient Boosting, Light Gradient Boosting Machine, Gradient Boosting, and Bagging. Moreover, the weights in Hard Voting Ensemble Method are determined based on the performance of the mentioned classifiers. At the final stage, it uses SHAP to determine the most important features in PD diagnosis. The effectiveness of the proposed method is validated using 'Parkinson Dataset with Replicated Acoustic Features' from the UCI machine learning repository. It has achieved an accuracy of 85.42%. The findings demonstrate that the proposed method outperformed state-of-the-art approaches and can assist physicians in diagnosing Parkinson's cases.",
+  "ml_approaches": [
+    {
+      "algorithm": "Ensemble (XGBoost, LightGBM, Gradient Boosting, Bagging)",
+      "feature-selection": {
+        "methods": [
+          "Pearson Correlation Coefficients"
+        ]
+      },
+      "validation": "4-fold cross-validation",
+      "results": {
+        "recall": 0.832,
+        "specificity": 0.8762000000000001,
+        "precision": 0.8677,
+        "f1_score": 0.8493999999999999,
+        "accuracy": 0.8542
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson Dataset with replicated acoustic features",
+      "size": 80,
+      "pd_patients": 40,
+      "controls": 40,
+      "url": "https://archive.ics.uci.edu/dataset/489/parkinson+dataset+with+replicated+acoustic+features",
+      "doi": "10.24432/C5701F"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson Dataset with replicated acoustic features",
+      "size": 80,
+      "pd_patients": 40,
+      "controls": 40,
+      "url": "https://archive.ics.uci.edu/dataset/489/parkinson+dataset+with+replicated+acoustic+features",
+      "doi": "10.24432/C5701F"
+    }
+  ],
+  "study_id": "10.1080/10255842.2023.2263125_1"
+}

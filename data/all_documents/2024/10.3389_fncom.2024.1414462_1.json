@@ -1,0 +1,163 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c168933d"
+  },
+  "title": "SS-DRPL: self-supervised deep representation pattern learning for voice-based Parkinson's disease detection",
+  "authors": [
+    {
+      "name": "Tae Hoon Kim",
+      "affiliations": [
+        {
+          "institution": "Zhejiang University of Science and Technology",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Moez Krichen",
+      "affiliations": [
+        {
+          "institution": "Al-Baha University",
+          "country": "Saudi Arabia"
+        }
+      ]
+    },
+    {
+      "name": "Stephen Ojo",
+      "affiliations": [
+        {
+          "institution": "Anderson University",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Gabriel Avelino Sampedro",
+      "affiliations": [
+        {
+          "institution": "University of the Philippines Open University",
+          "country": "Philippines"
+        },
+        {
+          "institution": "De La Salle University",
+          "country": "Philippines"
+        }
+      ]
+    },
+    {
+      "name": "Meznah A Alamro",
+      "affiliations": [
+        {
+          "institution": "Princess Nourah Bint Abdul Rahman University",
+          "country": "Saudi Arabia"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Frontiers in Computational Neuroscience",
+  "year": 2024,
+  "doi": "10.3389/fncom.2024.1414462 ",
+  "abstract": "Parkinson's disease (PD) is a globally significant health challenge, necessitating accurate and timely diagnostic methods to facilitate effective treatment and intervention. In recent years, self-supervised deep representation pattern learning (SS-DRPL) has emerged as a promising approach for extracting valuable representations from data, offering the potential to enhance the efficiency of voice-based PD detection. This research study focuses on investigating the utilization of SS-DRPL in conjunction with deep learning algorithms for voice-based PD classification. This study encompasses a comprehensive evaluation aimed at assessing the accuracy of various predictive models, particularly deep learning methods when combined with SS-DRPL. Two deep learning architectures, namely hybrid Long Short-Term Memory and Recurrent Neural Networks (LSTM-RNN) and Deep Neural Networks (DNN), are employed and compared in terms of their ability to detect voice-based PD cases accurately. Additionally, several traditional machine learning models are also included to establish a baseline for comparison. The findings of the study reveal that the incorporation of SS-DRPL leads to improved model performance across all experimental setups. Notably, the LSTM-RNN architecture augmented with SS-DRPL achieves the highest F1-score of 0.94, indicating its superior ability to detect PD cases using voice-based data effectively. This outcome underscores the efficacy of SS-DRPL in enabling deep learning models to learn intricate patterns and correlations within the data, thereby facilitating more accurate PD classification.",
+  "ml_approaches": [
+    {
+      "algorithm": "Long Short-Term Memory",
+      "scaling": [
+        "Min Max"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "precision": 0.94,
+        "recall": 0.94,
+        "f1_score": 0.94,
+        "accuracy": 0.94
+      }
+    },
+    {
+      "algorithm": "Deep Neural Network",
+      "scaling": [
+        "Min Max"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "precision": 0.86,
+        "recall": 0.86,
+        "f1_score": 0.84,
+        "accuracy": 0.86
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "scaling": [
+        "Min Max"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "precision": 0.85,
+        "recall": 0.86,
+        "f1_score": 0.85,
+        "accuracy": 0.86
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "scaling": [
+        "Min Max"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "precision": 0.92,
+        "recall": 0.92,
+        "f1_score": 0.92,
+        "accuracy": 0.92
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "scaling": [
+        "Min Max"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "precision": 0.84,
+        "recall": 0.8,
+        "f1_score": 0.74,
+        "accuracy": 0.8
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "scaling": [
+        "Min Max"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "precision": 0.87,
+        "recall": 0.73,
+        "f1_score": 0.75,
+        "accuracy": 0.73
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Custom Dataset",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Custom Dataset",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.3389/fncom.2024.1414462_1"
+}

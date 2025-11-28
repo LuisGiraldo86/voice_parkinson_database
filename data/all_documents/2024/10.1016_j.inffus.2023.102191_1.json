@@ -1,0 +1,229 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c168940a"
+  },
+  "title": "DFS-WR: A novel dual feature selection and weighting representation framework for classification",
+  "authors": [
+    {
+      "name": "Zhimin Zhang",
+      "affiliations": [
+        {
+          "institution": "University of Science and Technology Beijing",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Fan Zhang",
+      "affiliations": [
+        {
+          "institution": "University of Science and Technology Beijing",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Lingfeng Mao",
+      "affiliations": [
+        {
+          "institution": "University of Science and Technology Beijing",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Cheng Chen",
+      "affiliations": [
+        {
+          "institution": "University of Science and Technology Beijing",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Huansheng Ning",
+      "affiliations": [
+        {
+          "institution": "University of Science and Technology Beijing",
+          "country": "China"
+        },
+        {
+          "institution": "Linyi University",
+          "country": "China"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Information Fusion",
+  "year": 2024,
+  "doi": "10.1016/j.inffus.2023.102191",
+  "abstract": "Classification methods relying on multidimensional features have been widely applied in commerce, healthcare, and transportation. Nevertheless, haphazardly selecting inappropriate features may not only hinder the improvement of classification performance but also disrupt the convergence of classifier parameters, leading to prolonged classifier runtime and an increased storage burden. Therefore, this paper proposed a novel framework (dubbed as DFS-WR) to perform dual selection and weighted representation of multidimensional features. Firstly, DFS-WR employs Laplacian scores to conduct a de-redundant operation as the first feature selection. Subsequently, DFS-WR utilizes a correlation coefficient matrix and redundant sorting to eliminate duplicate deployment of similar features in classification through the second selection. Finally, for hierarchical expression, DFS-WR assigns weights by virtue of information gain (IG), thereby emphasizing the significance of dominant features. The performance of DFS-WR was further evaluated across four aspects: classification ability, runtime performance, storage occupancy, and portability and universality, using five public datasets and eleven widely adopted classifiers. Additionally, this paper considered the proper configuration of crucial parameters within DFS-WR and compared it with other related works. The results indicated that the dual selection strategy for eliminating redundancy and similarities among features could improve the performance of classifiers, and the weighted process based on IG outperformed unweighted and ReliefF-based weighted methods. By employing DFS-WR to multidimensional features, the classifier's runtime and data storage capacity were effectively reduced. In addition, it was proved that the deployment of DFS-WR generally had no limitations on datasets and classifiers, underscoring its good portability and universality in practical applications.",
+  "ml_approaches": [
+    {
+      "algorithm": "Decision Tree",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Dual Feature Selection and Weighted Representation"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9322,
+        "precision": 0.9354,
+        "recall": 0.9322,
+        "f1_score": 0.9325
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Dual Feature Selection and Weighted Representation"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8661,
+        "precision": 0.8721,
+        "recall": 0.8661,
+        "f1_score": 0.8558
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Dual Feature Selection and Weighted Representation"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8678,
+        "precision": 0.8763,
+        "recall": 0.8678,
+        "f1_score": 0.8496
+      }
+    },
+    {
+      "algorithm": "Naive Bayes: Gaussian",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Dual Feature Selection and Weighted Representation"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8119,
+        "precision": 0.8424,
+        "recall": 0.8119,
+        "f1_score": 0.8209
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Dual Feature Selection and Weighted Representation"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9475,
+        "precision": 0.9476,
+        "recall": 0.9475,
+        "f1_score": 0.9464
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Dual Feature Selection and Weighted Representation"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8644,
+        "precision": 0.8342,
+        "recall": 0.2738,
+        "f1_score": 0.3996
+      }
+    },
+    {
+      "algorithm": "Recurrent Neural Network",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Dual Feature Selection and Weighted Representation"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.878,
+        "precision": 0.763,
+        "recall": 0.465,
+        "f1_score": 0.5756
+      }
+    },
+    {
+      "algorithm": "Convolutional Neural Network",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Dual Feature Selection and Weighted Representation"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.878,
+        "precision": 0.763,
+        "recall": 0.3967,
+        "f1_score": 0.5395
+      }
+    },
+    {
+      "algorithm": "Long Short-Term Memory",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Dual Feature Selection and Weighted Representation"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.7898,
+        "precision": 0.0933,
+        "recall": 0.0013,
+        "f1_score": 0.0025
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1016/j.inffus.2023.102191_1"
+}

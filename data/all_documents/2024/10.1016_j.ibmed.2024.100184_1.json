@@ -1,0 +1,149 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c1689410"
+  },
+  "title": "AIoT-based embedded systems optimization using feature selection for Parkinson's disease diagnosis through speech disorders",
+  "authors": [
+    {
+      "name": "Shawki Saleh",
+      "affiliations": [
+        {
+          "institution": "Hassan II University of Casablanca",
+          "country": "Morocco"
+        }
+      ]
+    },
+    {
+      "name": "Zakaria Alouani",
+      "affiliations": [
+        {
+          "institution": "Hassan II University of Casablanca",
+          "country": "Morocco"
+        }
+      ]
+    },
+    {
+      "name": "Othmane Daanouni",
+      "affiliations": [
+        {
+          "institution": "Chouaib Doukali University",
+          "country": "Morocco"
+        }
+      ]
+    },
+    {
+      "name": "Soufiane Hamida",
+      "affiliations": [
+        {
+          "institution": "Hassan II University of Casablanca",
+          "country": "Morocco"
+        },
+        {
+          "institution": "SupMTI of Rabat",
+          "country": "Morocco"
+        }
+      ]
+    },
+    {
+      "name": "Bouchaib Cherradi",
+      "affiliations": [
+        {
+          "institution": "Hassan II University of Casablanca",
+          "country": "Morocco"
+        },
+        {
+          "institution": "CRMEF Casablanca-Settat",
+          "country": "Morocco"
+        }
+      ]
+    },
+    {
+      "name": "Omar Bouattane",
+      "affiliations": [
+        {
+          "institution": "Hassan II University of Casablanca",
+          "country": "Morocco"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Intelligence-Based Medicine",
+  "year": 2024,
+  "doi": "10.1016/j.ibmed.2024.100184",
+  "abstract": "This study aims to build a pre-diagnosis tool for predicting Parkinson's disease based on a speech disorder which appears as a symptom in approximately 90% of people with this disease. Recently, some technologies such as AIoT and IoMT aim to integrate Artificial Intelligence and the Internet of Things or Internet of Medical Things to provide an intelligent remote diagnosis for enhancing medical services. Thus, the classification speed and reliability of the systems in these fields are highly recommended. In this work, we compared five ML algorithms (LR, RF, XGB, SVM, KNN) based on their performance, classification speed and reliability. We employed the sequential forward feature selection in order to select the optimal relevant feature for reducing the dimensionality of the used acoustic dataset to enhance both the performance and computation cost for the proposed system. Furthermore, the stratified cross-validation approach has been used to obtain a fair estimation for the proposed system across each point in the dataset. In this paper, we used a vocal dataset of Parkinson's disease consisting of 195 samples and 22 features. We found that 10 features provide the optimal performance. So, we proposed the K-Nearest Neighbours algorithm as a classifier for our system. It reached 98.46%, 99.33% and 98.67% of the accuracy, sensitivity and precision respectively. Moreover, this work provides a detailed explanation of the employed techniques and the obtained results. The novelty of this work, compared to the existing literature, is to enhance both computation cost and performance for building a real-world system to diagnose Parkinson's disease through speech disorder.",
+  "ml_approaches": [
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Sequential Forward Feature Selection"
+        ]
+      },
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.9846,
+        "recall": 0.9933,
+        "precision": 0.9867,
+        "f1_score": 0.9898,
+        "mcc": 0.9597
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Sequential Forward Feature Selection"
+        ]
+      },
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.9435,
+        "recall": 0.9657,
+        "precision": 0.9616,
+        "f1_score": 0.9621,
+        "mcc": 0.8581
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Sequential Forward Feature Selection"
+        ]
+      },
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.9128,
+        "recall": 0.9726,
+        "precision": 0.9183,
+        "f1_score": 0.9439,
+        "mcc": 0.7598999999999999
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1016/j.ibmed.2024.100184_1"
+}

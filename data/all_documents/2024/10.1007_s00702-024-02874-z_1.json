@@ -1,0 +1,193 @@
+{
+  "_id": {
+    "$oid": "68ecf00b6c43da02c168932a"
+  },
+  "title": "A cross-language speech model for detection of Parkinson's disease",
+  "authors": [
+    {
+      "name": "Wee Shin Lim",
+      "affiliations": [
+        {
+          "institution": "National Taiwan University",
+          "country": "Taiwan"
+        }
+      ]
+    },
+    {
+      "name": "Shu-I Chiu",
+      "affiliations": [
+        {
+          "institution": "National Chengchi University",
+          "country": "Taiwan"
+        }
+      ]
+    },
+    {
+      "name": "Pei-Ling Peng",
+      "affiliations": [
+        {
+          "institution": "National Taiwan University",
+          "country": "Taiwan"
+        }
+      ]
+    },
+    {
+      "name": "Jyh-Shing Roger Jang",
+      "affiliations": [
+        {
+          "institution": "National Taiwan University",
+          "country": "Taiwan"
+        }
+      ]
+    },
+    {
+      "name": "Sol-Hee Lee",
+      "affiliations": [
+        {
+          "institution": "Seoul National University Hospital",
+          "country": "South Korea"
+        }
+      ]
+    },
+    {
+      "name": "Chin-Hsien Lin",
+      "affiliations": [
+        {
+          "institution": "National Taiwan University",
+          "country": "Taiwan"
+        }
+      ]
+    },
+    {
+      "name": "Han-Joon Kim",
+      "affiliations": [
+        {
+          "institution": "Seoul National University Hospital",
+          "country": "South Korea"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Journal of Neural Transmission",
+  "year": 2024,
+  "doi": "10.1007/s00702-024-02874-z",
+  "abstract": "Speech change is a biometric marker for Parkinson's disease (PD). However, evaluating speech variability across diverse languages is challenging. We aimed to develop a cross-language algorithm differentiating between PD patients and healthy controls using a Taiwanese and Korean speech data set. We recruited 299 healthy controls and 347 patients with PD from Taiwan and Korea. Participants with PD underwent smartphone-based speech recordings during the 'on' phase. Each Korean participant performed various speech texts, while the Taiwanese participant read a standardized, fixed-length article. Korean short-speech (≦15 syllables) and long-speech (> 15 syllables) recordings were combined with the Taiwanese speech dataset. The merged dataset was split into a training set (controls vs. early-stage PD) and a validation set (controls vs. advanced-stage PD) to evaluate the model's effectiveness in differentiating PD patients from controls across languages based on speech length. Numerous acoustic and linguistic speech features were extracted and combined with machine learning algorithms to distinguish PD patients from controls. The area under the receiver operating characteristic (AUROC) curve was calculated to assess diagnostic performance. Random forest and AdaBoost classifiers showed an AUROC 0.82 for distinguishing patients with early-stage PD from controls. In the validation cohort, the random forest algorithm maintained this value (0.90) for discriminating advanced-stage PD patients. The model showed superior performance in the combined language cohort (AUROC 0.90) than either the Korean (AUROC 0.87) or Taiwanese (AUROC 0.88) cohorts individually. However, with another merged speech data set of short-speech recordings < 25 characters, the diagnostic performance to identify early-stage PD patients from controls dropped to 0.72 and showed a further limited ability to discriminate advanced-stage patients. Leveraging multifaceted speech features, including both acoustic and linguistic characteristics, could aid in distinguishing PD patients from healthy individuals, even across different languages. ",
+  "ml_approaches": [
+    {
+      "algorithm": "Random Forest",
+      "input_speech": "Long speech (> 15 syllables)",
+      "feature-selection": {
+        "methods": [
+          "Sequential Forward Feature Selection"
+        ]
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "auc": 0.82
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "input_speech": "Long speech (> 15 syllables)",
+      "feature-selection": {
+        "methods": [
+          "Sequential Forward Feature Selection"
+        ]
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "auc": 0.75
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "input_speech": "Long speech (> 15 syllables)",
+      "feature-selection": {
+        "methods": [
+          "Sequential Forward Feature Selection"
+        ]
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "auc": 0.82
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "input_speech": "Short speech (> 15 syllables)",
+      "feature-selection": {
+        "methods": [
+          "Sequential Forward Feature Selection"
+        ]
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "auc": 0.72
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "input_speech": "Short speech (> 15 syllables)",
+      "feature-selection": {
+        "methods": [
+          "Sequential Forward Feature Selection"
+        ]
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "auc": 0.57
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "input_speech": "Short speech (> 15 syllables)",
+      "feature-selection": {
+        "methods": [
+          "Sequential Forward Feature Selection"
+        ]
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "auc": 0.78
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Taiwanese PD speech dataset",
+      "size": 360,
+      "pd_patients": 186,
+      "controls": 174,
+      "url": null,
+      "doi": null
+    },
+    {
+      "name": "Korean PD speech dataset",
+      "size": 286,
+      "pd_patients": 161,
+      "controls": 125,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Taiwanese PD speech dataset",
+      "size": 360,
+      "pd_patients": 186,
+      "controls": 174,
+      "url": null,
+      "doi": null
+    },
+    {
+      "name": "Korean PD speech dataset",
+      "size": 286,
+      "pd_patients": 161,
+      "controls": 125,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.1007/s00702-024-02874-z_1"
+}

@@ -1,0 +1,178 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c1689348"
+  },
+  "title": "Voice biomarkers as prognostic indicators for Parkinson's disease using machine learning techniques",
+  "authors": [
+    {
+      "name": "Ifrah Naeem",
+      "affiliations": [
+        {
+          "institution": "University of Education",
+          "country": "Pakistan"
+        }
+      ]
+    },
+    {
+      "name": "Allah Ditta",
+      "affiliations": [
+        {
+          "institution": "University of Education",
+          "country": "Pakistan"
+        }
+      ]
+    },
+    {
+      "name": "Tehseen Mazhar",
+      "affiliations": [
+        {
+          "institution": "National College of Business Administration and Economics",
+          "country": "Pakistan"
+        },
+        {
+          "institution": "School Education Department, Government of Punjab",
+          "country": "Pakistan"
+        }
+      ]
+    },
+    {
+      "name": "Muhammad Anwar",
+      "affiliations": [
+        {
+          "institution": "University of Education",
+          "country": "Pakistan"
+        }
+      ]
+    },
+    {
+      "name": "Mamoon M Saeed",
+      "affiliations": [
+        {
+          "institution": "University of Modern Sciences",
+          "country": "Yemen"
+        }
+      ]
+    },
+    {
+      "name": "Habib Hamam",
+      "affiliations": [
+        {
+          "institution": "Uni de Moncton",
+          "country": "Canada"
+        },
+        {
+          "institution": "University of Johannesburg",
+          "country": "South Africa"
+        },
+        {
+          "institution": "International Institute of Technology and Management",
+          "country": "Gabon"
+        },
+        {
+          "institution": "Bridges for Academic Excellence",
+          "country": "Tunisia"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Scientific Reports",
+  "year": 2025,
+  "doi": "10.1038/s41598-025-96950-3 ",
+  "abstract": "Many people suffer from Parkinson's disease globally, a complicated neurological condition caused by the deficiency of dopamine, an organic chemical responsible for regulating movement in individuals. Patients with Parkinson face muscle stiffness or rigidity, tremors, vocal impairment, slow movement, loss of facial expressions, and problems with balance and coordination. As there is no cure for Parkinson, early diagnosis can help prevent the progression of this disease. The study explores the potential of vocal measures as significant indicators for early prediction of Parkinson. Different machine learning models such as Support Vector Machine (SVM), Random Forest (RF), Logistic Regression (LR), and Decision Tree (DT) are used to detect Parkinson using voice measures and differentiate between the healthy and Parkinson patients. The dataset contains 195 vocal recordings from 31 patients. The Synthetic Minority Over-Sampling Technique (SMOTE) is used for handling class imbalance to improve the performance of the models. The Principal Component Analysis (PCA) method was used for feature selection. The study uses different parameters to evaluate the model's classification results. The results highlight RF as the most effective model with an accuracy of 94% and a precision of 94%. In addition, SVM achieves an accuracy score of 92%, and precision of 91%. However, with the PCA method, SVM achieves an accuracy of 89%, 92%, and 87% for RF and DT respectively. This study highlights the significance of using vocal features along with advanced machine learning methods to reliably diagnose Parkinson's disease, considering the challenges associated with early detection.",
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine",
+      "validation": "train/test split",
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "results": {
+        "accuracy": 0.92,
+        "precision": 0.91,
+        "recall": 1
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "validation": "train/test split",
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "results": {
+        "accuracy": 0.94,
+        "precision": 0.94,
+        "recall": 1
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "validation": "train/test split",
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "results": {
+        "accuracy": 0.87,
+        "precision": 0.9,
+        "recall": 0.93
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "validation": "train/test split",
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "results": {
+        "accuracy": 0.89,
+        "precision": 0.96,
+        "recall": 0.9
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1038/s41598-025-96950-3_1"
+}

@@ -1,0 +1,174 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c1689385"
+  },
+  "title": "Federated learning for secure development of AI models for Parkinson's disease detection using speech from different languages",
+  "authors": [
+    {
+      "name": "Soroosh Tayebi Arasteh",
+      "affiliations": [
+        {
+          "institution": "Friedrich-Alexander Universität Erlangen-Nürnberg",
+          "country": "Germany"
+        },
+        {
+          "institution": "University Hospital RWTH Aachen",
+          "country": "Germany"
+        }
+      ]
+    },
+    {
+      "name": "Cristian David Rios-Urrego",
+      "affiliations": [
+        {
+          "institution": "Universidad de Antioquia",
+          "country": "Colombia"
+        }
+      ]
+    },
+    {
+      "name": "Elmar Noeth",
+      "affiliations": [
+        {
+          "institution": "Friedrich-Alexander Universität Erlangen-Nürnberg",
+          "country": "Germany"
+        }
+      ]
+    },
+    {
+      "name": "Andreas Maier",
+      "affiliations": [
+        {
+          "institution": "Friedrich-Alexander Universität Erlangen-Nürnberg",
+          "country": "Germany"
+        }
+      ]
+    },
+    {
+      "name": "Seung Hee Yang",
+      "affiliations": [
+        {
+          "institution": "Friedrich-Alexander Universität Erlangen-Nürnberg",
+          "country": "Germany"
+        }
+      ]
+    },
+    {
+      "name": "Jan Rusz",
+      "affiliations": [
+        {
+          "institution": "Czech Technical University in Prague",
+          "country": "Czech Republic"
+        }
+      ]
+    },
+    {
+      "name": "Juan Rafael Orozco-Arroyave",
+      "affiliations": [
+        {
+          "institution": "Friedrich-Alexander Universität Erlangen-Nürnberg",
+          "country": "Germany"
+        },
+        {
+          "institution": "Universidad de Antioquia",
+          "country": "Colombia"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Conference",
+  "journal": "INTERSPEECH 2023",
+  "year": 2023,
+  "doi": "10.21437/Interspeech.2023-2108",
+  "abstract": "Parkinson's disease (PD) is a neurological disorder impacting a person's speech. Among automatic PD assessment methods, deep learning models have gained particular interest. Recently, the community has explored cross-pathology and cross-language models which can improve diagnostic accuracy even further. However, strict patient data privacy regulations largely prevent institutions from sharing patient speech data with each other. In this paper, we employ federated learning (FL) for PD detection using speech signals from 3 real-world language corpora of German, Spanish, and Czech, each from a separate institution. Our results indicate that the FL model outperforms all the local models in terms of diagnostic accuracy, while not performing very differently from the model based on centrally combined training sets, with the advantage of not requiring any data sharing among collaborators. This will simplify inter-institutional collaborations, resulting in enhancement of patient outcomes.",
+  "target_dataset": [
+    {
+      "name": "Czech Parkinson's Disease Dataset",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "ml_approaches": [
+    {
+      "algorithm": "Multilayer Perceptron",
+      "optimization": "Adam",
+      "feature_extraction": [
+        "Wave2Vec2.0"
+      ],
+      "training": [
+        "Local Training"
+      ],
+      "validation": "10-fold cross validation",
+      "results": {
+        "accuracy": 0.703,
+        "recall": 0.648,
+        "specificity": 0.764,
+        "auc": 0.684
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "optimization": "Adam",
+      "feature_extraction": [
+        "Wave2Vec2.0"
+      ],
+      "training": [
+        "Central Training"
+      ],
+      "validation": "10-fold cross validation",
+      "results": {
+        "accuracy": 0.778,
+        "recall": 0.74,
+        "specificity": 0.82,
+        "auc": 0.7759999999999999
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "optimization": "Adam",
+      "feature_extraction": [
+        "Wave2Vec2.0"
+      ],
+      "training": [
+        "Federated Learning"
+      ],
+      "validation": "10-fold cross validation",
+      "results": {
+        "accuracy": 0.76,
+        "recall": 0.62,
+        "specificity": 0.9079999999999999,
+        "auc": 0.782
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Knappschaftskrankenhaus Bochum",
+      "size": 176,
+      "pd_patients": 88,
+      "controls": 88,
+      "url": null,
+      "doi": null
+    },
+    {
+      "name": "Czech Parkinson's Disease Dataset",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": null,
+      "doi": null
+    },
+    {
+      "name": "PC-GITA",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://paperswithcode.com/dataset/pc-gita",
+      "doi": ""
+    }
+  ],
+  "study_id": "10.21437/Interspeech.2023-2108_3"
+}

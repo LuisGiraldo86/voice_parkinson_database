@@ -1,0 +1,468 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c1689397"
+  },
+  "title": "A Hybrid Model: Random Classification and Feature Selection Approach for Diagnosis of the Parkinson Syndrome",
+  "authors": [
+    {
+      "name": "Suman Bhakar",
+      "affiliations": [
+        {
+          "institution": "Manipal University",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Manvendra Shekhawat",
+      "affiliations": [
+        {
+          "institution": "Manipal University",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Nidhi Kundu",
+      "affiliations": [
+        {
+          "institution": "Manipal University",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Shankar Sharma Vijay",
+      "affiliations": [
+        {
+          "institution": "Manipal University",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Scalable Computing",
+  "year": 2024,
+  "doi": "10.12694/scpe.v25i1.2314",
+  "abstract": "Nowadays Parkinson's disease has been discovered that approximately 94% of people suffer from voice disorder problems. A neurodegenerative can identify PD patients through examination and multiple scanning tests. So, it usually takes more time to diagnose the disease at the early stage. Current work has identified that speech disorders can be a significant signal for Parkinson's disease. Therefore, this work proposed a fusion model to identify the speech disorder at the starting stage of the disease. In this process, the author has tested a model with a different pattern of feature selection method as well as classification mode and created a system with the best pattern. For the creation of pattern, three types of feature selection methods namely Chi-square, genetic algorithm and Embedded random forest method and four classifier models such as KNN, Naive Bayes, SVM, Decision tree and Random Forest have been utilized. To analyze the performance of the system speech public dataset from the UCI repository,the authors applied the combination of the Embedded random feature selection method and random forest classification algorithm provides 97.89% of accuracy. However, this outcome is better than the recent work. The SMOTE is utilized for the balancing of the dataset.",
+  "citescore": 1,
+  "ml_approaches": [
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.7211,
+        "f1_score": 0.7011,
+        "recall": 0.7211,
+        "specificity": 0.7211,
+        "precision": 0.7211,
+        "auc": 0.66
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Chi-Square"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.7948,
+        "f1_score": 0.8518000000000001,
+        "recall": 0.8846,
+        "specificity": 0.6153,
+        "precision": 0.8214,
+        "auc": 0.75
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8717,
+        "f1_score": 0.9206,
+        "recall": 0.9062,
+        "specificity": 0.7142000000000001,
+        "precision": 0.9354,
+        "auc": 0.81
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Random Forest"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8974,
+        "f1_score": 0.9259000000000001,
+        "recall": 0.9615,
+        "specificity": 0.7692,
+        "precision": 0.8928,
+        "auc": 0.86
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.6666,
+        "f1_score": 0.7345999999999999,
+        "recall": 0.6206,
+        "specificity": 0.7199,
+        "precision": 0.71,
+        "auc": 0.66
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Chi-Square"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.7179,
+        "f1_score": 0.7555,
+        "recall": 0.8911,
+        "specificity": 0.8461,
+        "precision": 0.8947,
+        "auc": 0.75
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8188,
+        "f1_score": 0.7777,
+        "recall": 0.7591,
+        "specificity": 0.8571,
+        "precision": 0.9545,
+        "auc": 0.75
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Random Forest"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8461,
+        "f1_score": 0.8887999999999999,
+        "recall": 0.923,
+        "specificity": 0.8911,
+        "precision": 0.8571,
+        "auc": 0.8
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.75,
+        "f1_score": 0.72,
+        "recall": 0.7,
+        "specificity": 0.4,
+        "precision": 0.6799,
+        "auc": 0.6
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Chi-Square"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.7692,
+        "f1_score": 0.8523999999999999,
+        "recall": 0.8011,
+        "specificity": 0.72,
+        "precision": 0.7428,
+        "auc": 0.65
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9487,
+        "f1_score": 0.9695999999999999,
+        "recall": 0.8123,
+        "specificity": 0.7142000000000001,
+        "precision": 0.9411,
+        "auc": 0.85
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Random Forest"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8461,
+        "f1_score": 0.8928,
+        "recall": 0.9615,
+        "specificity": 0.77,
+        "precision": 0.8333,
+        "auc": 0.78
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.7,
+        "f1_score": 0.72,
+        "recall": 0.77,
+        "specificity": 0.7,
+        "precision": 0.71,
+        "auc": 0.67
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Chi-Square"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8205,
+        "f1_score": 0.8726999999999999,
+        "recall": 0.923,
+        "specificity": 0.6153,
+        "precision": 0.8275,
+        "auc": 0.76
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8717,
+        "f1_score": 0.9206,
+        "recall": 0.9062,
+        "specificity": 0.7142000000000001,
+        "precision": 0.9354,
+        "auc": 0.81
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Random Forest"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8717,
+        "f1_score": 0.9018999999999999,
+        "recall": 0.8846,
+        "specificity": 0.8461,
+        "precision": 0.92,
+        "auc": 0.86
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.7299,
+        "f1_score": 0.7487999999999999,
+        "recall": 0.34,
+        "specificity": 0.7,
+        "precision": 0.6799,
+        "auc": 0.7
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Chi-Square"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8461,
+        "f1_score": 0.8887999999999999,
+        "recall": 0.923,
+        "specificity": 0.6923,
+        "precision": 0.8571,
+        "auc": 0.8
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9355,
+        "f1_score": 0.9523,
+        "recall": 0.9375,
+        "specificity": 0.8571,
+        "precision": 0.9677,
+        "auc": 0.89
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Random Forest"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9789,
+        "f1_score": 0.9669,
+        "recall": 0.923,
+        "specificity": 0.9229999999999999,
+        "precision": 0.96,
+        "auc": 0.92
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.12694/scpe.v25i1.2314_1"
+}

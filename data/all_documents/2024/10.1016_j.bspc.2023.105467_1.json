@@ -1,0 +1,75 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c1689418"
+  },
+  "title": "An Adaptive Intelligent Polar Bear (AIPB) Optimization-Quantized Contempo Neural Network (QCNN) model for Parkinson's disease diagnosis using speech dataset",
+  "authors": [
+    {
+      "name": "S. Pragadeeswaran",
+      "affiliations": [
+        {
+          "institution": "Muthayammal Engineering College",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "S. Kannimuthu",
+      "affiliations": [
+        {
+          "institution": "Karpagam College of Engineering",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Biomedical Signal Processing and Control",
+  "year": 2024,
+  "doi": "10.1016/j.bspc.2023.105467",
+  "abstract": "The design and development of an automated Parkinson's disease (PD) diagnosis framework still remains one of the most complex and crucial tasks in the present day. In the traditional works, various feature extraction + optimization + classification models are developed for accurately detecting the PD from the speech signals. Yet, it has the problems of computational expenses, increased time for processing the signals, complexity to understanding the system model, and error results. Therefore, the proposed work motivates to development of a unique and advanced Adaptive Intelligent Polar Bear (AIPB) Optimization-Quantized Contempo Neural Network (QCNN) model for PD diagnosis. Here, the Determinate Haar Wavelet (DHW) transformation technique is used for preprocessing the speech signals by removing the noise and improving the quality. Consequently, the Statistical Time Frequency Renyi (STFR) feature extraction model is used to extract the useful features related to the Parkinson's disease. Then, the AIPB optimization algorithm is deployed to extract the most relevant features required for detecting PD. Then, the QCNN technique is used to accurately predict the speech signal as to whether healthy or PD is affected. To validate this framework, various PD speech signal datasets are used for analysis. Also, the obtained results are compared with the recent PD detection approaches by using various evaluation indicators.",
+  "ml_approaches": [
+    {
+      "algorithm": "Quantized Contempo Neural Network",
+      "framework": "",
+      "feature_extraction": [
+        "Determinate Haar Wavelet Transform",
+        "Statistical Time Frequency Renyi"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Adaptive Intelligent Polar Bear Optimization"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.985,
+        "recall": 0.989,
+        "f1_score": 0.987,
+        "specificity": 0.9890000000000001
+      }
+    }
+  ],
+  "note": "There is no clarity on the validation method used in the study, neither on the dataset used.",
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1016/j.bspc.2023.105467_1"
+}

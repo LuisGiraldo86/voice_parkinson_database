@@ -1,0 +1,1111 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c1689422"
+  },
+  "title": "Analysis of Voice as an Assisting Tool for Detection of Parkinson's Disease and Its Subsequent Clinical Interpretation",
+  "authors": [
+    {
+      "name": "Gabriel Solana-Lavalle,",
+      "affiliations": [
+        {
+          "institution": "Universidad de las Américas-Puebla",
+          "country": "Mexico"
+        }
+      ]
+    },
+    {
+      "name": "Roberto Rosas-Romero",
+      "affiliations": [
+        {
+          "institution": "Universidad de las Américas-Puebla",
+          "country": "Mexico"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Biomedical Signal Processing and Control",
+  "year": 2021,
+  "doi": "10.1016/j.bspc.2021.102415",
+  "abstract": "In this work, a voice-based analysis is conducted with the contribution of providing physicians with a decision tool along with framing information to help them see functional differences and understand why the detection method suspects PD. The voice-based detection method consists in applying feature subset selection and four different classifiers to voice recordings from five datasets (gender-based, balanced and unbalanced) derived from the largest public dataset for voice-based PD detection. One of the contributions is an improvement over previous works on voice-based PD detection over the same dataset, in terms of performance and complexity. The detection performance is characterized by 95.9% of accuracy, 98.35% of sensitivity, 91.06% of specificity, and 95.6% of precision in women; and 94.36% of accuracy, 100% of sensitivity, 97.1% of specificity, and 96.83% of precision in men. The number of features, fed to classifiers, ranges from 6 to 20. This work shows that different factors are associated with PD detection according to gender: high-frequency voice content is the most significant functional information to assist PD detection in women, while low-frequency content assists PD detection in men better. It is shown that a comparison of the variability of the most important features between patients with PD and controls can be used as contextual information by a physician to have a better interpretation of the classification.",
+  "ml_approaches": [
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Support Vector Machine"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8698,
+        "recall": 0.849,
+        "specificity": 0.8906,
+        "precision": 0.8859
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Support Vector Machine"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8542,
+        "recall": 0.8281,
+        "specificity": 0.8802,
+        "precision": 0.8736
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Support Vector Machine"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8854,
+        "recall": 0.8594,
+        "specificity": 0.9115,
+        "precision": 0.9066
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Support Vector Machine"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.888,
+        "recall": 0.8646,
+        "specificity": 0.9115,
+        "precision": 0.9071
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Random Forest"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.875,
+        "recall": 0.901,
+        "specificity": 0.849,
+        "precision": 0.8564
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Random Forest"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9323,
+        "recall": 0.9271,
+        "specificity": 0.9375,
+        "precision": 0.9368
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Random Forest"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9167,
+        "recall": 0.9063,
+        "specificity": 0.9271,
+        "precision": 0.9255
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Random Forest"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8229,
+        "recall": 0.8854,
+        "specificity": 0.7604,
+        "precision": 0.787
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Multilayer Perceptron"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8646,
+        "recall": 0.8958,
+        "specificity": 0.8333,
+        "precision": 0.8431
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Multilayer Perceptron"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.862,
+        "recall": 0.875,
+        "specificity": 0.849,
+        "precision": 0.8528
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Multilayer Perceptron"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.7995,
+        "recall": 0.8281,
+        "specificity": 0.7708,
+        "precision": 0.7833
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Multilayer Perceptron"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8255,
+        "recall": 0.8125,
+        "specificity": 0.8385,
+        "precision": 0.8342
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: K-Nearest Neighbors"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.849,
+        "recall": 0.8646,
+        "specificity": 0.8333,
+        "precision": 0.8384
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: K-Nearest Neighbors"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9089,
+        "recall": 0.9063,
+        "specificity": 0.9115,
+        "precision": 0.911
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: K-Nearest Neighbors"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9505,
+        "recall": 0.9583,
+        "specificity": 0.9427,
+        "precision": 0.9436
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: K-Nearest Neighbors"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8385,
+        "recall": 0.8438,
+        "specificity": 0.8333,
+        "precision": 0.8351
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: K-Nearest Neighbors"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8646,
+        "recall": 0.9141,
+        "specificity": 0.7656,
+        "precision": 0.8864
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: K-Nearest Neighbors"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8984,
+        "recall": 0.957,
+        "specificity": 0.7813,
+        "precision": 0.8974
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: K-Nearest Neighbors"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9167,
+        "recall": 0.9492,
+        "specificity": 0.8516,
+        "precision": 0.9275
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: K-Nearest Neighbors"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8698,
+        "recall": 0.9141,
+        "specificity": 0.7813,
+        "precision": 0.8931
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Random Forest"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8959,
+        "recall": 0.9414,
+        "specificity": 0.8047,
+        "precision": 0.906
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Random Forest"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9036,
+        "recall": 0.9727,
+        "specificity": 0.7656,
+        "precision": 0.8925
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Random Forest"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9141,
+        "recall": 0.9492,
+        "specificity": 0.8438,
+        "precision": 0.924
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Random Forest"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8568,
+        "recall": 0.9336,
+        "specificity": 0.7031,
+        "precision": 0.8628
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "data_subset": "men",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Support Vector Machine"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8043,
+        "recall": 0.8261,
+        "specificity": 0.7826,
+        "precision": 0.7917
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "data_subset": "men",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Support Vector Machine"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8333,
+        "recall": 0.8116,
+        "specificity": 0.8551,
+        "precision": 0.8485
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "data_subset": "men",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Support Vector Machine"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.7971,
+        "recall": 0.8116,
+        "specificity": 0.7826,
+        "precision": 0.7887
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "data_subset": "men",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Support Vector Machine"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8696,
+        "recall": 0.8406,
+        "specificity": 0.8986,
+        "precision": 0.8923
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "data_subset": "men",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Random Forest"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8551,
+        "recall": 0.8406,
+        "specificity": 0.8696,
+        "precision": 0.8657
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "data_subset": "men",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Random Forest"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9275,
+        "recall": 0.8841,
+        "specificity": 0.971,
+        "precision": 0.9683
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "data_subset": "men",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Random Forest"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8478,
+        "recall": 0.7536,
+        "specificity": 0.942,
+        "precision": 0.9286
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "data_subset": "men",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Random Forest"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8188,
+        "recall": 0.8261,
+        "specificity": 0.8116,
+        "precision": 0.8143
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "data_subset": "men",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Multilayer Perceptron"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9058,
+        "recall": 0.913,
+        "specificity": 0.8986,
+        "precision": 0.9
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "data_subset": "men",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Multilayer Perceptron"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8199,
+        "recall": 0.7826,
+        "specificity": 0.8551,
+        "precision": 0.8438
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "data_subset": "men",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Multilayer Perceptron"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8478,
+        "recall": 0.8551,
+        "specificity": 0.8406,
+        "precision": 0.8429
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "data_subset": "men",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Multilayer Perceptron"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.7754,
+        "recall": 0.7101,
+        "specificity": 0.8406,
+        "precision": 0.8167
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "data_subset": "men",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: K-Nearest Neighbors"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.7609,
+        "recall": 0.7826,
+        "specificity": 0.7391,
+        "precision": 0.75
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "data_subset": "men",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: K-Nearest Neighbors"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8478,
+        "recall": 0.8261,
+        "specificity": 0.8696,
+        "precision": 0.8636
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "data_subset": "men",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: K-Nearest Neighbors"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9203,
+        "recall": 0.8696,
+        "specificity": 0.971,
+        "precision": 0.9677
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "data_subset": "men",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: K-Nearest Neighbors"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.7536,
+        "recall": 0.6522,
+        "specificity": 0.8551,
+        "precision": 0.8182
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "data_subset": "women",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Support Vector Machine"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.7235,
+        "recall": 0.8293,
+        "specificity": 0.7236,
+        "precision": 0.75
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Support Vector Machine"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.752,
+        "recall": 0.7886,
+        "specificity": 0.7154,
+        "precision": 0.7348
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Support Vector Machine"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.7398,
+        "recall": 0.7317,
+        "specificity": 0.748,
+        "precision": 0.7438
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Support Vector Machine"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8171,
+        "recall": 0.8862,
+        "specificity": 0.748,
+        "precision": 0.7786
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Random Forest"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.7561,
+        "recall": 0.7561,
+        "specificity": 0.7561,
+        "precision": 0.7561
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Random Forest"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8862,
+        "recall": 0.8862,
+        "specificity": 0.8862,
+        "precision": 0.8862
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Random Forest"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8252,
+        "recall": 0.8049,
+        "specificity": 0.8455,
+        "precision": 0.839
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Random Forest"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.7602,
+        "recall": 0.8049,
+        "specificity": 0.7154,
+        "precision": 0.7388
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Multilayer Perceptron"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8902,
+        "recall": 0.9106,
+        "specificity": 0.8699,
+        "precision": 0.875
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Multilayer Perceptron"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8333,
+        "recall": 0.8374,
+        "specificity": 0.8293,
+        "precision": 0.8306
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Multilayer Perceptron"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.7927,
+        "recall": 0.813,
+        "specificity": 0.7724,
+        "precision": 0.7813
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: Multilayer Perceptron"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.7846,
+        "recall": 0.7398,
+        "specificity": 0.8293,
+        "precision": 0.8125
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: K-Nearest Neighbors"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.7642,
+        "recall": 0.8049,
+        "specificity": 0.7236,
+        "precision": 0.7444
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: K-Nearest Neighbors"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.7602,
+        "recall": 0.7805,
+        "specificity": 0.7398,
+        "precision": 0.75
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: K-Nearest Neighbors"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.7967,
+        "recall": 0.8293,
+        "specificity": 0.7642,
+        "precision": 0.7786
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Undersampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Wrapper Feature Subset Selection: K-Nearest Neighbors"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.6911,
+        "recall": 0.8618,
+        "specificity": 0.5203,
+        "precision": 0.6424
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "study_id": "10.1016/j.bspc.2021.102415_1"
+}

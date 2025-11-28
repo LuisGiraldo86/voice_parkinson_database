@@ -1,0 +1,104 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c168938b"
+  },
+  "title": "Voice-Based SVM Model Reliability for Identifying Parkinson's Disease",
+  "authors": [
+    {
+      "name": "Nemuel D. Pah",
+      "affiliations": [
+        {
+          "institution": "University of Surabaya",
+          "country": "Indonesia"
+        },
+        {
+          "institution": "Royal Melbourne Institute of Technology",
+          "country": "Australia"
+        }
+      ]
+    },
+    {
+      "name": "Veronica Indrawati",
+      "affiliations": [
+        {
+          "institution": "University of Surabaya",
+          "country": "Indonesia"
+        }
+      ]
+    },
+    {
+      "name": "Dinesh K. Kumar",
+      "affiliations": [
+        {
+          "institution": "Royal Melbourne Institute of Technology",
+          "country": "Australia"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "IEEE Access",
+  "year": 2023,
+  "doi": "10.1109/ACCESS.2023.3344464",
+  "abstract": "One of the possibilities for developing non-invasive computerized diagnostic tools for Parkinson's disease (PD) is to detect changes in the voice, known as Parkinsonian dysarthria. Numerous classification models have been developed to diagnose PD based on voice features. However, the performance of models developed and trained only using voice features extracted from people with PD and healthy people might be affected when tested on individuals with other voice-related pathological conditions. Therefore, we investigated the reliability of voice-based machine-learning models that were developed only using datasets of people with PD and healthy people for accurately identifying people without PD when they have other voice-related pathological conditions (i.e. dysphonia and laryngitis). Three different support vector machines (SVMs) were developed and tested on voice features extracted from healthy people and those with PD, dysphonia, and laryngitis. The results confirmed that a voice-based SVM classifier only trained on the dataset of people with PD and healthy people was equally reliable in classifying other voice-related pathological conditions, such as dysphonia and laryngitis, as non-PD cases.",
+  "citescore": 9.8,
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine: Gaussian Kernel",
+      "framework": "",
+      "feature_extraction": [
+        "Praat"
+      ],
+      "feature_selection": {
+        "methods": [
+          "ReliefF"
+        ]
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.7783,
+        "recall": 0.94,
+        "selectivity": 73.33,
+        "f1_score": 0.6483
+      }
+    }
+  ],
+  "notes": "Model trained with PD cases and healthy subjects, while performance on three different test-sets: one with PD cases and healthy subjects; another with PD and subjects with dysphonia; and the last with PD and subjects with laryngitis. The statistics are from the aggregated results across these test sets.",
+  "source_dataset": [
+    {
+      "name": "PC-GITA",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://paperswithcode.com/dataset/pc-gita",
+      "doi": ""
+    },
+    {
+      "name": "Saarbrücken Voice Dataset",
+      "size": null,
+      "pd_patients": null,
+      "controls": 851,
+      "url": "https://stimmdb.coli.uni-saarland.de/",
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "PC-GITA",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://paperswithcode.com/dataset/pc-gita",
+      "doi": ""
+    },
+    {
+      "name": "Saarbrücken Voice Dataset",
+      "size": null,
+      "pd_patients": null,
+      "controls": 851,
+      "url": "https://stimmdb.coli.uni-saarland.de/",
+      "doi": null
+    }
+  ],
+  "study_id": "10.1109/ACCESS.2023.3344464_1"
+}

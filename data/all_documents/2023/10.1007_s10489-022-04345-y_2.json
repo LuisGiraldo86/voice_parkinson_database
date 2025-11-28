@@ -1,0 +1,115 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c1689388"
+  },
+  "title": "Envelope Multi-type Transformation Ensemble Algorithm of Parkinson Speech Samples",
+  "authors": [
+    {
+      "name": "Yongming Li",
+      "affiliations": [
+        {
+          "institution": "Chongqing University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Chengyu Liu",
+      "affiliations": [
+        {
+          "institution": "Chongqing University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Pin Wang",
+      "affiliations": [
+        {
+          "institution": "Chongqing University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Hehua Zhang",
+      "affiliations": [
+        {
+          "institution": "Army Medical University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Anhai Wei",
+      "affiliations": [
+        {
+          "institution": "Army Medical University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Yanling Zhang",
+      "affiliations": [
+        {
+          "institution": "Army Medical University",
+          "country": "China"
+        }
+      ]
+    }
+  ],
+  "journal": "Applied Intelligence",
+  "publication_type": "Journal",
+  "abstract": "In recent years, the study of machine learning-based speech recognition methods for Parkinson's disease has become a hot topic in recent years. However, existing related machine learning methods focus on feature learning and classifier design, with minute attention to sample optimization. Studies have shown that each subject often includes multiple corpus (segment samples, or samples) with different representational abilities and high redundancy, making it necessary to optimize the segment samples within each subject. To solve this problem, this paper proposes a multi-type transformation ensemble algorithm for PD speech samples based on a subject envelope (MTEA). The proposed algorithm takes the speech samples (segment samples) within a subject as an envelope and performs a multi-type transformation on the segment samples within the envelope to construct new segment samples. The quality of the sample transformation is improved by preserving the local structure and global structure information of the samples through the joint structure consistency mechanism (JSCM). In addition, a sparse weighted fusion mechanism is designed to fuse the results of multiple classifiers. Two representative public datasets and one self-collected dataset are used to evaluate the proposed model. Experimental results show that the proposed method is significantly more effective than the compared algorithms. Besides, the ablation experiments show that the multi-type transformation mechanism is effective. Based on this study, the multi-type transformation of PD speech samples will help improve the quality of the existing segment samples in PD speech data and thereby improve classification accuracy.",
+  "year": 2023,
+  "doi": "10.1007/s10489-022-04345-y",
+  "citescore": 6.6,
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "preprocessing": [
+        "Multi-Type Transformation Ensemble Algorithm"
+      ],
+      "results": {
+        "accuracy": 0.9414,
+        "recall": 0.9952,
+        "specificity": 0.8
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "preprocessing": [
+        "Multi-Type Transformation Ensemble Algorithm"
+      ],
+      "results": {
+        "accuracy": 0.9483,
+        "recall": 0.9762,
+        "specificity": 0.875
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1007/s10489-022-04345-y_2"
+}

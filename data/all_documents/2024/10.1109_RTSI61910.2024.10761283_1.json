@@ -1,0 +1,328 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c168935e"
+  },
+  "title": "Deep Neural Quantization for Speech Detection of Parkinson Disease",
+  "authors": [
+    {
+      "name": "Armin Mazinani",
+      "affiliations": [
+        {
+          "institution": "STMicroelectronics",
+          "country": "Italy"
+        },
+        {
+          "institution": "University of Parma",
+          "country": "Italy"
+        }
+      ]
+    },
+    {
+      "name": "Danilo Pietro Pau",
+      "affiliations": [
+        {
+          "institution": "STMicroelectronics",
+          "country": "Italy"
+        }
+      ]
+    },
+    {
+      "name": "Luca Davoli",
+      "affiliations": [
+        {
+          "institution": "University of Parma",
+          "country": "Italy"
+        }
+      ]
+    },
+    {
+      "name": "Gianluigi Ferrari",
+      "affiliations": [
+        {
+          "institution": "University of Parma",
+          "country": "Italy"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Conference",
+  "journal": "2024 IEEE 8th Forum on Research and Technologies for Society and Industry Innovation (RTSI)",
+  "year": 2024,
+  "doi": "10.1109/RTSI61910.2024.10761283",
+  "abstract": "Among all the diseases that nowadays people all around the world suffer, Parkinson's Disease is one of those neuro-degenerative disorders heavily impacting, and unfortunately expected to increase, the well-being of, especially, elderly individuals. Besides traditional medical treatments, timely and unobtrusive ways to accurately detect the onset of this disease can rely on Machine Learning (ML) and Deep Learning (DL) techniques, also because of their ability to efficiently extract information from multi-dimensional data on heterogeneous platforms (including, for instance, constrained Internet of Things devices). This paper presents an experimental performance evaluation of several floating point and quantized ML and DL models which can be deployed efficiently on a tiny micro-controller, namely a STM32U5 micro controller device (available in the STMicroelectronics device cloud). They have been applied to a public Italian voice speech dataset in order to classify the Parkinson Disease in three classes of patients. The experimental results demonstrate the applicability of Neural Network (NN)-based approaches for detecting the disease, as well as the deployability of traditional ML models on tiny resource-constrained devices, allowing a substantial flash memory usage reduction (when compared to non-quantized models) while keeping relatively high accuracy.",
+  "ml_approaches": [
+    {
+      "algorithm": "AdaBoost",
+      "framework": "Python",
+      "feature_extraction": [
+        "Mel Frequency Cepstral Coefficients"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9257,
+        "precision": 0.9176,
+        "recall": 0.9285,
+        "f1_score": 0.9229999999999999,
+        "auc": 0.9833
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "framework": "Python",
+      "feature_extraction": [
+        "Mel Frequency Cepstral Coefficients"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8628,
+        "precision": 0.8571,
+        "recall": 0.8571,
+        "f1_score": 0.8571,
+        "auc": 0.8576
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "Python",
+      "feature_extraction": [
+        "Mel Frequency Cepstral Coefficients"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8914,
+        "precision": 0.9717,
+        "recall": 0.7961,
+        "f1_score": 0.8758,
+        "auc": 0.965
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "Python",
+      "feature_extraction": [
+        "Mel Frequency Cepstral Coefficients"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9428,
+        "precision": 0.9302,
+        "recall": 0.9523,
+        "f1_score": 0.9411,
+        "auc": 0.9827
+      }
+    },
+    {
+      "algorithm": "LSTM",
+      "framework": "Python",
+      "feature_extraction": [
+        "Mel Frequency Cepstral Coefficients"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8742,
+        "precision": 0.81,
+        "recall": 0.9642,
+        "f1_score": 0.8804000000000001,
+        "auc": 0.948
+      }
+    },
+    {
+      "algorithm": "Convolutional Neural Network",
+      "framework": "Python",
+      "feature_extraction": [
+        "Mel Frequency Cepstral Coefficients"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9657,
+        "precision": 1,
+        "recall": 0.9285,
+        "f1_score": 0.9629000000000001,
+        "auc": 0.9869
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "Python",
+      "feature_extraction": [
+        "Mel Frequency Cepstral Coefficients"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9257,
+        "precision": 0.9382,
+        "recall": 0.9047,
+        "f1_score": 0.9212,
+        "auc": 0.9774
+      }
+    },
+    {
+      "algorithm": "Gated Recurrent Unit",
+      "framework": "Python",
+      "feature_extraction": [
+        "Mel Frequency Cepstral Coefficients"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9142,
+        "precision": 0.9058,
+        "recall": 0.9166,
+        "f1_score": 0.9112,
+        "auc": 0.9631
+      }
+    },
+    {
+      "algorithm": "Legendre Memory Unit",
+      "framework": "Python",
+      "feature_extraction": [
+        "Mel Frequency Cepstral Coefficients"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8971,
+        "precision": 0.9125,
+        "recall": 0.869,
+        "f1_score": 0.8902,
+        "auc": 0.9625
+      }
+    },
+    {
+      "algorithm": "Temporal Convolutional Network",
+      "framework": "Python",
+      "feature_extraction": [
+        "Mel Frequency Cepstral Coefficients"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8228,
+        "precision": 0.7849,
+        "recall": 0.869,
+        "f1_score": 0.8248000000000001,
+        "auc": 0.8767
+      }
+    },
+    {
+      "algorithm": "Quantized Convolutional Neural Network",
+      "framework": "Python",
+      "feature_extraction": [
+        "Mel Frequency Cepstral Coefficients"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9028,
+        "precision": 0.8681,
+        "recall": 0.9404,
+        "f1_score": 0.9028,
+        "auc": 0.9675
+      }
+    },
+    {
+      "algorithm": "Quantized Multilayer Perceptron",
+      "framework": "Python",
+      "feature_extraction": [
+        "Mel Frequency Cepstral Coefficients"
+      ],
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8285,
+        "precision": 0.8292,
+        "recall": 0.8095,
+        "f1_score": 0.8192,
+        "auc": 0.9272
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Italian Parkinson's Voice and Speech",
+      "size": 65,
+      "pd_patients": 28,
+      "controls": 37,
+      "url": "https://ieee-dataport.org/open-access/italian-parkinsons-voice-and-speech",
+      "doi": "10.21227/aw6b-tg17"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Italian Parkinson's Voice and Speech",
+      "size": 65,
+      "pd_patients": 28,
+      "controls": 37,
+      "url": "https://ieee-dataport.org/open-access/italian-parkinsons-voice-and-speech",
+      "doi": "10.21227/aw6b-tg17"
+    }
+  ],
+  "study_id": "10.1109/RTSI61910.2024.10761283_1"
+}

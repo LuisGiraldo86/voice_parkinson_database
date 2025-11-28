@@ -1,0 +1,261 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893e0"
+  },
+  "title": "Exploring Essential Acoustic Features for Early Parkinson's Disease Classification: A Machine Learning Study",
+  "authors": [
+    {
+      "name": "Daniel Hilário da Silva",
+      "affiliations": [
+        {
+          "institution": "nstituto Federal de Educação Ciência e Tecnologia Goiano",
+          "country": "Brazil"
+        }
+      ]
+    },
+    {
+      "name": "Caio Tonus Ribeiro",
+      "affiliations": [
+        {
+          "institution": "Universidade Federal de Uberlândia",
+          "country": "Brazil"
+        }
+      ]
+    },
+    {
+      "name": "Leandro Rodrigues da Silva Souza",
+      "affiliations": [
+        {
+          "institution": "nstituto Federal de Educação Ciência e Tecnologia Goiano",
+          "country": "Brazil"
+        }
+      ]
+    },
+    {
+      "name": "José Renato Munari Nardo",
+      "affiliations": [
+        {
+          "institution": "Universidade Federal de Uberlândia",
+          "country": "Brazil"
+        }
+      ]
+    },
+    {
+      "name": "Adriano Alves Pereira",
+      "affiliations": [
+        {
+          "institution": "Universidade Federal de Uberlândia",
+          "country": "Brazil"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "International Journal of Online and Biomedical Engineering",
+  "year": 2025,
+  "doi": "10.3991/ijoe.v21i02.50503",
+  "abstract": "Parkinson's disease (PD) is a neurological condition that affects approximately 10 million individuals globally and is ranked as the second most prevalent neurodegenerative condition after Alzheimer's disease. Vocal disorders can be identified in approximately 90% of PD patients in the early stages of the disease. In this study, 19 machine learning (ML) algorithms were applied to a database of voice recordings of healthy individuals and individuals with PD obtained from a public repository. Different feature selection (FS) and hyperparameter optimization techniques were applied to all models for training, testing, and validation data. Among the ML algorithms, support vector machine with radial kernel, Naïve Bayes (NB), and Gaussian process classifier (GPC) yielded promising results when considering all features. Linear discriminant analysis, K neighbors classifier (KNN), extra trees classifier, GPC, and NB demonstrated excellent performance on the testing data after employing FS techniques. Decision tree classifier, KNN, and GPC emerged as the top performers when applied to the validation dataset. Our findings, derived from an extensive and chronological review of studies utilizing the same dataset, which surpass previous benchmarks, provide a comprehensive understanding of ML's application in voice analysis to support accurate clinical decision-making.",
+  "ml_approaches": [
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.8889
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.8889
+      }
+    },
+    {
+      "algorithm": "Extra Trees",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.8889
+      }
+    },
+    {
+      "algorithm": "Gaussian Process",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.8667
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.8667
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.8667
+      }
+    },
+    {
+      "algorithm": "Linear Discriminant Analysis",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Pearson Correlation"
+        ]
+      },
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.9333
+      }
+    },
+    {
+      "algorithm": "Gaussian Process",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Pearson Correlation"
+        ]
+      },
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.9111
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Pearson Correlation"
+        ]
+      },
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.9111
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Pearson Correlation"
+        ]
+      },
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.9111
+      }
+    },
+    {
+      "algorithm": "Ridge",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Pearson Correlation"
+        ]
+      },
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.9111
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "scaling": [
+        "Standardization"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Pearson Correlation"
+        ]
+      },
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.8889
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson Dataset with replicated acoustic features",
+      "size": 80,
+      "pd_patients": 40,
+      "controls": 40,
+      "url": "https://archive.ics.uci.edu/dataset/489/parkinson+dataset+with+replicated+acoustic+features",
+      "doi": "10.24432/C5701F"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson Dataset with replicated acoustic features",
+      "size": 80,
+      "pd_patients": 40,
+      "controls": 40,
+      "url": "https://archive.ics.uci.edu/dataset/489/parkinson+dataset+with+replicated+acoustic+features",
+      "doi": "10.24432/C5701F"
+    }
+  ],
+  "study_id": "10.3991/ijoe.v21i02.50503_1"
+}

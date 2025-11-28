@@ -1,0 +1,183 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c168941f"
+  },
+  "title": "A Comparative Study of Kernel-based Vector Machines with Probabilistic Outputs for Medical Diagnosis",
+  "authors": [
+    {
+      "name": "Xusheng Qian",
+      "affiliations": [
+        {
+          "institution": "University of Science and Technology of China",
+          "country": "China"
+        },
+        {
+          "institution": "Chinese Academy of Sciences",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Zhiyong Zhou",
+      "affiliations": [
+        {
+          "institution": "Chinese Academy of Sciences",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Jisu Hu",
+      "affiliations": [
+        {
+          "institution": "University of Science and Technology of China",
+          "country": "China"
+        },
+        {
+          "institution": "Chinese Academy of Sciences",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Jianbing Zhu",
+      "affiliations": [
+        {
+          "institution": "Suzhou Science and Technology Town Hospital",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "He Huang",
+      "affiliations": [
+        {
+          "institution": "Soochow University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Yakang Dai",
+      "affiliations": [
+        {
+          "institution": "Chinese Academy of Sciences",
+          "country": "China"
+        },
+        {
+          "institution": "Jinan Guoke Medical Engineering Technology Development",
+          "country": "China"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Biocybernetics and Biomedical Engineering",
+  "year": 2021,
+  "doi": "10.1016/j.bbe.2021.09.003",
+  "abstract": "n this paper, support vector machines (SVMs), least squares SVMs (LSSVMs), relevance vector machines (RVMs), and probabilistic classification vector machines (PCVMs), are compared on sixteen binary and multiclass medical datasets. Particular emphasis is put on the comparison among the commonly used Gaussian radial basis function (GRBF) kernel, and the relatively new generalized min-max (GMM) kernel and exponentiated-GMM (eGMM) kernel. Since most medical decisions involve uncertainty, a postprocessing approach based on Platt's method and pairwise coupling is employed to produce probabilistic outputs for prediction uncertainty assessment. The extensive empirical study illustrates that the SVM classifier using the tuning-free GMM kernel (SVM-GMM) shows good usability and broad applicability, and exhibits competitive performance against some state-of-the-art methods. These results indicate that SVM-GMM can be used as the first-choice method when selecting an appropriate kernel-based vector machine for medical diagnosis. As an illustration, SVM-GMM efficiently achieves a high accuracy of 98.92% on the thyroid disease dataset consisting of 7200 samples.",
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "MATLAB R2015a",
+      "validation": null,
+      "results": {
+        "accuracy": 0.8977,
+        "auc": 0.9373999999999999
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Generalized Min-Max",
+      "framework": "MATLAB R2015a",
+      "validation": null,
+      "results": {
+        "accuracy": 0.9167,
+        "auc": 0.9637
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: exponentiated Generalized Min-Max",
+      "framework": "MATLAB R2015a",
+      "validation": null,
+      "results": {
+        "accuracy": 0.9093,
+        "auc": 0.9586
+      }
+    },
+    {
+      "algorithm": "Robust Least Squares Support Vector Machine: RBF",
+      "framework": "MATLAB R2015a",
+      "validation": null,
+      "results": {
+        "accuracy": 0.8435,
+        "auc": 0.7844
+      }
+    },
+    {
+      "algorithm": "Robust Least Squares Support Vector Machine: Generalized Min-Max",
+      "framework": "MATLAB R2015a",
+      "validation": null,
+      "results": {
+        "accuracy": 0.828,
+        "auc": 0.8341
+      }
+    },
+    {
+      "algorithm": "Robust Least Squares Support Vector Machine: exponentiated Generalized Min-Max",
+      "framework": "MATLAB R2015a",
+      "validation": null,
+      "results": {
+        "accuracy": 0.8142,
+        "auc": 0.8326
+      }
+    },
+    {
+      "algorithm": "Multiclass Relevance Vector Machine: RBF",
+      "framework": "MATLAB R2015a",
+      "validation": null,
+      "results": {
+        "accuracy": 0.832,
+        "auc": 0.8511
+      }
+    },
+    {
+      "algorithm": "Multiclass Relevance Vector Machine: Generalized Min-Max",
+      "framework": "MATLAB R2015a",
+      "validation": null,
+      "results": {
+        "accuracy": 0.8313,
+        "auc": 0.8784000000000001
+      }
+    },
+    {
+      "algorithm": "Multiclass Relevance Vector Machine: exponentiated Generalized Min-Max",
+      "framework": "MATLAB R2015a",
+      "validation": null,
+      "results": {
+        "accuracy": 0.8416,
+        "auc": 0.8841
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1016/j.bbe.2021.09.003_1"
+}

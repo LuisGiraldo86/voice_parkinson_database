@@ -1,0 +1,197 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893ce"
+  },
+  "title": "Automated Early Prediction of Parkinson's Disease Based on Artificial Intelligent Techniques",
+  "authors": [
+    {
+      "name": "Shereen A. Bakry",
+      "affiliations": [
+        {
+          "institution": "Minia University",
+          "country": "Egypt"
+        }
+      ]
+    },
+    {
+      "name": "Nourelhoda M. Mahmoud",
+      "affiliations": [
+        {
+          "institution": "Minia University",
+          "country": "Egypt"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Arabian Journal for Science and Engineering",
+  "year": 2025,
+  "doi": "10.1007/s13369-025-10358-9",
+  "abstract": "Parkinson's disease (PD) is one of the most prevalent neurodegenerative disorders, with a sharp increase predicted. Classifying and predicting PD at an early stage is crucial. Application of artiﬁcial intelligence (AI) is a signiﬁcant factor in the diagnosis of various disorders. Based on patient data, machine learning (ML) and deep learning (DL) can automatically predict PD. This research aims to develop an automated approach for early PD prediction based on vocal symptoms and AI techniques. To forecast PD, speciﬁc AI models have been implemented. Extreme gradient boosting (XGB or XGBoost), artiﬁcial neural networks (ANN), Naive Bayes (NB), K-nearest neighbor (KNN), multilayer perceptron (MLP), logistic regression (LR), support vector machine (SVM), and ridge classiﬁer with cross-validation (RidgeCV) were among the AI models used. The dataset was subjected to various data preprocessing approaches, such as Min-Max scaling and synthetic minority oversampling technique (SMOTE). Sensitivity, accuracy, F1-score, precision, speciﬁcity, and the area under the receiver operating characteristic (ROC) curve (AUC) were among the evaluation measures used to assess the effectiveness of the implemented AI system. The results demonstrated that, with 98% accuracy, 97% precision, 100% sensitivity, 98% F1-score, 97% speciﬁcity, and 100% AUC, the XGB model utilizing SMOTE approach achieved the best results. With the proposed approach, patients can forecast their PD early. The proposed work contributes signiﬁcantly to the ﬁeld of neurodegenerative disease research by demonstrating the effectiveness of AI techniques in early PD prediction, which can have profound implications for patient care and treatment strategies.",
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine",
+      "scaling": [
+        "Min Max"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.95,
+        "precision": 1,
+        "recall": 0.9,
+        "f1_score": 0.95,
+        "specificity": 1,
+        "auc": 1
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "scaling": [
+        "Min Max"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.97,
+        "precision": 0.97,
+        "recall": 0.97,
+        "f1_score": 0.97,
+        "specificity": 0.97,
+        "auc": 1
+      }
+    },
+    {
+      "algorithm": "Artificial Neural Network",
+      "scaling": [
+        "Min Max"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.95,
+        "precision": 1,
+        "recall": 0.9,
+        "f1_score": 0.95,
+        "specificity": 1,
+        "auc": 0.98
+      }
+    },
+    {
+      "algorithm": "Ridge Regression",
+      "scaling": [
+        "Min Max"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.9,
+        "precision": 0.9,
+        "recall": 0.9,
+        "f1_score": 0.9,
+        "specificity": 0.9,
+        "auc": 0.95
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "scaling": [
+        "Min Max"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.85,
+        "precision": 0.86,
+        "recall": 0.83,
+        "f1_score": 0.84,
+        "specificity": 0.87,
+        "auc": 0.95
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "scaling": [
+        "Min Max"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.86,
+        "precision": 1,
+        "recall": 0.72,
+        "f1_score": 0.84,
+        "specificity": 1,
+        "auc": 0.97
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "scaling": [
+        "Min Max"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "results": {
+        "accuracy": 0.98,
+        "precision": 0.97,
+        "recall": 1,
+        "f1_score": 0.98,
+        "specificity": 0.97,
+        "auc": 1
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "scaling": [
+        "Min Max"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.97,
+        "precision": 1,
+        "recall": 0.93,
+        "f1_score": 0.96,
+        "specificity": 1,
+        "auc": 0.99
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1007/s13369-025-10358-9_1"
+}

@@ -1,0 +1,64 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c168937b"
+  },
+  "title": "An adaptive intelligent diagnostic system to predict early stage of parkinson's disease using two-stage dimension reduction with genetically optimized lightgbm algorithm",
+  "authors": [
+    {
+      "name": "Joy Dhar",
+      "affiliations": [
+        {
+          "institution": "Hatgobindapur M. C. High School",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Neural Computing and Applications",
+  "year": 2022,
+  "doi": "10.1007/s00521-021-06612-4",
+  "abstract": "Parkinson's disease is one of the most prevalent neurodegenerative sicknesses distinguished by motor function impairment. Parkinson's disease (PD) diagnosis is a complicated job that demands the evaluation of numerous non-motor and motor signs. Throughout the analysis of vocal or speech abnormalities are notable indications that doctors should think. Early diagnosis of PD is essential for preliminary treatment and assisting the doctor to heal and evade the PD's spread in other brain cells and save several lives. So, this study introduces an adaptive expert diagnostic system to predict PD accurately. This suggested system proposes a hybrid methodology: two-stage mutual information and autoencoder-based dimensionality reduction approach with genetically optimized LightGBM (MI-AE-GOLGBM) algorithm, to improve the proposed system's performance and predict the best outcomes. The proposed MI-AE-GOLGBM approach comprises four methodologies: mutual information, autoencoder, genetic algorithm, and LightGBM algorithm, in which mutual information and autoencoder are implemented to form a two-stage dimensionality reduction approach for selecting the informative features from the input dataset and hence producing a reduced dataset with the most significant newly generated features, and genetic algorithm is employed to intelligently optimize the hyperparameters of LightGBM algorithm in which LightGBM algorithm utilizes such newly generated features and the best-optimized hyperparameters provided by the two-stage mutual information and autoencoder-based dimension reduction methods and the genetic algorithm, respectively, to which to classify the PD sufferers and healthy controls and enhance the precision value and reliability of the proposed system. Four different real-world publicly available Parkinson's disease datasets are employed in this proposed research to assess and verify the proposed methodology's performance. This proposed research utilizes different machine learning (ML) algorithms to compare our proposed approach's performance. The outcomes reveal that the proposed methodology can produce the best predictions based on voice data relating to the PD compared to the different ML algorithms.",
+  "citescore": 10,
+  "ml_approaches": [
+    {
+      "algorithm": "LightGBM",
+      "optimization": "Genetic Algorithm",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Mutual Information"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "auc": 0.9363,
+        "accuracy": 0.8769,
+        "precision": 0.8765,
+        "recall": 0.9733,
+        "f1_score": 0.9221
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "study_id": "10.1007/s00521-021-06612-4_1"
+}

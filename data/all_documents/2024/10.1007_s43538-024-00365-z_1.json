@@ -1,0 +1,77 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893a3"
+  },
+  "title": "A Novel Stacked Ensemble Classifier for Parkinson's Disease Classification Using Voice Features",
+  "authors": [
+    {
+      "name": "P. Deepa",
+      "affiliations": [
+        {
+          "institution": "Saveetha Institute of Medical and Technical Sciences",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Rashmita Khilar",
+      "affiliations": [
+        {
+          "institution": "Saveetha Institute of Medical and Technical Sciences",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Proceedings of the Indian National Science Academy",
+  "year": 2024,
+  "doi": "10.1007/s43538-024-00365-z",
+  "abstract": "Human brain is the control center of the entire body and can be affected by different diseases. These diseases are categorized into various types like trauma, seizures, tumors, infection, and stroke. Parkinson's is a type of neurological disorder that creates unintentional activities, such like shaking, stiffness, and difficulty with balance and coordination. In this work, the Parkinson's patient data have been classified using an ensemble machine learning approach. The data is taken from the UCI machine learning repository that consists of 252 samples. For the classification purpose, a deep stacked ensemble classification model is used, that consist of four base classifiers as deep neural network (DNN). The output of the base classifier is again considered as the input to the Meta classifier. The performance is then verified with two different types of Meta classifiers such as support vector machine (SVM) and gradient boosting. Again the accuracy of the gradient boosting Meta classifier is compared with variation of learning rate. From the result, it is observed that 98.21% classification accuracy is achieved using the modified gradient boosting Meta classifier with the stacked model.",
+  "citescore": 2.7,
+  "ml_approaches": [
+    {
+      "algorithm": "Stacking Ensemble (Base: Multilayer Perceptron, Multilayer Perceptron, Multilayer Perceptron, Multilayer Perceptron; Meta: Support Vector Machine)",
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9821,
+        "precision": 1,
+        "recall": 0.9714,
+        "f1_score": 0.9854999999999999,
+        "specificity": 1
+      }
+    },
+    {
+      "algorithm": "Stacking Ensemble (Base: Multilayer Perceptron, Multilayer Perceptron, Multilayer Perceptron, Multilayer Perceptron; Meta: XGBoost)",
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 1,
+        "precision": 1,
+        "recall": 1,
+        "f1_score": 1,
+        "specificity": 1
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "study_id": "10.1007/s43538-024-00365-z_1"
+}

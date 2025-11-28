@@ -1,0 +1,138 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893b1"
+  },
+  "title": "Transfer learning helps to improve the accuracy to classify patients with different speech disorders in different languages",
+  "authors": [
+    {
+      "name": "Juan Camilo Vásquez-Correa ",
+      "affiliations": [
+        {
+          "institution": "Friedrich-Alexander Universität Erlangen-Nürnberg",
+          "country": "Germany"
+        },
+        {
+          "institution": "Universidad de Antioquia",
+          "country": "Colombia"
+        }
+      ]
+    },
+    {
+      "name": " Cristian David Rios-Urrego",
+      "affiliations": [
+        {
+          "institution": "Universidad de Antioquia",
+          "country": "Colombia"
+        }
+      ]
+    },
+    {
+      "name": "Tomás Arias-Vergara",
+      "affiliations": [
+        {
+          "institution": "Friedrich-Alexander Universität Erlangen-Nürnberg",
+          "country": "Germany"
+        },
+        {
+          "institution": "Universidad de Antioquia",
+          "country": "Colombia"
+        },
+        {
+          "institution": "Ludwig-Maximilians Universität München",
+          "country": "Germany"
+        }
+      ]
+    },
+    {
+      "name": "Maria Schuster",
+      "affiliations": [
+        {
+          "institution": "Ludwig-Maximilians Universität München",
+          "country": "Germany"
+        }
+      ]
+    },
+    {
+      "name": "Jan Rusz",
+      "affiliations": [
+        {
+          "institution": "Czech Technical University in Prague",
+          "country": "Czech Republic"
+        }
+      ]
+    },
+    {
+      "name": "Elmar Nöth",
+      "affiliations": [
+        {
+          "institution": "Friedrich-Alexander Universität Erlangen-Nürnberg",
+          "country": "Germany"
+        }
+      ]
+    },
+    {
+      "name": "Juan Rafael Orozco-Arroyave",
+      "affiliations": [
+        {
+          "institution": "Friedrich-Alexander Universität Erlangen-Nürnberg",
+          "country": "Germany"
+        },
+        {
+          "institution": "Universidad de Antioquia",
+          "country": "Colombia"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Pattern Recognition Letters",
+  "year": 2021,
+  "doi": "10.1016/j.patrec.2021.04.011",
+  "abstract": "Patients suffering from neurodegenerative disorders such as Parkinson's or Huntington's disease exhibit speech impairments that affect their communication capabilities. The automatic assessment of the speech of the patients allows to develop computer aided tools to support the diagnosis and to evaluate the disease severity, which helps clinicians to make timely decisions about the treatment of the patients. This paper extends our previous studies about methods to classify patients with neurodegenerative diseases from speech. The proposed approach considers convolutional neural networks trained with time frequency representations and a transfer learning strategy to classify different speech impairments in patients that are native of different languages. The transfer learning schemes aim to improve the accuracy of the models when the weights of a neural network are initialized with utterances from a different corpus than the one used for the test set. The proposed methodology is evaluated with speech data from Parkinson's disease patients, who are Spanish, German, and Czech native speakers, Huntington's disease patients, who are Czech native speakers, and English native speakers affected by laryngeal impairments. We performed experiments in two scenarios: (1) transfer learning among languages, where a base model is transferred to classify patients with the same disease, but who speak a different language, and (2) transfer learning among diseases, where the base model is transferred to a corpus from patients with a different disease. The results suggest that the transfer learning schemes improve the accuracy in the target corpus only when the base model is accurate enough to transfer the knowledge to the target corpus. This behavior is observed in different scenarios of both transfer learning among languages and diseases.",
+  "target_dataset": [
+    {
+      "name": "Knappschaftskrankenhaus Bochum",
+      "size": 176,
+      "pd_patients": 88,
+      "controls": 88,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "ml_approaches": [
+    {
+      "algorithm": "Convolutional Neural Network",
+      "optimization": "Adam",
+      "feature_extraction": [
+        "Short-Time Fourier Transform",
+        "Spectrogram"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.737,
+        "specificity": 0.8290000000000001,
+        "recall": 0.644,
+        "auc": 0.81
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Czech Parkinson's Disease Dataset",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": null,
+      "doi": null
+    },
+    {
+      "name": "PC-GITA",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://paperswithcode.com/dataset/pc-gita",
+      "doi": ""
+    }
+  ],
+  "study_id": "10.1016/j.patrec.2021.04.011_6"
+}

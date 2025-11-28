@@ -1,0 +1,70 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c1689401"
+  },
+  "title": "Proposing a new approach based on convolutional neural networks and random forest for the diagnosis of Parkinson's disease from speech signals",
+  "authors": [
+    {
+      "name": "Gaffari Celik",
+      "affiliations": [
+        {
+          "institution": "Agri Ibrahim Cecen University",
+          "country": "Turkey"
+        }
+      ]
+    },
+    {
+      "name": "Erdal Başaran",
+      "affiliations": [
+        {
+          "institution": "Agri Ibrahim Cecen University",
+          "country": "Turkey"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Applied Acoustics",
+  "year": 2023,
+  "doi": "10.1016/j.apacoust.2023.109476",
+  "abstract": "Parkinson which occurs because of affected motor system by central nervous system is a neurodegenerative disease which is often seen in community. This disease, which is frequently seen especially in the elderly, brings problems such as speech disorders in patients. It is seen that with the rapidly developing deep learning and machine learning methods in recent years, it is possible to distinguish speech disorders in PD patients at a high rate and quickly. In this study, PD diagnosis was performed using datasets containing voice signals of healthy individuals and PD patients (PD_Dataset and PDO_Dataset). Current convolutional neural networks (CNN) and machine learning (ML) algorithms for PD diagnosis have been examined and a comparative performance analysis has been made. In addition, a different method called SkipConNet + RF based on CNN and random forest (RF) has been proposed for PD diagnosis. With the proposed SkipConNet, important features were obtained from the speech signals; then, the estimation process was performed using the RF algorithm. The proposed method provided an improvement between 3% and 17.19% in the performance of RF algorithms. In addition, the SkipConNet + RF method showed the highest success with 99.11% accuracy in the PD_Dataset dataset and 98.30% in the PDO_Dataset dataset.",
+  "ml_approaches": [
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_extraction": [
+        "Convolutional Neural Network"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.983,
+        "precision": 0.99,
+        "recall": 0.96,
+        "f1_score": 0.97,
+        "specificity": 0.9582999999999999,
+        "auc": 0.9582999999999999
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1016/j.apacoust.2023.109476_1"
+}

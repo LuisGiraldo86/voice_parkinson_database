@@ -1,0 +1,190 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c1689351"
+  },
+  "title": "Automatic Parkinson's disease detection from speech: Layer selection vs adaptation of foundation models",
+  "authors": [
+    {
+      "name": "Tilak Purohit",
+      "affiliations": [
+        {
+          "institution": "Ecole polytechnique fédérale de Lausanne",
+          "country": "Switzerland"
+        },
+        {
+          "institution": "Idiap Research Institute",
+          "country": "Switzerland"
+        }
+      ]
+    },
+    {
+      "name": "Barbara Ruvolo",
+      "affiliations": [
+        {
+          "institution": "Idiap Research Institute",
+          "country": "Switzerland"
+        }
+      ]
+    },
+    {
+      "name": "Juan Rafael Orozco-Arroyave",
+      "affiliations": [
+        {
+          "institution": "Universidad de Antioquia",
+          "country": "Colombia"
+        }
+      ]
+    },
+    {
+      "name": " Mathew Magimai.-Doss",
+      "affiliations": [
+        {
+          "institution": "Idiap Research Institute",
+          "country": "Switzerland"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Conference",
+  "journal": "2025 IEEE International Conference on Acoustics, Speech and Signal Processing",
+  "year": 2025,
+  "doi": "10.1109/ICASSP49660.2025.10890852",
+  "abstract": "In this work, we investigate Speech Foundation Models (SFMs) for Parkinson's Disease (PD) detection. We explore two main approaches: (1) using SFMs as frozen feature extractors and, (2) fine-tuning/adapting SFMs for PD detection. We propose a cross-validation-based layer selection methodology to identify the layer effective for PD detection. Additionally, we compare the performance of the layer selection scheme with full fine-tuning and, parameter-efficient fine-tuning (PEFT) using Low-Rank Adaptation (LoRA). Our results show that layer selection and LoRA-based fine-tuning can perform on par with full fine-tuning, providing a more parameter-efficient alternative. The highest accuracy was achieved by fine-tuning Whisper using LoRA.",
+  "ml_approaches": [
+    {
+      "algorithm": "Wav2Vec2",
+      "framework": "",
+      "feature_extraction": [
+        "Wav2Vec2"
+      ],
+      "fine_tuning": {
+        "methods": [
+          "Cross-validation layer selection"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8354,
+        "f1_score": 0.8373,
+        "recall": 0.8472,
+        "specificity": 0.8236
+      }
+    },
+    {
+      "algorithm": "XLSR",
+      "framework": "",
+      "feature_extraction": [
+        "XLSR"
+      ],
+      "fine_tuning": {
+        "methods": [
+          "Cross-validation layer selection"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8372,
+        "f1_score": 0.8412000000000001,
+        "recall": 0.8612,
+        "specificity": 0.8127
+      }
+    },
+    {
+      "algorithm": "Whisper-small",
+      "framework": "",
+      "feature_extraction": [
+        "Whisper-small"
+      ],
+      "fine_tuning": {
+        "methods": [
+          "Cross-validation layer selection"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8109,
+        "f1_score": 0.8193,
+        "recall": 0.86,
+        "specificity": 0.7618
+      }
+    },
+    {
+      "algorithm": "Wav2Vec2",
+      "framework": "",
+      "feature_extraction": [
+        "Wav2Vec2"
+      ],
+      "fine_tuning": {
+        "methods": [
+          "Low-Rank Adaptation"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8309,
+        "f1_score": 0.8306,
+        "recall": 0.8381,
+        "specificity": 0.8236
+      }
+    },
+    {
+      "algorithm": "XLSR",
+      "framework": "",
+      "feature_extraction": [
+        "XLSR"
+      ],
+      "fine_tuning": {
+        "methods": [
+          "Low-Rank Adaptation"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.8309,
+        "f1_score": 0.833,
+        "recall": 0.849,
+        "specificity": 0.8127
+      }
+    },
+    {
+      "algorithm": "Whisper-small",
+      "framework": "",
+      "feature_extraction": [
+        "Whisper-small"
+      ],
+      "fine_tuning": {
+        "methods": [
+          "Low-Rank Adaptation"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.85,
+        "f1_score": 0.8534,
+        "recall": 0.8636,
+        "specificity": 0.8362999999999999
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "PC-GITA",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://paperswithcode.com/dataset/pc-gita",
+      "doi": ""
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "PC-GITA",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://paperswithcode.com/dataset/pc-gita",
+      "doi": ""
+    }
+  ],
+  "study_id": "10.1109/ICASSP49660.2025.10890852_1"
+}

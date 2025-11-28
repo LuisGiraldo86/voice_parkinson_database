@@ -1,0 +1,71 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893a2"
+  },
+  "title": "Parkinson Classification Neural Network with MASS Algorithm for Processing Speech Signals",
+  "authors": [
+    {
+      "name": "B. Akila",
+      "affiliations": [
+        {
+          "institution": "Anna University",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "J. Jesu Vedha Nayahi",
+      "affiliations": [
+        {
+          "institution": "Anna University",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Neural Computing and Applications",
+  "year": 2024,
+  "doi": "10.1007/s00521-024-09596-z",
+  "abstract": "Parkinson's disease (PD) is a condition that degenerates over time and impairs speech and pronunciation because brain cells have died. This research work aims to predict parkinson disease using the voice features extracted from speech signals recorded from PD individuals with dysphonic speech disorders by employing deep learning algorithms. PD is challenging to diagnose early on in the clinical presentation. To address the issue in machine learning methods, this paper proposes a neural network model by processing speech signals to classify PD using the University of California Irvine (UCI) machine learning repository dataset. Initially, a pre-loss reduction module is created by using pre-sampling to make the dataset balanced by reducing the dimensionality and maintaining the size of the space without influencing the learning process for data preparation. The relevant features are derived using a novel multi-agent salp swarm (MASS) algorithm, and a novel Parkinson classification neural network (PCNN) is proposed to classify Parkinson's patients with high accuracy employing these derived features. The result shows that the models that use MASS-PCNN produce higher classification accuracy of 99.1%, precision of 97.8%, recall of 94.7% and F1-score of 0.995 when paralleled to the existing models. As an outcome, the suggested model will perform superior to common convolutional neural networks.",
+  "citescore": 11.7,
+  "ml_approaches": [
+    {
+      "algorithm": "Convolutional Neural Network",
+      "framework": "",
+      "imbalance_handling": [
+        "Random Oversampling"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Multi-Agent Salp Swarm (MASS)"
+        ]
+      },
+      "results": {
+        "accuracy": 0.991,
+        "f1_score": 0.995
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1007/s00521-024-09596-z_1"
+}

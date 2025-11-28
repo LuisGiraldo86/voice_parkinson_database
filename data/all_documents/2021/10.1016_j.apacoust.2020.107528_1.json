@@ -1,0 +1,93 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c1689424"
+  },
+  "title": "The Detection of Parkinson Disease Using the Genetic Algorithm and SVM Classifier",
+  "authors": [
+    {
+      "name": "Zayrit Soumaya",
+      "affiliations": [
+        {
+          "institution": "University Hassan II",
+          "country": "Morocco"
+        }
+      ]
+    },
+    {
+      "name": "Zayrit Soumaya",
+      "affiliations": [
+        {
+          "institution": "University Hassan II",
+          "country": "Morocco"
+        }
+      ]
+    },
+    {
+      "name": "Nsiri Benayad",
+      "affiliations": [
+        {
+          "institution": "Mohammed V University",
+          "country": "Morocco"
+        }
+      ]
+    },
+    {
+      "name": "Korkmaz Yunus",
+      "affiliations": [
+        {
+          "institution": "Dicle University",
+          "country": "Turkey"
+        }
+      ]
+    },
+    {
+      "name": "Ammoumou Abdelkrim",
+      "affiliations": [
+        {
+          "institution": "University Hassan II",
+          "country": "Morocco"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Applied Acoustics",
+  "year": 2021,
+  "doi": "10.1016/j.apacoust.2020.107528",
+  "abstract": "The speech signal is like the black box of human beings where much information is hidden. The treatment of this signal provides us with the speaker's identity. In a way, it is similar to an identity card. Moreover, some neurologic diseases such as Alzheimer, depression, and Parkinson are detected based on the features extraction from the speech signals. In our study, we have recourse to the evolutionary algorithms such as the genetic algorithm GA, which is most commonly used in the making of a decision. The genetic algorithm intervenes with the Support vector machine SVM algorithm. This algorithm is a supervised machine learning that can be employed to design models defining important data classes, where class characteristics are involved in the construction of the classifier. In this article, a model of classification is proposed by the use of a discrete wavelet transform DWT to transform the signal. A Linear predictive coding LPC, energy, zero-crossing rate ZCR, Mel frequency cepstral coefficient MFCC, and wavelet Shannon entropy features are extracted from the approximation a3. Then by applying the GA and the classifier SVM, the best accuracy obtained was 91.18%.",
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "results": {
+        "accuracy": 0.9118
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Speech with Multiple Types of Sound Recordings",
+      "size": 40,
+      "pd_patients": 20,
+      "controls": 20,
+      "url": "https://archive.ics.uci.edu/dataset/301/parkinson+speech+dataset+with+multiple+types+of+sound+recordings",
+      "doi": "10.24432/C5NC8M"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Speech with Multiple Types of Sound Recordings",
+      "size": 40,
+      "pd_patients": 20,
+      "controls": 20,
+      "url": "https://archive.ics.uci.edu/dataset/301/parkinson+speech+dataset+with+multiple+types+of+sound+recordings",
+      "doi": "10.24432/C5NC8M"
+    }
+  ],
+  "study_id": "10.1016/j.apacoust.2020.107528_1"
+}

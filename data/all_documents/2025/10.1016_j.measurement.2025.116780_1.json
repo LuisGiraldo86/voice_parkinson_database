@@ -1,0 +1,77 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c168942e"
+  },
+  "title": "Empowering the Measurement of Early Parkinson's Disease Digital Biomarkers by a Features-Attention Fusion Network and Smartphone",
+  "authors": [
+    {
+      "name": "Tongyue He",
+      "affiliations": [
+        {
+          "institution": "Northeastern University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Junxin Chen",
+      "affiliations": [
+        {
+          "institution": "Dalian University of Technology",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "David Camacho",
+      "affiliations": [
+        {
+          "institution": "Universidad Politécnica de Madrid",
+          "country": "Spain"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Measurement",
+  "year": 2025,
+  "doi": "10.1016/j.measurement.2025.116780",
+  "abstract": "With the rise in Parkinson's disease (PD) cases in an aging society, daily screening is essential to reduce the burden on neurologists. Based on the above scenarios, this paper proposes a feature attention fusion network (FAFNet) for the measurement of early PD digital biomarkers by smartphone. Concretely, the smartphone voice recording is converted into two spectrograms, emphasizing low and high frequencies. Two spectrograms are then processed through a feature extraction network comprising CNN skeleton, self-attention module, and channel-spatial attention module. The self-attention module can improve the expressiveness of the model, while the channel-spatial attention module highlights the most informative channels and spatial positions. To effectively fuse the features, we design an attention fusion module that can automatically learn and assign weights. Additionally, we propose a Custom Loss function that accounts for measurement accuracy and the impact of the attention mechanism. Experimental results demonstrate that FAFNet outperforms other state-of-the-art methods.",
+  "ml_approaches": [
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "feature_extraction": [
+        "Mel Spectrogram",
+        "VTMel Spectrogram",
+        "FAFNet"
+      ],
+      "validation": "5-fold cross-validation",
+      "results": {
+        "auc": 0.961,
+        "recall": 0.906,
+        "f1_score": 0.927,
+        "accuracy": 0.924
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "mPower",
+      "size": 398,
+      "pd_patients": 188,
+      "controls": 210,
+      "url": "https://www.synapse.org/Synapse:syn4993293/wiki/247859"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "mPower",
+      "size": 398,
+      "pd_patients": 188,
+      "controls": 210,
+      "url": "https://www.synapse.org/Synapse:syn4993293/wiki/247859"
+    }
+  ],
+  "study_id": "10.1016/j.measurement.2025.116780_1"
+}

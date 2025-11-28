@@ -1,0 +1,125 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c16893ef"
+  },
+  "title": "",
+  "authors": [
+    {
+      "name": "Yuchun Liu",
+      "affiliations": [
+        {
+          "institution": "China University of Geoscience",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Zhihui Liu",
+      "affiliations": [
+        {
+          "institution": "China University of Geoscience",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Xue Luo",
+      "affiliations": [
+        {
+          "institution": "China University of Geoscience",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Hongjingtian Zhao",
+      "affiliations": [
+        {
+          "institution": "China University of Geoscience",
+          "country": "China"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Biocybernetics and Biomedical Engineering",
+  "year": 2022,
+  "doi": "10.1016/j.bbe.2022.06.007",
+  "abstract": "To address the problem of high feature dimensionality of Parkinson's disease medical data, this paper introduces SHapley Additive exPlanations (SHAP) value for feature selection of Parkinson's disease medical dataset. This paper combines SHAP value with four classifiers, namely deep forest (gcForest), extreme gradient boosting (XGBoost), light gradient boosting machine (LightGBM) and random forest (RF), respectively. Then this paper applies them to Parkinson's disease diagnosis. First, the classifier is used to calculate the magnitude of contribution of SHAP value to the features, then the features with significant contribution in the classification task are selected, and then the data after feature selection is used as input to classify the Parkinson's disease dataset for diagnosis using the classifier. The experimental results show that compared to Fscore, analysis of variance (Anova-F) and mutual information (MI) feature selection methods, the four models based on SHAP-value feature selection achieved good classification results. The SHAP-gcForest model combined with gcForest achieves classification accuracy of 91.78% and F1-score of 0.945 when 150 features are selected. The SHAP-LightGBM model combined with LightGBM achieves classification accuracy and F1-score of 91.62% and 0.945 when 50 features are selected, respectively. The classification effectiveness is second only to the SHAP-gcForest model, but the SHAP-LightGBM model is more computationally efficient than the SHAP-gcForest model. Finally, the effectiveness of the proposed method is verified by comparing it with the results of existing literature. The findings demonstrate that machine learning with SHAP value feature selection method has good classification performance in the diagnosis of Parkinson's disease, and provides a reference for physicians in the diagnosis and prevention of Parkinson's disease.",
+  "ml_approaches": [
+    {
+      "algorithm": "gcForest",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "SHAP Feature Importance: XGBoost"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9178,
+        "f1_score": 0.945
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "SHAP Feature Importance: XGBoost"
+        ]
+      },
+      "results": {
+        "accuracy": 0.9004,
+        "f1_score": 0.936
+      }
+    },
+    {
+      "algorithm": "LightGBM",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "SHAP Feature Importance: XGBoost"
+        ]
+      },
+      "results": {
+        "accuracy": 0.9162,
+        "f1_score": 0.945
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "SHAP Feature Importance: XGBoost"
+        ]
+      },
+      "results": {
+        "accuracy": 0.9034,
+        "f1_score": 0.939
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "study_id": "10.1016/j.bbe.2022.06.007_1"
+}

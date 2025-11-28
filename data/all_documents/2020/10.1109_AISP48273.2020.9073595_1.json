@@ -1,0 +1,111 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c1689365"
+  },
+  "title": "Stacked auto-encoder based Time-frequency features of Speech signal for Parkinson disease prediction",
+  "authors": [
+    {
+      "name": "Biswajit Karan",
+      "affiliations": [
+        {
+          "institution": "Birla Institute of Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Sitanshu Sekhar Sahu",
+      "affiliations": [
+        {
+          "institution": "Birla Institute of Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Kartik Mahto",
+      "affiliations": [
+        {
+          "institution": "Birla Institute of Technology",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Conference",
+  "journal": "2020 International Conference on Artificial Intelligence and Signal Processing",
+  "year": 2020,
+  "doi": "10.1109/AISP48273.2020.9073595",
+  "abstract": "Proper classification between normal and Parkinson affected people is an important topic in recent years. From the last two decades, the number of methods has been proposed for the classification of Parkinson's affected and healthy people. Most of them based on a shallow structured network classifier. In this study stacked auto-encoder deep neural network framework is introduced to classify Parkinson affected and healthy people voice signals. The present study uses a spectrogram and scalogram of speech signals as input to the stacked autoencoder deep network. The extracted features are tested with a support vector classifier (SVM) and a Softmax classifier. Highest classification accuracy of up to 87 % with a spectrogram and 83 % with scalogram are obtained using Softmax classifier. The softmax classifier performed better than SVM. The proposed deep neural network may be a new window for further research.",
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "MATLAB 2017b",
+      "feature_extraction": [
+        "Short Time Fourier Transform",
+        "Stacked Autoencoder"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.83
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "MATLAB 2017b",
+      "feature_extraction": [
+        "Continuous Wavelet Transform",
+        "Stacked Autoencoder"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.7893
+      }
+    },
+    {
+      "algorithm": "Softmax",
+      "framework": "MATLAB 2017b",
+      "feature_extraction": [
+        "Short Time Fourier Transform",
+        "Stacked Autoencoder"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.87
+      }
+    },
+    {
+      "algorithm": "Softmax",
+      "framework": "MATLAB 2017b",
+      "feature_extraction": [
+        "Continuous Wavelet Transform",
+        "Stacked Autoencoder"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.82
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "PC-GITA",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://paperswithcode.com/dataset/pc-gita",
+      "doi": ""
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "PC-GITA",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://paperswithcode.com/dataset/pc-gita",
+      "doi": ""
+    }
+  ],
+  "study_id": "10.1109/AISP48273.2020.9073595_1"
+}

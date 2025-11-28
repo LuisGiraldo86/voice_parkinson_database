@@ -1,0 +1,92 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c1689347"
+  },
+  "title": "Explainable machine learning for early detection of Parkinson's disease in aging populations using vocal biomarkers",
+  "authors": [
+    {
+      "name": "Bright Egbo",
+      "affiliations": [
+        {
+          "institution": "Nazarbayev University",
+          "country": "Kazakhstan"
+        }
+      ]
+    },
+    {
+      "name": "Zhanbota Nigmetolla",
+      "affiliations": [
+        {
+          "institution": "Nazarbayev University",
+          "country": "Kazakhstan"
+        }
+      ]
+    },
+    {
+      "name": "Naveed Ahmad Khan",
+      "affiliations": [
+        {
+          "institution": "University of Canberra",
+          "country": "Australia"
+        }
+      ]
+    },
+    {
+      "name": "Prashant K Jamwal",
+      "affiliations": [
+        {
+          "institution": "Nazarbayev University",
+          "country": "Kazakhstan"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Frontiers in Aging Neuroscience",
+  "year": 2025,
+  "doi": "10.3389/fnagi.2025.1672971",
+  "abstract": "Introduction: Parkinson's Disease (PD) is a progressive neurodegenerative disorder that significantly affects the aging population, creating a growing burden on global health systems. Early detection of PD is clinically challenging due to the gradual and ambiguous onset of symptoms. Methods: This study presents a machine-learning framework for the early identification of PD using non-invasive biomedical voice biomarkers from the UCI Parkinson's dataset. The dataset consists of 195 sustained phonation recordings from 31 participants (23 PD and 8 healthy controls, ages 46-85). The methodology includes subject-level stratified splitting and normalization, along with BorderlineSMOTE to address class imbalance. Initially, an XGBoost model is applied to select the top 10 acoustic features, followed by a Bayesian-optimized XGBoost classifier, with the decision threshold tuned via F1-maximization on validation data. Results: On the held-out test set, the model achieves 98.0% accuracy, 0.97 macro-F1, and 0.991 ROC-AUC. This performance exceeds that of a deep neural network baseline by 4.0 percentage points in accuracy (94.0% to 98.0%), 4.3 percentage points in macro-F1 (92.7% to 97.0%), and 0.050 in AUC (0.941 to 0.991). Compared to a classical SVM, it outperforms by 7.0 percentage points in accuracy (91.0% to 98.0%), 6.5 percentage points in macro-F1 (90.5% to 97.0%), and 0.089 in AUC (0.902 to 0.991). Discussion: Model decisions are elucidated using SHAP, offering global and patient-specific insights into the influential voice features. These findings indicate the feasibility of a non-invasive, scalable, and explainable voice-based tool for early PD screening, highlighting its potential integration into mobile or telehealth diagnostic platforms.",
+  "ml_approaches": [
+    {
+      "algorithm": "XGBoost",
+      "validation": "train/test split",
+      "scaling": [
+        "Standardization"
+      ],
+      "imbalance_handling": [
+        "BorderlineSMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Feature Importance"
+        ]
+      },
+      "results": {
+        "auc": 0.991,
+        "accuracy": 0.98,
+        "f1_score": 0.97
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.3389/fnagi.2025.1672971_1"
+}

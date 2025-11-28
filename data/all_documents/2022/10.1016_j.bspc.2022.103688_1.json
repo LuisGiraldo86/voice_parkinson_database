@@ -1,0 +1,82 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c16893f5"
+  },
+  "title": "Diagnose Parkinson's Disease and Cleft Lip and Palate Using Deep Convolutional Neural Networks Evolved by IP-based Chimp Optimization Algorithm",
+  "authors": [
+    {
+      "name": "Feng Chen",
+      "affiliations": [
+        {
+          "institution": "Wenzhou Medical University",
+          "country": "China"
+        },
+        {
+          "institution": "Centre China Normal University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Chunyan Yang",
+      "affiliations": [
+        {
+          "institution": "Wenzhou Medical University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Chunyan Yang",
+      "affiliations": [
+        {
+          "institution": "Imam Khomeini Marine Science University",
+          "country": "Iran"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Biomedical Signal Processing and Control",
+  "year": 2022,
+  "doi": "10.1016/j.bspc.2022.103688",
+  "abstract": "Speech signals often include paralinguistic features such as pathologies that impair a speaker's capability to communicate. Those cognitive symptoms have various causes depending on the disease. For example, morphological diseases like cleft lip and palate create hypernasality, while neurodegenerative conditions like Parkinson's disease cause hypokinetic dysarthria. Automatic assessment of abnormal speech supports early diagnosis or disease severity evaluation. Conventional methods rely on manually assessing single aspects like shimmer, jitter, or formant frequencies, which may not fully reflect the disease's manifestations. In this paper, we use deep convolutional neural networks (DCNNs) to recognize disordered speech. Despite DCNNs' many approved benefits, selecting the best structure is challenging. In order to overcome this issue, this research looks into using the chimp optimization algorithm (ChOA) to automatically select the optimal DCNN structure. In order to achieve the goal, three ChOA-based advancements are proposed. First, an internet protocol address-based (IPA-based) encoding method for DCNN layers employing chimp vectors is created. Then an Enfeebled layer with specified chimp vector dimensions is presented for variable-length DCNNs. Eventually, large datasets are partitioned into smaller ones and evaluated at random to recognize abnormal speech signals from patients with Parkinson's disease and cleft lip and palate. In addition to receiver operating characteristic (ROC) and precision-recall curves, five well-known metrics were used: sensitivity, specificity, accuracy, precision, F1-Score. The proposed model accurately diagnoses disordered and normal speech signals, with an accuracy of up to 96.37%, which is 1.62 more accurate than the second-best approach, i.e., VLNSGA-II.",
+  "ml_approaches": [
+    {
+      "algorithm": "Convolutional Neural Network",
+      "optimization": "IP-based Chimp Optimization Algorithm",
+      "data_augmentation": [
+        "SpecAugment"
+      ],
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.9667,
+        "recall": 0.959,
+        "specificity": 0.9746,
+        "f1_score": 0.967,
+        "precision": 0.975
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "PC-GITA",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://paperswithcode.com/dataset/pc-gita",
+      "doi": ""
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "PC-GITA",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": "https://paperswithcode.com/dataset/pc-gita",
+      "doi": ""
+    }
+  ],
+  "study_id": "10.1016/j.bspc.2022.103688_1"
+}

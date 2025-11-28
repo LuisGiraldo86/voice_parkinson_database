@@ -1,0 +1,97 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c1689376"
+  },
+  "title": "Identification of Parkinson's Disease from Speech Using CNNs and Formant Measures",
+  "authors": [
+    {
+      "name": "Agustín Álvarez-Marquina",
+      "affiliations": [
+        {
+          "institution": "Universidad Politécnica de Madrid",
+          "country": "Spain"
+        }
+      ]
+    },
+    {
+      "name": "Andrés Gómez-Rodellar",
+      "affiliations": [
+        {
+          "institution": "University of Edinburgh",
+          "country": "UK"
+        }
+      ]
+    },
+    {
+      "name": "Pedro Gómez-Vilda",
+      "affiliations": [
+        {
+          "institution": "Universidad Politécnica de Madrid",
+          "country": "Spain"
+        }
+      ]
+    },
+    {
+      "name": "Daniel Palacios-Alonso",
+      "affiliations": [
+        {
+          "institution": "Universidad Rey Juan Carlos",
+          "country": "Spain"
+        }
+      ]
+    },
+    {
+      "name": "Francisco Díaz-Pérez",
+      "affiliations": [
+        {
+          "institution": "Universidad Politécnica de Madrid",
+          "country": "Spain"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Conference",
+  "journal": "Artificial Intelligence in Neuroscience: Affective Analysis and Health Applications",
+  "year": 2022,
+  "doi": "10.1007/978-3-031-06242-1_33",
+  "abstract": "Parkinson's Disease (PD) is a neurodegenerative disorder that severely impacts the motor capabilities of patients. Dysarthria is one of the symptoms that can be accurately characterized using speech analysis, tracking the deterioration associated with the evolution of the disease. Through the present work the use of machine learning-based technologies, more speciﬁcally the Convolutional Neural Networks (CNNs) and the direct application of formant features extracted form sustained phonations of vowel /a/ are proposed. The main goal is to investigate the eﬀects of the speech articulatory movements aﬀected by hypokinetic dysarthria in Parkinson's Disease as this would allow to use speech as a reliable monitoring tool. The study employs voice recording of 593 subjects form the Patient Voice Analysis dataset (PVA) and 687 health controls from the Saarbrücken Voice Database (SVD). The k-fold crossvalidation trials provided the best results when the length of the utterances is limited to 2 s, achieving a sensibility of 0.96 and a speciﬁcity of 0.99.",
+  "citescore": 2.2,
+  "ml_approaches": [
+    {
+      "algorithm": "Convolutional Neural Network",
+      "framework": "",
+      "feature_extraction": [
+        "First Three Formants",
+        "Energies of First Three Formants"
+      ],
+      "results": {
+        "accuracy": 0.9755,
+        "recall": 0.9446,
+        "specificity": 0.9917,
+        "f1_score": 0.9637,
+        "auc": 0.988
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Custom Dataset: Saarbrücken Voice Dataset and Patient Voice Analysis",
+      "size": 1280,
+      "pd_patients": 593,
+      "controls": 687,
+      "url": "https://stimmdb.coli.uni-saarland.de/",
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Custom Dataset: Saarbrücken Voice Dataset and Patient Voice Analysis",
+      "size": 1280,
+      "pd_patients": 593,
+      "controls": 687,
+      "url": "https://stimmdb.coli.uni-saarland.de/",
+      "doi": null
+    }
+  ],
+  "study_id": "10.1007/978-3-031-06242-1_33_1"
+}

@@ -1,0 +1,69 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c168939a"
+  },
+  "title": "Hybrid Optimization Enabled Deep Learning Model for Parkinson's Disease Classification",
+  "authors": [
+    {
+      "name": "Dharani M. K.",
+      "affiliations": [
+        {
+          "institution": "Kongu Engineering College",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Thamilselvan R.",
+      "affiliations": [
+        {
+          "institution": "Kongu Engineering College",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Imaging Science Journal",
+  "year": 2024,
+  "doi": "10.1080/13682199.2023.2200060",
+  "abstract": "The analysis of Parkinson's disease (PD) is an inspiring task that necessitates the analysis of numerous motor and non-motor indications. During analysis, some abnormalities are considered as important symptoms to analyze the disease. Hence, this research introduced the proposed chronological smart sunflower optimization Algorithm (CSSFOA) for classifying the PD from voice data and voice signal samples. For voice signal, the input signals are pre-processed by the Gaussian filter, and then the significant features are extracted from it. The selection of optimal features is done by the chronological smart flower optimization Algorithm (CSFOA). The proposed CSFOA-based feature selection method considered the features by the Bray-Curtis distance. The PD classification is done by the ZF-Net which is trained by proposed CSSFOA to increase the performance of classification. The experimental result reveals that the proposed CSSFOA_ZF-Net algorithm got a better testing accuracy of 0.945, a sensitivity of 0.919, and a specificity of 0.957.",
+  "citescore": 2.8,
+  "ml_approaches": [
+    {
+      "algorithm": "ZF-Net",
+      "optimization": "Chronological Smart Sunflower Optimization Algorithm",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Chronological Smart Sunflower Optimization Algorithm"
+        ]
+      },
+      "validation": "9-fold cross-validation",
+      "results": {
+        "accuracy": 0.926,
+        "recall": 0.894,
+        "specificity": 0.932
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "mPower",
+      "size": 5826,
+      "pd_patients": null,
+      "controls": null,
+      "url": "https://www.synapse.org/Synapse:syn4993293/wiki/247859"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "mPower",
+      "size": 5826,
+      "pd_patients": null,
+      "controls": null,
+      "url": "https://www.synapse.org/Synapse:syn4993293/wiki/247859"
+    }
+  ],
+  "study_id": "10.1080/13682199.2023.2200060_2"
+}

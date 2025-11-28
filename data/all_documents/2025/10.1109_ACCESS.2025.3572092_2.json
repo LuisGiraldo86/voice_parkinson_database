@@ -1,0 +1,223 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893de"
+  },
+  "title": "An FPGA Prototype for Parkinson's Disease Detection Using Machine Learning on Voice Signal",
+  "authors": [
+    {
+      "name": "Mujeev Khan",
+      "affiliations": [
+        {
+          "institution": "Aligarh Muslim University",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Abdul Moiz",
+      "affiliations": [
+        {
+          "institution": "Aligarh Muslim University",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Gani Nawaz Khan",
+      "affiliations": [
+        {
+          "institution": "Aligarh Muslim University",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Mohd Wajid",
+      "affiliations": []
+    },
+    {
+      "name": "Mohammed Usman",
+      "affiliations": [
+        {
+          "institution": "Aligarh Muslim University",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Jabir Ali",
+      "affiliations": [
+        {
+          "institution": "Bennett University",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "IEEE Access",
+  "year": 2025,
+  "doi": "10.1109/ACCESS.2025.3572092",
+  "abstract": "Parkinson's disease (PD) is a chronic neurological disorder caused by a reduction in dopamine levels in the brain. Early diagnosis is crucial for effective treatment. This paper proposes an efficient machine learning model for PD detection using voice-based features, which offer a non-invasive, costeffective, and accessible alternative to complex imaging methods. To enhance classification performance and reduce computational complexity, we evaluate three feature selection algorithms — Chi-squared (χ 2), Minimum Redundancy Maximum Relevance (mRMR), and Analysis of Variance (ANOVA) — and adopt an incremental feature selection approach, where each feature set increment is assessed across five classifiers: K-Nearest Neighbors (KNN), Decision Tree (DT), Artificial Neural Network (ANN), Logistic Regression (LR), and Support Vector Machine (SVM). To address dataset imbalance, the Synthetic Minority Over-sampling Technique (SMOTE) is applied. Among the evaluated approaches, the ANOVA algorithm yields the most optimal feature set, with the top 10 features enabling the Quadratic SVM to achieve a classification accuracy of 98.86%. The Quadratic SVM, optimized for minimal power consumption, is implemented on a Nexys A7 FPGA. This setup achieves a dynamic power consumption of just 23 mW and delivers a performance acceleration of 155x compared to equivalent computations on a 6th-generation Intel i5 processor. By combining a high-accuracy machine learning model with an energy-efficient FPGA implementation, our approach offers a powerful and portable solution for real-time PD detection.",
+  "ml_approaches": [
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "ANOVA"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9432,
+        "precision": 1,
+        "recall": 0.8979,
+        "f1_score": 0.9462,
+        "specificity": 1
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "feature_selection": {
+        "methods": [
+          "ANOVA"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.909,
+        "precision": 1,
+        "recall": 0.8461,
+        "f1_score": 0.9166,
+        "specificity": 1
+      }
+    },
+    {
+      "algorithm": "Artificial Neural Network",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "ANOVA"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9545,
+        "precision": 0.9772,
+        "recall": 0.9565,
+        "f1_score": 0.9667,
+        "specificity": 0.9761
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "ANOVA"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9542,
+        "precision": 1,
+        "recall": 0.9166,
+        "f1_score": 0.9564,
+        "specificity": 1
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Fine Gaussian",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "ANOVA"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9773,
+        "precision": 0.9545,
+        "recall": 1,
+        "f1_score": 0.9767,
+        "specificity": 0.9565
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Quadratic",
+      "framework": "",
+      "imbalance_handling": [
+        "SMOTE"
+      ],
+      "scaling": [
+        "Min Max"
+      ],
+      "feature_selection": {
+        "methods": [
+          "ANOVA"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9886,
+        "precision": 1,
+        "recall": 0.9777,
+        "f1_score": 0.9887,
+        "specificity": 1
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1109/ACCESS.2025.3572092_2"
+}

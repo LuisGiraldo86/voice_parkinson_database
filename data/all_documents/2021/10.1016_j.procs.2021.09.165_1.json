@@ -1,0 +1,84 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c168942a"
+  },
+  "title": "Diagnosing Parkinson's Disease by Means of Ensemble Classification of Patients' Voice Samples",
+  "authors": [
+    {
+      "name": "Krzysztof Wrobel",
+      "affiliations": [
+        {
+          "institution": "University of Silesia",
+          "country": "Poland"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Conference",
+  "journal": "Procedia Computer Science",
+  "year": 2021,
+  "doi": "10.1016/j.procs.2021.09.165",
+  "abstract": "This paper proposes a method for diagnosing Parkinson's disease using ensemble classification of patient voice samples. Conducted research concerned testing the parameters of the ensemble of classifiers, in terms of types and numbers of classifiers included in it. More than a dozen popular classifiers were considered in the study. Additionally, for each of the tested classifiers, a set of features of voice samples were selected, for which a given classifier showed the highest classification efficiency. The Sequential Backward Selection (SBS), which belongs to the wrapper methods, was used for feature selection. The ensemble of classifiers was then tested in two cases, with all features considered and including only those indicated by the SBS method. The obtained results were compared with each other.All experiments were performed on a publicly available database containing voice samples of Parkinson's patients and healthy patients. This database can be found in the UCI archives.",
+  "ml_approaches": [
+    {
+      "algorithm": "Ensemble (3 Classifiers)",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Sequential Backward Selection"
+        ]
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.906
+      }
+    },
+    {
+      "algorithm": "Ensemble (5 Classifiers)",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Sequential Backward Selection"
+        ]
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.906
+      }
+    },
+    {
+      "algorithm": "Ensemble (7 Classifiers)",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Sequential Backward Selection"
+        ]
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "accuracy": 0.906
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1016/j.procs.2021.09.165_1"
+}

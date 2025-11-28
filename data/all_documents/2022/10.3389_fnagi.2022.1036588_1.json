@@ -1,0 +1,643 @@
+{
+  "_id": {
+    "$oid": "68ecf00b6c43da02c16892f6"
+  },
+  "title": "Early detection of Parkinson's disease from multiple signal speech: Based on Mandarin language dataset",
+  "authors": [
+    {
+      "name": "Qiyue Wang",
+      "affiliations": [
+        {
+          "institution": "Huazhong University of Science and Technology",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Yan Fu",
+      "affiliations": [
+        {
+          "institution": "Huazhong University of Science and Technology",
+          "country": "China"
+        },
+        {
+          "institution": "HUST-GYENNO CNS Intelligent Digital Medicine Technology Center",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Baiyu Shao",
+      "affiliations": [
+        {
+          "institution": "Huazhong University of Science and Technology",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Le Chang",
+      "affiliations": [
+        {
+          "institution": "HUST-GYENNO CNS Intelligent Digital Medicine Technology Center",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Kang Ren",
+      "affiliations": [
+        {
+          "institution": "HUST-GYENNO CNS Intelligent Digital Medicine Technology Center",
+          "country": "China"
+        },
+        {
+          "institution": "Gyenno Science Co., Ltd.",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Zhonglue Chen",
+      "affiliations": [
+        {
+          "institution": "HUST-GYENNO CNS Intelligent Digital Medicine Technology Center",
+          "country": "China"
+        },
+        {
+          "institution": "Gyenno Science Co., Ltd.",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Yun Ling",
+      "affiliations": [
+        {
+          "institution": "HUST-GYENNO CNS Intelligent Digital Medicine Technology Center",
+          "country": "China"
+        },
+        {
+          "institution": "Gyenno Science Co., Ltd.",
+          "country": "China"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Frontiers in Aging Neuroscience",
+  "year": 2022,
+  "doi": "10.3389/fnagi.2022.1036588",
+  "abstract": "Parkinson's disease (PD) is a neurodegenerative disorder that negatively affects millions of people. Early detection is of vital importance. As recent researches showed dysarthria level provides good indicators to the computer-assisted diagnosis and remote monitoring of patients at the early stages. It is the goal of this study to develop an automatic detection method based on newest collected Chinese dataset. Unlike English, no agreement was reached on the main features indicating language disorders due to vocal organ dysfunction. Thus, one of our approaches is to classify the speech phonation and articulation with a machine learning-based feature selection model. Based on a relatively big sample, three feature selection algorithms (LASSO, mRMR, Relief-F) were tested to select the vocal features extracted from speech signals collected in a controlled setting, followed by four classifiers (Naïve Bayes, K-Nearest Neighbor, Logistic Regression and Stochastic Gradient Descent) to detect the disorder. The proposed approach shows an accuracy of 75.76%, sensitivity of 82.44%, specificity of 73.15% and precision of 76.57%, indicating the feasibility and promising future for an automatic and unobtrusive detection on Chinese PD. The comparison among the three selection algorithms reveals that LASSO selector has the best performance regardless types of vocal features. The best detection accuracy is obtained by SGD classifier, while the best resulting sensitivity is obtained by LR classifier. More interestingly, articulation features are more representative and indicative than phonation features among all the selection and classifying algorithms. The most prominent articulation features are F1, F2, DDF1, DDF2, BBE and MFCC.",
+  "ml_approaches": [
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "feature_extraction": [
+        "Phonation Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "LASSO"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.4898,
+        "recall": 0.7058,
+        "specificity": 0.7058,
+        "precision": 0.4344,
+        "far": 0.5656,
+        "mcc": 0.0413,
+        "f1_score": 0.5378
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "feature_extraction": [
+        "Phonation Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "LASSO"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.3726,
+        "recall": 0.5167,
+        "specificity": 0.3777,
+        "precision": 0.368,
+        "far": 0.632,
+        "mcc": -0.0837,
+        "f1_score": 0.4298
+      }
+    },
+    {
+      "algorithm": "Stochastic Gradient Descent",
+      "framework": "",
+      "feature_extraction": [
+        "Phonation Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "LASSO"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.3391,
+        "recall": 0.49,
+        "specificity": 0.34,
+        "precision": 0.3382,
+        "far": 0.6618,
+        "mcc": -0.181,
+        "f1_score": 0.4002
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "feature_extraction": [
+        "Phonation Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "LASSO"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.4941,
+        "recall": 0.1483,
+        "specificity": 0.807,
+        "precision": 0.1531,
+        "far": 0.8469,
+        "mcc": -0.033,
+        "f1_score": 0.1507
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "feature_extraction": [
+        "Phonation Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Minimum Redundancy Maximum Relevance"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.4475,
+        "recall": 0.6501,
+        "specificity": 0.6501,
+        "precision": 0.3832,
+        "far": 0.6168,
+        "mcc": -0.0133,
+        "f1_score": 0.4822
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "feature_extraction": [
+        "Phonation Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Minimum Redundancy Maximum Relevance"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.3184,
+        "recall": 0.3989,
+        "specificity": 0.3777,
+        "precision": 0.34,
+        "far": 0.2906,
+        "mcc": -0.2865,
+        "f1_score": 0.3362
+      }
+    },
+    {
+      "algorithm": "Stochastic Gradient Descent",
+      "framework": "",
+      "feature_extraction": [
+        "Phonation Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Minimum Redundancy Maximum Relevance"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.3558,
+        "recall": 0.6544,
+        "specificity": 0.1547,
+        "precision": 0.135,
+        "far": 0.865,
+        "mcc": -0.211,
+        "f1_score": 0.2238
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "feature_extraction": [
+        "Phonation Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Minimum Redundancy Maximum Relevance"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.3141,
+        "recall": 0.3628,
+        "specificity": 0.4,
+        "precision": 0.2281,
+        "far": 0.7719,
+        "mcc": -0.229,
+        "f1_score": 0.2801
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "feature_extraction": [
+        "Phonation Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "ReliefF"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.4354,
+        "recall": 0.6497,
+        "specificity": 0.6497,
+        "precision": 0.3697,
+        "far": 0.6303,
+        "mcc": -0.0486,
+        "f1_score": 0.4712
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "feature_extraction": [
+        "Phonation Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "ReliefF"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.4351,
+        "recall": 0.5711,
+        "specificity": 0.4201,
+        "precision": 0.4471,
+        "far": 0.5529,
+        "mcc": -0.0108,
+        "f1_score": 0.5015
+      }
+    },
+    {
+      "algorithm": "Stochastic Gradient Descent",
+      "framework": "",
+      "feature_extraction": [
+        "Phonation Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "ReliefF"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.4143,
+        "recall": 0.4067,
+        "specificity": 0.5374,
+        "precision": 0.3105,
+        "far": 0.6895,
+        "mcc": -0.0337,
+        "f1_score": 0.3522
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "feature_extraction": [
+        "Phonation Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "ReliefF"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.4399,
+        "recall": 0.4128,
+        "specificity": 0.5222,
+        "precision": 0.3593,
+        "far": 0.6407,
+        "mcc": -0.0708,
+        "f1_score": 0.3842
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "feature_extraction": [
+        "Articulation Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "LASSO"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.5017,
+        "recall": 0.5851,
+        "specificity": 0.5851,
+        "precision": 0.4556,
+        "far": 0.5444,
+        "mcc": 0.111,
+        "f1_score": 0.5123
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "feature_extraction": [
+        "Articulation Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "LASSO"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.7453,
+        "recall": 0.8244,
+        "specificity": 0.6885,
+        "precision": 0.7586,
+        "far": 0.2414,
+        "mcc": 0.51,
+        "f1_score": 0.7901
+      }
+    },
+    {
+      "algorithm": "Stochastic Gradient Descent",
+      "framework": "",
+      "feature_extraction": [
+        "Articulation Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "LASSO"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.7576,
+        "recall": 0.7717,
+        "specificity": 0.7315,
+        "precision": 0.7657,
+        "far": 0.2343,
+        "mcc": 0.5041,
+        "f1_score": 0.7687
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "feature_extraction": [
+        "Articulation Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "LASSO"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.3981,
+        "recall": 0.5267,
+        "specificity": 0.408,
+        "precision": 0.3896,
+        "far": 0.614,
+        "mcc": -0.0418,
+        "f1_score": 0.4479
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "feature_extraction": [
+        "Articulation Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Minimum Redundancy Maximum Relevance"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.4605,
+        "recall": 0.6648,
+        "specificity": 0.6648,
+        "precision": 0.3987,
+        "far": 0.6013,
+        "mcc": -0.0395,
+        "f1_score": 0.4985
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "feature_extraction": [
+        "Articulation Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Minimum Redundancy Maximum Relevance"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.5063,
+        "recall": 0.6156,
+        "specificity": 0.4584,
+        "precision": 0.5416,
+        "far": 0.5484,
+        "mcc": 0.0627,
+        "f1_score": 0.5763
+      }
+    },
+    {
+      "algorithm": "Stochastic Gradient Descent",
+      "framework": "",
+      "feature_extraction": [
+        "Articulation Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Minimum Redundancy Maximum Relevance"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.5734,
+        "recall": 0.5706,
+        "specificity": 0.5988,
+        "precision": 0.5557,
+        "far": 0.4443,
+        "mcc": 0.1688,
+        "f1_score": 0.563
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "feature_extraction": [
+        "Articulation Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Minimum Redundancy Maximum Relevance"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.3266,
+        "recall": 0.4644,
+        "specificity": 0.3333,
+        "precision": 0.3192,
+        "far": 0.6808,
+        "mcc": -0.2448,
+        "f1_score": 0.3783
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "feature_extraction": [
+        "Articulation Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "ReliefF"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.5482,
+        "recall": 0.6383,
+        "specificity": 0.6383,
+        "precision": 0.5076,
+        "far": 0.4924,
+        "mcc": 0.1295,
+        "f1_score": 0.5655
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "feature_extraction": [
+        "Articulation Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "ReliefF"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.6994,
+        "recall": 0.7839,
+        "specificity": 0.645,
+        "precision": 0.716,
+        "far": 0.284,
+        "mcc": 0.4277,
+        "f1_score": 0.7484
+      }
+    },
+    {
+      "algorithm": "Stochastic Gradient Descent",
+      "framework": "",
+      "feature_extraction": [
+        "Articulation Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "ReliefF"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.6743,
+        "recall": 0.7217,
+        "specificity": 0.6326,
+        "precision": 0.6919,
+        "far": 0.3081,
+        "mcc": 0.359,
+        "f1_score": 0.7065
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "feature_extraction": [
+        "Articulation Features"
+      ],
+      "feature_selection": {
+        "methods": [
+          "ReliefF"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "accuracy": 0.5534,
+        "recall": 0.5361,
+        "specificity": 0.6276,
+        "precision": 0.502,
+        "far": 0.498,
+        "mcc": 0.1457,
+        "f1_score": 0.5185
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Tongji Hospital Parkinson's Disease Dataset",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Tongji Hospital Parkinson's Disease Dataset",
+      "size": 100,
+      "pd_patients": 50,
+      "controls": 50,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.3389/fnagi.2022.1036588_1"
+}

@@ -1,0 +1,98 @@
+{
+  "_id": {
+    "$oid": "68ecf00e6c43da02c168941b"
+  },
+  "title": "A novel self-learning feature selection approach based on feature attributions",
+  "authors": [
+    {
+      "name": "Jianting Chen",
+      "affiliations": [
+        {
+          "institution": "Tongji University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Shuhan Yuan",
+      "affiliations": [
+        {
+          "institution": "Utah State University",
+          "country": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Dongdong Lv",
+      "affiliations": [
+        {
+          "institution": "Tongji University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Yang Xiang",
+      "affiliations": [
+        {
+          "institution": "Tongji University",
+          "country": "China"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Expert Systems with Applications",
+  "year": 2021,
+  "doi": "10.1016/j.eswa.2021.115219",
+  "abstract": "Feature selection has shown its effectiveness in improving the accuracy and generalization of machine learning models, especially for those tasks with high-dimensional data. In this article, a novel self-learning feature selection (SLFS) approach based on feature attributions is proposed as a wrapper method, which has higher search efficiency for optimal feature subsets with three main improvements. First, we regard feature selection as a combinatorial optimization problem and propose a unified local search framework for wrapper methods by analyzing meta-heuristic algorithms in feature selection. Second, for the binary search space of feature selection, we propose two types of neighborhood structures, namely, ring-type and line-type structures, for the local search framework. Third, we focus on feature attribution methods, such as SHAP (SHapley Additive exPlanations) (Lundberg & Lee, 2017), which can interpret each feature’s importance to predictions. In each iteration, we adopt SHAP values and other attributes from previous subsets to guide the next selection of new subsets. To validate the performance of our SLFS approach, we collected 16 classification datasets from the UCI repository for comparison with other meta-heuristic wrapper approaches in terms of fitness, accuracy, F1 scores and selection ratios. The experimental results show that the SLFS approach can be used to obtain an optimal subset with fewer iterations and a small population, and SHAP values play a role in improving search efficiency.",
+  "ml_approaches": [
+    {
+      "algorithm": "LightGBM",
+      "feature_selection": {
+        "methods": [
+          "Self-Learning Feature Selection"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9553,
+        "f1_score": 0.9431
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "feature_selection": {
+        "methods": [
+          "Self-Learning Feature Selection"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8026,
+        "f1_score": 0.7745
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "study_id": "10.1016/j.eswa.2021.115219_1"
+}

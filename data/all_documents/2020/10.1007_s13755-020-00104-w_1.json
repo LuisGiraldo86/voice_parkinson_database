@@ -1,0 +1,406 @@
+{
+  "_id": {
+    "$oid": "68ecf00a6c43da02c16892e4"
+  },
+  "title": "Bio-inspired Dimensionality Reduction for Parkinson's Disease (PD) Classification",
+  "authors": [
+    {
+      "name": "Akram Pasha",
+      "affiliations": [
+        {
+          "institution": "REVA University",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "P H. Latha ",
+      "affiliations": [
+        {
+          "institution": "Sambhram Institute of Technology",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Health Information Science and Systems",
+  "year": 2020,
+  "doi": "10.1007/s13755-020-00104-w ",
+  "abstract": "Given the demand for developing the efficient Machine Learning (ML) classification models for healthcare data, and the potentiality of Bio-Inspired Optimization (BIO) algorithms to tackle the problem of high dimensional data, we investigate the range of ML classification models trained with the optimal subset of features of PD data set for efficient PD classification. We used two BIO algorithms, Genetic Algorithm (GA) and Binary Particle Swarm Optimization (BPSO), to determine the optimal subset of features of PD data set. The data set chosen for investigation comprises 756 observations (rows or records) taken over 755 attributes (columns or dimensions or features) from 252 PD patients. We employed MaxAbsolute feature scaling method to normalize the data and one hold cross-validation method to avoid biased results. Accordingly, the data is split in to training and testing set in the ratio of 70% and 30%. Subsequently, we employed GA and BPSO algorithms separately on 11 ML classifiers (Logistic Regression (LR), linear Support Vector Machine (lSVM), radial basis function Support Vector Machine (rSVM), Gaussian Naïve Bayes (GNB), Gaussian Process Classifier (GPC), k-Nearest Neighbor (kNN), Decision Tree (DT), Random Forest (RF), Multilayer Perceptron (MLP), Ada Boost (AB) and Quadratic Discriminant Analysis (QDA)), to determine the optimal subset of features (reduction of dimensionality) contributing to the highest classification accuracy. Among all the bio-inspired ML classifiers employed: GA-inspired MLP produced the maximum dimensionality reduction of 52.32% by selecting only 359 features and delivering 85.1% of the classification accuracy; GA-inspired AB delivered the maximum classification accuracy of 90.7% producing the dimensionality reduction of 41.43% by selecting only 441 features; And, BPSO-inspired GNB produced the maximum dimensionality reduction of 47.14% by selecting 396 features and delivering the classification accuracy of 79.3%; BPSOMLP delivered the maximum classification accuracy of 89% and produced 46.48% of the dimensionality reduction by selecting only 403 features. ",
+  "ml_approaches": [
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "scaling": [
+        "Max Absolute"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8678
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "scaling": [
+        "Max Absolute"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.903
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "scaling": [
+        "Max Absolute"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8774
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "scaling": [
+        "Max Absolute"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0
+      }
+    },
+    {
+      "algorithm": "Gaussian Process",
+      "framework": "",
+      "scaling": [
+        "Max Absolute"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.85
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "framework": "",
+      "scaling": [
+        "Max Absolute"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.84
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "scaling": [
+        "Max Absolute"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.745
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "scaling": [
+        "Max Absolute"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.822
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "framework": "",
+      "scaling": [
+        "Max Absolute"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.905
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "scaling": [
+        "Max Absolute"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.799
+      }
+    },
+    {
+      "algorithm": "Quadratic Discriminant Analysis",
+      "framework": "",
+      "scaling": [
+        "Max Absolute"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Genetic Algorithm"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.798
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "framework": "",
+      "scaling": [
+        "Max Absolute"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Binary Particle Swarm Optimization"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.855
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "framework": "",
+      "scaling": [
+        "Max Absolute"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Binary Particle Swarm Optimization"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.859
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "scaling": [
+        "Max Absolute"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Binary Particle Swarm Optimization"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.881
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine: RBF",
+      "framework": "",
+      "scaling": [
+        "Max Absolute"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Binary Particle Swarm Optimization"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.727
+      }
+    },
+    {
+      "algorithm": "Gaussian Process",
+      "framework": "",
+      "scaling": [
+        "Max Absolute"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Binary Particle Swarm Optimization"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.868
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "framework": "",
+      "scaling": [
+        "Max Absolute"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Binary Particle Swarm Optimization"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.793
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "scaling": [
+        "Max Absolute"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Binary Particle Swarm Optimization"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.771
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "framework": "",
+      "scaling": [
+        "Max Absolute"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Binary Particle Swarm Optimization"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.89
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "framework": "",
+      "scaling": [
+        "Max Absolute"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Binary Particle Swarm Optimization"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.877
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "framework": "",
+      "scaling": [
+        "Max Absolute"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Binary Particle Swarm Optimization"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.793
+      }
+    },
+    {
+      "algorithm": "Quadratic Discriminant Analysis",
+      "framework": "",
+      "scaling": [
+        "Max Absolute"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Binary Particle Swarm Optimization"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.427
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "study_id": "10.1007/s13755-020-00104-w_1"
+}

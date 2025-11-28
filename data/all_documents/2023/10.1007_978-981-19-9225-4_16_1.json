@@ -1,0 +1,162 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c1689391"
+  },
+  "title": "Diagnosis of Parkinson's Disease Using Machine Learning Algorithms",
+  "authors": [
+    {
+      "name": "Khushal Thakur",
+      "affiliations": [
+        {
+          "institution": "Chandigarh University",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Divneet Singh Kapoor",
+      "affiliations": [
+        {
+          "institution": "Chandigarh University",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Kiran Jot Singh",
+      "affiliations": [
+        {
+          "institution": "Chandigarh University",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Anshul Sharma",
+      "affiliations": [
+        {
+          "institution": "Chandigarh University",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Janvi Malhotra",
+      "affiliations": [
+        {
+          "institution": "Chandigarh University",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Conference",
+  "journal": "Third Congress on Intelligent Systems",
+  "year": 2023,
+  "doi": "10.1007/978-981-19-9225-4_16",
+  "abstract": "Parkinson's disease is an age-related nervous system disorder that impacts movement of the human body. Cure of this disease is yet unknown, but a patient's quality of life can be improved if it is diagnosed at an early stage. It has been identified by various researchers that voice degradation is a common symptom of this disease. Machine learning is increasingly establishing its place in the healthcare industry. In this paper, we implement and compare state-of-the-art machine learning algorithms like SupportVector Machine, Random Forest Classifier, Decision Tree Classifier, and Extra Trees Classifier for diagnosis of Parkinson's disease performance evaluation. The work in this paper proposes using Extra Trees Classifier along with entropybased feature selection which proved superior over all other models for Parkinson's disease prediction. It yields highest accuracy 94.34%, precision 0.9388, F1-score 0.9684, and recall value 1.",
+  "citescore": 0.9,
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "SelectFromModel"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8113,
+        "precision": 0.8791,
+        "recall": 0.8989,
+        "f1_score": 0.888888
+      }
+    },
+    {
+      "algorithm": "Decision Tree",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "SelectFromModel"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.8037,
+        "precision": 0.8588,
+        "recall": 0.8902,
+        "f1_score": 0.874251
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "SelectFromModel"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9151,
+        "precision": 0.9192,
+        "recall": 0.9891,
+        "f1_score": 0.952879
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "SelectFromModel"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9158,
+        "precision": 0.9024,
+        "recall": 1,
+        "f1_score": 0.94871
+      }
+    },
+    {
+      "algorithm": "Extra Trees",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "SelectFromModel"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9434,
+        "precision": 0.9388,
+        "recall": 1,
+        "f1_score": 0.968421
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Disease Classification",
+      "size": 252,
+      "pd_patients": 188,
+      "controls": 64,
+      "url": "https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification",
+      "doi": "10.24432/C5MS4X"
+    }
+  ],
+  "study_id": "10.1007/978-981-19-9225-4_16_1"
+}

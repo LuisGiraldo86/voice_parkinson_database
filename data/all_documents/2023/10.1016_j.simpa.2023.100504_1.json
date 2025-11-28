@@ -1,0 +1,77 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c168938c"
+  },
+  "title": "PD-ADSV: An automated diagnosing system using voice signals and hard voting ensemble method for Parkinson's disease",
+  "authors": [
+    {
+      "name": "Paria Ghaheri",
+      "affiliations": [
+        {
+          "institution": "Semnan University",
+          "country": "Iran"
+        }
+      ]
+    },
+    {
+      "name": "Ahmadreza Shateri",
+      "affiliations": [
+        {
+          "institution": "Semnan University",
+          "country": "Iran"
+        }
+      ]
+    },
+    {
+      "name": "Hamid Nasiri",
+      "affiliations": [
+        {
+          "institution": "Amirkabir University of Technology",
+          "country": "Iran"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Software Impacts",
+  "year": 2023,
+  "doi": "10.1016/j.simpa.2023.100504",
+  "abstract": "Parkinson's disease (PD) is the most widespread movement condition and the second most common neurodegenerative disorder, following Alzheimer's. Movement symptoms and imaging techniques are the most popular ways to diagnose this disease. However, they are not accurate and fast and may only be accessible to a few people. This study provides an autonomous system, i.e., PD-ADSV, for diagnosing PD based on voice signals, which uses four machine learning classifiers and the hard voting ensemble method to achieve the highest accuracy. PD-ADSV is developed using Python and the Gradio web framework.",
+  "citescore": 2.7,
+  "ml_approaches": [
+    {
+      "algorithm": "Ensemble (Gradient Boosting, XGBoost, LightGBM, Bagging)",
+      "framework": "",
+      "feature_selection": {
+        "methods": [
+          "Pearson Correlation"
+        ]
+      },
+      "results": {
+        "accuracy": 0.8542
+      }
+    }
+  ],
+  "source_code": "https://github.com/SoftwareImpacts/SIMPAC-2022-303",
+  "source_dataset": [
+    {
+      "name": "Parkinson Dataset with replicated acoustic features",
+      "size": 80,
+      "pd_patients": 40,
+      "controls": 40,
+      "url": "https://archive.ics.uci.edu/dataset/489/parkinson+dataset+with+replicated+acoustic+features",
+      "doi": "10.24432/C5701F"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson Dataset with replicated acoustic features",
+      "size": 80,
+      "pd_patients": 40,
+      "controls": 40,
+      "url": "https://archive.ics.uci.edu/dataset/489/parkinson+dataset+with+replicated+acoustic+features",
+      "doi": "10.24432/C5701F"
+    }
+  ],
+  "study_id": "10.1016/j.simpa.2023.100504_1"
+}

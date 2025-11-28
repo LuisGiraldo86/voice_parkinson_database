@@ -1,0 +1,70 @@
+{
+  "_id": {
+    "$oid": "68ecf00d6c43da02c16893aa"
+  },
+  "title": "Improved Glowworm Swarm Optimization for Parkinson's Disease Prediction Based on Radial Basis Functions Networks",
+  "authors": [
+    {
+      "name": "M. Sivakumar",
+      "affiliations": [
+        {
+          "institution": "Kongunadu College of Engineering and Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "K. Devaki",
+      "affiliations": [
+        {
+          "institution": "Rajalakshmi Engineering College",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "publication_type": "Journal",
+  "journal": "Information Technology and Control",
+  "year": 2024,
+  "doi": "10.5755/j01.itc.53.2.33368",
+  "abstract": "Parkinson's disease is caused by a disruption in the chemical products that enables the communication between brain cells. The brain's dopamine cells are responsible for movement control, adaptability, and fluidity. Parkinson's motor symptoms manifest when 60-80% of these cells are damaged due to insufficient dopamine. Researchers are working to find a way to identify the non-motor symptoms that manifest early detection in the disease to stop the disease's progression because it is believed that the disease starts many years before the motor symptoms. This research presents Parkinson's disease diagnosis based on deep learning. Processes for feature selection and classification encompass the suggested diagnosis technique. The proposed model searches for the best subset of characteristics using the Improved Glowworm Swarm Optimization (IGSO) algorithm. Radial Basis Functions Networks (RBFN) classifiers evaluate the chosen features. The suggested model is tested using datasets from Parkinson's Handwriting samples and Parkinson's Speech and voice with various sound recordings. With an accuracy of about 95.78%, the suggested algorithm forecasts Parkinson's disease using the VoicePD dataset more precisely.",
+  "citescore": null,
+  "ml_approaches": [
+    {
+      "algorithm": "Radial Basis Function Networks",
+      "feature_selection": {
+        "methods": [
+          "Improved Glowworm Swarm Optimization"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9578,
+        "recall": 0.9475,
+        "fall_out": 80.75
+      }
+    }
+  ],
+  "note": "The naming of the metrics are unusual. It has many resemblance with 10.1007/s00521-024-09516-1",
+  "source_dataset": [
+    {
+      "name": "Parkinson's Speech with Multiple Types of Sound Recordings",
+      "size": 40,
+      "pd_patients": 20,
+      "controls": 20,
+      "url": "https://archive.ics.uci.edu/dataset/301/parkinson+speech+dataset+with+multiple+types+of+sound+recordings",
+      "doi": "10.24432/C5NC8M"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Parkinson's Speech with Multiple Types of Sound Recordings",
+      "size": 40,
+      "pd_patients": 20,
+      "controls": 20,
+      "url": "https://archive.ics.uci.edu/dataset/301/parkinson+speech+dataset+with+multiple+types+of+sound+recordings",
+      "doi": "10.24432/C5NC8M"
+    }
+  ],
+  "study_id": "10.5755/j01.itc.53.2.33368_1"
+}
