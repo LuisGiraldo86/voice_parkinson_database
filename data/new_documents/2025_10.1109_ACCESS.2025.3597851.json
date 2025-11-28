@@ -1,0 +1,82 @@
+{
+  "title": "Design of an Optimized Feature Driven Severity Stage Classifier for Parkinson’s Disease Prediction Using Deep Learning",
+  "authors": [
+    {
+      "name": "K. Shyamala",
+      "affiliations": [
+        {
+          "institution": "Vellore Institute of Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "T. M. Navamani",
+      "affiliations": [
+        {
+          "institution": "Vellore Institute of Technology",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "problem": "Parkinson’s disease severity stage classification",
+  "ml_problem_type": "Multiclass Classification",
+  "publication_type": "Journal",
+  "journal": "IEEE Access",
+  "year": 2025,
+  "doi": "10.1109/ACCESS.2025.3597851",
+  "abstract": "Parkinson’s Disease (PD) is a degenerative neurological condition that seriously affects both motor and non-motor abilities. Among many biomarkers, speech abnormalities have become a potential sign of PD as the disease affects the motor control of the vocal point. Therefore, speech data is a convenient, non-invasive, and valuable diagnostic tool. This work presents a novel methodology for classifying the severity stage of parkinson’s disease using speech data, addressing a notable deficiency in existing research works that have focused on binary classification. Stage classification distinguishes PD’s early, mid, and late phases, offering essential insights for stage-specific therapy strategies. We proposed a Parkinson’s Speech Stage-Net model (PSS-Net) for the prediction of the severity of PD that includes Isolation Forest-based outlier detection and removal, KMeansSMOTE data balancing, and Optimized Dimensionality Reduction techniques. The essential speech features were found using a tree-based feature selection method. Selected features are fed into the Optimized and Fused Neural Network model. The proposed model effectively classified the stages of PD with an accuracy of 89%. Moreover, this research study stresses openness using SHAP (SHapley Additive exPlanations) to understand feature contributions, thereby improving the clinical relevance and credibility of the model.",
+  "ml_approaches": [
+    {
+      "algorithm": "Fused Neural Network",
+      "framework": "",
+      "scaling": [
+        "Min Max"
+      ],
+      "outlier_handling": [
+        "Isolation Forest"
+      ],
+      "imbalance_handling": [
+        "SMOTE: K-Means"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Feature Importance: Random Forest"
+        ]
+      },
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.89,
+        "precision": 0.89,
+        "recall": 0.89,
+        "f1_score": 0.89
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1109/EICEEAI60672.2023.10590358",
+  "note": "Gender dropepd when it seems it is important for PD. Classification into severity stages is done based on the UPDRS scores and quartiles. Is there any clinical validation of this approach?"
+}

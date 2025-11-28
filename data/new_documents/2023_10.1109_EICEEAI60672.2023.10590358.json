@@ -1,0 +1,92 @@
+{
+  "title": "Enhanced LSTM by Attention Mechanism for Early Detection of Parkinson's Disease Through Voice Signals",
+  "authors": [
+    {
+      "name": "Arman Mohammadigilani",
+      "affiliations": [
+        {
+          "institution": "Polytechnic University of Turin",
+          "country": "Italy"
+        }
+      ]
+    },
+    {
+      "name": "Hani Attar",
+      "affiliations": [
+        {
+          "institution": "Zarqa University",
+          "country": "Jordan"
+        },
+        {
+          "institution": "University of Business and Technology",
+          "country": "Saudi Arabia"
+        }
+      ]
+    },
+    {
+      "name": "Hamidreza Ehsani Chimeh",
+      "affiliations": [
+        {
+          "institution": "University of Newfoundland",
+          "country": "Canada"
+        }
+      ]
+    },
+    {
+      "name": "Mostafa Karami",
+      "affiliations": [
+        {
+          "institution": "Polytechnic University of Turin",
+          "country": "Italy"
+        }
+      ]
+    }
+  ],
+  "problem": "Parkinson’s disease severity stage classification",
+  "ml_problem_type": "Regression",
+  "publication_type": "Conference",
+  "journal": "2023 2nd International Engineering Conference on Electrical, Energy, and Artificial Intelligence (EICEEAI)",
+  "year": 2023,
+  "doi": "10.1109/EICEEAI60672.2023.10590358",
+  "abstract": "Parkinson's disease (PD) is a neurodegenerative condition characterized by notable motor and non-motor manifestations. The assessment tool known as the Unified Parkinson's Disease Rating Scale (UPDRS) plays a crucial role in evaluating the extent of symptomatology associated with Parkinson's Disease (PD). This research presents a complete approach for predicting UPDRS scores using sophisticated Long Short-Term Memory (LSTM) networks that are improved using attention mechanisms, data augmentation techniques, and robust feature selection. The data utilized in this work was obtained from the UC Irvine Machine Learning repository. It encompasses a range of speech metrics collected from patients in the early stages of Parkinson's disease. Recursive Feature Elimination (RFE) was utilized to achieve efficient feature selection, while the application of jittering enhanced the dataset. The Long Short-Term Memory (LSTM) network was carefully crafted to capture temporal fluctuations within the dataset effectively. Additionally, it was enhanced by integrating an attention mechanism, which enhances the network's ability to recognize sequence importance. The methodology that has been described presents a potentially practical approach for conducting a more precise and individualized analysis of medical data related to Parkinson's disease.",
+  "ml_approaches": [
+    {
+      "algorithm": "Long Short-Term Memory",
+      "framework": "",
+      "data_augmentation": [
+        "Jittering"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination: Random Forest"
+        ]
+      },
+      "validation": "5-fold cross-validation",
+      "results": {
+        "MSE": 7.0491,
+        "R2": 0.9591
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": 31,
+      "pd_patients": 23,
+      "controls": 8,
+      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
+      "doi": "10.24432/C59C74"
+    }
+  ],
+  "study_id": "10.1109/EICEEAI60672.2023.10590358"
+}
