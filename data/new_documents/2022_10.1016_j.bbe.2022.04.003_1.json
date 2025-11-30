@@ -1,0 +1,125 @@
+{
+  "title": "An investigation about the relationship between dysarthria level of speech and the neurological state of Parkinson's patients",
+  "authors": [
+    {
+      "name": "Biswajit Karan",
+      "affiliations": [
+        {
+          "institution": "Birla Institute of Technology",
+          "country": "India"
+        },
+        {
+          "institution": "Aditya Engineering Collegee",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Sitanshu Sekhar Sahu ",
+      "affiliations": [
+        {
+          "institution": "Birla Institute of Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Juan Rafael Orozco-Arroyave",
+      "affiliations": [
+        {
+          "institution": "Universidad de Antioquia",
+          "country": "Colombia"
+        },
+        {
+          "institution": "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+          "country": "Germany"
+        }
+      ]
+    }
+  ],
+  "problem": "Parkinson's disease severity stage classification",
+  "ml_problem_type": "Multiclass classification",
+  "publication_type": "Journal",
+  "journal": "Biocybernetics and Biomedical Engineering",
+  "year": 2022,
+  "doi": "10.1016/j.bbe.2022.04.003",
+  "abstract": "Parkinson's disease (PD) is the most common neurological disorder that typically affects elderly people. In the earlier stage of disease, it has been seen that 90% of the patients develop voice disorders namely hypokinetic dysarthria. As time passes, the severity of PD increases, and patients have difficulty performing different speech tasks. During the progression of the disease, due to less control of articulatory organs such as the tongue, jaw, and lips, the quality of speech signals deteriorates. Periodic medical evaluations are very important for PD patients; however, having access to a medical appointment with a neurologist is a privilege in most countries. Considering that the speech recording process is inexpensive and very easy to do, we want to explore in this paper the suitability of mapping information of the dysarthria level into the neurological state of patients and vice versa. Three levels of severity are considered in a multiclass framework using time-frequency (TF) features and random-forest along with an Error-Correcting Output Code (ECOC) approach. The multiclass classification task based on dysarthria level is performed using the TF features with words and diadochokinetic (DDK) speech tasks. The developed model shows an unweighted average recall (UAR) of 68.49% with the DDK task /pakata/ based on m-FDA level, and 48.8% with the word /petaka/ based on the UPDRS level using the Random Forest classifier. With the aim, to evaluate the neurological states using the dysarthria level, the developed models are used to predict the MDS-UPDRS-III level of patients. The highest matching accuracy of 32% with the word /petaka/ is achieved. Similarly, the multiclass classification framework based on MDS-UPDRS-III is applied to predict the dysarthria level of patients. In this case, the highest matching accuracy of 18% was obtained with the DDK tasks /pataka/.",
+  "ml_approaches": [
+    {
+      "algorithm": "Error Correcting Output Code: Random Forest",
+      "feature_extraction": ["Short-Time Fourier Transform", "Non-Negative Matrix Factorization"],
+      "validation": "train/test split",
+      "input_speech": "petaka",
+      "results": {
+        "unweighted_average_recall": 0.488,
+        "mcc": 0.4485,
+        "cohen_kappa": 0.448
+      }
+    },
+    {
+      "algorithm": "Error Correcting Output Code: Random Forest",
+      "feature_extraction": ["Short-Time Fourier Transform", "Non-Negative Matrix Factorization"],
+      "validation": "train/test split",
+      "input_speech": "drama",
+      "results": {
+        "unweighted_average_recall": 0.4073,
+        "mcc": 0.3243,
+        "cohen_kappa": 0.319
+      }
+    },
+    {
+      "algorithm": "Error Correcting Output Code: Random Forest",
+      "feature_extraction": ["Short-Time Fourier Transform", "Non-Negative Matrix Factorization"],
+      "validation": "train/test split",
+      "input_speech": "reina",
+      "results": {
+        "unweighted_average_recall": 0.3422,
+        "mcc": 0.235,
+        "cohen_kappa": 0.227
+      }
+    },
+    {
+      "algorithm": "Error Correcting Output Code: Random Forest",
+      "feature_extraction": ["Short-Time Fourier Transform", "Non-Negative Matrix Factorization"],
+      "validation": "train/test split",
+      "input_speech": "apto",
+      "results": {
+        "unweighted_average_recall": 0.3876,
+        "mcc": 0.3925,
+        "cohen_kappa": 0.39
+      }
+    },
+    {
+      "algorithm": "Error Correcting Output Code: Random Forest",
+      "feature_extraction": ["Short-Time Fourier Transform", "Non-Negative Matrix Factorization"],
+      "validation": "train/test split",
+      "input_speech": "blusa",
+      "results": {
+        "unweighted_average_recall": 0.3808,
+        "mcc": 0.3676,
+        "cohen_kappa": 0.354
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "PC-GITA",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+{
+      "name": "PC-GITA",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.1016/j.bbe.2022.04.003_1"
+}

@@ -1,0 +1,70 @@
+{
+  "title": "A novel reliability-based regression model for medical modeling and forecasting",
+  "authors": [
+    {
+      "name": "Mehdi Khashei",
+      "affiliations": [
+        {
+          "institution": "Isfahan University of Technology",
+          "country": "Iran"
+        }
+      ]
+    },
+    {
+      "name": "Negar Bakhtiarvand",
+      "affiliations": [
+        {
+          "institution": "Isfahan University of Technology",
+          "country": "Iran"
+        }
+      ]
+    },
+    {
+      "name": "Sepideh Etemadi",
+      "affiliations": [
+        {
+          "institution": "Isfahan University of Technology",
+          "country": "Iran"
+        }
+      ]
+    }
+  ],
+  "problem": "Parkinson's disease severity stage classification",
+  "ml_problem_type": "Regression",
+  "publication_type": "Journal",
+  "journal": "Diabetes & Metabolic Syndrome: Clinical Research & Reviews",
+  "year": 2021,
+  "doi": "10.1016/j.dsx.2021.102331",
+  "abstract": "In recent decades, modeling and forecasting have played a significant role in the diagnosis and treatment of different diseases. Various forecasting models have been developed to improve data-based decision-making processes in medical systems. Although these models differ in many aspects, they all originate from the assumption that more generalizable results are achieved by more accurate models. This means that accuracy is considered as the only prominent feature to evaluate the generalizability of forecasting models. On the other side, due to the changeable medical situations and even changeable models' results, making stable and reliable performance is necessary to adopt appropriate medical decisions. Hence, reliability and stability of models' performance is another effective factor on the model's generalizability that should be taken into consideration in developing medical forecasting models. In this paper, a new reliability-based forecasting approach is developed to address this gap and achieve more consistent performance in making medical predictions. The proposed approach is implemented on the classic regression model which is a common accuracy-based statistical method in medical fields. To evaluate the effectiveness of the proposed model, it has been performed by using two medical benchmark datasets from UCI and obtained results are compared with the classic regression model. Empirical results show that the proposed model has outperformed the classic regression model in terms of error criteria such as MSE and MAE. So, the presented model can be utilized as an appropriate alternative for the traditional regression model in making effective medical decisions. Based on the obtained results, the proposed model can be an appropriate alternative for traditional multiple linear regression for modeling in real-world applications, especially when more generalization and/or more reliability is needed.",
+  "ml_approaches": [
+    {
+      "algorithm": "Reliability-based Regression Model",
+      "validation": "train/test split",
+      "results": {
+        "MSE": 124.7620,
+        "MAE": 9.6884
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Telemonitoring Dataset",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+{
+      "name": "Oxford Parkinson's Disease Telemonitoring Dataset",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.1016/j.dsx.2021.102331_1"
+}

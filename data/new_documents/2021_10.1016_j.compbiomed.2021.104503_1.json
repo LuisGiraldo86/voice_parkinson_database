@@ -1,0 +1,70 @@
+{
+  "title": "Monitoring Parkinson's disease progression based on recorded speech with missing ordinal responses and replicated covariates",
+  "authors": [
+    {
+      "name": "Lizbeth Naranjo",
+      "affiliations": [
+        {
+          "institution": "Universidad Nacional Autónoma de México,",
+          "country": "Mexico"
+        }
+      ]
+    },
+    {
+      "name": "Carlos J. Pérez",
+      "affiliations": [
+        {
+          "institution": "Universidad de Extremadura",
+          "country": "Spain"
+        }
+      ]
+    },
+    {
+      "name": "Yolanda Campos-Roca",
+      "affiliations": [
+        {
+          "institution": "Universidad de Extremadura",
+          "country": "Spain"
+        }
+      ]
+    }
+  ],
+  "problem": "Parkinson's disease severity stage classification",
+  "ml_problem_type": "Multiclass Classification",
+  "publication_type": "Journal",
+  "journal": "Computers in Biology and Medicine",
+  "year": 2021,
+  "doi": "10.1016/j.compbiomed.2021.104503",
+  "abstract": "Monitoring Parkinson's Disease (PD) progression is an important task to improve the life quality of the affected people. This task can be performed by extracting features from voice recordings and applying specifically designed statistical models, leading to systems that improve the ability of monitoring the progression of PD in an objective, remote, non-invasive, fast, and economically sustainable way. An experiment has been conducted with 36 subjects to study the progression of the PD over 4 years by using the Hoehn and Yahr (HY) scale and features extracted from the phonation of the vowel/a/. The collected dataset had many missing data, which should be addressed jointly with the non-decreasing nature of the disease and the within-subject variability due to the use of replicated features. In order to handle these issues, a Hidden Markov model for longitudinal data was designed and implemented by using a data augmentation scheme based on different latent variables. Markov chain Monte Carlo methods were used to generate from the posterior distribution. The proposed approach has been tested on simulated data, providing good accuracy rates in the context of a multiclass problem. It also has been applied to the real data obtained from the conducted experiment, providing imputed and predicted HY stages compatible with the progression of PD. The conducted experiment and the proposed approach contribute to fill a gap in the scientific literature on experiments and methodologies for tracking PD progression based on acoustic features and the HY scale. This would help to derive an expert system that can be integrated into the protocols of neurology units in hospital centers.",
+  "ml_approaches": [
+    {
+      "algorithm": "Hidden Markov Model",
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.7143,
+        "MAOE": 0.286
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Regional Association for Parkinson's Disease of Extremadura",
+      "size": null,
+      "pd_patients": 36,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+{
+      "name": "Regional Association for Parkinson's Disease of Extremadura",
+      "size": null,
+      "pd_patients": 36,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.1016/j.compbiomed.2021.104503_1"
+}
