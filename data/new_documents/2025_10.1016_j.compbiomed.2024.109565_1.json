@@ -1,0 +1,120 @@
+{
+  "title": "A pilot study for speech assessment to detect the severity of Parkinson’s disease: An ensemble approach",
+  "authors": [
+    {
+      "name": "Guilherme C. Oliveira",
+      "affiliations": [
+        {
+          "institution": "RMIT University",
+          "country": "Australia"
+        },
+        {
+          "institution": "São Paulo State University",
+          "country": "Brazil"
+        }
+      ]
+    },
+    {
+      "name": "Nemuel D. Pah",
+      "affiliations": [
+        {
+          "institution": "RMIT University",
+          "country": "Australia"
+        },
+        {
+          "institution": "Universitas Surabaya",
+          "country": "Indonesia"
+        }
+      ]
+    },
+    {
+      "name": "Quoc C. Ngo",
+      "affiliations": [
+        {
+          "institution": "RMIT University",
+          "country": "Australia"
+        }
+      ]
+    },
+    {
+      "name": "Arissa Yoshida",
+      "affiliations": [
+        {
+          "institution": "São Paulo State University",
+          "country": "Brazil"
+        }
+      ]
+    },
+    {
+      "name": "Nícolas B. Gomes",
+      "affiliations": [
+        {
+          "institution": "São Paulo State University",
+          "country": "Brazil"
+        }
+      ]
+    },
+    {
+      "name": "João P. Papa",
+      "affiliations": [
+        {
+          "institution": "São Paulo State University",
+          "country": "Brazil"
+        }
+      ]
+    },
+    {
+      "name": "Dinesh Kumar",
+      "affiliations": [
+        {
+          "institution": "RMIT University",
+          "country": "Australia"
+        }
+      ]
+    }
+  ],
+  "problem": "Parkinson's disease severity stage classification",
+  "ml_problem_type": "Multiclass classification",
+  "publication_type": "Journal",
+  "journal": "Computers in Biology and Medicine",
+  "year": 2025,
+  "doi": "10.1016/j.compbiomed.2024.109565",
+  "abstract": "Changes in voice are a symptom of Parkinson’s disease and used to assess the progression of the condition. However, natural differences in the voices of people can make this challenging. Computerized binary speech classification can identify people with PD (PwPD), but its multiclass application to detect the severity of the disease remains difficult. This study investigated six diadochokinetic (DDK) tasks, four features (phonation, articulation, prosody, and their fusion), and three machine learning models for four severity levels of PwPD. The four binary classifications were: (i) Normal vs Not Normal, (ii) Slight vs Not Slight, (iii) Mild vs Not Mild and (iv) Moderate vs. Not Moderate. The best task and features for each class were identified and the models were ensembled to develop a multiclass model to distinguish between Normal vs. Slight vs. Mild vs. Moderate. For Normal vs Not-normal, logistic regression (LR) using the prosody from “ka-ka-ka” task, Random Forest (RF) using articulation from “petaka” for Slight vs Not Slight, RF for the fusion from “ka-ka-ka” for Mild vs Not Mild and Gradient Boosting (GB) using prosody from “ta-ta-ta” for Moderate vs Not Moderate gave the best results. Combining these using LR achieved an accuracy of 72%. Dividing the multiclass problem into four binary problems gives the optimum speech features for each class. This pilot study, conducted on a small public dataset, shows the potential of computerized speech analysis using DDK to evaluate the severity of Parkinson’s disease voice symptoms.",
+  "ml_approaches": [
+    {
+      "algorithm": "Stacked Ensemble (Logistic Regression, Random Forest, Gradient Boosting)",
+      "feature_extraction": ["Phonation Features", "Articulation Features", "Prosody Features"],
+      "feature_selection": {
+        "methods": [
+          "Recursive Feature Elimination"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "average_accuracy": 0.72
+      }
+    }
+  ],
+  "source_dataset": [
+{
+      "name": "PC-GITA",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+{
+      "name": "PC-GITA",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.1016/j.compbiomed.2024.109565_1",
+  "note": "Transforms a multiclass classification problem into multiple binary classification problems to identify optimal speech features for each severity level of Parkinson's disease. Only for MDS-UPDRS-II speech item. Only accuracy reported for the multiclass model."
+}

@@ -1,0 +1,639 @@
+{
+  "title": "Automatic classification of the severity level of Parkinson’s disease: A comparison of speaking tasks, features, and classifiers",
+  "authors": [
+    {
+      "name": "Manila Kodali",
+      "affiliations": [
+        {
+          "institution": "Aalto University",
+          "country": "Finland"
+        }
+      ]
+    },
+    {
+      "name": "Sudarsana Reddy Kadiri",
+      "affiliations": [
+        {
+          "institution": "Aalto University",
+          "country": "Finland"
+        }
+      ]
+    },
+    {
+      "name": "Paavo Alku",
+      "affiliations": [
+        {
+          "institution": "Aalto University",
+          "country": "Finland"
+        }
+      ]
+    }
+  ],
+  "problem": "Parkinson's disease severity stage classification",
+  "ml_problem_type": "Multiclass classification",
+  "publication_type": "Journal",
+  "journal": "Computer Speech & Language",
+  "year": 2024,
+  "doi": "10.1016/j.csl.2023.1015483",
+  "abstract": "Automatic speech-based severity level classification of Parkinson’s disease (PD) enables objective assessment and earlier diagnosis. While many studies have been conducted on the binary classification task to distinguish speakers in PD from healthy controls (HCs), clearly fewer studies have addressed multi-class PD severity level classification problems. Furthermore, in studying the three main issues of speech-based classification systems – speaking tasks, features, and classifiers – previous investigations on the severity level classification have yielded inconclusive results due to the use of only a few, and sometimes just one, type of speaking task, feature, or classifier in each study. Hence, a systematic comparison is conducted in this study between different speaking tasks, features, and classifiers. Five speaking tasks (vowel task, sentence task, diadochokinetic (DDK) task, read text task, and monologue task), four features (phonation, articulation, prosody, and their fusion), and four classifier architectures (support vector machine (SVM), random forest (RF), multilayer perceptron (MLP), and AdaBoost) were compared. The classification task studied was a 3-class problem to classify PD severity level as healthy mild severe. Two MDS-UPDRS scales (MDS-UPDRS-III and MDS-UPDRS-S) were used for the ground truth severity level labels. The results showed that the use of the monologue task and the articulation and fusion of features improved classification accuracy significantly compared to the use of the other speaking tasks and features. The best classification systems resulted in a rate of accuracy of 58% (using the monologue task with the articulation features) for the MDS-UPDR-III scale and 56% (using the monologue task with fusion of features) for the MDS-UPDRS-S scale.",
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine",
+      "feature_extraction": ["Phonation Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "vowels",
+      "results": {
+        "accuracy": 0.41
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "feature_extraction": ["Phonation Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "vowels",
+      "results": {
+        "accuracy": 0.39
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "feature_extraction": ["Phonation Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "vowels",
+      "results": {
+        "accuracy": 0.41
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+     "feature_extraction": ["Phonation Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "vowels",
+      "results": {
+        "accuracy": 0.47
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "feature_extraction": ["Articulation Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "vowels",
+      "results": {
+        "accuracy": 0.44
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "feature_extraction": ["Articulation Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "vowels",
+      "results": {
+        "accuracy": 0.46
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "feature_extraction": ["Articulation Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "vowels",
+      "results": {
+        "accuracy": 0.48
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+     "feature_extraction": ["Articulation Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "vowels",
+      "results": {
+        "accuracy": 0.47
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "feature_extraction": ["Prosody Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "vowels",
+      "results": {
+        "accuracy": 0.44
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "feature_extraction": ["Prosody Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "vowels",
+      "results": {
+        "accuracy": 0.36
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "feature_extraction": ["Prosody Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "vowels",
+      "results": {
+        "accuracy": 0.41
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+     "feature_extraction": ["Prosody Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "vowels",
+      "results": {
+        "accuracy": 0.38
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "feature_extraction": ["Phonation Features", "Articulation Features", "Prosody Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "vowels",
+      "results": {
+        "accuracy": 0.45
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "feature_extraction": ["Phonation Features", "Articulation Features", "Prosody Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "vowels",
+      "results": {
+        "accuracy": 0.48
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "feature_extraction": ["Phonation Features", "Articulation Features", "Prosody Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "vowels",
+      "results": {
+        "accuracy": 0.41
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+     "feature_extraction": ["Phonation Features", "Articulation Features", "Prosody Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "vowels",
+      "results": {
+        "accuracy": 0.47
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "feature_extraction": ["Phonation Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "sentences",
+      "results": {
+        "accuracy": 0.36
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "feature_extraction": ["Phonation Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "sentences",
+      "results": {
+        "accuracy": 0.38
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "feature_extraction": ["Phonation Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "sentences",
+      "results": {
+        "accuracy": 0.35
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+     "feature_extraction": ["Phonation Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "sentences",
+      "results": {
+        "accuracy": 0.35
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "feature_extraction": ["Articulation Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "sentences",
+      "results": {
+        "accuracy": 0.45
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "feature_extraction": ["Articulation Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "sentences",
+      "results": {
+        "accuracy": 0.47
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "feature_extraction": ["Articulation Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "sentences",
+      "results": {
+        "accuracy": 0.44
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+     "feature_extraction": ["Articulation Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "sentences",
+      "results": {
+        "accuracy": 0.44
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "feature_extraction": ["Prosody Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "sentences",
+      "results": {
+        "accuracy": 0.42
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "feature_extraction": ["Prosody Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "sentences",
+      "results": {
+        "accuracy": 0.38
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "feature_extraction": ["Prosody Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "sentences",
+      "results": {
+        "accuracy": 0.38
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+     "feature_extraction": ["Prosody Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "sentences",
+      "results": {
+        "accuracy": 0.38
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "feature_extraction": ["Phonation Features", "Articulation Features", "Prosody Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "sentences",
+      "results": {
+        "accuracy": 0.46
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "feature_extraction": ["Phonation Features", "Articulation Features", "Prosody Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "sentences",
+      "results": {
+        "accuracy": 0.41
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "feature_extraction": ["Phonation Features", "Articulation Features", "Prosody Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "sentences",
+      "results": {
+        "accuracy": 0.37
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+     "feature_extraction": ["Phonation Features", "Articulation Features", "Prosody Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "sentences",
+      "results": {
+        "accuracy": 0.38
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "feature_extraction": ["Phonation Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "ddk",
+      "results": {
+        "accuracy": 0.39
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "feature_extraction": ["Phonation Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "ddk",
+      "results": {
+        "accuracy": 0.38
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "feature_extraction": ["Phonation Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "ddk",
+      "results": {
+        "accuracy": 0.38
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+     "feature_extraction": ["Phonation Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "ddk",
+      "results": {
+        "accuracy": 0.42
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "feature_extraction": ["Articulation Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "ddk",
+      "results": {
+        "accuracy": 0.50
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "feature_extraction": ["Articulation Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "ddk",
+      "results": {
+        "accuracy": 0.47
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "feature_extraction": ["Articulation Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "ddk",
+      "results": {
+        "accuracy": 0.44
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+     "feature_extraction": ["Articulation Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "ddk",
+      "results": {
+        "accuracy": 0.44
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "feature_extraction": ["Prosody Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "ddk",
+      "results": {
+        "accuracy": 0.42
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "feature_extraction": ["Prosody Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "ddk",
+      "results": {
+        "accuracy": 0.38
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "feature_extraction": ["Prosody Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "ddk",
+      "results": {
+        "accuracy": 0.38
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+     "feature_extraction": ["Prosody Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "ddk",
+      "results": {
+        "accuracy": 0.38
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "feature_extraction": ["Phonation Features", "Articulation Features", "Prosody Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "ddk",
+      "results": {
+        "accuracy": 0.46
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "feature_extraction": ["Phonation Features", "Articulation Features", "Prosody Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "ddk",
+      "results": {
+        "accuracy": 0.41
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "feature_extraction": ["Phonation Features", "Articulation Features", "Prosody Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "ddk",
+      "results": {
+        "accuracy": 0.37
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+     "feature_extraction": ["Phonation Features", "Articulation Features", "Prosody Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "ddk",
+      "results": {
+        "accuracy": 0.38
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "feature_extraction": ["Phonation Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "monologue",
+      "results": {
+        "accuracy": 0.39
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "feature_extraction": ["Phonation Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "monologue",
+      "results": {
+        "accuracy": 0.51
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "feature_extraction": ["Phonation Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "monologue",
+      "results": {
+        "accuracy": 0.40
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+     "feature_extraction": ["Phonation Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "monologue",
+      "results": {
+        "accuracy": 0.53
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "feature_extraction": ["Articulation Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "monologue",
+      "results": {
+        "accuracy": 0.47
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "feature_extraction": ["Articulation Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "monologue",
+      "results": {
+        "accuracy": 0.46
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "feature_extraction": ["Articulation Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "monologue",
+      "results": {
+        "accuracy": 0.58
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+     "feature_extraction": ["Articulation Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "monologue",
+      "results": {
+        "accuracy": 0.42
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "feature_extraction": ["Prosody Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "monologue",
+      "results": {
+        "accuracy": 0.46
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "feature_extraction": ["Prosody Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "monologue",
+      "results": {
+        "accuracy": 0.42
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "feature_extraction": ["Prosody Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "monologue",
+      "results": {
+        "accuracy": 0.38
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+     "feature_extraction": ["Prosody Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "monologue",
+      "results": {
+        "accuracy": 0.46
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "feature_extraction": ["Phonation Features", "Articulation Features", "Prosody Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "monologue",
+      "results": {
+        "accuracy": 0.54
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "feature_extraction": ["Phonation Features", "Articulation Features", "Prosody Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "monologue",
+      "results": {
+        "accuracy": 0.40
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "feature_extraction": ["Phonation Features", "Articulation Features", "Prosody Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "monologue",
+      "results": {
+        "accuracy": 0.56
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+     "feature_extraction": ["Phonation Features", "Articulation Features", "Prosody Features"],
+      "validation": "group 5-fold cross-validation",
+      "input_speech": "monologue",
+      "results": {
+        "accuracy": 0.48
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "PC-GITA",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+{
+      "name": "PC-GITA",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.1016/j.csl.2023.101548_1",
+  "note": "The study considers mild for UPDRS-III scores 0-32, severe for scores 33 and above. Only reports accuracy, and do not consider specialized metrics for multiclass classification."
+}
