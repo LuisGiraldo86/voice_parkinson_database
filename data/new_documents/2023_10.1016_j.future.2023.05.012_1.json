@@ -1,0 +1,93 @@
+{
+  "title": "A robust intelligence regression model for monitoring Parkinson's disease based on speech signals",
+  "authors": [
+    {
+      "name": "Ahmed M. Anter",
+      "affiliations": [
+        {
+          "institution": "Egypt-Japan University of Science and Technology",
+          "country": "Egypt"
+        },
+        {
+          "institution": "Beni-Suef University",
+          "country": "Egypt"
+        }
+      ]
+    },
+    {
+      "name": "Ali W. Mohamed",
+      "affiliations": [
+        {
+          "institution": "Cairo University",
+          "country": "Egypt"
+        }
+      ]
+    },
+    {
+      "name": "Min Zhang",
+      "affiliations": [
+        {
+          "institution": "Harbin Institute of Technology",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Zhiguo Zhang",
+      "affiliations": [
+        {
+          "institution": "Harbin Institute of Technology",
+          "country": "China"
+        },
+        {
+          "institution": "Peng Cheng Laboratory",
+          "country": "China"
+        }
+      ]
+    }
+  ],
+  "problem": "Parkinson's disease severity stage classification",
+  "ml_problem_type": "Regression",
+  "publication_type": "Journal",
+  "journal": "Future Generation Computer Systems",
+  "year": 2023,
+  "doi": "10.1016/j.future.2023.05.012",
+  "abstract": "Parkinson's disease (PD) is a degenerative neurological disease, and early diagnosis of PD is crucial. Monitoring PD progression from voice records is a promising technique, which is particularly suitable for IoT-based telemedicine in smart home. But, how to select the most relevant voice features fast and accurately for early diagnosis of PD is still an open question. In this study, a robust intelligent regression model is proposed to monitor PD patients from voice records. The proposed model consists of a binary version of an ant lion optimizer (BALO) for selection of voice features and an extreme learning machine (ELM) based on differential evaluation (DE) for continuous prediction of unified Parkinson scale (UPDRS). As compared with various machine learning (ML) prediction methods and meta-heuristic algorithms, the proposed BALO-DEELM method can select most predictive voice features and make prediction in a faster and more accurate manner, which is particularly suitable for IoT-based telemedicine. The BALO-DEELM model has the potential to be used as a crucial data analysis part in an IoT-based telemedicine system for PD monitoring.",
+  "ml_approaches": [
+    {
+      "algorithm": "Extreme Learning Machine",
+      "framework": "MATLAB R2016a",
+      "feature_selection": {
+        "methods": [
+          "Binary Ant Lion Optimizer"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "mae": 0.4,
+        "rsme": 0.5320
+      }
+    }
+  ],
+  "source_dataset": [
+{
+      "name": "Oxford Parkinson's Disease Telemonitoring Dataset",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+{
+      "name": "Oxford Parkinson's Disease Telemonitoring Dataset",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.1016/j.future.2023.05.012_1"
+}

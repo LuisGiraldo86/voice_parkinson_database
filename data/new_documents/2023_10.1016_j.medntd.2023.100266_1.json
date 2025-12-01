@@ -1,0 +1,164 @@
+{
+  "title": "Enhancing Parkinson's disease severity assessment through voice-based wavelet scattering, optimized model selection, and weighted majority voting",
+  "authors": [
+    {
+      "name": "Farhad Abedinzadeh Torghabeh",
+      "affiliations": [
+        {
+          "institution": "Islamic Azad University",
+          "country": "Iran"
+        }
+      ]
+    },
+    {
+      "name": "Seyyed Abed Hosseini",
+      "affiliations": [
+        {
+          "institution": "Islamic Azad University",
+          "country": "Iran"
+        }
+      ]
+    },
+    {
+      "name": "Elham Ahmadi Moghadam",
+      "affiliations": [
+        {
+          "institution": "Islamic Azad University",
+          "country": "Iran"
+        }
+      ]
+    }
+  ],
+  "problem": "Parkinson's disease severity stage classification",
+  "ml_problem_type": "Multiclass Classification",
+  "publication_type": "Journal",
+  "journal": "Medicine in Novel Technology and Devices",
+  "year": 2023,
+  "doi": "10.1016/j.medntd.2023.100266",
+  "abstract": "Parkinson's disease (PD) is a neurodegenerative disorder characterized by motor and non-motor symptoms that significantly impact an individual's quality of life. Voice changes have shown promise as early indicators of PD, making voice analysis a valuable tool for early detection and intervention. This study aims to assess and detect the severity of PD through voice analysis using the mobile device voice recordings dataset. The dataset consisted of recordings from PD patients at different stages of the disease and healthy control subjects. A novel approach was employed, incorporating a voice activity detection algorithm for speech segmentation and the wavelet scattering transform for feature extraction. A Bayesian optimization technique is used to fine-tune the hyperparameters of seven commonly used classifiers and optimize the performance of machine learning classifiers for PD severity detection. AdaBoost and K-nearest neighbor consistently demonstrated superior performance across various evaluation metrics among the classifiers. Furthermore, a weighted majority voting (WMV) technique is implemented, leveraging the predictions of multiple models to achieve a near-perfect accuracy of 98.62%, improving classification accuracy. The results highlight the promising potential of voice analysis in PD diagnosis and monitoring. Integrating advanced signal processing techniques and machine learning models provides reliable and accessible tools for PD assessment, facilitating early intervention and improving patient outcomes. This study contributes to the field by demonstrating the effectiveness of the proposed methodology and the significant role of WMV in enhancing classification accuracy for PD severity detection.",
+  "ml_approaches": [
+    {
+      "algorithm": "Ensemble (Support Vector Machine, AdaBoost, K-Nearest Neighbors, Multilayer Perceptron, Linear Discriminant Analysis)",
+      "feature_extraction": ["Voice Activity Detection", "Wavelet Scattering"],
+      "validation": "train/test split",
+      "results": {
+        "macro_precision": 0.9410,
+        "macro_recall": 0.9841,
+        "macro_specificity": 0.9963,
+        "macro_accuracy": 0.9862,
+        "macro_f1_score": 0.9598,
+        "micro_precision": 0.9862,
+        "micro_recall": 0.9862,
+        "micro_specificity": 0.9954,
+        "micro_accuracy": 0.9862,
+        "micro_f1_score": 0.9862
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "feature_extraction": ["Voice Activity Detection", "Wavelet Scattering"],
+      "validation": "train/test split",
+      "results": {
+        "macro_precision": 0.8528,
+        "macro_recall": 0.8394,
+        "macro_specificity": 0.9501,
+        "macro_accuracy": 0.8853,
+        "macro_f1_score": 0.8430,
+        "micro_precision": 0.8853,
+        "micro_recall": 0.8853,
+        "micro_specificity": 0.9617,
+        "micro_accuracy": 0.8853,
+        "micro_f1_score": 0.8853
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "feature_extraction": ["Voice Activity Detection", "Wavelet Scattering"],
+      "validation": "train/test split",
+      "results": {
+        "macro_precision": 0.9600,
+        "macro_recall": 0.8551,
+        "macro_specificity": 0.9620,
+        "macro_accuracy": 0.9311,
+        "macro_f1_score": 0.8996,
+        "micro_precision": 0.9311,
+        "micro_recall": 0.9311,
+        "micro_specificity": 0.9770,
+        "micro_accuracy": 0.9311,
+        "micro_f1_score": 0.9311
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "feature_extraction": ["Voice Activity Detection", "Wavelet Scattering"],
+      "validation": "train/test split",
+      "results": {
+        "macro_precision": 0.9554,
+        "macro_recall": 0.9203,
+        "macro_specificity": 0.9694,
+        "macro_accuracy": 0.9403,
+        "macro_f1_score": 0.9367,
+        "micro_precision": 0.9403,
+        "micro_recall": 0.9403,
+        "micro_specificity": 0.9801,
+        "micro_accuracy": 0.9403,
+        "micro_f1_score": 0.9403
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "feature_extraction": ["Voice Activity Detection", "Wavelet Scattering"],
+      "validation": "train/test split",
+      "results": {
+        "macro_precision": 0.9440,
+        "macro_recall": 0.8908,
+        "macro_specificity": 0.9633,
+        "macro_accuracy": 0.9220,
+        "macro_f1_score": 0.9137,
+        "micro_precision": 0.9220,
+        "micro_recall": 0.9220,
+        "micro_specificity": 0.9740,
+        "micro_accuracy": 0.9220,
+        "micro_f1_score": 0.9220
+      }
+    },
+    {
+      "algorithm": "Linear Discriminant Analysis",
+      "feature_extraction": ["Voice Activity Detection", "Wavelet Scattering"],
+      "validation": "train/test split",
+      "results": {
+        "macro_precision": 0.8602,
+        "macro_recall": 0.8542,
+        "macro_specificity": 0.9363,
+        "macro_accuracy": 0.8715,
+        "macro_f1_score": 0.8506,
+        "micro_precision": 0.8715,
+        "micro_recall": 0.8715,
+        "micro_specificity": 0.9571,
+        "micro_accuracy": 0.8715,
+        "micro_f1_score": 0.8715
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Mobile Device Voice Recordings at King's College London",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+{
+      "name": "Mobile Device Voice Recordings at King's College London",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.1016/j.medntd.2023.100266_1"
+}
