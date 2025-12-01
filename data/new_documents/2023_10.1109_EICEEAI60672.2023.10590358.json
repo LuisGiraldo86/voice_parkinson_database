@@ -42,7 +42,7 @@
       ]
     }
   ],
-  "problem": "Parkinson’s disease severity stage classification",
+  "problem": "Parkinson's disease severity stage classification",
   "ml_problem_type": "Regression",
   "publication_type": "Conference",
   "journal": "2023 2nd International Engineering Conference on Electrical, Energy, and Artificial Intelligence (EICEEAI)",
@@ -69,23 +69,23 @@
     }
   ],
   "source_dataset": [
-    {
-      "name": "Oxford Parkinson's Disease Detection Dataset",
-      "size": 31,
-      "pd_patients": 23,
-      "controls": 8,
-      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
-      "doi": "10.24432/C59C74"
+{
+      "name": "Oxford Parkinson's Disease Telemonitoring Dataset",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
     }
   ],
   "target_dataset": [
-    {
-      "name": "Oxford Parkinson's Disease Detection Dataset",
-      "size": 31,
-      "pd_patients": 23,
-      "controls": 8,
-      "url": "https://archive.ics.uci.edu/dataset/174/parkinsons",
-      "doi": "10.24432/C59C74"
+{
+      "name": "Oxford Parkinson's Disease Telemonitoring Dataset",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
     }
   ],
   "study_id": "10.1109/EICEEAI60672.2023.10590358"
