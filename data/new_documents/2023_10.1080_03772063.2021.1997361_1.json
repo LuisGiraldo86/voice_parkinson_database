@@ -1,0 +1,378 @@
+{
+  "title": "Estimation of Severity in Parkinson's Disease Using Acoustic Features of Phonatory Tasks",
+  "authors": [
+    {
+      "name": "Rekha Viswanathan",
+      "affiliations": [
+        {
+          "institution": "RMIT University",
+          "country": "Australia"
+        }
+      ]
+    },
+    {
+      "name": "Sridhar P. Arjunan",
+      "affiliations": [
+        {
+          "institution": "SRM Institute of Science and Technology",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "problem": "Parkinson's disease severity stage classification",
+  "ml_problem_type": [],
+  "publication_type": "Journal",
+  "journal": "Medical Electronics",
+  "year": 2023,
+  "doi": "10.1080/03772063.2021.1997361",
+  "abstract": "Unified Parkinson's disease rating scale (UPDRS) is a popular tool in the clinical set up for the evaluation of Parkinson's disease (PD) symptoms and severity. However, the physical examination aspect and expertise requirements of the UPDRS assessment makes it subjective, expensive, and inconvenient. Thus, we have investigated the performance of vocal features from three sustained phonetic tasks (/a/, /u/, /m/) in objectively evaluating the motor UPDRS score which will help in the remote monitoring of PD motor symptoms. 26 PD patients (mean age=72) and 22 control subjects (mean age=66.91) volunteered the study. The voices were collected from: 1. PD patients in both off and on states of Levodopa medication and 2. control subjects. The Least Absolute Shrinkage and Selection Operator (LASSO) feature selection algorithm was applied to rank the voice features. Regression models using support vector machines (SVM), random forest (RF) and AdaBoost were employed for the objective evaluation of the motor UPDRS score. The parameters mean squared error (MSE), root mean squared error (RMSE), mean absolute error (MAE) and R2 were employed to assess the performance of the models. The average motor UPDRS score for PD off-state, on-state and controls were 27.31, 20.42 and 2.63, respectively. We observed a better objective estimation of UPDRS score in all the models when using the features from /m/ compared to that from /a/ and /u/. Our study assures the possibility of objective evaluation of motor UPDRS using the vocal features from sustained phonetic tasks in PD patients under Levodopa medication off and on-state..",
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine",
+      "feature_extraction": ["PRAAT"],
+      "feature_selection": {
+        "methods": [
+          "LASSO"
+        ]
+      },
+      "validation": "train/test split",
+      "input_speech": "/a/",
+      "data_subset": "off_state",
+      "results": {
+        "mse": 55.19,
+        "rsme": 7.43,
+        "mae": 5.39,
+        "r_squared": 0.66
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "feature_extraction": ["PRAAT"],
+      "feature_selection": {
+        "methods": [
+          "LASSO"
+        ]
+      },
+      "validation": "train/test split",
+      "input_speech": "/a/",
+      "data_subset": "off_state",
+      "results": {
+        "mse": 71.46,
+        "rsme": 8.45,
+        "mae": 6.60,
+        "r_squared": 0.56
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "feature_extraction": ["PRAAT"],
+      "feature_selection": {
+        "methods": [
+          "LASSO"
+        ]
+      },
+      "validation": "train/test split",
+      "input_speech": "/a/",
+      "data_subset": "off_state",
+      "results": {
+        "mse": 75.90,
+        "rsme": 8.71,
+        "mae": 5.56,
+        "r_squared": 0.53
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "feature_extraction": ["PRAAT"],
+      "feature_selection": {
+        "methods": [
+          "LASSO"
+        ]
+      },
+      "validation": "train/test split",
+      "input_speech": "/u/",
+      "data_subset": "off_state",
+      "results": {
+        "mse": 137.92,
+        "rsme": 11.74,
+        "mae": 10.17,
+        "r_squared": 0.14
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "feature_extraction": ["PRAAT"],
+      "feature_selection": {
+        "methods": [
+          "LASSO"
+        ]
+      },
+      "validation": "train/test split",
+      "input_speech": "/u/",
+      "data_subset": "off_state",
+      "results": {
+        "mse": 136.88,
+        "rsme": 11.70,
+        "mae": 10.58,
+        "r_squared": 0.15
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "feature_extraction": ["PRAAT"],
+      "feature_selection": {
+        "methods": [
+          "LASSO"
+        ]
+      },
+      "validation": "train/test split",
+      "input_speech": "/u/",
+      "data_subset": "off_state",
+      "results": {
+        "mse": 138.52,
+        "rsme": 11.77,
+        "mae": 7.88,
+        "r_squared": 0.14
+      }
+    },
+     {
+      "algorithm": "Support Vector Machine",
+      "feature_extraction": ["PRAAT"],
+      "feature_selection": {
+        "methods": [
+          "LASSO"
+        ]
+      },
+      "validation": "train/test split",
+      "input_speech": "/m/",
+      "data_subset": "off_state",
+      "results": {
+        "mse": 37.48,
+        "rsme": 6.12,
+        "mae": 4.77,
+        "r_squared": 0.77
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "feature_extraction": ["PRAAT"],
+      "feature_selection": {
+        "methods": [
+          "LASSO"
+        ]
+      },
+      "validation": "train/test split",
+      "input_speech": "/m/",
+      "data_subset": "off_state",
+      "results": {
+        "mse": 31.81,
+        "rsme": 5.64,
+        "mae": 3.84,
+        "r_squared": 0.8
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "feature_extraction": ["PRAAT"],
+      "feature_selection": {
+        "methods": [
+          "LASSO"
+        ]
+      },
+      "validation": "train/test split",
+      "input_speech": "/m/",
+      "data_subset": "off_state",
+      "results": {
+        "mse": 31.52,
+        "rsme": 5.61,
+        "mae": 3.52,
+        "r_squared": 0.8
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "feature_extraction": ["PRAAT"],
+      "feature_selection": {
+        "methods": [
+          "LASSO"
+        ]
+      },
+      "validation": "train/test split",
+      "input_speech": "/a/",
+      "data_subset": "on_state",
+      "results": {
+        "mse": 56.29,
+        "rsme": 7.50,
+        "mae": 5.69,
+        "r_squared": 0.59
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "feature_extraction": ["PRAAT"],
+      "feature_selection": {
+        "methods": [
+          "LASSO"
+        ]
+      },
+      "validation": "train/test split",
+      "input_speech": "/a/",
+      "data_subset": "on_state",
+      "results": {
+        "mse": 74.49,
+        "rsme": 8.63,
+        "mae": 6.75,
+        "r_squared": 0.46
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "feature_extraction": ["PRAAT"],
+      "feature_selection": {
+        "methods": [
+          "LASSO"
+        ]
+      },
+      "validation": "train/test split",
+      "input_speech": "/a/",
+      "data_subset": "on_state",
+      "results": {
+        "mse": 74.15,
+        "rsme": 8.61,
+        "mae": 6.23,
+        "r_squared": 0.46
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "feature_extraction": ["PRAAT"],
+      "feature_selection": {
+        "methods": [
+          "LASSO"
+        ]
+      },
+      "validation": "train/test split",
+      "input_speech": "/u/",
+      "data_subset": "on_state",
+      "results": {
+        "mse": 78.72,
+        "rsme": 8.87,
+        "mae": 6.69,
+        "r_squared": 0.43
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "feature_extraction": ["PRAAT"],
+      "feature_selection": {
+        "methods": [
+          "LASSO"
+        ]
+      },
+      "validation": "train/test split",
+      "input_speech": "/u/",
+      "data_subset": "on_state",
+      "results": {
+        "mse": 77.11,
+        "rsme": 8.78,
+        "mae": 6.34,
+        "r_squared": 0.44
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "feature_extraction": ["PRAAT"],
+      "feature_selection": {
+        "methods": [
+          "LASSO"
+        ]
+      },
+      "validation": "train/test split",
+      "input_speech": "/u/",
+      "data_subset": "on_state",
+      "results": {
+        "mse": 96.96,
+        "rsme": 9.85,
+        "mae": 6.96,
+        "r_squared": 0.29
+      }
+    },
+     {
+      "algorithm": "Support Vector Machine",
+      "feature_extraction": ["PRAAT"],
+      "feature_selection": {
+        "methods": [
+          "LASSO"
+        ]
+      },
+      "validation": "train/test split",
+      "input_speech": "/m/",
+      "data_subset": "on_state",
+      "results": {
+        "mse": 67.76,
+        "rsme": 8.23,
+        "mae": 6.22,
+        "r_squared": 0.51
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "feature_extraction": ["PRAAT"],
+      "feature_selection": {
+        "methods": [
+          "LASSO"
+        ]
+      },
+      "validation": "train/test split",
+      "input_speech": "/m/",
+      "data_subset": "on_state",
+      "results": {
+        "mse": 47.45,
+        "rsme": 6.89,
+        "mae": 5.21,
+        "r_squared": 0.65
+      }
+    },
+    {
+      "algorithm": "AdaBoost",
+      "feature_extraction": ["PRAAT"],
+      "feature_selection": {
+        "methods": [
+          "LASSO"
+        ]
+      },
+      "validation": "train/test split",
+      "input_speech": "/m/",
+      "data_subset": "on_state",
+      "results": {
+        "mse": 63.31,
+        "rsme": 7.96,
+        "mae": 5.9,
+        "r_squared": 0.54
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Custom Dataset Collected at RMIT University",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Custom Dataset Collected at RMIT University",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.1080/03772063.2021.1997361_1",
+  "note": null
+}

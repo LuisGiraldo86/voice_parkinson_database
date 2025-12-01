@@ -1,0 +1,74 @@
+{
+  "title": "E-Health Parkinson Disease Diagnosis in Smart Home Based on Hybrid Intelligence Optimization Model",
+  "authors": [
+    {
+      "name": "Ahmed M. Anter",
+      "affiliations": [
+        {
+          "institution": "Shenzhen University",
+          "country": "China"
+        },
+        {
+          "institution": "Beni-Suef University",
+          "country": "Egypt"
+        }
+      ]
+    },
+    {
+      "name": "Zhiguo Zhang",
+      "affiliations": [
+        {
+          "institution": "Shenzhen University",
+          "country": "China"
+        }
+      ]
+    }
+  ],
+  "problem": "Parkinson's disease severity stage classification",
+  "ml_problem_type": "",
+  "publication_type": "Conference",
+  "journal": "Proceedings of the International Conference on Advanced Intelligent Systems and Informatics 2019",
+  "year": 2020,
+  "doi": "10.1007/978-3-030-31129-2_15",
+  "abstract": "The use of internet of things (IoT) in smart home with medical devices within a connected health environment promotes the quick flow of information, the patient's vital parameters are transmitted by medical devices onto secure cloud based platforms where they are stored, aggregated and analyzed. IoT helps to store data for millions of patients and perform analysis and diagnosis in real-time, promoting an evidence-based medicine system. Different intelligence optimization models can be integrated with IoT to improve the patient healthcare. In this paper, an intelligent optimization model is proposed for monitoring patients with Parkinson's disease (PD) based on UPDRS assessment (Unified Parkinson's Disease Rating Scale) from voice records in smart home. Ant lion optimization algorithm (ALO) and adaptive extreme learning machine (ELM) based on differential evaluation (DE) algorithm is proposed; namely (ALO-DEELM), for PD diagnosis. Using this model, home residents will get feedback and keep track on their PD situation. ALO-DEELM model is compared with different machine learning (ML) prediction algorithms and showed the superiority based on different measures. Moreover, the experimental results showed that the proposed model is effective and can significantly reduce the prediction computational time of UPDRS scores. The proposed ALO-DEELM has the potential to be implemented as an intelligent system for PD prediction in healthcare.",
+  "ml_approaches": [
+    {
+      "algorithm": "Extreme Learning Machine",
+      "feature_selection": {
+        "methods": [
+          "Ant Lion Optimizer"
+        ]
+      },
+      "missing_data_handling": ["K-Nearest Neighbors"],
+      "dimensionality_reduction": ["PCA"],
+      "validation": "train/test split",
+      "results": {
+        "mae": 0.04,
+        "rsme": 0.053,
+        "mse": 0.003,
+        "r_squared": 0.908
+      }
+    }
+  ],
+  "source_dataset": [
+{
+      "name": "Oxford Parkinson's Disease Telemonitoring Dataset",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+{
+      "name": "Oxford Parkinson's Disease Telemonitoring Dataset",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.1007/978-3-030-31129-2_15_1"
+}

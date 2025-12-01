@@ -1,0 +1,122 @@
+{
+  "_id": {
+    "$oid": "68ecf00c6c43da02c168936b"
+  },
+  "title": "An Intelligent Mobile-Enabled System for Diagnosing Parkinson Disease: Development and Validation of a Speech Impairment Detection System",
+  "authors": [
+    {
+      "name": "Liang Zhang",
+      "affiliations": [
+        {
+          "institution": "Dongbei University of Finance and Economics",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Yue Qu",
+      "affiliations": [
+        {
+          "institution": "Dalian University of Technology",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Bo Jin",
+      "affiliations": [
+        {
+          "institution": "Dalian University of Technology",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Lu Jing",
+      "affiliations": [
+        {
+          "institution": " First Affiliated Hospital of Dalian Medical University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Zhan Gao",
+      "affiliations": [
+        {
+          "institution": "Beijing Haoyisheng Cloud Hospital Management Technology Ltd",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Zhanhua Liang",
+      "affiliations": [
+        {
+          "institution": "First Affiliated Hospital of Dalian Medical University",
+          "country": "China"
+        }
+      ]
+    }
+  ],
+  "problem": "Parkinson's disease severity stage classification",
+  "ml_problem_type": "Regression",
+  "publication_type": "Journal",
+  "journal": "JMIR Medical Informatics",
+  "year": 2020,
+  "doi": "10.2196/18689",
+  "abstract": "Background: Parkinson disease (PD) is one of the most common neurological diseases. At present, because the exact cause is still unclear, accurate diagnosis and progression monitoring remain challenging. In recent years, exploring the relationship between PD and speech impairment has attracted widespread attention in the academic world. Most of the studies successfully validated the effectiveness of some vocal features. Moreover, the noninvasive nature of speech signal-based testing has pioneered a new way for telediagnosis and telemonitoring. In particular, there is an increasing demand for artificial intelligence-powered tools in the digital health era. Objective: This study aimed to build a real-time speech signal analysis tool for PD diagnosis and severity assessment. Further, the underlying system should be flexible enough to integrate any machine learning or deep learning algorithm. Methods: At its core, the system we built consists of two parts: (1) speech signal processing: both traditional and novel speech signal processing technologies have been employed for feature engineering, which can automatically extract a few linear and nonlinear dysphonia features, and (2) application of machine learning algorithms: some classical regression and classification algorithms from the machine learning field have been tested; we then chose the most efficient algorithms and relevant features. Results: Experimental results showed that our system had an outstanding ability to both diagnose and assess severity of PD. By using both linear and nonlinear dysphonia features, the accuracy reached 88.74% and recall reached 97.03% in the diagnosis task. Meanwhile, mean absolute error was 3.7699 in the assessment task. The system has already been deployed within a mobile app called No Pa. Conclusions: This study performed diagnosis and severity assessment of PD from the perspective of speech order detection. The efficiency and effectiveness of the algorithms indirectly validated the practicality of the system. In particular, the system reflects the necessity of a publicly accessible PD diagnosis and assessment system that can perform telediagnosis and telemonitoring of PD. This system can also optimize doctors' decision-making processes regarding treatments.",
+  "ml_approaches": [
+    {
+      "algorithm": "Linear Regression",
+      "framework": "",
+      "validation": "5-fold cross-validation",
+      "results": {
+        "mae": 8.0786,
+        "mse": 95.1344,
+        "rmse": 9.7494
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "framework": "",
+      "validation": "5-fold cross-validation",
+      "results": {
+        "mae": 3.7699,
+        "mse": 34.1202,
+        "rmse": 5.8357
+      }
+    },
+    {
+      "algorithm": "LASSO",
+      "framework": "",
+      "validation": "5-fold cross-validation",
+      "results": {
+        "mae": 8.0687,
+        "mse": 91.1600,
+        "rmse": 9.7452
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Telemonitoring Dataset",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Telemonitoring Dataset",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.2196/18689_3"
+}

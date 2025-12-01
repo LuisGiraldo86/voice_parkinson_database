@@ -1,0 +1,109 @@
+{
+  "title": "Determining the severity of Parkinson's disease in patients using a multi task neural network",
+  "authors": [
+    {
+      "name": "María Teresa García-Ordás",
+      "affiliations": [
+        {
+          "institution": "Universidad de León",
+          "country": "Spain"
+        }
+      ]
+    },
+    {
+      "name": "José Alberto Benítez-Andrades",
+      "affiliations": [
+        {
+          "institution": "Universidad de León",
+          "country": "Spain"
+        }
+      ]
+    },
+    {
+      "name": "Jose Aveleira-Mata",
+      "affiliations": [
+        {
+          "institution": "Universidad de León",
+          "country": "Spain"
+        }
+      ]
+    },
+    {
+      "name": "José-Manuel Alija-Pérez",
+      "affiliations": [
+        {
+          "institution": "Universidad de León",
+          "country": "Spain"
+        }
+      ]
+    },
+    {
+      "name": "Carmen Benavides",
+      "affiliations": [
+        {
+          "institution": "Universidad de León",
+          "country": "Spain"
+        }
+      ]
+    }
+  ],
+  "problem": "Parkinson's disease severity stage classification",
+  "ml_problem_type": ["Binary Classification", "Regression"],
+  "publication_type": "Journal",
+  "journal": "Multimedia Tools and Applications",
+  "year": 2023,
+  "doi": "10.1007/s11042-023-14932-x",
+  "abstract": "Parkinson's disease is easy to diagnose when it is advanced, but it is very difficult to diagnose in its early stages. Early diagnosis is essential to be able to treat the symptoms. It impacts on daily activities and reduces the quality of life of both the patients and their families and it is also the second most prevalent neurodegenerative disorder after Alzheimer in people over the age of 60. Most current studies on the prediction of Parkinson's severity are carried out in advanced stages of the disease. In this work, the study analyzes a set of variables that can be easily extracted from voice analysis, making it a very non-intrusive technique. In this paper, a method based on different deep learning techniques is proposed with two purposes. On the one hand, to find out if a person has severe or non-severe Parkinson's disease, and on the other hand, to determine by means of regression techniques the degree of evolution of the disease in a given patient. The UPDRS (Unified Parkinson's Disease Rating Scale) has been used by taking into account both the motor and total labels, and the best results have been obtained using a mixed multi-layer perceptron (MLP) that classifies and regresses at the same time and the most important features of the data obtained are taken as input, using an autoencoder. A success rate of 99.15% has been achieved in the problem of predicting whether a person suffers from severe Parkinson's disease or non-severe Parkinson's disease. In the degree of disease involvement prediction problem case, a MSE (Mean Squared Error) of 0.15 has been obtained. Using a full deep learning pipeline for data preprocessing and classification has proven to be very promising in the field Parkinson's outperforming the state-of-the-art proposals.",
+  "ml_approaches": [
+    {
+      "algorithm": "Multilayer Perceptron",
+      "scaling": ["Min Max"],
+      "feature_selection": {
+        "methods": [
+          "Autoencoder"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "mse": 1.9603,
+        "rsme": 1.40010714,
+        "mae": 0.8263
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "scaling": ["Min Max"],
+      "feature_selection": {
+        "methods": [
+          "Autoencoder"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.9838
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Telemonitoring Dataset",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Telemonitoring Dataset",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.1007/s11042-023-14932-x_1",
+  "note": "Flor classification it is considered Binary Classification when using total UPDRS threshold at 25 to define severe vs non-severe cases."
+}
