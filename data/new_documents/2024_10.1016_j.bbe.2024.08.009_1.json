@@ -1,0 +1,116 @@
+{
+  "title": "Early diagnosis of Parkinson’s disease using a hybrid method of least squares support vector regression and fuzzy clustering",
+  "authors": [
+    {
+      "name": "Hossein Ahmadi",
+      "affiliations": [
+        {
+          "institution": "University of Plymouth",
+          "country": "United Kingdom"
+        }
+      ]
+    },
+    {
+      "name": "Lin Huo",
+      "affiliations": [
+        {
+          "institution": "Guangxi University",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Goli Arji",
+      "affiliations": [
+        {
+          "institution": "Saveh University of Medical Sciences",
+          "country": "Iran"
+        }
+      ]
+    },
+    {
+      "name": "Abbas Sheikhtaheri",
+      "affiliations": [
+        {
+          "institution": "Iran University of Medical Sciences",
+          "country": "Iran"
+        }
+      ]
+    },
+    {
+      "name": "Shang-Ming Zhou",
+      "affiliations": [
+        {
+          "institution": "University of Plymouth",
+          "country": "United Kingdom"
+        }
+      ]
+    }
+  ],
+  "problem": "Parkinson's disease severity stage classification",
+  "ml_problem_type": "Regression",
+  "publication_type": "Journal",
+  "journal": "Biocybernetics and Biomedical Engineering",
+  "year": 2024,
+  "doi": "10.1016/j.bbe.2024.08.009",
+  "abstract": "Parkinson’s disease (PD) is a neurodegenerative disorder that influence brain’s neurological, behavioral, and physiological functions and includes motor and nonmotor manifestations. Although there have been several PD diagnosis systems with supervised machine learning techniques, there are more efforts that need to enhance the accurate detection of PD in its early stage. The current paper developed a novel approach by integrating Least Squares Support Vector Regression (LS-SVR) and Fuzzy Clustering for Unified Parkinson’s Disease Rating Scale (UPDRS) diagnosis. This paper used feature selection and Principal Component Analysis (PCA) to overcome the multicollinearity issues in data. This paper used a large medical dataset including Motor- and Total-UPDRS to demonstrate how the proposed method can improve prediction performance via extensive evaluations and comparisons with existing methods. Compared to other prediction methods, the experimental results demonstrate that the proposed method provided the best accuracy for Total-UPDRS (Root Mean Squared Error = 0.7348; R2 = 0.9169) and Motor-UPDRS (Root Mean Squared Error = 0.8321; R2 = 0.8756) predictions.",
+  "ml_approaches": [
+    {
+      "algorithm": "Least-Squares Support Vector Machine: RBF",
+      "sample_selection": [
+        "Fuzzy C-Means"
+      ],
+      "feature_selection": {
+        "methods": [
+          "R-Squared Filter"
+        ]
+      },
+      "dimensionality_reduction": [
+        "PCA"
+      ],
+      "validation": "train/test split",
+      "results": {
+        "r2": 0.8727,
+        "RMSE": 0.8321
+      }
+    },
+    {
+      "algorithm": "Least-Squares Support Vector Machine: RBF",
+      "sample_selection": [
+        "Fuzzy C-Means"
+      ],
+      "feature_selection": {
+        "methods": [
+          "R-Squared Filter"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "r2": 0.8545,
+        "RMSE": 0.8731
+      }
+    }
+  ],
+  "source_dataset": [
+{
+      "name": "Oxford Parkinson's Disease Telemonitoring Dataset",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+{
+      "name": "Oxford Parkinson's Disease Telemonitoring Dataset",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.1016/j.bbe.2024.08.009_1",
+  "note": "What is the goal of Fuzzy Clustering here?"
+}

@@ -77,6 +77,6 @@
       "doi": null
     }
   ],
-  "study_id": "10.1109/EICEEAI60672.2023.10590358",
+  "study_id": "10.1109/EICEEAI60672.2023.10590358_1",
   "note": "Gender dropepd when it seems it is important for PD. Classification into severity stages is done based on the UPDRS scores and quartiles. Is there any clinical validation of this approach?"
 }

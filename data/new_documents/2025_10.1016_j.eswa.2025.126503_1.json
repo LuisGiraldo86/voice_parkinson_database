@@ -1,0 +1,67 @@
+{
+  "title": "Multi-objective Harris Hawk metaheuristic algorithms for the diagnosis of Parkinson’s disease",
+  "authors": [
+    {
+      "name": "Tansel Dokeroglu",
+      "affiliations": [
+        {
+          "institution": "TED University",
+          "country": "Turkey"
+        }
+      ]
+    },
+    {
+      "name": "Tayfun Kucukyilmaz",
+      "affiliations": [
+        {
+          "institution": "Erasmus University",
+          "country": "Netherlands"
+        }
+      ]
+    }
+  ],
+  "problem": "Parkinson's disease diagnosis",
+  "ml_problem_type": "Binary classification",
+  "publication_type": "Journal",
+  "journal": "Expert Systems with Applications",
+  "year": 2025,
+  "doi": "10.1016/j.eswa.2025.126503",
+  "abstract": "Parkinson’s disease, an idiopathic neurological illness, affects over 1% of the global elderly population. Feature-based methods are frequently used to diagnose Parkinson’s disease, and selecting the best feature set remains an ongoing and difficult challenge. In this study, we introduce a new binary Multi-objective Harris Hawk Optimization (MHHO) algorithm that combines an adaptive K-Nearest Neighbor (KNN) classifier with novel exploration and exploitation operators for this challenging task. In larger problem instances, where fitness evaluation is a bottleneck, this study proposes a parallel version of the technique that uses Message Passing Interfaces (MPI) to reduce computational complexity. Comprehensive comparisons with state-of-the-art algorithms, including Genetic Algorithm, Particle Swarm Optimization, Binary Bat, Cuckoo Search, and Grey Wolf Optimization, are performed. The results indicate that our proposed algorithms are consistently the most successful in the literature. Furthermore, our analysis provides new optimal solutions that have not previously been reported in the literature. For three of the four well-known datasets, our algorithm outperforms recent studies. Furthermore, the suggested approaches achieve more than 30% reduction in the total number of features across all datasets, thereby significantly lowering computational costs.",
+  "ml_approaches": [
+    {
+      "algorithm": "Adaptive K-Nearest Neighbor",
+      "feature_extraction": ["Phonation Features", "Articulation Features", "Prosody Features"],
+      "feature_selection": {
+        "methods": [
+          "Multi-objective Harris Hawk Optimization"
+        ]
+      },
+      "validation": "5-fold cross-validation",
+      "results": {
+        "accuracy": 0.9436
+      }
+    }
+  ],
+  "source_dataset": [
+{
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+{
+      "name": "Oxford Parkinson's Disease Detection Dataset",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.1016/j.eswa.2025.126503_1",
+  "note": null
+}
