@@ -39,7 +39,7 @@
           "Ant Lion Optimizer"
         ]
       },
-      "missing_data_handling": ["K-Nearest Neighbors"],
+      "missing_value_handling": ["K-Nearest Neighbors"],
       "dimensionality_reduction": ["PCA"],
       "validation": "train/test split",
       "results": {

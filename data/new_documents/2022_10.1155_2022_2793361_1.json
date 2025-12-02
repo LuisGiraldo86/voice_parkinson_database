@@ -81,7 +81,7 @@
       "algorithm": "Ensemble (Support Vector Machine)",
       "dimensionality_reduction": ["PCA"],
       "sample_selection": ["Expectation-Maximization"],
-      "missing_value_handling": ["Singular Value Decomposition"],
+      "missing_value_handling": ["Singular Value Decomposition"], 
       "validation": "train/test split",
       "results": {
         "rmse": 0.4165,
