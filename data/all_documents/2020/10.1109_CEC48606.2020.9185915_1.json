@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c1689361"
-  },
   "title": "Identifying Parkinson's Disease Through the Classification of Audio Recording Data",
   "authors": [
     {
@@ -110,5 +107,9 @@
       "doi": "10.1016/j.eswa.2015.10.034"
     }
   ],
-  "study_id": "10.1109/CEC48606.2020.9185915_1"
+  "study_id": "10.1109/CEC48606.2020.9185915_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

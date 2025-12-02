@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c1689424"
-  },
   "title": "The Detection of Parkinson Disease Using the Genetic Algorithm and SVM Classifier",
   "authors": [
     {
@@ -89,5 +86,9 @@
       "doi": "10.24432/C5NC8M"
     }
   ],
-  "study_id": "10.1016/j.apacoust.2020.107528_1"
+  "study_id": "10.1016/j.apacoust.2020.107528_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c1689366"
-  },
   "title": "An Intelligent Mobile-Enabled System for Diagnosing Parkinson Disease: Development and Validation of a Speech Impairment Detection System",
   "authors": [
     {
@@ -130,5 +127,9 @@
       "doi": "10.24432/C5NC8M"
     }
   ],
-  "study_id": "10.2196/18689_2"
+  "study_id": "10.2196/18689_2",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

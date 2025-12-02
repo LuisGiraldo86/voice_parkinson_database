@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c16893eb"
-  },
   "title": "Optimising Multilayer Perceptron weights and biases through a Cellular Genetic Algorithm for medical data classification",
   "authors": [
     {
@@ -99,5 +96,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.1016/j.array.2022.100173_1"
+  "study_id": "10.1016/j.array.2022.100173_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

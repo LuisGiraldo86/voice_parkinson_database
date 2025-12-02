@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c1689384"
-  },
   "title": "Federated Learning for Secure Development of AI Models for Parkinson's Disease Detection Using Speech from Different Languages",
   "authors": [
     {
@@ -170,5 +167,9 @@
       }
     }
   ],
-  "study_id": "10.21437/Interspeech.2023-2108_1"
+  "study_id": "10.21437/Interspeech.2023-2108_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

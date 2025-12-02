@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c1689421"
-  },
   "title": "A Hybrid Approach for Parkinson's Disease Diagnosis with Resonance and Time-Frequency Based Features from Speech Signals",
   "authors": [
     {
@@ -77,5 +74,9 @@
       "doi": "10.5281/zenodo.2867215"
     }
   ],
-  "study_id": "10.1016/j.eswa.2021.115283_1"
+  "study_id": "10.1016/j.eswa.2021.115283_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

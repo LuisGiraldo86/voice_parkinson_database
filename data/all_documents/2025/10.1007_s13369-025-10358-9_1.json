@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c16893ce"
-  },
   "title": "Automated Early Prediction of Parkinson's Disease Based on Artificial Intelligent Techniques",
   "authors": [
     {
@@ -193,5 +190,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.1007/s13369-025-10358-9_1"
+  "study_id": "10.1007/s13369-025-10358-9_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

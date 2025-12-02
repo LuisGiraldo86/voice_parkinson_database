@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00b6c43da02c1689334"
-  },
   "title": "A Machine Learning Approach for Early Identification of Prodromal Parkinson's Disease",
   "authors": [
     {
@@ -51,5 +48,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.7759/cureus.63240_1"
+  "study_id": "10.7759/cureus.63240_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

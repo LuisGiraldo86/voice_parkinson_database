@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00b6c43da02c1689333"
-  },
   "title": "Speech's syllabic rhythm and articulatory features produced under different auditory feedback conditions identify Parkinsonism",
   "authors": [
     {
@@ -89,5 +86,9 @@
       "doi": null
     }
   ],
-  "study_id": "10.1038/s41598-024-65974-6_1"
+  "study_id": "10.1038/s41598-024-65974-6_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c1689431"
-  },
   "title": "Parkinson's Disease Detection from Voice Signals Using Adaptive Frequency Attribute Topology",
   "authors": [
     {
@@ -355,5 +352,9 @@
       "doi": null
     }
   ],
-  "study_id": "10.1016/j.bspc.2025.107592_2"
+  "study_id": "10.1016/j.bspc.2025.107592_2",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

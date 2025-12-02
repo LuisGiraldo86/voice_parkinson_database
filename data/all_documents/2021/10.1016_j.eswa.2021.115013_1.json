@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c1689426"
-  },
   "title": "Robust Automated Parkinson Disease Detection Based on Voice Signals with Transfer Learning",
   "authors": [
     {
@@ -114,5 +111,9 @@
       "url": "https://www.synapse.org/Synapse:syn4993293/wiki/247859"
     }
   ],
-  "study_id": "10.1016/j.eswa.2021.115013_1"
+  "study_id": "10.1016/j.eswa.2021.115013_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

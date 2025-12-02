@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c168934d"
-  },
   "title": "Analysis and Implementation of Machine Learning Model for Detection of Parkinson's Disease",
   "authors": [
     {
@@ -119,5 +116,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.1109/ICSCDS56580.2023.10104661_1"
+  "study_id": "10.1109/ICSCDS56580.2023.10104661_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

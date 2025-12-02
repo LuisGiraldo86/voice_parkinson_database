@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c1689428"
-  },
   "title": "Parkinson's Detection Based on Combined CNN and LSTM Using Enhanced Speech Signals with Variational Mode Decomposition",
   "authors": [
     {
@@ -104,5 +101,9 @@
       "doi": ""
     }
   ],
-  "study_id": "10.1016/j.bspc.2021.103006_1"
+  "study_id": "10.1016/j.bspc.2021.103006_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

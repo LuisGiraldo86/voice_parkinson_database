@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c168935b"
-  },
   "title": "Detection of Parkinson's Disease Using Vocal Features: An Eigen Approach",
   "authors": [
     {
@@ -141,5 +138,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.1109/ICMSS53060.2021.9673634_1"
+  "study_id": "10.1109/ICMSS53060.2021.9673634_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

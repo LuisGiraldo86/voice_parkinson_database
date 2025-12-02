@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c16893a1"
-  },
   "title": "Improved Glowworm Swarm Optimization for Parkinson's Disease Prediction Based on Radial Basis Functions Networks",
   "authors": [
     {
@@ -66,5 +63,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.5755/j01.itc.53.2.33368_2"
+  "study_id": "10.5755/j01.itc.53.2.33368_2",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

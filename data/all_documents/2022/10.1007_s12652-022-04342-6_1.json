@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00b6c43da02c16892f1"
-  },
   "title": "A Generic Optimization and Learning Framework for Parkinson Disease via Speech and Handwritten Records",
   "authors": [
     {
@@ -143,5 +140,9 @@
       "doi": "10.5281/zenodo.2867215"
     }
   ],
-  "study_id": "10.1007/s12652-022-04342-6_1"
+  "study_id": "10.1007/s12652-022-04342-6_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c16893ff"
-  },
   "title": "High-resolution Superlet Transform Based Techniques for Parkinson's Disease Detection Using Speech Signal",
   "authors": [
     {
@@ -395,5 +392,9 @@
       "doi": ""
     }
   ],
-  "study_id": "10.1016/j.apacoust.2023.109657_1"
+  "study_id": "10.1016/j.apacoust.2023.109657_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

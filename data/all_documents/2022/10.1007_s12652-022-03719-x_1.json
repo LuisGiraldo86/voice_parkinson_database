@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c168937e"
-  },
   "title": "The ForEx++ based decision tree ensemble approach for robust detection of Parkinson’s disease",
   "authors": [
     {
@@ -642,5 +639,9 @@
       "doi": "10.24432/C5MS4X"
     }
   ],
-  "study_id": "10.1007/s12652-022-03719-x_1"
+  "study_id": "10.1007/s12652-022-03719-x_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

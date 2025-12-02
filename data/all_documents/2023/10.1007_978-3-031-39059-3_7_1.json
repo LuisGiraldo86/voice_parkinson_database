@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c1689390"
-  },
   "title": "Machine Learning Applied to Speech Recordings for Parkinson's Disease Recognition",
   "authors": [
     {
@@ -843,5 +840,9 @@
       "doi": "10.24432/C5MS4X"
     }
   ],
-  "study_id": "10.1007/978-3-031-39059-3_7_1"
+  "study_id": "10.1007/978-3-031-39059-3_7_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

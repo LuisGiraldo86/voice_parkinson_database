@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c168943a"
-  },
   "title": "Bayesian Optimization Enhanced FKNN Model for Parkinson's Diagnosis",
   "authors": [
     {
@@ -91,5 +88,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.1016/j.bspc.2024.107142_1"
+  "study_id": "10.1016/j.bspc.2024.107142_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

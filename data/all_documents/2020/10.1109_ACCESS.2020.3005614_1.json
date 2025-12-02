@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c168936d"
-  },
   "title": "Optimized ANFIS Model Using Hybrid Metaheuristic Algorithms for Parkinson's Disease Prediction in IoT Environment",
   "authors": [
     {
@@ -83,5 +80,9 @@
       "doi": "10.24432/C5MS4X"
     }
   ],
-  "study_id": "10.1109/ACCESS.2020.3005614_1"
+  "study_id": "10.1109/ACCESS.2020.3005614_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

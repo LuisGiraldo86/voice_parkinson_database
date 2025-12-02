@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c1689418"
-  },
   "title": "An Adaptive Intelligent Polar Bear (AIPB) Optimization-Quantized Contempo Neural Network (QCNN) model for Parkinson's disease diagnosis using speech dataset",
   "authors": [
     {
@@ -71,5 +68,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.1016/j.bspc.2023.105467_1"
+  "study_id": "10.1016/j.bspc.2023.105467_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00b6c43da02c1689330"
-  },
   "title": "Transformer-based transfer learning on self-reported voice recordings for Parkinson's disease diagnosis",
   "authors": [
     {
@@ -139,5 +136,9 @@
       "url": "https://www.synapse.org/Synapse:syn4993293/wiki/247859"
     }
   ],
-  "study_id": "10.1038/s41598-024-81824-x_1"
+  "study_id": "10.1038/s41598-024-81824-x_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

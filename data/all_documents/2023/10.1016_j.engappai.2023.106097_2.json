@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c16893f6"
-  },
   "title": "Voice feature description of Parkinson's disease based on co-occurrence direction attribute topology",
   "authors": [
     {
@@ -347,5 +344,9 @@
       "doi": null
     }
   ],
-  "study_id": "10.1016/j.engappai.2023.106097_2"
+  "study_id": "10.1016/j.engappai.2023.106097_2",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

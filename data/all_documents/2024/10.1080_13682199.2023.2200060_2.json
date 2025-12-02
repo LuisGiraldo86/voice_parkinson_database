@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c168939a"
-  },
   "title": "Hybrid Optimization Enabled Deep Learning Model for Parkinson's Disease Classification",
   "authors": [
     {
@@ -65,5 +62,9 @@
       "url": "https://www.synapse.org/Synapse:syn4993293/wiki/247859"
     }
   ],
-  "study_id": "10.1080/13682199.2023.2200060_2"
+  "study_id": "10.1080/13682199.2023.2200060_2",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

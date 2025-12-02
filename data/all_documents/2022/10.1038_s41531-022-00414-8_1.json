@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00b6c43da02c16892f4"
-  },
   "title": "An Integrated Biometric Voice and Facial Features for Early Detection of Parkinson's Disease",
   "authors": [
     {
@@ -266,5 +263,9 @@
       "doi": null
     }
   ],
-  "study_id": "10.1038/s41531-022-00414-8_1"
+  "study_id": "10.1038/s41531-022-00414-8_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00b6c43da02c16892f6"
-  },
   "title": "Early detection of Parkinson's disease from multiple signal speech: Based on Mandarin language dataset",
   "authors": [
     {
@@ -639,5 +636,9 @@
       "doi": null
     }
   ],
-  "study_id": "10.3389/fnagi.2022.1036588_1"
+  "study_id": "10.3389/fnagi.2022.1036588_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

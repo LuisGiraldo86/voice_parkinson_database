@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00b6c43da02c16892f7"
-  },
   "title": "Layer Recurrent Neural Network-Based Diagnosis of Parkinson's Disease Using Voice Features",
   "authors": [
     {
@@ -55,5 +52,9 @@
       "doi": "10.24432/C5MS4X"
     }
   ],
-  "study_id": "10.1515/bmt-2022-0022_1"
+  "study_id": "10.1515/bmt-2022-0022_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

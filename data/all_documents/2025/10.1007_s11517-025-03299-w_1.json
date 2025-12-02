@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c1689346"
-  },
   "title": "Multi-source sparse broad transfer learning for parkinson's disease diagnosis via speech",
   "authors": [
     {
@@ -108,5 +105,9 @@
       }
     }
   ],
-  "study_id": "10.1007/s11517-025-03299-w_1"
+  "study_id": "10.1007/s11517-025-03299-w_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

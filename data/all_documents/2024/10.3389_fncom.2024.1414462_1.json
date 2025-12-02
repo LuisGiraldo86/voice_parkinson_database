@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c168933d"
-  },
   "title": "SS-DRPL: self-supervised deep representation pattern learning for voice-based Parkinson's disease detection",
   "authors": [
     {
@@ -159,5 +156,9 @@
       "doi": null
     }
   ],
-  "study_id": "10.3389/fncom.2024.1414462_1"
+  "study_id": "10.3389/fncom.2024.1414462_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

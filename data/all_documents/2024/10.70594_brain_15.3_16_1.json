@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c16893a5"
-  },
   "title": "CGAN Facilitated Data Augmentation of Voice and Speech Parameters for Detecting Parkinson's Disease in the Prodromal Phase",
   "authors": [
     {
@@ -69,5 +66,9 @@
       "doi": "10.24432/C5MS4X"
     }
   ],
-  "study_id": "10.70594/brain/15.3/16_1"
+  "study_id": "10.70594/brain/15.3/16_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c1689352"
-  },
   "title": "Poster: VGGish Embeddings Based Audio Classifiers to Improve Parkinson's Disease Diagnosis",
   "authors": [
     {
@@ -305,5 +302,9 @@
       "doi": "10.5281/zenodo.2867215"
     }
   ],
-  "study_id": "10.1145/3384420.3431775_1"
+  "study_id": "10.1145/3384420.3431775_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

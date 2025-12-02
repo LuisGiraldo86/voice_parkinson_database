@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c1689405"
-  },
   "title": "Addressing smartphone mismatch in Parkinson's disease detection aid systems based on speech",
   "authors": [
     {
@@ -73,5 +70,9 @@
       "doi": null
     }
   ],
-  "study_id": "10.1016/j.bspc.2022.104281_1"
+  "study_id": "10.1016/j.bspc.2022.104281_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

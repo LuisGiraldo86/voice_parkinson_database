@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c1689381"
-  },
   "title": "Classification of Voice Signals to Aid in the Diagnosis of Parkinson's Disease",
   "authors": [
     {
@@ -79,5 +76,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.5335/rbca.v15i2.13556_1"
+  "study_id": "10.5335/rbca.v15i2.13556_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

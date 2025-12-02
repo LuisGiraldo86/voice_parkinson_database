@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c168937a"
-  },
   "title": "Classification of Parkinson Disease Based on Patient's Voice Signal Using Machine Learning",
   "authors": [
     {
@@ -135,5 +132,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.32604/iasc.2022.022037_1"
+  "study_id": "10.32604/iasc.2022.022037_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

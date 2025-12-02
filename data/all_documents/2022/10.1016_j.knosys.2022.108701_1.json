@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c16893f3"
-  },
   "title": "Binary Grey Wolf Optimizer with Mutation and Adaptive K-nearest Neighbour for Feature Selection in Parkinson's Disease Diagnosis",
   "authors": [
     {
@@ -397,5 +394,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.1016/j.knosys.2022.108701_1"
+  "study_id": "10.1016/j.knosys.2022.108701_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

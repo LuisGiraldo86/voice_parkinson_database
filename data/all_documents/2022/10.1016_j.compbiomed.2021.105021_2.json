@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00b6c43da02c16892ef"
-  },
   "title": "Convolutional Neural Network Ensemble for Parkinson's Disease Detection from Voice Recordings",
   "authors": [
     {
@@ -236,5 +233,9 @@
       }
     }
   ],
-  "study_id": "10.1016/j.compbiomed.2021.105021_2"
+  "study_id": "10.1016/j.compbiomed.2021.105021_2",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

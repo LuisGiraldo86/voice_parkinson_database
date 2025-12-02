@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c168936e"
-  },
   "title": "Surfboard: Audio Feature Extraction for Modern Machine Learning",
   "authors": [
     {
@@ -79,5 +76,9 @@
       "url": "https://www.synapse.org/Synapse:syn4993293/wiki/247859"
     }
   ],
-  "study_id": "10.21437/Interspeech.2020-2879_1"
+  "study_id": "10.21437/Interspeech.2020-2879_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

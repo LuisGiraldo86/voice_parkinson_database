@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00b6c43da02c16892f3"
-  },
   "title": "Optimization-Based Ensemble Feature Selection Algorithm and Deep Learning Classifier for Parkinson's Disease",
   "authors": [
     {
@@ -163,5 +160,9 @@
       "doi": "10.24432/C5MS4X"
     }
   ],
-  "study_id": "10.1155/2022/1487212_1"
+  "study_id": "10.1155/2022/1487212_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

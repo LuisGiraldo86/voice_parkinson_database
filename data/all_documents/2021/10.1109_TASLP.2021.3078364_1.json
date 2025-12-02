@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c16893ba"
-  },
   "title": "The Detection of Parkinson's Disease From Speech Using Voice Source Information",
   "authors": [
     {
@@ -111,5 +108,9 @@
       "doi": ""
     }
   ],
-  "study_id": "10.1109/TASLP.2021.3078364_1"
+  "study_id": "10.1109/TASLP.2021.3078364_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

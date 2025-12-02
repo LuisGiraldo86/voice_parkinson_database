@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c1689423"
-  },
   "title": "A Decision Tree-Initialised Neuro-fuzzy Approach for Clinical Decision Support",
   "authors": [
     {
@@ -110,5 +107,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.1016/j.artmed.2020.101986_1"
+  "study_id": "10.1016/j.artmed.2020.101986_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

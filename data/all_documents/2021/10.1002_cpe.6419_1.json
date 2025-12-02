@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c16893c5"
-  },
   "title": "Cloud-assisted Parkinson disease identification system for remote patient monitoring and diagnosis in the smart healthcare applications",
   "authors": [
     {
@@ -253,5 +250,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.1002/cpe.6419_1"
+  "study_id": "10.1002/cpe.6419_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

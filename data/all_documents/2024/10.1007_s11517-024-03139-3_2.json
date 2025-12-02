@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00b6c43da02c168932d"
-  },
   "title": "A unified approach for Parkinson's disease recognition: imbalance mitigation and grid search optimized boosting with LightGBM",
   "authors": [
     {
@@ -191,5 +188,9 @@
       "doi": "10.24432/C5MS4X"
     }
   ],
-  "study_id": "10.1007/s11517-024-03139-3_2"
+  "study_id": "10.1007/s11517-024-03139-3_2",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

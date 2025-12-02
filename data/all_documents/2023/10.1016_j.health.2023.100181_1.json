@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c16893fa"
-  },
   "title": "An Ensemble Nearest Neighbor Boosting Technique for Prediction of Parkinson's Disease",
   "authors": [
     {
@@ -116,5 +113,9 @@
       "doi": "10.24432/C5NC8M"
     }
   ],
-  "study_id": "10.1016/j.health.2023.100181_1"
+  "study_id": "10.1016/j.health.2023.100181_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

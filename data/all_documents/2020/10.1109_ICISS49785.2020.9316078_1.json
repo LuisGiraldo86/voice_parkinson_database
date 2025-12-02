@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c168934e"
-  },
   "title": "Classification of Parkinson's Disease using Speech Attributes with Machine Learning Techniques",
   "authors": [
     {
@@ -119,5 +116,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.1109/ICISS49785.2020.9316078_1"
+  "study_id": "10.1109/ICISS49785.2020.9316078_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

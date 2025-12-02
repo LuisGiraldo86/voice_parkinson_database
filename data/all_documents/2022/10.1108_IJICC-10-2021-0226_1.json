@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c168937c"
-  },
   "title": "Intelligent approach of score-based artificial fish swarm algorithm (SAFSA) for Parkinson's disease diagnosis",
   "authors": [
     {
@@ -142,5 +139,9 @@
       "doi": "10.24432/C5MS4X"
     }
   ],
-  "study_id": "10.1108/IJICC-10-2021-0226_1"
+  "study_id": "10.1108/IJICC-10-2021-0226_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

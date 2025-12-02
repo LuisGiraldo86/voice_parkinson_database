@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c168941c"
-  },
   "title": "Parkinson Disease Detection using Energy Direction Features based on EMD from Voice Signal",
   "authors": [
     {
@@ -324,5 +321,9 @@
       "doi": "10.24432/C5NC8M"
     }
   ],
-  "study_id": "10.1016/j.bbe.2020.12.009_1"
+  "study_id": "10.1016/j.bbe.2020.12.009_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

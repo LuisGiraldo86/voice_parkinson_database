@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00b6c43da02c16892e9"
-  },
   "title": "From Discourse to Pathology: Automatic Identification of Parkinson's Disease Patients via Morphological Measures Across Three Languages",
   "authors": [
     {
@@ -251,5 +248,9 @@
       "doi": null
     }
   ],
-  "study_id": "10.1016/j.cortex.2020.08.020_3"
+  "study_id": "10.1016/j.cortex.2020.08.020_3",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

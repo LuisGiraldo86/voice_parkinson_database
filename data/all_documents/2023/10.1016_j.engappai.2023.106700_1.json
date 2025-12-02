@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c1689402"
-  },
   "title": "Detection of Parkinson's disease based on spectrograms of voice recordings and Extreme Learning Machine random weight neural networks",
   "authors": [
     {
@@ -247,5 +244,9 @@
       "doi": null
     }
   ],
-  "study_id": "10.1016/j.engappai.2023.106700_1"
+  "study_id": "10.1016/j.engappai.2023.106700_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

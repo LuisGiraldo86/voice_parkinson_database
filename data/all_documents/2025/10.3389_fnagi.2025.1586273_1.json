@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c1689345"
-  },
   "title": "Non-invasive detection of Parkinson's disease based on speech analysis and interpretable machine learning",
   "authors": [
     {
@@ -263,5 +260,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.3389/fnagi.2025.1586273_1"
+  "study_id": "10.3389/fnagi.2025.1586273_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

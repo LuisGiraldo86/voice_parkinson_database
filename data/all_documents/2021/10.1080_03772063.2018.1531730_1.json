@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c16893ae"
-  },
   "title": "A Comparative Study of Existing Machine Learning Approaches for Parkinson's Disease Detection",
   "authors": [
     {
@@ -101,5 +98,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.1080/03772063.2018.1531730_1"
+  "study_id": "10.1080/03772063.2018.1531730_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

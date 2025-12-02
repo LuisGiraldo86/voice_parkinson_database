@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c16893df"
-  },
   "title": "Pre-trained convolutional neural networks identify Parkinson's disease from spectrogram images of voice samples",
   "authors": [
     {
@@ -113,5 +110,9 @@
       "url": "https://www.synapse.org/Synapse:syn4993293/wiki/247859"
     }
   ],
-  "study_id": "10.1038/s41598-025-92105-6_2"
+  "study_id": "10.1038/s41598-025-92105-6_2",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

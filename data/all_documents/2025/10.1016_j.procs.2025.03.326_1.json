@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c1689437"
-  },
   "title": "Enhanced Parkinson's Diagnosis through Ensemble Learning with Stacking and Cross-Validation",
   "authors": [
     {
@@ -73,5 +70,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.1016/j.procs.2025.03.326_1"
+  "study_id": "10.1016/j.procs.2025.03.326_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

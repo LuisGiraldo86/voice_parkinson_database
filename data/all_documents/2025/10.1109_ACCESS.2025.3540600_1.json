@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c168935d"
-  },
   "title": "Interpretable Parkinson's Disease Detection Using Group-Wise Scaling",
   "authors": [
     {
@@ -333,5 +330,9 @@
       "url": "https://www.synapse.org/Synapse:syn4993293/wiki/247859"
     }
   ],
-  "study_id": "10.1109/ACCESS.2025.3540600_1"
+  "study_id": "10.1109/ACCESS.2025.3540600_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

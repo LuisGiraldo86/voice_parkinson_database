@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00b6c43da02c168930a"
-  },
   "title": "Interpretable speech features vs. DNN embeddings: What to use in the automatic assessment of Parkinson’s disease in multi-lingual scenarios",
   "authors": [
     {
@@ -165,5 +162,9 @@
       }
     }
   ],
-  "study_id": "10.1016/j.compbiomed.2023.107559_8"
+  "study_id": "10.1016/j.compbiomed.2023.107559_8",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

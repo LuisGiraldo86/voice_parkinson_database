@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c16893fd"
-  },
   "title": "Early detection of Parkinson's disease using machine learning",
   "authors": [
     {
@@ -194,5 +191,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.1016/j.procs.2023.01.007_1"
+  "study_id": "10.1016/j.procs.2023.01.007_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

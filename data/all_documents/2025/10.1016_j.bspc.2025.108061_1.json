@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c16893d8"
-  },
   "title": "A Modified Gray Wolf Optimization Algorithm for Early Detection of Parkinson's Disease",
   "authors": [
     {
@@ -378,5 +375,9 @@
       "doi": "10.24432/C5NC8M"
     }
   ],
-  "study_id": "10.1016/j.bspc.2025.108061_1"
+  "study_id": "10.1016/j.bspc.2025.108061_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

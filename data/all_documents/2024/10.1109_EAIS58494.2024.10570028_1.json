@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c168939f"
-  },
   "title": "Convolutional neural networks to detect Parkinson's disease based on voice recordings and transfer learning",
   "authors": [
     {
@@ -98,5 +95,9 @@
       "doi": null
     }
   ],
-  "study_id": "10.1109/EAIS58494.2024.10570028_1"
+  "study_id": "10.1109/EAIS58494.2024.10570028_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

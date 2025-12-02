@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c1689370"
-  },
   "title": "Enhancing Parkinson's Disease Diagnosis Accuracy Through Speech Signal Algorithm Modeling",
   "authors": [
     {
@@ -143,5 +140,9 @@
       "doi": "10.24432/C5MS4X"
     }
   ],
-  "study_id": "10.32604/cmc.2022.020109_1"
+  "study_id": "10.32604/cmc.2022.020109_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

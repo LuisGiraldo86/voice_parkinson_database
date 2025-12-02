@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c16893c9"
-  },
   "title": "A Comparison of Cepstral Features in the Detection of Pathological Voices by Varying the Input and Filterbank of the Cepstrum Computation",
   "authors": [
     {
@@ -187,5 +184,9 @@
       "doi": "10.5281/zenodo.10777656"
     }
   ],
-  "study_id": "10.1109/ACCESS.2021.3117665_2"
+  "study_id": "10.1109/ACCESS.2021.3117665_2",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

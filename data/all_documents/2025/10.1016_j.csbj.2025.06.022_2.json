@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c168943c"
-  },
   "title": "Ranking Pre-trained Speech Embeddings in Parkinson's Disease Detection: Does Wav2Vec 2.0 Outperform Its 1.0 Version Across Speech Modes and Languages?",
   "authors": [
     {
@@ -1323,5 +1320,9 @@
       "doi": ""
     }
   ],
-  "study_id": "10.1016/j.csbj.2025.06.022_2"
+  "study_id": "10.1016/j.csbj.2025.06.022_2",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

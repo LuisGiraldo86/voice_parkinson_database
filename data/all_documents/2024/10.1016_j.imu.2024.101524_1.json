@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c168940b"
-  },
   "title": "Hybrid grey wolf and whale optimization for enhanced Parkinson's prediction based on machine learning models using biomedical sound",
   "authors": [
     {
@@ -155,5 +152,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.1016/j.imu.2024.101524_1"
+  "study_id": "10.1016/j.imu.2024.101524_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

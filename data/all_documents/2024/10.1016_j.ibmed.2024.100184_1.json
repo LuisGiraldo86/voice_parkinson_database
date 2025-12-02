@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c1689410"
-  },
   "title": "AIoT-based embedded systems optimization using feature selection for Parkinson's disease diagnosis through speech disorders",
   "authors": [
     {
@@ -145,5 +142,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.1016/j.ibmed.2024.100184_1"
+  "study_id": "10.1016/j.ibmed.2024.100184_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

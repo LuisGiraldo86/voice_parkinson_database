@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c168939e"
-  },
   "title": "Predictive Models in the Diagnosis of Parkinson's Disease Through Voice Analysis",
   "authors": [
     {
@@ -546,5 +543,9 @@
       "doi": null
     }
   ],
-  "study_id": "10.1007/978-3-031-66336-9_42_3"
+  "study_id": "10.1007/978-3-031-66336-9_42_3",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

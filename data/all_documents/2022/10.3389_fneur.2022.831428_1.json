@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00b6c43da02c16892ee"
-  },
   "title": "Voice in Parkinson's Disease: A Machine Learning Study",
   "authors": [
     {
@@ -159,5 +156,9 @@
       "doi": null
     }
   ],
-  "study_id": "10.3389/fneur.2022.831428_1"
+  "study_id": "10.3389/fneur.2022.831428_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

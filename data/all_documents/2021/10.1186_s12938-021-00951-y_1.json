@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c1689340"
-  },
   "title": "A Mobile-assisted Voice Condition Analysis System for Parkinson's Disease: Assessment of Usability Conditions",
   "authors": [
     {
@@ -162,5 +159,9 @@
       "url": "https://www.synapse.org/Synapse:syn4993293/wiki/247859"
     }
   ],
-  "study_id": "10.1186/s12938-021-00951-y_1"
+  "study_id": "10.1186/s12938-021-00951-y_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

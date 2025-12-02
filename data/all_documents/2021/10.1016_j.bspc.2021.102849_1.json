@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c168941a"
-  },
   "title": "Deep Dual-side Learning Ensemble Model for Parkinson Speech Recognition",
   "authors": [
     {
@@ -135,5 +132,9 @@
       "doi": "10.24432/C5NC8M"
     }
   ],
-  "study_id": "10.1016/j.bspc.2021.102849_1"
+  "study_id": "10.1016/j.bspc.2021.102849_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

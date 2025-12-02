@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00b6c43da02c168931b"
-  },
   "title": "Early and High-Accuracy Diagnosis of Parkinson's Disease: Outcomes of a New Model",
   "authors": [
     {
@@ -77,5 +74,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.1155/2023/1493676_2"
+  "study_id": "10.1155/2023/1493676_2",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c1689430"
-  },
   "title": "Speech signals-based Parkinson's disease diagnosis using hybrid autoencoder-LSTM models",
   "authors": [
     {
@@ -174,5 +171,9 @@
       "doi": "10.21227/aw6b-tg17"
     }
   ],
-  "study_id": "10.1016/j.compbiomed.2025.110334_1"
+  "study_id": "10.1016/j.compbiomed.2025.110334_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

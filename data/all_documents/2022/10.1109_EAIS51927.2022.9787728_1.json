@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c1689372"
-  },
   "title": "A Machine Learning approach for Early Detection of Parkinson's Disease Using acoustic traces",
   "authors": [
     {
@@ -125,5 +122,9 @@
       "doi": "10.21227/aw6b-tg17"
     }
   ],
-  "study_id": "10.1109/EAIS51927.2022.9787728_1"
+  "study_id": "10.1109/EAIS51927.2022.9787728_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

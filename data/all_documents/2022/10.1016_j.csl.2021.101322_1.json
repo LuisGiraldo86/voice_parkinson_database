@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c16893ee"
-  },
   "title": "Empirical Mode Decomposition articulation feature extraction on Parkinson's Diadochokinesia",
   "authors": [
     {
@@ -265,5 +262,9 @@
       "doi": ""
     }
   ],
-  "study_id": "10.1016/j.csl.2021.101322_1"
+  "study_id": "10.1016/j.csl.2021.101322_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

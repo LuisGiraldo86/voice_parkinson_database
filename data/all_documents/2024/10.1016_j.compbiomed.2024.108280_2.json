@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00b6c43da02c1689337"
-  },
   "title": "FLP: Factor lattice pattern-based automated detection of Parkinson's disease and specific language impairment using recorded speech",
   "authors": [
     {
@@ -163,5 +160,9 @@
       "doi": "10.5281/zenodo.2867215"
     }
   ],
-  "study_id": "10.1016/j.compbiomed.2024.108280_2"
+  "study_id": "10.1016/j.compbiomed.2024.108280_2",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

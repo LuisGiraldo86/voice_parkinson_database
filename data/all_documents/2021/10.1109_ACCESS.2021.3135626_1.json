@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c16893c2"
-  },
   "title": "Speech Impairment in Parkinson's Disease: Acoustic Analysis of Unvoiced Consonants in Italian Native Speakers",
   "authors": [
     {
@@ -243,5 +240,9 @@
       "doi": null
     }
   ],
-  "study_id": "10.1109/ACCESS.2021.3135626_1"
+  "study_id": "10.1109/ACCESS.2021.3135626_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

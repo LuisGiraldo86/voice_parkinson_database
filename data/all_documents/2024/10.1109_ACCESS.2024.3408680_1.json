@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c16893a0"
-  },
   "title": "Enhancing Parkinson's Disease Diagnosis Through Stacking Ensemble-Based Machine Learning Approach",
   "authors": [
     {
@@ -164,5 +161,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.1109/ACCESS.2024.3408680_1"
+  "study_id": "10.1109/ACCESS.2024.3408680_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

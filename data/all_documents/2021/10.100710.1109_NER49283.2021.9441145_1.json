@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c16893c3"
-  },
   "title": "Real-Time Screening of Parkinson's Disease based on Speech Analysis using Smartphone",
   "authors": [
     {
@@ -131,5 +128,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.100710.1109/NER49283.2021.9441145_1"
+  "study_id": "10.100710.1109/NER49283.2021.9441145_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c16893e4"
-  },
   "title": "Automatic Parkinson disease detection at early stages as a pre-diagnosis tool by using classifiers and a small set of vocal features",
   "authors": [
     {
@@ -377,5 +374,9 @@
       "doi": "10.24432/C5MS4X"
     }
   ],
-  "study_id": "10.1016/j.bbe.2020.01.003_1"
+  "study_id": "10.1016/j.bbe.2020.01.003_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c1689365"
-  },
   "title": "Stacked auto-encoder based Time-frequency features of Speech signal for Parkinson disease prediction",
   "authors": [
     {
@@ -107,5 +104,9 @@
       "doi": ""
     }
   ],
-  "study_id": "10.1109/AISP48273.2020.9073595_1"
+  "study_id": "10.1109/AISP48273.2020.9073595_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

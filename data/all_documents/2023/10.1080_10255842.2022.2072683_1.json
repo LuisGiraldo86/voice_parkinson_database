@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00b6c43da02c168931a"
-  },
   "title": "Early detection of Parkinson disease using stacking ensemble method",
   "authors": [
     {
@@ -119,5 +116,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.1080/10255842.2022.2072683_1"
+  "study_id": "10.1080/10255842.2022.2072683_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

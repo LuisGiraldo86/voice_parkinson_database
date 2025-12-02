@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c1689382"
-  },
   "title": "Exemplar-Based Sparse Representations for Detection of Parkinson's Disease From Speech",
   "authors": [
     {
@@ -527,5 +524,9 @@
       "doi": "10.5281/zenodo.2867215"
     }
   ],
-  "study_id": "10.1109/TASLP.2023.3260709_1"
+  "study_id": "10.1109/TASLP.2023.3260709_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

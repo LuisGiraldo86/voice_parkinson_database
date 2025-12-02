@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c1689414"
-  },
   "title": "An artificial intelligence-based decision support system for early and accurate diagnosis of Parkinson's Disease",
   "authors": [
     {
@@ -204,5 +201,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.1016/j.dajour.2023.100381_1"
+  "study_id": "10.1016/j.dajour.2023.100381_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

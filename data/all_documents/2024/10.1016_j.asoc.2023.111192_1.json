@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c1689412"
-  },
   "title": "A genetic operators-based Ant Lion Optimiser for training a medical multi-layer perceptron",
   "authors": [
     {
@@ -74,5 +71,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.1016/j.asoc.2023.111192_1"
+  "study_id": "10.1016/j.asoc.2023.111192_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

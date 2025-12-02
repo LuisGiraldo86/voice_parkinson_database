@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c1689364"
-  },
   "title": "Using the recurrence plots as indicators for the recognition of Parkinson's disease through phonemes assessment",
   "authors": [
     {
@@ -95,5 +92,9 @@
       "doi": ""
     }
   ],
-  "study_id": "10.1109/EMBC40787.2023.10340177_1"
+  "study_id": "10.1109/EMBC40787.2023.10340177_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

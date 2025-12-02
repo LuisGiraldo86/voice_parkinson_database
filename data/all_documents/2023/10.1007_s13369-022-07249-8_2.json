@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c1689386"
-  },
   "title": "A Speech-Based Hybrid Decision Support System for Early Detection of Parkinson's Disease",
   "authors": [
     {
@@ -237,5 +234,9 @@
       "doi": "10.5281/zenodo.2867215"
     }
   ],
-  "study_id": "10.1007/s13369-022-07249-8_2"
+  "study_id": "10.1007/s13369-022-07249-8_2",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

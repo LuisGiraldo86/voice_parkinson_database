@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00b6c43da02c16892ec"
-  },
   "title": "Investigating Voice as a Biomarker: Deep Phenotyping Methods for Early Detection of Parkinson's Disease",
   "authors": [
     {
@@ -111,5 +108,9 @@
       "url": "https://www.synapse.org/Synapse:syn4993293/wiki/247859"
     }
   ],
-  "study_id": "10.1016/j.jbi.2019.103362_1"
+  "study_id": "10.1016/j.jbi.2019.103362_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

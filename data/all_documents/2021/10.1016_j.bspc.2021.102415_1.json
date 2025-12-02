@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c1689422"
-  },
   "title": "Analysis of Voice as an Assisting Tool for Detection of Parkinson's Disease and Its Subsequent Clinical Interpretation",
   "authors": [
     {
@@ -1107,5 +1104,9 @@
       "doi": "10.24432/C5MS4X"
     }
   ],
-  "study_id": "10.1016/j.bspc.2021.102415_1"
+  "study_id": "10.1016/j.bspc.2021.102415_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c1689353"
-  },
   "title": "BiLSTM with Data Augmentation using Interpolation Methods to Improve Early Detection of Parkinson Disease",
   "authors": [
     {
@@ -780,5 +777,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.15439/2020F188_1"
+  "study_id": "10.15439/2020F188_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

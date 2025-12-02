@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c1689415"
-  },
   "title": "Robust language independent voice data driven Parkinsons disease detection",
   "authors": [
     {
@@ -120,5 +117,9 @@
       "doi": "10.21227/aw6b-tg17"
     }
   ],
-  "study_id": "10.1016/j.engappai.2023.107494_2"
+  "study_id": "10.1016/j.engappai.2023.107494_2",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c168938b"
-  },
   "title": "Voice-Based SVM Model Reliability for Identifying Parkinson's Disease",
   "authors": [
     {
@@ -100,5 +97,9 @@
       "doi": null
     }
   ],
-  "study_id": "10.1109/ACCESS.2023.3344464_1"
+  "study_id": "10.1109/ACCESS.2023.3344464_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

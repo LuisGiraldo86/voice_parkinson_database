@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00b6c43da02c168932e"
-  },
   "title": "Diagnosis of Parkinson's disease based on voice signals using SHAP and hard voting ensemble method",
   "authors": [
     {
@@ -84,5 +81,9 @@
       "doi": "10.24432/C5701F"
     }
   ],
-  "study_id": "10.1080/10255842.2023.2263125_1"
+  "study_id": "10.1080/10255842.2023.2263125_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

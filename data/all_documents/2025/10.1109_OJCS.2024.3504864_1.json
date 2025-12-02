@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c168935a"
-  },
   "title": "Time Series Classification of Raw Voice Waveforms for Parkinson's Disease Detection Using Generative Adversarial Network-Driven Data Augmentation",
   "authors": [
     {
@@ -259,5 +256,9 @@
       "controls": 50
     }
   ],
-  "study_id": "10.1109/OJCS.2024.3504864_1"
+  "study_id": "10.1109/OJCS.2024.3504864_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00b6c43da02c16892f0"
-  },
   "title": "Metaheuristics with Deep Learning-Enabled Parkinson's Disease Diagnosis and Classification Model",
   "authors": [
     {
@@ -91,5 +88,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.1155/2022/9276579_1"
+  "study_id": "10.1155/2022/9276579_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

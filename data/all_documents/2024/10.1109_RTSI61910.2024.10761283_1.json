@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c168935e"
-  },
   "title": "Deep Neural Quantization for Speech Detection of Parkinson Disease",
   "authors": [
     {
@@ -324,5 +321,9 @@
       "doi": "10.21227/aw6b-tg17"
     }
   ],
-  "study_id": "10.1109/RTSI61910.2024.10761283_1"
+  "study_id": "10.1109/RTSI61910.2024.10761283_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

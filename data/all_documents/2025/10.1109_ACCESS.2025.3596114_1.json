@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c168934a"
-  },
   "title": "Self-Attentive Quantile GAN with Causally Grounded Machine Learning for Vocal Biomarker Discovery in Parkinson's Disease Detection",
   "authors": [
     {
@@ -77,5 +74,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.1109/ACCESS.2025.3596114_1"
+  "study_id": "10.1109/ACCESS.2025.3596114_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

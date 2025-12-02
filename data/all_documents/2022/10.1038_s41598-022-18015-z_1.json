@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00b6c43da02c16892f8"
-  },
   "title": "Classification of Parkinson's Disease and its Stages Using Machine Learning",
   "authors": [
     {
@@ -70,5 +67,9 @@
       "doi": "10.24432/C5MS4X"
     }
   ],
-  "study_id": "10.1038/s41598-022-18015-z_1"
+  "study_id": "10.1038/s41598-022-18015-z_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

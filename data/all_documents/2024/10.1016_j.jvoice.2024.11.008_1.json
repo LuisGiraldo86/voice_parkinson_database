@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00b6c43da02c1689328"
-  },
   "title": "Vocal Biomarkers for Parkinson's Disease Classification Using Audio Spectrogram Transformers",
   "authors": [
     {
@@ -68,5 +65,9 @@
       "doi": ""
     }
   ],
-  "study_id": "10.1016/j.jvoice.2024.11.008_1"
+  "study_id": "10.1016/j.jvoice.2024.11.008_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

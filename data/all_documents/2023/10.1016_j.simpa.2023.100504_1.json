@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c168938c"
-  },
   "title": "PD-ADSV: An automated diagnosing system using voice signals and hard voting ensemble method for Parkinson's disease",
   "authors": [
     {
@@ -73,5 +70,9 @@
       "doi": "10.24432/C5701F"
     }
   ],
-  "study_id": "10.1016/j.simpa.2023.100504_1"
+  "study_id": "10.1016/j.simpa.2023.100504_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

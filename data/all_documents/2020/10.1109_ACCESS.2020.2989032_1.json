@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c1689356"
-  },
   "title": "A Novel Framework of Two Successive Feature Selection Levels Using Weight-Based Procedure for Voice-Loss Detection in Parkinson's Disease",
   "authors": [
     {
@@ -119,5 +116,9 @@
       "doi": "10.24432/C5MS4X"
     }
   ],
-  "study_id": "10.1109/ACCESS.2020.2989032_1"
+  "study_id": "10.1109/ACCESS.2020.2989032_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

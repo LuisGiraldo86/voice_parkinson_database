@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c168942b"
-  },
   "title": "Feature Selection Based on Mahalanobis Distance for Early Parkinson Disease Classification",
   "authors": [
     {
@@ -148,5 +145,9 @@
       "doi": "10.24432/C5701F"
     }
   ],
-  "study_id": "10.1016/j.cmpbup.2025.100177_2"
+  "study_id": "10.1016/j.cmpbup.2025.100177_2",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

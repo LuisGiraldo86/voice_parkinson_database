@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c16893b0"
-  },
   "title": "Deep learning vs feature engineering in the assessment of voice signals for diagnosis in Parkinson's disease",
   "authors": [
     {
@@ -160,5 +157,9 @@
       "doi": null
     }
   ],
-  "study_id": "10.24425/bpasts.2021.137347_1"
+  "study_id": "10.24425/bpasts.2021.137347_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

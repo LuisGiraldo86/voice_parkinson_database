@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c16893db"
-  },
   "title": "Pre-trained convolutional neural networks identify Parkinson's disease from spectrogram images of voice samples",
   "authors": [
     {
@@ -115,5 +112,9 @@
       "doi": "10.1038/s41598-023-47568-w"
     }
   ],
-  "study_id": "10.1038/s41598-025-92105-6_1"
+  "study_id": "10.1038/s41598-025-92105-6_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

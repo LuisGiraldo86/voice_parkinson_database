@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c1689375"
-  },
   "title": "Speech Recognition for Parkinson's Disease Based on Improved Genetic Algorithm and Data Enhancement Technology",
   "authors": [
     {
@@ -108,5 +105,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.1007/978-981-19-5194-7_21_1"
+  "study_id": "10.1007/978-981-19-5194-7_21_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

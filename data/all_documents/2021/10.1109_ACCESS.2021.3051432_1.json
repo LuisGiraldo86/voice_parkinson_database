@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c16893c4"
-  },
   "title": "A Deep Learning Based Method for Parkinson's Disease Detection Using Dynamic Features of Speech",
   "authors": [
     {
@@ -123,5 +120,9 @@
       "doi": null
     }
   ],
-  "study_id": "10.1109/ACCESS.2021.3051432_1"
+  "study_id": "10.1109/ACCESS.2021.3051432_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

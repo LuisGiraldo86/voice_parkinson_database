@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c16893a8"
-  },
   "title": "TabNet unveils predictive insights: a deep learning approach for Parkinson's disease prognosis",
   "authors": [
     {
@@ -60,5 +57,9 @@
       "doi": null
     }
   ],
-  "study_id": "10.1007/s13198-024-02450-4_1"
+  "study_id": "10.1007/s13198-024-02450-4_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c1689439"
-  },
   "title": "Novel Voice Signal Segmentation Based on Clark Distance to Improve Intelligent Parkinson Disease Detection",
   "authors": [
     {
@@ -103,5 +100,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.1016/j.jvoice.2025.04.030_1"
+  "study_id": "10.1016/j.jvoice.2025.04.030_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c168934b"
-  },
   "title": "Deep Learning-based model for the detection of Parkinson's disease using voice data",
   "authors": [
     {
@@ -108,5 +105,9 @@
       "doi": "10.24432/C5MS4X"
     }
   ],
-  "study_id": "10.1109/ICAITPR51569.2022.98441852_1"
+  "study_id": "10.1109/ICAITPR51569.2022.98441852_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

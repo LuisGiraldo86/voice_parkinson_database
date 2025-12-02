@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c1689408"
-  },
   "title": "An ensemble technique to predict Parkinson's disease using machine learning algorithms",
   "authors": [
     {
@@ -74,5 +71,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.1016/j.specom.2024.103067_1"
+  "study_id": "10.1016/j.specom.2024.103067_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

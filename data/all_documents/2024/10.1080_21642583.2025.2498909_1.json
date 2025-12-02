@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c16893d3"
-  },
   "title": "Early Parkinson's disease identification via hybrid feature selection from multi-feature subsets and optimized CatBoost with SMOTE",
   "authors": [
     {
@@ -541,5 +538,9 @@
       "doi": "10.24432/C5MS4X"
     }
   ],
-  "study_id": "10.1080/21642583.2025.2498909_1"
+  "study_id": "10.1080/21642583.2025.2498909_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

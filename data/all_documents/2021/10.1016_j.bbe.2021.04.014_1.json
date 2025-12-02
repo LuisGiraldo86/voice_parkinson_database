@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c168941d"
-  },
   "title": "An improved framework for Parkinson's disease prediction using Variational Mode Decomposition-Hilbert spectrum of speech signal",
   "authors": [
     {
@@ -254,5 +251,9 @@
       "doi": ""
     }
   ],
-  "study_id": "10.1016/j.bbe.2021.04.014_1"
+  "study_id": "10.1016/j.bbe.2021.04.014_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

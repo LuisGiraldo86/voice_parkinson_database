@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c1689395"
-  },
   "title": "A New Hybrid Approach Based on AOA, CNN and Feature Fusion That Can Automatically Diagnose Parkinson's Disease From Sound Signals: PDD-AOA-CNN",
   "authors": [
     {
@@ -117,5 +114,9 @@
       "doi": "10.21227/aw6b-tg17"
     }
   ],
-  "study_id": "10.1007/s11760-023-02826-2_1"
+  "study_id": "10.1007/s11760-023-02826-2_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

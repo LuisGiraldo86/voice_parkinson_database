@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c1689374"
-  },
   "title": "Parkinson's Disease Detection Using Smartphone Recorded Phonemes in Real World Conditions",
   "authors": [
     {
@@ -216,5 +213,9 @@
       "doi": "10.1109/LSC.2018.8572266"
     }
   ],
-  "study_id": "10.1109/ACCESS.2022.3203973_1"
+  "study_id": "10.1109/ACCESS.2022.3203973_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00b6c43da02c1689336"
-  },
   "title": "Leveraging ANFIS with Adam and PSO optimizers for Parkinson's disease",
   "authors": [
     {
@@ -137,5 +134,9 @@
       "doi": "10.24432/C5MS4X"
     }
   ],
-  "study_id": "10.1016/j.heliyon.2024.e30241_1"
+  "study_id": "10.1016/j.heliyon.2024.e30241_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

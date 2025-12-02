@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c1689341"
-  },
   "title": "Detecting Parkinson Disease Using a Web-Based Speech Task: Observational Study",
   "authors": [
     {
@@ -318,5 +315,9 @@
       "doi": null
     }
   ],
-  "study_id": "10.2196/26305_1"
+  "study_id": "10.2196/26305_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

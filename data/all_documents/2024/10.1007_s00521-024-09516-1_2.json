@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c1689399"
-  },
   "title": "Quantum Mayfly Optimization Based Feature Subset Selection with Hybrid CNN for Biomedical Parkinson's Disease Diagnosis",
   "authors": [
     {
@@ -57,5 +54,9 @@
       "doi": "10.24432/C5NC8M"
     }
   ],
-  "study_id": "10.1007/s00521-024-09516-1_2"
+  "study_id": "10.1007/s00521-024-09516-1_2",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

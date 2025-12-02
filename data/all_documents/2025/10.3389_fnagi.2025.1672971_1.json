@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c1689347"
-  },
   "title": "Explainable machine learning for early detection of Parkinson's disease in aging populations using vocal biomarkers",
   "authors": [
     {
@@ -88,5 +85,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.3389/fnagi.2025.1672971_1"
+  "study_id": "10.3389/fnagi.2025.1672971_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c168937d"
-  },
   "title": "Parkinson's Disease Detection Based on Running Speech Data From Phone Calls",
   "authors": [
     {
@@ -192,5 +189,9 @@
       "doi": null
     }
   ],
-  "study_id": "10.1109/TBME.2021.3116935_1"
+  "study_id": "10.1109/TBME.2021.3116935_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

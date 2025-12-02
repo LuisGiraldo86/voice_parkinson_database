@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00b6c43da02c1689331"
-  },
   "title": "Intra-subject enveloped multilayer fuzzy sample compression for speech diagnosis of Parkinson's disease",
   "authors": [
     {
@@ -138,5 +135,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.1007/s11517-023-02944-6_2"
+  "study_id": "10.1007/s11517-023-02944-6_2",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

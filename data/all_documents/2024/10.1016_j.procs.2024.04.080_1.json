@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c1689407"
-  },
   "title": "A Nature Inspired Optimization Algorithm for Parkinson's Disease Classification Through Speech Analysis",
   "authors": [
     {
@@ -77,5 +74,9 @@
       "doi": null
     }
   ],
-  "study_id": "10.1016/j.procs.2024.04.080_1"
+  "study_id": "10.1016/j.procs.2024.04.080_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

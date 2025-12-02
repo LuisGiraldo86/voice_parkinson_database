@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c16893a2"
-  },
   "title": "Parkinson Classification Neural Network with MASS Algorithm for Processing Speech Signals",
   "authors": [
     {
@@ -67,5 +64,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.1007/s00521-024-09596-z_1"
+  "study_id": "10.1007/s00521-024-09596-z_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

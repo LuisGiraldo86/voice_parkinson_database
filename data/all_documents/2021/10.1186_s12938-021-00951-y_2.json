@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c168933e"
-  },
   "title": "A Mobile-assisted Voice Condition Analysis System for Parkinson's Disease: Assessment of Usability Conditions",
   "authors": [
     {
@@ -164,5 +161,9 @@
       "doi": null
     }
   ],
-  "study_id": "10.1186/s12938-021-00951-y_2"
+  "study_id": "10.1186/s12938-021-00951-y_2",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

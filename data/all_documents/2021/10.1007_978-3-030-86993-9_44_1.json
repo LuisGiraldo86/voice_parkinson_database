@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c16893c0"
-  },
   "title": "Feature Selection Based Machine Learning to Improve Prediction of Parkinson Disease",
   "authors": [
     {
@@ -323,5 +320,9 @@
       "doi": "10.24432/C5701F"
     }
   ],
-  "study_id": "10.1007/978-3-030-86993-9_44_1"
+  "study_id": "10.1007/978-3-030-86993-9_44_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

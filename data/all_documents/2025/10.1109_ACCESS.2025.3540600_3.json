@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c1689349"
-  },
   "title": "Interpretable Parkinson's Disease Detection Using Group-Wise Scaling",
   "authors": [
     {
@@ -243,5 +240,9 @@
       "doi": null
     }
   ],
-  "study_id": "10.1109/ACCESS.2025.3540600_3"
+  "study_id": "10.1109/ACCESS.2025.3540600_3",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

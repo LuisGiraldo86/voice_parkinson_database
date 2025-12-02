@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c1689397"
-  },
   "title": "A Hybrid Model: Random Classification and Feature Selection Approach for Diagnosis of the Parkinson Syndrome",
   "authors": [
     {
@@ -464,5 +461,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.12694/scpe.v25i1.2314_1"
+  "study_id": "10.12694/scpe.v25i1.2314_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

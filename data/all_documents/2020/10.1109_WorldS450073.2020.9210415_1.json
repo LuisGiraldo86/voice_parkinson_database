@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c1689362"
-  },
   "title": "Analysis of Parkinson's disease diagnosis using a combination of Genetic Algorithm and Recursive Feature Elimination",
   "authors": [
     {
@@ -120,5 +117,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.1109/WorldS450073.2020.9210415_1"
+  "study_id": "10.1109/WorldS450073.2020.9210415_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

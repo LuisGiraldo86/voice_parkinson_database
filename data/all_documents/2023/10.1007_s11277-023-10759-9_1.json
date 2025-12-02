@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c168938a"
-  },
   "title": "An Approach Using in Communication Network Apply in Healthcare System Based on the Deep Learning Autoencoder Classification Optimization Metaheuristic Method",
   "authors": [
     {
@@ -249,5 +246,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.1007/s11277-023-10759-9_1"
+  "study_id": "10.1007/s11277-023-10759-9_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

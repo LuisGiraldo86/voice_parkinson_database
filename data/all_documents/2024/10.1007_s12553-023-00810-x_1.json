@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c168939c"
-  },
   "title": "Speech Features-Based Parkinson's Disease Classification Using Combined SMOTE-ENN and Binary Machine Learning",
   "authors": [
     {
@@ -180,5 +177,9 @@
       "doi": "10.24432/C5MS4X"
     }
   ],
-  "study_id": "10.1007/s12553-023-00810-x_1"
+  "study_id": "10.1007/s12553-023-00810-x_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00b6c43da02c16892e5"
-  },
   "title": "Evaluation of Train and Test Performance of Machine Learning Algorithms and Parkinson Diagnosis with Statistical Measurements",
   "authors": [
     {
@@ -102,5 +99,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.1007/s11517-020-02260-3_1"
+  "study_id": "10.1007/s11517-020-02260-3_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00b6c43da02c16892e7"
-  },
   "title": "Gradient Boosting for Parkinson's Disease Diagnosis from Voice Recordings",
   "authors": [
     {
@@ -102,5 +99,9 @@
       "doi": "10.24432/C5701F"
     }
   ],
-  "study_id": "10.1186/s12911-020-01250-7_1"
+  "study_id": "10.1186/s12911-020-01250-7_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

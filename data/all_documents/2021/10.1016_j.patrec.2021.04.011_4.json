@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c16893bc"
-  },
   "title": "Transfer learning helps to improve the accuracy to classify patients with different speech disorders in different languages",
   "authors": [
     {
@@ -126,5 +123,9 @@
       "doi": ""
     }
   ],
-  "study_id": "10.1016/j.patrec.2021.04.011_4"
+  "study_id": "10.1016/j.patrec.2021.04.011_4",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

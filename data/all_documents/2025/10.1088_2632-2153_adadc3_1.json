@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c16893d1"
-  },
   "title": "Improving detection of Parkinson's disease with acoustic feature optimization using particle swarm optimization and machine learning",
   "authors": [
     {
@@ -174,5 +171,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.1088/2632-2153/adadc3_1"
+  "study_id": "10.1088/2632-2153/adadc3_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

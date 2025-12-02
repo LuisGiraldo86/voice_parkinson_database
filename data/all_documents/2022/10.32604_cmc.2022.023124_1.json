@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c16893f1"
-  },
   "title": "Enhancing Parkinson's Disease Prediction Using Machine Learning and Feature Selection Methods",
   "authors": [
     {
@@ -579,5 +576,9 @@
       "doi": "10.24432/C5701F"
     }
   ],
-  "study_id": "10.32604/cmc.2022.023124_1"
+  "study_id": "10.32604/cmc.2022.023124_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

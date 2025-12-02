@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00b6c43da02c16892fe"
-  },
   "title": "A machine learning method to process voice samples for identification of Parkinson's disease",
   "authors": [
     {
@@ -304,5 +301,9 @@
       "doi": null
     }
   ],
-  "study_id": "10.1038/s41598-023-47568-w_1"
+  "study_id": "10.1038/s41598-023-47568-w_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

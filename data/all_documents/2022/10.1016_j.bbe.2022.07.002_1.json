@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c16893f2"
-  },
   "title": "Enhanced Decision Tree Induction Using Evolutionary Techniques for Parkinson's Disease Classification",
   "authors": [
     {
@@ -102,5 +99,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.1016/j.bbe.2022.07.002_1"
+  "study_id": "10.1016/j.bbe.2022.07.002_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

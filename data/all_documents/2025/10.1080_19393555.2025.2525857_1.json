@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c16893cd"
-  },
   "title": "An Efficient Disease Prediction Model Based on Spa-Hunt Optimization for a Secured Healthcare System",
   "authors": [
     {
@@ -107,5 +104,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.1080/19393555.2025.2525857_1"
+  "study_id": "10.1080/19393555.2025.2525857_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c16893e7"
-  },
   "title": "Automated Detection of Parkinson's Disease Using Minimum Average Maximum Tree and Singular Value Decomposition Method with Vowels",
   "authors": [
     {
@@ -207,5 +204,9 @@
       "doi": "10.24432/C5MS4X"
     }
   ],
-  "study_id": "10.1016/j.bbe.2019.05.006_1"
+  "study_id": "10.1016/j.bbe.2019.05.006_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

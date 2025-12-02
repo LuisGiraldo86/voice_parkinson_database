@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c16893b6"
-  },
   "title": "A Novel Approach for Parkinson's Disease Detection Based on Voice Classification and Features Selection Techniques",
   "authors": [
     {
@@ -92,5 +89,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.3991/ijoe.v17i10.24499_1"
+  "study_id": "10.3991/ijoe.v17i10.24499_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

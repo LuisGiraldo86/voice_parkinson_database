@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c1689435"
-  },
   "title": "Comparative Study of Deep Learning Models for Parkinson's Disease Detection",
   "authors": [
     {
@@ -118,5 +115,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.1016/j.tbench.2025.100219_1"
+  "study_id": "10.1016/j.tbench.2025.100219_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

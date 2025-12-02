@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c1689368"
-  },
   "title": "A Spectrogram-Based Deep Feature Assisted Computer-Aided Diagnostic System for Parkinson's Disease",
   "authors": [
     {
@@ -213,5 +210,9 @@
       "doi": ""
     }
   ],
-  "study_id": "10.1109/ACCESS.2020.2974008_1"
+  "study_id": "10.1109/ACCESS.2020.2974008_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

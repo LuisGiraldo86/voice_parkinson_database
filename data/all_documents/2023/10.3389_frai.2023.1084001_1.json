@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00b6c43da02c1689323"
-  },
   "title": "Machine learning approaches to identify Parkinson's disease using voice signal features ",
   "authors": [
     {
@@ -173,5 +170,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.3389/frai.2023.1084001_1"
+  "study_id": "10.3389/frai.2023.1084001_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

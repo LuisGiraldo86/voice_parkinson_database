@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c16893ca"
-  },
   "title": "Detection of voice impairment for Parkinson's disease using machine learning tools",
   "authors": [
     {
@@ -224,5 +221,9 @@
       "doi": "10.24432/C5NC8M"
     }
   ],
-  "study_id": "10.1109/ISIVC49222.2021.9487544_1"
+  "study_id": "10.1109/ISIVC49222.2021.9487544_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

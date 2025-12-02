@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00b6c43da02c1689306"
-  },
   "title": "Time-frequency analysis of speech signal using Chirplet transform for automatic diagnosis of Parkinson's disease",
   "authors": [
     {
@@ -819,5 +816,9 @@
       "doi": ""
     }
   ],
-  "study_id": "10.1007/s13534-023-00283-x_1"
+  "study_id": "10.1007/s13534-023-00283-x_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

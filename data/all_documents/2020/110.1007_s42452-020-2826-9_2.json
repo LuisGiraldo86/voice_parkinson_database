@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c168936a"
-  },
   "title": "Optimized grass hopper algorithm for diagnosis of Parkinson's disease",
   "authors": [
     {
@@ -119,5 +116,9 @@
       "doi": "10.24432/C5NC8M"
     }
   ],
-  "study_id": "110.1007/s42452-020-2826-9_2"
+  "study_id": "110.1007/s42452-020-2826-9_2",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

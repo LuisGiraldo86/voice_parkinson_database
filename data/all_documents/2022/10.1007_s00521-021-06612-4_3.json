@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c1689378"
-  },
   "title": "An adaptive intelligent diagnostic system to predict early stage of parkinson's disease using two-stage dimension reduction with genetically optimized lightgbm algorithm",
   "authors": [
     {
@@ -60,5 +57,9 @@
       "doi": "10.24432/C5MS4X"
     }
   ],
-  "study_id": "10.1007/s00521-021-06612-4_3"
+  "study_id": "10.1007/s00521-021-06612-4_3",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

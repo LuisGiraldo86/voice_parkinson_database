@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c1689383"
-  },
   "title": "Envelope Multi-type Transformation Ensemble Algorithm of Parkinson Speech Samples",
   "authors": [
     {
@@ -121,5 +118,9 @@
       "doi": "10.24432/C5NC8M"
     }
   ],
-  "study_id": "10.1007/s10489-022-04345-y_1"
+  "study_id": "10.1007/s10489-022-04345-y_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

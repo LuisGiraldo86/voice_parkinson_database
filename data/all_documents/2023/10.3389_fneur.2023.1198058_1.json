@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00b6c43da02c168931d"
-  },
   "title": "Ataxic speech disorders and Parkinson's disease diagnostics via stochastic embedding of empirical mode decomposition",
   "authors": [
     {
@@ -191,5 +188,9 @@
       "doi": null
     }
   ],
-  "study_id": "10.3389/fneur.2023.1198058_1"
+  "study_id": "10.3389/fneur.2023.1198058_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c16893d4"
-  },
   "title": "FedOcw: optimized federated learning for cross-lingual speech-based Parkinson's disease detection",
   "authors": [
     {
@@ -230,5 +227,9 @@
       "doi": "10.5281/zenodo.2867215"
     }
   ],
-  "study_id": "10.1038/s41746-025-01763-3_1"
+  "study_id": "10.1038/s41746-025-01763-3_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

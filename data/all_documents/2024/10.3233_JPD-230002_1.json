@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00b6c43da02c1689329"
-  },
   "title": "Machine Learning-Based Classification of Parkinson's Disease Patients Using Speech Biomarkers",
   "authors": [
     {
@@ -176,5 +173,9 @@
       "doi": "10.24432/C5MS4X"
     }
   ],
-  "study_id": "10.3233/JPD-230002_1"
+  "study_id": "10.3233/JPD-230002_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

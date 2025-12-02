@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c16893cf"
-  },
   "title": "PD_EBM: An Integrated Boosting Approach Based on Selective Features for Unveiling Parkinson's Disease Diagnosis With Global and Local Explanations",
   "authors": [
     {
@@ -143,5 +140,9 @@
       "doi": "10.24432/C5MS4X"
     }
   ],
-  "study_id": "10.1002/eng2.13091_2"
+  "study_id": "10.1002/eng2.13091_2",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

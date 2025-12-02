@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c16893bd"
-  },
   "title": "Probabilistic Neural Network-based Model for Identification of Parkinson's Disease by using Voice Profile and Personal Data",
   "authors": [
     {
@@ -82,5 +79,9 @@
       "doi": null
     }
   ],
-  "study_id": "10.1007/s13369-020-05080-7_1"
+  "study_id": "10.1007/s13369-020-05080-7_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

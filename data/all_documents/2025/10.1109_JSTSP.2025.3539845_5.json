@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c1689360"
-  },
   "title": "Unveiling Interpretability in Self-Supervised Speech Representations for Parkinson's Diagnosis",
   "authors": [
     {
@@ -203,5 +200,9 @@
       "doi": null
     }
   ],
-  "study_id": "10.1109/JSTSP.2025.3539845_5"
+  "study_id": "10.1109/JSTSP.2025.3539845_5",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

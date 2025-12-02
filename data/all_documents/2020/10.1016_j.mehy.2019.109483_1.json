@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00b6c43da02c16892eb"
-  },
   "title": "Automated Parkinson's Disease Recognition Based on Statistical Pooling Method Using Acoustic Features",
   "authors": [
     {
@@ -151,5 +148,9 @@
       "doi": "10.24432/C5701F"
     }
   ],
-  "study_id": "10.1016/j.mehy.2019.109483_1"
+  "study_id": "10.1016/j.mehy.2019.109483_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

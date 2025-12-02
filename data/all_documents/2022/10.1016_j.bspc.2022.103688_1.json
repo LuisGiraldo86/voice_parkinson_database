@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c16893f5"
-  },
   "title": "Diagnose Parkinson's Disease and Cleft Lip and Palate Using Deep Convolutional Neural Networks Evolved by IP-based Chimp Optimization Algorithm",
   "authors": [
     {
@@ -78,5 +75,9 @@
       "doi": ""
     }
   ],
-  "study_id": "10.1016/j.bspc.2022.103688_1"
+  "study_id": "10.1016/j.bspc.2022.103688_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

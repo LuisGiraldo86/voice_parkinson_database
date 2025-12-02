@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c16893e2"
-  },
   "title": "Hilbert Spectrum Analysis for Automatic Detection and Evaluation of Parkinson's Speech",
   "authors": [
     {
@@ -283,5 +280,9 @@
       "doi": ""
     }
   ],
-  "study_id": "10.1016/j.bspc.2020.102050_1"
+  "study_id": "10.1016/j.bspc.2020.102050_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c168941e"
-  },
   "title": "Few-shot learning of Parkinson's disease speech data with optimal convolution sparse kernel transfer learning",
   "authors": [
     {
@@ -92,5 +89,9 @@
       }
     }
   ],
-  "study_id": "10.1016/j.bspc.2021.102850_1"
+  "study_id": "10.1016/j.bspc.2021.102850_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

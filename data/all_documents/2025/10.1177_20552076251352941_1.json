@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c16893d7"
-  },
   "title": "Hybrid preprocessing and ensemble classification for enhanced detection of Parkinson's disease using multiple speech signal databases",
   "authors": [
     {
@@ -838,5 +835,9 @@
       "doi": "10.24432/C5MS4X"
     }
   ],
-  "study_id": "10.1177/20552076251352941_1"
+  "study_id": "10.1177/20552076251352941_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

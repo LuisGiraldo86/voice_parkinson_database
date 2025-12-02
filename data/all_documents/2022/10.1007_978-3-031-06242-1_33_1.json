@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c1689376"
-  },
   "title": "Identification of Parkinson's Disease from Speech Using CNNs and Formant Measures",
   "authors": [
     {
@@ -93,5 +90,9 @@
       "doi": null
     }
   ],
-  "study_id": "10.1007/978-3-031-06242-1_33_1"
+  "study_id": "10.1007/978-3-031-06242-1_33_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

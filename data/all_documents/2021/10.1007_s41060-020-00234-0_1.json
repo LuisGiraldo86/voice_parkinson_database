@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c16893bb"
-  },
   "title": "A Comparative Analysis of Machine Learning classifiers for Dysphonia-based classification of Parkinson's Disease",
   "authors": [
     {
@@ -768,5 +765,9 @@
       "doi": "10.24432/C5MS4X"
     }
   ],
-  "study_id": "10.1007/s41060-020-00234-0_1"
+  "study_id": "10.1007/s41060-020-00234-0_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

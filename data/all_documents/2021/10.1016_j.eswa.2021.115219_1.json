@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c168941b"
-  },
   "title": "A novel self-learning feature selection approach based on feature attributions",
   "authors": [
     {
@@ -94,5 +91,9 @@
       "doi": "10.24432/C5MS4X"
     }
   ],
-  "study_id": "10.1016/j.eswa.2021.115219_1"
+  "study_id": "10.1016/j.eswa.2021.115219_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

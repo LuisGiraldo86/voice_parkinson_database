@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c16893e8"
-  },
   "title": "Parallel Representation Learning for the Classification of Pathological Speech: Studies on Parkinson's Disease and Cleft Lip and Palate",
   "authors": [
     {
@@ -121,5 +118,9 @@
       "doi": ""
     }
   ],
-  "study_id": "10.1016/j.specom.2020.07.005_1"
+  "study_id": "10.1016/j.specom.2020.07.005_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

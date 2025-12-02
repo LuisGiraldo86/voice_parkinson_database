@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c1689433"
-  },
   "title": "Evaluating the Clinical Utility of a Machine Learning Model for Diagnosing Parkinson's Disease Using Acoustic Parameters",
   "authors": [
     {
@@ -196,5 +193,9 @@
       "doi": null
     }
   ],
-  "study_id": "10.1016/j.jvoice.2025.05.024_1"
+  "study_id": "10.1016/j.jvoice.2025.05.024_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

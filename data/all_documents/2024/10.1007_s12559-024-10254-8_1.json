@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c168939d"
-  },
   "title": "Investigation of Scalograms with a Deep Feature Fusion Approach for Detection of Parkinson's Disease",
   "authors": [
     {
@@ -622,5 +619,9 @@
       "doi": "10.24432/C5NC8M"
     }
   ],
-  "study_id": "10.1007/s12559-024-10254-8_1"
+  "study_id": "10.1007/s12559-024-10254-8_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00a6c43da02c16892e4"
-  },
   "title": "Bio-inspired Dimensionality Reduction for Parkinson's Disease (PD) Classification",
   "authors": [
     {
@@ -402,5 +399,9 @@
       "doi": "10.24432/C5MS4X"
     }
   ],
-  "study_id": "10.1007/s13755-020-00104-w_1"
+  "study_id": "10.1007/s13755-020-00104-w_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c16893c7"
-  },
   "title": "Smartphone Speech Testing for Symptom Assessment in Rapid Eye Movement Sleep Behavior Disorder and Parkinson’s Disease",
   "authors": [
     {
@@ -125,5 +122,9 @@
       "doi": null
     }
   ],
-  "study_id": "10.1109/ACCESS.2021.3057715_1"
+  "study_id": "10.1109/ACCESS.2021.3057715_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

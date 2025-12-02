@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c168934c"
-  },
   "title": "Deep Learning Models for Predicting Cognitive Impairment in Parkinson's Disease Detection",
   "authors": [
     {
@@ -90,5 +87,9 @@
       "doi": "10.24432/C5MS4X"
     }
   ],
-  "study_id": "10.1109/AIC61668.2024.10731072_1"
+  "study_id": "10.1109/AIC61668.2024.10731072_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00b6c43da02c1689311"
-  },
   "title": "On the inter-dataset generalization of machine learning approaches to Parkinson's disease detection from voice",
   "authors": [
     {
@@ -143,5 +140,9 @@
       }
     }
   ],
-  "study_id": "10.1016/j.ijmedinf.2023.105237_5"
+  "study_id": "10.1016/j.ijmedinf.2023.105237_5",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

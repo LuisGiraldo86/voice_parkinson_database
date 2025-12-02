@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c16893e6"
-  },
   "title": "Parkinson disease prediction using intrinsic mode function based features from speech signal",
   "authors": [
     {
@@ -119,5 +116,9 @@
       "doi": "10.24432/C5NC8M"
     }
   ],
-  "study_id": "10.1016/j.bbe.2019.05.005_1"
+  "study_id": "10.1016/j.bbe.2019.05.005_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

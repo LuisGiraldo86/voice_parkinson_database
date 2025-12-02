@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00b6c43da02c1689338"
-  },
   "title": "Machine learning-based classification of Parkinson's disease using acoustic features: Insights from multilingual speech tasks",
   "authors": [
     {
@@ -112,5 +109,9 @@
       "doi": null
     }
   ],
-  "study_id": "10.1016/j.compbiomed.2024.109078_1"
+  "study_id": "10.1016/j.compbiomed.2024.109078_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

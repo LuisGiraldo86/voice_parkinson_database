@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00b6c43da02c168932b"
-  },
   "title": "Detection of Parkinson disease using multiclass machine learning approach",
   "authors": [
     {
@@ -195,5 +192,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.1038/s41598-024-64004-9_1"
+  "study_id": "10.1038/s41598-024-64004-9_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

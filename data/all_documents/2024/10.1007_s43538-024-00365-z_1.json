@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c16893a3"
-  },
   "title": "A Novel Stacked Ensemble Classifier for Parkinson's Disease Classification Using Voice Features",
   "authors": [
     {
@@ -73,5 +70,9 @@
       "doi": "10.24432/C5MS4X"
     }
   ],
-  "study_id": "10.1007/s43538-024-00365-z_1"
+  "study_id": "10.1007/s43538-024-00365-z_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

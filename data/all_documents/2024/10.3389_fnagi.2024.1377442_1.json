@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00b6c43da02c168932f"
-  },
   "title": "Using sustained vowels to identify patients with mild Parkinson's disease in a Chinese dataset",
   "authors": [
     {
@@ -225,5 +222,9 @@
       "doi": null
     }
   ],
-  "study_id": "10.3389/fnagi.2024.1377442_1"
+  "study_id": "10.3389/fnagi.2024.1377442_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

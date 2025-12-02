@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c1689389"
-  },
   "title": "Deep convolution neural network based Parkinson's disease detection using line spectral frequency spectrum of running speech",
   "authors": [
     {
@@ -64,5 +61,9 @@
       "doi": "10.5281/zenodo.2867215"
     }
   ],
-  "study_id": "10.3233/JIFS-230183_1"
+  "study_id": "10.3233/JIFS-230183_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c1689425"
-  },
   "title": "A Novel Pre-processing Technique in Pathologic Voice Detection: Application to Parkinson's Disease Phonation",
   "authors": [
     {
@@ -200,5 +197,9 @@
       "doi": "10.24432/C5NC8M"
     }
   ],
-  "study_id": "10.1016/j.bspc.2021.102604_1"
+  "study_id": "10.1016/j.bspc.2021.102604_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

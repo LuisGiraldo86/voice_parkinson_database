@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c16893fb"
-  },
   "title": "A Local Dynamic Feature Selection Fusion Method for Voice Diagnosis of Parkinson's Disease",
   "authors": [
     {
@@ -166,5 +163,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.1016/j.csl.2023.101536_1"
+  "study_id": "10.1016/j.csl.2023.101536_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

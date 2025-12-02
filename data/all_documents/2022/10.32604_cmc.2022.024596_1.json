@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c16893e9"
-  },
   "title": "Parkinson's Detection Using RNN-Graph-LSTM with Optimization Based on Speech Signals",
   "authors": [
     {
@@ -130,5 +127,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.32604/cmc.2022.024596_1"
+  "study_id": "10.32604/cmc.2022.024596_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

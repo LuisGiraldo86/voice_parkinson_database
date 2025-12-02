@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c16893af"
-  },
   "title": "A Multi-agent Feature Selection and Hybrid Classification Model for Parkinson's Disease Diagnosis",
   "authors": [
     {
@@ -99,5 +96,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.1145/3433180_1"
+  "study_id": "10.1145/3433180_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

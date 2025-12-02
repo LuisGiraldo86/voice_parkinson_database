@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c1689363"
-  },
   "title": "Application of Adaptive Back-Propagation Neural Networks for Parkinson's Disease Prediction",
   "authors": [
     {
@@ -105,5 +102,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.1109/ICDABI51230.2020.9325709_1"
+  "study_id": "10.1109/ICDABI51230.2020.9325709_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

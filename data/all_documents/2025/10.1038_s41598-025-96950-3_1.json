@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c1689348"
-  },
   "title": "Voice biomarkers as prognostic indicators for Parkinson's disease using machine learning techniques",
   "authors": [
     {
@@ -174,5 +171,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.1038/s41598-025-96950-3_1"
+  "study_id": "10.1038/s41598-025-96950-3_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

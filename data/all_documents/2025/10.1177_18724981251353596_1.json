@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c16893dc"
-  },
   "title": "Leveraging Relief Feature Selection and Multi-Classifier Stacking Approach for Improved Parkinson's Disease Diagnosis",
   "authors": [
     {
@@ -92,5 +89,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.1177/18724981251353596_1"
+  "study_id": "10.1177/18724981251353596_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

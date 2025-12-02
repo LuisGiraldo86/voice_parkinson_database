@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00b6c43da02c168932a"
-  },
   "title": "A cross-language speech model for detection of Parkinson's disease",
   "authors": [
     {
@@ -189,5 +186,9 @@
       "doi": null
     }
   ],
-  "study_id": "10.1007/s00702-024-02874-z_1"
+  "study_id": "10.1007/s00702-024-02874-z_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

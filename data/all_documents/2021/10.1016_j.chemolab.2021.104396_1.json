@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c1689419"
-  },
   "title": "A hybrid ensemble-filter wrapper feature selection approach for medical data classification",
   "authors": [
     {
@@ -114,5 +111,9 @@
       "doi": "10.24432/C5MS4X"
     }
   ],
-  "study_id": "10.1016/j.chemolab.2021.104396_1"
+  "study_id": "10.1016/j.chemolab.2021.104396_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

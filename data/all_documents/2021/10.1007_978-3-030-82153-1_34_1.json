@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c16893b8"
-  },
   "title": "Detecting Parkinson's Disease According to Gender Using Speech Signals",
   "authors": [
     {
@@ -95,5 +92,9 @@
       "doi": "10.24432/C5NC8M"
     }
   ],
-  "study_id": "10.1007/978-3-030-82153-1_34_1"
+  "study_id": "10.1007/978-3-030-82153-1_34_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

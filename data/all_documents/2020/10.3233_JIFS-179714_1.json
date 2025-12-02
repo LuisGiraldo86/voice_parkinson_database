@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c1689369"
-  },
   "title": "A vital neurodegenerative disorder detection using speech cues",
   "authors": [
     {
@@ -87,5 +84,9 @@
       "doi": "10.24432/C5NC8M"
     }
   ],
-  "study_id": "10.3233/JIFS-179714_1"
+  "study_id": "10.3233/JIFS-179714_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

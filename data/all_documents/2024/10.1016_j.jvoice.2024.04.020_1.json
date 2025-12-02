@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00b6c43da02c1689339"
-  },
   "title": "Harnessing Voice Analysis and Machine Learning for Early Diagnosis of Parkinson's Disease: A Comparative Study Across Three Datasets",
   "authors": [
     {
@@ -109,5 +106,9 @@
       "doi": "10.5281/zenodo.2867215"
     }
   ],
-  "study_id": "10.1016/j.jvoice.2024.04.020_1"
+  "study_id": "10.1016/j.jvoice.2024.04.020_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

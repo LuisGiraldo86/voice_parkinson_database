@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c16893fe"
-  },
   "title": "Proposing a new approach based on convolutional neural networks and random forest for the diagnosis of Parkinson's disease from speech signals",
   "authors": [
     {
@@ -66,5 +63,9 @@
       "doi": "10.24432/C5NC8M"
     }
   ],
-  "study_id": "10.1016/j.apacoust.2023.109476_2"
+  "study_id": "10.1016/j.apacoust.2023.109476_2",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

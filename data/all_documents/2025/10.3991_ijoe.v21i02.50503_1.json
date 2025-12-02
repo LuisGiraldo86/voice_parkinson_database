@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c16893e0"
-  },
   "title": "Exploring Essential Acoustic Features for Early Parkinson's Disease Classification: A Machine Learning Study",
   "authors": [
     {
@@ -257,5 +254,9 @@
       "doi": "10.24432/C5701F"
     }
   ],
-  "study_id": "10.3991/ijoe.v21i02.50503_1"
+  "study_id": "10.3991/ijoe.v21i02.50503_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

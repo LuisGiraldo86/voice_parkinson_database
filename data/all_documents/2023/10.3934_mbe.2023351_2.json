@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00b6c43da02c1689301"
-  },
   "title": "Intelligent personalized diagnosis modeling in advanced medical system for Parkinson's disease using voice signals",
   "authors": [
     {
@@ -66,5 +63,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.3934/mbe.2023351_2"
+  "study_id": "10.3934/mbe.2023351_2",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

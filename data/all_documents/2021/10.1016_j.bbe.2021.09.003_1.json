@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00e6c43da02c168941f"
-  },
   "title": "A Comparative Study of Kernel-based Vector Machines with Probabilistic Outputs for Medical Diagnosis",
   "authors": [
     {
@@ -179,5 +176,9 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.1016/j.bbe.2021.09.003_1"
+  "study_id": "10.1016/j.bbe.2021.09.003_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c16893d6"
-  },
   "title": "Explainable artificial intelligence to diagnose early Parkinson's disease via voice analysis",
   "authors": [
     {
@@ -96,5 +93,9 @@
       "doi": "10.1038/s41598-023-47568-w"
     }
   ],
-  "study_id": "10.1038/s41598-025-96575-6_1"
+  "study_id": "10.1038/s41598-025-96575-6_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

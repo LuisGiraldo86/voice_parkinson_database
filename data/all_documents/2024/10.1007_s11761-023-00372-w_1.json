@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c16893a6"
-  },
   "title": "Parkinson's Disease Prediction Using Machine Learning-Based Features From Speech Signal",
   "authors": [
     {
@@ -104,5 +101,9 @@
       "doi": "10.24432/C5NC8M"
     }
   ],
-  "study_id": "10.1007/s11761-023-00372-w_1"
+  "study_id": "10.1007/s11761-023-00372-w_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

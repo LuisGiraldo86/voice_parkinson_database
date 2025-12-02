@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c16893b4"
-  },
   "title": "Parkinson's Disease Diagnosis in Cepstral Domain Using MFCC and Dimensionality Reduction with SVM Classifier",
   "authors": [
     {
@@ -147,5 +144,9 @@
       "doi": null
     }
   ],
-  "study_id": "10.1155/2021/8822069_1"
+  "study_id": "10.1155/2021/8822069_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

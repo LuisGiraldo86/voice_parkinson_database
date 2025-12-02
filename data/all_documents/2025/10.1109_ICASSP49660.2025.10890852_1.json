@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00c6c43da02c1689351"
-  },
   "title": "Automatic Parkinson's disease detection from speech: Layer selection vs adaptation of foundation models",
   "authors": [
     {
@@ -186,5 +183,9 @@
       "doi": ""
     }
   ],
-  "study_id": "10.1109/ICASSP49660.2025.10890852_1"
+  "study_id": "10.1109/ICASSP49660.2025.10890852_1",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }

@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00d6c43da02c168939b"
-  },
   "title": "Predicting patients with Parkinson's disease using Machine Learning and ensemble voting technique",
   "authors": [
     {
@@ -186,5 +183,9 @@
       "doi": "10.24432/C5MS4X"
     }
   ],
-  "study_id": "10.1007/s11042-023-16881-x_2"
+  "study_id": "10.1007/s11042-023-16881-x_2",
+  "ml_problem_type": [
+    "Classification: Binary "
+  ],
+  "problem": "Parkinson's disease diagnosis"
 }
