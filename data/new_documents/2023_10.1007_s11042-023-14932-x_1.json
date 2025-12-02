@@ -48,7 +48,7 @@
     }
   ],
   "problem": "Parkinson's disease severity stage classification",
-  "ml_problem_type": ["Binary Classification", "Regression"],
+  "ml_problem_type": ["Classification: Binary ", "Regression"],
   "publication_type": "Journal",
   "journal": "Multimedia Tools and Applications",
   "year": 2023,

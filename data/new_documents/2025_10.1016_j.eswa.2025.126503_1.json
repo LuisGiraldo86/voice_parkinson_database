@@ -21,7 +21,7 @@
     }
   ],
   "problem": "Parkinson's disease diagnosis",
-  "ml_problem_type": "Binary classification",
+  "ml_problem_type": ["Classification: Binary "],
   "publication_type": "Journal",
   "journal": "Expert Systems with Applications",
   "year": 2025,

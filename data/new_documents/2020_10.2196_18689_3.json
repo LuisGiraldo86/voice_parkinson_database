@@ -60,7 +60,7 @@
     }
   ],
   "problem": "Parkinson's disease severity stage classification",
-  "ml_problem_type": "Regression",
+  "ml_problem_type": ["Regression"],
   "publication_type": "Journal",
   "journal": "JMIR Medical Informatics",
   "year": 2020,

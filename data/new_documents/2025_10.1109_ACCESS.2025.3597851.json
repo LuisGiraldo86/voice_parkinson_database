@@ -21,7 +21,7 @@
     }
   ],
   "problem": "Parkinson's disease severity stage classification",
-  "ml_problem_type": "Multiclass Classification",
+  "ml_problem_type": ["Classification: Multiclass"],
   "publication_type": "Journal",
   "journal": "IEEE Access",
   "year": 2025,

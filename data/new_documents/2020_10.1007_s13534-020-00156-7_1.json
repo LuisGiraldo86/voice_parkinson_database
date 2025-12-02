@@ -21,7 +21,7 @@
     }
   ],
   "problem": "Parkinson's disease severity stage classification",
-  "ml_problem_type": "",
+  "ml_problem_type": ["Regression"],
   "publication_type": "Journal",
   "journal": "Biomedical Engineering Letters",
   "year": 2020,

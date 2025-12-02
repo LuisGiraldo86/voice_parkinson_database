@@ -25,7 +25,7 @@
     }
   ],
   "problem": "Parkinson's disease severity stage classification",
-  "ml_problem_type": "",
+  "ml_problem_type": ["Regression"],
   "publication_type": "Conference",
   "journal": "Proceedings of the International Conference on Advanced Intelligent Systems and Informatics 2019",
   "year": 2020,

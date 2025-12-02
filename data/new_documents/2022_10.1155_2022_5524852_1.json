@@ -21,7 +21,7 @@
     }
   ],
   "problem": "Parkinson's disease severity stage classification",
-  "ml_problem_type": "Binary Classification",
+  "ml_problem_type": ["Classification: Binary"],
   "publication_type": "Journal",
   "journal": "Expert Systems with Applications",
   "year": 2022,
