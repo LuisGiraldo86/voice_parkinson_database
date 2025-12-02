@@ -376,20 +376,3 @@ def check_file_health(folder_path=None):
         print("📄 Detailed report saved to file_health_report.json")
     else:
         print("🎉 All files are healthy and ready for import!")
-
-def main():
-    print("📋 Review Database Import Tool")
-    print("1. Import studies to MongoDB")
-    print("2. Check file health")
-    
-    choice = input("\nChoose an option (1 or 2): ").strip()
-    
-    if choice == "1":
-        import_json_studies()
-    elif choice == "2":
-        check_file_health()
-    else:
-        print("❌ Invalid choice. Please run again and choose 1 or 2.")
-
-if __name__ == "__main__":
-    main()
