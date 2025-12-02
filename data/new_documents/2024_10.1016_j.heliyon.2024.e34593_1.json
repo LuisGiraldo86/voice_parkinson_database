@@ -1,0 +1,92 @@
+{
+  "title": "PD-DETECTOR: A sustainable and computationally intelligent mobile application model for Parkinson's disease severity assessment",
+  "authors": [
+    {
+      "name": "Sushruta Mishra",
+      "affiliations": [
+        {
+          "institution": "Kalinga Institute of Industrial Technology",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Lambodar Jena",
+      "affiliations": [
+        {
+          "institution": "Siksha ‘O’ Anusandhan",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Nilamadhab Mishra",
+      "affiliations": [
+        {
+          "institution": "VIT Bhopal University",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Hsien-Tsung Chang",
+      "affiliations": [
+        {
+          "institution": "Chang Gung University",
+          "country": "Taiwan"
+        },
+        {
+          "institution": "Chang Gung Memorial Hospital",
+          "country": "Taiwan"
+        }
+      ]
+    }
+  ],
+  "problem": "Parkinson's disease severity stage classification",
+  "ml_problem_type": ["Classification: Binary "],
+  "publication_type": "Journal",
+  "journal": "Expert Systems with Applications",
+  "year": 2024,
+  "doi": "10.1016/j.heliyon.2024.e34593",
+  "abstract": "This paper introduces a mobile cloud-based predictive model for assisting Parkinson's disease (PD) patients. PD, a chronic neurodegenerative disorder, impairs motor functions and daily tasks due to the degeneration of dopamine-producing neurons in the brain. The model utilizes smartphones to aid patients in collecting voice samples, which are then sent to a cloud service for storage and processing. A hybrid deep learning model, trained using the UCI Parkinson's Telemonitoring Voice dataset, analyzes this data to estimate the severity of PD symptoms. The model's performance is noteworthy, with accuracy, sensitivity, and specificity metrics of 96.2 %, 94.15 %, and 96.15 %, respectively. Additionally, it boasts a rapid response time of just 13 s. Results are delivered to users via smartphone alert notifications, coupled with a knowledge base feature that educates them about PD. This system provides reliable home-based assessment and monitoring of PD and enables prompt medical intervention, significantly enhancing the quality of life for patients with Parkinson's disease.",
+  "ml_approaches": [
+    {
+      "algorithm": "Multilayer Perceptron",
+      "scaling": ["Min Max"],
+      "feature_selection": {
+        "methods": [
+          "Correlation Coefficient"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.962,
+        "precision": 0.9415,
+        "recall": 0.9615,
+        "f1_score": 0.955
+      }
+    }
+  ],
+  "source_dataset": [
+{
+      "name": "Oxford Parkinson's Disease Telemonitoring Dataset",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+{
+      "name": "Oxford Parkinson's Disease Telemonitoring Dataset",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.1016/j.heliyon.2024.e34593_1",
+  "note": "Total UPDRS and Motor UPDRS scores are used to classify the severity stage of Parkinson's disease into two classes: 'low' (scores ≤ 25 and 20) and 'high' (scores > 20 and 25)."
+}
