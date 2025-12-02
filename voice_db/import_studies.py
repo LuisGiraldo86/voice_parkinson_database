@@ -145,9 +145,11 @@ def import_json_studies(
     mongo_uri="mongodb://localhost:27017/",
     db_name="pd_review",
     collection_name="studies",
-    skip_duplicate_check=False
+    skip_duplicate_check=False,
+    folder_path=None
 ):
-    folder_path = input("Enter the path to the folder containing study JSON files: ").strip()
+    if folder_path is None:
+        folder_path = input("Enter the path to the folder containing study JSON files: ").strip()
 
     if not os.path.isdir(folder_path):
         print(f"❌ The folder '{folder_path}' does not exist.")
