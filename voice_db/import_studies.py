@@ -38,7 +38,22 @@ study_schema = {
         "doi": {"type": "string"},
         "abstract": {"type": "string"},
 
-        "dataset": {
+        "source_dataset": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {"type": "string"},
+                    "size": {"type": ["integer", "string", "null"]},
+                    "pd_patients": {"type": ["integer", "null"]},
+                    "controls": {"type": ["integer", "null"]},
+                    "url": {"type": ["string", "null"]},
+                    "doi": {"type": ["string", "null"]}
+                },
+                "required": ["name"]
+            }
+        },
+        "target_dataset": {
             "type": "array",
             "items": {
                 "type": "object",
@@ -103,16 +118,7 @@ study_schema = {
                     },
                     "sample_selection": {
                         "type": "array",
-                        "items": {
-                            "type": "object",
-                            "properties": {
-                                "methods": {
-                                    "type": "array",
-                                    "items": {"type": "string"}
-                                }
-                            },
-                            "required": ["methods"]
-                        }
+                        "items": {"type": "string"}
                     },
                     "input_speech": {"type": "string"},
                     "validation": {"type": ["string", "null"]},
@@ -130,7 +136,7 @@ study_schema = {
             }
         }
     },
-    "required": ["title", "year", "doi", "ml_approaches"],
+    "required": ["study_id", "title", "authors", "publication_type", "journal", "year", "doi", "ml_approaches"],
     "additionalProperties": True  # Allow for future extensibility
 }
 
