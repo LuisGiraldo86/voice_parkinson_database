@@ -1,0 +1,144 @@
+{
+  "title": "Accuracy Analysis of Type-2 Fuzzy System in Predicting Parkinson’s Disease Using Biomedical Voice Measures",
+  "authors": [
+    {
+      "name": "Mehrbakhsh Nilashi",
+      "affiliations": [
+        {
+          "institution": "UCSI University",
+          "country": "Malaysia"
+        },
+        {
+          "institution": "Universiti Sains Malaysia",
+          "country": "Malaysia"
+        }
+      ]
+    },
+    {
+      "name": "Rabab Ali Abumalloh",
+      "affiliations": [
+        {
+          "institution": "Qatar University",
+          "country": "Qatar"
+        }
+      ]
+    },
+    {
+      "name": "Hossein Ahmadi",
+      "affiliations": [
+        {
+          "institution": "University of Plymouth",
+          "country": "United Kingdom"
+        }
+      ]
+    },
+    {
+      "name": "Sarminah Samad",
+      "affiliations": [
+        {
+          "institution": "Princess Nourah Bint Abdulrahman University",
+          "country": "Saudi Arabia"
+        }
+      ]
+    },
+    {
+      "name": "Sultan Alyami",
+      "affiliations": [
+        {
+          "institution": "Najran University",
+          "country": "Saudi Arabia"
+        }
+      ]
+    },
+    {
+      "name": "Abdullah Alghamdi",
+      "affiliations": [
+        {
+          "institution": "Najran University",
+          "country": "Saudi Arabia"
+        }
+      ]
+    },
+    {
+      "name": "Mesfer Alrizq",
+      "affiliations": [
+        {
+          "institution": "Najran University",
+          "country": "Saudi Arabia"
+        }
+      ]
+    },
+    {
+      "name": "Salma Yasmin Mohd Yusuf",
+      "affiliations": [
+        {
+          "institution": "Universiti Teknologi MARA",
+          "country": "Malaysia"
+        }
+      ]
+    }
+  ],
+  "problem": "Parkinson's disease severity stage classification",
+  "ml_problem_type": "Regression",
+  "publication_type": "Journal",
+  "journal": "International Journal of Fuzzy Systems",
+  "year": 2024,
+  "doi": "10.1007/s40815-023-01665-0",
+  "abstract": "Parkinson’s disease (PD) is a progressive neurodegenerative illness triggered by decreased dopamine secretion. Fuzzy logic has gained substantial attention in PD diagnosis research. PD detection using fuzzy logic has presented more precise outcomes as compared with common machine learning approaches. In this research, a hybrid method combining supervised learning, unsupervised learning and feature selection techniques is developed. In a type-1 fuzzy system, the membership functions used for the fuzzification of the crisp inputs are mapped to single numbers. However, in a type-2 fuzzy system, these numbers are represented as intervals, adding an extra dimension to the definition of the membership function. The first step of the proposed method involves clustering the data using the Expectation–Maximization (EM) technique. The performance of EM clustering is performed using the Davies–Bouldin index. Subsequently, feature selection is performed using the backward stepwise regression. To predict the UPDRS, Type-2 Sugeno fuzzy inference system (T2SFIS) is implemented on the clusters generated from the previous steps. The Parkinson's telemonitoring dataset is used in this study for method evaluation. Using the EM algorithm, the PD dataset was clustered into 13 segments, and the most important features for accurate UPDRS prediction were chosen in each segment using backward stepwise regression. The hybrid method was evaluated using R-squared (R2) and RMSE. The evaluation results showed that the combination of EM, backward stepwise regression, and type-2 Sugeno FIS obtained the best accuracy in predicting Motor-UPDRS and Total-UPDRS.",
+  "ml_approaches": [
+    {
+      "algorithm": "Type-2 Sugeno Fuzzy Inference System: FCM",
+      "sample_selection": [
+        "Davies–Bouldin index"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Backward Stepwise Regression"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "rmse": 0.5511,
+        "r_squared": 0.9942
+      }
+    },
+    {
+      "algorithm": "Type-2 Sugeno Fuzzy Inference System: Grid Partitioning",
+      "sample_selection": [
+        "Davies–Bouldin index"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Backward Stepwise Regression"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "rmse": 0.5482,
+        "r_squared": 0.9932
+      }
+    }
+  ],
+  "source_dataset": [
+{
+      "name": "Oxford Parkinson's Disease Telemonitoring Dataset",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+{
+      "name": "Oxford Parkinson's Disease Telemonitoring Dataset",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.1007/s40815-023-01665-0_1",
+  "note": null
+}

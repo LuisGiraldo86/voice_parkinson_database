@@ -1,0 +1,133 @@
+{
+  "title": "Remote assessment of Parkinson’s disease symptom severity based on group interaction feature assistance",
+  "authors": [
+    {
+      "name": "Zaifa Xue",
+      "affiliations": [
+        {
+          "institution": "Yanshan University",
+          "country": "China"
+        },
+        {
+          "institution": "Hebei Key Laboratory of Information Transmission and Signal Processing",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Huibin Lu",
+      "affiliations": [
+        {
+          "institution": "Yanshan University",
+          "country": "China"
+        },
+        {
+          "institution": "Hebei Key Laboratory of Information Transmission and Signal Processing",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Tao Zhang",
+      "affiliations": [
+        {
+          "institution": "Yanshan University",
+          "country": "China"
+        },
+        {
+          "institution": "Hebei Key Laboratory of Information Transmission and Signal Processing",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Xiaonan Guo",
+      "affiliations": [
+        {
+          "institution": "Yanshan University",
+          "country": "China"
+        },
+        {
+          "institution": "Hebei Key Laboratory of Information Transmission and Signal Processing",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Le Gao",
+      "affiliations": [
+        {
+          "institution": "Yanshan University",
+          "country": "China"
+        },
+        {
+          "institution": "Hebei Key Laboratory of Information Transmission and Signal Processing",
+          "country": "China"
+        }
+      ]
+    }
+  ],
+  "problem": "Parkinson's disease severity stage classification",
+  "ml_problem_type": "Regression",
+  "publication_type": "Journal",
+  "journal": "International Journal of Machine Learning and Cybernetics",
+  "year": 2024,
+  "doi": "10.1007/s13042-023-02050-x",
+  "abstract": "Telemonitoring is an effective way to assess the severity of Parkinson's disease (PD). Due to heterogeneity and small sample sizes, the multi-task learning is applied to build the specific model for PD patients and prevent overfitting. However, the existing multi-task learning methods don't consider the nonlinear interaction between patients. Therefore, to improve the performance of the patient-specific prediction model, this paper proposes a group interaction feature assistance method (GIFA) for remote assessment of PD symptom severity. First, GIFA employs the nonlinear bidirectional long short-term memory network to explore the correlation among patient groups. Next, the incremental association Markov boundary is adopted to select causal features from group interaction features obtained by the bidirectional long short-term memory network to reduce negative transfer. Finally, the causal interaction features learned by the incremental association Markov boundary are input into the patient-specific prediction model to assist disease assessment, which is conducive to increasing the complementary information and improving the prediction performance. Experiment results on the public Parkinson's telemonitoring and mPower voice datasets show that GIFA model outperforms the cited state-of-the-art comparison methods for predicting Parkinson's disease symptom severity.",
+  "ml_approaches": [
+    {
+      "algorithm": "Bidirectional Long Short-Term Memory",
+      "sample_selection": [
+        "Bidirectional Long Short-Term Memory"
+      ],
+      "feature_selection": {
+        "methods": [
+          "Incremental Association Markov Blanket"
+        ]
+      },
+      "validation": "train/test split",
+      "results": {
+        "mae": 1.5,
+        "rmse": 1.82
+      }
+    }
+  ],
+  "source_dataset": [
+{
+      "name": "Oxford Parkinson's Disease Telemonitoring Dataset",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    },
+    {
+      "name": "mPower",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+{
+      "name": "Oxford Parkinson's Disease Telemonitoring Dataset",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    },
+    {
+      "name": "mPower",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.1007/s13042-023-02050-x_1",
+  "note": "It is not clear how the data splits were done for the two datasets used in this study, or how the data was combined if at all."
+}
