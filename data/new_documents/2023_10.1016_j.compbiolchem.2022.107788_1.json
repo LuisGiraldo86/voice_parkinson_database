@@ -1,0 +1,137 @@
+{
+  "title": "Early diagnosis of Parkinson’s disease: A combined method using deep learning and neuro-fuzzy techniques",
+  "authors": [
+    {
+      "name": "Mehrbakhsh Nilashi",
+      "affiliations": [
+        {
+          "institution": "UCSI University",
+          "country": "Malaysia"
+        },
+        {
+          "institution": "Universiti Sains Malaysia",
+          "country": "Malaysia"
+        }
+      ]
+    },
+    {
+      "name": "Rabab Ali Abumalloh",
+      "affiliations": [
+        {
+          "institution": "Imam Abdulrahman Bin Faisal University",
+          "country": "Saudi Arabia"
+        }
+      ]
+    },
+    {
+      "name": "Salma Yasmin Mohd Yusuf",
+      "affiliations": [
+        {
+          "institution": "Universiti Teknologi MARA",
+          "country": "Malaysia"
+        }
+      ]
+    },
+    {
+      "name": "Ha Hang Thi",
+      "affiliations": [
+        {
+          "institution": "Duy Tan University",
+          "country": "Vietnam"
+        }
+      ]
+    },
+    {
+      "name": "Mohammad Alsulami",
+      "affiliations": [
+        {
+          "institution": "Najran University",
+          "country": "Saudi Arabia"
+        }
+      ]
+    },
+    {
+      "name": "Hamad Abosaq",
+      "affiliations": [
+        {
+          "institution": "Najran University",
+          "country": "Saudi Arabia"
+        }
+      ]
+    },
+    {
+      "name": "Sultan Alyami",
+      "affiliations": [
+        {
+          "institution": "Najran University",
+          "country": "Saudi Arabia"
+        }
+      ]
+    },
+    {
+      "name": "Abdullah Alghamdi",
+      "affiliations": [
+        {
+          "institution": "Najran University",
+          "country": "Saudi Arabia"
+        }
+      ]
+    }
+  ],
+  "problem": "Parkinson's disease severity stage classification",
+  "ml_problem_type": ["Regression"],
+  "publication_type": "Journal",
+  "journal": "Computational Biology and Chemistry",
+  "year": 2023,
+  "doi": "10.1016/j.compbiolchem.2022.107788",
+  "abstract": "Predicting Unified Parkinson's Disease Rating Scale (UPDRS) in Total- UPDRS and Motor-UPDRS clinical scales is an important part of controlling PD. Computational intelligence approaches have been used effectively in the early diagnosis of PD by predicting UPDRS. In this research, we target to present a combined approach for PD diagnosis using an ensemble learning approach with the ability of online learning from clinical large datasets. The method is developed using Deep Belief Network (DBN) and Neuro-Fuzzy approaches. A clustering approach, Expectation-Maximization (EM), is used to handle large datasets. The Principle Component Analysis (PCA) technique is employed for noise removal from the data. The UPDRS prediction models are constructed for PD diagnosis. To handle the missing data, K-NN is used in the proposed method. We use incremental machine learning approaches to improve the efficiency of the proposed method. We assess our approach on a real-world PD dataset and the findings are assessed compared to other PD diagnosis approaches developed by machine learning techniques. The findings revealed that the approach can improve the UPDRS prediction accuracy and the time complexity of previous methods in handling large datasets.",
+  "ml_approaches": [
+    {
+      "algorithm": "Deep Belief Network: Adaptive Neuro-Fuzzy Inference System",
+      "framework": "MATLAB R2013b",
+      "scaling": ["Min Max"],
+      "sample_selection": ["Expectation-Maximization"],
+      "missing_data_handling": ["K-Nearest Neighbors"],
+      "dimensionality_reduction": ["PCA"],
+      "validation": "train/test split",
+      "results": {
+        "rsme": 0.537,
+        "mae": 0.893
+      }
+    },
+    {
+      "algorithm": "Deep Belief Network: Adaptive Neuro-Fuzzy Inference System",
+      "framework": "MATLAB R2013b",
+      "scaling": ["Min Max"],
+      "missing_data_handling": ["K-Nearest Neighbors"],
+      "dimensionality_reduction": ["PCA"],
+      "validation": "train/test split",
+      "results": {
+        "rsme": 0.894,
+        "mae": 0.866
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Telemonitoring Dataset",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Telemonitoring Dataset",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.1016/j.compbiolchem.2022.107788_1",
+  "note": null
+}

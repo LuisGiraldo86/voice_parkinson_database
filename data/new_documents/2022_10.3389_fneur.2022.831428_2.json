@@ -1,0 +1,147 @@
+{
+  "_id": {
+    "$oid": "68ecf00b6c43da02c16892ee"
+  },
+  "title": "Voice in Parkinson's Disease: A Machine Learning Study",
+  "authors": [
+    {
+      "name": "Antonio Suppa",
+      "affiliations": [
+        {
+          "institution": "Sapienza University of Rome",
+          "country": "Italy"
+        },
+        {
+          "institution": "IRCCS Neuromed Institute",
+          "country": "Italy"
+        }
+      ]
+    },
+    {
+      "name": "Giovanni Costantini",
+      "affiliations": [
+        {
+          "institution": "University of Rome Tor Vergata",
+          "country": "Italy"
+        }
+      ]
+    },
+    {
+      "name": "Francesco Asci",
+      "affiliations": [
+        {
+          "institution": "IRCCS Neuromed Institute",
+          "country": "Italy"
+        }
+      ]
+    },
+    {
+      "name": "Pietro Di Leo",
+      "affiliations": [
+        {
+          "institution": "University of Rome Tor Vergata",
+          "country": "Italy"
+        }
+      ]
+    },
+    {
+      "name": "Mohammad Sami Al-Wardat",
+      "affiliations": [
+        {
+          "institution": "Aqaba University of Technology",
+          "country": "Jordan"
+        }
+      ]
+    },
+    {
+      "name": "Giulia Di Lazzaro",
+      "affiliations": [
+        {
+          "institution": "Fondazione Policlinico Universitario Agostino Gemelli IRCCS",
+          "country": "Italy"
+        }
+      ]
+    },
+    {
+      "name": "Simona Scalise",
+      "affiliations": [
+        {
+          "institution": "University of Rome Tor Vergata",
+          "country": "Italy"
+        }
+      ]
+    },
+    {
+      "name": "Antonio Pisani",
+      "affiliations": [
+        {
+          "institution": "University of Pavia",
+          "country": "Italy"
+        },
+        {
+          "institution": "IRCCS Mondino Foundation",
+          "country": "Italy"
+        }
+      ]
+    },
+    {
+      "name": "Giovanni Saggio",
+      "affiliations": [
+        {
+          "institution": "University of Rome Tor Vergata",
+          "country": "Italy"
+        }
+      ]
+    }
+  ],
+  "problem": "Parkinson's disease severity stage classification",
+  "ml_problem_type": "Binary Classification",
+  "publication_type": "Journal",
+  "journal": "Frontiers in Neurology",
+  "year": 2022,
+  "doi": "10.3389/fneur.2022.831428",
+  "abstract": "Introduction: Parkinson's disease (PD) is characterized by specific voice disorders collectively termed hypokinetic dysarthria. We here investigated voice changes by using machine learning algorithms, in a large cohort of patients with PD in different stages of the disease, OFF and ON therapy. Methods: We investigated 115 patients affected by PD (mean age: 68.2 ± 9.2 years) and 108 age-matched healthy subjects (mean age: 60.2 ± 11.0 years). The PD cohort included 57 early-stage patients (Hoehn &Yahr ≤ 2) who never took L-Dopa for their disease at the time of the study, and 58 mid-advanced-stage patients (Hoehn &Yahr >2) who were chronically-treated with L-Dopa. We clinically evaluated voices using specific subitems of the Unified Parkinson's Disease Rating Scale and the Voice Handicap Index. Voice samples recorded through a high-definition audio recorder underwent machine learning analysis based on the support vector machine classifier. We also calculated the receiver operating characteristic curves to examine the diagnostic accuracy of the analysis and assessed possible clinical-instrumental correlations. Results: Voice is abnormal in early-stage PD and as the disease progresses, voice increasingly degradres as demonstrated by high accuracy in the discrimination between healthy subjects and PD patients in the early-stage and mid-advanced-stage. Also, L-dopa therapy improves but not restore voice in PD as shown by high accuracy in the comparison between patients OFF and ON therapy. Finally, for the first time we achieved significant clinical-instrumental correlations by using a new score (LR value) calculated by machine learning. Conclusion: Voice is abnormal in early-stage PD, progressively degrades in mid-advanced-stage and can be improved but not restored by L-Dopa. Lastly, machine learning allows tracking disease severity and quantifying the symptomatic effect of L-Dopa on voice parameters with previously unreported high accuracy, thus representing a potential new biomarker of PD.",
+  "ml_approaches": [
+    {
+      "algorithm": "Support Vector Machine: Linear",
+      "framework": "",
+      "data_subset": "Early-stage vs mid-advanced-stage",
+      "inpute_speech": "/e/",
+      "feature_selection": {
+        "methods": [
+          "IGAE"
+        ]
+      },
+      "validation": "10-fold cross-validation",
+      "results": {
+        "recall": 0.827,
+        "specificity": 0.887,
+        "positive_predictive_value": 88.9,
+        "negative_predictive_value": 87,
+        "accuracy": 0.88,
+        "auc": 0.934
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "IRCCS Neuromed Voice Dataset",
+      "size": 223,
+      "pd_patients": 115,
+      "controls": 108,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+    {
+      "name": "IRCCS Neuromed Voice Dataset",
+      "size": 223,
+      "pd_patients": 115,
+      "controls": 108,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.3389/fneur.2022.831428_2"
+}

@@ -1,0 +1,99 @@
+{
+  "title": "An Efficient Rotation Forest-Based Ensemble Approach for Predicting Severity of Parkinson’s Disease",
+  "authors": [
+    {
+      "name": "Saeid Sheikhi",
+      "affiliations": [
+        {
+          "institution": "Islamic Azad University",
+          "country": "Iran"
+        }
+      ]
+    },
+    {
+      "name": "Mohammad Taghi Kheirabadi",
+      "affiliations": [
+        {
+          "institution": "Islamic Azad University",
+          "country": "Iran"
+        }
+      ]
+    }
+  ],
+  "problem": "Parkinson's disease severity stage classification",
+  "ml_problem_type": "Binary Classification",
+  "publication_type": "Journal",
+  "journal": "Expert Systems with Applications",
+  "year": 2022,
+  "doi": "10.1155/2022/5524852",
+  "abstract": "Parkinson’s disease (PD) is a neurodegenerative nervous system disorder that mainly affects body movement, and it is one of the most common diseases, particularly in elderly individuals. This paper proposes a new machine learning approach to predict Parkinson’s disease severity using UCI’s Parkinson’s telemonitoring voice dataset. The proposed method analyses the patient's voice data and classifies them into “severe” and “nonsevere” classes. At first, a subset of features was selected, then a novel approach with a combination of Rotation Forest and Random Forest was applied on selected features to determine each patient’s disease severity. Analysis of the experimental results shows that the proposed approach can detect the severity of PD patients in the early stages. Moreover, the proposed model is compared with several algorithms, and the results indicate that the model is highly successful in classifying records and outperformed the other methods concerning classification accuracy and F1-measure rate.",
+  
+  "ml_approaches": [
+    {
+      "algorithm": "Rotation Forest",
+      "scaling": ["Min Max"],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.7949,
+        "precision": 0.797,
+        "recall": 0.795,
+        "f1_score": 0.794
+      }
+    },
+    {
+      "algorithm": "Naive Bayes",
+      "scaling": ["Min Max"],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.4953,
+        "precision": 0.553,
+        "recall": 0.495,
+        "f1_score": 0.419
+      }
+    },
+    {
+      "algorithm": "K-Nearest Neighbors",
+      "scaling": ["Min Max"],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.6979,
+        "precision": 0.698,
+        "recall": 0.698,
+        "f1_score": 0.698
+      }
+    },
+    {
+      "algorithm": "Multilayer Perceptron",
+      "scaling": ["Min Max"],
+      "validation": "train/test split",
+      "results": {
+        "accuracy": 0.6698,
+        "precision": 0.677,
+        "recall": 0.670,
+        "f1_score": 0.670
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Telemonitoring Dataset",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+{
+      "name": "Oxford Parkinson's Disease Telemonitoring Dataset",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.1155/2022/5524852_1",
+  "note": "Motor-UPDRS and Total-UPDRS were converted to a binary classification problem using a threshold of 20 and 25 to define 'severe' and 'nonsevere' classes."
+}

@@ -1,0 +1,239 @@
+{
+  "title": "Prediction and Estimation of Parkinson’s Disease Severity Based on Voice Signal",
+  "authors": [
+    {
+      "name": "Zaifa Xue",
+      "affiliations": [
+        {
+          "institution": "Yanshan University",
+          "country": "China"
+        },
+        {
+          "institution": "Hebei Key Laboratory of Information Transmission and Signal Processing",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Tao Zhang",
+      "affiliations": [
+        {
+          "institution": "Yanshan University",
+          "country": "China"
+        },
+        {
+          "institution": "Hebei Key Laboratory of Information Transmission and Signal Processing",
+          "country": "China"
+        }
+      ]
+    },
+    {
+      "name": "Liqin Lin ",
+      "affiliations": [
+        {
+          "institution": "Yanshan University",
+          "country": "China"
+        },
+        {
+          "institution": "Hebei Key Laboratory of Information Transmission and Signal Processing",
+          "country": "China"
+        }
+      ]
+    }
+  ],
+  "problem": "Parkinson's disease severity stage classification",
+  "ml_problem_type": "Regression",
+  "publication_type": "Journal",
+  "journal": "Journal of Voice",
+  "year": 2022,
+  "doi": "10.1016/j.jvoice.2020.06.004",
+  "abstract": "his paper presents the possibilities of using speech signal processing, analysis and regression methods in the context of assessment of neurological state in Parkinson’s disease patients up to 3 hours after taking medication which alleviates symptoms of the disease. The obtained results were used to create a system whose goals were the prognosis of values of selected acoustic parameters based on which it will be possible to further estimate a unified Parkinson’s disease rating scale score. For the experiment, we used the recordings of the vowel /a/ of 27 patients who were recorded 5 times each at a certain time after levodopa intake. The speech signal was parameterized, where in the acoustic parameters describing the signal were extracted and constituted input vectors to machine learning regression methods to search for characteristic diagnostic symptoms enabling automatic monitoring of the course of Parkinson’s disease. The results of the acoustic analysis were correlated with the clinical description and disease severity was assessed using the unified Parkinson’s disease rating scale. As a result, it was possible to create software which will support the work of the clinician in the field of therapy monitoring and provide a quantitative assessment of treatment results and a forecast of the effects of the therapy in short-term monitoring.",
+  "ml_approaches": [
+    {
+      "algorithm": "Linear Regression",
+      "feature_extraction": ["Phonatory Features", "Articulatory Features", "Mel-Frequency Cepstral Coefficients", "Perceptual Linear Prediction Coefficients"],
+      "input_speech": "/a/",
+      "validation": "train/test split",
+      "results": {
+        "rmse": 7.3728,
+        "mae": 5.5288,
+        "r_squared": 0.7754
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "feature_extraction": ["Phonatory Features", "Articulatory Features", "Mel-Frequency Cepstral Coefficients", "Perceptual Linear Prediction Coefficients"],
+      "input_speech": "/a/",
+      "validation": "train/test split",
+      "results": {
+        "rmse": 6.1043,
+        "mae": 4.7354,
+        "r_squared": 0.7754
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "feature_extraction": ["Phonatory Features", "Articulatory Features", "Mel-Frequency Cepstral Coefficients", "Perceptual Linear Prediction Coefficients"],
+      "input_speech": "/a/",
+      "validation": "train/test split",
+      "results": {
+        "rmse": 2.6975,
+        "mae": 1.8530,
+        "r_squared": 0.9612
+      }
+    },
+     {
+      "algorithm": "Linear Regression",
+      "feature_extraction": ["Phonatory Features", "Articulatory Features", "Mel-Frequency Cepstral Coefficients", "Perceptual Linear Prediction Coefficients"],
+      "input_speech": "/e/",
+      "validation": "train/test split",
+      "results": {
+        "rmse": 6.8246,
+        "mae": 4.5798,
+        "r_squared": 0.8019
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "feature_extraction": ["Phonatory Features", "Articulatory Features", "Mel-Frequency Cepstral Coefficients", "Perceptual Linear Prediction Coefficients"],
+      "input_speech": "/e/",
+      "validation": "train/test split",
+      "results": {
+        "rmse": 6.3341,
+        "mae": 5.2432,
+        "r_squared": 0.9341
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "feature_extraction": ["Phonatory Features", "Articulatory Features", "Mel-Frequency Cepstral Coefficients", "Perceptual Linear Prediction Coefficients"],
+      "input_speech": "/e/",
+      "validation": "train/test split",
+      "results": {
+        "rmse": 3.7014,
+        "mae": 2.5361,
+        "r_squared": 0.9279
+      }
+    },
+    {
+      "algorithm": "Linear Regression",
+      "feature_extraction": ["Phonatory Features", "Articulatory Features", "Mel-Frequency Cepstral Coefficients", "Perceptual Linear Prediction Coefficients"],
+      "input_speech": "/i/",
+      "validation": "train/test split",
+      "results": {
+        "rmse": 7.2474,
+        "mae": 4.7953,
+        "r_squared": 0.7408
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "feature_extraction": ["Phonatory Features", "Articulatory Features", "Mel-Frequency Cepstral Coefficients", "Perceptual Linear Prediction Coefficients"],
+      "input_speech": "/i/",
+      "validation": "train/test split",
+      "results": {
+        "rmse": 6.7279,
+        "mae": 5.1824,
+        "r_squared": 0.7868
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "feature_extraction": ["Phonatory Features", "Articulatory Features", "Mel-Frequency Cepstral Coefficients", "Perceptual Linear Prediction Coefficients"],
+      "input_speech": "/i/",
+      "validation": "train/test split",
+      "results": {
+        "rmse": 6.9336,
+        "mae": 4.6994,
+        "r_squared": 0.8117
+      }
+    },
+    {
+      "algorithm": "Linear Regression",
+      "feature_extraction": ["Phonatory Features", "Articulatory Features", "Mel-Frequency Cepstral Coefficients", "Perceptual Linear Prediction Coefficients"],
+      "input_speech": "/o/",
+      "validation": "train/test split",
+      "results": {
+        "rmse": 7.7407,
+        "mae": 5.3513,
+        "r_squared": 0.6740
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "feature_extraction": ["Phonatory Features", "Articulatory Features", "Mel-Frequency Cepstral Coefficients", "Perceptual Linear Prediction Coefficients"],
+      "input_speech": "/o/",
+      "validation": "train/test split",
+      "results": {
+        "rmse": 6.3501,
+        "mae": 4.9599,
+        "r_squared": 0.8246
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "feature_extraction": ["Phonatory Features", "Articulatory Features", "Mel-Frequency Cepstral Coefficients", "Perceptual Linear Prediction Coefficients"],
+      "input_speech": "/o/",
+      "validation": "train/test split",
+      "results": {
+        "rmse": 3.3909,
+        "mae": 2.4700,
+        "r_squared": 0.9386
+      }
+    },
+    {
+      "algorithm": "Linear Regression",
+      "feature_extraction": ["Phonatory Features", "Articulatory Features", "Mel-Frequency Cepstral Coefficients", "Perceptual Linear Prediction Coefficients"],
+      "input_speech": "/u/",
+      "validation": "train/test split",
+      "results": {
+        "rmse": 7.1860,
+        "mae": 4.8203,
+        "r_squared": 0.7135
+      }
+    },
+    {
+      "algorithm": "Support Vector Machine",
+      "feature_extraction": ["Phonatory Features", "Articulatory Features", "Mel-Frequency Cepstral Coefficients", "Perceptual Linear Prediction Coefficients"],
+      "input_speech": "/u/",
+      "validation": "train/test split",
+      "results": {
+        "rmse": 6.7089,
+        "mae": 5.3153,
+        "r_squared": 0.8067
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "feature_extraction": ["Phonatory Features", "Articulatory Features", "Mel-Frequency Cepstral Coefficients", "Perceptual Linear Prediction Coefficients"],
+      "input_speech": "/u/",
+      "validation": "train/test split",
+      "results": {
+        "rmse": 4.7092,
+        "mae": 3.3756,
+        "r_squared": 0.8899
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "John Paul II Hospital in Krakow Parkinson's Disease Voice Dataset",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+{
+      "name": "John Paul II Hospital in Krakow Parkinson's Disease Voice Dataset",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.1016/j.jvoice.2020.06.004_1"
+}

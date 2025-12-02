@@ -1,0 +1,114 @@
+{
+  "title": "Predicting Parkinson’s Disease Progression: Evaluation of Ensemble Methods in Machine Learning",
+  "authors": [
+    {
+      "name": "Mehrbakhsh Nilashi",
+      "affiliations": [
+        {
+          "institution": "Universiti Sains Malaysia",
+          "country": "Malaysia"
+        },
+        {
+          "institution": "Iran University of Science and Technology",
+          "country": "Iran"
+        }
+      ]
+    },
+    {
+      "name": "Rabab Ali Abumalloh",
+      "affiliations": [
+        {
+          "institution": "Imam Abdulrahman Bin Faisal University",
+          "country": "Saudi Arabia"
+        }
+      ]
+    },
+    {
+      "name": "Behrouz Minaei-Bidgoli",
+      "affiliations": [
+        {
+          "institution": "Iran University of Science and Technology",
+          "country": "Iran"
+        }
+      ]
+    },
+    {
+      "name": "Sarminah Samad",
+      "affiliations": [
+        {
+          "institution": "Princess Nourah bint Abdulrahman University",
+          "country": "Saudi Arabia"
+        }
+      ]
+    },
+    {
+      "name": "Muhammed Yousoof Ismail",
+      "affiliations": [
+        {
+          "institution": "Dhofar University",
+          "country": "Oman"
+        }
+      ]
+    },
+    {
+      "name": "Ashwaq Alhargan",
+      "affiliations": [
+        {
+          "institution": "Saudi Electronic University",
+          "country": "Saudi Arabia"
+        }
+      ]
+    },
+    {
+      "name": "Waleed Abdu Zogaan",
+      "affiliations": [
+        {
+          "institution": "Jazan University",
+          "country": "Saudi Arabia"
+        }
+      ]
+    }
+  ],
+  "problem": "Parkinson's disease severity stage classification",
+  "ml_problem_type": "Regression",
+  "publication_type": "Journal",
+  "journal": "Journal of Healthcare Engineering",
+  "year": 2022,
+  "doi": "10.1155/2022/2793361",
+  "abstract": "Parkinson’s disease (PD) is a complex neurodegenerative disease. Accurate diagnosis of this disease in the early stages is crucial for its initial treatment. This paper aims to present a comparative study on the methods developed by machine learning techniques in PD diagnosis. We rely on clustering and prediction learning approaches to perform the comparative study. Specifically, we use different clustering techniques for PD data clustering and support vector regression ensembles to predict Motor-UPDRS and Total-UPDRS. The results are then compared with the other prediction learning approaches, multiple linear regression, neurofuzzy, and support vector regression techniques. The comparative study is performed on a real-world PD dataset. The prediction results of data analysis on a PD real-world dataset revealed that expectation-maximization with the aid of SVR ensembles can provide better prediction accuracy in relation to decision trees, deep belief network, neurofuzzy, and support vector regression combined with other clustering techniques in the prediction of Motor-UPDRS and Total-UPDRS.",
+  "ml_approaches": [
+    {
+      "algorithm": "Ensemble (Support Vector Machine)",
+      "dimensionality_reduction": ["PCA"],
+      "sample_selection": ["Expectation-Maximization"],
+      "missing_value_handling": ["Singular Value Decomposition"],
+      "validation": "train/test split",
+      "results": {
+        "rmse": 0.4165,
+        "mae": 0.5594,
+        "r_squared": 0.9130
+      }
+    }
+  ],
+  "source_dataset": [
+    {
+      "name": "Oxford Parkinson's Disease Telemonitoring Dataset",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+{
+      "name": "Oxford Parkinson's Disease Telemonitoring Dataset",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.1155/2022/2793361_1"
+}
