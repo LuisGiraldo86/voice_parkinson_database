@@ -1,0 +1,150 @@
+{
+  "title": "Estimation of Parkinson’s disease severity using speech features and extreme gradient boosting",
+  "authors": [
+    {
+      "name": "Hunkar C. Tunc",
+      "affiliations": [
+        {
+          "institution": "University of Konstanz",
+          "country": "Germany"
+        },
+        {
+          "institution": "Bahcesehir University",
+          "country": "Turkey"
+        }
+      ]
+    },
+    {
+      "name": "C. Okan Sakar",
+      "affiliations": [
+        {
+          "institution": "Bahcesehir University",
+          "country": "Turkey"
+        }
+      ]
+    },
+    {
+      "name": "Hulya Apaydin",
+      "affiliations": [
+        {
+          "institution": "Istanbul University-Cerrahpasa",
+          "country": "Turkey"
+        }
+      ]
+    },
+    {
+      "name": "Gorkem Serbes",
+      "affiliations": [
+        {
+          "institution": "Yildiz Technical University",
+          "country": "Turkey"
+        }
+      ]
+    },
+    {
+      "name": "Aysegul Gunduz",
+      "affiliations": [
+        {
+          "institution": "Istanbul University-Cerrahpasa",
+          "country": "Turkey"
+        }
+      ]
+    },
+    {
+      "name": "Melih Tutuncu",
+      "affiliations": [
+        {
+          "institution": "Istanbul University-Cerrahpasa",
+          "country": "Turkey"
+        }
+      ]
+    },
+    {
+      "name": "Fikret Gurgen",
+      "affiliations": [
+        {
+          "institution": "Bogazici University",
+          "country": "Turkey"
+        }
+      ]
+    }
+  ],
+  "problem": "Parkinson's disease severity stage classification",
+  "ml_problem_type": "",
+  "publication_type": "Journal",
+  "journal": "Medical & Biological Engineering & Computing",
+  "year": 2020,
+  "doi": "10.1007/s11517-020-02250-5",
+  "abstract": "In recent years, there is an increasing interest in building e-health systems. The systems built to deliver the health services with the use of internet and communication technologies aim to reduce the costs arising from outpatient visits of patients. Some of the related recent studies propose machine learning–based telediagnosis and telemonitoring systems for Parkinson’s disease (PD). Motivated from the studies showing the potential of speech disorders in PD telemonitoring systems, in this study, we aim to estimate the severity of PD from voice recordings of the patients using motor Unified Parkinson’s Disease Rating Scale (UPDRS) as the evaluation metric. For this purpose, we apply various speech processing algorithms to the voice signals of the patients and then use these features as input to a two-stage estimation model. The first step is to apply a wrapper-based feature selection algorithm, called Boruta, and select the most informative speech features. The second step is to feed the selected set of features to a decision tree–based boosting algorithm, extreme gradient boosting, which has been recently applied successfully in many machine learning tasks due to its generalization ability and speed. The feature selection analysis showed that the vibration pattern of the vocal fold is an important indicator of PD severity. Besides, we also investigate the effectiveness of using age and years passed since diagnosis as covariates together with speech features. The lowest mean absolute error with 3.87 was obtained by combining these covariates and speech features with prediction level fusion.",
+  "ml_approaches": [
+    {
+      "algorithm": "XGBoost",
+      "feature_extraction": ["PRAAT", "VAT", "Tunable-Q Wavelet Transform", "Mel-Frequency Cepstral Coefficients", "Age", "Years since diagnosis"],
+      "feature_selection": {
+        "methods": [
+          "Boruta"
+        ]
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "mae": 3.96
+      }
+    },
+    {
+      "algorithm": "XGBoost",
+      "feature_extraction": ["PRAAT", "VAT", "Tunable-Q Wavelet Transform", "Mel-Frequency Cepstral Coefficients"],
+      "feature_selection": {
+        "methods": [
+          "Boruta"
+        ]
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "mae": 4.14
+      }
+    },
+    {
+      "algorithm": "Linear Regression",
+      "feature_extraction": ["Age", "Years since diagnosis"],
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "mae": 4.01
+      }
+    },
+    {
+      "algorithm": "Ensemble (XGBoost, Linear Regression)",
+      "feature_extraction": ["PRAAT", "VAT", "Tunable-Q Wavelet Transform", "Mel-Frequency Cepstral Coefficients", "Age", "Years since diagnosis"],
+      "feature_selection": {
+        "methods": [
+          "Boruta"
+        ]
+      },
+      "validation": "Leave-One-Subject-Out cross-validation",
+      "results": {
+        "mae": 3.87
+      }
+    }
+  ],
+  "source_dataset": [
+{
+      "name": "Parkinson's Speech with Multiple Types of Sound Recordings",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+{
+      "name": "Parkinson's Speech with Multiple Types of Sound Recordings",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.1007/s11517-020-02250-5_1",
+  "note": "Use age and years since diagnosis as covariates together with speech features for Parkinson's disease severity stage classification."
+}

@@ -1,0 +1,64 @@
+{
+  "title": "A deep learning approach for prediction of Parkinson’s disease progression",
+  "authors": [
+    {
+      "name": "Afzal Hussain Shahid",
+      "affiliations": [
+        {
+          "institution": "National Institute of Technology Patna",
+          "country": "India"
+        }
+      ]
+    },
+    {
+      "name": "Maheshwari Prasad Singh",
+      "affiliations": [
+        {
+          "institution": "National Institute of Technology Patna",
+          "country": "India"
+        }
+      ]
+    }
+  ],
+  "problem": "Parkinson's disease severity stage classification",
+  "ml_problem_type": "",
+  "publication_type": "Journal",
+  "journal": "Biomedical Engineering Letters",
+  "year": 2020,
+  "doi": "10.1007/s13534-020-00156-7",
+  "abstract": "This paper proposes a deep neural network (DNN) model using the reduced input feature space of Parkinson’s telemonitoring dataset to predict Parkinson’s disease (PD) progression. PD is a chronic and progressive nervous system disorder that affects body movement. PD is assessed by using the unified Parkinson’s disease rating scale (UPDRS). In this paper, firstly, principal component analysis (PCA) is employed to the featured dataset to address the multicollinearity problems in the dataset and to reduce the dimension of input feature space. Then, the reduced input feature space is fed into the proposed DNN model with a tuned parameter norm penalty (L2) and analyses the prediction performance of it in PD progression by predicting Motor and Total-UPDRS score. The model’s performance is evaluated by conducting several experiments and the result is compared with the result of previously developed methods on the same dataset. The model’s prediction accuracy is measured by fitness parameters, mean absolute error (MAE), root mean squared error (RMSE), and coefficient of determination (R2). The MAE, RMSE, and R2 values are 0.926, 1.422, and 0.970 respectively for motor-UPDRS. These values are 1.334, 2.221, and 0.956 respectively for Total-UPDRS. Both the Motor and Total-UPDRS score is better predicted by the proposed method. This paper shows the usefulness and efficacy of the proposed method for predicting the UPDRS score in PD progression.",
+  "ml_approaches": [
+    {
+      "algorithm": "Multilayer Perceptron",
+      "dimensionality_reduction": ["PCA"],
+      "validation": "train/test split",
+      "results": {
+        "mae": 0.926,
+        "rmse": 1.422,
+        "r_squared": 0.970
+      }
+    }
+  ],
+  "source_dataset": [
+{
+      "name": "Oxford Parkinson's Disease Telemonitoring Dataset",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "target_dataset": [
+{
+      "name": "Oxford Parkinson's Disease Telemonitoring Dataset",
+      "size": null,
+      "pd_patients": null,
+      "controls": null,
+      "url": null,
+      "doi": null
+    }
+  ],
+  "study_id": "10.1007/s13534-020-00156-7_2",
+  "note": null
+}
