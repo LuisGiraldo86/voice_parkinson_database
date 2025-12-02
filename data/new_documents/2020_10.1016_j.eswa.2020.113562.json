@@ -104,8 +104,8 @@
       ],
       "validation": "train/test split",
       "results": {
-        "RMSE": 0.522,
-        "R2": 0.907
+        "rmse": 0.522,
+        "r_squared": 0.907
       }
     }
   ],

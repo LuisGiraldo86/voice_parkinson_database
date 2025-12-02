@@ -63,8 +63,8 @@
       },
       "validation": "5-fold cross-validation",
       "results": {
-        "MSE": 7.0491,
-        "R2": 0.9591
+        "mse": 7.0491,
+        "r_squared": 0.9591
       }
     }
   ],

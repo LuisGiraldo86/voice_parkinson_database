@@ -55,8 +55,8 @@
       "scaling": ["Min Max"],
       "validation": "train/test split",
       "results": {
-        "RMSE": 2.13,
-        "MAE": 1.53
+        "rmse": 2.13,
+        "mae": 1.53
       }
     }
   ],

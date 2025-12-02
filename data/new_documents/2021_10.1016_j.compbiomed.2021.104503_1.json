@@ -42,7 +42,7 @@
       "validation": "train/test split",
       "results": {
         "accuracy": 0.7143,
-        "MAOE": 0.286
+        "maoe": 0.286
       }
     }
   ],

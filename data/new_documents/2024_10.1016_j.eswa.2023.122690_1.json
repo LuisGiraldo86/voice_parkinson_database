@@ -85,7 +85,7 @@
       "validation": "train/test split",
       "results": {
         "mae": 1.55,
-        "RMSE": 1.9
+        "rmse": 1.9
       }
     }
   ],

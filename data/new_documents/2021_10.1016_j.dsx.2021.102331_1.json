@@ -41,8 +41,8 @@
       "algorithm": "Reliability-based Regression Model",
       "validation": "train/test split",
       "results": {
-        "MSE": 124.7620,
-        "MAE": 9.6884
+        "mse": 124.7620,
+        "mae": 9.6884
       }
     }
   ],

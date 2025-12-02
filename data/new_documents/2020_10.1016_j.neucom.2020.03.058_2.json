@@ -47,7 +47,7 @@
       "validation": "10-fold cross-validation",
       "results": {
         "mae": 2.02,
-        "r2": 0.9373
+        "r_squared": 0.9373
       }
     },
     {

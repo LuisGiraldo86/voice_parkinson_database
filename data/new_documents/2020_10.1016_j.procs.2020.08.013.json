@@ -44,7 +44,7 @@
       ],
       "validation": "train/test split",
       "results": {
-        "MSE": 0.522
+        "mse": 0.522
       }
     }
   ],
