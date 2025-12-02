@@ -67,11 +67,7 @@
       "algorithm": "Support Vector Machine: RBF",
       "framework": "",
       "sample_selection": [
-        {
-          "methods": [
             "Multi-Type Transformation Ensemble Algorithm"
-          ]
-        }
       ],
       "validation": "Leave-One-Subject-Out cross-validation",
       "results": {
@@ -84,11 +80,7 @@
       "algorithm": "Random Forest",
       "framework": "",
       "sample_selection": [
-        {
-          "methods": [
             "Multi-Type Transformation Ensemble Algorithm"
-          ]
-        }
       ],
       "validation": "Leave-One-Subject-Out cross-validation",
       "results": {

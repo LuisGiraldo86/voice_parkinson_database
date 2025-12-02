@@ -65,12 +65,8 @@
     {
       "algorithm": "Support Vector Machine",
       "sample_selection": [
-        {
-          "methods": [
             "Enveloped Multilayer Fuzzy Sample Compression"
-          ]
-        }
-      ],
+          ],
       "validation": "train/test split",
       "results": {
         "accuracy": 0.9417,
@@ -82,12 +78,8 @@
     {
       "algorithm": "K-Nearest Neighbors",
       "sample_selection": [
-        {
-          "methods": [
             "Enveloped Multilayer Fuzzy Sample Compression"
-          ]
-        }
-      ],
+          ],
       "validation": "train/test split",
       "results": {
         "accuracy": 0.9333,
@@ -99,12 +91,8 @@
     {
       "algorithm": "Extreme Learning Machine",
       "sample_selection": [
-        {
-          "methods": [
             "Enveloped Multilayer Fuzzy Sample Compression"
-          ]
-        }
-      ],
+          ],
       "validation": "train/test split",
       "results": {
         "accuracy": 0.9833,

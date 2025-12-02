@@ -97,11 +97,7 @@
         ]
       },
       "sample_selection": [
-        {
-          "methods": [
             "Iterative Mean Clustering"
-          ]
-        }
       ],
       "validation": "Leave-One-Subject-Out cross-validation",
       "results": {

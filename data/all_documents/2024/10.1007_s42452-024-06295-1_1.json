@@ -54,12 +54,8 @@
         ]
       },
       "sample_selection": [
-        {
-          "methods": [
             "Support Vector Machine"
-          ]
-        }
-      ],
+          ],
       "results": {
         "accuracy": 0.9523
       }

@@ -48,13 +48,8 @@
       "algorithm": "Least Square Linear Basis Function",
       "training": "regional",
       "sample_selection": [
-        {
-          "methods": [
             "Self-Organizing Map",
             "K-Means Clustering"
-          ],
-          "combination": "sequential"
-        }
       ],
       "validation": "5-fold cross-validation",
       "results": {
@@ -68,13 +63,8 @@
       "algorithm": "Least Square Support Vector Machine",
       "training": "local",
       "sample_selection": [
-        {
-          "methods": [
             "Self-Organizing Map",
             "K-Means Clustering"
-          ],
-          "combination": "sequential"
-        }
       ],
       "validation": "5-fold cross-validation",
       "results": {
@@ -88,13 +78,8 @@
       "algorithm": "Least Square Support Vector Machine",
       "training": "regional",
       "sample_selection": [
-        {
-          "methods": [
             "Self-Organizing Map",
             "K-Means Clustering"
-          ],
-          "combination": "sequential"
-        }
       ],
       "validation": "5-fold cross-validation",
       "results": {

@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "68ecf00b6c43da02c16892ee"
-  },
   "title": "Voice in Parkinson's Disease: A Machine Learning Study",
   "authors": [
     {
