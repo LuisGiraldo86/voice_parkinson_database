@@ -1,42 +1,25 @@
 {
-  "title": "Prediction and Estimation of Parkinson’s Disease Severity Based on Voice Signal",
+  "title": "Prediction and Estimation of Parkinson's Disease Severity Based on Voice Signal",
   "authors": [
     {
-      "name": "Zaifa Xue",
+      "name": "Daria Hemmerling",
       "affiliations": [
         {
-          "institution": "Yanshan University",
-          "country": "China"
-        },
-        {
-          "institution": "Hebei Key Laboratory of Information Transmission and Signal Processing",
-          "country": "China"
+          "institution": "AGH University of Science and Technology",
+          "country": "Poland"
         }
       ]
     },
     {
-      "name": "Tao Zhang",
+      "name": "Magdalena Wojcik-Pedziwiatr",
       "affiliations": [
         {
-          "institution": "Yanshan University",
-          "country": "China"
+          "institution": "The John Paul II Hospital",
+          "country": "Poland"
         },
         {
-          "institution": "Hebei Key Laboratory of Information Transmission and Signal Processing",
-          "country": "China"
-        }
-      ]
-    },
-    {
-      "name": "Liqin Lin ",
-      "affiliations": [
-        {
-          "institution": "Yanshan University",
-          "country": "China"
-        },
-        {
-          "institution": "Hebei Key Laboratory of Information Transmission and Signal Processing",
-          "country": "China"
+          "institution": "Andrzej Frycz Modrzewski Krakow University",
+          "country": "Poland"
         }
       ]
     }

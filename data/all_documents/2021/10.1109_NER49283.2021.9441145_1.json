@@ -32,7 +32,7 @@
   "journal": "IEEE/EMBS Conference on Neural Engineering",
   "publication_type": "Conference",
   "year": 2021,
-  "doi": "10.100710.1109/NER49283.2021.9441145",
+  "doi": "10.1109/NER49283.2021.9441145",
   "abstract": "Speech disorder is one of the most dominant symptoms of Parkinson's disease. The speaking ability deteriorates as the disease progresses. However, regular screening and monitoring can improve the quality of living. Most of the patients in developing countries cannot access healthcare services due to a lack of facilities and costs. So a Cloud-based Smartphone application can be a cost-effective solution to this problem. This study aims to design and develop a tool for screening Parkinson's disease in real-time based on speech analysis. We adopted a machine learning-based approach for screening Parkinson's disease in real-time. This study applied several machine learning algorithms and found that the k-nearest neighbor algorithm performed better. Our model achieved 81.58% sensitivity, with 85.11% specificity in discriminating PD patients from healthy individuals using 10-fold stratified cross-validation. We tested our system in real-time and recruited 9 PD patients and 9 Healthy individuals, and recorded their voices for 10 seconds using our smartphone application. In real-time, we achieved 77.78% sensitivity with 33.33% specificity. Our study also demonstrated that Smartphone-based mobile applications could be a cost-effective solution for screening Parkinson's disease in real-time.",
   "ml_approaches": [
     {
@@ -128,7 +128,7 @@
       "doi": "10.24432/C59C74"
     }
   ],
-  "study_id": "10.100710.1109/NER49283.2021.9441145_1",
+  "study_id": "10.1109/NER49283.2021.9441145_1",
   "ml_problem_type": [
     "Classification: Binary "
   ],

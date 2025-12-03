@@ -3,15 +3,30 @@
   "authors": [
     {
       "name": "Changqin Quan",
-      "affiliation": "Kobe University, Japan"
+      "affiliations": [
+        {
+          "institution": "Kobe University",
+          "country": "Japan"
+        }
+      ]
     },
     {
       "name": "Kang Ren",
-      "affiliation": "Kobe University, Japan"
+      "affiliations": [
+        {
+          "institution": "Kobe University",
+          "country": "Japan"
+        }
+      ]
     },
     {
       "name": "Zhiwei Luo",
-      "affiliation": "Kobe University, Japan"
+      "affiliations": [
+        {
+          "institution": "Kobe University",
+          "country": "Japan"
+        }
+      ]
     }
   ],
   "journal": "IEEE Access",
