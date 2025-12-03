@@ -3,19 +3,37 @@
   "authors": [
     {
       "name": "Asmae Ouhmida",
-      "affiliation": "Hassan II University of Casablanca, Morocco"
+      "affiliations": [
+        {
+          "institution": "Hassan II University of Casablanca",
+          "country": "Morocco"
+        }
+      ]
     },
     {
       "name": "Abdelhadi Raihani",
-      "affiliation": "Hassan II University of Casablanca, Morocco"
+      "affiliations": [
+        {
+          "institution": "Hassan II University of Casablanca",
+          "country": "Morocco"
+        }
+      ]
     },
     {
       "name": "Bouchaib Cherradi",
-      "affiliation": "CRMEF Casablanca-Settat, Morocco"
+      "affiliations": [{
+        "institution": "CRMEF Casablanca-Settat",
+        "country": "Morocco"
+    }]
     },
     {
       "name": "Oumaima Terrada",
-      "affiliation": "Hassan II University of Casablanca, Morocco"
+      "affiliations": [
+        {
+          "institution": "Hassan II University of Casablanca",
+          "country": "Morocco"
+        }
+      ]
     }
   ],
   "publication_type": "Journal",

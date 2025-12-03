@@ -3,11 +3,11 @@
   "authors": [
     {
       "name": "Karthikeyan Harimoorthy",
-      "affiliation": "Anna University, India"
+      "affiliations": [{"institution": "Anna University", "country": "India"}]
     },
     {
       "name": "Menakadevi Thangavelu",
-      "affiliation": "Adhiyamaan College of Engineering, India"
+      "affiliations": [{"institution": "Adhiyamaan College of Engineering", "country": "India"}]
     }
   ],
   "journal": "Concurrency and Computation: Practice and Experience",

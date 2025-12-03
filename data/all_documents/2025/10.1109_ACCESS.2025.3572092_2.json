@@ -30,7 +30,12 @@
     },
     {
       "name": "Mohd Wajid",
-      "affiliations": []
+      "affiliations": [
+        {
+          "institution": "Aligarh Muslim University",
+          "country": "India"
+        }
+      ]
     },
     {
       "name": "Mohammed Usman",

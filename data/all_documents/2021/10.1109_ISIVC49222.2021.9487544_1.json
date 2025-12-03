@@ -3,15 +3,30 @@
   "authors": [
     {
       "name": "Radouani Laila",
-      "affiliation": "Mohammed V University in Rabat, Morocco"
+      "affiliations": [
+        {
+          "institution": "Mohammed V University in Rabat",
+          "country": "Morocco"
+        }
+      ]
     },
     {
       "name": "Lagdali Salwa",
-      "affiliation": "Mohammed V University in Rabat, Morocco"
+      "affiliations": [
+        {
+          "institution": "Mohammed V University in Rabat",
+          "country": "Morocco"
+        }
+      ]
     },
     {
       "name": "Rziza Mohammed",
-      "affiliation": "Mohammed V University in Rabat, Morocco"
+      "affiliations": [
+        {
+          "institution": "Mohammed V University in Rabat",
+          "country": "Morocco"
+        }
+      ]
     }
   ],
   "publication_type": "Conference",
