@@ -92,7 +92,7 @@
     }
   ],
   "problem": "Parkinson's disease severity stage classification",
-  "ml_problem_type": ["Classification: Binary"],
+  "ml_problem_type": ["Classification: Binary "],
   "publication_type": "Journal",
   "journal": "Frontiers in Neurology",
   "year": 2022,
