@@ -56,7 +56,7 @@
       }
     },
     {
-      "algorithm": "Multilayer Perceptron ",
+      "algorithm": "Multilayer Perceptron",
       "scaling": [
         "Standardization"
       ],
@@ -136,7 +136,7 @@
       }
     },
     {
-      "algorithm": "Multilayer Perceptron ",
+      "algorithm": "Multilayer Perceptron",
       "scaling": [
         "Standardization"
       ],
@@ -214,7 +214,7 @@
       }
     },
     {
-      "algorithm": "Multilayer Perceptron ",
+      "algorithm": "Multilayer Perceptron",
       "scaling": [
         "Standardization"
       ],
@@ -294,7 +294,7 @@
       }
     },
     {
-      "algorithm": "Multilayer Perceptron ",
+      "algorithm": "Multilayer Perceptron",
       "scaling": [
         "Standardization"
       ],

@@ -81,7 +81,7 @@
       }
     },
     {
-      "algorithm": "Ridge Regression",
+      "algorithm": "Ridge",
       "scaling": [
         "Min Max"
       ],

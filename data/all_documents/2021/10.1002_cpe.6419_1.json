@@ -71,7 +71,7 @@
       }
     },
     {
-      "algorithm": "k-Nearest Neighbors",
+      "algorithm": "K-Nearest Neighbors",
       "framework": "",
       "dimensionality_reduction": [
         "PCA"

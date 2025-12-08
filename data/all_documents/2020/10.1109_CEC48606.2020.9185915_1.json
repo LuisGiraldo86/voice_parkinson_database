@@ -63,7 +63,7 @@
   "abstract": "Developments in artiﬁcial intelligence can be leveraged to support the diagnosis of degenerative disorders, such as epilepsy and Parkinson's disease. This study aims to provide a software solution, focused initially towards Parkinson's disease, which can positively impact medical practice surrounding degenerative diagnoses. Through the use of a dataset containing numerical data representing acoustic features extracted from an audio recording of an individual, it is determined if a neural approach can provide an improvement over previous results in the area. This is achieved through the implementation of a feedforward neural network and a layer recurrent neural network. By comparison with the state-of-the-art, a Bayesian approach providing a classiﬁcation accuracy benchmark of 87.1%, it is found that the implemented neural networks are capable of average accuracy of 96%, highlighting improved accuracy for the classiﬁcation process. The solution is capable of supporting the diagnosis of Parkinson's disease in an advisory capacity and is envisioned to inform the process of referral through general practice.",
   "ml_approaches": [
     {
-      "algorithm": "Feed Forward Neural Network",
+      "algorithm": "Feed-forward Neural Network",
       "framework": "MATLAB",
       "validation": "train/test split",
       "results": {

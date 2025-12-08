@@ -133,7 +133,7 @@
       }
     },
     {
-      "algorithm": "LSTM",
+      "algorithm": "Long Short-Term Memory",
       "framework": "Python",
       "feature_extraction": [
         "Mel Frequency Cepstral Coefficients"

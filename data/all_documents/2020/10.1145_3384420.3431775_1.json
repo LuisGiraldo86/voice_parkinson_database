@@ -44,7 +44,7 @@
       }
     },
     {
-      "algorithm": "Support Vector Machines",
+      "algorithm": "Support Vector Machine",
       "framework": null,
       "feature_extraction": [
         "VGGish"
@@ -95,7 +95,7 @@
       }
     },
     {
-      "algorithm": "Support Vector Machines",
+      "algorithm": "Support Vector Machine",
       "framework": null,
       "feature_extraction": [
         "ResNet5.0"
@@ -146,7 +146,7 @@
       }
     },
     {
-      "algorithm": "Support Vector Machines",
+      "algorithm": "Support Vector Machine",
       "framework": null,
       "feature_extraction": [
         "Mel-Frequency Cepstral Coefficients"
@@ -197,7 +197,7 @@
       }
     },
     {
-      "algorithm": "Support Vector Machines",
+      "algorithm": "Support Vector Machine",
       "framework": null,
       "feature_extraction": [
         "PRAAT"
@@ -248,7 +248,7 @@
       }
     },
     {
-      "algorithm": "Support Vector Machines",
+      "algorithm": "Support Vector Machine",
       "framework": null,
       "feature_extraction": [
         "DisVoice"
