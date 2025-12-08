@@ -139,7 +139,7 @@
       ],
       "feature_selection": {
         "methods": [
-          "Correlation-based"
+          "Pearson Correlation"
         ]
       },
       "validation": null,
@@ -155,7 +155,7 @@
       ],
       "feature_selection": {
         "methods": [
-          "Correlation-based"
+          "Pearson Correlation"
         ]
       },
       "validation": null,
@@ -171,7 +171,7 @@
       ],
       "feature_selection": {
         "methods": [
-          "Correlation-based"
+          "Pearson Correlation"
         ]
       },
       "validation": null,
@@ -187,7 +187,7 @@
       ],
       "feature_selection": {
         "methods": [
-          "Correlation-based"
+          "Pearson Correlation"
         ]
       },
       "validation": null,
@@ -203,7 +203,7 @@
       ],
       "feature_selection": {
         "methods": [
-          "Correlation-based"
+          "Pearson Correlation"
         ]
       },
       "validation": null,
@@ -219,7 +219,7 @@
       ],
       "feature_selection": {
         "methods": [
-          "Correlation-based"
+          "Pearson Correlation"
         ]
       },
       "validation": null,
