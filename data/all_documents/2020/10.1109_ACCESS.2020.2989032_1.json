@@ -69,7 +69,7 @@
       "feature_selection": {
         "methods": [
           "PCA",
-          "Feature Selection: Eigenvector Centrality"
+          "Eigenvector Centrality"
         ],
         "combination": "Hybrid Feature Selection"
       },
@@ -83,7 +83,7 @@
       "feature_selection": {
         "methods": [
           "PCA",
-          "Feature Selection: Eigenvector Centrality"
+          "Eigenvector Centrality"
         ],
         "combination": "Weighted Hybrid Feature Selection"
       },

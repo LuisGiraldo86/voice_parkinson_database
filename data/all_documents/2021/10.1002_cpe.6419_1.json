@@ -174,7 +174,7 @@
       "framework": "",
       "feature_selection": {
         "methods": [
-          "Wrapper: Support Vector Machine"
+          "Wrapper Feature Subset Selection: Support Vector Machine"
         ]
       },
       "results": {
@@ -189,7 +189,7 @@
       "framework": "",
       "feature_selection": {
         "methods": [
-          "Wrapper: Support Vector Machine"
+          "Wrapper Feature Subset Selection: Support Vector Machine"
         ]
       },
       "results": {
@@ -204,7 +204,7 @@
       "framework": "",
       "feature_selection": {
         "methods": [
-          "Wrapper: Support Vector Machine"
+          "Wrapper Feature Subset Selection: Support Vector Machine"
         ]
       },
       "results": {
@@ -219,7 +219,7 @@
       "framework": "",
       "feature_selection": {
         "methods": [
-          "Wrapper: Support Vector Machine"
+          "Wrapper Feature Subset Selection: Support Vector Machine"
         ]
       },
       "results": {

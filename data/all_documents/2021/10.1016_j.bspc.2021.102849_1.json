@@ -93,7 +93,7 @@
       ],
       "feature_selection": {
         "methods": [
-          "L1 Regularization"
+          "LASSO"
         ]
       },
       "sample_selection": [
