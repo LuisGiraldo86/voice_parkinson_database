@@ -80,7 +80,7 @@
       "feature_selection": {
         "methods": [
           "Statistical Analysis",
-          "Borutta"
+          "Boruta"
         ],
         "combination": "sequential"
       },
@@ -98,7 +98,7 @@
       "feature_selection": {
         "methods": [
           "Statistical Analysis",
-          "Borutta"
+          "Boruta"
         ],
         "combination": "sequential"
       },

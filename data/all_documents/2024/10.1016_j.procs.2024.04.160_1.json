@@ -31,7 +31,7 @@
       "framework": "",
       "feature_selection": {
         "methods": [
-          "Correlation Coefficient"
+          "Pearson Correlation"
         ]
       },
       "validation": "train/test split",

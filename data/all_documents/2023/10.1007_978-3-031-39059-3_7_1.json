@@ -214,7 +214,7 @@
       ],
       "feature_selection": {
         "methods": [
-          "Correlation Matrix"
+          "Pearson Correlation"
         ]
       },
       "imbalance_handling": [
@@ -235,7 +235,7 @@
       ],
       "feature_selection": {
         "methods": [
-          "Correlation Matrix"
+          "Pearson Correlation"
         ]
       },
       "imbalance_handling": [
@@ -256,7 +256,7 @@
       ],
       "feature_selection": {
         "methods": [
-          "Correlation Matrix"
+          "Pearson Correlation"
         ]
       },
       "imbalance_handling": [
@@ -277,7 +277,7 @@
       ],
       "feature_selection": {
         "methods": [
-          "Correlation Matrix"
+          "Pearson Correlation"
         ]
       },
       "imbalance_handling": [
@@ -298,7 +298,7 @@
       ],
       "feature_selection": {
         "methods": [
-          "Correlation Matrix"
+          "Pearson Correlation"
         ]
       },
       "imbalance_handling": [
@@ -319,7 +319,7 @@
       ],
       "feature_selection": {
         "methods": [
-          "Correlation Matrix"
+          "Pearson Correlation"
         ]
       },
       "imbalance_handling": [
@@ -340,7 +340,7 @@
       ],
       "feature_selection": {
         "methods": [
-          "Correlation Matrix"
+          "Pearson Correlation"
         ]
       },
       "imbalance_handling": [
@@ -361,7 +361,7 @@
       ],
       "feature_selection": {
         "methods": [
-          "Correlation Matrix"
+          "Pearson Correlation"
         ]
       },
       "imbalance_handling": [
@@ -382,7 +382,7 @@
       ],
       "feature_selection": {
         "methods": [
-          "Correlation Matrix"
+          "Pearson Correlation"
         ]
       },
       "imbalance_handling": [
@@ -403,7 +403,7 @@
       ],
       "feature_selection": {
         "methods": [
-          "Correlation Matrix",
+          "Pearson Correlation",
           "Collinearity Removal"
         ],
         "combination": "sequential"
@@ -426,7 +426,7 @@
       ],
       "feature_selection": {
         "methods": [
-          "Correlation Matrix",
+          "Pearson Correlation",
           "Collinearity Removal"
         ],
         "combination": "sequential"
@@ -449,7 +449,7 @@
       ],
       "feature_selection": {
         "methods": [
-          "Correlation Matrix",
+          "Pearson Correlation",
           "Collinearity Removal"
         ],
         "combination": "sequential"
@@ -472,7 +472,7 @@
       ],
       "feature_selection": {
         "methods": [
-          "Correlation Matrix",
+          "Pearson Correlation",
           "Collinearity Removal"
         ],
         "combination": "sequential"
@@ -495,7 +495,7 @@
       ],
       "feature_selection": {
         "methods": [
-          "Correlation Matrix",
+          "Pearson Correlation",
           "Collinearity Removal"
         ],
         "combination": "sequential"
@@ -518,7 +518,7 @@
       ],
       "feature_selection": {
         "methods": [
-          "Correlation Matrix",
+          "Pearson Correlation",
           "Collinearity Removal"
         ],
         "combination": "sequential"
@@ -541,7 +541,7 @@
       ],
       "feature_selection": {
         "methods": [
-          "Correlation Matrix",
+          "Pearson Correlation",
           "Collinearity Removal"
         ],
         "combination": "sequential"
@@ -564,7 +564,7 @@
       ],
       "feature_selection": {
         "methods": [
-          "Correlation Matrix",
+          "Pearson Correlation",
           "Collinearity Removal"
         ],
         "combination": "sequential"
@@ -587,7 +587,7 @@
       ],
       "feature_selection": {
         "methods": [
-          "Correlation Matrix",
+          "Pearson Correlation",
           "Collinearity Removal"
         ],
         "combination": "sequential"
@@ -610,7 +610,7 @@
       ],
       "feature_selection": {
         "methods": [
-          "Correlation Matrix",
+          "Pearson Correlation",
           "Collinearity Removal",
           "Genetic Algorithm"
         ],
@@ -634,7 +634,7 @@
       ],
       "feature_selection": {
         "methods": [
-          "Correlation Matrix",
+          "Pearson Correlation",
           "Collinearity Removal",
           "Genetic Algorithm"
         ],
@@ -658,7 +658,7 @@
       ],
       "feature_selection": {
         "methods": [
-          "Correlation Matrix",
+          "Pearson Correlation",
           "Collinearity Removal",
           "Genetic Algorithm"
         ],
@@ -682,7 +682,7 @@
       ],
       "feature_selection": {
         "methods": [
-          "Correlation Matrix",
+          "Pearson Correlation",
           "Collinearity Removal",
           "Genetic Algorithm"
         ],
@@ -706,7 +706,7 @@
       ],
       "feature_selection": {
         "methods": [
-          "Correlation Matrix",
+          "Pearson Correlation",
           "Collinearity Removal",
           "Genetic Algorithm"
         ],
@@ -730,7 +730,7 @@
       ],
       "feature_selection": {
         "methods": [
-          "Correlation Matrix",
+          "Pearson Correlation",
           "Collinearity Removal",
           "Genetic Algorithm"
         ],
@@ -754,7 +754,7 @@
       ],
       "feature_selection": {
         "methods": [
-          "Correlation Matrix",
+          "Pearson Correlation",
           "Collinearity Removal",
           "Genetic Algorithm"
         ],
@@ -778,7 +778,7 @@
       ],
       "feature_selection": {
         "methods": [
-          "Correlation Matrix",
+          "Pearson Correlation",
           "Collinearity Removal",
           "Genetic Algorithm"
         ],
@@ -802,7 +802,7 @@
       ],
       "feature_selection": {
         "methods": [
-          "Correlation Matrix",
+          "Pearson Correlation",
           "Collinearity Removal",
           "Genetic Algorithm"
         ],

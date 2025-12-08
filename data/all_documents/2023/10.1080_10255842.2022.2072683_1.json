@@ -66,7 +66,7 @@
       "algorithm": "Stacking Ensemble (Base: Random Forest, XGBoost; Meta: Logistic Regression)",
       "feature_selection": {
         "methods": [
-          "Correlation Matrix",
+          "Pearson Correlation",
           "Sequential Floating Forward Selection"
         ],
         "combination": "sequential"

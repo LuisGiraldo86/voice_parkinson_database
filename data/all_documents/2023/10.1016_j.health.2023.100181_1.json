@@ -40,7 +40,7 @@
       ],
       "feature_selection": {
         "methods": [
-          "Feature Correlation"
+          "Pearson Correlation"
         ]
       },
       "validation": "train/test split",

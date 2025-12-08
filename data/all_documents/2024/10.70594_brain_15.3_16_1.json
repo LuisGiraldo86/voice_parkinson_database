@@ -34,7 +34,7 @@
       ],
       "feature_selection": {
         "methods": [
-          "Correlation Matrix"
+          "Pearson Correlation"
         ]
       },
       "imbalance_handling": [

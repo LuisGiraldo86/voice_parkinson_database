@@ -14,7 +14,7 @@
       "name": "Lambodar Jena",
       "affiliations": [
         {
-          "institution": "Siksha ‘O’ Anusandhan",
+          "institution": "Siksha 'O' Anusandhan",
           "country": "India"
         }
       ]
@@ -55,7 +55,7 @@
       "scaling": ["Min Max"],
       "feature_selection": {
         "methods": [
-          "Correlation Coefficient"
+          "Pearson Correlation"
         ]
       },
       "validation": "train/test split",
