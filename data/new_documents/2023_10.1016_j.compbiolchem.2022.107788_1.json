@@ -95,7 +95,7 @@
       "dimensionality_reduction": ["PCA"],
       "validation": "train/test split",
       "results": {
-        "rsme": 0.537,
+        "rmse": 0.537,
         "mae": 0.893
       }
     },
@@ -107,7 +107,7 @@
       "dimensionality_reduction": ["PCA"],
       "validation": "train/test split",
       "results": {
-        "rsme": 0.894,
+        "rmse": 0.894,
         "mae": 0.866
       }
     }

@@ -44,7 +44,7 @@
       "validation": "train/test split",
       "results": {
         "mae": 0.04,
-        "rsme": 0.053,
+        "rmse": 0.053,
         "mse": 0.003,
         "r_squared": 0.908
       }

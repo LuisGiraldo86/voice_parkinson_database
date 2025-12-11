@@ -61,7 +61,7 @@
       "validation": "10-fold cross-validation",
       "results": {
        "mae": 2.04,
-        "r2": 0.9365
+        "r_squared": 0.9365
       }
     },
     {
@@ -75,7 +75,7 @@
       "validation": "10-fold cross-validation",
       "results": {
        "mae": 2.04,
-        "r2": 0.9366
+        "r_squared": 0.9366
       }
     },
     {
@@ -89,7 +89,7 @@
       "validation": "10-fold cross-validation",
       "results": {
        "mae": 2.05,
-        "r2": 0.9364
+        "r_squared": 0.9364
       }
     }
   ],

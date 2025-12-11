@@ -41,7 +41,7 @@
       "data_subset": "off_state",
       "results": {
         "mse": 55.19,
-        "rsme": 7.43,
+        "rmse": 7.43,
         "mae": 5.39,
         "r_squared": 0.66
       }
@@ -59,7 +59,7 @@
       "data_subset": "off_state",
       "results": {
         "mse": 71.46,
-        "rsme": 8.45,
+        "rmse": 8.45,
         "mae": 6.60,
         "r_squared": 0.56
       }
@@ -77,7 +77,7 @@
       "data_subset": "off_state",
       "results": {
         "mse": 75.90,
-        "rsme": 8.71,
+        "rmse": 8.71,
         "mae": 5.56,
         "r_squared": 0.53
       }
@@ -95,7 +95,7 @@
       "data_subset": "off_state",
       "results": {
         "mse": 137.92,
-        "rsme": 11.74,
+        "rmse": 11.74,
         "mae": 10.17,
         "r_squared": 0.14
       }
@@ -113,7 +113,7 @@
       "data_subset": "off_state",
       "results": {
         "mse": 136.88,
-        "rsme": 11.70,
+        "rmse": 11.70,
         "mae": 10.58,
         "r_squared": 0.15
       }
@@ -131,7 +131,7 @@
       "data_subset": "off_state",
       "results": {
         "mse": 138.52,
-        "rsme": 11.77,
+        "rmse": 11.77,
         "mae": 7.88,
         "r_squared": 0.14
       }
@@ -149,7 +149,7 @@
       "data_subset": "off_state",
       "results": {
         "mse": 37.48,
-        "rsme": 6.12,
+        "rmse": 6.12,
         "mae": 4.77,
         "r_squared": 0.77
       }
@@ -167,7 +167,7 @@
       "data_subset": "off_state",
       "results": {
         "mse": 31.81,
-        "rsme": 5.64,
+        "rmse": 5.64,
         "mae": 3.84,
         "r_squared": 0.8
       }
@@ -185,7 +185,7 @@
       "data_subset": "off_state",
       "results": {
         "mse": 31.52,
-        "rsme": 5.61,
+        "rmse": 5.61,
         "mae": 3.52,
         "r_squared": 0.8
       }
@@ -203,7 +203,7 @@
       "data_subset": "on_state",
       "results": {
         "mse": 56.29,
-        "rsme": 7.50,
+        "rmse": 7.50,
         "mae": 5.69,
         "r_squared": 0.59
       }
@@ -221,7 +221,7 @@
       "data_subset": "on_state",
       "results": {
         "mse": 74.49,
-        "rsme": 8.63,
+        "rmse": 8.63,
         "mae": 6.75,
         "r_squared": 0.46
       }
@@ -239,7 +239,7 @@
       "data_subset": "on_state",
       "results": {
         "mse": 74.15,
-        "rsme": 8.61,
+        "rmse": 8.61,
         "mae": 6.23,
         "r_squared": 0.46
       }
@@ -257,7 +257,7 @@
       "data_subset": "on_state",
       "results": {
         "mse": 78.72,
-        "rsme": 8.87,
+        "rmse": 8.87,
         "mae": 6.69,
         "r_squared": 0.43
       }
@@ -275,7 +275,7 @@
       "data_subset": "on_state",
       "results": {
         "mse": 77.11,
-        "rsme": 8.78,
+        "rmse": 8.78,
         "mae": 6.34,
         "r_squared": 0.44
       }
@@ -293,7 +293,7 @@
       "data_subset": "on_state",
       "results": {
         "mse": 96.96,
-        "rsme": 9.85,
+        "rmse": 9.85,
         "mae": 6.96,
         "r_squared": 0.29
       }
@@ -311,7 +311,7 @@
       "data_subset": "on_state",
       "results": {
         "mse": 67.76,
-        "rsme": 8.23,
+        "rmse": 8.23,
         "mae": 6.22,
         "r_squared": 0.51
       }
@@ -329,7 +329,7 @@
       "data_subset": "on_state",
       "results": {
         "mse": 47.45,
-        "rsme": 6.89,
+        "rmse": 6.89,
         "mae": 5.21,
         "r_squared": 0.65
       }
@@ -347,7 +347,7 @@
       "data_subset": "on_state",
       "results": {
         "mse": 63.31,
-        "rsme": 7.96,
+        "rmse": 7.96,
         "mae": 5.9,
         "r_squared": 0.54
       }
